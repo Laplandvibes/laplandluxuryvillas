@@ -1,24 +1,24 @@
-// Cloudflare Pages Function — anonymous concierge inquiry intake.
-// POST { headcount, intent, budget, dates, message, name?, email? }
+// Cloudflare Pages Function — same-origin proxy to the Supabase Edge Function
+// `send-concierge-inquiry`. Lives at https://laplandluxuryvillas.com/api/concierge.
 //
-// Forwards to private@laplandvibes.com via Resend. Designed so that:
-//   • If RESEND_API_KEY is configured (Pages → Settings → Env), the form
-//     submits server-side and the user sees an inline success.
-//   • If the env var is missing or Resend errors, returns 503 and the
-//     client falls back to opening the user's mail client with mailto.
+// Why a proxy?  The Supabase function's CORS policy allows only the LV
+// allowlist. Routing through this Function keeps the call same-origin in the
+// browser and lets the actual hop to Supabase be a server-side fetch (CORS
+// bypassed). Mirrors how /api/newsletter proxies send-welcome-email.
 //
-// Configure (one-time, by Vesa):
-//   Pages project laplandluxuryvillas-com → Settings → Environment variables
-//     RESEND_API_KEY        (Production + Preview)
-//     CONCIERGE_FROM        e.g. concierge@laplandluxuryvillas.com
-//                           (must be a verified Resend sender domain)
-//     CONCIERGE_TO          private@laplandvibes.com  (default below)
+// Configure these as Cloudflare Pages env vars only if you want to override
+// the bundled defaults:
+//   SUPABASE_URL              -> https://oogioaxmfnqcbvjbcodh.supabase.co
+//   SUPABASE_PUBLISHABLE_KEY  -> the public anon key
 
 interface Env {
-  RESEND_API_KEY?: string
-  CONCIERGE_FROM?: string
-  CONCIERGE_TO?: string
+  SUPABASE_URL?: string
+  SUPABASE_PUBLISHABLE_KEY?: string
 }
+
+const SUPABASE_URL_FALLBACK = 'https://oogioaxmfnqcbvjbcodh.supabase.co'
+const SUPABASE_ANON_FALLBACK =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9vZ2lvYXhtZm5xY2J2amJjb2RoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4NjMyNDIsImV4cCI6MjA5MDQzOTI0Mn0.eTfgsux0zV3_gPyFRUcE8M_-DuDpU2xE9gehQM9pz54'
 
 interface Body {
   headcount?: string
@@ -30,9 +30,6 @@ interface Body {
   email?: string
 }
 
-const DEFAULT_TO = 'private@laplandvibes.com'
-const DEFAULT_FROM = 'concierge@laplandluxuryvillas.com'
-
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   let body: Body
   try {
@@ -41,68 +38,40 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ error: 'Invalid JSON body' }, 400)
   }
 
-  if (!env.RESEND_API_KEY) {
-    return json(
-      { error: 'concierge_not_configured', detail: 'Set RESEND_API_KEY in Pages env vars.' },
-      503,
-    )
+  // Light required-field validation up front so we don't burn a Supabase call
+  // on obviously-empty payloads.
+  if (!body.headcount || !body.intent || !body.budget) {
+    return json({ error: 'Missing required fields (headcount, intent, budget)' }, 400)
   }
 
-  const to = env.CONCIERGE_TO || DEFAULT_TO
-  const from = env.CONCIERGE_FROM || DEFAULT_FROM
-
-  // Build a clean human-readable plaintext + a basic HTML for inbox parsing.
-  const subject = `Private villa inquiry — ${esc(body.intent) || 'untyped'}`
-  const lines = [
-    'Private inquiry submitted via laplandluxuryvillas.com',
-    '',
-    `Headcount: ${esc(body.headcount) || '(unspecified)'}`,
-    `Trip intent: ${esc(body.intent) || '(unspecified)'}`,
-    `Indicative budget per night: ${esc(body.budget) || '(unspecified)'}`,
-    `Dates: ${esc(body.dates) || '(open / flexible)'}`,
-    '',
-    'Notes:',
-    esc(body.message) || '(none)',
-    '',
-    '— —',
-    `Reply to: ${esc(body.email) || '(not provided)'}`,
-    `Sender name: ${esc(body.name) || '(anonymous)'}`,
-    `Submitted: ${new Date().toISOString()}`,
-  ]
-  const text = lines.join('\n')
-  const html = `<pre style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;line-height:1.6">${
-    text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-  }</pre>`
-
-  const replyTo = isValidEmail(body.email) ? body.email!.trim() : undefined
+  const supabaseUrl = env.SUPABASE_URL || SUPABASE_URL_FALLBACK
+  const anonKey = env.SUPABASE_PUBLISHABLE_KEY || SUPABASE_ANON_FALLBACK
 
   try {
-    const upstream = await fetch('https://api.resend.com/emails', {
+    const upstream = await fetch(`${supabaseUrl}/functions/v1/send-concierge-inquiry`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${env.RESEND_API_KEY}`,
         'Content-Type': 'application/json',
+        apikey: anonKey,
+        Authorization: `Bearer ${anonKey}`,
+        // Set the Origin so the upstream CORS allowlist treats this as a
+        // legitimate first-party call (server-side fetch otherwise has no
+        // Origin header and the upstream falls back to the default).
+        Origin: 'https://laplandluxuryvillas.com',
       },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        ...(replyTo ? { reply_to: replyTo } : {}),
-        subject,
-        text,
-        html,
-      }),
+      body: JSON.stringify(body),
     })
 
-    const upstreamText = await upstream.text()
+    const text = await upstream.text()
     let data: any = {}
-    try { data = JSON.parse(upstreamText) } catch { data = { rawBody: upstreamText.slice(0, 500) } }
+    try { data = JSON.parse(text) } catch { data = { rawBody: text.slice(0, 500) } }
 
     if (!upstream.ok) {
-      return json({ error: data?.message || `Resend HTTP ${upstream.status}`, upstream: data }, upstream.status)
+      return json({ error: data?.error || `upstream HTTP ${upstream.status}`, upstream: data }, upstream.status)
     }
-    return json({ ok: true, id: data?.id }, 200)
+    return json(data, 200)
   } catch (err) {
-    return json({ error: err instanceof Error ? err.message : 'Resend fetch failed' }, 502)
+    return json({ error: err instanceof Error ? err.message : 'Upstream fetch failed' }, 502)
   }
 }
 
@@ -121,12 +90,4 @@ function json(payload: unknown, status: number): Response {
     status,
     headers: { 'Content-Type': 'application/json' },
   })
-}
-
-function esc(s: string | undefined): string {
-  return (s || '').toString().slice(0, 2000)
-}
-
-function isValidEmail(s: string | undefined): boolean {
-  return !!s && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s.trim())
 }

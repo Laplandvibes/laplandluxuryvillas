@@ -80,17 +80,11 @@ export default function Concierge() {
         return
       }
 
-      // 503 = endpoint not configured (no RESEND key) → fall back to mailto
-      if (res.status === 503) {
-        setStatus('fallback')
-        window.location.href = mailto
-        return
-      }
-
+      // Surface the upstream error to the user with a mailto fallback link.
       setStatus('error')
       setErrorMsg(data?.error || `Server error ${res.status}.`)
     } catch (err) {
-      // Network failure → fall back to mailto
+      // Network failure → soft-fall back to opening the mail client.
       setStatus('fallback')
       window.location.href = mailto
     }

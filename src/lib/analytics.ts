@@ -1,5 +1,5 @@
 // Google Analytics 4 — laplandluxuryvillas.com
-// Property: G-XXXXXXXXXX (placeholder — Vesa to provision and replace here AND in index.html)
+// Property: G-VP04CYVNHZ (Stream ID 14805099733)
 
 declare global {
   interface Window {
@@ -8,7 +8,7 @@ declare global {
   }
 }
 
-export const GA_ID = 'G-XXXXXXXXXX'
+export const GA_ID = 'G-VP04CYVNHZ'
 
 function gtag(...args: any[]) {
   if (typeof window !== 'undefined' && window.gtag) {
