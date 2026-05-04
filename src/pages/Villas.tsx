@@ -56,6 +56,8 @@ export default function Villas() {
         eyebrow="The Collection"
         title="Ten villas. Five destinations. One private inquiry."
         lede="Every property below has been visited in the last twelve months. Filter by the kind of building you have in mind — or send a private inquiry and we'll shortlist around your dates."
+        imageUrl="/images/hero-villas.webp"
+        imageAlt="Interior of a luxury Lapland villa great room with a lit fireplace and snowy forest beyond the glass"
       />
 
       {/* FILTER BAR */}

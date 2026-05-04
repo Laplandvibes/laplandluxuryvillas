@@ -3,10 +3,8 @@ import { Sun, Calendar, ArrowUpRight } from 'lucide-react'
 import SEO from '../components/SEO'
 import Page from '../components/Page'
 import Hero from '../components/Hero'
-import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import NewsletterSection from '../components/NewsletterSection'
-import { signatureVillas } from '../lib/villas'
 
 const FACTS = [
   { value: '32', label: 'Days the sun never sets' },
@@ -35,8 +33,6 @@ const REASONS = [
 ]
 
 export default function MidnightSun() {
-  const villas = signatureVillas()
-
   return (
     <Page fullBleed>
       <SEO
@@ -53,7 +49,8 @@ export default function MidnightSun() {
         lede="The same villas you came north for in February — different season, half the demand, the architecture changes character. Reserve villas open the rest of their calendar."
         primary={{ to: '/concierge', label: 'Inquire about June dates' }}
         secondary={{ to: '/villas', label: 'See the collection' }}
-        imageOverlay="radial-gradient(ellipse 80% 60% at 70% 30%, rgba(255, 200, 90, 0.20) 0%, transparent 55%), linear-gradient(180deg, #2A1F0E 0%, #3D2D14 35%, #1F1608 100%)"
+        imageUrl="/images/hero-midnight-sun.webp"
+        imageAlt="A glass-roof Lapland villa in late-June midnight-sun light, lush green forest, lake unfrozen"
       />
 
       {/* FACTS BAND */}
@@ -91,24 +88,79 @@ export default function MidnightSun() {
         </div>
       </section>
 
-      {/* VILLAS — SAME LIST, SUMMER FRAMING */}
+      {/* SUMMER COLLECTION — purpose-shot summer imagery */}
       <section className="bg-[color:var(--color-onyx)] py-20 md:py-28 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
           <div className="flex items-end justify-between gap-6 mb-12">
             <div>
-              <span className="eyebrow">The summer collection</span>
+              <span className="eyebrow text-[#FFC95A]">The summer collection</span>
               <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">
-                Same villas, summer rates.
+                Four villa characters, in summer light.
               </h2>
+              <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/75 font-body leading-relaxed">
+                The same architectural categories as the winter collection — glass-roof
+                cabins, lakeside log estates, alpine chalets, forest villas — shot in
+                late-June midnight-sun light to show the second half of the story.
+              </p>
             </div>
             <Link to="/villas" className="hidden md:inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group">
-              Full collection
+              Full villa collection
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {villas.map((v) => (
-              <VillaCard key={v.slug} villa={v} />
+            {[
+              {
+                slug: 'glass-roof',
+                title: 'Glass-roof cabin in the green',
+                copy: 'The aurora architecture in 23:00 golden light, surrounded by lush forest instead of snow.',
+                img: '/images/summer-villa-glass.webp',
+              },
+              {
+                slug: 'lakeside',
+                title: 'Lakeside log estate',
+                copy: 'Private bay on Lake Inari unfrozen — canoe at the dock, smoke from the wood-fired sauna.',
+                img: '/images/summer-villa-lakeside.webp',
+              },
+              {
+                slug: 'fell',
+                title: 'Designer chalet on the fell',
+                copy: 'Cotton-grass and wildflowers replace the ski slope — same panoramic glass facade.',
+                img: '/images/summer-villa-fell.webp',
+              },
+              {
+                slug: 'forest',
+                title: 'Modern forest villa',
+                copy: 'Cantilevered timber building deep in green boreal pine, golden midnight-sun warmth on the facade.',
+                img: '/images/summer-villa-forest.webp',
+              },
+            ].map((c) => (
+              <article key={c.slug} className="card-onyx flex flex-col h-full overflow-hidden">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-[color:var(--color-deep-night)]">
+                  <img
+                    src={c.img}
+                    alt={c.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col p-7">
+                  <h3 className="font-heading text-xl text-[color:var(--color-snow)] leading-tight mb-3">
+                    {c.title}
+                  </h3>
+                  <p className="text-sm text-[color:var(--color-bone)]/75 font-body leading-relaxed mb-5 flex-1">
+                    {c.copy}
+                  </p>
+                  <Link
+                    to="/concierge"
+                    className="inline-flex items-center gap-2 self-start border border-[#FFC95A]/60 text-[#FFC95A] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[#FFC95A]/10 transition-colors"
+                  >
+                    Inquire for June dates
+                    <ArrowUpRight size={13} />
+                  </Link>
+                </div>
+              </article>
             ))}
           </div>
         </div>

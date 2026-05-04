@@ -46,6 +46,8 @@ export default function Experiences() {
         eyebrow="Bespoke Experiences"
         title="The day, before the night under the glass."
         lede="Eight private experiences we pair with the villas — each one booked against the weather window, the daylight, and the villa check-in time."
+        imageUrl="/images/hero-experiences.webp"
+        imageAlt="A wood-fired sauna interior with low warm light"
       />
 
       {SECTIONS.map((s, sectionIdx) => {

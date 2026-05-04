@@ -25,6 +25,8 @@ export default function Suites() {
         eyebrow="Designer Suites"
         title="When you don't need a villa — but you do need the glass roof."
         lede="A short list of one-bedroom suites and aurora cabins where the architecture itself is the experience. Lower headcount, same panoramic ceiling."
+        imageUrl="/images/hero-suites.webp"
+        imageAlt="A single glass-walled designer suite at twilight, low king bed under a panoramic ceiling"
       />
 
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">

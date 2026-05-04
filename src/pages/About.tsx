@@ -17,7 +17,9 @@ export default function About() {
         compact
         eyebrow="About"
         title="A short list, kept short on purpose."
-        lede="LaplandLuxuryVillas is a private collection run by Lapeso Oy from Finnish Lapland — the same team behind the LaplandVibes ecosystem of Lapland travel sites. This page explains why we exist and what we don't do."
+        lede="A private collection of Lapland's finest villas and suites — anonymous concierge, direct rates where they exist, no platform in between."
+        imageUrl="/images/hero-about.webp"
+        imageAlt="Hand-stacked kelo-pine wall corner of a luxury Lapland villa at blue hour"
       />
 
       <article className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
@@ -58,19 +60,16 @@ export default function About() {
 
           <Section title="Who we are">
             <p>
-              Lapeso Oy is a Finnish company based in Lapland. The same team
-              runs <a href="https://laplandvibes.com" className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">laplandvibes.com</a> (the editorial hub),
-              {' '}<a href="https://laplandstays.com" className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">laplandstays.com</a> (broader accommodation),
-              {' '}<a href="https://laplandhuskysafaris.com" className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">laplandhuskysafaris.com</a> and twenty-odd other Lapland-focussed sites.
+              A small Finland-based team that already runs the
+              {' '}<a href="https://laplandvibes.com" className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">LaplandVibes</a> ecosystem of Lapland travel sites — the editorial hub plus twenty-odd category spokes. This site is the part of that work where we publish the villas we'd send our own friends to.
             </p>
             <p>
-              Concierge replies on this site come from one inbox monitored by
-              the principals — there is no chatbot, no junior account
-              executive, and we don't outsource the planning work. Inquiries
-              outside the bar (group price points the collection doesn't fit,
-              destinations we don't cover) get an honest "we wouldn't be the
-              right fit, here's who is" reply rather than a polite generic
-              one.
+              Concierge replies come from one inbox, monitored by the
+              principals — no chatbot, no junior account executive, no
+              outsourced planning. Inquiries outside our bar (group price
+              points the collection doesn't fit, destinations we don't cover)
+              get an honest "we wouldn't be the right fit, here's who is"
+              reply rather than a polite generic one.
             </p>
           </Section>
 

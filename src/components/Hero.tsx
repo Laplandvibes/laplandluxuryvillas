@@ -73,9 +73,10 @@ export default function Hero({
             }}
           />
         )}
-        {/* Editorial wash — keeps text legible without flattening the photo */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/55 to-[color:var(--color-deep-night)]/95" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_50%,transparent_0%,rgba(15,23,42,0.5)_100%)]" />
+        {/* Editorial wash — light enough to let the photo carry the mood */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--color-deep-night)]/55 via-[color:var(--color-deep-night)]/15 to-[color:var(--color-deep-night)]/80" />
+        {/* Localised reading scrim only behind the headline block — preserves photo elsewhere */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_30%_at_50%_55%,rgba(10,15,28,0.45)_0%,transparent_75%)]" />
       </div>
 
       {/* Content */}

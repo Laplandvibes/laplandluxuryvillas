@@ -22,6 +22,8 @@ export default function Destinations() {
         eyebrow="Destinations"
         title="Five places, each with a clear reason to be there."
         lede="Lapland is not interchangeable. The aurora frequency, arrival logistics and accommodation density change meaningfully every 50 km north of the Arctic Circle."
+        imageUrl="/images/hero-destinations.webp"
+        imageAlt="Wide cinematic Lapland twilight landscape with low fells and a frozen lake"
       />
 
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">

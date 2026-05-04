@@ -19,7 +19,7 @@ export default function NewsletterPopup() {
   return (
     <SharedNewsletterPopup
       siteId="laplandluxuryvillas"
-      brandWord="LUXURY VILLAS"
+      brandWord="VILLAS"
       endpoint="/api/newsletter"
       onSubscribed={(source) => trackNewsletterSignup(source)}
     />

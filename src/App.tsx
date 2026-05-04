@@ -32,7 +32,7 @@ const FOOTER_PILLARS = [
 ]
 
 const FOOTER_EDITORIAL_NOTE =
-  'A private collection curated by Lapeso Oy in Finnish Lapland — last reviewed May 2026. Some bookings earn an affiliate commission, which never shapes which villas we recommend. The reserve and concierge-only properties pay nothing.'
+  'A private collection curated in Finnish Lapland — last reviewed May 2026. Some bookings earn an affiliate commission, which never shapes which villas we recommend. The reserve and concierge-only properties pay nothing.'
 
 const FOOTER_EXTRA_LEGAL = [
   { to: '/about', label: 'About' },
