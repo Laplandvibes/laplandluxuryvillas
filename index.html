@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Primary SEO -->
+    <title>Lapland Luxury Villas: Private Aurora Residences &amp; Suites</title>
+    <meta name="description" content="A private collection of Lapland's finest villas and suites — glass-roof retreats, lakeside log estates, designer aurora residences. Anonymous concierge, direct rates on request." />
+    <meta name="keywords" content="lapland luxury villas, private villa lapland, glass roof villa finland, aurora villa, finnish lapland luxury cabin, private chalet lapland, premium lapland accommodation, anonymous travel concierge lapland" />
+    <meta name="author" content="LaplandLuxuryVillas — curated by Lapeso Oy in Finnish Lapland" />
+    <link rel="canonical" href="https://laplandluxuryvillas.com/" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LaplandLuxuryVillas" />
+    <meta property="og:title" content="Lapland Luxury Villas: Private Aurora Residences &amp; Suites" />
+    <meta property="og:description" content="A private collection of Lapland's finest villas and suites. Glass-roof retreats, lakeside log estates, anonymous concierge." />
+    <meta property="og:url" content="https://laplandluxuryvillas.com/" />
+    <meta property="og:image" content="https://laplandluxuryvillas.com/og-default.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@laplandvibes" />
+    <meta name="twitter:title" content="Lapland Luxury Villas: Private Aurora Residences &amp; Suites" />
+    <meta name="twitter:description" content="Curated villas and suites across Finnish Lapland. Anonymous concierge, direct rates on request." />
+    <meta name="twitter:image" content="https://laplandluxuryvillas.com/og-default.webp" />
+
+    <!-- Google Fonts — Cormorant Garamond (display) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Hero LCP preload — homepage hero background image -->
+    <link rel="preload" as="image" href="/images/hero-villa.webp" fetchpriority="high" />
+
+    <!-- Affiliate redirect warm-up — TLS handshakes during idle time -->
+    <link rel="preconnect" href="https://go.laplandvibes.com" crossorigin />
+    <link rel="preconnect" href="https://fi.hotels.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.economybookings.com" />
+    <link rel="dns-prefetch" href="https://www.getyourguide.com" />
+    <link rel="dns-prefetch" href="https://www.dpbolvw.net" />
+
+    <!-- Sitemap hint -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- GetYourGuide Integration Analyzer (per-page placement analytics, partner VRMKD7N) -->
+    <script async defer
+      src="https://widget.getyourguide.com/dist/pa.umd.production.min.js"
+      data-gyg-partner-id="VRMKD7N"></script>
+
+    <!-- Google Analytics 4 — placeholder. Replace G-XXXXXXXXXX once Vesa provisions the property,
+         then mirror the same id in src/lib/analytics.ts. Consent mode v2 default-denied until
+         the rising-flagpole CookieBanner is accepted. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500,
+      });
+      if (localStorage.getItem('laplandluxuryvillas_cookie_consent') === 'accepted') {
+        gtag('consent', 'update', {
+          analytics_storage: 'granted',
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+      }
+      gtag('config', 'G-XXXXXXXXXX', {
+        anonymize_ip: true,
+        linker: {
+          domains: [
+            'laplandvibes.com',
+            'laplandstays.com',
+            'laplandhoteldeals.com',
+            'laplandnature.com',
+            'laplandvisit.com',
+            'laplandwellness.com',
+            'laplandchristmas.com',
+            'laplandtransport.com',
+            'laplandcarrental.com',
+            'laplandhuskysafaris.com',
+            'laplandskiresorts.com',
+            'laplanddining.com',
+            'laplandfood.com',
+            'laplandbars.com',
+            'laplandnightlife.com',
+            'laplandactivities.online',
+            'laplandsnowmobile.com'
+          ]
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

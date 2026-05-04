@@ -1,0 +1,31 @@
+# LaplandLuxuryVillas — robots.txt
+# Per LV ecosystem standard: explicitly allow the seven major AI / research
+# crawlers in addition to baseline search engines. Cloudflare zone-level
+# Managed Robots must be disabled (see fix_cf_managed_robots_path memory).
+
+User-agent: *
+Allow: /
+
+# AI and research crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://laplandluxuryvillas.com/sitemap.xml
