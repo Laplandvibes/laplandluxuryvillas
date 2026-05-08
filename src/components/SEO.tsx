@@ -1,91 +1,99 @@
-import { useEffect } from 'react'
+// Generated SEO component — created by fix-seo-ecosystem.mjs.
+// laplandluxuryvillas.com + LaplandLuxuryVillas are placeholder strings replaced by the script.
+// React 19 native head-tag SEO helper.
+// See memory: bug_static_canonical_index_html.md
 
-const SITE_URL = 'https://laplandluxuryvillas.com'
-const DEFAULT_OG = 'https://laplandluxuryvillas.com/og-default.webp'
+import type { ReactNode } from 'react';
 
 interface SEOProps {
-  title: string
-  description: string
-  canonicalPath: string
-  ogImage?: string
-  keywords?: string[]
-  jsonLd?: object | object[]
+  title: string;
+  description: string;
+  /** Path-only canonical (e.g. "/operators"). Defaults to "/" for home. */
+  path?: string;
+  /** Path-only canonical, alternate name. */
+  canonical?: string;
+  /** Old-API alias for `path`. */
+  canonicalPath?: string;
+  schema?: object;
+  /** Old-API alias for `schema`. */
+  jsonLd?: object;
+  /** Old-API: meta keywords (mostly ignored by modern Google but rendered for parity). */
+  keywords?: string[];
+  breadcrumbs?: Array<{ name: string; url: string }>;
+  noindex?: boolean;
 }
 
-function upsertMeta(selector: string, attr: 'name' | 'property', key: string, content: string) {
-  let el = document.head.querySelector<HTMLMetaElement>(selector)
-  if (!el) {
-    el = document.createElement('meta')
-    el.setAttribute(attr, key)
-    document.head.appendChild(el)
-  }
-  el.setAttribute('content', content)
-}
-
-function upsertLink(rel: string, href: string) {
-  let el = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`)
-  if (!el) {
-    el = document.createElement('link')
-    el.setAttribute('rel', rel)
-    document.head.appendChild(el)
-  }
-  el.setAttribute('href', href)
-}
+const BASE = 'https://laplandluxuryvillas.com';
+const SITE_NAME = 'LaplandLuxuryVillas';
 
 export default function SEO({
   title,
   description,
+  path,
+  canonical,
   canonicalPath,
-  ogImage = DEFAULT_OG,
-  keywords,
+  schema,
   jsonLd,
-}: SEOProps) {
-  useEffect(() => {
-    document.title = title
+  keywords,
+  breadcrumbs,
+  noindex,
+}: SEOProps): ReactNode {
+  const fullTitle = title.includes('|') ? title : `${title} | ${SITE_NAME}`;
+  const p = path ?? canonical ?? canonicalPath ?? '/';
+  const url = `${BASE}${p}`;
+  const ld = schema ?? jsonLd;
 
-    const canonical = `${SITE_URL}${canonicalPath}`
+  const breadcrumbSchema =
+    breadcrumbs && breadcrumbs.length > 0
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: breadcrumbs.map((b, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: b.name,
+            item: `${BASE}${b.url}`,
+          })),
+        }
+      : null;
 
-    upsertMeta('meta[name="description"]', 'name', 'description', description)
-    if (keywords?.length) {
-      upsertMeta('meta[name="keywords"]', 'name', 'keywords', keywords.join(', '))
-    }
-
-    upsertLink('canonical', canonical)
-
-    // Open Graph
-    upsertMeta('meta[property="og:type"]', 'property', 'og:type', 'website')
-    upsertMeta('meta[property="og:site_name"]', 'property', 'og:site_name', 'LaplandLuxuryVillas')
-    upsertMeta('meta[property="og:title"]', 'property', 'og:title', title)
-    upsertMeta('meta[property="og:description"]', 'property', 'og:description', description)
-    upsertMeta('meta[property="og:url"]', 'property', 'og:url', canonical)
-    upsertMeta('meta[property="og:image"]', 'property', 'og:image', ogImage)
-    upsertMeta('meta[property="og:image:width"]', 'property', 'og:image:width', '1200')
-    upsertMeta('meta[property="og:image:height"]', 'property', 'og:image:height', '630')
-    upsertMeta('meta[property="og:locale"]', 'property', 'og:locale', 'en_US')
-
-    // Twitter Card
-    upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', 'summary_large_image')
-    upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', title)
-    upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', description)
-    upsertMeta('meta[name="twitter:image"]', 'name', 'twitter:image', ogImage)
-    upsertMeta('meta[name="twitter:site"]', 'name', 'twitter:site', '@laplandvibes')
-
-    // JSON-LD
-    const existing = document.querySelectorAll('script[data-seo-jsonld]')
-    existing.forEach((el) => el.remove())
-    if (jsonLd) {
-      const data = Array.isArray(jsonLd) ? jsonLd : [jsonLd]
-      data.forEach((obj) => {
-        const s = document.createElement('script')
-        s.type = 'application/ld+json'
-        s.setAttribute('data-seo-jsonld', 'true')
-        s.textContent = JSON.stringify(obj)
-        document.head.appendChild(s)
-      })
-    }
-  }, [title, description, canonicalPath, ogImage, keywords, jsonLd])
-
-  return null
+  return (
+    <>
+      <title>{fullTitle}</title>
+      <link rel="canonical" href={url} />
+      <meta name="description" content={description} />
+      <meta
+        name="robots"
+        content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'}
+      />
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={url} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={SITE_NAME} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+      )}
+      {ld && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
+        />
+      )}
+      {keywords && keywords.length > 0 && (
+        <meta name="keywords" content={keywords.join(', ')} />
+      )}
+    </>
+  );
 }
 
-export { SITE_URL, DEFAULT_OG }
+// Backward-compat shim — keeps old useSEO imports compiling during migration.
+export function useSEO(_: SEOProps): void {
+  /* no-op: pages should migrate to <SEO /> */
+}
