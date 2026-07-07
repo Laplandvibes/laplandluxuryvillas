@@ -383,7 +383,7 @@ const en: SiteCopy = {
     villas: {
       eyebrow: 'The Collection',
       title: 'Nine villas. Five destinations. One private inquiry.',
-      lede: 'We have stayed in or visited every property below in the last twelve months. Filter by the kind of building you have in mind, or send a private inquiry and we will shortlist around your dates.',
+      lede: 'Every property below is vetted against the operator\'s own published information and recent guest reviews. Filter by the kind of building you have in mind, or send a private inquiry and we will shortlist around your dates.',
     },
     suites: {
       eyebrow: 'Designer Suites',
@@ -431,7 +431,7 @@ const en: SiteCopy = {
     signature: {
       eyebrow: 'Signature villas',
       h2: 'Four anchors of the Lapland collection.',
-      lede: 'The four we recommend most. We have stayed in or visited each one in the last twelve months, so every detail below is something we have checked ourselves, not lifted from a brochure.',
+      lede: 'The four we recommend most. Every detail below is checked against the operator\'s published information and recent guest reviews, not lifted from a brochure.',
     },
     destinations: {
       eyebrow: 'Destinations',
@@ -776,7 +776,7 @@ const ja: SiteCopy = {
     villas: {
       eyebrow: 'コレクション',
       title: '9棟のヴィラ、5つの目的地、1つのプライベートお問い合わせ。',
-      lede: '以下のヴィラはすべて、過去12ヶ月以内に実際に視察した物件です。ご希望の建築タイプで絞り込んでいただくか、プライベートお問い合わせをお送りいただければ、ご希望の日程に合わせてショートリストをご用意します。',
+      lede: '以下のヴィラはすべて、運営者の公式情報と最新の宿泊者レビューをもとに検証しています。ご希望の建築タイプで絞り込んでいただくか、プライベートお問い合わせをお送りいただければ、ご希望の日程に合わせてショートリストをご用意します。',
     },
     suites: {
       eyebrow: 'デザイナーズ・スイート',
@@ -824,7 +824,7 @@ const ja: SiteCopy = {
     signature: {
       eyebrow: 'シグネチャーヴィラ',
       h2: 'ラップランド・コレクションの中核となる4棟。',
-      lede: '最も頻繁にお勧めしている物件です。すべて過去12ヶ月以内に実際に視察しています,以下の詳細はすべて確認済みで、パンフレットからの転載ではありません。',
+      lede: '最も頻繁にお勧めしている物件です。以下の詳細はすべて運営者の公式情報と最新レビューで確認済みで、パンフレットからの転載ではありません。',
     },
     destinations: {
       eyebrow: '目的地',
@@ -1173,7 +1173,7 @@ const fi: SiteCopy = {
     villas: {
       eyebrow: 'Kokoelma',
       title: 'Yhdeksän huvilaa. Viisi kohdetta. Yksi yksityinen tiedustelu.',
-      lede: 'Olemme yöpyneet tai käyneet jokaisessa alla olevassa kohteessa viimeisen vuoden aikana. Suodata sen mukaan, millaista taloa mietit, tai lähetä yksityinen tiedustelu niin kokoamme lyhytlistan päivämääriesi ympärille.',
+      lede: 'Jokainen alla oleva kohde on käyty läpi kohteen omien julkaistujen tietojen ja tuoreiden vieraspalautteiden pohjalta. Suodata sen mukaan, millaista taloa mietit, tai lähetä yksityinen tiedustelu, niin kokoamme lyhytlistan päivämääriesi ympärille.',
     },
     suites: {
       eyebrow: 'Designer-sviitit',
@@ -1221,7 +1221,7 @@ const fi: SiteCopy = {
     signature: {
       eyebrow: 'Signature-huvilat',
       h2: 'Neljä Lapin kokoelman ankkuria.',
-      lede: 'Ne neljä, joita suosittelemme useimmin. Olemme yöpyneet tai käyneet jokaisessa viimeisen vuoden aikana, joten jokainen alla oleva yksityiskohta on itse tarkistettu, ei esitteestä napattu.',
+      lede: 'Ne neljä, joita suosittelemme useimmin. Jokainen yksityiskohta on tarkistettu kohteen omista julkaistuista tiedoista ja tuoreista vieraspalautteista, ei napattu esitteestä.',
     },
     destinations: {
       eyebrow: 'Kohteet',
@@ -1564,7 +1564,7 @@ const de: SiteCopy = {
     villas: {
       eyebrow: 'Die Kollektion',
       title: 'Neun Villen. Fünf Reiseziele. Eine private Anfrage.',
-      lede: 'Jedes der unten aufgeführten Anwesen wurde in den letzten zwölf Monaten besucht. Filtern Sie nach Bauart, oder senden Sie eine private Anfrage und Sie erhalten eine Auswahl für Ihre Termine.',
+      lede: 'Jedes der unten aufgeführten Anwesen ist anhand der veröffentlichten Angaben des Betreibers und aktueller Gästebewertungen geprüft. Filtern Sie nach Bauart, oder senden Sie eine private Anfrage und Sie erhalten eine Auswahl für Ihre Termine.',
     },
     suites: {
       eyebrow: 'Designer-Suiten',
@@ -1612,7 +1612,7 @@ const de: SiteCopy = {
     signature: {
       eyebrow: 'Signature-Villen',
       h2: 'Vier Anker der Lappland-Kollektion.',
-      lede: 'Die am häufigsten empfohlenen Anwesen. Jedes wurde in den letzten zwölf Monaten besucht, jedes Detail unten ist verifiziert, nicht aus einer Broschüre übernommen.',
+      lede: 'Die am häufigsten empfohlenen Anwesen. Jedes Detail unten ist anhand der Betreiberangaben und aktueller Gästebewertungen verifiziert, nicht aus einer Broschüre übernommen.',
     },
     destinations: {
       eyebrow: 'Reiseziele',
@@ -1958,7 +1958,7 @@ const es: SiteCopy = {
     villas: {
       eyebrow: 'La colección',
       title: 'Nueve villas. Cinco destinos. Una consulta privada.',
-      lede: 'Cada propiedad listada a continuación ha sido visitada en los últimos doce meses. Filtre por el tipo de edificio que tiene en mente, o envíe una consulta privada y elaboraremos una preselección según sus fechas.',
+      lede: 'Cada propiedad listada a continuación está verificada con la información publicada por el operador y reseñas recientes de huéspedes. Filtre por el tipo de edificio que tiene en mente, o envíe una consulta privada y elaboraremos una preselección según sus fechas.',
     },
     suites: {
       eyebrow: 'Suites de autor',
@@ -2006,7 +2006,7 @@ const es: SiteCopy = {
     signature: {
       eyebrow: 'Villas signature',
       h2: 'Cuatro pilares de la colección de Laponia.',
-      lede: 'Las propiedades que más recomendamos. Cada una ha sido visitada en los últimos doce meses, cada detalle que sigue está verificado, no copiado de un folleto.',
+      lede: 'Las propiedades que más recomendamos. Cada detalle que sigue está verificado con la información del operador y reseñas recientes de huéspedes, no copiado de un folleto.',
     },
     destinations: {
       eyebrow: 'Destinos',
@@ -2349,7 +2349,7 @@ const ptBR: SiteCopy = {
     villas: {
       eyebrow: 'A coleção',
       title: 'Nove vilas. Cinco destinos. Uma consulta privada.',
-      lede: 'Cada propriedade listada abaixo foi visitada nos últimos doze meses. Filtre pelo tipo de edifício que tem em mente, ou envie uma consulta privada e faremos uma pré-seleção conforme suas datas.',
+      lede: 'Cada propriedade listada abaixo é verificada com as informações publicadas pelo operador e avaliações recentes de hóspedes. Filtre pelo tipo de edifício que tem em mente, ou envie uma consulta privada e faremos uma pré-seleção conforme suas datas.',
     },
     suites: {
       eyebrow: 'Suítes de autor',
@@ -2397,7 +2397,7 @@ const ptBR: SiteCopy = {
     signature: {
       eyebrow: 'Vilas signature',
       h2: 'Quatro pilares da coleção da Lapônia.',
-      lede: 'As propriedades que mais recomendamos. Cada uma foi visitada nos últimos doze meses, cada detalhe abaixo é verificado, não copiado de um folheto.',
+      lede: 'As propriedades que mais recomendamos. Cada detalhe abaixo é verificado com as informações do operador e avaliações recentes, não copiado de um folheto.',
     },
     destinations: {
       eyebrow: 'Destinos',
@@ -2740,7 +2740,7 @@ const zhCN: SiteCopy = {
     villas: {
       eyebrow: '精选系列',
       title: '九座别墅。五个目的地。一次私人咨询。',
-      lede: '以下每处物业均在过去十二个月内实地考察。按您心目中的建筑类型筛选,或发送私人咨询,我们会依您的日期为您拟定推荐名单。',
+      lede: '以下每处物业的信息均依据运营方公布的资料及近期住客评价核实。按您心目中的建筑类型筛选，或发送私人咨询，我们会依您的日期为您拟定推荐名单。',
     },
     suites: {
       eyebrow: '设计师套房',
@@ -2788,7 +2788,7 @@ const zhCN: SiteCopy = {
     signature: {
       eyebrow: '臻选别墅',
       h2: '拉普兰精选的四大基石。',
-      lede: '我们最常推荐的物业。每一座都在过去十二个月内实地考察,以下每处细节皆经核实,并非照搬宣传册。',
+      lede: '我们最常推荐的物业。以下每处细节均依据运营方资料及近期住客评价核实，并非照搬宣传册。',
     },
     destinations: {
       eyebrow: '目的地',
@@ -3127,7 +3127,7 @@ const ko: SiteCopy = {
     villas: {
       eyebrow: '컬렉션',
       title: '빌라 9채. 여행지 5곳. 한 번의 비공개 문의.',
-      lede: '아래 나열된 모든 물건은 지난 12개월 이내에 직접 방문했습니다. 원하시는 건물 유형으로 필터링하시거나, 비공개 문의를 보내시면 날짜에 맞춰 추천 목록을 만들어 드립니다.',
+      lede: '아래의 모든 숙소는 운영사가 공개한 정보와 최근 투숙객 후기를 바탕으로 검증했습니다. 원하시는 건물 유형으로 필터링하시거나, 비공개 문의를 보내시면 날짜에 맞춰 추천 목록을 만들어 드립니다.',
     },
     suites: {
       eyebrow: '디자이너 스위트',
@@ -3174,7 +3174,7 @@ const ko: SiteCopy = {
     signature: {
       eyebrow: '시그니처 빌라',
       h2: '라플란드 컬렉션을 떠받치는 네 곳.',
-      lede: '가장 자주 추천하는 물건들입니다. 모두 지난 12개월 이내에 직접 방문했으며, 아래의 모든 디테일은 브로슈어에서 옮긴 것이 아니라 직접 확인한 것입니다.',
+      lede: '가장 자주 추천하는 숙소들입니다. 아래의 모든 디테일은 운영사 공식 정보와 최근 후기로 확인한 것이며, 브로슈어에서 옮긴 것이 아닙니다.',
     },
     destinations: {
       eyebrow: '여행지',
@@ -3510,7 +3510,7 @@ const fr: SiteCopy = {
     villas: {
       eyebrow: 'La collection',
       title: 'Neuf villas. Cinq destinations. Une demande privée.',
-      lede: 'Chaque propriété listée ci-dessous a été visitée au cours des douze derniers mois. Filtrez par type d’édifice que vous avez en tête, ou envoyez une demande privée et nous composerons une présélection autour de vos dates.',
+      lede: 'Chaque propriété listée ci-dessous est vérifiée à partir des informations publiées par l\'exploitant et d\'avis récents de voyageurs. Filtrez par type d\'édifice que vous avez en tête, ou envoyez une demande privée et nous composerons une présélection autour de vos dates.',
     },
     suites: {
       eyebrow: 'Suites design',
@@ -3557,7 +3557,7 @@ const fr: SiteCopy = {
     signature: {
       eyebrow: 'Villas signature',
       h2: 'Quatre piliers de la collection lapone.',
-      lede: 'Les propriétés que nous recommandons le plus souvent. Chacune a été visitée au cours des douze derniers mois, chaque détail ci-dessous est vérifié, jamais recopié d’une brochure.',
+      lede: 'Les propriétés que nous recommandons le plus souvent. Chaque détail ci-dessous est vérifié à partir des informations de l\'exploitant et d\'avis récents, jamais recopié d\'une brochure.',
     },
     destinations: {
       eyebrow: 'Destinations',
@@ -3893,7 +3893,7 @@ const it: SiteCopy = {
     villas: {
       eyebrow: 'La collezione',
       title: 'Nove ville. Cinque destinazioni. Una richiesta privata.',
-      lede: 'Ogni immobile elencato sotto è stato visitato negli ultimi dodici mesi. Filtra per la tipologia di edificio che hai in mente, oppure invia una richiesta privata e costruiremo una short list intorno alle tue date.',
+      lede: 'Ogni immobile elencato sotto è verificato sulla base delle informazioni pubblicate dal gestore e delle recensioni recenti degli ospiti. Filtra per la tipologia di edificio che hai in mente, oppure invia una richiesta privata e costruiremo una short list intorno alle tue date.',
     },
     suites: {
       eyebrow: 'Suite d’autore',
@@ -3940,7 +3940,7 @@ const it: SiteCopy = {
     signature: {
       eyebrow: 'Ville signature',
       h2: 'Quattro pilastri della collezione lappone.',
-      lede: 'Gli immobili che consigliamo più spesso. Ciascuno è stato visitato negli ultimi dodici mesi, ogni dettaglio qui sotto è verificato, non copiato da una brochure.',
+      lede: 'Gli immobili che consigliamo più spesso. Ogni dettaglio qui sotto è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.',
     },
     destinations: {
       eyebrow: 'Destinazioni',
@@ -4277,7 +4277,7 @@ const nl: SiteCopy = {
     villas: {
       eyebrow: 'De collectie',
       title: 'Negen villa\'s. Vijf bestemmingen. Eén privé-aanvraag.',
-      lede: 'Elk pand hieronder is in de afgelopen twaalf maanden bezocht. Filter op het type gebouw dat u voor ogen heeft, of stuur een privé-aanvraag en wij stellen een shortlist samen rond uw data.',
+      lede: 'Elk pand hieronder is geverifieerd aan de hand van de gepubliceerde informatie van de exploitant en recente gastbeoordelingen. Filter op het type gebouw dat u voor ogen heeft, of stuur een privé-aanvraag en wij stellen een shortlist samen rond uw data.',
     },
     suites: {
       eyebrow: 'Designersuites',
@@ -4325,7 +4325,7 @@ const nl: SiteCopy = {
     signature: {
       eyebrow: 'Signature-villa\'s',
       h2: 'Vier ankers van de Lapland-collectie.',
-      lede: 'De panden die wij het vaakst aanbevelen. Elk is in de afgelopen twaalf maanden bezocht, elk detail hieronder is geverifieerd, niet overgenomen uit een brochure.',
+      lede: 'De panden die wij het vaakst aanbevelen. Elk detail hieronder is geverifieerd met de informatie van de exploitant en recente beoordelingen, niet overgenomen uit een brochure.',
     },
     destinations: {
       eyebrow: 'Bestemmingen',
@@ -4621,7 +4621,7 @@ ko.home = {
       { title: '가능한 곳에서는 직접 요금.', body: '공개 리스팅은 검증된 요금으로 연결됩니다. 비공개로 보유되는 빌라, 공개 가용성이 없는 리저브 빌라 포함, 는 직접 견적됩니다. 답변에서 어느 쪽인지 알려드립니다.' },
     ],
   },
-  signature: { eyebrow: '시그니처 빌라', h2: '라플란드 컬렉션의 네 가지 앵커.', lede: '가장 자주 추천되는 빌라들. 각각 지난 12개월 이내에 직접 방문했습니다, 아래 모든 디테일은 브로셔에서 옮긴 것이 아닌 검증된 정보입니다.' },
+  signature: { eyebrow: '시그니처 빌라', h2: '라플란드 컬렉션의 네 가지 앵커.', lede: '가장 자주 추천되는 빌라들. 아래 모든 디테일은 운영사 공식 정보와 최근 후기로 검증된 정보입니다.' },
   destinations: { eyebrow: '여행지', h2: '다섯 곳, 각각 분명한 이유.' },
 }
 Object.assign(ko.villasPage, {
@@ -4792,7 +4792,7 @@ fr.home = {
       { title: 'Planification anonyme.', body: 'Une seule boîte de réception privée, aucun profil public, aucun calendrier partagé avec des tiers. Envoyez dates, effectif et préférences, recevez une présélection en un jour ouvré.' },
       { title: 'Tarifs directs, là où ils existent.', body: 'Les annonces publiques renvoient vers des tarifs vérifiés. Les propriétés détenues en privé, y compris les villas de réserve sans disponibilité publique, sont cotées directement. La réponse vous dit laquelle est laquelle.' },
     ] },
-  signature: { eyebrow: 'Villas signature', h2: 'Quatre piliers de la collection lapone.', lede: 'Les propriétés les plus souvent recommandées. Chacune a été visitée dans les douze derniers mois, chaque détail ci-dessous est vérifié, jamais copié d\'une brochure.' },
+  signature: { eyebrow: 'Villas signature', h2: 'Quatre piliers de la collection lapone.', lede: 'Les propriétés les plus souvent recommandées. Chaque détail ci-dessous est vérifié à partir des informations de l\'exploitant et d\'avis récents, jamais copié d\'une brochure.' },
   destinations: { eyebrow: 'Destinations', h2: 'Cinq lieux, chacun avec une raison claire.' },
 }
 Object.assign(fr.villasPage, {
@@ -4958,7 +4958,7 @@ it.home = {
       { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
       { title: 'Tariffe dirette, dove esistono.', body: 'Le inserzioni pubbliche rimandano a tariffe verificate. Le proprietà tenute privatamente, incluse le ville di riserva senza disponibilità pubblica, sono quotate direttamente. La risposta Le dice quale è quale.' },
     ] },
-  signature: { eyebrow: 'Ville signature', h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ciascuna è stata visitata negli ultimi dodici mesi, ogni dettaglio è verificato, non copiato da una brochure.' },
+  signature: { eyebrow: 'Ville signature', h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
   destinations: { eyebrow: 'Destinazioni', h2: 'Cinque luoghi, ognuno con una ragione precisa.' },
 }
 Object.assign(it.villasPage, {
