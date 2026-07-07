@@ -34,7 +34,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Privéterras met hot tub + buitensauna',
         'Interieur van Studio Puisto, Finse designiconen overal',
         'Vloerverwarming, verduisterende gordijnen voor slapen overdag',
-        'Restaurant Rakas op het terrein (chef-kok Kari Aihinen)',
+        'Restaurant Rakas op het terrein',
         'Vijf minuten naar Santa Claus Village',
       ],
     },
@@ -240,7 +240,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-chef-arctic-tasting': {
       hook: 'Een Fins-Samisch proefmenu van negen gangen, in uw villakeuken bereid door een werkende Laplandse chef-kok.',
       copy: [
-        'Een werkende chef-kok uit een van de serieuze keukens van Lapland, Nili, Aanaar, Northern Lights Ranch, komt voor een avond naar uw villa. Het menu wordt opgebouwd rond wat die week echt in het seizoen is: koudwater-saibling, kruipbraam, gerookt rendier, verse bospaddenstoelen, duindoorn, jeneverbes.',
+        'Een werkende chef-kok uit een van de serieuze keukens van Lapland komt voor een avond naar uw villa. Het menu wordt opgebouwd rond wat die week echt in het seizoen is: koudwater-saibling, kruipbraam, gerookt rendier, verse bospaddenstoelen, duindoorn, jeneverbes.',
         'Inclusief een op het menu afgestemde wijnbegeleiding, ingrediënten, voorbereiding, bediening en opruimen. Maximaal tien gasten. Vegetarische, glutenvrije en schaaldiervrije menu\'s op aanvraag, met minstens 72 uur vooraf.',
       ],
       available: 'Elke villa uit de collectie, het hele jaar door',

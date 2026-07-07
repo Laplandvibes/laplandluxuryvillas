@@ -34,7 +34,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Terrazza privata con vasca idromassaggio + sauna esterna',
         'Interni Studio Puisto, icone del design finlandese ovunque',
         'Riscaldamento a pavimento, tende oscuranti per il sonno diurno',
-        'Ristorante Rakas nella struttura (chef Kari Aihinen)',
+        'Ristorante Rakas nella struttura',
         'Cinque minuti dal Villaggio di Babbo Natale',
       ],
     },
@@ -240,7 +240,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-chef-arctic-tasting': {
       hook: 'Un menu degustazione finlandese-sami di nove portate cucinato nella cucina della vostra villa da uno chef in attivita della Lapponia.',
       copy: [
-        'Uno chef in attivita di una delle cucine serie della Lapponia, Nili, Aanaar, Northern Lights Ranch, viene nella vostra villa per una serata. Il menu si costruisce attorno a cio che e davvero di stagione quella settimana: salmerino artico d’acqua fredda, camemoro, renna affumicata, funghi di bosco freschi, olivello spinoso, ginepro.',
+        'Uno chef in attivita di una delle cucine serie della Lapponia viene nella vostra villa per una serata. Il menu si costruisce attorno a cio che e davvero di stagione quella settimana: salmerino artico d’acqua fredda, camemoro, renna affumicata, funghi di bosco freschi, olivello spinoso, ginepro.',
         'Comprende un abbinamento di vini curato per il menu, gli ingredienti, la preparazione, il servizio e la pulizia. Massimo dieci ospiti. Menu vegetariano, senza glutine e senza crostacei su richiesta, con almeno 72 ore di preavviso.',
       ],
       available: 'Qualsiasi villa della collezione, tutto l’anno',

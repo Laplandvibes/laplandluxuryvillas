@@ -34,7 +34,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '私人露台配热浴桶 + 户外桑拿',
         'Studio Puisto 室内设计、通篇芬兰设计经典',
         '地暖、遮光窗帘以利白昼安睡',
-        '物业内 Rakas 餐厅（主厨 Kari Aihinen）',
+        '物业内 Rakas 餐厅',
         '距圣诞老人村（Santa Claus Village）五分钟',
       ],
     },
@@ -240,7 +240,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-chef-arctic-tasting': {
       hook: '一份九道菜的芬兰-萨米品鉴菜单，由一位仍在掌勺的拉普兰主厨在你的别墅厨房中烹制。',
       copy: [
-        '一位仍在拉普兰正经厨房掌勺的主厨、Nili、Aanaar、Northern Lights Ranch、会到你的别墅共度一晚。菜单围绕当周真正应季的食材构建：冷水北极红点鲑、云莓、烟熏驯鹿、新鲜林间蘑菇、沙棘、杜松。',
+        '一位仍在拉普兰正经厨房掌勺的主厨会到你的别墅共度一晚。菜单围绕当周真正应季的食材构建：冷水北极红点鲑、云莓、烟熏驯鹿、新鲜林间蘑菇、沙棘、杜松。',
         '含为菜单搭配的佐餐酒、食材、备料、上菜与清理。至多十位宾客。素食、无麸质与无贝类菜单可应需安排，须至少提前 72 小时告知。',
       ],
       available: '本系列任意别墅、全年',

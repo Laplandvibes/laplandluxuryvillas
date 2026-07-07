@@ -34,7 +34,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Yksityinen terassi paljulla + ulkosauna',
         'Studio Puiston sisustus, suomalaisen muotoilun klassikoita läpi tilan',
         'Lattialämmitys, pimennysverhot päiväunia varten',
-        'Talon oma Rakas-ravintola (kokki Kari Aihinen)',
+        'Talon oma Rakas-ravintola',
         'Viisi minuuttia Joulupukin pajakylään',
       ],
     },
@@ -240,7 +240,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-chef-arctic-tasting': {
       hook: 'Yhdeksän ruokalajin suomalais-saamelainen maistelumenu, jonka työssä käyvä Lapin kokki valmistaa huvilasi keittiössä.',
       copy: [
-        'Työssä käyvä kokki yhdestä Lapin vakavasti otettavasta keittiöstä, Nili, Aanaar, Northern Lights Ranch, saapuu huvilaasi illaksi. Menu rakennetaan sen ympärille, mitä on kyseisellä viikolla aidosti sesongissa: kylmän veden nieriää, lakkaa, savustettua poroa, tuoreita metsäsieniä, tyrniä, katajaa.',
+        'Työssä käyvä kokki yhdestä Lapin vakavasti otettavasta keittiöstä saapuu huvilaasi illaksi. Menu rakennetaan sen ympärille, mitä on kyseisellä viikolla aidosti sesongissa: kylmän veden nieriää, lakkaa, savustettua poroa, tuoreita metsäsieniä, tyrniä, katajaa.',
         'Sisältää menuun kuratoidun viinisovituksen, raaka-aineet, valmistelun, tarjoilun ja siivouksen. Enintään kymmenen vierasta. Kasvis-, gluteeniton- ja äyriäisvapaa menu pyynnöstä, vähintään 72 tunnin varoitusajalla.',
       ],
       available: 'Mikä tahansa kokoelman huvila, ympäri vuoden',

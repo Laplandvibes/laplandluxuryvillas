@@ -34,7 +34,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '온수 욕조 + 야외 사우나를 갖춘 전용 테라스',
         'Studio Puisto 인테리어, 곳곳에 핀란드 디자인 명작',
         '바닥 난방, 주간 수면을 위한 암막 커튼',
-        '단지 내 Rakas 레스토랑 (셰프 Kari Aihinen)',
+        '단지 내 Rakas 레스토랑',
         'Santa Claus Village까지 5분',
       ],
     },
@@ -240,7 +240,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-chef-arctic-tasting': {
       hook: '현역 라플란드 셰프가 당신의 빌라 주방에서 요리하는 9코스 핀란드-사미 테이스팅 메뉴.',
       copy: [
-        '라플란드의 제대로 된 주방, Nili, Aanaar, Northern Lights Ranch, 의 현역 셰프가 하룻저녁 당신의 빌라를 찾아옵니다. 메뉴는 그 주에 실제로 제철인 재료를 중심으로 구성됩니다. 냉수 곤들매기, 클라우드베리, 훈제 순록, 신선한 숲 버섯, 산자나무 열매, 주니퍼.',
+        '라플란드의 제대로 된 주방 의 현역 셰프가 하룻저녁 당신의 빌라를 찾아옵니다. 메뉴는 그 주에 실제로 제철인 재료를 중심으로 구성됩니다. 냉수 곤들매기, 클라우드베리, 훈제 순록, 신선한 숲 버섯, 산자나무 열매, 주니퍼.',
         '메뉴에 맞춰 선별한 와인 페어링, 식재료, 준비, 서빙, 정리까지 포함합니다. 최대 10명. 채식, 글루텐 프리, 갑각류 제외 메뉴는 최소 72시간 전 요청 시 가능합니다.',
       ],
       available: '컬렉션의 모든 빌라, 연중',

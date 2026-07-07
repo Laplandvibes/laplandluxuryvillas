@@ -80,7 +80,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Private terrace with hot tub + outdoor sauna',
       'Studio Puisto interior, Finnish design icons throughout',
       'Underfloor heating, blackout drapes for daytime sleep',
-      'On-property Rakas restaurant (chef Kari Aihinen)',
+      'On-property Rakas restaurant',
       'Five minutes to Santa Claus Village',
     ],
     fromPerNight: 980,

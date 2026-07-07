@@ -34,7 +34,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'ホットタブ付きプライベートテラス＋屋外サウナ',
         'Studio Puistoの内装,フィンランドデザインの名品が随所に',
         '床暖房、日中の睡眠のための遮光カーテン',
-        '館内のRakasレストラン（シェフ Kari Aihinen）',
+        '館内のRakasレストラン',
         'Santa Claus Villageまで5分',
       ],
     },
@@ -240,7 +240,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-chef-arctic-tasting': {
       hook: '現役のLaplandのシェフがヴィラのキッチンで仕上げる、9品のフィンランド・サーミのテイスティングメニュー。',
       copy: [
-        'Laplandの本格的なキッチン, Nili、Aanaar、Northern Lights Ranch, の現役シェフが、一夜あなたのヴィラを訪れます。メニューはその週に実際に旬を迎えるものを軸に組み立てられます。冷水のホッキョクイワナ、クラウドベリー、燻製トナカイ、新鮮な森のきのこ、シーバックソーン、ジュニパー。',
+        'Laplandの本格的なキッチンの現役シェフが、一夜あなたのヴィラを訪れます。メニューはその週に実際に旬を迎えるものを軸に組み立てられます。冷水のホッキョクイワナ、クラウドベリー、燻製トナカイ、新鮮な森のきのこ、シーバックソーン、ジュニパー。',
         'メニューに合わせて選んだワインペアリング、食材、仕込み、サービス、片付けまで含みます。最大10名。ベジタリアン、グルテンフリー、甲殻類抜きのメニューはご要望に応じ、最低72時間前までにお知らせください。',
       ],
       available: 'コレクションのいずれのヴィラでも,通年',

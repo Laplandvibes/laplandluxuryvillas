@@ -57,7 +57,7 @@ export const EXPERIENCES: Experience[] = [
     category: 'culinary',
     hook: 'A nine-course Finnish-Sami tasting menu cooked in your villa kitchen by a working Lapland chef.',
     copy: [
-      'A working chef from one of Lapland\'s serious kitchens, Nili, Aanaar, Northern Lights Ranch, comes to your villa for an evening. The menu is built around what\'s actually in season that week: cold-water arctic char, cloudberry, smoked reindeer, fresh forest mushrooms, sea-buckthorn, juniper.',
+      'A working chef from one of Lapland\'s serious kitchens comes to your villa for an evening. The menu is built around what\'s actually in season that week: cold-water arctic char, cloudberry, smoked reindeer, fresh forest mushrooms, sea-buckthorn, juniper.',
       'Includes a wine pairing curated to the menu, ingredients, prep, service, and cleanup. Ten guests maximum. Vegetarian, gluten-free and shellfish-free menus on request, with at least 72 hours notice.',
     ],
     available: 'Any villa in the collection, year-round',
