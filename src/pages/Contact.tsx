@@ -2,52 +2,57 @@ import { Link } from 'react-router-dom'
 import { Mail, MapPin, Building2 } from 'lucide-react'
 import SEO from '../components/SEO'
 import Page from '../components/Page'
+import { useLang, useLocalePath } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
 
 export default function Contact() {
+  const lang = useLang()
+  const c = COPY[lang].contactPage
+  const lp = useLocalePath()
   return (
     <Page>
       <SEO
-        title="Contact — LaplandLuxuryVillas"
-        description="Single private inbox: private@laplandvibes.com. Operated by Lapeso Oy from Finnish Lapland. Press, partnership and direct-deal contacts below."
+        title={c.seoTitle}
+        description={c.seoDescription}
         canonicalPath="/contact"
       />
 
       <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-5 sm:px-7">
-          <span className="eyebrow">Contact</span>
-          <h1 className="mt-5 font-heading text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] mb-12">
-            One inbox, one operator.
+          <span className="eyebrow">{c.eyebrow}</span>
+          <h1 className="mt-5 font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] mb-12">
+            {c.h1}
           </h1>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-16">
             <ContactCard
               icon={Mail}
-              eyebrow="Private inquiries"
+              eyebrow={c.cards.private.eyebrow}
               title="private@laplandvibes.com"
-              body="Anonymous trip-planning, villa shortlists, direct-rate questions. Reply within one working day."
+              body={c.cards.private.body}
               href="mailto:private@laplandvibes.com"
-              cta="Send a private inquiry"
+              cta={c.privateCta}
               ctaTo="/concierge"
             />
             <ContactCard
               icon={Mail}
-              eyebrow="Press & partnerships"
+              eyebrow={c.cards.press.eyebrow}
               title="press@laplandvibes.com"
-              body="Editorial requests, partnership proposals from properties, journalist inquiries."
+              body={c.cards.press.body}
               href="mailto:press@laplandvibes.com"
             />
             <ContactCard
               icon={Mail}
-              eyebrow="Direct deals (properties)"
+              eyebrow={c.cards.deals.eyebrow}
               title="sales@laplandvibes.com"
-              body="Villa owners and operators interested in being represented in the collection. We turn down most submissions — please read the About page first."
+              body={c.cards.deals.body}
               href="mailto:sales@laplandvibes.com"
             />
             <ContactCard
               icon={Mail}
-              eyebrow="General editorial"
+              eyebrow={c.cards.general.eyebrow}
               title="info@laplandvibes.com"
-              body="Anything else. Slower turn-around than private@; for trip-planning use the concierge inbox above."
+              body={c.cards.general.body}
               href="mailto:info@laplandvibes.com"
             />
           </div>
@@ -56,16 +61,16 @@ export default function Contact() {
             <div className="flex items-start gap-4 mb-5">
               <Building2 size={22} strokeWidth={1.5} className="text-[color:var(--color-brass)] shrink-0 mt-1" />
               <div>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">Operator</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.operatorEyebrow}</div>
                 <div className="font-heading text-2xl text-[color:var(--color-snow)]">Lapeso Oy</div>
               </div>
             </div>
             <div className="flex items-start gap-4 text-[color:var(--color-bone)]/75 font-body text-sm leading-relaxed">
               <MapPin size={18} className="text-[color:var(--color-brass)] shrink-0 mt-1" />
               <div>
-                <p>Finnish Lapland — registered company in Finland.</p>
+                <p>{c.location}</p>
                 <p className="mt-2">
-                  See the <Link to="/about" className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">About</Link> page for the broader LaplandVibes ecosystem context.
+                  {c.aboutPre}<Link to={lp('/about')} className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">{c.aboutLabel}</Link>{c.aboutPost}
                 </p>
               </div>
             </div>
@@ -87,6 +92,7 @@ interface CardProps {
 }
 
 function ContactCard({ icon: Icon, eyebrow, title, body, href, cta, ctaTo }: CardProps) {
+  const lp = useLocalePath()
   return (
     <div className="card-onyx p-7">
       <Icon size={22} strokeWidth={1.5} className="text-[color:var(--color-brass)] mb-4" />
@@ -100,7 +106,7 @@ function ContactCard({ icon: Icon, eyebrow, title, body, href, cta, ctaTo }: Car
       <p className="mt-3 text-sm text-[color:var(--color-bone)]/70 font-body leading-relaxed">{body}</p>
       {cta && ctaTo && (
         <Link
-          to={ctaTo}
+          to={lp(ctaTo)}
           className="mt-5 inline-flex items-center gap-1.5 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)]"
         >
           {cta} →

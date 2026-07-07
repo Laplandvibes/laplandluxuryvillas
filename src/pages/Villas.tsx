@@ -4,35 +4,42 @@ import Hero from '../components/Hero'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
+import PartnerStayAd from '../components/PartnerStayAd'
 import NewsletterSection from '../components/NewsletterSection'
-import { VILLAS, type Villa } from '../lib/villas'
-
-const FILTERS: { id: 'all' | Villa['category']; label: string }[] = [
-  { id: 'all', label: 'All' },
-  { id: 'glass-roof', label: 'Glass-roof' },
-  { id: 'log-estate', label: 'Log Estate' },
-  { id: 'designer-suite', label: 'Designer Suite' },
-  { id: 'alpine-chalet', label: 'Alpine Chalet' },
-  { id: 'lakeside-retreat', label: 'Lakeside' },
-]
+import { getVillas, type Villa } from '../lib/villas'
+import { useLang } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
+import { getPageSeo } from '../lib/pageSeo'
 
 export default function Villas() {
+  const lang = useLang()
+  const c = COPY[lang]
+  const seo = getPageSeo('villas', lang)
+  const FILTERS: { id: 'all' | Villa['category']; label: string }[] = [
+    { id: 'all', label: c.villasPage.filters.all },
+    { id: 'glass-roof', label: c.villasPage.filters.glassRoof },
+    { id: 'log-estate', label: c.villasPage.filters.logEstate },
+    { id: 'designer-suite', label: c.villasPage.filters.designerSuite },
+    { id: 'alpine-chalet', label: c.villasPage.filters.alpineChalet },
+    { id: 'lakeside-retreat', label: c.villasPage.filters.lakeside },
+  ]
   const [filter, setFilter] = useState<typeof FILTERS[number]['id']>('all')
+  const VILLAS = getVillas(lang)
   const list = filter === 'all' ? VILLAS : VILLAS.filter((v) => v.category === filter)
 
   return (
     <Page fullBleed>
       <SEO
-        title="The Collection — Lapland Luxury Villas, Glass Cabins & Estates"
-        description="A short, curated list of Lapland's finest private villas: glass-roof aurora cabins, lakeside log estates, designer suites, alpine chalets. From €460/night to concierge-only reserve estates."
+        title={seo.title}
+        description={seo.description}
         canonicalPath="/villas"
-        keywords={['lapland villa rental', 'glass roof villa lapland', 'private villa finland', 'aurora cabin lapland', 'kakslauttanen', 'octola']}
+        keywords={['lapland villa rental', 'glass roof villa lapland', 'private villa finland', 'aurora cabin lapland', 'kakslauttanen']}
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Lapland Luxury Villa Collection',
           url: 'https://laplandluxuryvillas.com/villas',
-          inLanguage: 'en',
+          inLanguage: lang === 'fi' ? 'fi' : lang === 'de' ? 'de' : 'en',
           mainEntity: {
             '@type': 'ItemList',
             numberOfItems: VILLAS.length,
@@ -53,11 +60,11 @@ export default function Villas() {
 
       <Hero
         compact
-        eyebrow="The Collection"
-        title="Ten villas. Five destinations. One private inquiry."
-        lede="Every property below has been visited in the last twelve months. Filter by the kind of building you have in mind — or send a private inquiry and we'll shortlist around your dates."
-        imageUrl="/images/hero-villas.webp"
-        imageAlt="Interior of a luxury Lapland villa great room with a lit fireplace and snowy forest beyond the glass"
+        eyebrow={c.hero.villas.eyebrow}
+        title={c.hero.villas.title}
+        lede={c.hero.villas.lede}
+        imageUrl="/images/summer-villa-forest.webp"
+        imageAlt="A luxury Lapland villa set among tall green summer forest, floor-to-ceiling glass framing the sunlit trees"
       />
 
       {/* FILTER BAR */}
@@ -86,7 +93,7 @@ export default function Villas() {
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
           {list.length === 0 ? (
-            <p className="text-center text-[color:var(--color-bone)]/65 font-body">No villas in that category yet.</p>
+            <p className="text-center text-[color:var(--color-bone)]/65 font-body">{c.villasPage.noVillas}</p>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {list.map((v) => (
@@ -97,10 +104,14 @@ export default function Villas() {
         </div>
       </section>
 
-      <ConciergeBand
-        title="Don't see the right fit?"
-        body="The collection above is what's currently published. We hold additional villas privately — including reserve properties with no public listing — and quote those directly on inquiry."
-      />
+      {/* Partner stay — Lomarengas whole-cabin alternative (brand-skinned ad). */}
+      <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
+        <div className="mx-auto max-w-4xl px-5 sm:px-7">
+          <PartnerStayAd sid="villas_collection" />
+        </div>
+      </section>
+
+      <ConciergeBand title={c.villasPage.conciergeTitle} body={c.villasPage.conciergeBody} />
 
       <NewsletterSection />
     </Page>

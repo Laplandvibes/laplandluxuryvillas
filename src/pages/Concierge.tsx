@@ -4,30 +4,20 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
 import { trackConciergeInquiry } from '../lib/analytics'
-
-const HEADCOUNT = ['1–2 guests', '3–4 guests', '5–6 guests', '7–10 guests', 'Larger group']
-const INTENT = [
-  'Aurora season — first visit',
-  'Aurora season — repeat visit',
-  'Midnight sun (Jun–Jul)',
-  'Christmas / New Year',
-  'Family group',
-  'Private celebration',
-  'Honeymoon / two-person retreat',
-  'Other — explain in message',
-]
-const BUDGET = [
-  'Under €1,000 / night',
-  '€1,000 – €2,500 / night',
-  '€2,500 – €5,000 / night',
-  '€5,000+ / night',
-  'Reserve property — exclusive use',
-  'Prefer not to say',
-]
+import { useLang } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
+import { getPageSeo } from '../lib/pageSeo'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error' | 'fallback'
 
 export default function Concierge() {
+  const lang = useLang()
+  const c = COPY[lang]
+  const seo = getPageSeo('concierge', lang)
+  const HEADCOUNT = c.conciergePage.options.headcount
+  const INTENT = c.conciergePage.options.intent
+  const BUDGET = c.conciergePage.options.budget
+
   const [form, setForm] = useState({
     headcount: HEADCOUNT[0],
     intent: INTENT[0],
@@ -53,7 +43,7 @@ export default function Concierge() {
       'Notes:',
       form.message || '(none)',
       '',
-      '— —',
+      '---',
       `Reply to: ${form.email || '(not provided)'}`,
       `Sender name: ${form.name || '(anonymous)'}`,
     ].join('\n')
@@ -79,31 +69,30 @@ export default function Concierge() {
         setStatus('sent')
         return
       }
-
-      // Surface the upstream error to the user with a mailto fallback link.
       setStatus('error')
       setErrorMsg(data?.error || `Server error ${res.status}.`)
-    } catch (err) {
-      // Network failure → soft-fall back to opening the mail client.
+    } catch {
       setStatus('fallback')
       window.location.href = mailto
     }
   }
 
+  const trustIcons = [Lock, Mail, ShieldCheck]
+
   return (
     <Page fullBleed>
       <SEO
-        title="Private Concierge — Anonymous Lapland Villa Planning"
-        description="Send a single private inquiry. Headcount, dates, preferences. Reply within one working day from a curated shortlist — including reserve villas that never appear publicly."
+        title={seo.title}
+        description={seo.description}
         canonicalPath="/concierge"
         keywords={['lapland concierge', 'private villa inquiry lapland', 'anonymous luxury travel concierge']}
       />
 
       <Hero
         compact
-        eyebrow="Private Concierge"
-        title="One private message, one curated shortlist."
-        lede="Send dates, headcount and the kind of trip you have in mind. We reply within one working day — including, where it's the right fit, the reserve villas that never appear publicly."
+        eyebrow={c.hero.concierge.eyebrow}
+        title={c.hero.concierge.title}
+        lede={c.hero.concierge.lede}
         imageUrl="/images/hero-concierge.webp"
         imageAlt="An open leather travel journal on a dark walnut desk with a vintage brass lamp"
       />
@@ -111,17 +100,16 @@ export default function Concierge() {
       {/* TRUST STRIP */}
       <section className="bg-[color:var(--color-onyx)] py-12 md:py-14 border-b border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-5xl px-5 sm:px-7 grid sm:grid-cols-3 gap-8">
-          {[
-            { icon: Lock, title: 'Anonymous', body: 'Name and email are optional. Inquiry sent over an encrypted form to a single inbox.' },
-            { icon: Mail, title: 'private@laplandvibes.com', body: 'Monitored Mon–Fri. Replies within one working day, written by a person in Finland.' },
-            { icon: ShieldCheck, title: 'Discrete by default', body: 'No third-party CRM, no shared calendars. The shortlist is built privately for you.' },
-          ].map((c) => (
-            <div key={c.title} className="text-center sm:text-left">
-              <c.icon size={26} strokeWidth={1.4} className="mx-auto sm:mx-0 text-[color:var(--color-brass)] mb-3" />
-              <div className="font-heading text-lg text-[color:var(--color-snow)] mb-1.5">{c.title}</div>
-              <p className="text-sm text-[color:var(--color-bone)]/70 font-body leading-relaxed">{c.body}</p>
-            </div>
-          ))}
+          {c.conciergePage.trustStrip.map((item, i) => {
+            const Icon = trustIcons[i]
+            return (
+              <div key={item.title} className="text-center sm:text-left">
+                <Icon size={26} strokeWidth={1.4} className="mx-auto sm:mx-0 text-[color:var(--color-brass)] mb-3" />
+                <div className="font-heading text-lg text-[color:var(--color-snow)] mb-1.5">{item.title}</div>
+                <p className="text-sm text-[color:var(--color-bone)]/70 font-body leading-relaxed">{item.body}</p>
+              </div>
+            )
+          })}
         </div>
       </section>
 
@@ -132,80 +120,88 @@ export default function Concierge() {
             <div className="text-center">
               <Check size={48} strokeWidth={1.5} className="mx-auto text-[color:var(--color-brass)] mb-6" />
               <h2 className="font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] mb-4">
-                Inquiry received.
+                {c.conciergePage.successH2}
               </h2>
               <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-8 max-w-xl mx-auto">
-                A reply will land within one working day. If you'd like to follow up directly,
-                you can also reach us at{' '}
-                <a href="mailto:private@laplandvibes.com" className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4">
+                {c.conciergePage.successBody}{' '}
+                <a
+                  href="mailto:private@laplandvibes.com"
+                  className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4"
+                >
                   private@laplandvibes.com
-                </a>.
+                </a>
+                {c.conciergePage.successFollowUp}
               </p>
               <button
                 type="button"
-                onClick={() => { setStatus('idle'); setForm({ ...form, message: '', dates: '' }) }}
+                onClick={() => {
+                  setStatus('idle')
+                  setForm({ ...form, message: '', dates: '' })
+                }}
                 className="text-[12px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/65 hover:text-[color:var(--color-brass)]"
               >
-                Send another inquiry
+                {c.cta.sendAnother}
               </button>
             </div>
           ) : (
             <>
               <div className="mb-10 max-w-2xl">
-                <span className="eyebrow">The inquiry form</span>
+                <span className="eyebrow">{c.conciergePage.eyebrow}</span>
                 <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-4">
-                  Tell us what you're picturing.
+                  {c.conciergePage.h2}
                 </h2>
-                <p className="text-[color:var(--color-bone)]/75 font-body leading-relaxed">
-                  Five short fields. The more specific you are about preferences and constraints,
-                  the more useful our shortlist will be. Name and email stay optional — we can
-                  reply to whatever address you message us from.
-                </p>
+                <p className="text-[color:var(--color-bone)]/75 font-body leading-relaxed">{c.conciergePage.intro}</p>
               </div>
 
               <form onSubmit={onSubmit} className="space-y-7">
                 <div className="grid sm:grid-cols-2 gap-5">
-                  <Field label="Headcount">
+                  <Field label={c.conciergePage.fields.headcount}>
                     <select
                       value={form.headcount}
                       onChange={(e) => setForm({ ...form, headcount: e.target.value })}
                       className="form-select"
                     >
-                      {HEADCOUNT.map((h) => <option key={h}>{h}</option>)}
+                      {HEADCOUNT.map((h) => (
+                        <option key={h}>{h}</option>
+                      ))}
                     </select>
                   </Field>
-                  <Field label="Trip intent">
+                  <Field label={c.conciergePage.fields.tripIntent}>
                     <select
                       value={form.intent}
                       onChange={(e) => setForm({ ...form, intent: e.target.value })}
                       className="form-select"
                     >
-                      {INTENT.map((i) => <option key={i}>{i}</option>)}
+                      {INTENT.map((i) => (
+                        <option key={i}>{i}</option>
+                      ))}
                     </select>
                   </Field>
                 </div>
 
-                <Field label="Indicative nightly budget">
+                <Field label={c.conciergePage.fields.budget}>
                   <select
                     value={form.budget}
                     onChange={(e) => setForm({ ...form, budget: e.target.value })}
                     className="form-select"
                   >
-                    {BUDGET.map((b) => <option key={b}>{b}</option>)}
+                    {BUDGET.map((b) => (
+                      <option key={b}>{b}</option>
+                    ))}
                   </select>
                 </Field>
 
-                <Field label="Dates (or window)" hint="e.g. 'Feb 14–21' or 'first half of March, 5 nights'">
+                <Field label={c.conciergePage.fields.datesLabel} hint={c.conciergePage.fields.datesHint}>
                   <input
                     type="text"
                     value={form.dates}
                     onChange={(e) => setForm({ ...form, dates: e.target.value })}
-                    placeholder="Optional"
+                    placeholder={c.conciergePage.fields.datesPlaceholder}
                     className="form-input"
                   />
                 </Field>
 
-                <Field label="Anything specific" hint="Private chef, helicopter arrival, exclusive use, accessibility, dietary, photography focus — whatever shapes the shortlist.">
+                <Field label={c.conciergePage.fields.messageLabel} hint={c.conciergePage.fields.messageHint}>
                   <textarea
                     rows={5}
                     value={form.message}
@@ -215,22 +211,22 @@ export default function Concierge() {
                 </Field>
 
                 <div className="grid sm:grid-cols-2 gap-5 pt-4 border-t border-[color:var(--color-mist)]/40">
-                  <Field label="Name (optional)">
+                  <Field label={c.conciergePage.fields.nameLabel}>
                     <input
                       type="text"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      placeholder="Anonymous if blank"
+                      placeholder={c.conciergePage.fields.namePlaceholder}
                       className="form-input"
                     />
                   </Field>
-                  <Field label="Reply-to email" hint="If blank, we reply to your own outbound address.">
+                  <Field label={c.conciergePage.fields.emailLabel} hint={c.conciergePage.fields.emailHint}>
                     <input
                       type="email"
                       inputMode="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      placeholder="optional"
+                      placeholder={c.conciergePage.fields.emailPlaceholder}
                       className="form-input"
                     />
                   </Field>
@@ -242,7 +238,7 @@ export default function Concierge() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors disabled:opacity-60"
                 >
                   {status === 'sending' ? <Loader2 size={14} className="animate-spin" /> : <Send size={14} />}
-                  {status === 'sending' ? 'Sending…' : 'Send private inquiry'}
+                  {status === 'sending' ? c.conciergePage.sending : c.conciergePage.submit}
                 </button>
 
                 {status === 'error' && (
@@ -251,10 +247,11 @@ export default function Concierge() {
                     <div>
                       <p className="font-medium mb-1">{errorMsg}</p>
                       <p className="text-red-200/75">
-                        You can also email us directly at{' '}
+                        {c.conciergePage.errorFallback}{' '}
                         <a href="mailto:private@laplandvibes.com" className="underline underline-offset-2">
                           private@laplandvibes.com
-                        </a>.
+                        </a>
+                        .
                       </p>
                     </div>
                   </div>
@@ -262,15 +259,11 @@ export default function Concierge() {
 
                 {status === 'fallback' && (
                   <p className="text-sm text-[color:var(--color-bone)]/65 font-body">
-                    Opening your mail client to send the inquiry directly.
+                    {c.conciergePage.fallbackNotice}
                   </p>
                 )}
 
-                <p className="text-xs text-[color:var(--color-bone)]/55 font-body">
-                  Submissions are forwarded over an encrypted connection to a single private
-                  inbox in Finland. No third-party CRM, no advertising attribution on the
-                  message body.
-                </p>
+                <p className="text-xs text-[color:var(--color-bone)]/55 font-body">{c.conciergePage.fineprint}</p>
               </form>
             </>
           )}

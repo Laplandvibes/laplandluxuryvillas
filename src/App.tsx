@@ -1,44 +1,28 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import React, { useEffect, lazy, Suspense } from 'react'
 import Nav from './components/Nav'
 import Footer from './shared/Footer'
 import CookieBanner from './shared/CookieBanner'
 import NewsletterPopup from './components/NewsletterPopup'
 import { trackPageView, initScrollDepth, initOutboundTracking } from './lib/analytics'
+import LocaleAutoRedirect from './i18n/LocaleAutoRedirect'
+import { useHtmlLang, useLang } from './i18n/useLang'
 
-import Home from './pages/Home'
-import Villas from './pages/Villas'
-import VillaDetail from './pages/VillaDetail'
-import Suites from './pages/Suites'
-import Destinations from './pages/Destinations'
-import DestinationPage from './pages/DestinationPage'
-import Experiences from './pages/Experiences'
-import MidnightSun from './pages/MidnightSun'
-import Concierge from './pages/Concierge'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import Terms from './pages/Terms'
-import CookiePolicy from './pages/CookiePolicy'
-import NotFound from './pages/NotFound'
-
-const FOOTER_PILLARS = [
-  { name: 'The Collection', href: '/villas' },
-  { name: 'Designer Suites', href: '/suites' },
-  { name: 'Destinations', href: '/destinations' },
-  { name: 'Experiences', href: '/experiences' },
-  { name: 'Midnight Sun', href: '/midnight-sun' },
-  { name: 'Private Concierge', href: '/concierge' },
-]
-
-const FOOTER_EDITORIAL_NOTE =
-  'A private collection curated in Finnish Lapland — last reviewed May 2026. Some bookings earn an affiliate commission, which never shapes which villas we recommend. The reserve and concierge-only properties pay nothing.'
-
-const FOOTER_EXTRA_LEGAL = [
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
-]
-
+const Home = lazy(() => import('./pages/Home'))
+const Villas = lazy(() => import('./pages/Villas'))
+const VillaDetail = lazy(() => import('./pages/VillaDetail'))
+const Suites = lazy(() => import('./pages/Suites'))
+const Destinations = lazy(() => import('./pages/Destinations'))
+const DestinationPage = lazy(() => import('./pages/DestinationPage'))
+const Experiences = lazy(() => import('./pages/Experiences'))
+const MidnightSun = lazy(() => import('./pages/MidnightSun'))
+const Concierge = lazy(() => import('./pages/Concierge'))
+const About = lazy(() => import('./pages/About'))
+const Contact = lazy(() => import('./pages/Contact'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
+const Terms = lazy(() => import('./pages/Terms'))
+const CookiePolicy = lazy(() => import('./pages/CookiePolicy'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
   useEffect(() => {
@@ -60,6 +44,14 @@ function AnalyticsBootstrap() {
     initScrollDepth()
     initOutboundTracking()
   }, [])
+  return null
+}
+
+function LocaleSync() {
+  const lang = useHtmlLang()
+  useEffect(() => {
+    document.documentElement.lang = lang
+  }, [lang])
   return null
 }
 
@@ -90,40 +82,60 @@ function AffiliateLinkWarmup() {
   return null
 }
 
+const LOCALE_PREFIXES = ['', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl'] as const
+
+function localized(path: string, element: React.JSX.Element) {
+  return LOCALE_PREFIXES.map((prefix) => {
+    const full = prefix + path
+    return <Route key={full || '/'} path={full || '/'} element={element} />
+  })
+}
+
+function LocalizedRoutes() {
+  return (
+    <Suspense fallback={<div className="min-h-screen" />}>
+      <Routes>
+      {localized('/', <Home />)}
+      {localized('/villas', <Villas />)}
+      {localized('/villas/:slug', <VillaDetail />)}
+      {localized('/suites', <Suites />)}
+      {localized('/destinations', <Destinations />)}
+      {localized('/destinations/:slug', <DestinationPage />)}
+      {localized('/experiences', <Experiences />)}
+      {localized('/midnight-sun', <MidnightSun />)}
+      {localized('/concierge', <Concierge />)}
+      {localized('/about', <About />)}
+      {localized('/contact', <Contact />)}
+      {localized('/privacy', <PrivacyPolicy />)}
+      {localized('/terms', <Terms />)}
+      {localized('/cookie-policy', <CookiePolicy />)}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    </Suspense>
+  )
+}
+
+function LocalisedCookieBanner() {
+  const lang = useLang()
+  return <CookieBanner consentKey="laplandluxuryvillas_cookie_consent" lang={lang} />
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <AnalyticsBootstrap />
       <AffiliateLinkWarmup />
+      <LocaleAutoRedirect />
+      <LocaleSync />
       <Nav />
       <div className="min-h-screen flex flex-col">
         <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/villas" element={<Villas />} />
-            <Route path="/villas/:slug" element={<VillaDetail />} />
-            <Route path="/suites" element={<Suites />} />
-            <Route path="/destinations" element={<Destinations />} />
-            <Route path="/destinations/:slug" element={<DestinationPage />} />
-            <Route path="/experiences" element={<Experiences />} />
-            <Route path="/midnight-sun" element={<MidnightSun />} />
-            <Route path="/concierge" element={<Concierge />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/cookie-policy" element={<CookiePolicy />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <LocalizedRoutes />
         </div>
-        <Footer
-          pillarLinks={FOOTER_PILLARS}
-          editorialNote={FOOTER_EDITORIAL_NOTE}
-          extraLegalLinks={FOOTER_EXTRA_LEGAL}
-        />
+        <Footer />
       </div>
-      <CookieBanner consentKey="laplandluxuryvillas_cookie_consent" />
+      <LocalisedCookieBanner />
       <NewsletterPopup />
     </BrowserRouter>
   )

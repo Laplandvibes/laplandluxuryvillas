@@ -4,39 +4,31 @@ import SEO from '../components/SEO'
 import Page from '../components/Page'
 import ConciergeBand from '../components/ConciergeBand'
 import NewsletterSection from '../components/NewsletterSection'
-import { villaBySlug, VILLAS } from '../lib/villas'
+import { villaBySlug, getVillas } from '../lib/villas'
 import { destinationBySlug } from '../lib/destinations'
-
-const TIER_LABEL = {
-  signature: 'Signature',
-  private: 'Private Collection',
-  reserve: 'Reserve · Concierge Only',
-}
-
-const CATEGORY_LABEL = {
-  'glass-roof': 'Glass-roof Villa',
-  'log-estate': 'Private Log Estate',
-  'designer-suite': 'Designer Suite',
-  'alpine-chalet': 'Alpine Chalet',
-  'lakeside-retreat': 'Lakeside Retreat',
-}
+import { useLang, useLocalePath } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
 
 export default function VillaDetail() {
   const { slug } = useParams<{ slug: string }>()
-  const villa = slug ? villaBySlug(slug) : undefined
+  const lang = useLang()
+  const to = useLocalePath()
+  const villa = slug ? villaBySlug(slug, lang) : undefined
+  const c = COPY[lang]
 
-  if (!villa) return <Navigate to="/villas" replace />
+  if (!villa) return <Navigate to={to('/villas')} replace />
 
   const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
   const dest = destinationBySlug(villa.destination.toLowerCase())
+  const localeForPrice = lang === 'de' ? 'de-DE' : lang === 'fi' ? 'fi-FI' : 'en-GB'
 
   return (
     <Page>
       <SEO
-        title={`${villa.name} — ${villa.destination} | LaplandLuxuryVillas`}
+        title={`${villa.name} · ${villa.destination} | LaplandLuxuryVillas`}
         description={villa.tagline}
         canonicalPath={`/villas/${villa.slug}`}
-        keywords={[villa.name, villa.destination, 'lapland villa', CATEGORY_LABEL[villa.category]]}
+        keywords={[villa.name, villa.destination, 'lapland villa', c.category[villa.category]]}
         jsonLd={[
           {
             '@context': 'https://schema.org',
@@ -52,8 +44,8 @@ export default function VillaDetail() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://laplandluxuryvillas.com/' },
-              { '@type': 'ListItem', position: 2, name: 'The Collection', item: 'https://laplandluxuryvillas.com/villas' },
+              { '@type': 'ListItem', position: 1, name: c.cta.home, item: 'https://laplandluxuryvillas.com/' },
+              { '@type': 'ListItem', position: 2, name: c.cta.theCollection, item: 'https://laplandluxuryvillas.com/villas' },
               { '@type': 'ListItem', position: 3, name: villa.name, item: `https://laplandluxuryvillas.com/villas/${villa.slug}` },
             ],
           },
@@ -68,36 +60,36 @@ export default function VillaDetail() {
         {villa.image && (
           <img
             src={villa.image}
-            alt={`${villa.name} — ${villa.destination}`}
-            className="absolute inset-0 w-full h-full object-cover -z-10"
+            alt={`${villa.name}, ${villa.destination}`}
+            className="absolute inset-0 w-full h-full object-cover"
             loading="eager"
             decoding="async"
             fetchPriority="high"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)] via-[color:var(--color-deep-night)]/70 to-transparent -z-[5]" />
-        <div className="relative w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)] via-[color:var(--color-deep-night)]/55 to-transparent" />
+        <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
           <Link
-            to="/villas"
-            className="inline-flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/65 hover:text-[color:var(--color-brass)] mb-8"
+            to={to('/villas')}
+            className="inline-flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
           >
-            <ArrowLeft size={14} /> The Collection
+            <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.villaDetailPage.backLink}
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <span className="eyebrow inline-flex items-center px-2.5 py-1 bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm text-[color:var(--color-brass)] border border-[color:var(--color-brass)]/30">
-              {TIER_LABEL[villa.tier]}
+              {c.tier[villa.tier]}
             </span>
-            <span className="inline-flex items-center gap-1.5 text-[color:var(--color-bone)]/65 text-xs font-body tracking-[0.18em] uppercase">
+            <span className="inline-flex items-center gap-1.5 text-[color:var(--color-bone)]/80 text-xs font-body tracking-[0.18em] uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
               <MapPin size={13} className="text-[color:var(--color-brass)]" /> {villa.destination}
             </span>
-            <span className="inline-flex items-center text-[color:var(--color-bone)]/65 text-xs font-body">
-              {CATEGORY_LABEL[villa.category]}
+            <span className="inline-flex items-center text-[color:var(--color-bone)]/80 text-xs font-body drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+              {c.category[villa.category]}
             </span>
           </div>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] max-w-4xl">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] max-w-4xl break-words drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)]">
             {villa.name}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">
+          <p className="mt-6 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
             {villa.tagline}
           </p>
         </div>
@@ -112,44 +104,40 @@ export default function VillaDetail() {
           </div>
 
           <aside className="card-onyx p-7 lg:sticky lg:top-28 self-start">
-            <div className="flex items-center gap-5 mb-6 pb-6 border-b border-[color:var(--color-mist)]/40">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-6 pb-6 border-b border-[color:var(--color-mist)]/40">
               <span className="inline-flex items-center gap-1.5 text-sm font-body text-[color:var(--color-bone)]/80">
                 <Bed size={15} className="text-[color:var(--color-brass)]" />
-                {villa.bedrooms} bedroom{villa.bedrooms === 1 ? '' : 's'}
+                {villa.bedrooms} {villa.bedrooms === 1 ? c.villaDetailPage.bedroom : c.villaDetailPage.bedrooms}
               </span>
               <span className="inline-flex items-center gap-1.5 text-sm font-body text-[color:var(--color-bone)]/80">
                 <Users size={15} className="text-[color:var(--color-brass)]" />
-                Sleeps {villa.sleeps}
+                {c.villaDetailPage.sleeps} {villa.sleeps}
               </span>
             </div>
 
             {villa.fromPerNight ? (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">From / night</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.villaDetailPage.fromPerNight}</div>
                 <div className="font-heading text-4xl text-[color:var(--color-brass)] mb-2">
-                  €{villa.fromPerNight.toLocaleString('en-GB')}
+                  €{villa.fromPerNight.toLocaleString(localeForPrice)}
                 </div>
-                <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">
-                  Indicative low-season rate. Actual nightly rate depends on dates, length of stay and inclusions.
-                </p>
+                <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.nightlyHint}</p>
               </>
             ) : (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">Rate</div>
-                <div className="font-heading text-3xl text-[color:var(--color-brass)] mb-2">On request</div>
-                <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">
-                  Reserve property — quoted privately on inquiry, never on a public listing.
-                </p>
+                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.villaDetailPage.rate}</div>
+                <div className="font-heading text-3xl text-[color:var(--color-brass)] mb-2">{c.villaDetailPage.onRequest}</div>
+                <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
               </>
             )}
 
             <div className="space-y-3">
               {conciergeOnly ? (
                 <Link
-                  to="/concierge"
+                  to={to('/concierge')}
                   className="block w-full text-center bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
                 >
-                  Begin private inquiry
+                  {c.villaDetailPage.beginInquiry}
                 </Link>
               ) : (
                 <>
@@ -159,13 +147,13 @@ export default function VillaDetail() {
                     rel="sponsored nofollow noopener"
                     className="block w-full text-center bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
                   >
-                    View public rates
+                    {c.villaDetailPage.viewRates}
                   </a>
                   <Link
-                    to="/concierge"
+                    to={to('/concierge')}
                     className="block w-full text-center border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
                   >
-                    Or send a private inquiry
+                    {c.villaDetailPage.orSendInquiry}
                   </Link>
                 </>
               )}
@@ -177,16 +165,13 @@ export default function VillaDetail() {
       {/* SIGNATURE */}
       <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-t border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <span className="eyebrow">Signature details</span>
+          <span className="eyebrow">{c.villaDetailPage.signatureEyebrow}</span>
           <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10 max-w-2xl">
-            Six things you can verify on arrival.
+            {c.villaDetailPage.signatureH2}
           </h2>
           <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
             {villa.signature.map((s) => (
-              <li
-                key={s}
-                className="flex items-start gap-3 text-[color:var(--color-bone)]/85 font-body"
-              >
+              <li key={s} className="flex items-start gap-3 text-[color:var(--color-bone)]/85 font-body">
                 <Check size={18} className="text-[color:var(--color-brass)] shrink-0 mt-0.5" />
                 <span>{s}</span>
               </li>
@@ -200,30 +185,25 @@ export default function VillaDetail() {
         <section className="bg-[color:var(--color-deep-night)] py-16 md:py-24">
           <div className="mx-auto max-w-6xl px-5 sm:px-7 grid md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div>
-              <span className="eyebrow">The destination</span>
+              <span className="eyebrow">{c.villaDetailPage.destinationEyebrow}</span>
               <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-5">
                 {dest.name}
               </h2>
-              <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-6">
-                {dest.position}
-              </p>
+              <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-6">{dest.position}</p>
               <p className="text-sm text-[color:var(--color-bone)]/65 font-body mb-3">
-                <span className="text-[color:var(--color-brass)]">Arrival ·</span> {dest.arrival}
+                <span className="text-[color:var(--color-brass)]">{c.badges.arrival} ·</span> {dest.arrival}
               </p>
               <p className="text-sm text-[color:var(--color-bone)]/65 font-body mb-8">
-                <span className="text-[color:var(--color-brass)]">Aurora ·</span> {dest.auroraNote}
+                <span className="text-[color:var(--color-brass)]">{c.badges.aurora} ·</span> {dest.auroraNote}
               </p>
               <Link
-                to={`/destinations/${dest.slug}`}
+                to={to(`/destinations/${dest.slug}`)}
                 className="inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body"
               >
-                Read the {dest.name} profile →
+                {c.villaDetailPage.readProfile(dest.name)}
               </Link>
             </div>
-            <div
-              className="aspect-[4/3] w-full overflow-hidden"
-              style={{ background: dest.imageGradient }}
-            >
+            <div className="aspect-[4/3] w-full overflow-hidden" style={{ background: dest.imageGradient }}>
               {dest.image && (
                 <img src={dest.image} alt={dest.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
               )}
@@ -233,23 +213,23 @@ export default function VillaDetail() {
       )}
 
       <ConciergeBand
-        title={`Begin a ${villa.destination} inquiry.`}
-        body="Send dates, headcount, preferences. We reply within one working day with availability, the actual nightly rate, and any reserve villas worth pairing with this one."
+        title={c.villaDetailPage.conciergeTitle(villa.destination)}
+        body={c.villaDetailPage.conciergeBody}
       />
 
       {/* OTHER VILLAS */}
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <span className="eyebrow">Also in the collection</span>
+          <span className="eyebrow">{c.villaDetailPage.alsoEyebrow}</span>
           <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10">
-            Three other villas worth considering.
+            {c.villaDetailPage.alsoH2}
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {VILLAS.filter((v) => v.slug !== villa.slug)
+            {getVillas(lang).filter((v) => v.slug !== villa.slug)
               .slice(0, 3)
               .map((v) => (
                 <article key={v.slug} className="card-onyx overflow-hidden">
-                  <Link to={`/villas/${v.slug}`}>
+                  <Link to={to(`/villas/${v.slug}`)}>
                     <div className="aspect-[4/3] w-full" style={{ background: v.imageGradient }} />
                     <div className="p-6">
                       <span className="eyebrow text-[color:var(--color-brass)]">{v.destination}</span>

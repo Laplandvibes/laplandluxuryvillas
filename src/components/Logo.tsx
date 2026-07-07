@@ -14,14 +14,14 @@ interface LogoProps {
 export default function Logo({ hero = false, className = '' }: LogoProps) {
   const sizeBase = hero
     ? 'text-3xl md:text-5xl'
-    : 'text-xl md:text-2xl'
+    : 'text-lg sm:text-xl md:text-2xl'
   const sizeBrand = hero
     ? 'text-2xl md:text-4xl'
-    : 'text-base md:text-xl'
+    : 'text-sm sm:text-base md:text-xl'
   const glow = hero ? 'drop-shadow-[0_0_36px_rgba(236,72,153,0.55)]' : ''
 
   return (
-    <span className={`font-heading inline-flex items-baseline gap-1.5 tracking-wide ${className}`}>
+    <span className={`font-heading inline-flex items-baseline gap-1.5 tracking-wide whitespace-nowrap drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${className}`}>
       <span className={`text-[color:var(--color-vibe-pink)] ${sizeBase} ${glow}`}>#</span>
       <span className={`text-[color:var(--color-snow)] ${sizeBase}`}>LAPLAND</span>
       <span className={`text-[color:var(--color-vibe-pink)] ${sizeBrand} ${glow}`}>LUXURY&nbsp;VILLAS</span>

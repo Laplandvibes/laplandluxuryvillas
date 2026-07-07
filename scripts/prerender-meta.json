@@ -1,0 +1,1014 @@
+{
+  "/": {
+    "en": {
+      "title": "Lapland Luxury Villas: Private Aurora Residences & Suites",
+      "description": "A private collection of Lapland's finest villas and suites, glass-roof retreats, lakeside log estates, designer aurora residences. Concierge, rates on request."
+    },
+    "fi": {
+      "title": "Lapin luksushuvilat: yksityiset revontuli-residenssit",
+      "description": "Yksityinen kokoelma Lapin hienoimpia huviloita ja sviittejä, lasikattoiset revontulipiilot, hirsikartanot, design-residenssit. Concierge, hinnat pyynnöstä."
+    },
+    "de": {
+      "title": "Luxusvillen in Lappland: private Polarlicht-Residenzen",
+      "description": "Eine private Sammlung der schönsten Villen und Suiten Lapplands, Glasdach-Refugien, Seeufer-Blockhäuser, Designer-Residenzen. Concierge, Preise auf Anfrage."
+    },
+    "ja": {
+      "title": "ラップランド ラグジュアリーヴィラ｜プライベート・オーロラ邸宅",
+      "description": "ラップランド屈指のヴィラとスイートを集めた非公開コレクション。ガラス天井の隠れ家、湖畔のログハウス、オーロラを望むデザイナーズ邸宅。匿名対応のコンシェルジュ、直接料金はお問い合わせにて。"
+    },
+    "es": {
+      "title": "Villas de Lujo en Laponia: residencias y suites con auroras",
+      "description": "Colección privada de las mejores villas y suites de Laponia: refugios con techo de cristal, casas junto al lago y residencias bajo la aurora. Tarifas a petición."
+    },
+    "pt-BR": {
+      "title": "Vilas de Luxo na Lapônia: residências e suítes sob a aurora",
+      "description": "Coleção privada das melhores vilas e suítes da Lapônia: refúgios com teto de vidro, casas à beira do lago e residências sob a aurora. Tarifas sob consulta."
+    },
+    "zh-CN": {
+      "title": "拉普兰奢华别墅：私属极光宅邸与套房",
+      "description": "拉普兰顶级私人别墅与套房的非公开臻选：玻璃穹顶隐居所、湖畔原木宅邸、可赏极光的设计师居所。匿名管家服务，直订房价可来询。"
+    },
+    "ko": {
+      "title": "라플란드 럭셔리 빌라: 프라이빗 오로라 레지던스",
+      "description": "라플란드 최고의 빌라와 스위트를 엄선한 프라이빗 컬렉션, 글라스루프 은신처, 호숫가 통나무 저택, 디자이너 오로라 레지던스. 익명 컨시어지, 요청 시 직접 요금 안내."
+    },
+    "fr": {
+      "title": "Villas de luxe en Laponie : résidences aurore privées",
+      "description": "Une collection privée des plus belles villas et suites de Laponie, toit de verre, domaines en rondins, résidences aurore. Conciergerie, tarifs sur demande."
+    },
+    "it": {
+      "title": "Ville di lusso in Lapponia: residenze aurora private",
+      "description": "Una collezione privata delle più belle ville e suite della Lapponia, tetto di vetro, tenute in legno sul lago, residenze aurora. Concierge, tariffe su richiesta."
+    },
+    "nl": {
+      "title": "Luxe villa's in Lapland: privé aurora-residenties",
+      "description": "Een privécollectie van Laplands mooiste villa's en suites, glazen dak, houten landhuizen aan het meer, aurora-residenties. Conciërge, tarieven op aanvraag."
+    }
+  },
+  "/villas": {
+    "en": {
+      "title": "The Collection, Lapland Luxury Villas & Glass Cabins",
+      "description": "A short, curated list of Lapland's finest private villas: glass-roof aurora cabins, lakeside log estates, designer suites and alpine chalets. From €460/night."
+    },
+    "fi": {
+      "title": "Kokoelma, Lapin luksushuvilat ja lasikabiinit",
+      "description": "Tiivis, käsin valittu lista Lapin yksityishuviloita: lasikattoiset revontulikabiinit, hirsikartanot, design-sviitit ja alppichaletit. Alkaen 460 €/yö."
+    },
+    "de": {
+      "title": "Die Kollektion, Luxusvillen & Glashütten in Lappland",
+      "description": "Eine kurze, kuratierte Auswahl der schönsten Privatvillen Lapplands: Glasdach-Hütten, Seeufer-Blockhäuser, Designer-Suiten und Alpenchalets. Ab 460 €/Nacht."
+    },
+    "ja": {
+      "title": "ザ・コレクション｜ラップランドのヴィラとガラスキャビン",
+      "description": "ラップランド屈指のプライベートヴィラを厳選した短いリスト：ガラス天井のオーロラキャビン、湖畔のログ邸宅、デザイナーズスイート、山岳シャレー。1泊460ユーロから、コンシェルジュ限定の特別邸宅まで。"
+    },
+    "es": {
+      "title": "La Colección, villas de lujo y cabañas de cristal",
+      "description": "Lista breve y seleccionada de las mejores villas privadas de Laponia: cabañas de cristal, casas junto al lago, suites de autor y chalets. Desde 460 €/noche."
+    },
+    "pt-BR": {
+      "title": "A Coleção, vilas de luxo e cabanas de vidro na Lapônia",
+      "description": "Lista curta e selecionada das melhores vilas privadas da Lapônia: cabanas de vidro, casas à beira do lago, suítes autorais e chalés. De 460 €/noite."
+    },
+    "zh-CN": {
+      "title": "精选臻藏，拉普兰奢华别墅与玻璃小屋",
+      "description": "拉普兰顶级私人别墅的精短臻选：玻璃穹顶极光小屋、湖畔原木宅邸、设计师套房与高山木屋。每晚460欧元起，直至仅限管家预订的私藏宅邸。"
+    },
+    "ko": {
+      "title": "컬렉션, 라플란드 럭셔리 빌라 & 글라스 캐빈",
+      "description": "라플란드 최고의 프라이빗 빌라를 엄선한 짧은 목록: 글라스루프 오로라 캐빈, 호숫가 통나무 저택, 디자이너 스위트, 알파인 샬레. 1박 460유로부터 컨시어지 전용 리저브 저택까지."
+    },
+    "fr": {
+      "title": "La Collection, villas de luxe et cabines de verre",
+      "description": "Une courte sélection des plus belles villas privées de Laponie : cabines aurore, domaines en rondins, suites signées, chalets alpins. Dès 460 €/nuit."
+    },
+    "it": {
+      "title": "La Collezione, ville di lusso e cabine di vetro",
+      "description": "Una breve selezione delle più belle ville private della Lapponia: cabine aurora col tetto di vetro, tenute in legno, suite d'autore e chalet alpini. Da 460 €/notte."
+    },
+    "nl": {
+      "title": "De Collectie, luxe villa's en glazen cabins",
+      "description": "Een korte, samengestelde lijst van Laplands mooiste privévilla's: aurora-cabins met glazen dak, houten landhuizen, designsuites en alpenchalets. Vanaf 460 €/nacht."
+    }
+  },
+  "/suites": {
+    "en": {
+      "title": "Designer Suites & Glass-Roof Aurora Bedrooms, Lapland",
+      "description": "A short list of Lapland's designer suites and glass-roof aurora cabins: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen, Levin Iglut. From €460/night."
+    },
+    "fi": {
+      "title": "Design-sviitit ja lasikattoiset revontulihuoneet",
+      "description": "Lyhyt lista Lapin design-sviittejä ja lasikattoisia revontulikabiineja: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen, Levin Iglut. Alkaen 460 €/yö."
+    },
+    "de": {
+      "title": "Designer-Suiten & Glasdach-Polarlichtzimmer, Lappland",
+      "description": "Eine kurze Auswahl der Designer-Suiten und Glasdach-Hütten Lapplands: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glas, Levin Iglut. Ab 460 €/Nacht."
+    },
+    "ja": {
+      "title": "デザイナーズスイートとガラス天井のオーロラ寝室",
+      "description": "ラップランドのデザイナーズスイートとガラス天井のオーロラキャビンの短いリスト：Star Arctic Skyview、Arctic TreeHouse、Kakslauttanen Kelo-Glass、Levin Iglut、Aurora Village。1泊460ユーロから。"
+    },
+    "es": {
+      "title": "Suites de autor y dormitorios de cristal, Laponia",
+      "description": "Suites de autor y cabañas de cristal de Laponia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Desde 460 €/noche."
+    },
+    "pt-BR": {
+      "title": "Suítes autorais e quartos de vidro sob a aurora",
+      "description": "Suítes autorais e cabanas de vidro da Lapônia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. A partir de 460 €/noite."
+    },
+    "zh-CN": {
+      "title": "设计师套房与玻璃穹顶极光卧室，拉普兰",
+      "description": "拉普兰设计师套房与玻璃穹顶极光小屋精选：Star Arctic Skyview、Arctic TreeHouse、Kakslauttanen Kelo-Glass、Levin Iglut、Aurora Village。每晚460欧元起。"
+    },
+    "ko": {
+      "title": "디자이너 스위트 & 글라스루프 오로라 침실",
+      "description": "라플란드의 디자이너 스위트와 글라스루프 오로라 캐빈을 엄선: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. 1박 460유로부터."
+    },
+    "fr": {
+      "title": "Suites signées et chambres aurore au toit de verre",
+      "description": "Suites signées et cabines aurore de Laponie : Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Dès 460 €/nuit."
+    },
+    "it": {
+      "title": "Suite d'autore e camere aurora col tetto di vetro",
+      "description": "Suite d'autore e cabine aurora della Lapponia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Da 460 €/notte."
+    },
+    "nl": {
+      "title": "Designsuites en aurora-slaapkamers met glazen dak",
+      "description": "Designsuites en aurora-cabins met glazen dak: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Vanaf 460 €/nacht."
+    }
+  },
+  "/destinations": {
+    "en": {
+      "title": "Where to Stay in Lapland · Five Destinations Worth It",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi and Ylläs, the five Lapland destinations worth a luxury journey. Aurora frequency, arrival logistics and the villas in each."
+    },
+    "fi": {
+      "title": "Missä yöpyä Lapissa, viisi kohdetta matkan arvoista",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi ja Ylläs, viisi Lapin kohdetta luksusmatkan arvoista. Revontulitiheys, saapumislogistiikka ja kunkin huvilat."
+    },
+    "de": {
+      "title": "Wo in Lappland wohnen · fünf lohnende Reiseziele",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi und Ylläs, die fünf Reiseziele Lapplands für eine Luxusreise. Polarlicht-Häufigkeit, Anreise und die Villen jedes Ortes."
+    },
+    "ja": {
+      "title": "ラップランドの滞在地｜訪れる価値ある5つの土地",
+      "description": "サーリセルカ、イナリ、ロヴァニエミ、レヴィ、ユッラス，ラグジュアリーな旅にふさわしいラップランドの5つの滞在地。オーロラの出現頻度、到着のしやすさ、各地に集まるヴィラを紹介。"
+    },
+    "es": {
+      "title": "Dónde alojarse en Laponia · cinco destinos que lo merecen",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi y Ylläs: los cinco destinos de Laponia que justifican un viaje de lujo. Auroras, logística de llegada y las villas de cada uno."
+    },
+    "pt-BR": {
+      "title": "Onde ficar na Lapônia · cinco destinos que valem a viagem",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi e Ylläs: os cinco destinos da Lapônia que justificam uma viagem de luxo. Auroras, logística de chegada e as vilas de cada um."
+    },
+    "zh-CN": {
+      "title": "拉普兰住宿之选，五处值得专程前往之地",
+      "description": "萨利色尔卡、伊纳里、罗瓦涅米、莱维与于拉斯，值得为之专程远行的五处拉普兰目的地。极光频率、抵达交通，以及各地荟萃的别墅。"
+    },
+    "ko": {
+      "title": "라플란드 숙박지 · 가치 있는 다섯 목적지",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi, Ylläs, 럭셔리 여정을 정당화하는 라플란드의 다섯 목적지. 오로라 빈도, 도착 동선, 각지에 모인 빌라들."
+    },
+    "fr": {
+      "title": "Où séjourner en Laponie · cinq destinations à la hauteur",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi et Ylläs, les cinq destinations de Laponie qui valent un voyage de luxe. Aurores, logistique d'arrivée et les villas de chacune."
+    },
+    "it": {
+      "title": "Dove soggiornare in Lapponia · cinque mete che valgono",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi e Ylläs, le cinque mete della Lapponia che valgono un viaggio di lusso. Aurore, logistica d'arrivo e le ville di ciascuna."
+    },
+    "nl": {
+      "title": "Waar te verblijven in Lapland · vijf bestemmingen",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi en Ylläs, de vijf bestemmingen in Lapland voor een luxereis. Aurorafrequentie, aankomstlogistiek en de villa's per plek."
+    }
+  },
+  "/experiences": {
+    "en": {
+      "title": "Bespoke Lapland Experiences · Aurora, Helicopter, Chef",
+      "description": "Private Lapland experiences: aurora photography, helicopter flights, in-villa chef tastings, exclusive husky safaris and private-jet arrival. Concierge-booked."
+    },
+    "fi": {
+      "title": "Räätälöidyt Lappi-elämykset · revontulet, helikopteri",
+      "description": "Yksityisiä Lappi-elämyksiä: revontulikuvaus, helikopterilennot, yksityiskokin maistelut huvilalla, eksklusiiviset huskysafarit ja saapuminen yksityiskoneella."
+    },
+    "de": {
+      "title": "Maßgeschneiderte Lappland-Erlebnisse · Polarlicht & mehr",
+      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Helikopterflüge, Chef-Tastings in der Villa, exklusive Husky-Safaris und Privatjet-Anreise. Vom Concierge geplant."
+    },
+    "ja": {
+      "title": "オーダーメイドのラップランド体験｜オーロラ・ヘリ・シェフ",
+      "description": "ラップランドのプライベート体験の短いリスト：オーロラ撮影、ヘリコプター遊覧、ヴィラ内シェフの饗宴、限定ハスキーサファリ、プライベートジェットでの到着。ヴィラ滞在に合わせてコンシェルジュが手配。"
+    },
+    "es": {
+      "title": "Experiencias a medida en Laponia · aurora, helicóptero",
+      "description": "Experiencias privadas en Laponia: fotografía de auroras, vuelos en helicóptero, cenas con chef en la villa, safaris con huskies y llegada en jet privado."
+    },
+    "pt-BR": {
+      "title": "Experiências sob medida na Lapônia · aurora, helicóptero",
+      "description": "Experiências privadas na Lapônia: fotografia de auroras, voos de helicóptero, jantares com chef na vila, safáris com huskies e chegada de jato privado."
+    },
+    "zh-CN": {
+      "title": "定制拉普兰体验，极光、直升机、私厨",
+      "description": "拉普兰私人体验精选：极光摄影、直升机飞行、别墅内私厨品鉴、专属哈士奇雪橇之旅与私人飞机抵达。由管家围绕您的别墅行程预订。"
+    },
+    "ko": {
+      "title": "맞춤형 라플란드 경험 · 오로라, 헬리콥터, 셰프",
+      "description": "프라이빗 라플란드 경험을 엄선: 오로라 촬영, 헬리콥터 비행, 빌라 내 셰프 시식, 독점 허스키 사파리, 프라이빗 제트 도착. 빌라 체류에 맞춰 컨시어지가 예약."
+    },
+    "fr": {
+      "title": "Expériences sur mesure, aurore, hélicoptère, chef",
+      "description": "Expériences privées en Laponie : photographie d'aurores, vols en hélicoptère, dégustations d'un chef en villa, safaris husky exclusifs, arrivée en jet privé."
+    },
+    "it": {
+      "title": "Esperienze su misura, aurora, elicottero, chef",
+      "description": "Esperienze private in Lapponia: fotografia delle aurore, voli in elicottero, degustazioni con chef in villa, safari husky esclusivi e arrivo in jet privato."
+    },
+    "nl": {
+      "title": "Lapland-ervaringen op maat · aurora, heli, chef",
+      "description": "Privé-ervaringen in Lapland: aurorafotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+    }
+  },
+  "/midnight-sun": {
+    "en": {
+      "title": "Midnight Sun, Lapland Luxury Villas in 32 Days of Light",
+      "description": "Jun 6 – Jul 7: the window when the sun does not set in Lapland. The same villas you book for the auroras, in their summer character, chefs, half the demand."
+    },
+    "fi": {
+      "title": "Keskiyön aurinko, Lapin luksushuvilat 32 päivää valoa",
+      "description": "6.6.–7.7.: jakso, jolloin aurinko ei laske Lapissa. Samat huvilat, jotka varaat revontulille, kesäluonteessaan, yksityiskokit, puolet talven kysynnästä."
+    },
+    "de": {
+      "title": "Mitternachtssonne, Luxusvillen in 32 Tagen Licht",
+      "description": "6. Juni – 7. Juli: das Fenster, in dem die Sonne in Lappland nicht untergeht. Dieselben Villen wie für die Polarlichter, im Sommer, Privatköche, halbe Nachfrage."
+    },
+    "ja": {
+      "title": "白夜｜光に満ちる32日間のラップランド・ヴィラ",
+      "description": "6月6日〜7月7日、ラップランドで太陽が沈まない期間。オーロラのために予約するのと同じヴィラが、夏の表情を見せる，特別邸宅、専属シェフ、需要は半分。"
+    },
+    "es": {
+      "title": "Sol de medianoche, villas de lujo, 32 días de luz",
+      "description": "Del 6 de junio al 7 de julio, el sol no se pone en Laponia. Las villas que reservas para las auroras, en su carácter estival: chefs privados y la mitad de demanda."
+    },
+    "pt-BR": {
+      "title": "Sol da meia-noite, vilas de luxo em 32 dias de luz",
+      "description": "De 6 de junho a 7 de julho, o sol não se põe na Lapônia. As vilas que você reserva para as auroras, em seu caráter de verão: chefs privados e metade da procura."
+    },
+    "zh-CN": {
+      "title": "午夜阳光，32天不落日里的拉普兰别墅",
+      "description": "6月6日至7月7日，是拉普兰太阳不落的时节。与您为极光预订的别墅别无二致，却尽显夏日风韵，私藏宅邸、专属私厨，需求减半。"
+    },
+    "ko": {
+      "title": "백야, 32일의 빛 속 라플란드 럭셔리 빌라",
+      "description": "6월 6일 – 7월 7일: 라플란드에서 해가 지지 않는 기간. 오로라를 위해 예약하는 그 빌라들이 여름의 얼굴로, 리저브 저택, 프라이빗 셰프, 절반의 수요."
+    },
+    "fr": {
+      "title": "Soleil de minuit, villas de luxe, 32 jours de lumière",
+      "description": "Du 6 juin au 7 juillet : la fenêtre où le soleil ne se couche pas en Laponie. Les mêmes villas que pour les aurores, en été, chefs privés, moitié moins de monde."
+    },
+    "it": {
+      "title": "Sole di mezzanotte, ville di lusso, 32 giorni di luce",
+      "description": "Dal 6 giugno al 7 luglio: in Lapponia il sole non tramonta. Le stesse ville che prenoti per le aurore, nel loro carattere estivo, chef privati, metà della domanda."
+    },
+    "nl": {
+      "title": "Middernachtzon, luxe villa's in 32 dagen licht",
+      "description": "6 juni – 7 juli: het venster waarin de zon in Lapland niet ondergaat. Dezelfde villa's die u voor de aurora boekt, in hun zomerse karakter, privéchefs, halve vraag."
+    }
+  },
+  "/concierge": {
+    "en": {
+      "title": "Private Concierge, Anonymous Lapland Villa Planning",
+      "description": "Send one private inquiry: headcount, dates, preferences. We reply within one working day with a curated shortlist, including reserve villas never shown publicly."
+    },
+    "fi": {
+      "title": "Yksityinen concierge, anonyymi huvilasuunnittelu",
+      "description": "Lähetä yksi yksityinen tiedustelu: henget, päivät, toiveet. Vastaamme yhden työpäivän kuluessa käsin valitulla listalla, myös julkaisemattomat varauskohteet."
+    },
+    "de": {
+      "title": "Privater Concierge, anonyme Villenplanung in Lappland",
+      "description": "Senden Sie eine private Anfrage: Personenzahl, Daten, Wünsche. Wir antworten binnen eines Werktags mit einer Auswahl, auch nie öffentliche Reservevillen."
+    },
+    "ja": {
+      "title": "プライベートコンシェルジュ｜匿名のヴィラ手配",
+      "description": "一通のプライベートな問い合わせを：人数、日程、ご希望。1営業日以内に厳選したショートリストをお返しします，一般には決して公開されない特別ヴィラを含めて。"
+    },
+    "es": {
+      "title": "Conserjería privada, planificación anónima en Laponia",
+      "description": "Envía una consulta privada: huéspedes, fechas y preferencias. Respondemos en un día laborable con una selección a medida, con villas que nunca se publican."
+    },
+    "pt-BR": {
+      "title": "Concierge privado, planejamento anônimo na Lapônia",
+      "description": "Envie uma consulta privada: hóspedes, datas e preferências. Respondemos em um dia útil com uma seleção sob medida, com vilas que nunca aparecem publicamente."
+    },
+    "zh-CN": {
+      "title": "私人管家，匿名规划您的拉普兰别墅之旅",
+      "description": "只需发送一份私密咨询：人数、日期与偏好。我们将在一个工作日内回复一份精选名单，包含从不对外公开的私藏别墅。"
+    },
+    "ko": {
+      "title": "프라이빗 컨시어지, 익명 라플란드 빌라 플래닝",
+      "description": "프라이빗 문의 하나만 보내세요: 인원, 날짜, 선호. 영업일 하루 안에 엄선된 추천 목록으로 회신합니다, 공개되지 않는 리저브 빌라 포함."
+    },
+    "fr": {
+      "title": "Conciergerie privée, organisation anonyme en Laponie",
+      "description": "Envoyez une demande privée : personnes, dates, préférences. Nous répondons sous un jour ouvré avec une sélection, y compris des villas jamais publiées."
+    },
+    "it": {
+      "title": "Concierge privato, pianificazione anonima in Lapponia",
+      "description": "Inviate una richiesta privata: ospiti, date, preferenze. Rispondiamo entro un giorno lavorativo con una rosa selezionata, incluse ville riservate, mai pubblicate."
+    },
+    "nl": {
+      "title": "Privéconciërge, anonieme villaplanning in Lapland",
+      "description": "Stuur één privéaanvraag: personen, data, voorkeuren. We reageren binnen één werkdag met een shortlist, inclusief villa's die nooit publiek verschijnen."
+    }
+  },
+  "/about": {
+    "en": {
+      "title": "About, Lapland Luxury Villas, curated from Finland",
+      "description": "A short, curated private collection of Lapland's finest villas and suites, run from Finnish Lapland by Lapeso Oy, part of the LaplandVibes network."
+    },
+    "fi": {
+      "title": "Tietoa, Lapin luksushuvilat, koottu Suomesta",
+      "description": "Tiivis, käsin valittu yksityiskokoelma Lapin hienoimpia huviloita ja sviittejä, hoidettu Suomen Lapista Lapeso Oy:n toimesta, osa LaplandVibes-verkostoa."
+    },
+    "de": {
+      "title": "Über uns, Luxusvillen in Lappland, aus Finnland geführt",
+      "description": "Eine kurze, kuratierte Privatsammlung der schönsten Villen und Suiten Lapplands, von Lapeso Oy aus Finnisch-Lappland geführt, Teil des LaplandVibes-Netzwerks."
+    },
+    "ja": {
+      "title": "私たちについて｜フィンランド発、厳選のラップランド・ヴィラ",
+      "description": "ラップランド屈指のヴィラとスイートを集めた、小さな非公開コレクション。フィンランド・ラップランドからLapeso Oyが運営し、LaplandVibesネットワークの一員です。存在理由、提携先、そして手がけないこと。"
+    },
+    "es": {
+      "title": "Quiénes somos, Villas de Lujo en Laponia, desde Finlandia",
+      "description": "Colección privada de las mejores villas y suites de Laponia, gestionada desde la Laponia finlandesa por Lapeso Oy, parte de la red LaplandVibes."
+    },
+    "pt-BR": {
+      "title": "Sobre, Vilas de Luxo na Lapônia, selecionadas na Finlândia",
+      "description": "Coleção privada das melhores vilas e suítes da Lapônia, conduzida a partir da Lapônia finlandesa pela Lapeso Oy, parte da rede LaplandVibes. Quem somos."
+    },
+    "zh-CN": {
+      "title": "关于我们，源自芬兰的拉普兰别墅臻选",
+      "description": "一份精短的拉普兰顶级别墅与套房私人臻选，由Lapeso Oy在芬兰拉普兰运营，隶属LaplandVibes网络。我们因何而在、与谁合作、又不做什么。"
+    },
+    "ko": {
+      "title": "소개, 핀란드에서 엄선한 라플란드 럭셔리 빌라",
+      "description": "핀란드 라플란드에서 Lapeso Oy가 운영하는, 라플란드 최고의 빌라와 스위트를 엄선한 프라이빗 컬렉션, LaplandVibes 네트워크의 일부. 우리가 존재하는 이유, 함께하는 파트너, 하지 않는 일."
+    },
+    "fr": {
+      "title": "À propos, villas de luxe en Laponie, depuis la Finlande",
+      "description": "Une petite collection privée des plus belles villas et suites de Laponie, gérée depuis la Laponie finlandaise par Lapeso Oy, au sein du réseau LaplandVibes."
+    },
+    "it": {
+      "title": "Chi siamo, ville di lusso in Lapponia, dalla Finlandia",
+      "description": "Una piccola collezione privata delle più belle ville e suite della Lapponia, gestita dalla Lapponia finlandese da Lapeso Oy, parte del network LaplandVibes."
+    },
+    "nl": {
+      "title": "Over ons, luxe villa's in Lapland, vanuit Finland",
+      "description": "Een kleine privécollectie van Laplands mooiste villa's en suites, gerund vanuit Fins Lapland door Lapeso Oy, onderdeel van het LaplandVibes-netwerk."
+    }
+  },
+  "/villas/kakslauttanen-glass-igloo-suite": {
+    "en": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Heated thermal glass over a hand-crafted kelo-pine cabin, the original aurora bedroom."
+    },
+    "fi": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Lämmitettyä lämpölasia käsintehdyn kelohonkamökin päällä, alkuperäinen revontulimakuuhuone."
+    },
+    "de": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Beheiztes Thermoglas über einer handgefertigten Kelo-Kiefernhütte, das ursprüngliche Polarlicht-Schlafzimmer."
+    },
+    "ja": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "手作りのケロパイン・キャビンを覆う断熱サーマルガラス。オーロラを眺めるための、原点となった寝室。"
+    },
+    "es": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Cristal térmico calefactado sobre una cabaña de pino kelo tallada a mano: el dormitorio bajo la aurora original."
+    },
+    "pt-BR": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Vidro térmico aquecido sobre uma cabana de pinho kelo feita à mão, o quarto-aurora original."
+    },
+    "zh-CN": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "手工打造的 kelo 古松木屋之上，覆盖一层加热隔热玻璃、最初的极光卧室。"
+    },
+    "ko": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "손으로 지은 켈로 소나무 통나무집 위에 얹은 발열 단열 유리 지붕, 오로라 침실의 원형."
+    },
+    "fr": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Verre thermique chauffant au-dessus d'une cabane en pin kelo faite main, la chambre aurorale originelle."
+    },
+    "it": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Vetro termico riscaldato sopra una baita in pino kelo lavorata a mano: la camera aurora originale."
+    },
+    "nl": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Verwarmd thermisch glas boven een handgebouwde kelo-dennenhutten, de oorspronkelijke noorderlichtslaapkamer."
+    }
+  },
+  "/villas/arctic-treehouse-suite": {
+    "en": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Rajakangas-designed cantilevered suite with a full glass façade pointed at the auroras."
+    },
+    "fi": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Rajakankaan suunnittelema ulokkeinen sviitti, jonka koko lasiseinä avautuu kohti revontulia."
+    },
+    "de": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Von Rajakangas entworfene auskragende Suite mit voller Glasfassade in Richtung der Polarlichter."
+    },
+    "ja": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Rajakangas設計の片持ち構造スイート。オーロラへ向けたガラス張りのファサード。"
+    },
+    "es": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Suite voladiza diseñada por Rajakangas con una fachada de cristal íntegra orientada a las auroras."
+    },
+    "pt-BR": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Suíte em balanço projetada por Rajakangas, com fachada de vidro inteira voltada para as auroras."
+    },
+    "zh-CN": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Rajakangas 设计的悬挑式套房，整面玻璃墙正对极光。"
+    },
+    "ko": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Rajakangas가 설계한 캔틸레버 스위트, 오로라를 향해 펼쳐진 전면 유리 파사드."
+    },
+    "fr": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Suite en porte-à-faux signée Rajakangas, à la façade entièrement vitrée orientée vers les aurores."
+    },
+    "it": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Suite a sbalzo firmata Rajakangas, con facciata interamente vetrata rivolta verso l’aurora."
+    },
+    "nl": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Door Rajakangas ontworpen uitkragende suite met een volledig glazen gevel gericht op het noorderlicht."
+    }
+  },
+  "/villas/aurora-village-glass-cabin": {
+    "en": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Twenty-four glass cabins facing nothing but forest and the aurora oval."
+    },
+    "fi": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Kaksikymmentäneljä lasimökkiä, joiden edessä ei muuta kuin metsää ja revontuliovaali."
+    },
+    "de": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Vierundzwanzig Glashütten, die auf nichts als Wald und das Polarlichtoval blicken."
+    },
+    "ja": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "24棟のガラスキャビンが向き合うのは、森とオーロラオーバルだけ。"
+    },
+    "es": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Veinticuatro cabañas de cristal frente a nada más que bosque y el óvalo auroral."
+    },
+    "pt-BR": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Vinte e quatro cabanas de vidro voltadas para nada além de floresta e do oval da aurora."
+    },
+    "zh-CN": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "二十四栋玻璃小屋，面向的只有森林与极光带。"
+    },
+    "ko": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "숲과 오로라 오벌만을 마주한 스물네 채의 유리 캐빈."
+    },
+    "fr": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Vingt-quatre cabanes de verre face à rien d'autre que la forêt et l'ovale auroral."
+    },
+    "it": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Ventiquattro cabine di vetro affacciate solo sulla foresta e sull’ovale aurorale."
+    },
+    "nl": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Vierentwintig glazen hutten met uitzicht op niets dan bos en de noorderlichtovaal."
+    }
+  },
+  "/villas/levin-iglut-golden-crown": {
+    "en": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Glass igloos perched above Levi fell, the only Lapland igloo cluster facing south to the valley."
+    },
+    "fi": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Lasi-iglut Levitunturin rinteellä, Lapin ainoa iglurypäs, joka avautuu etelään laaksoon."
+    },
+    "de": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Glasiglus hoch über dem Fjell von Levi, das einzige Iglu-Cluster Lapplands mit Südausrichtung zum Tal."
+    },
+    "ja": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Levi山の上にせり出すガラスイグルー,谷へ向かって南を望む、Laplandで唯一のイグルー群。"
+    },
+    "es": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Iglús de cristal asomados sobre el fell de Levi: el único conjunto de iglús de Laponia orientado al sur, hacia el valle."
+    },
+    "pt-BR": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Iglus de vidro empoleirados acima do fell de Levi, o único conjunto de iglus da Lapônia voltado para o sul, para o vale."
+    },
+    "zh-CN": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "高踞列维（Levi）山丘之上的玻璃冰屋、拉普兰唯一一处朝南面向山谷的冰屋群。"
+    },
+    "ko": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Levi 펠 위에 자리한 유리 이글루, 계곡을 향해 남쪽을 바라보는 라플란드 유일의 이글루 군락."
+    },
+    "fr": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Igloos de verre perchés au-dessus du fjell de Levi, le seul ensemble d'igloos de Laponie tourné au sud, vers la vallée."
+    },
+    "it": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Igloo di vetro arroccati sopra la fell di Levi: l’unico gruppo di igloo della Lapponia rivolto a sud, verso la valle."
+    },
+    "nl": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Glazen iglo's hoog boven de fjeld van Levi, de enige iglocluster van Lapland die op het zuiden naar het dal kijkt."
+    }
+  },
+  "/villas/wilderness-hotel-nellim-aurora-bubble": {
+    "en": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "A glass bubble suite at the edge of the boreal forest, twenty minutes from the Russian border."
+    },
+    "fi": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Lasikupolisviitti boreaalisen metsän laidalla, kahdenkymmenen minuutin päässä Venäjän rajasta."
+    },
+    "de": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Eine Glaskuppel-Suite am Rand des borealen Waldes, zwanzig Minuten von der russischen Grenze entfernt."
+    },
+    "ja": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "北方林の縁に佇むガラスバブルスイート。ロシア国境までわずか20分。"
+    },
+    "es": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Una suite burbuja de cristal al borde del bosque boreal, a veinte minutos de la frontera rusa."
+    },
+    "pt-BR": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Uma suíte-bolha de vidro na borda da floresta boreal, a vinte minutos da fronteira russa."
+    },
+    "zh-CN": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "一间立于北方针叶林边缘的玻璃泡泡套房，距俄罗斯边境二十分钟。"
+    },
+    "ko": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "북방 침엽수림 가장자리, 러시아 국경에서 20분 거리에 자리한 유리 버블 스위트."
+    },
+    "fr": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Une suite-bulle de verre à la lisière de la forêt boréale, à vingt minutes de la frontière russe."
+    },
+    "it": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Una suite a bolla di vetro ai margini della foresta boreale, a venti minuti dal confine russo."
+    },
+    "nl": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "Een glazen bubbelsuite aan de rand van het boreale bos, twintig minuten van de Russische grens."
+    }
+  },
+  "/villas/star-arctic-suite": {
+    "en": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "A glass-walled suite at the summit of Kaunispää fell, the highest aurora bedroom in the country."
+    },
+    "fi": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Lasiseinäinen sviitti Kaunispään tunturin laella, maan korkeimmalla sijaitseva revontulimakuuhuone."
+    },
+    "de": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Eine verglaste Suite auf dem Gipfel des Kaunispää-Fjells, das höchstgelegene Polarlicht-Schlafzimmer des Landes."
+    },
+    "ja": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Kaunispää山の頂に立つガラス張りのスイート,この国で最も高所にあるオーロラの寝室。"
+    },
+    "es": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Una suite con paredes de cristal en la cima del fell de Kaunispää: el dormitorio bajo la aurora más alto del país."
+    },
+    "pt-BR": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Uma suíte com paredes de vidro no cume do fell Kaunispää, o quarto-aurora mais alto do país."
+    },
+    "zh-CN": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "一间立于考尼斯帕（Kaunispää）山丘之巅的玻璃墙套房、全国最高的极光卧室。"
+    },
+    "ko": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Kaunispää 펠 정상에 자리한 유리벽 스위트, 핀란드에서 가장 높은 오로라 침실."
+    },
+    "fr": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Une suite aux parois de verre au sommet du fjell de Kaunispää, la chambre aurorale la plus haute du pays."
+    },
+    "it": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Una suite con pareti di vetro sulla vetta della fell di Kaunispää: la camera aurora piu alta del paese."
+    },
+    "nl": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Een suite met glazen wanden op de top van de fjeld Kaunispää, de hoogstgelegen noorderlichtslaapkamer van het land."
+    }
+  },
+  "/villas/apukka-resort-aurora-cabin": {
+    "en": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Heritage-style aurora wagons on the shore of a frozen lake, ten minutes from Rovaniemi airport."
+    },
+    "fi": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Perinnetyyliset revontulivaunut jäätyneen järven rannalla, kymmenen minuutin päässä Rovaniemen lentoasemalta."
+    },
+    "de": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Polarlicht-Waggons im historischen Stil am Ufer eines zugefrorenen Sees, zehn Minuten vom Flughafen Rovaniemi."
+    },
+    "ja": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "凍った湖の岸辺に佇むヘリテージ調のオーロラワゴン。Rovaniemi空港から10分。"
+    },
+    "es": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Vagones de aurora de estilo histórico a la orilla de un lago helado, a diez minutos del aeropuerto de Rovaniemi."
+    },
+    "pt-BR": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Vagões-aurora de estilo histórico à beira de um lago congelado, a dez minutos do aeroporto de Rovaniemi."
+    },
+    "zh-CN": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "冰封湖畔的复古风格极光车厢，距罗瓦涅米（Rovaniemi）机场十分钟。"
+    },
+    "ko": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "얼어붙은 호숫가에 놓인 헤리티지풍 오로라 왜건, Rovaniemi 공항에서 10분 거리."
+    },
+    "fr": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Wagons auroraux d'inspiration patrimoniale au bord d'un lac gelé, à dix minutes de l'aéroport de Rovaniemi."
+    },
+    "it": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Vagoni aurora in stile storico sulla riva di un lago ghiacciato, a dieci minuti dall’aeroporto di Rovaniemi."
+    },
+    "nl": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Noorderlichtwagons in heritage-stijl aan de oever van een bevroren meer, tien minuten van de luchthaven van Rovaniemi."
+    }
+  },
+  "/villas/private-lakeside-log-estate": {
+    "en": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "A private hand-built log house on its own bay of Lake Inari. Concierge inquiry only."
+    },
+    "fi": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Yksityinen käsin rakennettu hirsitalo omalla Inarijärven lahdellaan. Vain conciergen kautta tiedustellen."
+    },
+    "de": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Ein privates, handgebautes Blockhaus an einer eigenen Bucht des Inarisees. Nur auf Concierge-Anfrage."
+    },
+    "ja": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Inari湖の専用の入り江に建つ、手作りのプライベートログハウス。コンシェルジュへのお問い合わせ限定。"
+    },
+    "es": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Una casa de troncos privada construida a mano en su propia bahía del lago Inari. Solo por consulta a la concierge."
+    },
+    "pt-BR": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Uma casa de madeira privativa, feita à mão, em sua própria enseada do Lago Inari. Apenas por consulta ao concierge."
+    },
+    "zh-CN": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "一栋纯手工原木宅邸，独占伊纳里湖（Lake Inari）的一片私人海湾。仅限礼宾咨询。"
+    },
+    "ko": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Inari 호수의 전용 만에 손수 지은 사유 통나무집. 컨시어지 문의 전용."
+    },
+    "fr": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Une maison en rondins privée, bâtie main, sur sa propre baie du lac Inari. Sur demande auprès du concierge uniquement."
+    },
+    "it": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Una casa di tronchi privata costruita a mano sulla propria baia del lago Inari. Solo su richiesta al concierge."
+    },
+    "nl": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "Een privé handgebouwd blokhuis aan een eigen baai van het Inarimeer. Uitsluitend op aanvraag via de concierge."
+    }
+  },
+  "/villas/designer-mountain-chalet-levi": {
+    "en": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "A modern architect-built chalet on Levi south slope. Ski-in / ski-out, private wellness floor."
+    },
+    "fi": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Moderni arkkitehdin suunnittelema chalet Levin etelärinteellä. Ski-in/ski-out, yksityinen hyvinvointikerros."
+    },
+    "de": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Ein modernes, architektengeplantes Chalet am Südhang von Levi. Ski-in/Ski-out, private Wellnessetage."
+    },
+    "ja": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Levi山の南斜面に建つ、建築家設計のモダンなシャレー。スキーイン/スキーアウト、専用ウェルネスフロア。"
+    },
+    "es": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Un chalé moderno de autor en la ladera sur de Levi. Ski-in / ski-out, planta de bienestar privada."
+    },
+    "pt-BR": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Um chalé moderno projetado por arquiteto na encosta sul de Levi. Ski-in / ski-out, andar de bem-estar privativo."
+    },
+    "zh-CN": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "一栋立于列维（Levi）南坡、由建筑师打造的现代山间小屋。雪场门口出入，私人养生楼层。"
+    },
+    "ko": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Levi 남쪽 슬로프에 건축가가 지은 현대식 샬레. 스키인/스키아웃, 전용 웰니스 층."
+    },
+    "fr": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Un chalet contemporain d'architecte sur le versant sud de Levi. Ski-in / ski-out, étage bien-être privé."
+    },
+    "it": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Uno chalet moderno firmato da un architetto sul versante sud di Levi. Ski-in / ski-out, piano benessere privato."
+    },
+    "nl": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "Een modern, door een architect gebouwd chalet op de zuidhelling van Levi. Ski-in / ski-out, eigen wellnessverdieping."
+    }
+  },
+  "/destinations/saariselka": {
+    "en": {
+      "title": "Saariselkä — Lapland · Private Villas, Suites & Aurora",
+      "description": "The luxury aurora hub of northern Finland, Kakslauttanen, Star Arctic, the wild edge of Urho Kekkonen. Inland boreal forest, low light pollution. ~200…"
+    },
+    "fi": {
+      "title": "Saariselkä — Lappi · yksityishuvilat, sviitit ja revontulet",
+      "description": "Pohjois-Suomen luksusrevontulikeskus, Kakslauttanen, Star Arctic ja Urho Kekkosen villi reuna. Sisämaan boreaalista metsää, vähäinen valosaaste. ~200 selkeää…"
+    },
+    "de": {
+      "title": "Saariselkä — Lappland · Privatvillen, Suiten & Polarlicht",
+      "description": "Das Luxus-Polarlichtzentrum Nordfinnlands, Kakslauttanen, Star Arctic, der wilde Rand des Urho-Kekkonen-Nationalparks. Boreales Binnenwaldgebiet, geringe…"
+    },
+    "ja": {
+      "title": "Saariselkä — ラップランド · プライベートヴィラ、スイート、オーロラ",
+      "description": "北フィンランドの高級オーロラ拠点, Kakslauttanen、Star Arctic、そしてUrho Kekkonenの荒々しい縁。 内陸の北方林、光害は少なめ。1シーズンに約200の晴天オーロラ夜, Inariに次ぐフィンランド第二位。"
+    },
+    "es": {
+      "title": "Saariselkä — Laponia · villas privadas, suites y auroras",
+      "description": "El núcleo de auroras de lujo del norte de Finlandia: Kakslauttanen, Star Arctic, el límite salvaje de Urho Kekkonen. Bosque boreal interior, baja…"
+    },
+    "pt-BR": {
+      "title": "Saariselkä — Lapônia · vilas privadas, suítes e auroras",
+      "description": "O polo de auroras de luxo do norte da Finlândia, Kakslauttanen, Star Arctic, a borda selvagem de Urho Kekkonen. Floresta boreal do interior, baixa poluição…"
+    },
+    "zh-CN": {
+      "title": "Saariselkä — 拉普兰 · 私人别墅、套房与极光",
+      "description": "芬兰北部的奢华极光枢纽、Kakslauttanen、Star Arctic，以及乌尔禾·凯科宁的荒野边缘。 内陆北方针叶林，光污染低。每季约 200 个晴空极光夜、仅次于伊纳里（Inari），居芬兰第二。"
+    },
+    "ko": {
+      "title": "Saariselkä — 라플란드 · 프라이빗 빌라, 스위트, 오로라",
+      "description": "북부 핀란드의 럭셔리 오로라 거점, Kakslauttanen, Star Arctic, 그리고 Urho Kekkonen의 야생 가장자리. 내륙 북방 침엽수림, 낮은 광공해. 시즌당 약 200일의 맑은 하늘 오로라 밤, Inari에 이어 핀란드에서 두 번째."
+    },
+    "fr": {
+      "title": "Saariselkä — Laponie · villas privées, suites et aurores",
+      "description": "Le pôle aurores de luxe du nord de la Finlande, Kakslauttanen, Star Arctic, la frange sauvage d'Urho Kekkonen. Forêt boréale intérieure, faible pollution…"
+    },
+    "it": {
+      "title": "Saariselkä — Lapponia · ville private, suite e aurore",
+      "description": "Il polo del lusso aurorale della Finlandia settentrionale: Kakslauttanen, Star Arctic, il margine selvaggio di Urho Kekkonen. Foresta boreale interna, basso…"
+    },
+    "nl": {
+      "title": "Saariselkä — Lapland · privévilla's, suites en aurora",
+      "description": "De luxe noorderlichthub van Noord-Finland, Kakslauttanen, Star Arctic, de wilde rand van Urho Kekkonen. Boreaal bos in het binnenland, weinig…"
+    }
+  },
+  "/destinations/inari": {
+    "en": {
+      "title": "Inari — Lapland · Private Villas, Suites & Aurora",
+      "description": "Statistically the most reliable aurora latitude in the European Union. Sami heartland, Lake Inari, dark skies. Highest aurora frequency in continental EU.…"
+    },
+    "fi": {
+      "title": "Inari — Lappi · yksityishuvilat, sviitit ja revontulet",
+      "description": "Tilastollisesti Euroopan unionin luotettavin revontulileveysaste. Saamelaisten sydänmaa, Inarijärvi, pimeät taivaat. Korkein revontulitiheys Manner-EU:ssa.…"
+    },
+    "de": {
+      "title": "Inari — Lappland · Privatvillen, Suiten & Polarlicht",
+      "description": "Statistisch der zuverlässigste Polarlicht-Breitengrad der Europäischen Union. Samisches Kernland, Inarisee, dunkle Himmel. Höchste Polarlichtfrequenz der…"
+    },
+    "ja": {
+      "title": "Inari — ラップランド · プライベートヴィラ、スイート、オーロラ",
+      "description": "統計的に欧州連合でもっとも確実なオーロラ緯度。サーミの中心地、Inari湖、暗い空。 大陸部EUで最高のオーロラ頻度。1シーズンに約220の晴天オーロラ夜,統計的な勝者。"
+    },
+    "es": {
+      "title": "Inari — Laponia · villas privadas, suites y auroras",
+      "description": "Estadísticamente, la latitud de auroras más fiable de la Unión Europea. Corazón sami, lago Inari, cielos oscuros. La mayor frecuencia de auroras de la Europa…"
+    },
+    "pt-BR": {
+      "title": "Inari — Lapônia · vilas privadas, suítes e auroras",
+      "description": "Estatisticamente a latitude de auroras mais confiável da União Europeia. Coração Sami, Lago Inari, céus escuros. Maior frequência de auroras na UE…"
+    },
+    "zh-CN": {
+      "title": "Inari — 拉普兰 · 私人别墅、套房与极光",
+      "description": "在统计上是欧盟极光最可靠的纬度。萨米人的腹地、伊纳里湖、暗夜星空。 欧盟大陆极光频率最高。每季约 220 个晴空极光夜、统计上的赢家。"
+    },
+    "ko": {
+      "title": "Inari — 라플란드 · 프라이빗 빌라, 스위트, 오로라",
+      "description": "통계적으로 유럽연합에서 가장 안정적인 오로라 위도. 사미족의 중심지, Inari 호수, 어두운 하늘. 유럽 대륙 연합 내 최고 오로라 빈도. 시즌당 약 220일의 맑은 하늘 오로라 밤, 통계상 승자."
+    },
+    "fr": {
+      "title": "Inari — Laponie · villas privées, suites et aurores",
+      "description": "Statistiquement la latitude aurorale la plus fiable de l'Union européenne. Cœur sami, lac Inari, ciels noirs. Fréquence aurorale la plus élevée de l'UE…"
+    },
+    "it": {
+      "title": "Inari — Lapponia · ville private, suite e aurore",
+      "description": "Statisticamente la latitudine aurorale piu affidabile dell’Unione Europea. Cuore Sami, lago Inari, cieli bui. La piu alta frequenza aurorale dell’UE…"
+    },
+    "nl": {
+      "title": "Inari — Lapland · privévilla's, suites en aurora",
+      "description": "Statistisch gezien de betrouwbaarste noorderlichtbreedtegraad in de Europese Unie. Sami-hartland, Inarimeer, donkere hemel. Hoogste noorderlichtfrequentie…"
+    }
+  },
+  "/destinations/rovaniemi": {
+    "en": {
+      "title": "Rovaniemi — Lapland · Private Villas, Suites & Aurora",
+      "description": "The arrival city. Architect-built suites, daily direct flights from major hubs. Lower aurora latitude than Inari/Saariselkä but still ~150 clear-sky aurora…"
+    },
+    "fi": {
+      "title": "Rovaniemi — Lappi · yksityishuvilat, sviitit ja revontulet",
+      "description": "Saapumiskaupunki. Arkkitehdin suunnittelemia sviittejä, päivittäisiä suoria lentoja suurilta lentokentiltä. Matalampi revontulileveysaste kuin…"
+    },
+    "de": {
+      "title": "Rovaniemi — Lappland · Privatvillen, Suiten & Polarlicht",
+      "description": "Die Ankunftsstadt. Architektengeplante Suiten, tägliche Direktflüge von großen Drehkreuzen. Niedrigerer Polarlicht-Breitengrad als Inari/Saariselkä, aber…"
+    },
+    "ja": {
+      "title": "Rovaniemi — ラップランド · プライベートヴィラ、スイート、オーロラ",
+      "description": "玄関口となる街。建築家設計のスイート、主要ハブからの毎日の直行便。 Inari/Saariselkäより低いオーロラ緯度だが、それでも約150の晴天オーロラ夜。山の村で少なくとも一泊と組み合わせるのが最良。"
+    },
+    "es": {
+      "title": "Rovaniemi — Laponia · villas privadas, suites y auroras",
+      "description": "La ciudad de llegada. Suites de autor, vuelos directos diarios desde grandes hubs. Latitud de auroras más baja que Inari/Saariselkä, pero aun así ~150 noches…"
+    },
+    "pt-BR": {
+      "title": "Rovaniemi — Lapônia · vilas privadas, suítes e auroras",
+      "description": "A cidade de chegada. Suítes projetadas por arquitetos, voos diretos diários a partir dos principais hubs. Latitude de auroras mais baixa que…"
+    },
+    "zh-CN": {
+      "title": "Rovaniemi — 拉普兰 · 私人别墅、套房与极光",
+      "description": "入境之城。建筑师打造的套房，每日有来自各大枢纽的直飞航班。 极光纬度低于伊纳里（Inari）/ 萨利色尔卡（Saariselkä），但仍有每季约 150 个晴空极光夜。最好搭配至少一晚的山村住宿。"
+    },
+    "ko": {
+      "title": "Rovaniemi — 라플란드 · 프라이빗 빌라, 스위트, 오로라",
+      "description": "도착의 도시. 건축가가 지은 스위트, 주요 허브에서의 매일 직항. Inari/Saariselkä보다 낮은 오로라 위도지만 여전히 약 150일의 맑은 하늘 오로라 밤. 최소 하룻밤은 펠 마을과 함께 짜는 것이 가장 좋습니다."
+    },
+    "fr": {
+      "title": "Rovaniemi — Laponie · villas privées, suites et aurores",
+      "description": "La ville d'arrivée. Suites d'architecte, vols directs quotidiens depuis les grands hubs. Latitude aurorale plus basse qu'Inari/Saariselkä mais toujours ~150…"
+    },
+    "it": {
+      "title": "Rovaniemi — Lapponia · ville private, suite e aurore",
+      "description": "La citta d’arrivo. Suite firmate da architetti, voli diretti giornalieri dai principali hub. Latitudine aurorale piu bassa rispetto a Inari/Saariselkä, ma…"
+    },
+    "nl": {
+      "title": "Rovaniemi — Lapland · privévilla's, suites en aurora",
+      "description": "De aankomststad. Door architecten gebouwde suites, dagelijkse directe vluchten vanaf grote hubs. Lagere noorderlichtbreedtegraad dan Inari/Saariselkä maar…"
+    }
+  },
+  "/destinations/levi": {
+    "en": {
+      "title": "Levi — Lapland · Private Villas, Suites & Aurora",
+      "description": "Finland's premier ski resort. Luxury chalets on the south slope, ski-in / ski-out from Levi gondola. South-facing aurora panorama (rare). ~150 clear-sky…"
+    },
+    "fi": {
+      "title": "Levi — Lappi · yksityishuvilat, sviitit ja revontulet",
+      "description": "Suomen ykkönen hiihtokeskus. Luksuschalet´t etelärinteellä, ski-in/ski-out Levin gondolihissiltä. Etelään avautuva revontulipanoraama (harvinaista). ~150…"
+    },
+    "de": {
+      "title": "Levi — Lappland · Privatvillen, Suiten & Polarlicht",
+      "description": "Finnlands führendes Skigebiet. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi. Nach Süden ausgerichtetes Polarlicht-Panorama (selten). ~150…"
+    },
+    "ja": {
+      "title": "Levi — ラップランド · プライベートヴィラ、スイート、オーロラ",
+      "description": "フィンランド屈指のスキーリゾート。南斜面の高級シャレー、Leviのゴンドラからスキーイン/スキーアウト。 南向きのオーロラパノラマ（稀）。約150の晴天夜だが、灯る村が北側ではめずらしい前景の構図をもたらす。"
+    },
+    "es": {
+      "title": "Levi — Laponia · villas privadas, suites y auroras",
+      "description": "La principal estación de esquí de Finlandia. Chalés de lujo en la ladera sur, ski-in / ski-out desde la góndola de Levi. Panorama auroral orientado al sur…"
+    },
+    "pt-BR": {
+      "title": "Levi — Lapônia · vilas privadas, suítes e auroras",
+      "description": "O principal resort de esqui da Finlândia. Chalés de luxo na encosta sul, ski-in / ski-out a partir da gôndola de Levi. Panorama de auroras voltado para o sul…"
+    },
+    "zh-CN": {
+      "title": "Levi — 拉普兰 · 私人别墅、套房与极光",
+      "description": "芬兰首屈一指的滑雪胜地。南坡上的奢华小屋，从列维（Levi）缆车实现雪场门口出入。 朝南的极光全景（罕见）。每季约 150 个晴空夜，但灯火通明的村庄提供了更北处少有的前景构图。"
+    },
+    "ko": {
+      "title": "Levi — 라플란드 · 프라이빗 빌라, 스위트, 오로라",
+      "description": "핀란드 최고의 스키 리조트. 남쪽 슬로프의 럭셔리 샬레, Levi 곤돌라에서 스키인/스키아웃. 남향 오로라 파노라마 (드묾). 약 150일의 맑은 밤이지만, 불 밝힌 마을이 북쪽에서는 보기 드문 전경 구성을 더해줍니다."
+    },
+    "fr": {
+      "title": "Levi — Laponie · villas privées, suites et aurores",
+      "description": "La première station de ski de Finlande. Chalets de luxe sur le versant sud, ski-in / ski-out depuis la télécabine de Levi. Panorama auroral orienté sud…"
+    },
+    "it": {
+      "title": "Levi — Lapponia · ville private, suite e aurore",
+      "description": "La principale stazione sciistica della Finlandia. Chalet di lusso sul versante sud, ski-in / ski-out dalla gondola di Levi. Panorama aurorale rivolto a sud…"
+    },
+    "nl": {
+      "title": "Levi — Lapland · privévilla's, suites en aurora",
+      "description": "Het toonaangevende skiresort van Finland. Luxechalets op de zuidhelling, ski-in / ski-out vanaf de gondel van Levi. Noorderlichtpanorama op het zuiden…"
+    }
+  },
+  "/destinations/yllas": {
+    "en": {
+      "title": "Ylläs — Lapland · Private Villas, Suites & Aurora",
+      "description": "The quiet alternative to Levi. Pallas-Yllästunturi national park, fewer crowds, deeper forest. Inside the national park boundary, among the lowest…"
+    },
+    "fi": {
+      "title": "Ylläs — Lappi · yksityishuvilat, sviitit ja revontulet",
+      "description": "Levin rauhallinen vaihtoehto. Pallas-Yllästunturin kansallispuisto, vähemmän ruuhkaa, syvempi metsä. Kansallispuiston rajojen sisällä, Manner-Euroopan…"
+    },
+    "de": {
+      "title": "Ylläs — Lappland · Privatvillen, Suiten & Polarlicht",
+      "description": "Die ruhige Alternative zu Levi. Pallas-Yllästunturi-Nationalpark, weniger Menschenmengen, tieferer Wald. Innerhalb der Nationalparkgrenze, unter den…"
+    },
+    "ja": {
+      "title": "Ylläs — ラップランド · プライベートヴィラ、スイート、オーロラ",
+      "description": "Leviの静かな代替地。Pallas-Yllästunturi国立公園、少ない人出、より深い森。 国立公園の境界内,大陸部ヨーロッパでもっとも低い光害の値のひとつ。約180の晴天夜。"
+    },
+    "es": {
+      "title": "Ylläs — Laponia · villas privadas, suites y auroras",
+      "description": "La alternativa tranquila a Levi. Parque nacional de Pallas-Yllästunturi, menos gente, bosque más profundo. Dentro del límite del parque nacional: entre los…"
+    },
+    "pt-BR": {
+      "title": "Ylläs — Lapônia · vilas privadas, suítes e auroras",
+      "description": "A alternativa tranquila a Levi. Parque nacional Pallas-Yllästunturi, menos multidões, floresta mais profunda. Dentro dos limites do parque nacional, entre os…"
+    },
+    "zh-CN": {
+      "title": "Ylläs — 拉普兰 · 私人别墅、套房与极光",
+      "description": "列维（Levi）的静谧之选。帕拉斯-于莱斯通图里（Pallas-Yllästunturi）国家公园，人群更少，森林更深。 位于国家公园边界之内、光污染读数为欧洲大陆最低之列。每季约 180 个晴空夜。"
+    },
+    "ko": {
+      "title": "Ylläs — 라플란드 · 프라이빗 빌라, 스위트, 오로라",
+      "description": "Levi의 조용한 대안. Pallas-Yllästunturi 국립공원, 적은 인파, 더 깊은 숲. 국립공원 경계 안, 유럽 대륙에서 가장 낮은 광공해 수치에 속함. 약 180일의 맑은 밤."
+    },
+    "fr": {
+      "title": "Ylläs — Laponie · villas privées, suites et aurores",
+      "description": "L'alternative paisible à Levi. Parc national de Pallas-Yllästunturi, moins de foule, forêt plus profonde. À l'intérieur des limites du parc national, parmi…"
+    },
+    "it": {
+      "title": "Ylläs — Lapponia · ville private, suite e aurore",
+      "description": "L’alternativa tranquilla a Levi. Parco nazionale Pallas-Yllästunturi, meno folla, foresta piu profonda. All’interno del confine del parco nazionale, tra i…"
+    },
+    "nl": {
+      "title": "Ylläs — Lapland · privévilla's, suites en aurora",
+      "description": "Het rustige alternatief voor Levi. Nationaal Park Pallas-Yllästunturi, minder drukte, dieper bos. Binnen de grens van het nationaal park, een van de laagste…"
+    }
+  }
+}

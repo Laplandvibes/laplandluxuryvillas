@@ -1,9 +1,71 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- LV-LOCALE-TITLE (managed by scripts/inject_locale_titles.mjs) -->
+    <script>
+      (function () {
+        try {
+          var T = {"en":"Lapland Luxury Villas: Private Aurora Residences & Suites","fi":"Lapin luksushuvilat: yksityiset revontuli-residenssit ja sviitit","de":"Lappland Luxusvillen: Private Aurora-Residenzen und Suiten","ja":"ラップランドの高級ヴィラ: 専用オーロラレジデンスとスイート","es":"Villas de lujo en Laponia: residencias privadas con aurora y suites","pt-br":"Vilas de luxo na Lapônia: residências privadas com aurora e suítes","zh-cn":"拉普兰豪华别墅: 私人极光宅邸与套房","kr":"라플란드 럭셔리 빌라: 프라이빗 오로라 레지던스와 스위트","fr":"Villas de luxe en Laponie : résidences aurorales privées et suites","it":"Ville di lusso in Lapponia: residenze aurora private e suite","nl":"Luxe villas in Lapland: privé Aurora-residenties en suites"};
+          var path = location.pathname || '/';
+          var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', br: 'pt-br', cn: 'zh-cn', kr: 'kr', fr: 'fr', it: 'it', nl: 'nl' };
+          var loc = 'en';
+          for (var p in map) {
+            if (path === '/' + p || path.indexOf('/' + p + '/') === 0) { loc = map[p]; break; }
+          }
+          if (T[loc]) document.title = T[loc];
+        } catch (e) { /* fail silent */ }
+      })();
+    </script>
+    <!-- /LV-LOCALE-TITLE -->
+    <!-- LV-SYNC-LOCALE-REDIRECT (managed by scripts/inject_sync_redirect.mjs) -->
+    <script>
+      (function () {
+        try {
+          var path = location.pathname || '/';
+          // Already on a locale prefix? — never override
+          var prefixes = ['/fi','/de','/ja','/es','/br','/cn','/kr','/fr','/it','/nl'];
+          for (var i = 0; i < prefixes.length; i++) {
+            if (path === prefixes[i] || path.indexOf(prefixes[i] + '/') === 0) return;
+          }
+          // Only redirect from bare root or sub-pages without a locale prefix
+          var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-br': 'br', 'zh-cn': 'cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl' };
+          var stored = null;
+          try { stored = localStorage.getItem('lv_locale_choice'); } catch (e) {}
+          var target = null;
+          if (stored) {
+            var k = stored.toLowerCase();
+            if (map[k]) target = '/' + map[k];
+            else if (k === 'en') return; // explicit EN choice — stay
+          }
+          if (!target) {
+            var langs = navigator.languages || [navigator.language || 'en'];
+            for (var j = 0; j < langs.length; j++) {
+              var l = (langs[j] || '').toLowerCase();
+              if (l.indexOf('en') === 0) return; // EN browser — stay on /
+              if (l.indexOf('fi') === 0) { target = '/fi'; break; }
+              if (l.indexOf('de') === 0) { target = '/de'; break; }
+              if (l.indexOf('ja') === 0) { target = '/ja'; break; }
+              if (l.indexOf('es') === 0) { target = '/es'; break; }
+              if (l.indexOf('pt') === 0) { target = '/br'; break; }
+              if (l.indexOf('zh') === 0) { target = '/cn'; break; }
+              if (l.indexOf('ko') === 0) { target = '/kr'; break; }
+              if (l.indexOf('fr') === 0) { target = '/fr'; break; }
+              if (l.indexOf('it') === 0) { target = '/it'; break; }
+              if (l.indexOf('nl') === 0) { target = '/nl'; break; }
+            }
+          }
+          if (!target) return;
+          var dest = path === '/' ? target : target + path;
+          if (location.search) dest += location.search;
+          if (location.hash) dest += location.hash;
+          location.replace(dest);
+        } catch (err) { /* fail silent — fall through to React-based redirect */ }
+      })();
+    </script>
+    <!-- /LV-SYNC-LOCALE-REDIRECT -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#0F172A" />
     <meta name="robots" content="index, follow" />
 
     <!-- Primary SEO -->
@@ -13,34 +75,25 @@
     <meta name="author" content="LaplandLuxuryVillas — curated by Lapeso Oy in Finnish Lapland" />
     <!-- canonical: rendered per-route via React 19 native head tags -->
     <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="manifest" href="/site.webmanifest" />
-
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="LaplandLuxuryVillas" />
     <meta property="og:title" content="Lapland Luxury Villas: Private Aurora Residences &amp; Suites" />
     <meta property="og:description" content="A private collection of Lapland's finest villas and suites. Glass-roof retreats, lakeside log estates, anonymous concierge." />
     <meta property="og:url" content="https://laplandluxuryvillas.com/" />
-    <meta property="og:image" content="https://laplandluxuryvillas.com/og-default.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@laplandvibes" />
     <meta name="twitter:title" content="Lapland Luxury Villas: Private Aurora Residences &amp; Suites" />
     <meta name="twitter:description" content="Curated villas and suites across Finnish Lapland. Anonymous concierge, direct rates on request." />
-    <meta name="twitter:image" content="https://laplandluxuryvillas.com/og-default.webp" />
-
     <!-- Google Fonts — Cormorant Garamond (display) + DM Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Hero LCP preload — homepage hero background image -->
-    <link rel="preload" as="image" href="/images/hero-villa.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/summer-villa-lakeside.webp" fetchpriority="high" />
 
     <!-- Affiliate redirect warm-up — TLS handshakes during idle time -->
     <link rel="preconnect" href="https://go.laplandvibes.com" crossorigin />
@@ -104,6 +157,26 @@
         }
       });
     </script>
+      <!-- Open Graph image (1200×630 JPEG) -->
+    <meta property="og:image" content="https://laplandluxuryvillas.com/og-default.jpg?v=20260626b" />
+    <meta property="og:image:secure_url" content="https://laplandluxuryvillas.com/og-default.jpg?v=20260626b" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LaplandLuxuryVillas — glass-walled villa with hot tub under aurora in Lapland" />
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://laplandluxuryvillas.com/og-default.jpg?v=20260626b" />
+    <meta name="twitter:image:alt" content="LaplandLuxuryVillas — glass-walled villa with hot tub under aurora in Lapland" />
+      <!-- Favicon stack (LV ecosystem unified design) -->
+    <link rel="icon" href="/favicon.svg?v=20260626b" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico?v=20260626b" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260626b" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="apple-mobile-web-app-title" content="LaplandLuxuryVillas" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
   </head>
   <body>
     <div id="root"></div>

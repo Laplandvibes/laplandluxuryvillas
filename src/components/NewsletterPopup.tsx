@@ -1,5 +1,6 @@
 import SharedNewsletterPopup from '../shared/NewsletterPopup'
 import { trackNewsletterSignup } from '../lib/analytics'
+import { useLang } from '../i18n/useLang'
 
 /**
  * Site wrapper for the shared ecosystem newsletter popup.
@@ -16,9 +17,11 @@ import { trackNewsletterSignup } from '../lib/analytics'
  * Welcome email is the master #LaplandVibes-branded one (single audience).
  */
 export default function NewsletterPopup() {
+  const langRaw = useLang();
   return (
     <SharedNewsletterPopup
-      siteId="laplandluxuryvillas"
+lang={langRaw as 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl'}
+            siteId="laplandluxuryvillas"
       brandWord="LUXURY"
       endpoint="/api/newsletter"
       onSubscribed={(source) => trackNewsletterSignup(source)}

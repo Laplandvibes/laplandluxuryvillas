@@ -1,0 +1,95 @@
+[
+  {
+    "path": "/",
+    "fallbackTitle": "LaplandLuxuryVillas — Private Villas, Glass Igloos & Aurora Lodges",
+    "fallbackDescription": "Hand-picked luxury stays in Finnish Lapland — private wilderness villas, glass igloos and aurora lodges, with concierge booking across Rovaniemi, Levi and Inari.",
+    "appendSiteName": false
+  },
+  {
+    "path": "/villas",
+    "fallbackTitle": "Villas | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/suites",
+    "fallbackTitle": "Suites | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/destinations",
+    "fallbackTitle": "Destinations | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/experiences",
+    "fallbackTitle": "Experiences | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/midnight-sun",
+    "fallbackTitle": "Midnight Sun | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/concierge",
+    "fallbackTitle": "Concierge | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/about",
+    "fallbackTitle": "About | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/contact",
+    "copyKey": "contactPage",
+    "fallbackTitle": "Contact | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/privacy",
+    "fallbackTitle": "Privacy | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/terms",
+    "fallbackTitle": "Terms | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/cookie-policy",
+    "fallbackTitle": "Cookie Policy | LaplandLuxuryVillas"
+  },
+  {
+    "path": "/villas/kakslauttanen-glass-igloo-suite"
+  },
+  {
+    "path": "/villas/arctic-treehouse-suite"
+  },
+  {
+    "path": "/villas/aurora-village-glass-cabin"
+  },
+  {
+    "path": "/villas/levin-iglut-golden-crown"
+  },
+  {
+    "path": "/villas/wilderness-hotel-nellim-aurora-bubble"
+  },
+  {
+    "path": "/villas/star-arctic-suite"
+  },
+  {
+    "path": "/villas/apukka-resort-aurora-cabin"
+  },
+  {
+    "path": "/villas/private-lakeside-log-estate"
+  },
+  {
+    "path": "/villas/designer-mountain-chalet-levi"
+  },
+  {
+    "path": "/destinations/saariselka"
+  },
+  {
+    "path": "/destinations/inari"
+  },
+  {
+    "path": "/destinations/rovaniemi"
+  },
+  {
+    "path": "/destinations/levi"
+  },
+  {
+    "path": "/destinations/yllas"
+  }
+]

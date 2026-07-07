@@ -26,6 +26,7 @@
   --color-vibe-pink: #EC4899;
   --color-pink: #EC4899;
   --color-finland-blue: #002F6C;
+  --color-aurora-green: #34D399;
 
   /* Variant-specific */
   --color-onyx: #0A0F1C;          /* darker section bg (depth banding) */
@@ -55,6 +56,13 @@
     font-family: var(--font-heading);
     font-weight: 400;
     letter-spacing: -0.01em;
+    /* Premium gate: balance headings so a single word never orphans on its own
+     * line (premium_design_standard §3). Body copy uses pretty wrapping. */
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   /* Display headings get a slightly tighter tracking for the Cormorant cut */

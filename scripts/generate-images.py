@@ -74,12 +74,6 @@ IMAGES: list[tuple[str, str, str]] = [
      "twilight, warm interior light through the glass. " + STYLE,
      "1536x1024"),
 
-    ("villa-octola.webp",
-     "Wide exterior of a large architect-built timber wilderness lodge in a "
-     "private 100 sq km Finnish reserve at golden-hour winter twilight, "
-     "covered terrace, lake in front frozen, dark forest behind, warm light "
-     "from windows, completely empty of any other building. " + STYLE,
-     "1536x1024"),
 
     ("villa-arctic-treehouse.webp",
      "Modern Studio-Puisto-style cantilevered design suite on stilts among "

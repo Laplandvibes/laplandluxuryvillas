@@ -1,29 +1,19 @@
 import { Info } from 'lucide-react'
+import { useLang } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
 
 interface AffiliateDisclosureProps {
-  lang?: 'fi' | 'en'
   className?: string
   /** `compact` for inline-near-CTA placement, `full` for footer/page-top blocks. */
   variant?: 'compact' | 'full'
 }
 
-const TEXT = {
-  fi: {
-    compact: 'Sivu sisältää kumppanuuslinkkejä — saamme pienen provision varauksistasi ilman lisäkustannuksia.',
-    full: 'Tämä sivu sisältää kumppanuuslinkkejä. Kun varaat näiden kautta, saamme pienen provision ilman lisäkustannuksia sinulle.',
-  },
-  en: {
-    compact: 'Affiliate links — we earn a small commission at no extra cost when you book.',
-    full: 'This page contains affiliate links. If you book through these links, LaplandLuxuryVillas may receive a commission at no extra cost to you.',
-  },
-}
-
 export default function AffiliateDisclosure({
-  lang = 'en',
   className = '',
   variant = 'full',
 }: AffiliateDisclosureProps) {
-  const text = TEXT[lang][variant]
+  const lang = useLang()
+  const text = COPY[lang].affiliateDisclosure[variant]
 
   return (
     <p

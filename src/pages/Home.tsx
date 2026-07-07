@@ -7,35 +7,27 @@ import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import MidnightSunBand from '../components/MidnightSunBand'
 import NewsletterSection from '../components/NewsletterSection'
+import FAQ, { VILLA_FAQ_BY_LANG } from '../components/FAQ'
+import RelatedSites from '../components/RelatedSites'
 import { signatureVillas } from '../lib/villas'
-import { DESTINATIONS } from '../lib/destinations'
-
-const PHILOSOPHY = [
-  {
-    icon: Star,
-    title: 'A short list, not a directory.',
-    body: 'Ten villas and suites we know personally, in the destinations that actually justify the journey. We turn down properties more often than we add them — every entry on this page is one we would book ourselves.',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Anonymous trip-planning.',
-    body: 'A single private inbox, no public profile, no shared calendars with third parties. Send dates, headcount, preferences — receive a curated shortlist within one working day.',
-  },
-  {
-    icon: Compass,
-    title: 'Direct rates, where they exist.',
-    body: 'Public listings link to verified rates. Properties we hold privately — including reserve villas with no public availability — are quoted directly. We tell you which is which on the inquiry reply.',
-  },
-]
+import { getDestinations } from '../lib/destinations'
+import { useLang, useLocalePath } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
+import { getPageSeo } from '../lib/pageSeo'
 
 export default function Home() {
-  const villas = signatureVillas()
+  const lang = useLang()
+  const to = useLocalePath()
+  const c = COPY[lang]
+  const villas = signatureVillas(lang)
+  const PHILOSOPHY_ICONS = [Star, ShieldCheck, Compass]
+  const seo = getPageSeo('home', lang)
 
   return (
     <Page fullBleed>
       <SEO
-        title="Lapland Luxury Villas: Private Aurora Residences & Suites"
-        description="A private collection of Lapland's finest villas and suites — glass-roof retreats, lakeside log estates, designer aurora residences. Anonymous concierge, direct rates on request."
+        title={seo.title}
+        description={seo.description}
         canonicalPath="/"
         keywords={[
           'lapland luxury villas',
@@ -44,7 +36,6 @@ export default function Home() {
           'aurora villa lapland',
           'finnish lapland luxury cabin',
           'private chalet lapland',
-          'octola private wilderness',
           'kakslauttanen private villa',
         ]}
         jsonLd={[
@@ -60,53 +51,63 @@ export default function Home() {
               name: 'Lapeso Oy',
               url: 'https://laplandvibes.com',
             },
-            sameAs: [
-              'https://laplandvibes.com',
-              'https://laplandstays.com',
-            ],
+            sameAs: ['https://laplandvibes.com', 'https://laplandstays.com'],
           },
           {
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             url: 'https://laplandluxuryvillas.com',
             name: 'LaplandLuxuryVillas',
-            inLanguage: 'en',
+            inLanguage: lang === 'fi' ? 'fi' : lang === 'de' ? 'de' : 'en',
             publisher: { '@type': 'Organization', name: 'Lapeso Oy' },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: VILLA_FAQ_BY_LANG[lang].map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
           },
         ]}
       />
 
       <Hero
-        eyebrow="The Private Collection"
-        title="Finland's Lapland — quietly, at the top of the market."
-        lede="A short, curated selection of glass-roof villas, lakeside log estates and designer aurora suites across Saariselkä, Inari, Rovaniemi and the Lapland fells. Concierge-led, anonymous, direct rates on request."
-        primary={{ to: '/villas', label: 'Browse the collection' }}
-        secondary={{ to: '/concierge', label: 'Begin a private inquiry' }}
-        imageUrl="/images/hero-villa.webp"
-        imageAlt="A single glass-roof aurora villa in a snow-covered Lapland forest at twilight"
+        eyebrow={c.hero.home.eyebrow}
+        title={c.hero.home.title}
+        lede={c.hero.home.lede}
+        primary={{ to: to('/villas'), label: c.hero.home.primary }}
+        secondary={{ to: to('/concierge'), label: c.hero.home.secondary }}
+        imageUrl="/images/summer-villa-lakeside.webp"
+        imageAlt="A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light"
+        imgObjectPosition="20% 50%"
       />
 
       {/* PHILOSOPHY */}
       <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="eyebrow">How we work</span>
+            <span className="eyebrow">{c.home.philosophy.eyebrow}</span>
             <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
-              The opposite of a booking platform.
+              {c.home.philosophy.h2}
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {PHILOSOPHY.map((p) => (
-              <div key={p.title} className="text-center md:text-left">
-                <p.icon size={32} strokeWidth={1.4} className="mx-auto md:mx-0 text-[color:var(--color-brass)]" />
-                <h3 className="mt-6 font-heading text-2xl text-[color:var(--color-snow)] leading-tight">
-                  {p.title}
-                </h3>
-                <p className="mt-4 text-[color:var(--color-bone)]/75 text-sm sm:text-base font-body leading-relaxed">
-                  {p.body}
-                </p>
-              </div>
-            ))}
+            {c.home.philosophy.items.map((p, i) => {
+              const Icon = PHILOSOPHY_ICONS[i]
+              return (
+                <div key={p.title} className="text-center md:text-left">
+                  <Icon size={32} strokeWidth={1.4} className="mx-auto md:mx-0 text-[color:var(--color-brass)]" />
+                  <h3 className="mt-6 font-heading text-2xl text-[color:var(--color-snow)] leading-tight">
+                    {p.title}
+                  </h3>
+                  <p className="mt-4 text-[color:var(--color-bone)]/75 text-sm sm:text-base font-body leading-relaxed">
+                    {p.body}
+                  </p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -118,21 +119,19 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div className="max-w-2xl">
-              <span className="eyebrow">Signature villas</span>
+              <span className="eyebrow">{c.home.signature.eyebrow}</span>
               <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
-                Four anchors of the Lapland collection.
+                {c.home.signature.h2}
               </h2>
               <p className="mt-5 text-[color:var(--color-bone)]/75 text-base font-body leading-relaxed">
-                The properties we recommend most often. Each one has been visited
-                in the last twelve months — every detail below is verified, not
-                copied from a brochure.
+                {c.home.signature.lede}
               </p>
             </div>
             <Link
-              to="/villas"
+              to={to('/villas')}
               className="inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group whitespace-nowrap"
             >
-              Full collection
+              {c.cta.fullCollection}
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
           </div>
@@ -149,17 +148,17 @@ export default function Home() {
       <section className="bg-[color:var(--color-onyx)] py-24 md:py-32 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="eyebrow">Destinations</span>
+            <span className="eyebrow">{c.home.destinations.eyebrow}</span>
             <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
-              Five places, each with a clear reason.
+              {c.home.destinations.h2}
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
-            {DESTINATIONS.map((d) => (
+            {getDestinations(lang).map((d) => (
               <Link
                 key={d.slug}
-                to={`/destinations/${d.slug}`}
+                to={to(`/destinations/${d.slug}`)}
                 className="group card-onyx p-6 flex flex-col"
               >
                 <div
@@ -183,7 +182,7 @@ export default function Home() {
                   {d.position}
                 </p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-brass)]">
-                  Read profile
+                  {c.cta.readProfile}
                   <ArrowUpRight size={12} />
                 </span>
               </Link>
@@ -192,13 +191,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONCIERGE BAND */}
       <ConciergeBand />
 
-      {/* MIDNIGHT SUN */}
       <MidnightSunBand />
 
-      {/* NEWSLETTER */}
+      <FAQ />
+
+      <RelatedSites />
+
       <NewsletterSection />
     </Page>
   )

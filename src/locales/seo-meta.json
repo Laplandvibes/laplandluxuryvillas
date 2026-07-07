@@ -1,0 +1,384 @@
+{
+  "_note": "Per-page SEO title/description for static pages, 11 langs. Single source of truth: imported at runtime by page components (SEO.tsx) AND read by scripts/generate-prerender-meta.mjs so prerendered first-byte HTML === client render. Titles <=62 chars (Latin), descriptions 70-165. Brand suffix handled by SEO.tsx (adds ' | LaplandLuxuryVillas' when no '|' present); titles here already include it where natural. No fake stats, no banned adjectives (stunning/breathtaking/world-class).",
+  "_destinationTitleSuffix": {
+    "en": "Lapland · Private Villas, Suites & Aurora",
+    "fi": "Lappi · yksityishuvilat, sviitit ja revontulet",
+    "de": "Lappland · Privatvillen, Suiten & Polarlicht",
+    "ja": "ラップランド · プライベートヴィラ、スイート、オーロラ",
+    "es": "Laponia · villas privadas, suites y auroras",
+    "pt-BR": "Lapônia · vilas privadas, suítes e auroras",
+    "zh-CN": "拉普兰 · 私人别墅、套房与极光",
+    "ko": "라플란드 · 프라이빗 빌라, 스위트, 오로라",
+    "fr": "Laponie · villas privées, suites et aurores",
+    "it": "Lapponia · ville private, suite e aurore",
+    "nl": "Lapland · privévilla's, suites en aurora"
+  },
+  "home": {
+    "en": {
+      "title": "Lapland Luxury Villas: Private Aurora Residences & Suites",
+      "description": "A private collection of Lapland's finest villas and suites, glass-roof retreats, lakeside log estates, designer aurora residences. Concierge, rates on request."
+    },
+    "fi": {
+      "title": "Lapin luksushuvilat: yksityiset revontuli-residenssit",
+      "description": "Yksityinen kokoelma Lapin hienoimpia huviloita ja sviittejä, lasikattoiset revontulipiilot, hirsikartanot, design-residenssit. Concierge, hinnat pyynnöstä."
+    },
+    "de": {
+      "title": "Luxusvillen in Lappland: private Polarlicht-Residenzen",
+      "description": "Eine private Sammlung der schönsten Villen und Suiten Lapplands, Glasdach-Refugien, Seeufer-Blockhäuser, Designer-Residenzen. Concierge, Preise auf Anfrage."
+    },
+    "ja": {
+      "title": "ラップランド ラグジュアリーヴィラ｜プライベート・オーロラ邸宅",
+      "description": "ラップランド屈指のヴィラとスイートを集めた非公開コレクション。ガラス天井の隠れ家、湖畔のログハウス、オーロラを望むデザイナーズ邸宅。匿名対応のコンシェルジュ、直接料金はお問い合わせにて。"
+    },
+    "es": {
+      "title": "Villas de Lujo en Laponia: residencias y suites con auroras",
+      "description": "Colección privada de las mejores villas y suites de Laponia: refugios con techo de cristal, casas junto al lago y residencias bajo la aurora. Tarifas a petición."
+    },
+    "pt-BR": {
+      "title": "Vilas de Luxo na Lapônia: residências e suítes sob a aurora",
+      "description": "Coleção privada das melhores vilas e suítes da Lapônia: refúgios com teto de vidro, casas à beira do lago e residências sob a aurora. Tarifas sob consulta."
+    },
+    "zh-CN": {
+      "title": "拉普兰奢华别墅：私属极光宅邸与套房",
+      "description": "拉普兰顶级私人别墅与套房的非公开臻选：玻璃穹顶隐居所、湖畔原木宅邸、可赏极光的设计师居所。匿名管家服务，直订房价可来询。"
+    },
+    "ko": {
+      "title": "라플란드 럭셔리 빌라: 프라이빗 오로라 레지던스",
+      "description": "라플란드 최고의 빌라와 스위트를 엄선한 프라이빗 컬렉션, 글라스루프 은신처, 호숫가 통나무 저택, 디자이너 오로라 레지던스. 익명 컨시어지, 요청 시 직접 요금 안내."
+    },
+    "fr": {
+      "title": "Villas de luxe en Laponie : résidences aurore privées",
+      "description": "Une collection privée des plus belles villas et suites de Laponie, toit de verre, domaines en rondins, résidences aurore. Conciergerie, tarifs sur demande."
+    },
+    "it": {
+      "title": "Ville di lusso in Lapponia: residenze aurora private",
+      "description": "Una collezione privata delle più belle ville e suite della Lapponia, tetto di vetro, tenute in legno sul lago, residenze aurora. Concierge, tariffe su richiesta."
+    },
+    "nl": {
+      "title": "Luxe villa's in Lapland: privé aurora-residenties",
+      "description": "Een privécollectie van Laplands mooiste villa's en suites, glazen dak, houten landhuizen aan het meer, aurora-residenties. Conciërge, tarieven op aanvraag."
+    }
+  },
+  "villas": {
+    "en": {
+      "title": "The Collection, Lapland Luxury Villas & Glass Cabins",
+      "description": "A short, curated list of Lapland's finest private villas: glass-roof aurora cabins, lakeside log estates, designer suites and alpine chalets. From €460/night."
+    },
+    "fi": {
+      "title": "Kokoelma, Lapin luksushuvilat ja lasikabiinit",
+      "description": "Tiivis, käsin valittu lista Lapin yksityishuviloita: lasikattoiset revontulikabiinit, hirsikartanot, design-sviitit ja alppichaletit. Alkaen 460 €/yö."
+    },
+    "de": {
+      "title": "Die Kollektion, Luxusvillen & Glashütten in Lappland",
+      "description": "Eine kurze, kuratierte Auswahl der schönsten Privatvillen Lapplands: Glasdach-Hütten, Seeufer-Blockhäuser, Designer-Suiten und Alpenchalets. Ab 460 €/Nacht."
+    },
+    "ja": {
+      "title": "ザ・コレクション｜ラップランドのヴィラとガラスキャビン",
+      "description": "ラップランド屈指のプライベートヴィラを厳選した短いリスト：ガラス天井のオーロラキャビン、湖畔のログ邸宅、デザイナーズスイート、山岳シャレー。1泊460ユーロから、コンシェルジュ限定の特別邸宅まで。"
+    },
+    "es": {
+      "title": "La Colección, villas de lujo y cabañas de cristal",
+      "description": "Lista breve y seleccionada de las mejores villas privadas de Laponia: cabañas de cristal, casas junto al lago, suites de autor y chalets. Desde 460 €/noche."
+    },
+    "pt-BR": {
+      "title": "A Coleção, vilas de luxo e cabanas de vidro na Lapônia",
+      "description": "Lista curta e selecionada das melhores vilas privadas da Lapônia: cabanas de vidro, casas à beira do lago, suítes autorais e chalés. De 460 €/noite."
+    },
+    "zh-CN": {
+      "title": "精选臻藏，拉普兰奢华别墅与玻璃小屋",
+      "description": "拉普兰顶级私人别墅的精短臻选：玻璃穹顶极光小屋、湖畔原木宅邸、设计师套房与高山木屋。每晚460欧元起，直至仅限管家预订的私藏宅邸。"
+    },
+    "ko": {
+      "title": "컬렉션, 라플란드 럭셔리 빌라 & 글라스 캐빈",
+      "description": "라플란드 최고의 프라이빗 빌라를 엄선한 짧은 목록: 글라스루프 오로라 캐빈, 호숫가 통나무 저택, 디자이너 스위트, 알파인 샬레. 1박 460유로부터 컨시어지 전용 리저브 저택까지."
+    },
+    "fr": {
+      "title": "La Collection, villas de luxe et cabines de verre",
+      "description": "Une courte sélection des plus belles villas privées de Laponie : cabines aurore, domaines en rondins, suites signées, chalets alpins. Dès 460 €/nuit."
+    },
+    "it": {
+      "title": "La Collezione, ville di lusso e cabine di vetro",
+      "description": "Una breve selezione delle più belle ville private della Lapponia: cabine aurora col tetto di vetro, tenute in legno, suite d'autore e chalet alpini. Da 460 €/notte."
+    },
+    "nl": {
+      "title": "De Collectie, luxe villa's en glazen cabins",
+      "description": "Een korte, samengestelde lijst van Laplands mooiste privévilla's: aurora-cabins met glazen dak, houten landhuizen, designsuites en alpenchalets. Vanaf 460 €/nacht."
+    }
+  },
+  "suites": {
+    "en": {
+      "title": "Designer Suites & Glass-Roof Aurora Bedrooms, Lapland",
+      "description": "A short list of Lapland's designer suites and glass-roof aurora cabins: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen, Levin Iglut. From €460/night."
+    },
+    "fi": {
+      "title": "Design-sviitit ja lasikattoiset revontulihuoneet",
+      "description": "Lyhyt lista Lapin design-sviittejä ja lasikattoisia revontulikabiineja: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen, Levin Iglut. Alkaen 460 €/yö."
+    },
+    "de": {
+      "title": "Designer-Suiten & Glasdach-Polarlichtzimmer, Lappland",
+      "description": "Eine kurze Auswahl der Designer-Suiten und Glasdach-Hütten Lapplands: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glas, Levin Iglut. Ab 460 €/Nacht."
+    },
+    "ja": {
+      "title": "デザイナーズスイートとガラス天井のオーロラ寝室",
+      "description": "ラップランドのデザイナーズスイートとガラス天井のオーロラキャビンの短いリスト：Star Arctic Skyview、Arctic TreeHouse、Kakslauttanen Kelo-Glass、Levin Iglut、Aurora Village。1泊460ユーロから。"
+    },
+    "es": {
+      "title": "Suites de autor y dormitorios de cristal, Laponia",
+      "description": "Suites de autor y cabañas de cristal de Laponia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Desde 460 €/noche."
+    },
+    "pt-BR": {
+      "title": "Suítes autorais e quartos de vidro sob a aurora",
+      "description": "Suítes autorais e cabanas de vidro da Lapônia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. A partir de 460 €/noite."
+    },
+    "zh-CN": {
+      "title": "设计师套房与玻璃穹顶极光卧室，拉普兰",
+      "description": "拉普兰设计师套房与玻璃穹顶极光小屋精选：Star Arctic Skyview、Arctic TreeHouse、Kakslauttanen Kelo-Glass、Levin Iglut、Aurora Village。每晚460欧元起。"
+    },
+    "ko": {
+      "title": "디자이너 스위트 & 글라스루프 오로라 침실",
+      "description": "라플란드의 디자이너 스위트와 글라스루프 오로라 캐빈을 엄선: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. 1박 460유로부터."
+    },
+    "fr": {
+      "title": "Suites signées et chambres aurore au toit de verre",
+      "description": "Suites signées et cabines aurore de Laponie : Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Dès 460 €/nuit."
+    },
+    "it": {
+      "title": "Suite d'autore e camere aurora col tetto di vetro",
+      "description": "Suite d'autore e cabine aurora della Lapponia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Da 460 €/notte."
+    },
+    "nl": {
+      "title": "Designsuites en aurora-slaapkamers met glazen dak",
+      "description": "Designsuites en aurora-cabins met glazen dak: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Vanaf 460 €/nacht."
+    }
+  },
+  "destinations": {
+    "en": {
+      "title": "Where to Stay in Lapland · Five Destinations Worth It",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi and Ylläs, the five Lapland destinations worth a luxury journey. Aurora frequency, arrival logistics and the villas in each."
+    },
+    "fi": {
+      "title": "Missä yöpyä Lapissa, viisi kohdetta matkan arvoista",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi ja Ylläs, viisi Lapin kohdetta luksusmatkan arvoista. Revontulitiheys, saapumislogistiikka ja kunkin huvilat."
+    },
+    "de": {
+      "title": "Wo in Lappland wohnen · fünf lohnende Reiseziele",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi und Ylläs, die fünf Reiseziele Lapplands für eine Luxusreise. Polarlicht-Häufigkeit, Anreise und die Villen jedes Ortes."
+    },
+    "ja": {
+      "title": "ラップランドの滞在地｜訪れる価値ある5つの土地",
+      "description": "サーリセルカ、イナリ、ロヴァニエミ、レヴィ、ユッラス，ラグジュアリーな旅にふさわしいラップランドの5つの滞在地。オーロラの出現頻度、到着のしやすさ、各地に集まるヴィラを紹介。"
+    },
+    "es": {
+      "title": "Dónde alojarse en Laponia · cinco destinos que lo merecen",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi y Ylläs: los cinco destinos de Laponia que justifican un viaje de lujo. Auroras, logística de llegada y las villas de cada uno."
+    },
+    "pt-BR": {
+      "title": "Onde ficar na Lapônia · cinco destinos que valem a viagem",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi e Ylläs: os cinco destinos da Lapônia que justificam uma viagem de luxo. Auroras, logística de chegada e as vilas de cada um."
+    },
+    "zh-CN": {
+      "title": "拉普兰住宿之选，五处值得专程前往之地",
+      "description": "萨利色尔卡、伊纳里、罗瓦涅米、莱维与于拉斯，值得为之专程远行的五处拉普兰目的地。极光频率、抵达交通，以及各地荟萃的别墅。"
+    },
+    "ko": {
+      "title": "라플란드 숙박지 · 가치 있는 다섯 목적지",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi, Ylläs, 럭셔리 여정을 정당화하는 라플란드의 다섯 목적지. 오로라 빈도, 도착 동선, 각지에 모인 빌라들."
+    },
+    "fr": {
+      "title": "Où séjourner en Laponie · cinq destinations à la hauteur",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi et Ylläs, les cinq destinations de Laponie qui valent un voyage de luxe. Aurores, logistique d'arrivée et les villas de chacune."
+    },
+    "it": {
+      "title": "Dove soggiornare in Lapponia · cinque mete che valgono",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi e Ylläs, le cinque mete della Lapponia che valgono un viaggio di lusso. Aurore, logistica d'arrivo e le ville di ciascuna."
+    },
+    "nl": {
+      "title": "Waar te verblijven in Lapland · vijf bestemmingen",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi en Ylläs, de vijf bestemmingen in Lapland voor een luxereis. Aurorafrequentie, aankomstlogistiek en de villa's per plek."
+    }
+  },
+  "experiences": {
+    "en": {
+      "title": "Bespoke Lapland Experiences · Aurora, Helicopter, Chef",
+      "description": "Private Lapland experiences: aurora photography, helicopter flights, in-villa chef tastings, exclusive husky safaris and private-jet arrival. Concierge-booked."
+    },
+    "fi": {
+      "title": "Räätälöidyt Lappi-elämykset · revontulet, helikopteri",
+      "description": "Yksityisiä Lappi-elämyksiä: revontulikuvaus, helikopterilennot, yksityiskokin maistelut huvilalla, eksklusiiviset huskysafarit ja saapuminen yksityiskoneella."
+    },
+    "de": {
+      "title": "Maßgeschneiderte Lappland-Erlebnisse · Polarlicht & mehr",
+      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Helikopterflüge, Chef-Tastings in der Villa, exklusive Husky-Safaris und Privatjet-Anreise. Vom Concierge geplant."
+    },
+    "ja": {
+      "title": "オーダーメイドのラップランド体験｜オーロラ・ヘリ・シェフ",
+      "description": "ラップランドのプライベート体験の短いリスト：オーロラ撮影、ヘリコプター遊覧、ヴィラ内シェフの饗宴、限定ハスキーサファリ、プライベートジェットでの到着。ヴィラ滞在に合わせてコンシェルジュが手配。"
+    },
+    "es": {
+      "title": "Experiencias a medida en Laponia · aurora, helicóptero",
+      "description": "Experiencias privadas en Laponia: fotografía de auroras, vuelos en helicóptero, cenas con chef en la villa, safaris con huskies y llegada en jet privado."
+    },
+    "pt-BR": {
+      "title": "Experiências sob medida na Lapônia · aurora, helicóptero",
+      "description": "Experiências privadas na Lapônia: fotografia de auroras, voos de helicóptero, jantares com chef na vila, safáris com huskies e chegada de jato privado."
+    },
+    "zh-CN": {
+      "title": "定制拉普兰体验，极光、直升机、私厨",
+      "description": "拉普兰私人体验精选：极光摄影、直升机飞行、别墅内私厨品鉴、专属哈士奇雪橇之旅与私人飞机抵达。由管家围绕您的别墅行程预订。"
+    },
+    "ko": {
+      "title": "맞춤형 라플란드 경험 · 오로라, 헬리콥터, 셰프",
+      "description": "프라이빗 라플란드 경험을 엄선: 오로라 촬영, 헬리콥터 비행, 빌라 내 셰프 시식, 독점 허스키 사파리, 프라이빗 제트 도착. 빌라 체류에 맞춰 컨시어지가 예약."
+    },
+    "fr": {
+      "title": "Expériences sur mesure, aurore, hélicoptère, chef",
+      "description": "Expériences privées en Laponie : photographie d'aurores, vols en hélicoptère, dégustations d'un chef en villa, safaris husky exclusifs, arrivée en jet privé."
+    },
+    "it": {
+      "title": "Esperienze su misura, aurora, elicottero, chef",
+      "description": "Esperienze private in Lapponia: fotografia delle aurore, voli in elicottero, degustazioni con chef in villa, safari husky esclusivi e arrivo in jet privato."
+    },
+    "nl": {
+      "title": "Lapland-ervaringen op maat · aurora, heli, chef",
+      "description": "Privé-ervaringen in Lapland: aurorafotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+    }
+  },
+  "midnight-sun": {
+    "en": {
+      "title": "Midnight Sun, Lapland Luxury Villas in 32 Days of Light",
+      "description": "Jun 6 – Jul 7: the window when the sun does not set in Lapland. The same villas you book for the auroras, in their summer character, chefs, half the demand."
+    },
+    "fi": {
+      "title": "Keskiyön aurinko, Lapin luksushuvilat 32 päivää valoa",
+      "description": "6.6.–7.7.: jakso, jolloin aurinko ei laske Lapissa. Samat huvilat, jotka varaat revontulille, kesäluonteessaan, yksityiskokit, puolet talven kysynnästä."
+    },
+    "de": {
+      "title": "Mitternachtssonne, Luxusvillen in 32 Tagen Licht",
+      "description": "6. Juni – 7. Juli: das Fenster, in dem die Sonne in Lappland nicht untergeht. Dieselben Villen wie für die Polarlichter, im Sommer, Privatköche, halbe Nachfrage."
+    },
+    "ja": {
+      "title": "白夜｜光に満ちる32日間のラップランド・ヴィラ",
+      "description": "6月6日〜7月7日、ラップランドで太陽が沈まない期間。オーロラのために予約するのと同じヴィラが、夏の表情を見せる，特別邸宅、専属シェフ、需要は半分。"
+    },
+    "es": {
+      "title": "Sol de medianoche, villas de lujo, 32 días de luz",
+      "description": "Del 6 de junio al 7 de julio, el sol no se pone en Laponia. Las villas que reservas para las auroras, en su carácter estival: chefs privados y la mitad de demanda."
+    },
+    "pt-BR": {
+      "title": "Sol da meia-noite, vilas de luxo em 32 dias de luz",
+      "description": "De 6 de junho a 7 de julho, o sol não se põe na Lapônia. As vilas que você reserva para as auroras, em seu caráter de verão: chefs privados e metade da procura."
+    },
+    "zh-CN": {
+      "title": "午夜阳光，32天不落日里的拉普兰别墅",
+      "description": "6月6日至7月7日，是拉普兰太阳不落的时节。与您为极光预订的别墅别无二致，却尽显夏日风韵，私藏宅邸、专属私厨，需求减半。"
+    },
+    "ko": {
+      "title": "백야, 32일의 빛 속 라플란드 럭셔리 빌라",
+      "description": "6월 6일 – 7월 7일: 라플란드에서 해가 지지 않는 기간. 오로라를 위해 예약하는 그 빌라들이 여름의 얼굴로, 리저브 저택, 프라이빗 셰프, 절반의 수요."
+    },
+    "fr": {
+      "title": "Soleil de minuit, villas de luxe, 32 jours de lumière",
+      "description": "Du 6 juin au 7 juillet : la fenêtre où le soleil ne se couche pas en Laponie. Les mêmes villas que pour les aurores, en été, chefs privés, moitié moins de monde."
+    },
+    "it": {
+      "title": "Sole di mezzanotte, ville di lusso, 32 giorni di luce",
+      "description": "Dal 6 giugno al 7 luglio: in Lapponia il sole non tramonta. Le stesse ville che prenoti per le aurore, nel loro carattere estivo, chef privati, metà della domanda."
+    },
+    "nl": {
+      "title": "Middernachtzon, luxe villa's in 32 dagen licht",
+      "description": "6 juni – 7 juli: het venster waarin de zon in Lapland niet ondergaat. Dezelfde villa's die u voor de aurora boekt, in hun zomerse karakter, privéchefs, halve vraag."
+    }
+  },
+  "concierge": {
+    "en": {
+      "title": "Private Concierge, Anonymous Lapland Villa Planning",
+      "description": "Send one private inquiry: headcount, dates, preferences. We reply within one working day with a curated shortlist, including reserve villas never shown publicly."
+    },
+    "fi": {
+      "title": "Yksityinen concierge, anonyymi huvilasuunnittelu",
+      "description": "Lähetä yksi yksityinen tiedustelu: henget, päivät, toiveet. Vastaamme yhden työpäivän kuluessa käsin valitulla listalla, myös julkaisemattomat varauskohteet."
+    },
+    "de": {
+      "title": "Privater Concierge, anonyme Villenplanung in Lappland",
+      "description": "Senden Sie eine private Anfrage: Personenzahl, Daten, Wünsche. Wir antworten binnen eines Werktags mit einer Auswahl, auch nie öffentliche Reservevillen."
+    },
+    "ja": {
+      "title": "プライベートコンシェルジュ｜匿名のヴィラ手配",
+      "description": "一通のプライベートな問い合わせを：人数、日程、ご希望。1営業日以内に厳選したショートリストをお返しします，一般には決して公開されない特別ヴィラを含めて。"
+    },
+    "es": {
+      "title": "Conserjería privada, planificación anónima en Laponia",
+      "description": "Envía una consulta privada: huéspedes, fechas y preferencias. Respondemos en un día laborable con una selección a medida, con villas que nunca se publican."
+    },
+    "pt-BR": {
+      "title": "Concierge privado, planejamento anônimo na Lapônia",
+      "description": "Envie uma consulta privada: hóspedes, datas e preferências. Respondemos em um dia útil com uma seleção sob medida, com vilas que nunca aparecem publicamente."
+    },
+    "zh-CN": {
+      "title": "私人管家，匿名规划您的拉普兰别墅之旅",
+      "description": "只需发送一份私密咨询：人数、日期与偏好。我们将在一个工作日内回复一份精选名单，包含从不对外公开的私藏别墅。"
+    },
+    "ko": {
+      "title": "프라이빗 컨시어지, 익명 라플란드 빌라 플래닝",
+      "description": "프라이빗 문의 하나만 보내세요: 인원, 날짜, 선호. 영업일 하루 안에 엄선된 추천 목록으로 회신합니다, 공개되지 않는 리저브 빌라 포함."
+    },
+    "fr": {
+      "title": "Conciergerie privée, organisation anonyme en Laponie",
+      "description": "Envoyez une demande privée : personnes, dates, préférences. Nous répondons sous un jour ouvré avec une sélection, y compris des villas jamais publiées."
+    },
+    "it": {
+      "title": "Concierge privato, pianificazione anonima in Lapponia",
+      "description": "Inviate una richiesta privata: ospiti, date, preferenze. Rispondiamo entro un giorno lavorativo con una rosa selezionata, incluse ville riservate, mai pubblicate."
+    },
+    "nl": {
+      "title": "Privéconciërge, anonieme villaplanning in Lapland",
+      "description": "Stuur één privéaanvraag: personen, data, voorkeuren. We reageren binnen één werkdag met een shortlist, inclusief villa's die nooit publiek verschijnen."
+    }
+  },
+  "about": {
+    "en": {
+      "title": "About, Lapland Luxury Villas, curated from Finland",
+      "description": "A short, curated private collection of Lapland's finest villas and suites, run from Finnish Lapland by Lapeso Oy, part of the LaplandVibes network."
+    },
+    "fi": {
+      "title": "Tietoa, Lapin luksushuvilat, koottu Suomesta",
+      "description": "Tiivis, käsin valittu yksityiskokoelma Lapin hienoimpia huviloita ja sviittejä, hoidettu Suomen Lapista Lapeso Oy:n toimesta, osa LaplandVibes-verkostoa."
+    },
+    "de": {
+      "title": "Über uns, Luxusvillen in Lappland, aus Finnland geführt",
+      "description": "Eine kurze, kuratierte Privatsammlung der schönsten Villen und Suiten Lapplands, von Lapeso Oy aus Finnisch-Lappland geführt, Teil des LaplandVibes-Netzwerks."
+    },
+    "ja": {
+      "title": "私たちについて｜フィンランド発、厳選のラップランド・ヴィラ",
+      "description": "ラップランド屈指のヴィラとスイートを集めた、小さな非公開コレクション。フィンランド・ラップランドからLapeso Oyが運営し、LaplandVibesネットワークの一員です。存在理由、提携先、そして手がけないこと。"
+    },
+    "es": {
+      "title": "Quiénes somos, Villas de Lujo en Laponia, desde Finlandia",
+      "description": "Colección privada de las mejores villas y suites de Laponia, gestionada desde la Laponia finlandesa por Lapeso Oy, parte de la red LaplandVibes."
+    },
+    "pt-BR": {
+      "title": "Sobre, Vilas de Luxo na Lapônia, selecionadas na Finlândia",
+      "description": "Coleção privada das melhores vilas e suítes da Lapônia, conduzida a partir da Lapônia finlandesa pela Lapeso Oy, parte da rede LaplandVibes. Quem somos."
+    },
+    "zh-CN": {
+      "title": "关于我们，源自芬兰的拉普兰别墅臻选",
+      "description": "一份精短的拉普兰顶级别墅与套房私人臻选，由Lapeso Oy在芬兰拉普兰运营，隶属LaplandVibes网络。我们因何而在、与谁合作、又不做什么。"
+    },
+    "ko": {
+      "title": "소개, 핀란드에서 엄선한 라플란드 럭셔리 빌라",
+      "description": "핀란드 라플란드에서 Lapeso Oy가 운영하는, 라플란드 최고의 빌라와 스위트를 엄선한 프라이빗 컬렉션, LaplandVibes 네트워크의 일부. 우리가 존재하는 이유, 함께하는 파트너, 하지 않는 일."
+    },
+    "fr": {
+      "title": "À propos, villas de luxe en Laponie, depuis la Finlande",
+      "description": "Une petite collection privée des plus belles villas et suites de Laponie, gérée depuis la Laponie finlandaise par Lapeso Oy, au sein du réseau LaplandVibes."
+    },
+    "it": {
+      "title": "Chi siamo, ville di lusso in Lapponia, dalla Finlandia",
+      "description": "Una piccola collezione privata delle più belle ville e suite della Lapponia, gestita dalla Lapponia finlandese da Lapeso Oy, parte del network LaplandVibes."
+    },
+    "nl": {
+      "title": "Over ons, luxe villa's in Lapland, vanuit Finland",
+      "description": "Een kleine privécollectie van Laplands mooiste villa's en suites, gerund vanuit Fins Lapland door Lapeso Oy, onderdeel van het LaplandVibes-netwerk."
+    }
+  }
+}

@@ -1,19 +1,16 @@
 import { useState } from 'react'
 import { Send, CheckCircle, Loader2 } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
+import { useLang } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
 
 type Status = 'idle' | 'loading' | 'success' | 'already' | 'error'
 
-/**
- * Inline newsletter section — sits at the bottom of long pages above the
- * canonical Footer. Routes through the same `/api/newsletter` Pages Function
- * as the popup, so it shares the CORS-bypass + welcome-email pipeline.
- *
- * Eyebrow stays "The #LaplandVibes newsletter" per
- * `feedback_one_newsletter_human_voice.md` — there is one master list across
- * the entire ecosystem; the per-site `source` tag differentiates analytics.
- */
 export default function NewsletterSection() {
+  const lang = useLang()
+  const c = COPY[lang].newsletter
+  const ct = COPY[lang].cta
+
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<Status>('idle')
   const [message, setMessage] = useState('')
@@ -23,7 +20,7 @@ export default function NewsletterSection() {
     if (status === 'loading' || status === 'success' || status === 'already') return
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
       setStatus('error')
-      setMessage('That email address looks invalid.')
+      setMessage(c.invalidEmail)
       return
     }
     setStatus('loading')
@@ -37,20 +34,20 @@ export default function NewsletterSection() {
       const data = await res.json().catch(() => ({}))
       if (!res.ok) {
         setStatus('error')
-        setMessage(data?.error || 'Something went wrong. Try again in a moment.')
+        setMessage(data?.error || c.genericError)
         return
       }
       if (data?.alreadySubscribed) {
         setStatus('already')
-        setMessage('You\'re already on the list — see you in the next dispatch.')
+        setMessage(c.already)
       } else {
         setStatus('success')
-        setMessage('Welcome aboard. The first dispatch lands within a week.')
+        setMessage(c.welcome)
       }
       trackNewsletterSignup('laplandluxuryvillas-inline')
     } catch {
       setStatus('error')
-      setMessage('Network error. Please try again.')
+      setMessage(c.networkError)
     }
   }
 
@@ -64,12 +61,12 @@ export default function NewsletterSection() {
         }}
       />
       <div className="relative mx-auto max-w-3xl px-5 sm:px-7 text-center">
-        <span className="eyebrow text-white/85">The #LaplandVibes newsletter</span>
+        <span className="eyebrow text-white/85">{c.eyebrow}</span>
         <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-white leading-[1.1]">
-          One quiet dispatch a month — when villas open new dates and we hear of a private release.
+          {c.h2}
         </h2>
         <p className="mt-5 text-white/85 text-base sm:text-lg font-body leading-relaxed max-w-xl mx-auto">
-          Direct rates. Last-minute concierge openings. Aurora-window forecasts the week before each new moon. No newsletter spam — written in Finland, sent only when there's something specific worth telling.
+          {c.lede}
         </p>
 
         <form onSubmit={onSubmit} className="mt-10 flex flex-col sm:flex-row items-stretch gap-3 max-w-xl mx-auto">
@@ -80,7 +77,7 @@ export default function NewsletterSection() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com"
+            placeholder={c.emailPlaceholder}
             disabled={status === 'loading' || status === 'success' || status === 'already'}
             className="flex-1 bg-white/95 text-[color:var(--color-deep-night)] placeholder-[color:var(--color-charcoal)]/50 px-5 py-4 text-base font-body focus:outline-none focus:ring-2 focus:ring-white"
           />
@@ -92,7 +89,7 @@ export default function NewsletterSection() {
             {status === 'loading' && <Loader2 size={16} className="animate-spin" />}
             {(status === 'success' || status === 'already') && <CheckCircle size={16} />}
             {status === 'idle' || status === 'error' ? <Send size={16} /> : null}
-            {status === 'success' || status === 'already' ? 'Subscribed' : 'Subscribe'}
+            {status === 'success' || status === 'already' ? ct.subscribed : ct.subscribe}
           </button>
         </form>
 
@@ -107,9 +104,7 @@ export default function NewsletterSection() {
           </p>
         )}
 
-        <p className="mt-6 text-xs text-white/65 font-body">
-          One email a month at most. Unsubscribe in one click.
-        </p>
+        <p className="mt-6 text-xs text-white/65 font-body">{c.footnote}</p>
       </div>
     </section>
   )
