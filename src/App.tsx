@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import React, { useEffect, lazy, Suspense } from 'react'
 import Nav from './components/Nav'
-import Footer from './shared/Footer'
+import Footer from './components/Footer'
 import CookieBanner from './shared/CookieBanner'
 import NewsletterPopup from './components/NewsletterPopup'
 import { trackPageView, initScrollDepth, initOutboundTracking } from './lib/analytics'
