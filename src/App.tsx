@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import React, { useEffect, lazy, Suspense } from 'react'
+import React, { useEffect, useReducer, lazy, Suspense } from 'react'
+import { COPY, loadCopy } from './locales/copy'
+import { isOverlayLoaded, loadOverlays } from './lib/villaI18n'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import CookieBanner from './shared/CookieBanner'
@@ -120,6 +122,24 @@ function LocalisedCookieBanner() {
   return <CookieBanner consentKey="laplandluxuryvillas_cookie_consent" lang={lang} />
 }
 
+/**
+ * Non-EN copy lives in per-language lazy chunks (see locales/copy.ts).
+ * Gate the UI until the active language's chunk is registered in COPY, so
+ * every consumer keeps reading COPY[lang] synchronously. EN never waits.
+ */
+function CopyGate({ children }: { children: React.ReactNode }) {
+  const lang = useLang()
+  const [, bump] = useReducer((x: number) => x + 1, 0)
+  const ready = !!COPY[lang] && isOverlayLoaded(lang)
+  useEffect(() => {
+    let alive = true
+    if (!ready) Promise.all([loadCopy(lang), loadOverlays(lang)]).then(() => { if (alive) bump() })
+    return () => { alive = false }
+  }, [lang, ready])
+  if (!ready) return <div className="min-h-screen" />
+  return <>{children}</>
+}
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -128,6 +148,7 @@ export default function App() {
       <AffiliateLinkWarmup />
       <LocaleAutoRedirect />
       <LocaleSync />
+      <CopyGate>
       <Nav />
       <div className="min-h-screen flex flex-col">
         <div className="flex-1">
@@ -135,6 +156,7 @@ export default function App() {
         </div>
         <Footer />
       </div>
+      </CopyGate>
       <LocalisedCookieBanner />
       <NewsletterPopup />
     </BrowserRouter>

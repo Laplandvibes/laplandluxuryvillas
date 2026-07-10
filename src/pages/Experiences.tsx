@@ -70,7 +70,20 @@ export default function Experiences() {
               <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                 {items.map((e) => (
                   <article key={e.slug} className="card-onyx flex flex-col h-full overflow-hidden">
-                    <div className="aspect-[16/9] w-full" style={{ background: e.imageGradient }} />
+                    <div className="aspect-[16/9] w-full overflow-hidden" style={{ background: e.imageGradient }}>
+                      {/* Real Picsart photo (gpt-image-2 16:9, 2026-07-08); the
+                          gradient stays as the fallback if the file is missing. */}
+                      <img
+                        src={`/images/experiences/${e.slug}.webp`}
+                        alt={e.name}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                        width={1536}
+                        height={864}
+                        onError={(ev) => { ev.currentTarget.style.display = 'none' }}
+                      />
+                    </div>
                     <div className="flex-1 flex flex-col p-7">
                       <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-tight mb-3">{e.name}</h3>
                       <p className="text-[color:var(--color-bone)]/80 font-body text-sm leading-relaxed mb-5">{e.hook}</p>

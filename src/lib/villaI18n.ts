@@ -15,13 +15,25 @@ interface ContentOverlay {
   experiences?: Record<string, ExpOv>
 }
 
-const modules = import.meta.glob<{ default: ContentOverlay }>('./content.*.ts', { eager: true })
+// Lazy glob: each content.<lang>.ts is its own chunk, fetched by the App-level
+// CopyGate alongside the copy chunk. Was `eager: true`, which bundled all 10
+// overlay languages into the main bundle.
+const modules = import.meta.glob<{ default: ContentOverlay }>('./content.*.ts')
 const OVERLAYS: Partial<Record<Lang, ContentOverlay>> = {}
-for (const path in modules) {
-  const m = path.match(/content\.([a-zA-Z-]+)\.ts$/)
-  if (!m) continue
-  const mod = modules[path]
-  if (mod && mod.default) OVERLAYS[m[1] as Lang] = mod.default
+const loaded = new Set<string>(['en'])
+
+export function isOverlayLoaded(lang: Lang): boolean {
+  return loaded.has(lang)
+}
+
+export function loadOverlays(lang: Lang): Promise<void> {
+  if (!lang || loaded.has(lang)) return Promise.resolve()
+  const entry = Object.keys(modules).find((p) => p.endsWith(`content.${lang}.ts`))
+  if (!entry) { loaded.add(lang); return Promise.resolve() }
+  return modules[entry]().then((mod) => {
+    if (mod && mod.default) OVERLAYS[lang] = mod.default
+    loaded.add(lang)
+  })
 }
 
 const sameLen = <T,>(a: T[] | undefined, base: T[]): T[] => (a && a.length === base.length ? a : base)
