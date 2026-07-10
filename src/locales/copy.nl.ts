@@ -39,7 +39,7 @@ const nl: SiteCopy = {
     bedrooms: 'slaapkamers',
     sleeps: 'Slaapt',
     arrival: 'Aankomst',
-    aurora: 'Aurora',
+    aurora: 'Noorderlicht',
     highlights: 'Hoogtepunten',
     villas: (n) => (n === 1 ? 'Eén villa is hier verankerd.' : `${n} villa's zijn hier verankerd.`),
     villasIn: (name) => `Villa's in ${name}`,
@@ -189,7 +189,7 @@ const nl: SiteCopy = {
     backLink: 'Bestemmingen',
     eyebrow: 'Bestemming · Fins Lapland',
     arrival: 'Aankomst',
-    aurora: 'Aurora',
+    aurora: 'Noorderlicht',
     highlights: 'Hoogtepunten',
     villasHere: (n) => (n === 1 ? 'Eén villa is hier verankerd.' : `${n} villa's zijn hier verankerd.`),
     villasHereH2: (n) => (n === 1 ? 'Eén villa is hier verankerd.' : `${n} villa's zijn hier verankerd.`),
@@ -199,7 +199,7 @@ const nl: SiteCopy = {
   },
   experiencesPage: {
     sections: {
-      aurora: { title: 'Aurora', intro: 'De aurora\'s zelf zijn gratis. Wat hier wordt verkocht is de toegang, het juiste voertuig, de juiste gids en de juiste nacht onder het juiste wolkenvenster.' },
+      aurora: { title: 'Noorderlicht', intro: 'Het noorderlicht zelf is gratis. Wat hier wordt verkocht is de toegang, het juiste voertuig, de juiste gids en de juiste nacht onder het juiste wolkenvenster.' },
       wilderness: { title: 'Wildernis', intro: 'Privéversies van de ervaringen waarvoor iedereen naar Lapland komt, husky, sneeuwscooter, rendier, zonder de gedeelde bus en het rondje langs de gebaande paden.' },
       culinary: { title: 'Culinair', intro: 'Een werkende chef uit een van de serieuze keukens van Lapland, bij u in de villa, voor één avond, of het proefmenu ter plaatse wanneer de keuken de reden van uw komst is.' },
       arrival: { title: 'Aankomst', intro: 'Privéjet, helikoptertransfer, voertuigen met arctische specificatie. Geboekt op het tijdslot, het daglichtvenster en het tijdstip van inchecken.' },
@@ -215,7 +215,7 @@ const nl: SiteCopy = {
     fourReasons: 'Vier redenen',
     h2: 'Lapland in de zomer is een andere plek.',
     reasons: [
-      { title: 'De architectuur krijgt een ander karakter.', body: 'De glazen daken die voor de aurora\'s bestaan, omlijsten nu een ononderbroken zon. Dakvenster boven het bed, zon op het meer, geen reden om een gordijn dicht te trekken, er is geen nacht om voor weg te kruipen.' },
+      { title: 'De architectuur krijgt een ander karakter.', body: 'De glazen daken die voor het noorderlicht bestaan, omlijsten nu een ononderbroken zon. Dakvenster boven het bed, zon op het meer, geen reden om een gordijn dicht te trekken, er is geen nacht om voor weg te kruipen.' },
       { title: 'De wildernis wordt toegankelijk.', body: 'De meren ontdooien, het boreale bos opent zich, de kanoroutes verschijnen. Dezelfde villa die u in februari per sneeuwscooter bereikte, ligt nu op vijf minuten varen van de steiger.' },
       { title: 'De reservevilla\'s openen.', body: 'De private blokhutlandgoederen aan het meer en de architectchalets geven de rest van hun kalender vrij. Het venster van 32 dagen is de enige periode in het jaar waarin privékoks en helikoptercharters tussenseizoentarieven offreren.' },
       { title: 'Geen rijen, geen buren.', body: 'Lapland in de zomer ziet een fractie van de bezoekersdichtheid van de winter. Het wildernispad door het bos, het uitkijkpunt op de fjell, ze zijn in wezen van u.' },
