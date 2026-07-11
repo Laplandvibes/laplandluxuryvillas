@@ -207,18 +207,21 @@ export default function Nav() {
         </div>
 
         <div className="min-[1360px]:hidden flex items-center gap-2 shrink-0">
-          <select
-            value={lang}
-            onChange={(e) => switchTo(e.target.value as Lang)}
-            aria-label="Language"
-            className="bg-transparent border border-[color:var(--color-bone)]/40 rounded px-2 py-1 text-[11px] tracking-[0.18em] uppercase font-body text-[color:var(--color-bone)]"
-          >
-            {LANG_OPTIONS.map((l) => (
-              <option key={l.code} value={l.code} className="bg-[color:var(--color-deep-night)] text-[color:var(--color-bone)]">
-                {l.label}
-              </option>
-            ))}
-          </select>
+          <div className="relative inline-flex items-center">
+            <select
+              value={lang}
+              onChange={(e) => switchTo(e.target.value as Lang)}
+              aria-label="Language"
+              className="appearance-none bg-transparent border border-[color:var(--color-bone)]/40 rounded pl-2 pr-6 py-1 text-[11px] tracking-[0.18em] uppercase font-body text-[color:var(--color-bone)]"
+            >
+              {LANG_OPTIONS.map((l) => (
+                <option key={l.code} value={l.code} className="bg-[color:var(--color-deep-night)] text-[color:var(--color-bone)]">
+                  {l.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown aria-hidden="true" className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-[color:var(--color-bone)]" />
+          </div>
           <button
             type="button"
             aria-label={open ? c.nav.closeMenu : c.nav.openMenu}
