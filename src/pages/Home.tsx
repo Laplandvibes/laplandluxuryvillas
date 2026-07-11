@@ -9,6 +9,8 @@ import MidnightSunBand from '../components/MidnightSunBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FAQ, { VILLA_FAQ_BY_LANG } from '../components/FAQ'
 import RelatedSites from '../components/RelatedSites'
+import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots'
+import { AD_SLOTS } from '../data/adSlots'
 import { signatureVillas } from '../lib/villas'
 import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -84,6 +86,10 @@ export default function Home() {
         imgObjectPosition="20% 50%"
       />
 
+      {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
+          tyhjänä kompakti house-ad → LV Media -portaali */}
+      <MainPartnerBanner config={AD_SLOTS} locale={lang} className="bg-[color:var(--color-deep-night)]" />
+
       {/* PHILOSOPHY */}
       <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
@@ -111,6 +117,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Kumppaniosio ylhäällä (jaettu malli, Vesa 2026-07-11): kakkospääkumppani +
+          6 premium-paikkaa — pääkumppanit eivät näy vierekkäin (banneri ↑) */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-[color:var(--color-deep-night)]" />
 
       <hr className="hair-rule mx-auto max-w-6xl" />
 
