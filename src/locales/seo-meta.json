@@ -11,7 +11,8 @@
     "ko": "라플란드 · 프라이빗 빌라, 스위트, 오로라",
     "fr": "Laponie · villas privées, suites et aurores",
     "it": "Lapponia · ville private, suite e aurore",
-    "nl": "Lapland · privévilla's, suites en aurora"
+    "nl": "Lapland · privévilla's, suites en aurora",
+    "sv": "Lappland · privata villor, sviter och norrsken"
   },
   "home": {
     "en": {
@@ -57,6 +58,10 @@
     "nl": {
       "title": "Luxe villa's in Lapland: privé aurora-residenties",
       "description": "Een privécollectie van Laplands mooiste villa's en suites, glazen dak, houten landhuizen aan het meer, aurora-residenties. Conciërge, tarieven op aanvraag."
+    },
+    "sv": {
+      "title": "Lyxvillor i Lappland: privata norrskensresidens",
+      "description": "En privat samling av Lapplands finaste villor och sviter, glastak, strandnära timmergårdar, designresidens under norrsken. Concierge, priser på begäran."
     }
   },
   "villas": {
@@ -103,6 +108,10 @@
     "nl": {
       "title": "De Collectie, luxe villa's en glazen cabins",
       "description": "Een korte, samengestelde lijst van Laplands mooiste privévilla's: aurora-cabins met glazen dak, houten landhuizen, designsuites en alpenchalets. Vanaf 460 €/nacht."
+    },
+    "sv": {
+      "title": "Samlingen, lyxvillor och glasstugor i Lappland",
+      "description": "En kort, handplockad lista över Lapplands finaste privata villor: glastaksstugor under norrsken, strandnära timmergårdar, designsviter och fjällstugor. Från 460 €/natt."
     }
   },
   "suites": {
@@ -149,6 +158,10 @@
     "nl": {
       "title": "Designsuites en aurora-slaapkamers met glazen dak",
       "description": "Designsuites en aurora-cabins met glazen dak: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Vanaf 460 €/nacht."
+    },
+    "sv": {
+      "title": "Designsviter och norrskensrum med glastak, Lappland",
+      "description": "En kort lista över Lapplands designsviter och glastaksstugor under norrsken: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen, Levin Iglut. Från 460 €/natt."
     }
   },
   "destinations": {
@@ -195,6 +208,10 @@
     "nl": {
       "title": "Waar te verblijven in Lapland · vijf bestemmingen",
       "description": "Saariselkä, Inari, Rovaniemi, Levi en Ylläs, de vijf bestemmingen in Lapland voor een luxereis. Aurorafrequentie, aankomstlogistiek en de villa's per plek."
+    },
+    "sv": {
+      "title": "Var du bor i Lappland · fem resmål värda resan",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi och Ylläs, de fem resmålen i Lappland värda en lyxresa. Norrskensfrekvens, ankomstlogistik och villorna på varje plats."
     }
   },
   "experiences": {
@@ -241,6 +258,10 @@
     "nl": {
       "title": "Lapland-ervaringen op maat · aurora, heli, chef",
       "description": "Privé-ervaringen in Lapland: aurorafotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+    },
+    "sv": {
+      "title": "Skräddarsydda Lapplandsupplevelser · norrsken, chef",
+      "description": "Privata Lapplandsupplevelser: norrskensfotografering, helikopterflyg, privatkock i villan, exklusiva hundspannssafarier och ankomst med privatjet."
     }
   },
   "midnight-sun": {
@@ -287,6 +308,10 @@
     "nl": {
       "title": "Middernachtzon, luxe villa's in 32 dagen licht",
       "description": "6 juni – 7 juli: het venster waarin de zon in Lapland niet ondergaat. Dezelfde villa's die u voor de aurora boekt, in hun zomerse karakter, privéchefs, halve vraag."
+    },
+    "sv": {
+      "title": "Midnattssol, lyxvillor i 32 dagar av ljus",
+      "description": "6 juni – 7 juli: perioden då solen inte går ner i Lappland. Samma villor som du bokar för norrskenet, i sin sommarskepnad, privatkockar, hälften av efterfrågan."
     }
   },
   "concierge": {
@@ -333,6 +358,10 @@
     "nl": {
       "title": "Privéconciërge, anonieme villaplanning in Lapland",
       "description": "Stuur één privéaanvraag: personen, data, voorkeuren. We reageren binnen één werkdag met een shortlist, inclusief villa's die nooit publiek verschijnen."
+    },
+    "sv": {
+      "title": "Privat concierge, anonym villaplanering i Lappland",
+      "description": "Skicka en privat förfrågan: sällskap, datum, önskemål. Vi svarar inom en arbetsdag med en handplockad lista, inklusive reservvillor som aldrig visas offentligt."
     }
   },
   "about": {
@@ -379,6 +408,10 @@
     "nl": {
       "title": "Over ons, luxe villa's in Lapland, vanuit Finland",
       "description": "Een kleine privécollectie van Laplands mooiste villa's en suites, gerund vanuit Fins Lapland door Lapeso Oy, onderdeel van het LaplandVibes-netwerk."
+    },
+    "sv": {
+      "title": "Om oss, lyxvillor i Lappland, kurerat från Finland",
+      "description": "En liten, handplockad privat samling av Lapplands finaste villor och sviter, driven från finska Lappland av Lapeso Oy, en del av LaplandVibes-nätverket."
     }
   }
 }

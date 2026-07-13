@@ -110,6 +110,15 @@ const COPY: Record<Lang, { eyebrow: string; h2: string; cards: Card[] }> = {
       { href: 'https://laplandhoteldeals.com/deals/', label: 'Aanbiedingen luxehotels', body: 'Premium hotels in Lapland en samengestelde seizoensaanbiedingen.' },
     ],
   },
+  sv: {
+    eyebrow: 'I nätverket',
+    h2: 'Fler sätt att bo i Lappland',
+    cards: [
+      { href: 'https://laplandstays.com/property-types/', label: 'Jämför alla boenden i Lappland', body: 'Från glasigloor till stugor och hotell i hela regionen.' },
+      { href: 'https://laplandwellness.com/spas/', label: 'Spa- och bastuvistelser', body: 'Wellnessboenden, traditionella bastur och arktiska sparitualer.' },
+      { href: 'https://laplandhoteldeals.com/deals/', label: 'Erbjudanden på lyxhotell', body: 'Förstklassiga hotell i Lappland och utvalda säsongserbjudanden.' },
+    ],
+  },
 }
 
 export default function RelatedSites() {

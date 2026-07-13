@@ -313,6 +313,33 @@ export const VILLA_FAQ_BY_LANG: Record<Lang, VillaFaq[]> = {
       a: 'Boeken gebeurt via een anonieme concierge-aanvraag en niet via een directe online afrekening. U deelt uw data en gezelschap, en de tarieven worden op aanvraag opgegeven, rechtstreeks voor de villa en het seizoen van uw keuze. Zo kan de concierge beschikbaarheid, inbegrepen voorzieningen en eventuele privéregelingen bevestigen voordat u zich vastlegt.',
     },
   ],
+
+  sv: [
+    {
+      q: 'Vad är en privat norrskensvilla i Lappland?',
+      a: 'En privat norrskensvilla är en fristående lyxbostad i finska Lappland, byggd så att du kan se norrskenet från ditt eget utrymme, oftast genom ett glastak, glasväggar eller stora panoramafönster. Till skillnad från ett hotellrum är villan bara din under vistelsen, och den ligger ofta borta från ljusföroreningar så att norrskenet syns lättare en klar natt.',
+    },
+    {
+      q: 'Vad ingår i en lyxvilla i Lappland?',
+      a: 'Det varierar mellan boenden, men vår kollektion har vanligtvis egen bastu, badtunna eller utomhusjacuzzi, ett fullt utrustat kök och en öppen spis eller vedspis. Flera villor kan ordna privatkock, daglig städning, ved och förhandsfyllt skafferi. Norrskensväckning, där det erbjuds, meddelar dig när ljusen dyker upp. Exakt vad som ingår bekräftas per villa när du gör en förfrågan.',
+    },
+    {
+      q: 'Hur många gäster får plats i Lapplands lyxvillor?',
+      a: 'Kapaciteten varierar inom kollektionen. Glasigloor och designsviter passar oftast två gäster, medan strandnära timmergårdar och större stugor rymmer en familj eller en mindre grupp. Varje villasida anger sängkapacitet och sovrumsindelning, och concierge kan matcha ett boende mot ert sällskaps storlek.',
+    },
+    {
+      q: 'När är bästa säsongen för en vistelse i en lyxig norrskensvilla?',
+      a: 'Norrskenssäsongen i Lappland pågår ungefär från slutet av augusti till början av april, när nätterna är tillräckligt mörka. Aktiviteten är starkast och snön säkrast från december till mars. För midnattssol och ljusa, milda nätter i stället för norrsken reser du i juni–juli. Rätt period beror på om du reser för norrskenet, snöaktiviteterna eller den arktiska sommaren.',
+    },
+    {
+      q: 'Erbjuder lyxvillorna privata guider och transfer?',
+      a: 'Många gör det. Concierge kan ordna privat flygplatstransfer från Rovaniemi, Kittilä eller Ivalo, och privata guider för norrskensjakt, hundspanns- och renupplevelser, snöskoteråkning och andra aktiviteter. Dessa skräddarsys för varje bokning och bekräftas i förväg i stället för att säljas som ett fast paket.',
+    },
+    {
+      q: 'Hur bokar jag, och hur anges priserna?',
+      a: 'Bokning sker via en anonym concierge-förfrågan i stället för en direkt onlinebetalning. Du delar dina datum och ditt sällskap, och priserna anges på begäran direkt för den villa och säsong du väljer. Så kan concierge bekräfta tillgänglighet, vad som ingår och eventuella privata arrangemang innan du binder dig.',
+    },
+  ],
 }
 
 // Contextual links under the FAQ — the natural next step after reading the
@@ -329,6 +356,7 @@ const FAQ_LINKS: Record<Lang, { prompt: string; collection: string; concierge: s
   fr: { prompt: 'Une question vous reste ?', collection: 'Voir la collection', concierge: 'Demander au concierge' },
   it: { prompt: 'Resta qualche dubbio?', collection: 'Vedi la collezione', concierge: 'Chiedi al concierge' },
   nl: { prompt: 'Zit je nog met een vraag?', collection: 'Bekijk de collectie', concierge: 'Vraag het de concierge' },
+  sv: { prompt: 'Undrar du fortfarande över något?', collection: 'Bläddra i kollektionen', concierge: 'Fråga concierge' },
 }
 
 const HEADINGS: Record<Lang, { eyebrow: string; h2: string }> = {
@@ -343,6 +371,7 @@ const HEADINGS: Record<Lang, { eyebrow: string; h2: string }> = {
   fr: { eyebrow: 'Bon à savoir', h2: 'Questions avant votre séjour' },
   it: { eyebrow: 'Utile da sapere', h2: 'Domande prima del soggiorno' },
   nl: { eyebrow: 'Goed om te weten', h2: 'Vragen voor uw verblijf' },
+  sv: { eyebrow: 'Bra att veta', h2: 'Frågor inför din vistelse' },
 }
 
 export default function FAQ() {

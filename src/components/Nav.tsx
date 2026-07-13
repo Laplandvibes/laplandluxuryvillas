@@ -8,7 +8,7 @@ import { useLang, useLocalePath, type Lang } from '../i18n/useLang'
 const LANG_PREFIX: Record<Lang, string> = {
   en: '', fi: 'fi', de: 'de', ja: 'ja',
   es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
 }
 import { COPY } from '../locales/copy'
 
@@ -24,6 +24,7 @@ const LANG_OPTIONS: { code: Lang; label: string; native: string }[] = [
   { code: 'fr', label: 'FR', native: 'Français' },
   { code: 'it', label: 'IT', native: 'Italiano' },
   { code: 'nl', label: 'NL', native: 'Nederlands' },
+  { code: 'sv', label: 'SV', native: 'Svenska' },
 ]
 
 export default function Nav() {
@@ -96,6 +97,7 @@ export default function Nav() {
     else if (path === '/fr' || path.startsWith('/fr/')) bare = path.replace(/^\/fr/, '') || '/'
     else if (path === '/it' || path.startsWith('/it/')) bare = path.replace(/^\/it/, '') || '/'
     else if (path === '/nl' || path.startsWith('/nl/')) bare = path.replace(/^\/nl/, '') || '/'
+    else if (path === '/sv' || path.startsWith('/sv/')) bare = path.replace(/^\/sv/, '') || '/'
     const prefix = LANG_PREFIX[target]
     if (!prefix) {
       navigate(bare)

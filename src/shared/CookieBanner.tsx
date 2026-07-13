@@ -31,12 +31,12 @@ export interface CookieBannerDict {
 }
 
 /**
- * Built-in 11-language translations matching the LaplandVibes ecosystem
- * (en, fi, de, ja, es, pt-BR, zh-CN, ko, fr, it, nl). Use these as either
+ * Built-in 12-language translations matching the LaplandVibes ecosystem
+ * (en, fi, de, ja, es, pt-BR, zh-CN, ko, fr, it, nl, sv). Use these as either
  * `dict` directly, or as the source for per-site overrides.
  *
  * Legally important: this banner is the FIRST consent prompt a non-English
- * visitor sees. Showing English copy on /kr /fr /it /nl is a GDPR + ePrivacy
+ * visitor sees. Showing English copy on /kr /fr /it /nl /sv is a GDPR + ePrivacy
  * problem (consent must be given in a language the user understands).
  */
 export const COOKIE_BANNER_LOCALES: Record<string, Required<CookieBannerDict>> = {
@@ -51,6 +51,7 @@ export const COOKIE_BANNER_LOCALES: Record<string, Required<CookieBannerDict>> =
   fr:      { label: 'Cookies',  body: 'Nous utilisons des cookies pour améliorer votre expérience.', policyLink: 'Politique des cookies', decline: 'Refuser',  accept: 'Accepter',  ariaLabel: 'Consentement aux cookies' },
   it:      { label: 'Cookie',   body: 'Utilizziamo i cookie per migliorare la tua esperienza.', policyLink: 'Informativa sui Cookie', decline: 'Rifiuta',  accept: 'Accetta',   ariaLabel: 'Consenso ai cookie' },
   nl:      { label: 'Cookies',  body: 'We gebruiken cookies om uw ervaring te verbeteren.',   policyLink: 'Cookiebeleid', decline: 'Weigeren', accept: 'Accepteren', ariaLabel: 'Cookietoestemming' },
+  sv:      { label: 'Cookies',  body: 'Vi använder cookies för att förbättra din upplevelse.', policyLink: 'Cookiepolicy', decline: 'Avvisa',   accept: 'Acceptera', ariaLabel: 'Samtycke till cookies' },
 };
 
 const DEFAULT_DICT: Required<CookieBannerDict> = COOKIE_BANNER_LOCALES.en;
@@ -58,7 +59,7 @@ const DEFAULT_DICT: Required<CookieBannerDict> = COOKIE_BANNER_LOCALES.en;
 interface CookieBannerProps {
   consentKey?: string;
   /**
-   * Optional locale code (en | fi | de | ja | es | pt-BR | zh-CN | ko | fr | it | nl).
+   * Optional locale code (en | fi | de | ja | es | pt-BR | zh-CN | ko | fr | it | nl | sv).
    * When provided, the banner auto-picks copy from the built-in
    * `COOKIE_BANNER_LOCALES` table. Overridden by an explicit `dict`.
    */
@@ -80,11 +81,11 @@ export default function CookieBanner({
   policyHref,
 }: CookieBannerProps) {
   // Keep the policy link in the visitor's locale: derive the URL prefix from the
-  // first path segment (fi/de/ja/es/br/cn/kr/fr/it/nl) unless an explicit
+  // first path segment (fi/de/ja/es/br/cn/kr/fr/it/nl/sv) unless an explicit
   // policyHref is passed. A bare /cookie-policy would dump a /fr visitor to EN.
   const { pathname } = useLocation();
   const _seg = pathname.split('/')[1] || '';
-  const _href = policyHref ?? (/^(fi|de|ja|es|br|cn|kr|fr|it|nl)$/.test(_seg) ? `/${_seg}/cookie-policy` : '/cookie-policy');
+  const _href = policyHref ?? (/^(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)$/.test(_seg) ? `/${_seg}/cookie-policy` : '/cookie-policy');
   const D: Required<CookieBannerDict> = {
     ...DEFAULT_DICT,
     ...(lang && COOKIE_BANNER_LOCALES[lang] ? COOKIE_BANNER_LOCALES[lang] : {}),

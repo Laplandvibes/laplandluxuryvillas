@@ -173,6 +173,15 @@ const LOMARENGAS_COPY: Record<Lang, AdCopy> = {
     cta: 'Bekijk vrije huisjes',
     poweredBy: 'Boeking via Lomarengas',
   },
+  sv: {
+    adLabel: 'Annons',
+    eyebrow: 'Hela stugan, inte ett hotellrum',
+    headline: 'Lomarengas: hyr en hel stuga i Lappland, med egen strandbastu och plats för hela sällskapet',
+    sub: 'När villakollektionen är fullbokad, eller ni bara vill ha ett ställe helt för er själva, är en handplockad stuga det varma alternativet. Lomarengas är Finlands största stuguthyrare, med tusentals stugor i hela Lappland, många med egen strandbastu och öppen spis. Du bokar direkt och får hela huset, inte bara ett rum.',
+    trust: ['Egen bastu i de flesta', 'Hela stugan, inte delad', 'Tusentals i hela Lappland'],
+    cta: 'Se lediga stugor',
+    poweredBy: 'Bokning via Lomarengas',
+  },
 }
 
 const COPY: Record<PartnerKey, Record<Lang, AdCopy>> = {

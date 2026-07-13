@@ -32,11 +32,11 @@ const LIB = join(ROOT, 'src', 'lib');
 const LOCALES = join(ROOT, 'src', 'locales');
 const OUT = join(ROOT, 'scripts', 'prerender-meta.json');
 
-const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl'];
+const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
 const CONTENT_FILE = {
   fi: 'content.fi.ts', de: 'content.de.ts', ja: 'content.ja.ts', es: 'content.es.ts',
   'pt-BR': 'content.pt-BR.ts', 'zh-CN': 'content.zh-CN.ts', ko: 'content.ko.ts',
-  fr: 'content.fr.ts', it: 'content.it.ts', nl: 'content.nl.ts',
+  fr: 'content.fr.ts', it: 'content.it.ts', nl: 'content.nl.ts', sv: 'content.sv.ts',
 };
 const SITE_NAME = 'LaplandLuxuryVillas';
 

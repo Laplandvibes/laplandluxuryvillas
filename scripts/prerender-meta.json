@@ -43,6 +43,10 @@
     "nl": {
       "title": "Luxe villa's in Lapland: privé aurora-residenties",
       "description": "Een privécollectie van Laplands mooiste villa's en suites, glazen dak, houten landhuizen aan het meer, aurora-residenties. Conciërge, tarieven op aanvraag."
+    },
+    "sv": {
+      "title": "Lyxvillor i Lappland: privata norrskensresidens",
+      "description": "En privat samling av Lapplands finaste villor och sviter, glastak, strandnära timmergårdar, designresidens under norrsken. Concierge, priser på begäran."
     }
   },
   "/villas": {
@@ -89,6 +93,10 @@
     "nl": {
       "title": "De Collectie, luxe villa's en glazen cabins",
       "description": "Een korte, samengestelde lijst van Laplands mooiste privévilla's: aurora-cabins met glazen dak, houten landhuizen, designsuites en alpenchalets. Vanaf 460 €/nacht."
+    },
+    "sv": {
+      "title": "Samlingen, lyxvillor och glasstugor i Lappland",
+      "description": "En kort, handplockad lista över Lapplands finaste privata villor: glastaksstugor under norrsken, strandnära timmergårdar, designsviter och fjällstugor. Från 460 €/natt."
     }
   },
   "/suites": {
@@ -135,6 +143,10 @@
     "nl": {
       "title": "Designsuites en aurora-slaapkamers met glazen dak",
       "description": "Designsuites en aurora-cabins met glazen dak: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Vanaf 460 €/nacht."
+    },
+    "sv": {
+      "title": "Designsviter och norrskensrum med glastak, Lappland",
+      "description": "En kort lista över Lapplands designsviter och glastaksstugor under norrsken: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen, Levin Iglut. Från 460 €/natt."
     }
   },
   "/destinations": {
@@ -181,6 +193,10 @@
     "nl": {
       "title": "Waar te verblijven in Lapland · vijf bestemmingen",
       "description": "Saariselkä, Inari, Rovaniemi, Levi en Ylläs, de vijf bestemmingen in Lapland voor een luxereis. Aurorafrequentie, aankomstlogistiek en de villa's per plek."
+    },
+    "sv": {
+      "title": "Var du bor i Lappland · fem resmål värda resan",
+      "description": "Saariselkä, Inari, Rovaniemi, Levi och Ylläs, de fem resmålen i Lappland värda en lyxresa. Norrskensfrekvens, ankomstlogistik och villorna på varje plats."
     }
   },
   "/experiences": {
@@ -227,6 +243,10 @@
     "nl": {
       "title": "Lapland-ervaringen op maat · aurora, heli, chef",
       "description": "Privé-ervaringen in Lapland: aurorafotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+    },
+    "sv": {
+      "title": "Skräddarsydda Lapplandsupplevelser · norrsken, chef",
+      "description": "Privata Lapplandsupplevelser: norrskensfotografering, helikopterflyg, privatkock i villan, exklusiva hundspannssafarier och ankomst med privatjet."
     }
   },
   "/midnight-sun": {
@@ -273,6 +293,10 @@
     "nl": {
       "title": "Middernachtzon, luxe villa's in 32 dagen licht",
       "description": "6 juni – 7 juli: het venster waarin de zon in Lapland niet ondergaat. Dezelfde villa's die u voor de aurora boekt, in hun zomerse karakter, privéchefs, halve vraag."
+    },
+    "sv": {
+      "title": "Midnattssol, lyxvillor i 32 dagar av ljus",
+      "description": "6 juni – 7 juli: perioden då solen inte går ner i Lappland. Samma villor som du bokar för norrskenet, i sin sommarskepnad, privatkockar, hälften av efterfrågan."
     }
   },
   "/concierge": {
@@ -319,6 +343,10 @@
     "nl": {
       "title": "Privéconciërge, anonieme villaplanning in Lapland",
       "description": "Stuur één privéaanvraag: personen, data, voorkeuren. We reageren binnen één werkdag met een shortlist, inclusief villa's die nooit publiek verschijnen."
+    },
+    "sv": {
+      "title": "Privat concierge, anonym villaplanering i Lappland",
+      "description": "Skicka en privat förfrågan: sällskap, datum, önskemål. Vi svarar inom en arbetsdag med en handplockad lista, inklusive reservvillor som aldrig visas offentligt."
     }
   },
   "/about": {
@@ -365,6 +393,10 @@
     "nl": {
       "title": "Over ons, luxe villa's in Lapland, vanuit Finland",
       "description": "Een kleine privécollectie van Laplands mooiste villa's en suites, gerund vanuit Fins Lapland door Lapeso Oy, onderdeel van het LaplandVibes-netwerk."
+    },
+    "sv": {
+      "title": "Om oss, lyxvillor i Lappland, kurerat från Finland",
+      "description": "En liten, handplockad privat samling av Lapplands finaste villor och sviter, driven från finska Lappland av Lapeso Oy, en del av LaplandVibes-nätverket."
     }
   },
   "/villas/kakslauttanen-glass-igloo-suite": {
@@ -411,6 +443,10 @@
     "nl": {
       "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
       "description": "Verwarmd thermisch glas boven een handgebouwde kelo-dennenhutten, de oorspronkelijke noorderlichtslaapkamer."
+    },
+    "sv": {
+      "title": "Kakslauttanen Kelo-Glass Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "Uppvärmt termoglas ovanför en handbyggd stuga i kelotall, det ursprungliga norrskenssovrummet."
     }
   },
   "/villas/arctic-treehouse-suite": {
@@ -457,6 +493,10 @@
     "nl": {
       "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
       "description": "Door Rajakangas ontworpen uitkragende suite met een volledig glazen gevel gericht op het noorderlicht."
+    },
+    "sv": {
+      "title": "Arctic TreeHouse Penthouse — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Utkragande svit ritad av Rajakangas med helt glasad fasad riktad mot norrskenet."
     }
   },
   "/villas/aurora-village-glass-cabin": {
@@ -503,6 +543,10 @@
     "nl": {
       "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
       "description": "Vierentwintig glazen hutten met uitzicht op niets dan bos en de noorderlichtovaal."
+    },
+    "sv": {
+      "title": "Aurora Village Glass Cabin — Inari | LaplandLuxuryVillas",
+      "description": "Tjugofyra glasstugor med utsikt över inget annat än skog och norrskensovalen."
     }
   },
   "/villas/levin-iglut-golden-crown": {
@@ -549,6 +593,10 @@
     "nl": {
       "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
       "description": "Glazen iglo's hoog boven de fjeld van Levi, de enige iglocluster van Lapland die op het zuiden naar het dal kijkt."
+    },
+    "sv": {
+      "title": "Levin Iglut Golden Crown — Levi | LaplandLuxuryVillas",
+      "description": "Glasigloor högt över Levifjället, Lapplands enda igluklunga som vetter söderut mot dalen."
     }
   },
   "/villas/wilderness-hotel-nellim-aurora-bubble": {
@@ -595,6 +643,10 @@
     "nl": {
       "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
       "description": "Een glazen bubbelsuite aan de rand van het boreale bos, twintig minuten van de Russische grens."
+    },
+    "sv": {
+      "title": "Nellim Aurora Bubble — Inari | LaplandLuxuryVillas",
+      "description": "En glasbubbelsvit vid kanten av den boreala skogen, tjugo minuter från ryska gränsen."
     }
   },
   "/villas/star-arctic-suite": {
@@ -641,6 +693,10 @@
     "nl": {
       "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
       "description": "Een suite met glazen wanden op de top van de fjeld Kaunispää, de hoogstgelegen noorderlichtslaapkamer van het land."
+    },
+    "sv": {
+      "title": "Star Arctic Skyview Suite — Saariselkä | LaplandLuxuryVillas",
+      "description": "En svit med glasväggar på toppen av fjället Kaunispää, landets högst belägna norrskenssovrum."
     }
   },
   "/villas/apukka-resort-aurora-cabin": {
@@ -687,6 +743,10 @@
     "nl": {
       "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
       "description": "Noorderlichtwagons in heritage-stijl aan de oever van een bevroren meer, tien minuten van de luchthaven van Rovaniemi."
+    },
+    "sv": {
+      "title": "Apukka Aurora Wagon — Rovaniemi | LaplandLuxuryVillas",
+      "description": "Norrskensvagnar i heritagestil vid stranden av en frusen sjö, tio minuter från Rovaniemi flygplats."
     }
   },
   "/villas/private-lakeside-log-estate": {
@@ -733,6 +793,10 @@
     "nl": {
       "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
       "description": "Een privé handgebouwd blokhuis aan een eigen baai van het Inarimeer. Uitsluitend op aanvraag via de concierge."
+    },
+    "sv": {
+      "title": "The Lakeside Log Estate — Inari | LaplandLuxuryVillas",
+      "description": "En privat, handbyggd timmerstuga vid en egen vik av Enaresjön. Endast på begäran via concierge."
     }
   },
   "/villas/designer-mountain-chalet-levi": {
@@ -779,6 +843,10 @@
     "nl": {
       "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
       "description": "Een modern, door een architect gebouwd chalet op de zuidhelling van Levi. Ski-in / ski-out, eigen wellnessverdieping."
+    },
+    "sv": {
+      "title": "The Designer Mountain Chalet — Levi | LaplandLuxuryVillas",
+      "description": "En modern, arkitektbyggd stuga på Levis södra sluttning. Ski-in / ski-out, eget wellnessplan."
     }
   },
   "/destinations/saariselka": {
@@ -825,6 +893,10 @@
     "nl": {
       "title": "Saariselkä — Lapland · privévilla's, suites en aurora",
       "description": "De luxe noorderlichthub van Noord-Finland, Kakslauttanen, Star Arctic, de wilde rand van Urho Kekkonen. Boreaal bos in het binnenland, weinig…"
+    },
+    "sv": {
+      "title": "Saariselkä — Lappland · privata villor, sviter och norrsken",
+      "description": "Norra Finlands lyxiga norrskenshubb, Kakslauttanen, Star Arctic, den vilda kanten av Urho Kekkonen. Boreal skog i inlandet, lite ljusföroreningar. ~200 klara…"
     }
   },
   "/destinations/inari": {
@@ -871,6 +943,10 @@
     "nl": {
       "title": "Inari — Lapland · privévilla's, suites en aurora",
       "description": "Statistisch gezien de betrouwbaarste noorderlichtbreedtegraad in de Europese Unie. Sami-hartland, Inarimeer, donkere hemel. Hoogste noorderlichtfrequentie…"
+    },
+    "sv": {
+      "title": "Inari — Lappland · privata villor, sviter och norrsken",
+      "description": "Statistiskt sett den mest tillförlitliga norrskensbreddgraden i Europeiska unionen. Samiskt kärnland, Enaresjön, mörk himmel. Högsta norrskensfrekvensen i…"
     }
   },
   "/destinations/rovaniemi": {
@@ -917,6 +993,10 @@
     "nl": {
       "title": "Rovaniemi — Lapland · privévilla's, suites en aurora",
       "description": "De aankomststad. Door architecten gebouwde suites, dagelijkse directe vluchten vanaf grote hubs. Lagere noorderlichtbreedtegraad dan Inari/Saariselkä maar…"
+    },
+    "sv": {
+      "title": "Rovaniemi — Lappland · privata villor, sviter och norrsken",
+      "description": "Ankomststaden. Arkitektbyggda sviter, dagliga direktflyg från stora hubbar. Lägre norrskensbreddgrad än Inari/Saariselkä men fortfarande ~150 klara…"
     }
   },
   "/destinations/levi": {
@@ -963,6 +1043,10 @@
     "nl": {
       "title": "Levi — Lapland · privévilla's, suites en aurora",
       "description": "Het toonaangevende skiresort van Finland. Luxechalets op de zuidhelling, ski-in / ski-out vanaf de gondel van Levi. Noorderlichtpanorama op het zuiden…"
+    },
+    "sv": {
+      "title": "Levi — Lappland · privata villor, sviter och norrsken",
+      "description": "Finlands ledande skidort. Lyxstugor på södra sluttningen, ski-in / ski-out från Levis gondol. Norrskenspanorama mot söder (ovanligt). ~150 klara nätter, men…"
     }
   },
   "/destinations/yllas": {
@@ -1009,6 +1093,10 @@
     "nl": {
       "title": "Ylläs — Lapland · privévilla's, suites en aurora",
       "description": "Het rustige alternatief voor Levi. Nationaal Park Pallas-Yllästunturi, minder drukte, dieper bos. Binnen de grens van het nationaal park, een van de laagste…"
+    },
+    "sv": {
+      "title": "Ylläs — Lappland · privata villor, sviter och norrsken",
+      "description": "Det lugna alternativet till Levi. Pallas-Yllästunturi nationalpark, mindre trängsel, djupare skog. Inom nationalparkens gräns, ett av de lägsta…"
     }
   }
 }

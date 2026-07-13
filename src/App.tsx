@@ -84,7 +84,7 @@ function AffiliateLinkWarmup() {
   return null
 }
 
-const LOCALE_PREFIXES = ['', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl'] as const
+const LOCALE_PREFIXES = ['', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl', '/sv'] as const
 
 function localized(path: string, element: React.JSX.Element) {
   return LOCALE_PREFIXES.map((prefix) => {
