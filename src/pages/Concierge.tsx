@@ -31,7 +31,7 @@ export default function Concierge() {
   const [errorMsg, setErrorMsg] = useState('')
 
   const mailto = useMemo(() => {
-    const subject = `Private villa inquiry — ${form.intent}`
+    const subject = `Private villa inquiry: ${form.intent}`
     const body = [
       'Private inquiry submitted via laplandluxuryvillas.com',
       '',

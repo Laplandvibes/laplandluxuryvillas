@@ -23,12 +23,12 @@ const FI_DICT: FooterDict = {
   travelGuideKicker: 'Lapin matkaopas',
   about: {
     eyebrow: 'Tietoa LaplandVibesista',
-    body: 'Lopullinen opas Suomen Lappiin — revontulista yöttömään yöhön. Käsin valitut elämykset, paikalliset vinkit ja käytännön perustiedot arktisen matkasi suunnitteluun.',
+    body: 'Lopullinen opas Suomen Lappiin, revontulista yöttömään yöhön. Käsin valitut elämykset, paikalliset vinkit ja käytännön perustiedot arktisen matkasi suunnitteluun.',
     badge: 'Riippumattomasti ylläpidetty · lähteet näkyvillä',
   },
   spottedError: {
     title: 'Huomasitko virheen?',
-    body: 'Näitkö jotain mikä kaipaa korjausta? Kerro meille — korjaamme heti.',
+    body: 'Näitkö jotain mikä kaipaa korjausta? Kerro meille, korjaamme heti.',
     cta: 'Ilmoita virheestä →',
   },
   partner: {
@@ -43,7 +43,7 @@ const FI_DICT: FooterDict = {
   },
   affiliate:
     'Tämä sivusto sisältää kumppanuuslinkkejä. Kun varaat näiden kautta, LaplandVibes saa pienen provision ilman lisäkustannuksia sinulle.',
-  copyright: '© {{year}} #LaplandVibes — Osa #LaplandVibes-verkostoa',
+  copyright: '© {{year}} #LaplandVibes. Osa #LaplandVibes-verkostoa',
   websiteBy: 'Sivusto: Yrityspaketit.fi',
   legal: {
     privacy: 'Tietosuoja',
@@ -66,12 +66,12 @@ const DE_DICT: FooterDict = {
   travelGuideKicker: 'Lappland-Reiseführer',
   about: {
     eyebrow: 'Über LaplandVibes',
-    body: 'Der definitive Leitfaden für Finnisch-Lappland — von den Polarlichtern bis zur Mitternachtssonne. Kuratierte Erlebnisse, Insider-Tipps und alles für die Planung Ihres arktischen Abenteuers.',
+    body: 'Der definitive Leitfaden für Finnisch-Lappland, von den Polarlichtern bis zur Mitternachtssonne. Kuratierte Erlebnisse, Insider-Tipps und alles für die Planung Ihres arktischen Abenteuers.',
     badge: 'Unabhängig gepflegt · Quellen sichtbar',
   },
   spottedError: {
     title: 'Einen Fehler entdeckt?',
-    body: 'Sehen Sie etwas, das korrigiert werden sollte? Sagen Sie es uns — wir bessern es sofort aus.',
+    body: 'Sehen Sie etwas, das korrigiert werden sollte? Sagen Sie es uns, wir bessern es sofort aus.',
     cta: 'Fehler melden →',
   },
   partner: {
@@ -86,7 +86,7 @@ const DE_DICT: FooterDict = {
   },
   affiliate:
     'Diese Seite enthält Partner-Links. Wenn Sie über diese Links buchen, erhält LaplandVibes möglicherweise eine Provision ohne Mehrkosten für Sie.',
-  copyright: '© {{year}} #LaplandVibes — Teil des #LaplandVibes-Netzwerks',
+  copyright: '© {{year}} #LaplandVibes. Teil des #LaplandVibes-Netzwerks',
   websiteBy: 'Website von Yrityspaketit.fi',
   legal: {
     privacy: 'Datenschutz',

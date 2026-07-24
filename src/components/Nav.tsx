@@ -133,7 +133,7 @@ export default function Nav() {
       <nav className="mx-auto max-w-screen-2xl px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-3 sm:gap-4">
         <div className="flex items-center gap-3 sm:gap-5 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="laplandluxuryvillas.com" />
-          <Link to={to('/')} className="min-w-0 shrink" aria-label="LaplandLuxuryVillas — home">
+          <Link to={to('/')} className="min-w-0 shrink" aria-label="LaplandLuxuryVillas, home">
             <Logo />
           </Link>
         </div>

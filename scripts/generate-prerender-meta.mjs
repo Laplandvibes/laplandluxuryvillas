@@ -157,7 +157,7 @@ for (const [lang, file] of Object.entries(CONTENT_FILE)) {
 for (const [slug, b] of Object.entries(villaBase)) {
   const path = `/villas/${slug}`;
   meta[path] = {};
-  const title = `${b.name} — ${b.destination} | ${SITE_NAME}`; // proper nouns; brand already present
+  const title = `${b.name}: ${b.destination} | ${SITE_NAME}`; // proper nouns; brand already present
   for (const lang of LANGS) {
     const ovTag = lang === 'en' ? null : villaOverlays[lang]?.[slug]?.tagline;
     const description = trimDesc(ovTag || b.tagline);
@@ -178,8 +178,8 @@ for (const [slug, b] of Object.entries(destBase)) {
     const ov = lang === 'en' ? null : destOverlays[lang]?.[slug];
     const position = (ov && ov.position) || b.position;
     const auroraNote = (ov && ov.auroraNote) || b.auroraNote;
-    const suffix = destSuffix[lang] || destSuffix.en || 'Lapland — Private Villas, Suites & Aurora';
-    const title = `${b.name} — ${suffix}`;
+    const suffix = destSuffix[lang] || destSuffix.en || 'Lapland: Private Villas, Suites & Aurora';
+    const title = `${b.name}: ${suffix}`;
     const description = trimDesc(`${position} ${auroraNote}`);
     meta[path][lang] = { title, description };
   }
