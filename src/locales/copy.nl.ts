@@ -291,7 +291,7 @@ const nl: SiteCopy = {
         title: 'Wat deze site niet doet',
         paragraphs: [
           'Wij exploiteren de villa\'s niet en zijn geen boekingsbureau. Er is hier geen gids en geen plan om er een te bouwen, de collectie wordt bewust klein gehouden.',
-          'Wij zijn onafhankelijk. Wanneer een pand online te boeken is, verwijzen we naar de publieke aanbieding ervan, bijvoorbeeld via Hotels.com; die links kunnen ons een kleine commissie opleveren, zonder extra kosten voor u, en ze beïnvloeden nooit welke villa\'s we aanbevelen. Panden kunnen niet betalen om te worden uitgelicht.',
+          'Wij zijn onafhankelijk. Wanneer een pand online te boeken is, verwijzen we naar de publieke aanbieding ervan, bijvoorbeeld via Trip.com; die links kunnen ons een kleine commissie opleveren, zonder extra kosten voor u, en ze beïnvloeden nooit welke villa\'s we aanbevelen. Panden kunnen niet betalen om te worden uitgelicht.',
         ],
       },
       {

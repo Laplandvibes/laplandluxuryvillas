@@ -289,7 +289,7 @@ const fr: SiteCopy = {
         title: 'Ce que ce site ne fait pas',
         paragraphs: [
           'Nous n’exploitons pas les villas et nous ne sommes pas une agence de réservation. Il n’y a pas d’annuaire ici, ni l’intention d’en créer un, la collection est volontairement restreinte.',
-          'Nous sommes indépendants. Lorsqu’une propriété peut être réservée en ligne, nous renvoyons vers son annonce publique, par exemple via Hotels.com ; ces liens peuvent nous rapporter une petite commission sans coût supplémentaire pour vous, et ils n’influencent jamais les villas que nous recommandons. Les propriétés ne peuvent pas payer pour être mises en avant.',
+          'Nous sommes indépendants. Lorsqu’une propriété peut être réservée en ligne, nous renvoyons vers son annonce publique, par exemple via Trip.com ; ces liens peuvent nous rapporter une petite commission sans coût supplémentaire pour vous, et ils n’influencent jamais les villas que nous recommandons. Les propriétés ne peuvent pas payer pour être mises en avant.',
         ],
       },
       {
@@ -523,7 +523,7 @@ Object.assign(fr.aboutPage, {
     ] },
     { title: 'Ce que ce site ne fait pas', paragraphs: [
       'Nous n\'exploitons pas les villas et nous ne sommes pas une agence de réservation. Il n\'y a pas d\'annuaire ici, ni l\'intention d\'en créer un, la collection est volontairement restreinte.',
-      'Nous sommes indépendants. Lorsqu\'une propriété peut être réservée en ligne, nous renvoyons vers son annonce publique, par exemple via Hotels.com ; ces liens peuvent nous rapporter une petite commission sans coût supplémentaire pour vous, et ils n\'influencent jamais les villas que nous recommandons. Les propriétés ne peuvent pas payer pour être mises en avant.',
+      'Nous sommes indépendants. Lorsqu\'une propriété peut être réservée en ligne, nous renvoyons vers son annonce publique, par exemple via Trip.com ; ces liens peuvent nous rapporter une petite commission sans coût supplémentaire pour vous, et ils n\'influencent jamais les villas que nous recommandons. Les propriétés ne peuvent pas payer pour être mises en avant.',
     ] },
     { title: 'Qui s\'en occupe', paragraphs: [
       { type: 'link', pre: 'Une petite équipe basée en Finlande, qui anime également l\'écosystème ', label: 'LaplandVibes', href: 'https://laplandvibes.com', post: ', un hub éditorial et un réseau de sites de voyage sur la Laponie. Ce site est la partie de ce travail consacrée aux villas et suites les plus singulières de Laponie.' },

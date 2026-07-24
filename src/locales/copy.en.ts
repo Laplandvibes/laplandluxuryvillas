@@ -297,7 +297,7 @@ const en: SiteCopy = {
         title: 'What this site does not do',
         paragraphs: [
           'We do not operate the villas, and we are not a booking agency. There is no directory here, and no plan to build one. We keep the collection deliberately small.',
-          'We are independent. Where a property can be booked online we link to its public listing, for example through Hotels.com; those links may earn us a small commission at no extra cost to you, and they never influence which villas we recommend. Properties cannot pay to be featured.',
+          'We are independent. Where a property can be booked online we link to its public listing, for example through Trip.com; those links may earn us a small commission at no extra cost to you, and they never influence which villas we recommend. Properties cannot pay to be featured.',
         ],
       },
       {

@@ -289,7 +289,7 @@ const it: SiteCopy = {
         title: 'Cosa non fa questo sito',
         paragraphs: [
           'Non gestiamo le ville e non siamo un’agenzia di prenotazioni. Qui non c’è una directory, né l’intenzione di crearne una, la collezione è tenuta volutamente piccola.',
-          'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Hotels.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
+          'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Trip.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
         ],
       },
       {
@@ -523,7 +523,7 @@ Object.assign(it.aboutPage, {
     ] },
     { title: 'Cosa non fa questo sito', paragraphs: [
       'Non gestiamo le ville e non siamo un\'agenzia di prenotazioni. Qui non c\'è una directory, né l\'intenzione di crearne una, la collezione è tenuta volutamente piccola.',
-      'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Hotels.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
+      'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Trip.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
     ] },
     { title: 'Chi lo gestisce', paragraphs: [
       { type: 'link', pre: 'Una piccola squadra con base in Finlandia che gestisce anche l\'ecosistema ', label: 'LaplandVibes', href: 'https://laplandvibes.com', post: ', un hub editoriale e una rete di siti di viaggio sulla Lapponia. Questo sito è la parte di quel lavoro dedicata alle ville e suite più caratteristiche della Lapponia.' },

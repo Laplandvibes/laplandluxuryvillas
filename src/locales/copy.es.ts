@@ -297,7 +297,7 @@ const es: SiteCopy = {
         title: 'Lo que este sitio no hace',
         paragraphs: [
           'No gestionamos las villas y no somos una agencia de reservas. Aquí no hay directorio ni intención de crear uno, la colección se mantiene deliberadamente pequeña.',
-          'Somos independientes. Cuando una propiedad se puede reservar en línea, enlazamos a su anuncio público, por ejemplo a través de Hotels.com; esos enlaces pueden generarnos una pequeña comisión sin coste adicional para usted, y nunca influyen en qué villas recomendamos. Las propiedades no pueden pagar para aparecer.',
+          'Somos independientes. Cuando una propiedad se puede reservar en línea, enlazamos a su anuncio público, por ejemplo a través de Trip.com; esos enlaces pueden generarnos una pequeña comisión sin coste adicional para usted, y nunca influyen en qué villas recomendamos. Las propiedades no pueden pagar para aparecer.',
         ],
       },
       {

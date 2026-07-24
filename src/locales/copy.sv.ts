@@ -291,7 +291,7 @@ const sv: SiteCopy = {
         title: 'Vad den här sidan inte gör',
         paragraphs: [
           'Vi driver inte villorna och är ingen bokningsbyrå. Det finns ingen katalog här och ingen plan att bygga en, kollektionen hålls medvetet liten.',
-          'Vi är oberoende. När ett boende går att boka online länkar vi till dess offentliga erbjudande, till exempel via Hotels.com; de länkarna kan ge oss en liten provision, utan extra kostnad för dig, och de påverkar aldrig vilka villor vi rekommenderar. Boenden kan inte betala för att lyftas fram.',
+          'Vi är oberoende. När ett boende går att boka online länkar vi till dess offentliga erbjudande, till exempel via Trip.com; de länkarna kan ge oss en liten provision, utan extra kostnad för dig, och de påverkar aldrig vilka villor vi rekommenderar. Boenden kan inte betala för att lyftas fram.',
         ],
       },
       {

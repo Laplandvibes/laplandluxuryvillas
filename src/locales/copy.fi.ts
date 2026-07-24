@@ -297,7 +297,7 @@ const fi: SiteCopy = {
         title: 'Mitä tämä sivusto ei tee',
         paragraphs: [
           'Emme operoi huviloita emmekä ole varaustoimisto. Täällä ei ole hakemistoa, eikä sellaista ole tarkoituskaan rakentaa. Pidämme kokoelman tarkoituksella pienenä.',
-          'Olemme riippumattomia. Kun kohteen voi varata verkossa, linkitämme sen julkiseen ilmoitukseen, esimerkiksi Hotels.comin kautta; nämä linkit voivat tuottaa meille pienen palkkion ilman lisäkustannuksia sinulle, eivätkä ne koskaan vaikuta siihen, mitä huviloita suosittelemme. Kohteet eivät voi maksaa päästäkseen esille.',
+          'Olemme riippumattomia. Kun kohteen voi varata verkossa, linkitämme sen julkiseen ilmoitukseen, esimerkiksi Sembon kautta; nämä linkit voivat tuottaa meille pienen palkkion ilman lisäkustannuksia sinulle, eivätkä ne koskaan vaikuta siihen, mitä huviloita suosittelemme. Kohteet eivät voi maksaa päästäkseen esille.',
         ],
       },
       {

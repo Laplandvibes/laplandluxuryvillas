@@ -297,7 +297,7 @@ const de: SiteCopy = {
         title: 'Was diese Seite nicht macht',
         paragraphs: [
           'Wir betreiben die Villen nicht und sind keine Buchungsagentur. Es gibt hier kein Verzeichnis und keinen Plan, eines aufzubauen, die Kollektion bleibt bewusst klein.',
-          'Wir sind unabhängig. Wo sich ein Anwesen online buchen lässt, verlinken wir auf sein öffentliches Listing, etwa über Hotels.com; diese Links können uns eine kleine Provision einbringen, ohne Mehrkosten für Sie, und sie beeinflussen niemals, welche Villen wir empfehlen. Anwesen können sich keinen Platz erkaufen.',
+          'Wir sind unabhängig. Wo sich ein Anwesen online buchen lässt, verlinken wir auf sein öffentliches Listing, etwa über Trip.com; diese Links können uns eine kleine Provision einbringen, ohne Mehrkosten für Sie, und sie beeinflussen niemals, welche Villen wir empfehlen. Anwesen können sich keinen Platz erkaufen.',
         ],
       },
       {
