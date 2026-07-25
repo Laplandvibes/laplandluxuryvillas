@@ -229,11 +229,21 @@ export default function VillaDetail() {
               .slice(0, 3)
               .map((v) => (
                 <article key={v.slug} className="card-onyx overflow-hidden">
-                  <Link to={to(`/villas/${v.slug}`)}>
-                    <div className="aspect-[4/3] w-full" style={{ background: v.imageGradient }} />
+                  <Link to={to(`/villas/${v.slug}`)} className="group block">
+                    <div className="aspect-[4/3] w-full overflow-hidden" style={{ background: v.imageGradient }}>
+                      {v.image && (
+                        <img
+                          src={v.image}
+                          alt={`${v.name}, ${v.destination}`}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      )}
+                    </div>
                     <div className="p-6">
                       <span className="eyebrow text-[color:var(--color-brass)]">{v.destination}</span>
-                      <h3 className="mt-2 font-heading text-xl text-[color:var(--color-snow)]">{v.name}</h3>
+                      <h3 className="mt-2 font-heading text-xl text-[color:var(--color-snow)] transition-colors group-hover:text-[color:var(--color-brass)]">{v.name}</h3>
                       <p className="mt-3 text-sm text-[color:var(--color-bone)]/70 font-body">{v.tagline}</p>
                     </div>
                   </Link>
