@@ -147,7 +147,17 @@ export default function VillaDetail() {
               <>
                 <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.villaDetailPage.rate}</div>
                 <div className="font-heading text-3xl text-[color:var(--color-brass)] mb-2">{c.villaDetailPage.onRequest}</div>
-                <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
+                {/* `reserveHint` asserts the property is "never on a public
+                    listing". That is true only for the two concierge-only
+                    house-inventory entries. The other seven have a public
+                    partner listing linked immediately below, so printing it
+                    there would be a false statement. Both groups publish no
+                    rate; only the reason differs. */}
+                {conciergeOnly ? (
+                  <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
+                ) : (
+                  <div className="mb-6" />
+                )}
               </>
             )}
 
