@@ -1,7 +1,7 @@
 import Page from '../components/Page'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
-import SharedNotFound from '../../../shared/NotFound'
+import SharedNotFound from '../shared/NotFound'
 
 // Thin wrapper around the shared network 404 (Vesa 2026-07-12 migration).
 // Title + robots noindex are set by SharedNotFound itself — the old SEO

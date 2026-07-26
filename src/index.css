@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@source "../../shared/**/*.{ts,tsx}";
+@source "./shared/**/*.{ts,tsx}";
 
 /* LaplandLuxuryVillas — ultra-premium "members club" variant of the LV ecosystem.
  *
