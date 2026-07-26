@@ -1,11 +1,13 @@
 # Vendored copy — do not edit
 
 These files are copies of the monorepo `../shared/` (source of truth for the
-whole LV ecosystem). They are committed so GitHub Actions can build this repo
-standalone, without access to the private parent monorepo.
+whole LV ecosystem), taken from its **committed** state (`git show HEAD:...`),
+never from its working tree. They are committed here so GitHub Actions can
+build this repo standalone, without access to the private parent monorepo.
 
-Edit the monorepo `shared/` instead, then run `npm run sync:shared` (also runs
-automatically before every local build/dev) and commit the changes here.
+Edit the monorepo `shared/` instead, COMMIT there, then run
+`npm run sync:shared` (also runs automatically before every local build/dev)
+and commit the refreshed copies here.
 
 Only the files listed below are vendored, on purpose — this is a refresh, not a
 mirror. To vendor a new one: `cp ../shared/<file> src/shared/<file>` and commit.
