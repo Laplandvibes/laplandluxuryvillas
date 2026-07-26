@@ -269,6 +269,7 @@ const LOCALE_PATH_PREFIX: Record<string, string> = {
 const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
   en: {}, // EN already covered by DEFAULT_DICT
   fi: {
+    copyright: '{{year}} #LaplandVibes, Osa #LaplandVibes-verkostoa',
     tagline: 'Suomen Lapin matkaopas, revontulista keskiyön aurinkoon.',
     getApp: 'Lataa sovellus',
     groups: { stay: 'Majoitu', eatDrink: 'Syö & juo', do: 'Tee', explore: 'Tutustu', essentials: 'Käytännön asiat' },
@@ -281,6 +282,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Tietosuojaseloste', cookie: 'Evästekäytäntö', terms: 'Käyttöehdot', contact: 'Yhteystiedot' },
   },
   de: {
+    copyright: '{{year}} #LaplandVibes, Teil des #LaplandVibes-Netzwerks',
     tagline: 'Der Reiseführer für Finnisch-Lappland, von den Polarlichtern bis zur Mitternachtssonne.',
     getApp: 'App holen',
     groups: { stay: 'Übernachten', eatDrink: 'Essen & Trinken', do: 'Erleben', explore: 'Entdecken', essentials: 'Praktisches' },
@@ -293,6 +295,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Datenschutz', cookie: 'Cookie-Richtlinie', terms: 'Nutzungsbedingungen', contact: 'Kontakt' },
   },
   ja: {
+    copyright: '{{year}} #LaplandVibes、#LaplandVibes ネットワークの一員',
     tagline: 'フィンランド・ラップランドの旅行ガイド。オーロラから白夜まで。',
     getApp: 'アプリを入手',
     groups: { stay: '泊まる', eatDrink: '食べる・飲む', do: '体験する', explore: '見る', essentials: '知っておくこと' },
@@ -305,6 +308,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'プライバシーポリシー', cookie: 'Cookieポリシー', terms: '利用規約', contact: 'お問い合わせ' },
   },
   es: {
+    copyright: '{{year}} #LaplandVibes, parte de la red #LaplandVibes',
     tagline: 'La guía de viajes de la Laponia finlandesa, desde las auroras hasta el sol de medianoche.',
     getApp: 'Descargar la app',
     groups: { stay: 'Dónde dormir', eatDrink: 'Comer y beber', do: 'Hacer', explore: 'Explorar', essentials: 'Esenciales' },
@@ -317,6 +321,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Política de privacidad', cookie: 'Política de cookies', terms: 'Términos de uso', contact: 'Contacto' },
   },
   'pt-BR': {
+    copyright: '{{year}} #LaplandVibes, parte da rede #LaplandVibes',
     tagline: 'O guia da Lapônia finlandesa, das auroras boreais ao sol da meia-noite.',
     getApp: 'Baixar o app',
     groups: { stay: 'Onde dormir', eatDrink: 'Comer e beber', do: 'Fazer', explore: 'Explorar', essentials: 'Essenciais' },
@@ -329,6 +334,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Política de Privacidade', cookie: 'Política de Cookies', terms: 'Termos de Uso', contact: 'Contato' },
   },
   'zh-CN': {
+    copyright: '{{year}} #LaplandVibes，#LaplandVibes 网络成员',
     tagline: '芬兰拉普兰旅游指南，从北极光到午夜阳光。',
     getApp: '获取应用',
     groups: { stay: '住', eatDrink: '吃喝', do: '玩', explore: '探索', essentials: '实用信息' },
@@ -341,6 +347,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: '隐私政策', cookie: 'Cookie 政策', terms: '使用条款', contact: '联系方式' },
   },
   ko: {
+    copyright: '{{year}} #LaplandVibes, #LaplandVibes 네트워크의 일부',
     tagline: '핀란드 라플란드 여행 가이드, 오로라부터 백야까지.',
     getApp: '앱 받기',
     groups: { stay: '숙박', eatDrink: '음식과 음료', do: '체험', explore: '둘러보기', essentials: '필수 정보' },
@@ -353,6 +360,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: '개인정보 처리방침', cookie: '쿠키 정책', terms: '이용 약관', contact: '연락처' },
   },
   fr: {
+    copyright: '{{year}} #LaplandVibes, partie du réseau #LaplandVibes',
     tagline: 'Le guide de voyage de la Laponie finlandaise, des aurores boréales au soleil de minuit.',
     getApp: "Obtenir l'app",
     groups: { stay: 'Où dormir', eatDrink: 'Manger & boire', do: 'À faire', explore: 'Explorer', essentials: 'L\'essentiel' },
@@ -365,6 +373,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Politique de confidentialité', cookie: 'Politique des cookies', terms: 'Conditions d\'utilisation', contact: 'Contact' },
   },
   it: {
+    copyright: '{{year}} #LaplandVibes, parte della rete #LaplandVibes',
     tagline: 'La guida di viaggio della Lapponia finlandese, dalle aurore al sole di mezzanotte.',
     getApp: "Scarica l'app",
     groups: { stay: 'Dove dormire', eatDrink: 'Mangiare e bere', do: 'Da fare', explore: 'Esplorare', essentials: 'Informazioni utili' },
@@ -377,6 +386,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Informativa sulla privacy', cookie: 'Politica sui cookie', terms: 'Termini di utilizzo', contact: 'Contatti' },
   },
   nl: {
+    copyright: '{{year}} #LaplandVibes, onderdeel van het #LaplandVibes-netwerk',
     tagline: 'De reisgids voor Fins Lapland, van het noorderlicht tot de middernachtszon.',
     getApp: 'Download de app',
     groups: { stay: 'Verblijf', eatDrink: 'Eten & drinken', do: 'Beleven', explore: 'Ontdekken', essentials: 'Praktisch' },
@@ -389,6 +399,7 @@ const BUILT_IN_FULL_DICT: Record<string, Partial<typeof DEFAULT_DICT>> = {
     legal: { privacy: 'Privacybeleid', cookie: 'Cookiebeleid', terms: 'Gebruiksvoorwaarden', contact: 'Contact' },
   },
   sv: {
+    copyright: '{{year}} #LaplandVibes, en del av #LaplandVibes-nätverket',
     tagline: 'Reseguiden till finska Lappland, från norrsken till midnattssol.',
     getApp: 'Hämta appen',
     groups: { stay: 'Bo', eatDrink: 'Ät & drick', do: 'Gör', explore: 'Upptäck', essentials: 'Praktiskt' },
