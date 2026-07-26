@@ -1,9 +1,33 @@
-// Curated villa + suite collection. The descriptions are editorial — never
-// invent a star rating or a price. Where a property has a known Hotels.com
-// listing we deep-link via the property_card SID. Anything new lives in the
-// concierge funnel until we have a verified rate.
+// Curated villa + suite collection. The descriptions are editorial.
+//
+// 🔴 PRICES — READ `src/lib/rate.ts` BEFORE ADDING ONE
+// ----------------------------------------------------
+// Never write a bare number here. `fromPerNight` is a `VerifiedRate`: an
+// amount, its currency, the OFFICIAL URL it was read from, and the date it was
+// read. All four or nothing, enforced by the type — a hand-written estimate
+// does not compile. That is deliberate.
+//
+// Until 2026-07-26 all eight entries below carried invented four- and
+// three-figure nightly rates, written in the launch commit (880fbf1) with no
+// source. They rendered on every card and detail page AND were sent to Google
+// as `priceRange` structured data. They are gone. No entry sets a rate today,
+// because a 2026-07-26 check of all seven named properties found that none of
+// them publishes a stable, citable "from €X/night" — see `rate.ts` for the
+// evidence and for what does and does not count as a source.
+//
+// When a rate is unset the card and the detail page render the existing "on
+// request" / concierge branch, which is already translated into all 12
+// locales. That branch is the correct answer, not a degraded one. Anything new
+// lives in the concierge funnel until a rate is genuinely verified.
+//
+// Never invent a star rating either. Ratings come from real Google data via
+// `src/data/properties.ts`, and are always rendered with their scope stated.
+//
+// Where a property has a bookable listing we deep-link through the redirect
+// Worker (`go.laplandvibes.com`; fi -> Sembo, other locales -> Trip.com).
 
 import { PROPERTY_SEARCH, HOTEL_SEARCH, type Lang } from './affiliate'
+import type { VerifiedRate } from './rate'
 import { overlayVilla } from './villaI18n'
 
 export type VillaCategory = 'glass-roof' | 'log-estate' | 'designer-suite' | 'alpine-chalet' | 'lakeside-retreat'
@@ -21,8 +45,12 @@ export interface Villa {
   copy: [string, string]
   /** 5–8 specifics. No marketing adjectives — only things you can verify on arrival. */
   signature: string[]
-  /** "From €X,XXX/night" — null when only available via concierge. */
-  fromPerNight?: number
+  /**
+   * Verified published nightly rate. Unset = the "on request" / concierge
+   * branch renders and no `priceRange` is emitted to structured data.
+   * 🔴 Never a hand-written estimate. See `src/lib/rate.ts`.
+   */
+  fromPerNight?: VerifiedRate
   bedrooms: number
   sleeps: number
   /** External Hotels.com search URL via go.lv (already built in lib/affiliate). */
@@ -57,7 +85,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'In-room aurora alarm via reception',
       'Half-board option through the resort kitchen',
     ],
-    fromPerNight: 1450,
     bedrooms: 2,
     sleeps: 4,
     bookingUrl: PS.kakslauttanen,
@@ -83,7 +110,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'On-property Rakas restaurant',
       'Five minutes to Santa Claus Village',
     ],
-    fromPerNight: 980,
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.arcticTreeHouse,
@@ -109,7 +135,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Inari is the most reliable aurora latitude in the EU',
       'Free private snowshoeing trail from the property',
     ],
-    fromPerNight: 720,
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.auroraVillage,
@@ -135,7 +160,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Ski-in / ski-out access in winter season',
       'In-room aurora alarm',
     ],
-    fromPerNight: 690,
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.levinIglut,
@@ -161,7 +185,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Sami cultural programme several nights weekly',
       'Lake Inari fishing + traditional smoke sauna',
     ],
-    fromPerNight: 590,
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.nellim,
@@ -187,7 +210,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Premium suites, corner glass, separate lounge',
       'Five-minute drive to Saariselkä village',
     ],
-    fromPerNight: 540,
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.starArctic,
@@ -213,7 +235,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Snowmobile track from the property',
       'Aurora alarm + cabin-side hot tub',
     ],
-    fromPerNight: 460,
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.apukka,
@@ -265,7 +286,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Daily housekeeping + breakfast set-up included',
       'On-call ski concierge throughout the stay',
     ],
-    fromPerNight: 1180,
     bedrooms: 3,
     sleeps: 6,
     conciergeOnly: true,

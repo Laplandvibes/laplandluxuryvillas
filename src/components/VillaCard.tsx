@@ -6,6 +6,7 @@ import { COPY } from '../locales/copy'
 import GoogleRatingRow from './GoogleRatingRow'
 import EditorsPickChip from './EditorsPickChip'
 import { propertyForVilla, type RankableProperty } from '../data/properties'
+import { formatRate } from '../lib/rate'
 
 interface VillaCardProps {
   villa: Villa
@@ -40,7 +41,6 @@ export default function VillaCard({
   const property = propertyForVilla(villa.slug)
   const isPick = pickProperty !== null && property === pickProperty
   const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
-  const localeForPrice = lang === 'de' ? 'de-DE' : lang === 'fi' ? 'fi-FI' : 'en-GB'
 
   return (
     <article className="card-onyx flex flex-col h-full overflow-hidden">
@@ -113,7 +113,7 @@ export default function VillaCard({
               <>
                 <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.fromPerNight}</div>
                 <div className="font-heading text-2xl text-[color:var(--color-brass)]">
-                  €{villa.fromPerNight.toLocaleString(localeForPrice)}
+                  {formatRate(villa.fromPerNight, lang)}
                 </div>
               </>
             ) : (

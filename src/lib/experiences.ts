@@ -1,5 +1,24 @@
+// Curated private-experience collection.
+//
+// 🔴 PRICES — SAME RULE AS `villas.ts`. READ `src/lib/rate.ts` FIRST.
+// -------------------------------------------------------------------
+// `fromPerPerson` / `fromPerGroup` are `VerifiedRate`s: amount + currency +
+// the official URL it was read from + the date it was read. A bare number does
+// not compile.
+//
+// Until 2026-07-26 all seven entries below carried invented per-person and
+// per-group figures written in the launch commit (880fbf1) with no source,
+// under a header that already said "never invent a price". They are gone.
+// Nothing here sets a rate today.
+//
+// These are GetYourGuide-linked or concierge-arranged products whose price
+// depends on group size, season and availability, so the affiliate landing
+// page is the only place a live figure legitimately exists. Unset renders the
+// "on request" branch, already translated into all 12 locales; let the partner
+// page quote the price.
 import { GYG_LINKS } from './affiliate'
 import type { Lang } from './affiliate'
+import type { VerifiedRate } from './rate'
 import { overlayExperience } from './villaI18n'
 
 export interface Experience {
@@ -12,9 +31,13 @@ export interface Experience {
   copy: [string, string]
   /** Where this is normally available (geographic / property constraint). */
   available: string
-  /** "From €X / person" or "On request" — never invent a price. */
-  fromPerPerson?: number
-  fromPerGroup?: number
+  /**
+   * Verified published per-person rate. Unset = the "on request" branch.
+   * 🔴 Never a hand-written estimate. See `src/lib/rate.ts`.
+   */
+  fromPerPerson?: VerifiedRate
+  /** Verified published per-group rate. Same rule as `fromPerPerson`. */
+  fromPerGroup?: VerifiedRate
   /** Concierge-only = no public booking widget; goes straight to private@laplandvibes.com. */
   conciergeOnly?: boolean
   /** External booking URL (GYG affiliate-attributed) when available. */
@@ -33,7 +56,6 @@ export const EXPERIENCES: Experience[] = [
       'Hot food and reindeer-fur ground covers come standard. Coaching covers exposure for the aurora itself, foreground composition, and post-processing for the same evening.',
     ],
     available: 'Inari, Saariselkä, Levi, Rovaniemi, Sep–Apr',
-    fromPerGroup: 1850,
     bookingUrl: GYG_LINKS.privateAurora,
     imageGradient: 'linear-gradient(135deg, #0A1A2E 0%, #14304A 50%, #061020 100%)',
   },
@@ -47,7 +69,6 @@ export const EXPERIENCES: Experience[] = [
       'Ground photography is included on either side of the flight; the in-flight portion is for the experience itself, not the camera. Maximum four passengers per AS350. Weather-window dependent, concierge tracks the forecast and notifies the day before.',
     ],
     available: 'Rovaniemi, Ivalo, Oct–Mar (weather-dependent)',
-    fromPerPerson: 1450,
     bookingUrl: GYG_LINKS.helicopter,
     imageGradient: 'linear-gradient(135deg, #1A0F2E 0%, #2A1A4A 50%, #100820 100%)',
   },
@@ -61,7 +82,6 @@ export const EXPERIENCES: Experience[] = [
       'Includes a wine pairing curated to the menu, ingredients, prep, service, and cleanup. Ten guests maximum. Vegetarian, gluten-free and shellfish-free menus on request, with at least 72 hours notice.',
     ],
     available: 'Any villa in the collection, year-round',
-    fromPerGroup: 2400,
     conciergeOnly: true,
     imageGradient: 'linear-gradient(135deg, #1F1813 0%, #2E2218 50%, #14100B 100%)',
   },
@@ -75,7 +95,6 @@ export const EXPERIENCES: Experience[] = [
       'You drive your own sled (a 20-minute briefing first). Wool overalls, mittens, and arctic boots are provided. Group of two to six, no shared groups, never combined with strangers.',
     ],
     available: 'Rovaniemi, Levi, Saariselkä, Dec–Apr',
-    fromPerPerson: 480,
     bookingUrl: GYG_LINKS.husky,
     imageGradient: 'linear-gradient(135deg, #1A2515 0%, #243321 50%, #0F1810 100%)',
   },
@@ -89,7 +108,6 @@ export const EXPERIENCES: Experience[] = [
       'BRP machines, helmets, balaclavas and wool overalls included. Two-person sleds available. Driving license required for the driver; passenger seat needs no license. Maximum four sleds per group.',
     ],
     available: 'Saariselkä, Inari, Levi, Dec–Apr',
-    fromPerPerson: 390,
     bookingUrl: GYG_LINKS.snowmobileVip,
     imageGradient: 'linear-gradient(135deg, #1A1F2A 0%, #232A3A 50%, #0F121A 100%)',
   },
@@ -103,7 +121,6 @@ export const EXPERIENCES: Experience[] = [
       'Dinner is sautéed reindeer with mashed potatoes and lingonberry, prepared on the open fire. Stories about the herd, the migration year, the joik singing tradition. Maximum twelve guests.',
     ],
     available: 'Inari, Saariselkä, year-round (sledding Dec–Mar)',
-    fromPerPerson: 320,
     bookingUrl: GYG_LINKS.reindeer,
     imageGradient: 'linear-gradient(135deg, #2A1B12 0%, #3A2818 50%, #1A100A 100%)',
   },
@@ -130,7 +147,6 @@ export const EXPERIENCES: Experience[] = [
       'Maximum five passengers + luggage. Concierge times the lift to the villa check-in and the daylight window, winter sunset is 15:00 in deep season.',
     ],
     available: 'Rovaniemi, Ivalo → Lake Inari estates',
-    fromPerGroup: 2900,
     conciergeOnly: true,
     imageGradient: 'linear-gradient(135deg, #1F1820 0%, #2D2230 50%, #100C12 100%)',
   },

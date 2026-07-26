@@ -9,6 +9,7 @@ import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { getVillas, type Villa } from '../lib/villas'
+import { ratePriceRange } from '../lib/rate'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
@@ -59,7 +60,8 @@ export default function Villas() {
                 name: v.name,
                 description: v.tagline,
                 address: { '@type': 'PostalAddress', addressLocality: v.destination, addressCountry: 'FI' },
-                priceRange: v.fromPerNight ? `€${v.fromPerNight}+/night` : 'On request',
+                // Omitted entirely unless a verified rate exists. See lib/rate.ts.
+                ...(ratePriceRange(v.fromPerNight) ? { priceRange: ratePriceRange(v.fromPerNight) } : {}),
               },
             })),
           },

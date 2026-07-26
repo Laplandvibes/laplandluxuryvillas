@@ -8,6 +8,7 @@ import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import GoogleRatingRow from '../components/GoogleRatingRow'
 import { propertyForVilla } from '../data/properties'
 import { villaBySlug, getVillas } from '../lib/villas'
+import { formatRate, ratePriceRange } from '../lib/rate'
 import { destinationBySlug } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -23,7 +24,9 @@ export default function VillaDetail() {
 
   const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
   const dest = destinationBySlug(villa.destination.toLowerCase())
-  const localeForPrice = lang === 'de' ? 'de-DE' : lang === 'fi' ? 'fi-FI' : 'en-GB'
+  // Undefined unless this villa carries a verified rate, in which case the key
+  // is omitted from the LodgingBusiness node entirely. See lib/rate.ts.
+  const priceRange = ratePriceRange(villa.fromPerNight)
 
   return (
     <Page>
@@ -39,7 +42,7 @@ export default function VillaDetail() {
             name: villa.name,
             description: `${villa.tagline} ${villa.copy[0]}`,
             address: { '@type': 'PostalAddress', addressLocality: villa.destination, addressCountry: 'FI' },
-            priceRange: villa.fromPerNight ? `€${villa.fromPerNight}+/night` : 'On request',
+            ...(priceRange ? { priceRange } : {}),
             numberOfRooms: villa.bedrooms,
             amenityFeature: villa.signature.map((s) => ({ '@type': 'LocationFeatureSpecification', name: s })),
           },
@@ -136,7 +139,7 @@ export default function VillaDetail() {
               <>
                 <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.villaDetailPage.fromPerNight}</div>
                 <div className="font-heading text-4xl text-[color:var(--color-brass)] mb-2">
-                  €{villa.fromPerNight.toLocaleString(localeForPrice)}
+                  {formatRate(villa.fromPerNight, lang)}
                 </div>
                 <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.nightlyHint}</p>
               </>

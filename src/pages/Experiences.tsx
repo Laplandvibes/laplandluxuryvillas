@@ -7,6 +7,7 @@ import ConciergeBand from '../components/ConciergeBand'
 import NewsletterSection from '../components/NewsletterSection'
 import AffiliateDisclosure from '../components/AffiliateDisclosure'
 import { experiencesByCategory } from '../lib/experiences'
+import { formatRate } from '../lib/rate'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
@@ -16,7 +17,6 @@ export default function Experiences() {
   const to = useLocalePath()
   const c = COPY[lang]
   const seo = getPageSeo('experiences', lang)
-  const localeForPrice = lang === 'de' ? 'de-DE' : lang === 'fi' ? 'fi-FI' : 'en-GB'
 
   const SECTIONS: { id: 'aurora' | 'wilderness' | 'culinary' | 'arrival'; title: string; intro: string }[] = [
     { id: 'aurora', title: c.experiencesPage.sections.aurora.title, intro: c.experiencesPage.sections.aurora.intro },
@@ -100,14 +100,14 @@ export default function Experiences() {
                             <>
                               <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.fromPerPerson}</div>
                               <div className="font-heading text-2xl text-[color:var(--color-brass)]">
-                                €{e.fromPerPerson.toLocaleString(localeForPrice)}
+                                {formatRate(e.fromPerPerson, lang)}
                               </div>
                             </>
                           ) : e.fromPerGroup ? (
                             <>
                               <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.fromPerGroup}</div>
                               <div className="font-heading text-2xl text-[color:var(--color-brass)]">
-                                €{e.fromPerGroup.toLocaleString(localeForPrice)}
+                                {formatRate(e.fromPerGroup, lang)}
                               </div>
                             </>
                           ) : (
