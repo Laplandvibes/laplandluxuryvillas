@@ -607,7 +607,7 @@ export default function NewsletterPopup({
 
         <div className="p-6 sm:p-8">
           {/* Brand mark, adapts to current site. The wordmark is ALWAYS Bebas
-              Neue, never the host site's heading font — see WORDMARK_FONT. */}
+              Neue, never the host site's heading font: see WORDMARK_FONT. */}
           <p className="font-heading tracking-wide text-2xl sm:text-3xl mb-4 leading-none" style={{ fontFamily: WORDMARK_FONT }}>
             <span className="text-vibe-pink">#</span>
             <span className="text-snow">LAPLAND</span>
