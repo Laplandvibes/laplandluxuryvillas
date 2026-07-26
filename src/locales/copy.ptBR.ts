@@ -57,6 +57,14 @@ const ptBR: SiteCopy = {
     theDestination: 'O destino',
     fullCollectionShort: 'Coleção completa',
   },
+  editorial: {
+    pickLabel: 'Escolha da redação',
+    pickReason: 'A melhor avaliação do Google desta página',
+    ratingLine: 'Google {r} · {n} avaliações',
+    ratingAria: 'Abrir as avaliações do Google em uma nova aba',
+    verifiedOn: 'Verificado em {d}',
+    ratingScope: 'A avaliação se refere a toda a propriedade, {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Coleção privada',

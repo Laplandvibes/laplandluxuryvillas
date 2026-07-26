@@ -51,6 +51,14 @@ const ko: SiteCopy = {
     theDestination: '여행지',
     fullCollectionShort: '전체 컬렉션',
   },
+  editorial: {
+    pickLabel: '편집부 선정',
+    pickReason: '이 페이지에서 가장 높은 Google 평점',
+    ratingLine: 'Google {r} · 리뷰 {n}개',
+    ratingAria: '새 탭에서 Google 리뷰 열기',
+    verifiedOn: '{d} 기준',
+    ratingScope: '평점은 숙소 전체({p})에 대한 것입니다',
+  },
   tier: {
     signature: '시그니처',
     private: '프라이빗 컬렉션',

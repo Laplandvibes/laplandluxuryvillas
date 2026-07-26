@@ -3,17 +3,42 @@ import { Bed, Users, MapPin, ArrowUpRight } from 'lucide-react'
 import type { Villa } from '../lib/villas'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
+import GoogleRatingRow from './GoogleRatingRow'
+import EditorsPickChip from './EditorsPickChip'
+import { propertyForVilla, type RankableProperty } from '../data/properties'
 
 interface VillaCardProps {
   villa: Villa
   /** When true, the booking button routes to the affiliate URL; otherwise to /concierge. */
   showBooking?: boolean
+  /**
+   * The surface's earned editorial pick, from `bestGoogleRated()` over the
+   * properties on THAT surface. The mark renders only on the card whose
+   * property is it, so the same card can carry the mark on `/suites` and not
+   * on `/villas` — which is correct: the claim is "highest on this page".
+   *
+   * EARNED, NOT FOR SALE. The sellable thing on these surfaces is the
+   * `FeaturedPartnerSlot` at the head of the grid. Never wire this prop to
+   * anything in `src/data/adSlots.ts`.
+   */
+  pickProperty?: RankableProperty | null
+  /** Visible justification under the mark ("… · Checked 26 Jul 2026"). */
+  pickNote?: string
 }
 
-export default function VillaCard({ villa, showBooking = true }: VillaCardProps) {
+export default function VillaCard({
+  villa,
+  showBooking = true,
+  pickProperty = null,
+  pickNote,
+}: VillaCardProps) {
   const lang = useLang()
   const to = useLocalePath()
   const c = COPY[lang]
+  // Null for the two concierge-only house-inventory entries, which name no
+  // real business — they show no rating and can never take the mark.
+  const property = propertyForVilla(villa.slug)
+  const isPick = pickProperty !== null && property === pickProperty
   const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
   const localeForPrice = lang === 'de' ? 'de-DE' : lang === 'fi' ? 'fi-FI' : 'en-GB'
 
@@ -48,9 +73,24 @@ export default function VillaCard({ villa, showBooking = true }: VillaCardProps)
           <span>{c.category[villa.category]}</span>
         </div>
 
+        {isPick && (
+          <EditorsPickChip
+            label={c.editorial.pickLabel}
+            reason={c.editorial.pickReason}
+            note={pickNote}
+            className="mb-3"
+          />
+        )}
+
         <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-tight mb-3">
           {villa.name}
         </h3>
+
+        {/* Google's verdict on the PROPERTY that contains this room type, with
+            its scope stated in the row itself. Rendered on every rated card,
+            not only the winner: "highest rated on this page" is checkable only
+            against the numbers it beat. */}
+        <GoogleRatingRow property={property} className="mb-4" />
 
         <p className="text-[color:var(--color-bone)]/75 text-sm leading-relaxed font-body mb-5">
           {villa.tagline}

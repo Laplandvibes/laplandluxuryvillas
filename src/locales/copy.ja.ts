@@ -57,6 +57,14 @@ const ja: SiteCopy = {
     theDestination: '目的地について',
     fullCollectionShort: 'コレクション全体',
   },
+  editorial: {
+    pickLabel: '編集部の選定',
+    pickReason: 'このページで最も高いGoogle評価',
+    ratingLine: 'Google {r}・口コミ{n}件',
+    ratingAria: 'Googleの口コミを新しいタブで開く',
+    verifiedOn: '{d}時点',
+    ratingScope: '評価は施設全体（{p}）のものです',
+  },
   tier: {
     signature: 'シグネチャー',
     private: 'プライベートコレクション',

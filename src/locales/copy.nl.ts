@@ -51,6 +51,14 @@ const nl: SiteCopy = {
     theDestination: 'De bestemming',
     fullCollectionShort: 'Volledige collectie',
   },
+  editorial: {
+    pickLabel: 'Keuze van de redactie',
+    pickReason: 'De hoogste Google-beoordeling op deze pagina',
+    ratingLine: 'Google {r} · {n} beoordelingen',
+    ratingAria: 'Open de Google-beoordelingen in een nieuw tabblad',
+    verifiedOn: 'Gecontroleerd op {d}',
+    ratingScope: 'De beoordeling geldt voor de hele accommodatie, {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Privécollectie',

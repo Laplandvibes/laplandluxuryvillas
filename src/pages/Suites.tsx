@@ -4,6 +4,8 @@ import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import NewsletterSection from '../components/NewsletterSection'
+import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
+import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { getVillas } from '../lib/villas'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -16,6 +18,10 @@ export default function Suites() {
   const SUITES = getVillas(lang).filter(
     (v) => v.category === 'designer-suite' || v.category === 'glass-roof'
   )
+  // Scoped to this page's own field, so the winner here can differ from the one
+  // on /villas. That is the point: the claim is "highest rated on this page".
+  const villaPick = bestGoogleRated(SUITES.map((v) => propertyForVilla(v.slug)))
+  const villaPickNote = editorialPickNote(c.editorial, villaPick, lang)
   return (
     <Page fullBleed>
       <SEO
@@ -45,9 +51,14 @@ export default function Suites() {
           </p>
         </div>
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
+          {/* Myytävä Esittelykumppani-paikka sviittiruudukon kärjessä
+              (KKV: merkitty mainokseksi). Tämä sivu oli aiemmin KOKONAAN ilman
+              mainosinventaaria vaikka se esittelee kuutta nimettyä kohdetta. */}
+          <FeaturedPartnerSlot placement="suites" locale={lang} />
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {SUITES.map((v) => (
-              <VillaCard key={v.slug} villa={v} />
+              <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
             ))}
           </div>
         </div>

@@ -51,6 +51,14 @@ const it: SiteCopy = {
     theDestination: 'La destinazione',
     fullCollectionShort: 'Collezione completa',
   },
+  editorial: {
+    pickLabel: 'Scelta della redazione',
+    pickReason: 'La valutazione Google più alta di questa pagina',
+    ratingLine: 'Google {r} · {n} recensioni',
+    ratingAria: 'Apri le recensioni Google in una nuova scheda',
+    verifiedOn: 'Verificato il {d}',
+    ratingScope: 'La valutazione riguarda l\'intera struttura, {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Collezione privata',

@@ -60,6 +60,56 @@ export type SiteCopy = {
     theDestination: string
     fullCollectionShort: string
   }
+  /**
+   * The earned editorial pick mark and the Google rating rows around it
+   * (2026-07-26). NOT PURCHASABLE — the surface at the head of each
+   * named-property grid is the sellable "Esittelykumppani" slot
+   * (`FeaturedPartnerSlot` / `src/data/adSlots.ts`), and this mark is
+   * deliberately the part money cannot buy. Never reword these strings into
+   * anything that could read as sponsored, and never add a paid tier to them.
+   *
+   * The pick is derived, not written here: `bestGoogleRated()` in
+   * `src/data/properties.ts` returns the surface's highest real Google rating
+   * (ties broken by review count). Every card on such a surface prints its own
+   * rating and links to Google's review list, so `pickReason` is a claim the
+   * reader can check against the cards next to it.
+   *
+   * HONESTY CONTRACT. The rating is GOOGLE'S verdict, not ours: `ratingLine`
+   * must name Google and must never be reworded into a first-person
+   * recommendation ("our score", "we rate"). The data is a gitted snapshot
+   * from `scripts/sync-villas.mjs`, not a live feed, so `verifiedOn` must
+   * never imply real time ("live", "updated now").
+   *
+   * Ad-marking copy ("Mainos" / "Esittelykumppani") is deliberately NOT here:
+   * the paid slot is `adLocaleEnabled`-gated to fi/en/sv and carries its own
+   * three-language strings in `FeaturedPartnerSlot`. This mark is editorial, so
+   * it must exist in all twelve locales.
+   */
+  editorial: {
+    /** Mark label, e.g. "Toimituksen valinta". */
+    pickLabel: string
+    /** Why this card has the mark — the derivation stated in words. */
+    pickReason: string
+    /**
+     * One card's Google score. `{r}` = rating, `{n}` = review count, both
+     * pre-formatted for the locale by `Intl` (fi/sv "4,5" and "1 415"; en
+     * "4.5", "1,415"). Must attribute the number to Google.
+     */
+    ratingLine: string
+    /** Accessible name for the rating link (it opens Google's review list). */
+    ratingAria: string
+    /** Snapshot date marker. `{d}` = locale-formatted date. Never "live". */
+    verifiedOn: string
+    /**
+     * 🔴 REQUIRED, and specific to this site. Cards here name ROOM TYPES
+     * ("Nellim Aurora Bubble", "Apukka Aurora Wagon") while Google rates the
+     * PROPERTY containing the room, so the rating is rendered with its scope
+     * spelled out. `{p}` = the property's real-world name. Without this line
+     * the number claims that hundreds of people reviewed one suite, which is
+     * false. Never drop it, and never soften it into "about {p}".
+     */
+    ratingScope: string
+  }
   tier: {
     signature: string
     private: string

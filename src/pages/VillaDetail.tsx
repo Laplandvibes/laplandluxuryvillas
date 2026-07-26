@@ -4,6 +4,9 @@ import SEO from '../components/SEO'
 import Page from '../components/Page'
 import ConciergeBand from '../components/ConciergeBand'
 import NewsletterSection from '../components/NewsletterSection'
+import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
+import GoogleRatingRow from '../components/GoogleRatingRow'
+import { propertyForVilla } from '../data/properties'
 import { villaBySlug, getVillas } from '../lib/villas'
 import { destinationBySlug } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -97,8 +100,22 @@ export default function VillaDetail() {
 
       {/* BODY */}
       <section className="bg-[color:var(--color-deep-night)] py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-7">
+          {/* Myytävä Esittelykumppani-paikka. Tämä sivutyyppi (9 sivua) antoi
+              nimetylle kohteelle koko leveän heron, H1:n ja kahden kappaleen
+              esseen täysin ilmaiseksi eikä siinä ollut lainkaan mainos-
+              inventaaria (Vesa 2026-07-26). Tyhjänä = kanoninen vaalea
+              house-ad; muilla kuin fi/en/sv ei renderöidy mitään. */}
+          <FeaturedPartnerSlot placement="villa_detail" locale={lang} />
+        </div>
         <div className="mx-auto max-w-6xl px-5 sm:px-7 grid lg:grid-cols-[1.6fr,1fr] gap-12 lg:gap-16">
           <div className="space-y-6 text-[color:var(--color-bone)]/85 font-body text-base leading-relaxed">
+            {/* Google's verdict on the property that contains this room type,
+                scope stated in the row itself. NO editorial pick mark here: one
+                villa is not a field, so `bestGoogleRated` would return null
+                anyway and a mark would be claiming a comparison that never
+                happened. */}
+            <GoogleRatingRow property={propertyForVilla(villa.slug)} />
             <p>{villa.copy[0]}</p>
             <p>{villa.copy[1]}</p>
           </div>

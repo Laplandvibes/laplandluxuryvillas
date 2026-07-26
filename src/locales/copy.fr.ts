@@ -51,6 +51,14 @@ const fr: SiteCopy = {
     theDestination: 'La destination',
     fullCollectionShort: 'Collection complète',
   },
+  editorial: {
+    pickLabel: 'Choix de la rédaction',
+    pickReason: 'La meilleure note Google de cette page',
+    ratingLine: 'Google {r} · {n} avis',
+    ratingAria: 'Ouvrir les avis Google dans un nouvel onglet',
+    verifiedOn: 'Vérifié le {d}',
+    ratingScope: 'La note concerne l\'ensemble de l\'établissement, {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Collection privée',

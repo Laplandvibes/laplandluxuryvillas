@@ -57,6 +57,14 @@ const de: SiteCopy = {
     theDestination: 'Das Reiseziel',
     fullCollectionShort: 'Gesamte Kollektion',
   },
+  editorial: {
+    pickLabel: 'Redaktionsempfehlung',
+    pickReason: 'Beste Google-Bewertung auf dieser Seite',
+    ratingLine: 'Google {r} · {n} Bewertungen',
+    ratingAria: 'Google-Bewertungen in einem neuen Tab öffnen',
+    verifiedOn: 'Geprüft am {d}',
+    ratingScope: 'Die Bewertung gilt für die gesamte Anlage {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Private Collection',

@@ -51,6 +51,14 @@ const sv: SiteCopy = {
     theDestination: 'Resmålet',
     fullCollectionShort: 'Hela kollektionen',
   },
+  editorial: {
+    pickLabel: 'Redaktionens val',
+    pickReason: 'Sidans högsta Google-betyg',
+    ratingLine: 'Google {r} · {n} omdömen',
+    ratingAria: 'Öppna Google-omdömena i en ny flik',
+    verifiedOn: 'Kontrollerat {d}',
+    ratingScope: 'Betyget gäller hela anläggningen {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Privat kollektion',

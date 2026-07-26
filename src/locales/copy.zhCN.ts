@@ -57,6 +57,14 @@ const zhCN: SiteCopy = {
     theDestination: '目的地',
     fullCollectionShort: '完整精选',
   },
+  editorial: {
+    pickLabel: '编辑推荐',
+    pickReason: '本页最高的 Google 评分',
+    ratingLine: 'Google {r} · {n} 条评价',
+    ratingAria: '在新标签页中打开 Google 评价',
+    verifiedOn: '{d} 核实',
+    ratingScope: '该评分针对整个住宿地：{p}',
+  },
   tier: {
     signature: '臻选',
     private: '私人精选',

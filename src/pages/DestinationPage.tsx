@@ -6,6 +6,8 @@ import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import PartnerStayAd from '../components/PartnerStayAd'
 import NewsletterSection from '../components/NewsletterSection'
+import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
+import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { destinationBySlug } from '../lib/destinations'
 import { villasByDestination } from '../lib/villas'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -22,6 +24,11 @@ export default function DestinationPage() {
   if (!dest) return <Navigate to={to('/destinations')} replace />
 
   const villas = villasByDestination(dest.name, lang)
+  // Most destinations list only one or two villas, so `bestGoogleRated` returns
+  // null here more often than not — correct, and left alone: a mark awarded to
+  // an unopposed card would claim a comparison that never happened.
+  const villaPick = bestGoogleRated(villas.map((v) => propertyForVilla(v.slug)))
+  const villaPickNote = editorialPickNote(c.editorial, villaPick, lang)
 
   return (
     <Page>
@@ -140,9 +147,14 @@ export default function DestinationPage() {
                 <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </div>
+            {/* Myytävä Esittelykumppani-paikka kohteen villalistan kärjessä
+                (KKV: merkitty mainokseksi). Tyhjänä = kanoninen vaalea
+                house-ad; muilla kuin fi/en/sv ei renderöidy mitään. */}
+            <FeaturedPartnerSlot placement="destination_villas" locale={lang} />
+
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {villas.map((v) => (
-                <VillaCard key={v.slug} villa={v} />
+                <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
               ))}
             </div>
           </div>

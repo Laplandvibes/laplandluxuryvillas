@@ -57,6 +57,14 @@ const fi: SiteCopy = {
     theDestination: 'Kohde',
     fullCollectionShort: 'Koko kokoelma',
   },
+  editorial: {
+    pickLabel: 'Toimituksen valinta',
+    pickReason: 'Sivun paras Google-arvio',
+    ratingLine: 'Google {r} · {n} arvostelua',
+    ratingAria: 'Avaa Google-arvostelut uudessa välilehdessä',
+    verifiedOn: 'Tarkistettu {d}',
+    ratingScope: 'Arvio koskee koko kohdetta {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Private Collection',

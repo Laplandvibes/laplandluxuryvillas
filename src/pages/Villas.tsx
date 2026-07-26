@@ -6,6 +6,8 @@ import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import PartnerStayAd from '../components/PartnerStayAd'
 import NewsletterSection from '../components/NewsletterSection'
+import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
+import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { getVillas, type Villa } from '../lib/villas'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -26,6 +28,12 @@ export default function Villas() {
   const [filter, setFilter] = useState<typeof FILTERS[number]['id']>('all')
   const VILLAS = getVillas(lang)
   const list = filter === 'all' ? VILLAS : VILLAS.filter((v) => v.category === filter)
+  // Derived from the CURRENTLY VISIBLE list, not the whole collection: the mark
+  // claims "highest rated on this page", and the category filter changes what
+  // that page is. Filtering down to a single rated villa correctly drops the
+  // mark rather than crowning an unopposed card.
+  const villaPick = bestGoogleRated(list.map((v) => propertyForVilla(v.slug)))
+  const villaPickNote = editorialPickNote(c.editorial, villaPick, lang)
 
   return (
     <Page fullBleed>
@@ -92,12 +100,18 @@ export default function Villas() {
       {/* GRID */}
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
+          {/* Myytävä Esittelykumppani-paikka koko kokoelman kärjessä
+              (KKV: merkitty mainokseksi). Tyhjänä = kanoninen vaalea house-ad;
+              muilla kuin fi/en/sv ei renderöidy mitään eikä ruudukkoon jää
+              aukkoa. */}
+          <FeaturedPartnerSlot placement="villas_collection" locale={lang} />
+
           {list.length === 0 ? (
             <p className="text-center text-[color:var(--color-bone)]/65 font-body">{c.villasPage.noVillas}</p>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {list.map((v) => (
-                <VillaCard key={v.slug} villa={v} />
+                <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
               ))}
             </div>
           )}

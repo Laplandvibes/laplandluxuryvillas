@@ -57,6 +57,14 @@ const en: SiteCopy = {
     theDestination: 'The destination',
     fullCollectionShort: 'Full collection',
   },
+  editorial: {
+    pickLabel: 'Editor\'s pick',
+    pickReason: 'Highest Google rating on this page',
+    ratingLine: 'Google {r} · {n} reviews',
+    ratingAria: 'Open the Google reviews in a new tab',
+    verifiedOn: 'Checked {d}',
+    ratingScope: 'Rating is for the whole property, {p}',
+  },
   tier: {
     signature: 'Signature',
     private: 'Private Collection',

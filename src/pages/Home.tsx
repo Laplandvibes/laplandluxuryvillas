@@ -10,7 +10,9 @@ import NewsletterSection from '../components/NewsletterSection'
 import FAQ, { VILLA_FAQ_BY_LANG } from '../components/FAQ'
 import RelatedSites from '../components/RelatedSites'
 import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots'
+import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { AD_SLOTS } from '../data/adSlots'
+import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { signatureVillas } from '../lib/villas'
 import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -22,6 +24,11 @@ export default function Home() {
   const to = useLocalePath()
   const c = COPY[lang]
   const villas = signatureVillas(lang)
+  // Earned, derived, unpurchasable: the best real Google rating among the
+  // properties behind these four cards. Every card prints its own rating and
+  // links to Google's review list, so the claim is checkable on the spot.
+  const villaPick = bestGoogleRated(villas.map((v) => propertyForVilla(v.slug)))
+  const villaPickNote = editorialPickNote(c.editorial, villaPick, lang)
   const PHILOSOPHY_ICONS = [Star, ShieldCheck, Compass]
   const seo = getPageSeo('home', lang)
 
@@ -146,9 +153,15 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* Myytävä Esittelykumppani-paikka signature-ruudukon kärjessä
+              (KKV: merkitty mainokseksi). Tyhjänä = kanoninen vaalea house-ad;
+              muilla kuin fi/en/sv ei renderöidy mitään eikä ruudukkoon jää
+              aukkoa. */}
+          <FeaturedPartnerSlot placement="home_signature" locale={lang} />
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {villas.map((v) => (
-              <VillaCard key={v.slug} villa={v} />
+              <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
             ))}
           </div>
         </div>
