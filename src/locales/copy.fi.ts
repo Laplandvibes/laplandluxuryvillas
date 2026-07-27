@@ -252,7 +252,7 @@ const fi: SiteCopy = {
       quoting: 'Tarjoamme parhaillaan kesän 2026 ja 2027 hintoja',
     },
     conciergeTitle: 'Tiedustele yöttömän yön matkaa.',
-    conciergeBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy mitä kesän kokoelmasta on vapaana, myös reserve-huvilat joita ei ole julkisesti listattu.',
+    conciergeBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy mitä kesän kokoelmasta on vapaana, myös reserve-huvilat, joita ei ole julkisesti listattu.',
   },
   conciergePage: {
     eyebrow: 'Tiedustelulomake',
