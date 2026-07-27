@@ -50,7 +50,7 @@ const CONFIG: Record<PartnerKey, PartnerConfig> = {
   lomarengas: {
     brand: 'Lomarengas',
     logo: '/images/partners/lomarengas.png',
-    link: 'https://on.lomarengas.fi/t/t?a=1071150667&as=2086870803&t=2&tk=1',
+    link: 'https://go.laplandvibes.com/go/lomarengas?sid=villas_partner',
     accent: '#34D399',
     accentSoft: '#6EE7B7',
     icon: Home,
