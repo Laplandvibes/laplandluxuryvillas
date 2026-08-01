@@ -414,7 +414,7 @@ export default function FAQ() {
 
         {/* Contextual links — the natural next step after the answers. */}
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-4 text-center">
-          <span className="text-[color:var(--color-bone)]/60 text-sm font-body">{links.prompt}</span>
+          <span className="text-[color:var(--color-bone)]/75 text-sm font-body">{links.prompt}</span>
           <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
             <Link
               to={to('/villas')}

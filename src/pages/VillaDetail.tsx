@@ -138,15 +138,15 @@ export default function VillaDetail() {
 
             {villa.fromPerNight ? (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.villaDetailPage.fromPerNight}</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{c.villaDetailPage.fromPerNight}</div>
                 <div className="font-heading text-4xl text-[color:var(--color-brass)] mb-2">
                   {formatRate(villa.fromPerNight, lang)}
                 </div>
-                <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.nightlyHint}</p>
+                <p className="text-xs text-[color:var(--color-bone)]/75 font-body mb-6">{c.villaDetailPage.nightlyHint}</p>
               </>
             ) : (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.villaDetailPage.rate}</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{c.villaDetailPage.rate}</div>
                 <div className="font-heading text-3xl text-[color:var(--color-brass)] mb-2">{c.villaDetailPage.onRequest}</div>
                 {/* `reserveHint` asserts the property is "never on a public
                     listing". That is true only for the two concierge-only
@@ -155,7 +155,7 @@ export default function VillaDetail() {
                     there would be a false statement. Both groups publish no
                     rate; only the reason differs. */}
                 {conciergeOnly ? (
-                  <p className="text-xs text-[color:var(--color-bone)]/55 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
+                  <p className="text-xs text-[color:var(--color-bone)]/75 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
                 ) : (
                   <div className="mb-6" />
                 )}

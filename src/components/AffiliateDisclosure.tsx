@@ -17,7 +17,7 @@ export default function AffiliateDisclosure({
 
   return (
     <p
-      className={`flex items-center justify-center gap-2 text-xs text-[color:var(--color-bone)]/55 ${className}`}
+      className={`flex items-center justify-center gap-2 text-xs text-[color:var(--color-bone)]/75 ${className}`}
       role="note"
     >
       <Info className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />

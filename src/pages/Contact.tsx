@@ -61,7 +61,7 @@ export default function Contact() {
             <div className="flex items-start gap-4 mb-5">
               <Building2 size={22} strokeWidth={1.5} className="text-[color:var(--color-brass)] shrink-0 mt-1" />
               <div>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{c.operatorEyebrow}</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{c.operatorEyebrow}</div>
                 <div className="font-heading text-2xl text-[color:var(--color-snow)]">Lapeso Oy</div>
               </div>
             </div>
@@ -96,7 +96,7 @@ function ContactCard({ icon: Icon, eyebrow, title, body, href, cta, ctaTo }: Car
   return (
     <div className="card-onyx p-7">
       <Icon size={22} strokeWidth={1.5} className="text-[color:var(--color-brass)] mb-4" />
-      <span className="eyebrow text-[color:var(--color-bone)]/55">{eyebrow}</span>
+      <span className="eyebrow text-[color:var(--color-bone)]/75">{eyebrow}</span>
       <a
         href={href}
         className="block mt-2 font-heading text-xl text-[color:var(--color-snow)] hover:text-[color:var(--color-brass)] transition-colors"

@@ -5,6 +5,7 @@ import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import PartnerStayAd from '../components/PartnerStayAd'
+import CabinCarousel from '../components/CabinCarousel'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
@@ -124,6 +125,7 @@ export default function Villas() {
       <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-4xl px-5 sm:px-7">
           <PartnerStayAd sid="villas_collection" />
+          <CabinCarousel sid={"villas_collection"} />
         </div>
       </section>
 

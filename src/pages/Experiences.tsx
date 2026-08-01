@@ -87,7 +87,7 @@ export default function Experiences() {
                     <div className="flex-1 flex flex-col p-7">
                       <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-tight mb-3">{e.name}</h3>
                       <p className="text-[color:var(--color-bone)]/80 font-body text-sm leading-relaxed mb-5">{e.hook}</p>
-                      <div className="flex items-start gap-2 text-xs text-[color:var(--color-bone)]/55 font-body mb-5">
+                      <div className="flex items-start gap-2 text-xs text-[color:var(--color-bone)]/75 font-body mb-5">
                         <MapPin size={13} className="text-[color:var(--color-brass)] mt-0.5" />
                         <span>{e.available}</span>
                       </div>
@@ -98,21 +98,21 @@ export default function Experiences() {
                         <div>
                           {e.fromPerPerson ? (
                             <>
-                              <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.fromPerPerson}</div>
+                              <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.fromPerPerson}</div>
                               <div className="font-heading text-2xl text-[color:var(--color-brass)]">
                                 {formatRate(e.fromPerPerson, lang)}
                               </div>
                             </>
                           ) : e.fromPerGroup ? (
                             <>
-                              <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.fromPerGroup}</div>
+                              <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.fromPerGroup}</div>
                               <div className="font-heading text-2xl text-[color:var(--color-brass)]">
                                 {formatRate(e.fromPerGroup, lang)}
                               </div>
                             </>
                           ) : (
                             <>
-                              <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.rate}</div>
+                              <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.rate}</div>
                               <div className="font-heading text-lg text-[color:var(--color-brass)]">{c.badges.onRequest}</div>
                             </>
                           )}

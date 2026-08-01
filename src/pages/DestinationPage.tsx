@@ -5,6 +5,7 @@ import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import PartnerStayAd from '../components/PartnerStayAd'
+import CabinCarousel from '../components/CabinCarousel'
 import DestinationFacts from '../components/DestinationFacts'
 import RelatedSites from '../components/RelatedSites'
 import NewsletterSection from '../components/NewsletterSection'
@@ -107,19 +108,19 @@ export default function DestinationPage() {
           <aside className="card-onyx p-7 self-start">
             <div className="space-y-6">
               <div>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-2 inline-flex items-center gap-2">
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-2 inline-flex items-center gap-2">
                   <Plane size={12} /> {c.destinationPage.arrival}
                 </div>
                 <p className="text-[color:var(--color-bone)]/85 font-body text-sm leading-relaxed">{dest.arrival}</p>
               </div>
               <div>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-2 inline-flex items-center gap-2">
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-2 inline-flex items-center gap-2">
                   <Compass size={12} /> {c.destinationPage.aurora}
                 </div>
                 <p className="text-[color:var(--color-bone)]/85 font-body text-sm leading-relaxed">{dest.auroraNote}</p>
               </div>
               <div>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-2">{c.destinationPage.highlights}</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-2">{c.destinationPage.highlights}</div>
                 <ul className="space-y-2">
                   {dest.highlights.map((h) => (
                     <li key={h} className="text-[color:var(--color-bone)]/85 font-body text-sm leading-relaxed">
@@ -176,6 +177,7 @@ export default function DestinationPage() {
       <section className="bg-[color:var(--color-deep-night)] py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-7">
           <PartnerStayAd sid={`destination_${dest.slug}`} />
+          <CabinCarousel sid={`destination_${dest.slug}`} />
         </div>
       </section>
 

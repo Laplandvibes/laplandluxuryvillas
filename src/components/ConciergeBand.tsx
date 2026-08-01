@@ -61,7 +61,7 @@ export default function ConciergeBand({ title, body, emailOnly = false }: Concie
           </a>
         </div>
 
-        <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-body text-[color:var(--color-bone)]/55">
+        <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-body text-[color:var(--color-bone)]/75">
           <li className="inline-flex items-center gap-2">
             <Lock size={12} className="text-[color:var(--color-brass)]" />
             {c.badges.anonymous}

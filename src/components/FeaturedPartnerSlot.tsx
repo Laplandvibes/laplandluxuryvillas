@@ -76,7 +76,7 @@ export default function FeaturedPartnerSlot({
   if (partner) {
     return (
       <div className={wrap} data-featured-partner={placement}>
-        <p className="flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-[color:var(--color-bone)]/55 mb-2">
+        <p className="flex flex-wrap items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-[color:var(--color-bone)]/75 mb-2">
           <span className="inline-flex items-center rounded-full bg-[#EC4899]/90 px-2 py-0.5 text-white">
             {m.ad}
           </span>

@@ -58,7 +58,7 @@ export default function EditorsPickChip({
       {note && (
         <span
           data-editors-pick-note=""
-          className="text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/60"
+          className="text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/75"
         >
           {note}
         </span>

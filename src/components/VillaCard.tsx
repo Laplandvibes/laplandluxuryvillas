@@ -69,24 +69,27 @@ export default function VillaCard({
             {c.tier[villa.tier]}
           </span>
         </div>
+        {/* The earned mark rides on the IMAGE, opposite the tier badge.
+            🔴 It used to be a block above the h3 (Vesa 2026-08-01: "toimituksen
+            valinta menee ihan oudosti"). Only one card in a row ever carries
+            it, so it pushed that card's title, rating, body and button down by
+            its own height and nothing lined up across the row. On the image it
+            costs zero layout height, and it still reads as editorial rather
+            than paid: snow + brass ring, never the pink "Mainos" pill. */}
+        {isPick && (
+          <div className="absolute top-4 right-4">
+            <EditorsPickChip label={c.editorial.pickLabel} reason={c.editorial.pickReason} />
+          </div>
+        )}
       </div>
 
       <div className="flex-1 flex flex-col p-7">
-        <div className="flex items-center gap-2 text-[color:var(--color-bone)]/60 text-xs font-body mb-3">
+        <div className="flex items-center gap-2 text-[color:var(--color-bone)]/75 text-xs font-body mb-3">
           <MapPin size={13} className="text-[color:var(--color-brass)]" />
           <span className="tracking-[0.18em] uppercase">{villa.destination}</span>
           <span className="text-[color:var(--color-mist)]">·</span>
           <span>{c.category[villa.category]}</span>
         </div>
-
-        {isPick && (
-          <EditorsPickChip
-            label={c.editorial.pickLabel}
-            reason={c.editorial.pickReason}
-            note={pickNote}
-            className="mb-3"
-          />
-        )}
 
         {/* The card title is the way into /villas/:slug. Until 2026-08-01 no
             card linked there at all: 108 detail URLs sat in the sitemap with
@@ -105,9 +108,20 @@ export default function VillaCard({
             its scope stated in the row itself. Rendered on every rated card,
             not only the winner: "highest rated on this page" is checkable only
             against the numbers it beat. */}
-        <GoogleRatingRow property={property} className="mb-4" />
+        <GoogleRatingRow property={property} className={isPick && pickNote ? 'mb-1.5' : 'mb-4'} />
 
-        <p className="text-[color:var(--color-bone)]/75 text-sm leading-relaxed font-body mb-4">
+        {/* The mark's VISIBLE justification. It moved down here with the chip:
+            "highest Google rating on this page, checked <date>" belongs beside
+            the number it is a claim about, not above the villa's name. Still
+            mandatory — the mark is only checkable if the reader can see what it
+            is derived from and how old the snapshot is. */}
+        {isPick && pickNote && (
+          <p className="text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/70 mb-4">
+            {pickNote}
+          </p>
+        )}
+
+        <p className="text-[color:var(--color-bone)]/85 text-sm leading-relaxed font-body mb-4">
           {villa.tagline}
         </p>
 
@@ -119,7 +133,13 @@ export default function VillaCard({
           <ArrowUpRight size={12} className="transition-transform group-hover/profile:translate-x-0.5 group-hover/profile:-translate-y-0.5" />
         </Link>
 
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-[color:var(--color-bone)]/60 pb-5 border-b border-[color:var(--color-mist)]/40">
+        {/* `mt-auto` pins the spec row and the price/CTA block to the bottom of
+            the card. The grid already stretches every card to the row's height,
+            but the CONTENT was top-aligned, so a card with no Google rating
+            (the two concierge-only entries have no business to rate) ended its
+            button a hundred pixels above its neighbour's. Now every row's
+            buttons sit on one line. */}
+        <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-[color:var(--color-bone)]/75 pb-5 border-b border-[color:var(--color-mist)]/40">
           <span className="inline-flex items-center gap-1.5">
             <Bed size={13} className="text-[color:var(--color-brass)]" />
             {villa.bedrooms} {villa.bedrooms === 1 ? c.badges.bedroom : c.badges.bedrooms}
@@ -134,14 +154,14 @@ export default function VillaCard({
           <div>
             {villa.fromPerNight ? (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.fromPerNight}</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.fromPerNight}</div>
                 <div className="font-heading text-2xl text-[color:var(--color-brass)]">
                   {formatRate(villa.fromPerNight, lang)}
                 </div>
               </>
             ) : (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/55 mb-0.5">{c.badges.rate}</div>
+                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.rate}</div>
                 <div className="font-heading text-lg text-[color:var(--color-brass)]">{c.badges.onRequest}</div>
               </>
             )}

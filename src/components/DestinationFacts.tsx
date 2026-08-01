@@ -21,10 +21,10 @@ function Fact({ label, value, fact, lang }: { label: string; value: string; fact
   const l = lang as Parameters<typeof t>[1]
   return (
     <div>
-      <div className="eyebrow text-[color:var(--color-bone)]/55 mb-1">{label}</div>
+      <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{label}</div>
       <p className="text-[color:var(--color-bone)]/90 font-body text-sm leading-relaxed">{value}</p>
       {fact?.note && (
-        <p className="text-[color:var(--color-bone)]/60 font-body text-xs leading-relaxed mt-1">{fact.note}</p>
+        <p className="text-[color:var(--color-bone)]/75 font-body text-xs leading-relaxed mt-1">{fact.note}</p>
       )}
       {fact && (
         <a

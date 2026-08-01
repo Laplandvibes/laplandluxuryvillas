@@ -88,7 +88,7 @@ export default function GoogleRatingRow({
       </a>
       <span
         data-google-rating-scope=""
-        className="text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/55"
+        className="text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/75"
       >
         {scope}
       </span>

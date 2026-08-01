@@ -263,7 +263,7 @@ export default function Concierge() {
                   </p>
                 )}
 
-                <p className="text-xs text-[color:var(--color-bone)]/55 font-body">{c.conciergePage.fineprint}</p>
+                <p className="text-xs text-[color:var(--color-bone)]/75 font-body">{c.conciergePage.fineprint}</p>
               </form>
             </>
           )}

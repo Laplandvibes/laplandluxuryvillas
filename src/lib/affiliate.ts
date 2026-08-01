@@ -233,6 +233,22 @@ export function gygProduct(path: string, sid: string): string {
   return `${REDIRECT_BASE}/go/activities/${clean}?sid=${encodeURIComponent(sid)}`
 }
 
+// ─── Lomarengas cabin showcase ───────────────────────────────────────────────
+// The Worker's KV-cached parse of the Adtraction product feed (pfid 375),
+// grouped by resort and refreshed daily, so a delisted cabin drops off by
+// itself. Same contract laplandstays uses. Every cabin CTA routes back through
+// /go/lomarengas so the click lands in D1 with its epi placement tag — the
+// feed's own <link> is tracked but carries no placement.
+export const CABINS_API = `${REDIRECT_BASE}/_cabins`
+
+export function lomarengasCabinUrl(slug: string, sid: string, lang: Lang = 'en'): string {
+  const dest =
+    lang === 'fi'
+      ? `https://www.lomarengas.fi/mokit/${slug}`
+      : `https://www.lomarengas.fi/en/cottages/${slug}`
+  return `${REDIRECT_BASE}/go/lomarengas?sid=${encodeURIComponent(sid)}&dest=${encodeURIComponent(dest)}`
+}
+
 export const GYG_LINKS = {
   laplandPremium: gygSearch('experiences_premium', 'private tour Lapland Finland'),
   helicopter: gygSearch('experience_helicopter', 'helicopter tour Lapland Finland'),
