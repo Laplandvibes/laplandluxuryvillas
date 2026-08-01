@@ -1,6 +1,7 @@
 import SEO from '../components/SEO'
 import Page from '../components/Page'
 import PrivacyContent from '../shared/Legal/PrivacyContent'
+import ConciergePrivacy from '../components/ConciergePrivacy'
 import { useLang } from '../i18n/useLang'
 
 export default function PrivacyPolicy() {
@@ -9,10 +10,14 @@ export default function PrivacyPolicy() {
     <Page>
       <SEO
         title="Privacy Policy · LaplandLuxuryVillas"
-        description="How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, no concierge-form data stored on our servers, EU-only processors."
+        description="How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, EU-only processors, and exactly what happens to a private concierge inquiry."
         canonicalPath="/privacy"
       />
       <PrivacyContent siteName="LaplandLuxuryVillas" lang={lang} />
+      {/* Site-specific: the shared policy covers what every LV site does, and
+          said nothing about this site's own concierge funnel. See the component
+          header for why this is not in shared/Legal. */}
+      <ConciergePrivacy />
     </Page>
   )
 }

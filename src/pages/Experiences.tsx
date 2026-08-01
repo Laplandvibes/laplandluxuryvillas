@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import LuxuryExperiences from '../components/LuxuryExperiences'
 import { ArrowUpRight, MapPin } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
@@ -151,6 +152,7 @@ export default function Experiences() {
       </section>
 
       <ConciergeBand />
+      <LuxuryExperiences />
       <NewsletterSection />
     </Page>
   )
