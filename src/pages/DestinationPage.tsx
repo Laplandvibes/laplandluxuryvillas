@@ -7,6 +7,7 @@ import ConciergeBand from '../components/ConciergeBand'
 import PartnerStayAd from '../components/PartnerStayAd'
 import CabinCarousel from '../components/CabinCarousel'
 import DestinationFacts from '../components/DestinationFacts'
+import DestinationFaq, { destinationFaqItems } from '../components/DestinationFaq'
 import RelatedSites from '../components/RelatedSites'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
@@ -32,6 +33,8 @@ export default function DestinationPage() {
   // an unopposed card would claim a comparison that never happened.
   const villaPick = bestGoogleRated(villas.map((v) => propertyForVilla(v.slug)))
   const villaPickNote = editorialPickNote(c.editorial, villaPick, lang)
+  // Built once: the visible list and the FAQPage schema must be the same text.
+  const faqItems = destinationFaqItems(dest.slug, lang)
 
   return (
     <Page>
@@ -59,6 +62,17 @@ export default function DestinationPage() {
               { '@type': 'ListItem', position: 3, name: dest.name, item: `https://laplandluxuryvillas.com/destinations/${dest.slug}` },
             ],
           },
+          ...(faqItems.length
+            ? [{
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: faqItems.map((f) => ({
+                  '@type': 'Question',
+                  name: f.q,
+                  acceptedAnswer: { '@type': 'Answer', text: f.a },
+                })),
+              }]
+            : []),
         ]}
       />
 
@@ -185,6 +199,10 @@ export default function DestinationPage() {
 
       {/* Sibling sites, including family itineraries and aurora activities —
           a destination page is where a reader wants the rest of the trip. */}
+      {/* Generated from the facts registry, so an answer cannot drift out of
+          step with the number it restates. Same array feeds the JSON-LD. */}
+      <DestinationFaq slug={dest.slug} />
+
       <RelatedSites />
 
       <NewsletterSection />
