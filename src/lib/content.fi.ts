@@ -148,8 +148,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Pohjois-Suomen luksusrevontulikeskus, Kakslauttanen, Star Arctic ja Urho Kekkosen villi reuna.',
       copy: [
-        'Saariselkä sijaitsee Urho Kekkosen kansallispuiston pohjoisreunalla, Suomen villeimmän suojellun erämaan, ja on kylä, joka määritteli lasikattoisen revontulimajoituksen. Suurin osa maan lippulaivamökeistä (Kakslauttanen, Star Arctic, Northern Lights Village) on 10 km:n säteellä kylästä.',
-        'Itse kylä on pieni ja kävellen kierrettävä, yhdellä pääraitilla, kolmella vakavasti otettavalla ravintolalla ja suoralla yhteydellä kansallispuistoon. Ivalon lentoasema, 30 minuuttia yksityiskuljetuksella, palvelee alueellisia suihkukoneita ja yksityislentoja.',
+        'Saariselkä sijaitsee Urho Kekkosen kansallispuiston, yhden Suomen laajimmista erämaa-alueista, pohjoisreunalla, ja se on kylä joka määritteli lasikattoisen revontulimajoituksen. Suurin osa maan tunnetuimmista lasimökeistä (Kakslauttanen, Star Arctic, Northern Lights Village) on 10 kilometrin säteellä kylästä.',
+        'Itse kylä on pieni ja kävellen kierrettävä: yksi pääraitti, muutama ravintola ja suora yhteys kansallispuistoon. Ivalon lentoasemalle on 27 kilometriä eli noin puoli tuntia yksityiskuljetuksella, ja se palvelee sekä reittiliikennettä että yksityiskoneita.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, alkuperäinen lasikattokohde',
@@ -157,14 +157,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Suora yhteys Urho Kekkosen kansallispuistoon (erämaaluokkaa)',
         'Ivalon lentoasema, yksityislentokelpoinen, 30 min kuljetus',
       ],
-      arrival: 'Ivalo (IVL), 30 min yksityiskuljetuksella',
-      auroraNote: 'Sisämaan boreaalista metsää, vähäinen valosaaste. ~200 selkeää revontuliyötä kaudessa, Suomen toiseksi paras Inarin jälkeen.',
+      arrival: 'Ivalo (IVL), 27 km, noin 30 min yksityiskuljetuksella',
+      auroraNote: 'Sisämaan havumetsää, jossa ei ole asutuksen valoja kymmeniin kilometreihin mihinkään suuntaan. Tunturit antavat korkean ja avoimen horisontin, mikä ratkaisee niinä öinä kun kaari jää matalalle pohjoiseen.',
     },
     'inari': {
-      position: 'Tilastollisesti Euroopan unionin luotettavin revontulileveysaste. Saamelaisten sydänmaa, Inarijärvi, pimeät taivaat.',
+      position: 'Pohjoisin kohteemme, jossa revontulia havaitaan noin kolmena yönä neljästä. Saamelaisten sydänmaa, Inarijärvi, pimeät taivaat.',
       copy: [
-        'Inari on Suomen pohjoisin kunta ja suomensaamelaisten kulttuuripääkaupunki. Kylä sijaitsee Inarijärven rannalla, Suomen kolmanneksi suurimman järven, jossa on 3 000 saarta ja vähäisin valosaaste napapiirin eteläpuolella.',
-        'Luksusmatkailulle tämä merkitsee kahta asiaa. Ensinnäkin: revontulet ovat täällä tilastollisesti Euroopan unionin luotettavimmat, eniten suoraan päälaen yllä avautuvine esityksineen. Toiseksi: rantojen hirsihuvilat (joista osaa pidämme yksityisesti) ovat Lapin rauhallisin majoitus, ei läpikulkuliikennettä, ei naapurikyliä näkyvällä horisontilla.',
+        'Inari on Suomen pohjoisin kunta ja suomensaamelaisten kulttuuripääkaupunki. Kylä sijaitsee Inarijärven, Suomen kolmanneksi suurimman järven, rannalla. Järvessä on noin 3 000 saarta, ja kylä on yli 200 kilometriä napapiirin pohjoispuolella ilman kaupungin valoja horisontissa.',
+        'Luksusmatkailulle tämä merkitsee kahta asiaa. Ensinnäkin: tällä leveysasteella Ilmatieteen laitos havaitsee revontulia keskimäärin kolmena yönä neljästä, ja ne avautuvat suoraan päälaen yllä eivätkä matalalla pohjoisessa. Toiseksi: rantojen hirsihuvilat, joista osaa pidämme yksityisesti, ovat Lapin rauhallisimpia majoituksia: ei läpikulkuliikennettä eikä naapurikyliä näkyvällä horisontilla.',
       ],
       highlights: [
         'Aurora Village, varta vasten rakennettu 30 hehtaarin lasimökkialue',
@@ -172,13 +172,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Saamelaismuseo SIIDA + kulttuuriohjelmat ympäri vuoden',
         'Yksityiset rantojen hirsihuvilat saatavilla conciergen kautta',
       ],
-      arrival: 'Ivalo (IVL), 45 min yksityiskuljetuksella',
-      auroraNote: 'Korkein revontulitiheys Manner-EU:ssa. ~220 selkeää revontuliyötä kaudessa, tilastollinen voittaja.',
+      arrival: 'Ivalo (IVL), 40 km, noin 40 min yksityiskuljetuksella',
+      auroraNote: 'Pohjoisin kohteemme ja se, jossa revontulet useimmiten avautuvat suoraan pään päälle eivätkä matalalle pohjoiseen. Inarijärvi antaa yhtenäisen horisontin, eikä siinä näy kylän valoja.',
     },
     'rovaniemi': {
       position: 'Saapumiskaupunki. Arkkitehdin suunnittelemia sviittejä, päivittäisiä suoria lentoja suurilta lentokentiltä.',
       copy: [
-        'Rovaniemi on Lapin maakuntakeskus ja helpoimmin saavutettava revontulikohde, useita päivittäisiä suoria lentoja Helsingistä sekä kausittaisia suoria lentoja Lontoosta, Frankfurtista, Pariisista, Wienistä ja Persianlahdelta. Lentoasema on kuuden minuutin päässä keskustasta.',
+        'Rovaniemi on Lapin maakuntakeskus ja helpoimmin saavutettava revontulikohde: useita päivittäisiä suoria lentoja Helsingistä sekä kausittaisia suoria lentoja Lontoosta, Frankfurtista, Pariisista, Wienistä ja Persianlahdelta. Lentoasema on noin 10 kilometriä keskustasta pohjoiseen, kymmenen tai viisitoista minuuttia autolla.',
         'Luksustarjonta rakentuu täällä arkkitehdin suunnittelemien designsviittien ympärille kymmenen minuutin päässä lentoasemalta (Arctic TreeHouse, Apukka). Helikopterikuljetukset lentoasemalta syrjäisille erämaa-alueille ovat yleisiä.',
       ],
       highlights: [
@@ -186,38 +186,38 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Apukka Resort, perinnerevontulivaunut Apukkajärven rannalla',
         'Suorat lennot Lontoosta / Frankfurtista / Wienistä / Dohasta (kausittain)',
       ],
-      arrival: 'Rovaniemi (RVN), 6 min keskustasta',
-      auroraNote: 'Matalampi revontulileveysaste kuin Inarissa/Saariselällä mutta silti ~150 selkeää revontuliyötä. Paras yhdistettynä vähintään yhteen tunturikyläyöhön.',
+      arrival: 'Rovaniemi (RVN), 10 km, 10–15 min keskustasta',
+      auroraNote: 'Eteläisin kohteemme ja ainoa, jonka horisontissa on kaupungin valot. Revontulia näkyy täällä harvemmin ja ne erottuvat huonommin. Kannattaa yhdistää vähintään yhteen yöhön tunturikylässä pohjoisempana.',
     },
     'levi': {
-      position: 'Suomen ykkönen hiihtokeskus. Luksuschalet´t etelärinteellä, ski-in/ski-out Levin gondolihissiltä.',
+      position: 'Suomen johtava hiihtokeskus. Luksuschalet’t etelärinteellä, ski-in/ski-out Levin gondolihissiltä.',
       copy: [
-        'Levi on Lapin kehittynein tunturikeskus, täysimittainen talviurheilukylä, jossa on 43 hissiä, useita Michelin-suositeltuja keittiöitä ja viime vuosikymmenellä vakavaksi kasvanut designchalet´ien vuokramarkkina. Gondolihissi kulkee kylän keskustasta laelle; etelärinteellä sijaitsevat yksityiset chalet´t.',
+        'Levi on Lapin kehittynein tunturikeskus, täysimittainen talviurheilukylä, jossa on 44 rinnettä ja 26 hissiä, joista kaksi on gondoleita. Designchalet’ien vuokramarkkina on kasvanut täällä vakavasti otettavaksi viimeisen vuosikymmenen aikana. Gondolihissi kulkee kylän keskustasta 531 metrin laelle, ja etelärinteellä sijaitsevat yksityiset chalet’t. Samalle rinteelle avautuu uusi tuolihissi kaudeksi 2026–2027.',
         'Revontulinäkyvyys Leviltä avautuu etelään ja on näyttävä, harvinaista Lapissa, sillä valaistu kylän siluetti tulee osaksi valokuvaa. Paras yhdistettynä yhteen tai kahteen yöhön kauempana pohjoisessa (Inari tai Saariselkä) aitoa erämaarevontulta varten ennen paluuta tänne laskettelemaan.',
       ],
       highlights: [
         'Levin Iglut, etelään avautuvat lasi-iglut tunturikylän yllä',
-        'Arkkitehdin suunnittelemat designchalet´t, etelärinne, ski-in/out',
-        '43 hissiä, pisin rinne 2,5 km, kausi marras–touko',
+        'Arkkitehdin suunnittelemat designchalet’t, etelärinne, ski-in/out',
+        '44 rinnettä, 26 hissiä (kaksi gondolia), 38,5 km hoidettua rinnettä',
         'Kittilän lentoasema (KTT) palvelee kausittaisia suoria kansainvälisiä lentoja',
       ],
-      arrival: 'Kittilä (KTT), 20 min yksityiskuljetuksella',
-      auroraNote: 'Etelään avautuva revontulipanoraama (harvinaista). ~150 selkeää yötä, mutta valaistu kylä tarjoaa etualan sommittelun, jollaista ei kauempana pohjoisessa juuri näe.',
+      arrival: 'Kittilä (KTT), 15 km, noin 20 min yksityiskuljetuksella',
+      auroraNote: 'Etelään avautuva panoraama, mikä on Lapissa harvinaista: valaistu tunturikylä tulee osaksi kuvan etualaa. Vastineeksi kylän oma valo häiritsee, joten pimein katselupaikka on lyhyen ajomatkan päässä.',
     },
     'yllas': {
       position: 'Levin rauhallinen vaihtoehto. Pallas-Yllästunturin kansallispuisto, vähemmän ruuhkaa, syvempi metsä.',
       copy: [
-        'Ylläs on Suomen toiseksi suurin tunturikeskus, mutta tuntuu viidesosan kokoiselta, kylä on hajautunut kahteen taajamaan (Äkäslompolo ja Ylläsjärvi), joita erottaa 15 km tunturia, Pallas-Yllästunturin kansallispuisto välissään. Lasketteluvalikoima vastaa Leviä; kävijätiheys ei.',
-        'Luksusmatkailulle vetovoima on tila. Arkkitehdin suunnittelemat chalet´t sijaitsevat täällä yksinään tunturin rinteellä; kansallispuiston reitit lähtevät suoraan kohteesta; hiljaisuus on se, mistä ihmiset todella maksavat. Revontulinäkyvyys on erinomainen erittäin vähäisen paikallisen valosaasteen ansiosta.',
+        'Ylläksellä on 62 rinnettä, enemmän kuin missään muussa Suomen hiihtokeskuksessa, ja maan pisimmät laskettelurinteet: yli kolme kilometriä paljaalta 719 metrin laelta laaksoon. Silti se tuntuu murto-osalta Levin kokoiselta, sillä kylä on hajautunut kahteen taajamaan (Äkäslompolo ja Ylläsjärvi), joita erottaa 15 kilometriä tunturia ja Pallas-Yllästunturin kansallispuisto.',
+        'Luksusmatkailulle vetovoima on tila. Arkkitehdin suunnittelemat chalet’t sijaitsevat täällä yksinään tunturin rinteellä, kansallispuiston reitit lähtevät suoraan kohteesta, ja hiljaisuus on se mistä ihmiset todella maksavat. Latuverkostoa on noin 300 kilometriä, siitä yli 30 kilometriä valaistuna.',
       ],
       highlights: [
         'Pallas-Yllästunturin kansallispuisto, Suomen 3. suurin',
         'Kaksi hiihtokylää Ylläksen tunturin vastakkaisilla puolilla',
-        'Vähäisempi valosaaste kuin millään muulla hiihtokeskuksella',
-        'Omistetut hiihtoladut (yhteensä 250 km)',
+        'Kansallispuiston sisällä, joten tunturin puolella ei ole keskuksen valoja',
+        'Noin 300 km hoidettua latua, siitä yli 30 km valaistuna',
       ],
-      arrival: 'Kittilä (KTT), 50 min yksityiskuljetuksella',
-      auroraNote: 'Kansallispuiston rajojen sisällä, Manner-Euroopan vähäisimpiä valosaastelukemia. ~180 selkeää yötä.',
+      arrival: 'Kittilä (KTT), 40 km, noin 45 min yksityiskuljetuksella',
+      auroraNote: 'Chalet’t sijaitsevat kansallispuistoa vasten eivätkä keskuksen keskellä, joten astut ovesta suoraan pimeään sen sijaan että ajaisit sitä etsimään.',
     },
   },
   experiences: {

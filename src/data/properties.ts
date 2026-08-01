@@ -57,8 +57,36 @@ export type Property = {
    * compares Google's `displayName` against, and what the scope line prints.
    */
   name: string
-  /** The affiliate search string this site already passes as `?ss=`. */
+  /** The property's own name, as the Places sync searches for it. */
   destination: string
+  /**
+   * The town this property sits in, as `?ss=` — the FALLBACK the Worker uses
+   * when the partner has no page for the property itself.
+   *
+   * 🔴 This is a PLACE, never the hotel name. Passing a hotel name as `?ss=`
+   * is what produced the front-page landings: Sembo's autosuggest answers []
+   * for most hotel-name terms, and Trip.com's city map has no entry for them,
+   * so the Worker had nothing to redirect to. A town always resolves, so the
+   * worst case becomes "the right town" instead of "a global hotel homepage".
+   */
+  city: string
+  /**
+   * Sembo property ids for the fi_FI route: `[hotelCode, polygonId]`.
+   *
+   * With both, the Worker deep-links to the property's OWN booking page
+   * (`/travel/plan/hotel-selection/h0/hotel-details/<hotelCode>`). Without
+   * them `?ss=` can only ever resolve to the surrounding AREA — which is what
+   * every card on this site did until 2026-08-01, so a card headed "Star
+   * Arctic Skyview Suite" landed the visitor on a Saariselkä list, or (for
+   * three of the seven) on the Sembo front page with no destination at all.
+   *
+   * 🔴 ABSENT MEANS ABSENT, NOT UNKNOWN. Omit the field when the partner has
+   * no bookable page for the property, and the CTA degrades to "view options"
+   * via `ctaPromisesProperty()`. Never fill it with a nearby property's id.
+   */
+  sembo?: readonly [hotelCode: string, polygonId: string]
+  /** Trip.com ids for every non-fi locale: `[cityId, hotelId]`. Same rule. */
+  trip?: readonly [cityId: string, hotelId: string]
 }
 
 /**
@@ -120,16 +148,53 @@ function withGoogleReviews<T extends Record<string, Property>>(
  * Entries stay on ONE line each and keep the `name` / `destination` order:
  * `scripts/sync-villas.mjs` parses this block as text so the two files can
  * never drift, and it aborts rather than syncing if the parse yields nothing.
+ * The partner ids may follow on the same line; the parser reads the prefix.
+ *
+ * ── Partner ids, resolved and opened one by one 2026-08-01 ────────────────
+ * Sembo codes come from its own autosuggest (`content-hc.sembo.com/
+ * CategorizedAutosuggestion`), Trip.com ids from its own city list ranked by
+ * `searchWord`. Both were then OPENED: the Sembo pages rendered the named
+ * hotel with a room-selection CTA, the Trip.com ids came off that hotel's own
+ * card. The four ids that also exist in `laplandvibes-app-new/src/data/
+ * booking.ts` (resolved independently 2026-07-27) matched digit for digit,
+ * which is the cross-check that says the method is sound.
+ *
+ * Two gaps are REAL and deliberate, not to-dos:
+ *   auroraVillage  no Trip.com listing — absent from both the Ivalo (1783) and
+ *                  Inari (38225) inventories on 2026-08-01.
+ *   nellim         no bookable page on EITHER partner. Sembo's autosuggest
+ *                  knows the hotel (code 754136) but the Inari polygon carries
+ *                  only three bookable properties and Nellim is not among
+ *                  them; Trip.com does not list it at all. Its CTA therefore
+ *                  reads "view options" in every language.
  */
 export const PROPERTIES = withGoogleReviews({
-  kakslauttanen: { name: "Kakslauttanen Arctic Resort", destination: "Kakslauttanen Arctic Resort" },
-  arcticTreeHouse: { name: "Arctic TreeHouse Hotel", destination: "Arctic TreeHouse Hotel" },
-  auroraVillage: { name: "Aurora Village Ivalo", destination: "Aurora Village Ivalo" },
-  levinIglut: { name: "Levin Iglut", destination: "Levin Iglut" },
-  nellim: { name: "Wilderness Hotel Nellim", destination: "Wilderness Hotel Nellim" },
-  starArctic: { name: "Star Arctic Hotel", destination: "Star Arctic Hotel" },
-  apukka: { name: "Apukka Resort", destination: "Apukka Resort Rovaniemi" },
-})
+  kakslauttanen: { name: "Kakslauttanen Arctic Resort", destination: "Kakslauttanen Arctic Resort", city: "Saariselkä, Finland", sembo: ["1679682", "360014"], trip: ["56309", "8669535"] },
+  arcticTreeHouse: { name: "Arctic TreeHouse Hotel", destination: "Arctic TreeHouse Hotel", city: "Rovaniemi, Finland", sembo: ["922953", "360732"], trip: ["1794", "10035619"] },
+  auroraVillage: { name: "Aurora Village Ivalo", destination: "Aurora Village Ivalo", city: "Ivalo, Finland", sembo: ["422560", "360477"] },
+  levinIglut: { name: "Levin Iglut", destination: "Levin Iglut", city: "Levi, Finland", sembo: ["2512109", "360006"], trip: ["38182", "9528161"] },
+  nellim: { name: "Wilderness Hotel Nellim", destination: "Wilderness Hotel Nellim", city: "Inari, Finland" },
+  starArctic: { name: "Star Arctic Hotel", destination: "Star Arctic Hotel", city: "Saariselkä, Finland", sembo: ["1595634", "360532"], trip: ["10196", "7402448"] },
+  apukka: { name: "Apukka Resort", destination: "Apukka Resort Rovaniemi", city: "Rovaniemi, Finland", sembo: ["656849", "360462"], trip: ["1794", "9940210"] },
+} as const)
+
+/**
+ * True when the booking CTA will actually land on THIS property's own page in
+ * the given language. fi routes to Sembo, every other locale to Trip.com, so a
+ * property can be bookable in one language and search-only in the other.
+ *
+ * The UI must not promise the property when this is false: the button reads
+ * `cta.viewOptions` instead of `cta.viewRates`. A card that names a suite and
+ * then drops the visitor on a city list is the same broken promise as a wrong
+ * photo, and it was this site's default on every card until 2026-08-01.
+ */
+export function ctaPromisesProperty(
+  property: Pick<Property, 'sembo' | 'trip'> | null | undefined,
+  lang: Lang,
+): boolean {
+  if (!property) return false
+  return lang === 'fi' ? Boolean(property.sembo) : Boolean(property.trip)
+}
 
 export type PropertyKey = keyof typeof PROPERTIES
 

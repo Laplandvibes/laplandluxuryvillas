@@ -81,16 +81,26 @@ export default function Hero({
             }}
           />
         )}
-        {/* Editorial wash — bottom-anchored fade keeps the photo visible up top, text readable low */}
+        {/* Editorial wash — bottom-anchored fade keeps the photo visible up top,
+            text readable low.
+
+            🔴 Lightened 2026-08-01 (Vesa: "hero kuvien päällä liikaa
+            tummennusta"). The two layers here MULTIPLY, which is what the
+            earlier numbers missed: at the headline (55% down) the linear wash
+            was 0.42 and the radial added 0.45 on top, so the photograph was
+            reading through roughly a third of its own brightness. The headline
+            already carries its own drop-shadow, so the scrim can be much
+            lighter than it looks in isolation. Effective darkening at the
+            headline is now about 0.48 instead of 0.68. */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to top, rgba(15,23,42,0.80) 0%, rgba(15,23,42,0.42) 50%, rgba(15,23,42,0.30) 100%)',
+              'linear-gradient(to top, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.26) 45%, rgba(15,23,42,0.10) 100%)',
           }}
         />
         {/* Localised reading scrim only behind the headline block — preserves photo elsewhere */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_30%_at_50%_55%,rgba(10,15,28,0.45)_0%,transparent_75%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_30%_at_50%_55%,rgba(10,15,28,0.30)_0%,transparent_75%)]" />
       </div>
 
       {/* Content */}

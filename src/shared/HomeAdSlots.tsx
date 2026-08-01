@@ -104,19 +104,31 @@ export type HomeAdSlotsProps = SurfaceProps & {
  * ei arvontaa — parillinen päivä A ylin, pariton B ylin → tasan 50/50).
  */
 export default function HomeAdSlots({ config, locale, surface = 'dark', className, cardClassName }: HomeAdSlotsProps) {
-  // Mainospaikat vain fi/en (Vesa 2026-07-13).
-  if (!adLocaleEnabled(locale)) return null;
+  // Kaksijakoinen kielisääntö (Vesa 2026-07-30, Bear-palaute):
+  //   MYYTY kortti näkyy KAIKILLA 12 kielellä — kumppani maksoi näkyvyydestä,
+  //   ja Partner.i18n kantaa käännetyt tekstit (PartnerSlot).
+  //   HOUSE-AD ("Haluatko mainoksesi tähän?") pysyy fi/en/sv-rajattuna
+  //   (Vesa 2026-07-13: mainostilan OSTAJAT asioivat näillä kielillä).
+  // Ei myytyä eikä myyntikieltä → koko osio pois.
+  const salesLocale = adLocaleEnabled(locale);
+  const [a, b] = homeCards(config);
+  if (!salesLocale && !a && !b) return null;
 
   const t = adSlotsCopy(locale);
   const light = surface === 'light';
-  const [a, b] = homeCards(config);
 
   // Mobiilivuorottelu: pariton päivä → B ylimmäksi vain kapealla (max-sm).
   // Desktopissa (sm+) DOM-järjestys voittaa → A aina vasen, B oikea.
   // Selaimessa `new Date()` on turvallinen (body renderöityy client-sidessä);
   // SSR/prerenderissä oletus = A ylin (ei hydraatiomismatchia meta-only-shellissä).
+  //
+  // 🔴 VAIN kun MOLEMMAT paikat on myyty (Vesa 2026-07-27). Vuorottelu on
+  // reiluussääntö kahden maksavan kumppanin välillä. Jos vain toinen on myyty,
+  // vuorottelu nosti joka toinen päivä TYHJÄN "haluatko mainoksesi tähän"
+  // -paikan maksavan asiakkaan yläpuolelle mobiilissa — eli asiakas maksoi
+  // ykköspaikasta ja sai kakkospaikan puolet ajasta.
   const flipMobile =
-    typeof window !== 'undefined' && new Date().getDate() % 2 === 1;
+    a !== null && b !== null && typeof window !== 'undefined' && new Date().getDate() % 2 === 1;
 
   return (
     <section
@@ -136,7 +148,8 @@ export default function HomeAdSlots({ config, locale, surface = 'dark', classNam
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 items-stretch">
-          {/* Kortti A (vasen desktopissa) */}
+          {/* Kortti A (vasen desktopissa). House-ad-placeholder vain
+              myyntikielillä — muilla lokaaleilla tyhjä paikka ei renderöidy. */}
           <div className="flex">
             <PartnerSlot
               variant="card"
@@ -144,7 +157,7 @@ export default function HomeAdSlots({ config, locale, surface = 'dark', classNam
               locale={locale}
               surface={surface}
               className={['w-full', cardClassName].filter(Boolean).join(' ')}
-              placeholder={{ siteSlug: config.siteSlug, slotId: 'card_a', level: 'card' }}
+              placeholder={salesLocale ? { siteSlug: config.siteSlug, slotId: 'card_a', level: 'card' } : undefined}
             />
           </div>
           {/* Kortti B (oikea desktopissa; parittomana päivänä ylin mobiilissa) */}
@@ -155,7 +168,7 @@ export default function HomeAdSlots({ config, locale, surface = 'dark', classNam
               locale={locale}
               surface={surface}
               className={['w-full', cardClassName].filter(Boolean).join(' ')}
-              placeholder={{ siteSlug: config.siteSlug, slotId: 'card_b', level: 'card' }}
+              placeholder={salesLocale ? { siteSlug: config.siteSlug, slotId: 'card_b', level: 'card' } : undefined}
             />
           </div>
         </div>

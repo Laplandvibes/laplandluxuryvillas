@@ -6,7 +6,7 @@ import ConciergeBand from '../components/ConciergeBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import GoogleRatingRow from '../components/GoogleRatingRow'
-import { propertyForVilla } from '../data/properties'
+import { propertyForVilla, ctaPromisesProperty } from '../data/properties'
 import { villaBySlug, getVillas } from '../lib/villas'
 import { formatRate, ratePriceRange } from '../lib/rate'
 import { destinationBySlug } from '../lib/destinations'
@@ -73,7 +73,8 @@ export default function VillaDetail() {
             fetchPriority="high"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)] via-[color:var(--color-deep-night)]/55 to-transparent" />
+        {/* Same lightening as Hero.tsx / DestinationPage.tsx, 2026-08-01. */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/35 to-transparent" />
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
           <Link
             to={to('/villas')}
@@ -177,7 +178,9 @@ export default function VillaDetail() {
                     rel="sponsored nofollow noopener"
                     className="block w-full text-center bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
                   >
-                    {c.villaDetailPage.viewRates}
+                    {ctaPromisesProperty(propertyForVilla(villa.slug), lang)
+                      ? c.villaDetailPage.viewRates
+                      : c.cta.viewOptions}
                   </a>
                   <Link
                     to={to('/concierge')}

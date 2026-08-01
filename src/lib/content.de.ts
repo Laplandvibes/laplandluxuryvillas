@@ -148,8 +148,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Das Luxus-Polarlichtzentrum Nordfinnlands, Kakslauttanen, Star Arctic, der wilde Rand des Urho-Kekkonen-Nationalparks.',
       copy: [
-        'Saariselkä liegt am nördlichen Rand des Urho-Kekkonen-Nationalparks, Finnlands wildester Schutzwildnis, und ist das Dorf, das die Polarlicht-Unterkunft unter dem Glasdach geprägt hat. Die meisten der führenden Glashütten des Landes (Kakslauttanen, Star Arctic, Northern Lights Village) liegen innerhalb von 10 km vom Dorf entfernt.',
-        'Das Dorf selbst ist klein und zu Fuß zu erkunden, mit einer Hauptstraße, drei ernstzunehmenden Restaurants und direktem Zugang zum Nationalpark. Der Flughafen Ivalo, 30 Minuten per privatem Transfer, bedient Regionaljets und Privatcharter.',
+        'Saariselkä liegt am nördlichen Rand des Urho-Kekkonen-Nationalparks, eines der größten Wildnisgebiete Finnlands, und ist das Dorf, das die Polarlicht-Unterkunft unter dem Glasdach geprägt hat. Die meisten der bekanntesten Glashütten des Landes (Kakslauttanen, Star Arctic, Northern Lights Village) liegen innerhalb von 10 km vom Dorf entfernt.',
+        'Das Dorf selbst ist klein und zu Fuß zu erkunden: eine Hauptstraße, einige Restaurants und direkter Zugang zum Nationalpark. Zum Flughafen Ivalo sind es 27 km, also rund eine halbe Stunde per privatem Transfer; er bedient Linienflüge ebenso wie Privatcharter.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, die ursprüngliche Unterkunft mit Glasdach',
@@ -157,14 +157,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Direkter Zugang zum Urho-Kekkonen-Nationalpark (Wildnisniveau)',
         'Flughafen Ivalo, privatchartertauglich, 30 Min. Transfer',
       ],
-      arrival: 'Ivalo (IVL), 30 Min. per privatem Transfer',
-      auroraNote: 'Boreales Binnenwaldgebiet, geringe Lichtverschmutzung. ~200 Polarlichtnächte mit klarem Himmel pro Saison, Finnlands zweitbeste nach Inari.',
+      arrival: 'Ivalo (IVL), 27 km, etwa 30 Min. per privatem Transfer',
+      auroraNote: 'Borealer Binnenwald, in dem es auf Dutzenden Kilometern in jede Richtung kein Siedlungslicht gibt. Die Fjells geben einen hohen, offenen Horizont, worauf es in den Nächten ankommt, in denen der Bogen tief im Norden steht.',
     },
     'inari': {
-      position: 'Statistisch der zuverlässigste Polarlicht-Breitengrad der Europäischen Union. Samisches Kernland, Inarisee, dunkle Himmel.',
+      position: 'Unser nördlichstes Ziel, wo Polarlichter in etwa drei von vier Nächten beobachtet werden. Samisches Kernland, Inarisee, dunkle Himmel.',
       copy: [
-        'Inari ist Finnlands nördlichste Gemeinde und die kulturelle Hauptstadt der finnischen Sami. Das Dorf liegt am Inarisee, dem drittgrößten See Finnlands mit 3.000 Inseln und der geringsten Lichtverschmutzung südlich des Polarkreises.',
-        'Für Luxusreisen bedeutet das zweierlei. Erstens: Die Polarlichter sind hier statistisch die zuverlässigsten der Europäischen Union, mit den am häufigsten direkt über dem Kopf liegenden ovalen Erscheinungen. Zweitens: Die Blockhaus-Anwesen am See (von denen wir einige privat halten) sind die ruhigsten Unterkünfte Lapplands, kein Durchgangsverkehr, keine benachbarten Dörfer am sichtbaren Horizont.',
+        'Inari ist Finnlands nördlichste Gemeinde und die kulturelle Hauptstadt der finnischen Sami. Das Dorf liegt am Inarisee, dem drittgrößten See Finnlands, mit rund 3.000 Inseln, mehr als 200 km nördlich des Polarkreises und ohne Stadtlicht am Horizont.',
+        'Für Luxusreisen bedeutet das zweierlei. Erstens: Auf diesem Breitengrad beobachtet das Finnische Meteorologische Institut Polarlichter in etwa drei von vier Nächten, und sie stehen direkt über dem Kopf statt tief im Norden. Zweitens: Die Blockhaus-Anwesen am See, von denen wir einige privat halten, gehören zu den ruhigsten Unterkünften Lapplands: kein Durchgangsverkehr, keine benachbarten Dörfer am sichtbaren Horizont.',
       ],
       highlights: [
         'Aurora Village, eigens errichtetes 30 Hektar großes Glashütten-Anwesen',
@@ -172,13 +172,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Sami-Museum SIIDA + ganzjährige Kulturprogramme',
         'Private Blockhaus-Anwesen am See über den Concierge verfügbar',
       ],
-      arrival: 'Ivalo (IVL), 45 Min. per privatem Transfer',
-      auroraNote: 'Höchste Polarlichtfrequenz der kontinentalen EU. ~220 Polarlichtnächte mit klarem Himmel pro Saison, der statistische Sieger.',
+      arrival: 'Ivalo (IVL), 40 km, etwa 40 Min. per privatem Transfer',
+      auroraNote: 'Unser nördlichstes Ziel und dasjenige, bei dem das Polarlicht am häufigsten direkt über dem Kopf steht statt tief im Norden. Der Inarisee gibt einen ununterbrochenen Horizont, auf dem kein Ortslicht liegt.',
     },
     'rovaniemi': {
       position: 'Die Ankunftsstadt. Architektengeplante Suiten, tägliche Direktflüge von großen Drehkreuzen.',
       copy: [
-        'Rovaniemi ist die Regionalhauptstadt Lapplands und das am einfachsten erreichbare Polarlichtziel, mehrere tägliche Direktflüge ab Helsinki sowie saisonale Direktflüge aus London, Frankfurt, Paris, Wien und der Golfregion. Der Flughafen liegt sechs Minuten vom Stadtzentrum entfernt.',
+        'Rovaniemi ist die Regionalhauptstadt Lapplands und das am einfachsten erreichbare Polarlichtziel: mehrere tägliche Direktflüge ab Helsinki sowie saisonale Direktflüge aus London, Frankfurt, Paris, Wien und der Golfregion. Der Flughafen liegt rund 10 km nördlich des Stadtzentrums, zehn bis fünfzehn Minuten mit dem Auto.',
         'Das Luxusangebot baut hier auf architektengeplante Designersuiten innerhalb von zehn Minuten zum Flughafen (Arctic TreeHouse, Apukka). Helikoptertransfers vom Flughafen zu abgelegenen Wildnisreservaten sind üblich.',
       ],
       highlights: [
@@ -186,38 +186,38 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Apukka Resort, historische Polarlicht-Waggons am Apukkajärvi-See',
         'Direktflüge aus London / Frankfurt / Wien / Doha (saisonal)',
       ],
-      arrival: 'Rovaniemi (RVN), 6 Min. vom Stadtzentrum',
-      auroraNote: 'Niedrigerer Polarlicht-Breitengrad als Inari/Saariselkä, aber dennoch ~150 Polarlichtnächte mit klarem Himmel. Am besten kombiniert mit mindestens einer Nacht im Fjelldorf.',
+      arrival: 'Rovaniemi (RVN), 10 km, 10 bis 15 Min. vom Stadtzentrum',
+      auroraNote: 'Unser südlichstes Ziel und das einzige mit Stadtlicht am Horizont, deshalb erscheint das Polarlicht hier seltener und ist schwerer zu sehen, wenn es kommt. Am besten kombiniert mit mindestens einer Nacht in einem Fjelldorf weiter nördlich.',
     },
     'levi': {
       position: 'Finnlands führendes Skigebiet. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi.',
       copy: [
-        'Levi ist das am besten erschlossene Fjell-Resort Lapplands, ein komplettes Wintersportdorf mit 43 Liften, mehreren von Michelin empfohlenen Küchen und einem Markt für Designer-Chaletvermietung, der im letzten Jahrzehnt ernsthaft gewachsen ist. Die Gondel fährt vom Dorfzentrum zum Gipfel; am Südhang liegen die privaten Chalets.',
+        'Levi ist das am besten erschlossene Fjell-Resort Lapplands, ein komplettes Wintersportdorf mit 44 Pisten und 26 Liften, davon zwei Gondeln. Der Markt für Designer-Chaletvermietung ist hier im letzten Jahrzehnt ernsthaft gewachsen. Die Gondel fährt vom Dorfzentrum auf den 531 Meter hohen Gipfel; am Südhang liegen die privaten Chalets, und für die Saison 2026-2027 kommt dort ein neuer Sessellift dazu.',
         'Die Polarlichtsicht von Levi aus ist nach Süden gerichtet und dramatisch, selten für Lappland, da die beleuchtete Dorfsilhouette Teil des Fotos wird. Am besten kombiniert mit ein oder zwei Nächten weiter nördlich (Inari oder Saariselkä) für echte Wildnis-Polarlichter, bevor man zum Skifahren hierher zurückkehrt.',
       ],
       highlights: [
         'Levin Iglut, nach Süden ausgerichtete Glasiglus über dem Fjelldorf',
         'Architektengeplante Designer-Chalets, Südhang, Ski-in/out',
-        '43 Skilifte, längste Abfahrt 2,5 km, Saison Nov.–Mai',
+        '44 Pisten, 26 Lifte (zwei Gondeln), 38,5 km präparierte Piste',
         'Flughafen Kittilä (KTT) bedient saisonale internationale Direktflüge',
       ],
-      arrival: 'Kittilä (KTT), 20 Min. per privatem Transfer',
-      auroraNote: 'Nach Süden ausgerichtetes Polarlicht-Panorama (selten). ~150 Nächte mit klarem Himmel, doch das beleuchtete Dorf bietet eine Vordergrundkomposition, die weiter nördlich ungewöhnlich ist.',
+      arrival: 'Kittilä (KTT), 15 km, etwa 20 Min. per privatem Transfer',
+      auroraNote: 'Ein nach Süden ausgerichtetes Panorama, in Lappland selten: das beleuchtete Fjelldorf wird zum Vordergrund des Fotos. Der Preis dafür ist eben dieses Ortslicht, die dunkelste Sicht liegt also eine kurze Autofahrt entfernt.',
     },
     'yllas': {
       position: 'Die ruhige Alternative zu Levi. Pallas-Yllästunturi-Nationalpark, weniger Menschenmengen, tieferer Wald.',
       copy: [
-        'Ylläs ist das zweitgrößte Fjell-Resort Finnlands, fühlt sich aber wie ein Fünftel der Größe an, das Dorf ist auf zwei Siedlungen verteilt (Äkäslompolo und Ylläsjärvi), getrennt durch 15 km Fjell, mit dem Pallas-Yllästunturi-Nationalpark dazwischen. Das Skiangebot entspricht Levi; die Besucherdichte nicht.',
-        'Für Luxusreisen liegt der Reiz im Raum. Architektengeplante Chalets stehen hier allein am Fjellhang; die Wege des Nationalparks führen direkt vom Anwesen weg; die Stille ist es, wofür die Menschen tatsächlich zahlen. Die Polarlichtsicht ist dank der sehr geringen lokalen Lichtverschmutzung ausgezeichnet.',
+        'Ylläs hat 62 Pisten, mehr als jedes andere Skigebiet Finnlands, und die längsten Abfahrten des Landes: über drei Kilometer vom baumlosen 719-Meter-Gipfel hinunter. Trotzdem wirkt es wie ein Bruchteil von Levi, denn der Ort ist auf zwei Siedlungen verteilt (Äkäslompolo und Ylläsjärvi), getrennt durch 15 km Fjell und den Pallas-Yllästunturi-Nationalpark.',
+        'Für Luxusreisen liegt der Reiz im Raum. Architektengeplante Chalets stehen hier allein am Fjellhang, die Wege des Nationalparks führen direkt vom Anwesen weg, und die Stille ist es, wofür die Menschen tatsächlich zahlen. Das Loipennetz umfasst rund 300 Kilometer, davon über 30 Kilometer beleuchtet.',
       ],
       highlights: [
         'Pallas-Yllästunturi-Nationalpark, Finnlands drittgrößter',
         'Zwei Skidörfer auf gegenüberliegenden Seiten des Ylläs-Fjells',
-        'Geringere Lichtverschmutzung als jedes andere Skigebiet',
-        'Eigene Langlaufloipen (250 km insgesamt)',
+        'Im Nationalpark, daher kein Resortlicht auf der Fjellseite',
+        'Rund 300 km gespurte Loipen, davon über 30 km beleuchtet',
       ],
-      arrival: 'Kittilä (KTT), 50 Min. per privatem Transfer',
-      auroraNote: 'Innerhalb der Nationalparkgrenze, unter den niedrigsten Lichtverschmutzungswerten in Kontinentaleuropa. ~180 Nächte mit klarem Himmel.',
+      arrival: 'Kittilä (KTT), 40 km, etwa 45 Min. per privatem Transfer',
+      auroraNote: 'Die Chalets stehen am Nationalpark statt mitten im Resort, man tritt also aus der Tür direkt in die Dunkelheit, statt sie erst suchen zu fahren.',
     },
   },
   experiences: {

@@ -124,7 +124,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tier: 'private',
     tagline: 'Twenty-four glass cabins facing nothing but forest and the aurora oval.',
     copy: [
-      'Inari sits squarely under the auroral oval, statistically the most reliable Northern Lights latitude in Europe. Aurora Village is a 24-cabin estate with no through traffic, no neighbouring villages on the visible horizon. The cabins are spaced for privacy, with the bed under the glass and the sofa facing it.',
+      'Inari sits under the auroral oval, at the latitude where the Finnish Meteorological Institute observes the aurora on about three nights in four. Aurora Village is a 24-cabin estate with no through traffic and no neighbouring villages on the visible horizon. The cabins are spaced for privacy, with the bed under the glass and the sofa facing it.',
       'The on-site Sami-led restaurant runs a tasting menu around reindeer, arctic char and cloudberry. Aurora alarms are radioed cabin-to-cabin so nobody wakes the villa next door.',
     ],
     signature: [
@@ -132,7 +132,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       '24 cabins on a 30-hectare estate, generously spaced',
       'Sami-led restaurant on-site, tasting menu nightly',
       'Aurora alarm via in-cabin radio',
-      'Inari is the most reliable aurora latitude in the EU',
+      'Aurora observed on about 3 nights in 4 at this latitude (FMI)',
       'Free private snowshoeing trail from the property',
     ],
     bedrooms: 1,

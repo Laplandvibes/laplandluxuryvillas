@@ -148,8 +148,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Le pôle aurores de luxe du nord de la Finlande, Kakslauttanen, Star Arctic, la frange sauvage d\'Urho Kekkonen.',
       copy: [
-        'Saariselkä se trouve à la lisière nord du parc national d\'Urho Kekkonen, la nature protégée la plus sauvage de Finlande, et c\'est le village qui a défini l\'hébergement auroral au toit de verre. La plupart des cabanes de verre phares du pays (Kakslauttanen, Star Arctic, Northern Lights Village) se situent à moins de 10 km du village.',
-        'Le village lui-même est petit et facile à parcourir à pied, avec une rue principale, trois restaurants sérieux et un accès direct au parc national. L\'aéroport d\'Ivalo, à 30 minutes de transfert privé, accueille les jets régionaux et les vols charters privés.',
+        'Saariselkä se trouve à la lisière nord du parc national d\'Urho Kekkonen, l\'une des plus vastes étendues sauvages de Finlande, et c\'est le village qui a défini l\'hébergement auroral au toit de verre. La plupart des cabanes de verre les plus connues du pays (Kakslauttanen, Star Arctic, Northern Lights Village) se situent à moins de 10 km du village.',
+        'Le village lui-même est petit et facile à parcourir à pied : une rue principale, quelques restaurants et un accès direct au parc national. L\'aéroport d\'Ivalo est à 27 km, soit environ une demi-heure en transfert privé, et il accueille aussi bien les vols réguliers que les charters privés.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, la propriété au toit de verre originelle',
@@ -157,14 +157,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Accès direct au parc national d\'Urho Kekkonen (de niveau nature sauvage)',
         'Aéroport d\'Ivalo, capable d\'accueillir des charters privés, 30 min de transfert',
       ],
-      arrival: 'Ivalo (IVL), 30 min en transfert privé',
-      auroraNote: 'Forêt boréale intérieure, faible pollution lumineuse. ~200 nuits aurorales à ciel dégagé par saison, la deuxième meilleure de Finlande après Inari.',
+      arrival: 'Ivalo (IVL), 27 km, environ 30 min en transfert privé',
+      auroraNote: 'Forêt boréale intérieure, sans aucune lumière d\'habitation sur des dizaines de kilomètres dans toutes les directions. Les fjells offrent un horizon haut et dégagé, ce qui compte les nuits où l\'arc reste bas sur le nord.',
     },
     'inari': {
-      position: 'Statistiquement la latitude aurorale la plus fiable de l\'Union européenne. Cœur sami, lac Inari, ciels noirs.',
+      position: 'Notre destination la plus septentrionale, où les aurores sont observées environ trois nuits sur quatre. Cœur sami, lac Inari, ciels noirs.',
       copy: [
-        'Inari est la commune la plus septentrionale de Finlande et la capitale culturelle des Samis finlandais. Le village est situé sur le lac Inari, le troisième plus grand lac de Finlande, avec 3 000 îles et la plus faible pollution lumineuse au sud du cercle polaire.',
-        'Pour le voyage de luxe, cela signifie deux choses. D\'abord : les aurores y sont statistiquement les plus fiables de l\'Union européenne, avec les manifestations les plus à la verticale. Ensuite : les domaines en rondins au bord du lac (dont certains que nous réservons en privé) sont l\'hébergement le plus paisible de Laponie, sans circulation de passage, sans village voisin sur l\'horizon visible.',
+        'Inari est la commune la plus septentrionale de Finlande et la capitale culturelle des Samis finlandais. Le village est situé sur le lac Inari, le troisième plus grand lac de Finlande, avec quelque 3 000 îles, à plus de 200 km au nord du cercle polaire et sans aucune lumière urbaine sur l\'horizon.',
+        'Pour le voyage de luxe, cela signifie deux choses. D\'abord : à cette latitude, l\'Institut météorologique finlandais observe les aurores environ trois nuits sur quatre, et elles se tiennent à la verticale plutôt que basses sur le nord. Ensuite : les domaines en rondins au bord du lac, dont certains que nous réservons en privé, comptent parmi les hébergements les plus paisibles de Laponie : sans circulation de passage, sans village voisin sur l\'horizon visible.',
       ],
       highlights: [
         'Aurora Village, domaine de cabanes de verre de 30 hectares conçu à dessein',
@@ -172,13 +172,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Musée sami SIIDA + programmes culturels toute l\'année',
         'Domaines en rondins privés au bord du lac, disponibles via le concierge',
       ],
-      arrival: 'Ivalo (IVL), 45 min en transfert privé',
-      auroraNote: 'Fréquence aurorale la plus élevée de l\'UE continentale. ~220 nuits aurorales à ciel dégagé par saison, la gagnante statistique.',
+      arrival: 'Ivalo (IVL), 40 km, environ 40 min en transfert privé',
+      auroraNote: 'Notre destination la plus septentrionale, et celle où l\'aurore se tient le plus souvent à la verticale plutôt que basse sur le nord. Le lac Inari offre un horizon ininterrompu, sans lumière de village dessus.',
     },
     'rovaniemi': {
       position: 'La ville d\'arrivée. Suites d\'architecte, vols directs quotidiens depuis les grands hubs.',
       copy: [
-        'Rovaniemi est la capitale régionale de la Laponie et la destination aurorale la plus facile d\'accès, plusieurs vols directs quotidiens depuis Helsinki, ainsi que des vols directs saisonniers depuis Londres, Francfort, Paris, Vienne et le Golfe. L\'aéroport est à six minutes du centre-ville.',
+        'Rovaniemi est la capitale régionale de la Laponie et la destination aurorale la plus facile d\'accès, plusieurs vols directs quotidiens depuis Helsinki, ainsi que des vols directs saisonniers depuis Londres, Francfort, Paris, Vienne et le Golfe. L\'aéroport est à environ 10 km au nord du centre-ville, dix à quinze minutes en voiture.',
         'L\'offre de luxe s\'articule ici autour de suites d\'architecte à moins de dix minutes de l\'aéroport (Arctic TreeHouse, Apukka). Les transferts en hélicoptère de l\'aéroport vers les réserves isolées sont courants.',
       ],
       highlights: [
@@ -186,38 +186,38 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Apukka Resort, wagons auroraux patrimoniaux sur le lac Apukkajärvi',
         'Vols directs depuis Londres / Francfort / Vienne / Doha (saisonniers)',
       ],
-      arrival: 'Rovaniemi (RVN), 6 min du centre-ville',
-      auroraNote: 'Latitude aurorale plus basse qu\'Inari/Saariselkä mais toujours ~150 nuits aurorales à ciel dégagé. À combiner idéalement avec au moins une nuit en village de fjell.',
+      arrival: 'Rovaniemi (RVN), 10 km, 10 à 15 min du centre-ville',
+      auroraNote: 'Notre destination la plus méridionale et la seule dont l\'horizon porte les lumières d\'une ville, si bien que l\'aurore y est à la fois moins fréquente et plus difficile à voir. À combiner avec au moins une nuit dans un village de fjell plus au nord.',
     },
     'levi': {
       position: 'La première station de ski de Finlande. Chalets de luxe sur le versant sud, ski-in / ski-out depuis la télécabine de Levi.',
       copy: [
-        'Levi est la station de fjell la plus développée de Laponie, un véritable village de sports d\'hiver avec 43 remontées, plusieurs cuisines recommandées par le Michelin et un marché de location de chalets de designer devenu sérieux au cours de la dernière décennie. La télécabine relie le centre du village au sommet ; c\'est sur le versant sud que se trouvent les chalets privés.',
+        'Levi est la station de fjell la plus développée de Laponie, un véritable village de sports d\'hiver avec 44 pistes et 26 remontées, dont deux télécabines. Le marché de la location de chalets de designer y est devenu sérieux au cours de la dernière décennie. La télécabine relie le centre du village au sommet à 531 mètres ; c\'est sur le versant sud que se trouvent les chalets privés, et un nouveau télésiège y ouvre pour la saison 2026-2027.',
         'La visibilité des aurores depuis Levi est orientée sud et spectaculaire, chose rare en Laponie, puisque la ligne d\'horizon illuminée du village fait partie de la photographie. À combiner idéalement avec une ou deux nuits plus au nord (Inari ou Saariselkä) pour de vraies aurores sauvages avant de revenir ici pour le ski.',
       ],
       highlights: [
         'Levin Iglut, igloos de verre orientés sud au-dessus du village de fjell',
         'Chalets d\'architecte de designer, versant sud, ski-in/out',
-        '43 remontées, piste la plus longue de 2,5 km, saison nov.–mai',
+        '44 pistes, 26 remontées (deux télécabines), 38,5 km de piste damée',
         'L\'aéroport de Kittilä (KTT) accueille des vols intl. directs saisonniers',
       ],
-      arrival: 'Kittilä (KTT), 20 min en transfert privé',
-      auroraNote: 'Panorama auroral orienté sud (rare). ~150 nuits à ciel dégagé, mais le village illuminé offre une composition d\'avant-plan peu commune plus au nord.',
+      arrival: 'Kittilä (KTT), 15 km, environ 20 min en transfert privé',
+      auroraNote: 'Un panorama orienté sud, chose rare en Laponie : le village de fjell illuminé devient le premier plan de la photo. La contrepartie est cette lumière même, et la vue la plus sombre se trouve donc à quelques minutes de voiture.',
     },
     'yllas': {
       position: 'L\'alternative paisible à Levi. Parc national de Pallas-Yllästunturi, moins de foule, forêt plus profonde.',
       copy: [
-        'Ylläs est la deuxième plus grande station de fjell de Finlande mais paraît cinq fois plus petite, le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjell, avec le parc national de Pallas-Yllästunturi entre elles. L\'offre de ski égale celle de Levi ; pas la densité de visiteurs.',
-        'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjell ; les sentiers du parc national partent de la propriété ; le silence est ce pour quoi les gens paient réellement. La visibilité des aurores est excellente grâce à une pollution lumineuse locale très faible.',
+        'Ylläs compte 62 pistes, plus que toute autre station de Finlande, et les plus longues descentes du pays : plus de trois kilomètres depuis le sommet dénudé à 719 mètres jusqu\'à la vallée. La station paraît pourtant une fraction de Levi, car le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjell et par le parc national de Pallas-Yllästunturi.',
+        'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjell, les sentiers du parc national partent de la propriété, et le silence est ce pour quoi les gens paient réellement. Le réseau de fond compte environ 300 kilomètres, dont plus de 30 éclairés.',
       ],
       highlights: [
         'Parc national de Pallas-Yllästunturi, le 3e plus grand de Finlande',
         'Deux villages de ski de part et d\'autre du fjell d\'Ylläs',
         'Pollution lumineuse plus faible que toute autre station de ski',
-        'Pistes de ski de fond dédiées (250 km au total)',
+        'Environ 300 km de pistes de fond entretenues, plus de 30 km éclairés',
       ],
-      arrival: 'Kittilä (KTT), 50 min en transfert privé',
-      auroraNote: 'À l\'intérieur des limites du parc national, parmi les relevés de pollution lumineuse les plus faibles d\'Europe continentale. ~180 nuits à ciel dégagé.',
+      arrival: 'Kittilä (KTT), 40 km, environ 45 min en transfert privé',
+      auroraNote: 'Les chalets sont adossés au parc national plutôt qu\'au cœur d\'une station, on sort donc directement dans le noir au lieu de rouler pour le trouver.',
     },
   },
   experiences: {

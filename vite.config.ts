@@ -17,9 +17,21 @@ export default defineConfig({
             if (/[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/.test(id)) return 'react-vendor'
             if (/[\\/]node_modules[\\/]lucide-react/.test(id)) return 'ui-vendor'
           }
-          // Split monolithic locale COPY into its own chunk so the main entry
-          // bundle stays small. Loaded in parallel with the main bundle.
-          if (id.includes('/src/locales/copy') || id.includes('\\src\\locales\\copy')) return 'locales'
+          // 🔴 REMOVED 2026-08-01. This rule used to force every
+          // `src/locales/copy.*.ts` into one chunk named `locales`. It was
+          // written to keep the entry bundle small, and it did — by inventing a
+          // 309 KB (77 KB brotli) second bundle that EVERY visitor downloaded
+          // in EVERY language, because a single chunk cannot be code-split.
+          //
+          // `src/locales/copy.ts` already loads exactly one language through a
+          // dynamic `import()`, and `src/lib/villaI18n.ts` does the same for the
+          // content overlays (which were correctly split all along — see the
+          // per-language content.<lang> chunks in any build). Rollup splits the
+          // copy files the same way once nothing overrides it, so a Finnish
+          // visitor stops paying for Korean, Japanese and nine other locales.
+          //
+          // English still ships in the entry bundle: `copy.ts` imports it
+          // statically as the guaranteed fallback. That is deliberate.
           return undefined
         },
       },

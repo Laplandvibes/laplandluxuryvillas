@@ -148,8 +148,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'De luxe noorderlichthub van Noord-Finland, Kakslauttanen, Star Arctic, de wilde rand van Urho Kekkonen.',
       copy: [
-        'Saariselkä ligt aan de noordelijke rand van het Nationaal Park Urho Kekkonen, de wildste beschermde wildernis van Finland, en is het dorp dat de noorderlichtaccommodatie met glazen dak heeft gedefinieerd. De meeste vlaggenschip-glashutten van het land (Kakslauttanen, Star Arctic, Northern Lights Village) liggen binnen 10 km van het dorp.',
-        'Het dorp zelf is klein en goed te belopen, met één hoofdweg, drie serieuze restaurants en directe toegang tot het nationaal park. De luchthaven van Ivalo, op 30 minuten privétransfer, handelt regionale jets en privécharters af.',
+        'Saariselkä ligt aan de noordelijke rand van het Nationaal Park Urho Kekkonen, een van de grootste wildernisgebieden van Finland, en is het dorp dat de noorderlichtaccommodatie met glazen dak heeft gedefinieerd. De meeste bekende glashutten van het land (Kakslauttanen, Star Arctic, Northern Lights Village) liggen binnen 10 km van het dorp.',
+        'Het dorp zelf is klein en goed te belopen: één hoofdweg, een paar restaurants en directe toegang tot het nationaal park. De luchthaven van Ivalo ligt op 27 km, ongeveer een half uur per privétransfer, en handelt zowel lijnvluchten als privécharters af.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, het oorspronkelijke pand met glazen dak',
@@ -157,14 +157,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Directe toegang tot het Nationaal Park Urho Kekkonen (wildernisniveau)',
         'Luchthaven van Ivalo, geschikt voor privécharters, transfer van 30 min',
       ],
-      arrival: 'Ivalo (IVL), 30 min per privétransfer',
-      auroraNote: 'Boreaal bos in het binnenland, weinig lichtvervuiling. ~200 heldere noorderlichtnachten per seizoen, het op een na beste van Finland na Inari.',
+      arrival: 'Ivalo (IVL), 27 km, ongeveer 30 min per privétransfer',
+      auroraNote: 'Boreaal bos in het binnenland, zonder bewoningslicht over tientallen kilometers in welke richting dan ook. De fjelden geven een hoge, open horizon, en dat telt op de nachten dat de boog laag in het noorden blijft.',
     },
     'inari': {
-      position: 'Statistisch gezien de betrouwbaarste noorderlichtbreedtegraad in de Europese Unie. Sami-hartland, Inarimeer, donkere hemel.',
+      position: 'Onze noordelijkste bestemming, waar het noorderlicht ongeveer drie nachten op vier wordt waargenomen. Sami-hartland, Inarimeer, donkere hemel.',
       copy: [
-        'Inari is de noordelijkste gemeente van Finland en de culturele hoofdstad van de Finse Sami. Het dorp ligt aan het Inarimeer, het op twee na grootste meer van Finland, met 3.000 eilanden en de laagste lichtvervuiling ten zuiden van de poolcirkel.',
-        'Voor luxereizen betekent dit twee dingen. Ten eerste: het noorderlicht is hier statistisch het betrouwbaarst in de Europese Unie, met de meeste ovaal-overhead vertoningen. Ten tweede: de blokhuislandgoederen aan het meer (waarvan wij er enkele privé aanhouden) zijn de rustigste accommodatie van Lapland, geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
+        'Inari is de noordelijkste gemeente van Finland en de culturele hoofdstad van de Finse Sami. Het dorp ligt aan het Inarimeer, het op twee na grootste meer van Finland, met zo’n 3.000 eilanden, ruim 200 km ten noorden van de poolcirkel en zonder stadslicht aan de horizon.',
+        'Voor luxereizen betekent dit twee dingen. Ten eerste: op deze breedtegraad neemt het Fins Meteorologisch Instituut het noorderlicht ongeveer drie nachten op vier waar, en staat het recht boven je in plaats van laag in het noorden. Ten tweede: de blokhuislandgoederen aan het meer, waarvan wij er enkele privé aanhouden, behoren tot de rustigste accommodaties van Lapland: geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
       ],
       highlights: [
         'Aurora Village, speciaal gebouwd glashuttenlandgoed van 30 hectare',
@@ -172,13 +172,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Sami-museum SIIDA + culturele programma\'s het hele jaar door',
         'Privé blokhuislandgoederen aan het meer beschikbaar via de concierge',
       ],
-      arrival: 'Ivalo (IVL), 45 min per privétransfer',
-      auroraNote: 'Hoogste noorderlichtfrequentie van de continentale EU. ~220 heldere noorderlichtnachten per seizoen, de statistische winnaar.',
+      arrival: 'Ivalo (IVL), 40 km, ongeveer 40 min per privétransfer',
+      auroraNote: 'Onze noordelijkste bestemming, en die waar het noorderlicht het vaakst recht boven je staat in plaats van laag in het noorden. Het Inarimeer geeft een ononderbroken horizon, zonder dorpslicht erop.',
     },
     'rovaniemi': {
       position: 'De aankomststad. Door architecten gebouwde suites, dagelijkse directe vluchten vanaf grote hubs.',
       copy: [
-        'Rovaniemi is de regionale hoofdstad van Lapland en de gemakkelijkst bereikbare noorderlichtbestemming, meerdere directe vluchten per dag vanuit Helsinki, plus seizoensgebonden directe vluchten vanuit Londen, Frankfurt, Parijs, Wenen en de Golf. De luchthaven ligt op zes minuten van het stadscentrum.',
+        'Rovaniemi is de regionale hoofdstad van Lapland en de gemakkelijkst bereikbare noorderlichtbestemming, meerdere directe vluchten per dag vanuit Helsinki, plus seizoensgebonden directe vluchten vanuit Londen, Frankfurt, Parijs, Wenen en de Golf. De luchthaven ligt ongeveer 10 km ten noorden van het stadscentrum, tien tot vijftien minuten met de auto.',
         'Het luxeaanbod hier draait om door architecten gebouwde designersuites binnen tien minuten van de luchthaven (Arctic TreeHouse, Apukka). Helikoptertransfers van de luchthaven naar afgelegen reservaten zijn gebruikelijk.',
       ],
       highlights: [
@@ -186,38 +186,38 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Apukka Resort, historische noorderlichtwagons aan het Apukkajärvi-meer',
         'Directe vluchten vanuit Londen / Frankfurt / Wenen / Doha (seizoensgebonden)',
       ],
-      arrival: 'Rovaniemi (RVN), 6 min van het stadscentrum',
-      auroraNote: 'Lagere noorderlichtbreedtegraad dan Inari/Saariselkä maar nog steeds ~150 heldere noorderlichtnachten. Het best gecombineerd met minstens één nacht in een fjelddorp.',
+      arrival: 'Rovaniemi (RVN), 10 km, 10 tot 15 min van het stadscentrum',
+      auroraNote: 'Onze zuidelijkste bestemming en de enige met stadslicht aan de horizon, waardoor het noorderlicht hier zowel minder vaak verschijnt als lastiger te zien is. Het best gecombineerd met minstens één nacht in een fjelddorp verder naar het noorden.',
     },
     'levi': {
       position: 'Het toonaangevende skiresort van Finland. Luxechalets op de zuidhelling, ski-in / ski-out vanaf de gondel van Levi.',
       copy: [
-        'Levi is het meest ontwikkelde fjeldresort van Lapland, een compleet wintersportdorp met 43 liften, meerdere door Michelin aanbevolen keukens en een verhuurmarkt voor designerchalets die het afgelopen decennium serieus is gegroeid. De gondel loopt van het dorpscentrum naar de top; de zuidhelling is waar de privéchalets staan.',
+        'Levi is het meest ontwikkelde fjeldresort van Lapland, een compleet wintersportdorp met 44 pistes en 26 liften, waarvan twee gondels. De verhuurmarkt voor designerchalets is er het afgelopen decennium serieus gegroeid. De gondel loopt van het dorpscentrum naar de top op 531 meter; op de zuidhelling staan de privéchalets, en daar opent een nieuwe stoeltjeslift voor het seizoen 2026-2027.',
         'De noorderlichtzichtbaarheid vanuit Levi is op het zuiden gericht en dramatisch, zeldzaam voor Lapland, omdat de verlichte dorpsskyline onderdeel wordt van de foto. Het best gecombineerd met een of twee nachten verder naar het noorden (Inari of Saariselkä) voor echt wildernis-noorderlicht, voordat u hier terugkeert om te skiën.',
       ],
       highlights: [
         'Levin Iglut, glazen iglo\'s op het zuiden boven het fjelddorp',
         'Door architecten gebouwde designerchalets, zuidhelling, ski-in/out',
-        '43 skiliften, langste piste 2,5 km, seizoen nov–mei',
+        '44 pistes, 26 liften (twee gondels), 38,5 km geprepareerde piste',
         'Luchthaven Kittilä (KTT) handelt seizoensgebonden directe internationale vluchten af',
       ],
-      arrival: 'Kittilä (KTT), 20 min per privétransfer',
-      auroraNote: 'Noorderlichtpanorama op het zuiden (zeldzaam). ~150 heldere nachten, maar het verlichte dorp biedt een voorgrondcompositie die verder naar het noorden ongebruikelijk is.',
+      arrival: 'Kittilä (KTT), 15 km, ongeveer 20 min per privétransfer',
+      auroraNote: 'Een panorama op het zuiden, wat in Lapland zeldzaam is: het verlichte fjelddorp wordt de voorgrond van de foto. De prijs is datzelfde dorpslicht, dus het donkerste uitzicht ligt een korte autorit verderop.',
     },
     'yllas': {
       position: 'Het rustige alternatief voor Levi. Nationaal Park Pallas-Yllästunturi, minder drukte, dieper bos.',
       copy: [
-        'Ylläs is het op een na grootste fjeldresort van Finland maar voelt als een vijfde van de omvang, het dorp is verspreid over twee nederzettingen (Äkäslompolo en Ylläsjärvi), gescheiden door 15 km fjeld, met het Nationaal Park Pallas-Yllästunturi ertussen. Het ski-aanbod evenaart dat van Levi; de bezoekersdichtheid niet.',
-        'Voor luxereizen zit de aantrekkingskracht in de ruimte. Door architecten gebouwde chalets staan hier alleen op de fjeldflank; de paden van het nationaal park vertrekken vanaf het pand; de stilte is waar mensen werkelijk voor betalen. De noorderlichtzichtbaarheid is uitstekend dankzij de zeer lage plaatselijke lichtvervuiling.',
+        'Ylläs heeft 62 pistes, meer dan welk ander skigebied van Finland ook, en de langste afdalingen van het land: ruim drie kilometer vanaf de kale top op 719 meter naar het dal. Toch voelt het als een fractie van Levi, want het dorp is verspreid over twee nederzettingen (Äkäslompolo en Ylläsjärvi), gescheiden door 15 km fjeld en het Nationaal Park Pallas-Yllästunturi.',
+        'Voor luxereizen zit de aantrekkingskracht in de ruimte. Door architecten gebouwde chalets staan hier alleen op de fjeldflank, de paden van het nationaal park vertrekken vanaf het pand, en de stilte is waar mensen werkelijk voor betalen. Het loipenetwerk telt ongeveer 300 kilometer, waarvan ruim 30 kilometer verlicht.',
       ],
       highlights: [
         'Nationaal Park Pallas-Yllästunturi, het op twee na grootste van Finland',
         'Twee skidorpen aan weerszijden van de fjeld van Ylläs',
         'Lagere lichtvervuiling dan welk ander skiresort ook',
-        'Speciale langlaufloipes (250 km in totaal)',
+        'Ongeveer 300 km geprepareerde loipes, ruim 30 km verlicht',
       ],
-      arrival: 'Kittilä (KTT), 50 min per privétransfer',
-      auroraNote: 'Binnen de grens van het nationaal park, een van de laagste lichtvervuilingswaarden van continentaal Europa. ~180 heldere nachten.',
+      arrival: 'Kittilä (KTT), 40 km, ongeveer 45 min per privétransfer',
+      auroraNote: 'De chalets staan tegen het nationaal park aan in plaats van midden in een resort, dus je stapt de deur uit zo de duisternis in in plaats van ernaartoe te rijden.',
     },
   },
   experiences: {

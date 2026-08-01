@@ -6,9 +6,11 @@
 // where the *premium* inventory concentrates. SIDs are snake_case with no
 // domain prefix (Worker injects the domain from Referer for CJ attribution).
 
+import { PROPERTIES, type Property, type PropertyKey } from '../data/properties'
+
+// The Worker injects partner_id and the `lv_<domain>_<sid>` campaign tag from
+// the Referer, so neither belongs in this file any more.
 const REDIRECT_BASE = 'https://go.laplandvibes.com'
-const SITE_ID = 'laplandluxuryvillas'
-const GYG_PARTNER_ID_TOP = 'VRMKD7N'
 
 export type Partner =
   | 'hotels'
@@ -50,31 +52,18 @@ const CARS_LANG: Record<Lang, string> = {
   sv: "sv",
 };
 
-const GYG_DOMAIN: Record<Lang, string> = {
-  en: "https://www.getyourguide.com",
-  fi: "https://www.getyourguide.com",
-  de: "https://www.getyourguide.de",
-  ja: "https://www.getyourguide.com",
-  es: "https://www.getyourguide.es",
-  "pt-BR": "https://www.getyourguide.com.br",
-  "zh-CN": "https://www.getyourguide.com",
-  ko: "https://www.getyourguide.com",
-  fr: "https://www.getyourguide.fr",
-  it: "https://www.getyourguide.it",
-  nl: "https://www.getyourguide.nl",
-  sv: "https://www.getyourguide.com",
-};
-
-const GYG_LANGUAGE: Partial<Record<Lang, string>> = {
-  fi: "fi", ja: "ja", es: "es", "pt-BR": "pt-br", "zh-CN": "zh",
-  ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv",
-};
-
 export interface BuildAffiliateOptions {
   partner: Partner
   sid: string
-  /** Hotels: property/city query (?ss=). Activities: GYG slug. */
+  /** Hotels: TOWN query (?ss=). Activities: GYG slug. Never a hotel name. */
   destination?: string
+  /**
+   * Partner property ids ([LV-PROPERTY 2026-07-27] Worker contract). With
+   * these the Worker deep-links to the property's own booking page instead of
+   * the town list. Omit either side when that partner has no page for it — the
+   * CTA then degrades via `ctaPromisesProperty()` rather than lying.
+   */
+  property?: { sembo?: readonly [string, string]; trip?: readonly [string, string] }
   /** Any additional query params (checkin, pickup_date, adults, etc). */
   query?: Record<string, string | number | undefined>
   /** Active site language; defaults to "en" for backwards compat. */
@@ -85,26 +74,15 @@ export function buildAffiliateUrl({
   partner,
   sid,
   destination,
+  property,
   query,
   lang = "en",
 }: BuildAffiliateOptions): string {
-  // ─── GYG direct deep-link (Worker-bypass) ─────────────────────────────
+  // ─── Activities: Worker-routed, product path in the URL path ──────────
+  // (The old branch built a raw getyourguide.com URL here, which took the
+  // click out of D1 entirely — see the GYG_LINKS note below.)
   if (partner === "activities") {
-    const base = GYG_DOMAIN[lang];
-    const path = (destination ?? "").replace(/^\/+/, "").replace(/\/+$/, "");
-    const url = new URL(path ? `${base}/${path}/` : `${base}/`);
-    url.searchParams.set("partner_id", GYG_PARTNER_ID_TOP);
-    url.searchParams.set("cmp", `lv_${SITE_ID}_${sid}`);
-    const gygLang = GYG_LANGUAGE[lang];
-    if (gygLang) url.searchParams.set("language", gygLang);
-    if (query) {
-      for (const [k, v] of Object.entries(query)) {
-        if (v !== undefined && v !== null && v !== "") {
-          url.searchParams.set(k, String(v));
-        }
-      }
-    }
-    return url.toString();
+    return gygProduct(destination ?? "", sid);
   }
 
   // ─── Hotels / Cars via Worker ─────────────────────────────────────────
@@ -117,6 +95,16 @@ export function buildAffiliateUrl({
 
   if (partner === "hotels" || partner === "hotels-seasonal" || partner === "hotels-budget") {
     params.set("locale", HOTELS_LOCALE[lang]);
+    // Property-level targeting. Purely additive: no ids -> the old ?ss= town
+    // behaviour, which is now an honest fallback rather than a broken promise.
+    if (property?.sembo) {
+      params.set("sembo_hotel", property.sembo[0]);
+      params.set("sembo_poly", property.sembo[1]);
+    }
+    if (property?.trip) {
+      params.set("trip_city", property.trip[0]);
+      params.set("trip_hotel", property.trip[1]);
+    }
   } else if (partner === "cars") {
     params.set("lang", CARS_LANG[lang]);
   }
@@ -131,11 +119,12 @@ export function buildAffiliateUrl({
 
   return `${REDIRECT_BASE}/go/${partner}?${params.toString()}`;
 }
-// ─── Hotels.com — luxury inventory concentrations ────────────────────────────
-// "Lapland, Finland" alone is NOT a Hotels.com destination — falls back to
-// Helsinki for FI users. Always pin to a real city. For Lapland-wide premium
-// CTAs, Saariselkä (Kakslauttanen + Star Arctic + Aurora Village hub) is the
-// luxury-inventory anchor.
+// ─── Lodging (Sembo for fi, Trip.com otherwise) — inventory concentrations ───
+// A bare "Lapland, Finland" is not a destination on either partner and drops
+// the visitor on a front page, so always pin to a real town. For Lapland-wide
+// premium CTAs, Saariselkä (Kakslauttanen + Star Arctic) is the luxury anchor.
+// These are TOWN searches by design: no property is named, so nothing here is
+// promising a property page. Named-property CTAs live in PROPERTY_SEARCH.
 export const HOTEL_SEARCH = (lang: Lang = "en") => ({
   // Generic landings — pinned to Saariselkä for luxury concentration.
   collection: buildAffiliateUrl({
@@ -162,20 +151,43 @@ export const HOTEL_SEARCH = (lang: Lang = "en") => ({
   lakesideRetreat: buildAffiliateUrl({ partner: 'hotels', sid: 'category_lakeside_retreat', destination: 'Inari, Finland', lang }),
 })
 
-// ─── Specific anchor properties — deep-link via ?ss=PROPERTY_NAME ────────────
-// Anchor only properties that actually exist on Hotels.com and meet the bar.
-// "Bar": private bath, premium materials, ≥4★ guest rating, listed at ≥€350/n.
-export const PROPERTY_SEARCH = (lang: Lang = "en") => ({
-  kakslauttanen: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Kakslauttanen Arctic Resort', lang }),
-  starArctic: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Star Arctic Hotel', lang }),
-  arcticTreeHouse: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Arctic TreeHouse Hotel', lang }),
-  auroraVillage: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Aurora Village Ivalo', lang }),
-  levinIglut: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Levin Iglut', lang }),
-  nellim: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Wilderness Hotel Nellim', lang }),
-  muotka: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Wilderness Hotel Muotka', lang }),
-  apukka: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Apukka Resort Rovaniemi', lang }),
-  arcticSnowHotel: buildAffiliateUrl({ partner: 'hotels', sid: 'property_card', destination: 'Arctic Snow Hotel', lang }),
-})
+// ─── Specific anchor properties — deep-link to the property's OWN page ───────
+//
+// Built from the canonical registry in `src/data/properties.ts` so a card, its
+// Google rating and its booking link can never disagree about which business
+// they mean. Each URL carries the partner property ids when they exist and the
+// property's TOWN as `?ss=` either way.
+//
+// 🔴 The `sid` used to name the placement, not the property, so every card on
+// the site reported as `property_card` and the click log could not tell
+// Kakslauttanen from Apukka. It now carries the registry key.
+//
+// The prefix is `villa_` and not `property_card_` for a measured reason: the
+// partners' sub-id field is 50 characters and the Worker prepends
+// `laplandluxuryvillas_com_` (24 of them). `property_card_kakslauttanen`
+// arrived at Trip.com as `…_property_card_kakslauttane`, silently clipped.
+// `villa_` leaves room for the longest key on this site with margin.
+export const PROPERTY_SEARCH = (lang: Lang = "en") => {
+  const out = {} as Record<PropertyKey, string>
+  for (const key of Object.keys(PROPERTIES) as PropertyKey[]) {
+    // Widen off the `as const` literal union: entries that omit a partner's ids
+    // otherwise have no such key at all, rather than an optional one.
+    const p: Property = PROPERTIES[key]
+    out[key] = buildAffiliateUrl({
+      partner: 'hotels',
+      sid: `villa_${toSnake(key)}`,
+      destination: p.city,
+      property: { sembo: p.sembo, trip: p.trip },
+      lang,
+    })
+  }
+  return out
+}
+
+/** `arcticTreeHouse` -> `arctic_tree_house`, so SIDs stay snake_case per spec. */
+function toSnake(key: string): string {
+  return key.replace(/([a-z0-9])([A-Z])/g, '$1_$2').toLowerCase()
+}
 
 // ─── EconomyBookings (cars) — premium pickup hubs ────────────────────────────
 export const CARS = (lang: Lang = "en") => ({
@@ -185,36 +197,63 @@ export const CARS = (lang: Lang = "en") => ({
   fromIvalo: buildAffiliateUrl({ partner: 'cars', sid: 'cars_ivalo', query: { pickup_location: 'IVL' }, lang }),
 })
 
-// ─── GetYourGuide — DIRECT deep-link (bypass go.lv Worker) ──────────────────
-// `bug_go_lv_worker_gyg_dropped.md` 2026-05-02: every `/go/activities/<slug>`
-// 302s to GYG homepage. Until the Worker is fixed, link straight to GYG with
-// our partner_id + cmp campaign tag preserved for attribution.
-const GYG_PARTNER_ID = 'VRMKD7N'
+// ─── GetYourGuide — through the Worker, as a real SEARCH ─────────────────────
+//
+// Two things were wrong here until 2026-08-01, and they compounded.
+//
+// 1. THE LINKS DID NOT SEARCH. Every CTA was
+//    `getyourguide.com/lapland-finland-l2652/?q=helicopter`, and GetYourGuide's
+//    LOCATION pages ignore `?q=` — proven in a real browser 2026-07-31 across
+//    the network. All five experience buttons therefore landed on the same bare
+//    Lapland listing, whatever the card promised. `/s?q=…` is the endpoint that
+//    actually searches, so that is what the Worker is asked for here.
+//
+// 2. THEY BYPASSED THE WORKER. The bypass was a correct workaround for
+//    `bug_go_lv_worker_gyg_dropped.md` (2026-05-02, `/go/activities/<slug>`
+//    302'd to the GYG homepage). That bug is fixed: probed 2026-08-01,
+//    `/go/activities/rovaniemi-l385/…-t864972` now 302s to the product page
+//    with partner_id and cmp intact. The bypass outlived it and cost every
+//    activity click its D1 row, so this site's activity revenue was invisible
+//    in the Command Center. Routing back through the Worker restores that.
+//
+// 🔴 A search page is the FLOOR, not the goal. Vesa 2026-07-31: when we name an
+// experience, the button belongs on that operator's own product page. The named
+// products for this site are curated in `shared/activities/heroes.ts` under
+// "Luksus & yksityiset" and must each be opened in a real browser before they
+// ship — a wrong GetYourGuide id serves a plausible page for another product in
+// another country rather than a 404. Until each is verified, these cards say
+// "view options" and search, which is a promise we can keep.
+function gygSearch(sid: string, q: string): string {
+  return `${REDIRECT_BASE}/go/activities?sid=${encodeURIComponent(sid)}&q=${encodeURIComponent(q)}`
+}
 
-export function gygSearchLink(slug: string, sid: string, q?: string): string {
-  const params = new URLSearchParams({
-    partner_id: GYG_PARTNER_ID,
-    cmp: `lv_laplandluxuryvillas_${sid}`,
-  })
-  if (q) params.set('q', q)
-  return `https://www.getyourguide.com/${slug}?${params.toString()}`
+/** Product-path deep link through the Worker. Path = `<place-lNNN>/<slug-tNNN>`. */
+export function gygProduct(path: string, sid: string): string {
+  const clean = path.replace(/^\/+/, '').replace(/\/+$/, '')
+  return `${REDIRECT_BASE}/go/activities/${clean}?sid=${encodeURIComponent(sid)}`
 }
 
 export const GYG_LINKS = {
-  laplandPremium: gygSearchLink('lapland-finland-l2652/', 'experiences_premium', 'private tour'),
-  helicopter: gygSearchLink('lapland-finland-l2652/', 'experience_helicopter', 'helicopter'),
-  privateAurora: gygSearchLink('lapland-finland-l2652/', 'experience_private_aurora', 'private northern lights tour'),
-  snowmobileVip: gygSearchLink('lapland-finland-l2652/', 'experience_snowmobile_vip', 'snowmobile'),
-  husky: gygSearchLink('lapland-finland-l2652/', 'experience_husky', 'husky safari'),
-  reindeer: gygSearchLink('lapland-finland-l2652/', 'experience_reindeer', 'reindeer sleigh'),
+  laplandPremium: gygSearch('experiences_premium', 'private tour Lapland Finland'),
+  helicopter: gygSearch('experience_helicopter', 'helicopter tour Lapland Finland'),
+  privateAurora: gygSearch('experience_private_aurora', 'private northern lights tour Lapland'),
+  snowmobileVip: gygSearch('experience_snowmobile_vip', 'private snowmobile tour Lapland'),
+  husky: gygSearch('experience_husky', 'private husky safari Lapland'),
+  reindeer: gygSearch('experience_reindeer', 'private reindeer sleigh Lapland'),
 }
 
 /**
- * Anchor any hotels search to Finnish Lapland. A bare "Lapland"/"Levi"/etc.
- * makes Hotels.com geocode to *Lapland, Indiana, USA* — a real revenue/trust
- * bug (Vesa 2026-07-08). Force ", Finland" onto every hotels query that does
- * not already name the country; leave cars/activities queries untouched.
- * Callers cannot re-introduce the bug.
+ * Anchor any lodging search to Finnish Lapland. A bare "Lapland"/"Levi"/etc.
+ * geocodes to *Lapland, Indiana, USA* — a real revenue/trust bug (Vesa
+ * 2026-07-08). Force ", Finland" onto every lodging query that does not
+ * already name the country; leave cars/activities queries untouched.
+ *
+ * 🔴 This guard is for PLACES and only works on places. Appending ", Finland"
+ * to a hotel NAME is actively harmful: Sembo's autosuggest answers [] for the
+ * multi-part term, so the Worker gets no destination and falls back to the
+ * front page. Measured 2026-08-01 — "Arctic TreeHouse Hotel" resolved, and
+ * "Arctic TreeHouse Hotel, Finland" did not. Every `?ss=` this file emits is
+ * therefore a town; properties are targeted by id instead.
  */
 function anchorHotelsSs(partner: string, destination: string): string {
   const isHotels = partner === "hotels" || partner === "hotels-seasonal" || partner === "hotels-budget";

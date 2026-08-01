@@ -5,6 +5,8 @@ import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import ConciergeBand from '../components/ConciergeBand'
 import PartnerStayAd from '../components/PartnerStayAd'
+import DestinationFacts from '../components/DestinationFacts'
+import RelatedSites from '../components/RelatedSites'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
@@ -74,7 +76,10 @@ export default function DestinationPage() {
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)] via-[color:var(--color-deep-night)]/55 to-transparent" />
+        {/* Lightened with Hero.tsx 2026-08-01: `from-deep-night` at full opacity
+            buried the bottom half of the photograph, and the headline sits on
+            its own drop-shadow anyway. */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/35 to-transparent" />
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
           <Link
             to={to('/destinations')}
@@ -128,6 +133,12 @@ export default function DestinationPage() {
         </div>
       </section>
 
+      {/* Sourced facts from the network's per-municipality registry. Added
+          2026-08-01: the page had two paragraphs and a sidebar and nothing a
+          reader could check, which is what "ei tietoa ja ihan keskeneräiset"
+          meant. Every number here links to the official page it came from. */}
+      <DestinationFacts slug={dest.slug} />
+
       {/* VILLAS IN THIS DESTINATION */}
       {villas.length > 0 && (
         <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
@@ -169,6 +180,10 @@ export default function DestinationPage() {
       </section>
 
       <ConciergeBand title={c.destinationPage.conciergeTitle(dest.name)} body={c.destinationPage.conciergeBody} />
+
+      {/* Sibling sites, including family itineraries and aurora activities —
+          a destination page is where a reader wants the rest of the trip. */}
+      <RelatedSites />
 
       <NewsletterSection />
     </Page>

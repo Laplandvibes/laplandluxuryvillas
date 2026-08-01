@@ -5,7 +5,7 @@ import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import GoogleRatingRow from './GoogleRatingRow'
 import EditorsPickChip from './EditorsPickChip'
-import { propertyForVilla, type RankableProperty } from '../data/properties'
+import { propertyForVilla, ctaPromisesProperty, type RankableProperty } from '../data/properties'
 import { formatRate } from '../lib/rate'
 
 interface VillaCardProps {
@@ -41,6 +41,12 @@ export default function VillaCard({
   const property = propertyForVilla(villa.slug)
   const isPick = pickProperty !== null && property === pickProperty
   const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
+  // "View rates" is a promise that the click lands on THIS property's booking
+  // page. It only holds where the partner serving this language has a page for
+  // it — Nellim has none on either partner, Aurora Village none on Trip.com —
+  // so those cards say "view options" and land on the town instead.
+  const promisesProperty = ctaPromisesProperty(property, lang)
+  const detailPath = to(`/villas/${villa.slug}`)
 
   return (
     <article className="card-onyx flex flex-col h-full overflow-hidden">
@@ -82,8 +88,17 @@ export default function VillaCard({
           />
         )}
 
-        <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-tight mb-3">
-          {villa.name}
+        {/* The card title is the way into /villas/:slug. Until 2026-08-01 no
+            card linked there at all: 108 detail URLs sat in the sitemap with
+            zero internal links, so the richest pages on the site were orphans
+            for a crawler and a dead end for a reader. */}
+        <h3 className="font-heading text-2xl leading-tight mb-3">
+          <Link
+            to={detailPath}
+            className="text-[color:var(--color-snow)] no-underline hover:text-[color:var(--color-brass)] transition-colors"
+          >
+            {villa.name}
+          </Link>
         </h3>
 
         {/* Google's verdict on the PROPERTY that contains this room type, with
@@ -92,9 +107,17 @@ export default function VillaCard({
             against the numbers it beat. */}
         <GoogleRatingRow property={property} className="mb-4" />
 
-        <p className="text-[color:var(--color-bone)]/75 text-sm leading-relaxed font-body mb-5">
+        <p className="text-[color:var(--color-bone)]/75 text-sm leading-relaxed font-body mb-4">
           {villa.tagline}
         </p>
+
+        <Link
+          to={detailPath}
+          className="inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[11px] tracking-[0.2em] uppercase font-body no-underline mb-5 group/profile"
+        >
+          {c.cta.readProfile}
+          <ArrowUpRight size={12} className="transition-transform group-hover/profile:translate-x-0.5 group-hover/profile:-translate-y-0.5" />
+        </Link>
 
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-[color:var(--color-bone)]/60 pb-5 border-b border-[color:var(--color-mist)]/40">
           <span className="inline-flex items-center gap-1.5">
@@ -139,7 +162,7 @@ export default function VillaCard({
               rel="sponsored nofollow noopener"
               className="inline-flex items-center gap-2 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass-bright)] transition-colors"
             >
-              {c.cta.viewRates}
+              {promisesProperty ? c.cta.viewRates : c.cta.viewOptions}
               <ArrowUpRight size={13} />
             </a>
           )}

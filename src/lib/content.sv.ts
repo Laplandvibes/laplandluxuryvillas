@@ -148,8 +148,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Norra Finlands lyxiga norrskenshubb, Kakslauttanen, Star Arctic, den vilda kanten av Urho Kekkonen.',
       copy: [
-        'Saariselkä ligger vid den norra kanten av Urho Kekkonens nationalpark, Finlands vildaste skyddade vildmark, och är byn som definierade norrskensboendet med glastak. De flesta av landets flaggskeppsstugor i glas (Kakslauttanen, Star Arctic, Northern Lights Village) ligger inom 10 km från byn.',
-        'Byn själv är liten och lättgången, med en huvudgata, tre seriösa restauranger och direkt tillgång till nationalparken. Ivalo flygplats, 30 minuters privat transfer bort, hanterar regionala jetplan och privata charter.',
+        'Saariselkä ligger vid den norra kanten av Urho Kekkonens nationalpark, ett av Finlands största vildmarksområden, och är byn som definierade norrskensboendet med glastak. De flesta av landets mest kända glasstugor (Kakslauttanen, Star Arctic, Northern Lights Village) ligger inom 10 km från byn.',
+        'Byn själv är liten och lättgången: en huvudgata, några restauranger och direkt tillgång till nationalparken. Till Ivalo flygplats är det 27 km, alltså ungefär en halvtimme med privat transfer, och den hanterar både reguljärflyg och privata charter.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, det ursprungliga boendet med glastak',
@@ -157,14 +157,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Direkt tillgång till Urho Kekkonens nationalpark (vildmarksnivå)',
         'Ivalo flygplats, lämplig för privata charter, transfer på 30 min',
       ],
-      arrival: 'Ivalo (IVL), 30 min med privat transfer',
-      auroraNote: 'Boreal skog i inlandet, lite ljusföroreningar. ~200 klara norrskensnätter per säsong, näst bäst i Finland efter Inari.',
+      arrival: 'Ivalo (IVL), 27 km, cirka 30 min med privat transfer',
+      auroraNote: 'Boreal skog i inlandet, utan bebyggelseljus på tiotals kilometer åt något håll. Fjällen ger en hög och öppen horisont, vilket avgör de nätter då bågen står lågt i norr.',
     },
     'inari': {
-      position: 'Statistiskt sett den mest tillförlitliga norrskensbreddgraden i Europeiska unionen. Samiskt kärnland, Enaresjön, mörk himmel.',
+      position: 'Vårt nordligaste resmål, där norrsken observeras ungefär tre nätter av fyra. Samiskt kärnland, Enaresjön, mörk himmel.',
       copy: [
-        'Inari är Finlands nordligaste kommun och de finska samernas kulturella huvudstad. Byn ligger vid Enaresjön, Finlands tredje största sjö, med 3 000 öar och den lägsta ljusföroreningen söder om polcirkeln.',
-        'För lyxresor betyder det två saker. För det första: norrskenet är här statistiskt sett mest tillförlitligt i Europeiska unionen, med flest ovalpasseringar rakt ovanför. För det andra: de strandnära timmergårdarna (varav vi håller några privata) är Lapplands lugnaste boende, ingen genomfartstrafik, inga grannbyar vid den synliga horisonten.',
+        'Inari är Finlands nordligaste kommun och de finska samernas kulturella huvudstad. Byn ligger vid Enaresjön, Finlands tredje största sjö, med omkring 3 000 öar, mer än 200 km norr om polcirkeln och utan stadsljus vid horisonten.',
+        'För lyxresor betyder det två saker. För det första: på den här breddgraden observerar Meteorologiska institutet norrsken i genomsnitt tre nätter av fyra, och det står rakt ovanför i stället för lågt i norr. För det andra: de strandnära timmergårdarna, varav vi håller några privata, hör till Lapplands lugnaste boenden: ingen genomfartstrafik, inga grannbyar vid den synliga horisonten.',
       ],
       highlights: [
         'Aurora Village, specialbyggt glasstugeområde på 30 hektar',
@@ -172,13 +172,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Samemuseet SIIDA + kulturprogram året runt',
         'Privata strandnära timmergårdar tillgängliga via conciergen',
       ],
-      arrival: 'Ivalo (IVL), 45 min med privat transfer',
-      auroraNote: 'Högsta norrskensfrekvensen i kontinentala EU. ~220 klara norrskensnätter per säsong, den statistiska vinnaren.',
+      arrival: 'Ivalo (IVL), 40 km, cirka 40 min med privat transfer',
+      auroraNote: 'Vårt nordligaste resmål och det där norrskenet oftast står rakt ovanför i stället för lågt i norr. Enaresjön ger en obruten horisont, och inget byljus ligger på den.',
     },
     'rovaniemi': {
       position: 'Ankomststaden. Arkitektbyggda sviter, dagliga direktflyg från stora hubbar.',
       copy: [
-        'Rovaniemi är Lapplands regionala huvudstad och det lättast nåbara norrskensresmålet, flera direktflyg per dag från Helsingfors, plus säsongsbetonade direktflyg från London, Frankfurt, Paris, Wien och Gulfregionen. Flygplatsen ligger sex minuter från stadskärnan.',
+        'Rovaniemi är Lapplands regionala huvudstad och det lättast nåbara norrskensresmålet, flera direktflyg per dag från Helsingfors, plus säsongsbetonade direktflyg från London, Frankfurt, Paris, Wien och Gulfregionen. Flygplatsen ligger cirka 10 km norr om stadskärnan, tio till femton minuter med bil.',
         'Lyxutbudet här kretsar kring arkitektbyggda designsviter inom tio minuter från flygplatsen (Arctic TreeHouse, Apukka). Helikoptertransfer från flygplatsen till avlägsna reservat är vanliga.',
       ],
       highlights: [
@@ -186,38 +186,38 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Apukka Resort, historiska norrskensvagnar vid sjön Apukkajärvi',
         'Direktflyg från London / Frankfurt / Wien / Doha (säsongsbetonat)',
       ],
-      arrival: 'Rovaniemi (RVN), 6 min från stadskärnan',
-      auroraNote: 'Lägre norrskensbreddgrad än Inari/Saariselkä men fortfarande ~150 klara norrskensnätter. Bäst i kombination med minst en natt i en fjällby.',
+      arrival: 'Rovaniemi (RVN), 10 km, 10–15 min från stadskärnan',
+      auroraNote: 'Vårt sydligaste resmål och det enda med en stads ljus vid horisonten, så norrskenet syns här mer sällan och är svårare att se när det kommer. Kombinera med minst en natt i en fjällby längre norrut.',
     },
     'levi': {
       position: 'Finlands ledande skidort. Lyxstugor på södra sluttningen, ski-in / ski-out från Levis gondol.',
       copy: [
-        'Levi är Lapplands mest utvecklade fjällort, en komplett vintersportby med 43 liftar, flera Michelin-rekommenderade kök och en uthyrningsmarknad för designstugor som vuxit rejält det senaste decenniet. Gondolen går från byns centrum till toppen; södra sluttningen är där privatstugorna står.',
+        'Levi är Lapplands mest utvecklade fjällort, en komplett vintersportby med 44 backar och 26 liftar, varav två gondoler. Uthyrningsmarknaden för designstugor har vuxit rejält det senaste decenniet. Gondolen går från byns centrum till toppen på 531 meter, och på södra sluttningen står privatstugorna. Dit kommer en ny stollift till säsongen 2026-2027.',
         'Norrskenssikten från Levi är riktad mot söder och dramatisk, ovanligt för Lappland, eftersom den upplysta bysilhuetten blir en del av bilden. Bäst i kombination med en eller två nätter längre norrut (Inari eller Saariselkä) för äkta vildmarksnorrsken, innan du återvänder hit för att åka skidor.',
       ],
       highlights: [
         'Levin Iglut, glasigloor mot söder ovanför fjällbyn',
         'Arkitektbyggda designstugor, södra sluttningen, ski-in/out',
-        '43 skidliftar, längsta nedfarten 2,5 km, säsong nov–maj',
+        '44 backar, 26 liftar (två gondoler), 38,5 km preparerad backe',
         'Kittilä flygplats (KTT) hanterar säsongsbetonade direkta internationella flyg',
       ],
-      arrival: 'Kittilä (KTT), 20 min med privat transfer',
-      auroraNote: 'Norrskenspanorama mot söder (ovanligt). ~150 klara nätter, men den upplysta byn ger en förgrundskomposition som är ovanlig längre norrut.',
+      arrival: 'Kittilä (KTT), 15 km, cirka 20 min med privat transfer',
+      auroraNote: 'Ett panorama mot söder, vilket är ovanligt i Lappland: den upplysta fjällbyn blir bildens förgrund. Priset är byns eget ljus, så den mörkaste utsikten ligger en kort bilfärd bort.',
     },
     'yllas': {
       position: 'Det lugna alternativet till Levi. Pallas-Yllästunturi nationalpark, mindre trängsel, djupare skog.',
       copy: [
-        'Ylläs är Finlands näst största fjällort men känns som en femtedel av storleken, byn är utspridd över två orter (Äkäslompolo och Ylläsjärvi), åtskilda av 15 km fjäll, med Pallas-Yllästunturi nationalpark emellan. Skidutbudet matchar Levis; besökstätheten gör det inte.',
-        'För lyxresor sitter dragningskraften i rymligheten. Arkitektbyggda stugor står här ensamma på fjällsluttningen; nationalparkens leder utgår från boendet; tystnaden är det folk faktiskt betalar för. Norrskenssikten är utmärkt tack vare den mycket låga lokala ljusföroreningen.',
+        'Ylläs har 62 backar, fler än någon annan skidort i Finland, och landets längsta utförsåkning: över tre kilometer från den kala toppen på 719 meter ner till dalen. Ändå känns orten som en bråkdel av Levi, eftersom byn är utspridd över två orter (Äkäslompolo och Ylläsjärvi), åtskilda av 15 km fjäll och Pallas-Yllästunturi nationalpark.',
+        'För lyxresor sitter dragningskraften i rymligheten. Arkitektbyggda stugor står här ensamma på fjällsluttningen, nationalparkens leder utgår från boendet, och tystnaden är det folk faktiskt betalar för. Spårnätet omfattar omkring 300 kilometer, varav över 30 kilometer är belysta.',
       ],
       highlights: [
         'Pallas-Yllästunturi nationalpark, Finlands tredje största',
         'Två skidbyar på var sin sida om Ylläsfjället',
         'Lägre ljusförorening än någon annan skidort',
-        'Särskilda längdskidspår (250 km totalt)',
+        'Omkring 300 km preparerade spår, över 30 km belysta',
       ],
-      arrival: 'Kittilä (KTT), 50 min med privat transfer',
-      auroraNote: 'Inom nationalparkens gräns, ett av de lägsta ljusföroreningsvärdena i kontinentala Europa. ~180 klara nätter.',
+      arrival: 'Kittilä (KTT), 40 km, cirka 45 min med privat transfer',
+      auroraNote: 'Stugorna ligger mot nationalparken i stället för mitt i en skidort, så du kliver ut genom dörren rakt in i mörkret i stället för att köra och leta efter det.',
     },
   },
   experiences: {
