@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Door Rajakangas ontworpen uitkragende suite met een volledig glazen gevel gericht op het noorderlicht.',
+      tagline: 'Door Studio Puisto ontworpen uitkragende suite met een volledig glazen gevel gericht op het noorderlicht.',
       copy: [
         'Een penthousesuite van 73 m² op palen, met glas van vloer tot plafond over de volle breedte. Ontworpen door Studio Puisto. Privéterras met hot tub. Het gebouw is rond één enkele den opgetrokken, elk interieurdetail is gekozen om te verdwijnen, zodat het bos het enige object in de kamer blijft.',
         'Op vijf minuten van Santa Claus Village, handig als uitvalsbasis voor gezinnen die in het kerstseizoen reizen en \'s avonds een rustige retraite willen met overdag eenvoudige toegang tot Rovaniemi.',
@@ -41,7 +41,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: 'Vierentwintig glazen hutten met uitzicht op niets dan bos en de noorderlichtovaal.',
       copy: [
-        'Inari ligt pal onder de noorderlichtovaal, statistisch gezien de betrouwbaarste breedtegraad voor noorderlicht in Europa. Aurora Village is een landgoed met 24 hutten zonder doorgaand verkeer en zonder naburige dorpen aan de zichtbare horizon. De hutten staan op afstand voor privacy, met het bed onder het glas en de bank ernaar gericht.',
+        'Inari ligt pal onder de noorderlichtovaal, op de breedtegraad waar het Fins Meteorologisch Instituut het noorderlicht ongeveer drie op vier nachten waarneemt. Aurora Village is een landgoed met 24 hutten zonder doorgaand verkeer en zonder naburige dorpen aan de zichtbare horizon. De hutten staan op afstand voor privacy, met het bed onder het glas en de bank ernaar gericht.',
         'Het Sami-geleide restaurant op het terrein serveert een proefmenu rond rendier, arctische saibling en kruipbraam. Noorderlichtwekkers worden van hut tot hut doorgegeven via de radio, zodat niemand de villa ernaast wakker maakt.',
       ],
       signature: [
@@ -49,12 +49,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '24 hutten op een landgoed van 30 hectare, ruim opgesteld',
         'Sami-geleid restaurant op het terrein, elke avond een proefmenu',
         'Noorderlichtwekker via radio in de hut',
-        'Inari is de betrouwbaarste noorderlichtbreedtegraad in de EU',
+        'Noorderlicht ongeveer 3 op 4 nachten op deze breedtegraad (FMI)',
         'Gratis privé sneeuwschoenpad vanaf het terrein',
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Glazen iglo\'s hoog boven de fjeld van Levi, de enige iglocluster van Lapland die op het zuiden naar het dal kijkt.',
+      tagline: 'Glazen iglo\'s hoog boven de fjeld van Levi, op het zuiden naar het dal gericht in plaats van noordwaarts het bos in.',
       copy: [
         'Tweeënveertig glazen iglo\'s op de zuidelijke flank van de fjeld van Levi. De meeste noorderlichthutten kijken naar het noorden, een leeg bos in; Levin Iglut is een van de zeer weinige die het licht boven de verlichte skyline van het fjelddorp eronder kadert, beter voor fotografen, dramatischer in de schemering.',
         'Op loopafstand van het dorp Levi (gondel, restaurants, ski-in/ski-out), maar de iglo\'s zelf zijn rustig. Restaurant Aurora op het terrein, met een chef-kok die binnen 100 km inkoopt.',
@@ -84,7 +84,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Een suite met glazen wanden op de top van de fjeld Kaunispää, de hoogstgelegen noorderlichtslaapkamer van het land.',
+      tagline: 'Een suite met glazen wanden op de top van de fjeld Kaunispää, boven de boomgrens en boven de lichten van het dorp.',
       copy: [
         'Star Arctic ligt op het allerhoogste punt van Kaunispää, de fjeld die direct vanuit het dorp Saariselkä oprijst. De Skyview-suites hebben aan drie zijden glazen wanden van vloer tot plafond, geen gordijnen, en liggen hoog genoeg om de plaatselijke boomgrens te overstijgen, wat een echt panorama van 270° vanuit het bed oplevert.',
         'De weg naar de top is privé en \'s nachts verlicht, zodat gasten er zelf naartoe kunnen rijden. Het hotel heeft een eigen sterrenwacht, een restaurant en een vloot fatbikes voor de zomer.',

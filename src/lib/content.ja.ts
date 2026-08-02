@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Rajakangas設計の片持ち構造スイート。オーロラへ向けたガラス張りのファサード。',
+      tagline: 'Studio Puisto設計の片持ち構造スイート。オーロラへ向けたガラス張りのファサード。',
       copy: [
         '支柱の上に建つ73 m²のペントハウススイートで、全幅にわたって床から天井までのガラスが続きます。設計はStudio Puisto。ホットタブのあるプライベートテラス付き。建物は一本の松を囲むように建てられ、内装のすべての要素は気配を消すよう選ばれ、室内に残る唯一の存在は森だけになります。',
         'Santa Claus Villageから5分。夜は静かな隠れ家を求めつつ、日中はRovaniemiへ容易にアクセスしたいクリスマスシーズンの家族連れの拠点として最適です。',
@@ -54,7 +54,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Levi山の上にせり出すガラスイグルー,谷へ向かって南を望む、Laplandで唯一のイグルー群。',
+      tagline: 'Levi山の上にせり出すガラスイグルー,北の森ではなく、谷へ向かって南を望むイグルー群。',
       copy: [
         'Levi山の南斜面に42棟のガラスイグルーが配されています。多くのオーロラキャビンが何もない森の北側を向くのに対し、Levin Iglutは眼下に灯る山の村の稜線の上にオーロラを切り取る、Laplandでも数少ない一軒。写真家には好都合で、夕暮れにはいっそう劇的です。',
         'Levi村（ゴンドラ、レストラン、スキーイン/スキーアウト）まで徒歩圏ながら、イグルー自体は静か。館内のRestaurant Auroraは半径100 km以内から食材を調達するシェフが腕を振るいます。',

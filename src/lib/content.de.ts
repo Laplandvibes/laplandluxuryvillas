@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Von Rajakangas entworfene auskragende Suite mit voller Glasfassade in Richtung der Polarlichter.',
+      tagline: 'Von Studio Puisto entworfene auskragende Suite mit voller Glasfassade in Richtung der Polarlichter.',
       copy: [
         'Eine 73 m² große Penthouse-Suite auf Stelzen, mit raumhohem Glas über die gesamte Breite. Entworfen von Studio Puisto. Private Terrasse mit Whirlpool. Das Gebäude wurde um eine einzelne Kiefer herum errichtet, jedes Detail der Innenausstattung wurde so gewählt, dass es verschwindet und der Wald das einzige Objekt im Raum bleibt.',
         'Fünf Minuten vom Santa Claus Village entfernt, ein nützlicher Stützpunkt für Familien in der Weihnachtssaison, die nachts ein ruhiges Refugium und tagsüber einen einfachen Zugang nach Rovaniemi wünschen.',
@@ -41,7 +41,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: 'Vierundzwanzig Glashütten, die auf nichts als Wald und das Polarlichtoval blicken.',
       copy: [
-        'Inari liegt genau unter dem Polarlichtoval, statistisch der zuverlässigste Nordlicht-Breitengrad Europas. Aurora Village ist ein Anwesen mit 24 Hütten ohne Durchgangsverkehr und ohne benachbarte Dörfer am sichtbaren Horizont. Die Hütten sind für Privatsphäre verteilt, mit dem Bett unter dem Glas und dem Sofa darauf ausgerichtet.',
+        'Inari liegt genau unter dem Polarlichtoval, auf dem Breitengrad, auf dem das Finnische Meteorologische Institut das Polarlicht in etwa drei von vier Nächten beobachtet. Aurora Village ist ein Anwesen mit 24 Hütten ohne Durchgangsverkehr und ohne benachbarte Dörfer am sichtbaren Horizont. Die Hütten sind für Privatsphäre verteilt, mit dem Bett unter dem Glas und dem Sofa darauf ausgerichtet.',
         'Das hauseigene, von Sami geführte Restaurant bietet ein Degustationsmenü rund um Rentier, Saibling und Moltebeere. Polarlicht-Weckrufe werden von Hütte zu Hütte gefunkt, damit niemand die Nachbarvilla weckt.',
       ],
       signature: [
@@ -49,12 +49,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '24 Hütten auf einem 30 Hektar großen Anwesen, großzügig verteilt',
         'Von Sami geführtes Restaurant vor Ort, jeden Abend Degustationsmenü',
         'Polarlicht-Weckruf über Funk in der Hütte',
-        'Inari ist der zuverlässigste Polarlicht-Breitengrad der EU',
+        'Polarlicht an etwa 3 von 4 Nächten auf diesem Breitengrad (FMI)',
         'Kostenloser privater Schneeschuhpfad ab dem Anwesen',
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Glasiglus hoch über dem Fjell von Levi, das einzige Iglu-Cluster Lapplands mit Südausrichtung zum Tal.',
+      tagline: 'Glasiglus hoch über dem Fjell von Levi, nach Süden zum Tal ausgerichtet statt nach Norden in den Wald.',
       copy: [
         'Zweiundvierzig Glasiglus, angeordnet an der Südschulter des Levi-Fjells. Die meisten Polarlichthütten blicken nach Norden in einen leeren Wald; Levin Iglut ist eines der ganz wenigen, das die Lichter über der beleuchteten Skyline des Fjelldorfs darunter einrahmt, besser für Fotografen, dramatischer in der Dämmerung.',
         'Zu Fuß erreichbar zum Dorf Levi (Gondel, Restaurants, Ski-in/Ski-out), doch die Iglus selbst sind ruhig. Restaurant Aurora vor Ort, dessen Küchenchef innerhalb von 100 km einkauft.',
@@ -84,7 +84,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Eine verglaste Suite auf dem Gipfel des Kaunispää-Fjells, das höchstgelegene Polarlicht-Schlafzimmer des Landes.',
+      tagline: 'Eine verglaste Suite auf dem Gipfel des Kaunispää-Fjells, oberhalb der Baumgrenze und über den Lichtern des Dorfes.',
       copy: [
         'Star Arctic liegt ganz oben auf dem Kaunispää, dem Fjell, das sich direkt aus dem Dorf Saariselkä erhebt. Die Skyview-Suiten haben raumhohe Glaswände an drei Seiten, keine Vorhänge und eine Lage hoch genug über der lokalen Baumgrenze, das bedeutet ein echtes 270°-Panorama vom Bett aus.',
         'Die Gipfelstraße ist privat und nachts beleuchtet, sodass Gäste selbst fahren können. Das Hotel verfügt über eine eigene Sternwarte, ein Restaurant und eine Flotte von Fatbikes für den Sommer.',

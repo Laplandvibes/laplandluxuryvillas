@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Suite a sbalzo firmata Rajakangas, con facciata interamente vetrata rivolta verso l’aurora.',
+      tagline: 'Suite a sbalzo firmata Studio Puisto, con facciata interamente vetrata rivolta verso l’aurora.',
       copy: [
         'Una suite penthouse di 73 m² su pilastri, con vetrate dal pavimento al soffitto per l’intera larghezza. Progettata da Studio Puisto. Terrazza privata con vasca idromassaggio. L’edificio e stato costruito attorno a un singolo pino: ogni dettaglio degli interni e pensato per sparire, lasciando la foresta come unico soggetto nella stanza.',
         'A cinque minuti dal Villaggio di Babbo Natale: una base utile per le famiglie in viaggio nel periodo natalizio, che cercano un rifugio tranquillo la notte e un facile accesso a Rovaniemi di giorno.',

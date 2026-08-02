@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Rajakankaan suunnittelema ulokkeinen sviitti, jonka koko lasiseinä avautuu kohti revontulia.',
+      tagline: 'Studio Puiston suunnittelema ulokkeinen sviitti, jonka koko lasiseinä avautuu kohti revontulia.',
       copy: [
         '73 m²:n kattohuoneistosviitti pylväiden varassa, lattiasta kattoon ulottuvalla lasilla koko leveydeltä. Suunnittelusta vastasi Studio Puisto. Yksityinen terassi ja palju. Rakennus rakennettiin yhden männyn ympärille, jokainen sisustuksen yksityiskohta on valittu katoamaan, jotta metsä jää huoneen ainoaksi katseenvangitsijaksi.',
         'Viiden minuutin päässä Joulupukin pajakylästä, kätevä tukikohta joulukauden perhematkailijoille, jotka haluavat rauhallisen vetäytymispaikan yöksi ja helpon pääsyn Rovaniemelle päivisin.',
@@ -49,12 +49,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '24 mökkiä 30 hehtaarin alueella, väljästi sijoiteltuina',
         'Saamelaisvetoinen ravintola alueella, maistelumenu joka ilta',
         'Revontulihälytys mökin sisäisellä radiolla',
-        'Inari on EU:n luotettavin revontulileveysaste',
+        'Revontulia noin 3 yönä 4:stä tällä leveysasteella (IL)',
         'Maksuton yksityinen lumikenkäreitti suoraan kohteesta',
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Lasi-iglut Levitunturin rinteellä, Lapin ainoa iglurypäs, joka avautuu etelään laaksoon.',
+      tagline: 'Lasi-iglut Levitunturin rinteellä, etelään laaksoon eikä pohjoiseen metsään.',
       copy: [
         'Neljäkymmentäkaksi lasi-iglua Levitunturin eteläisellä kupeella. Useimmat revontulimökit osoittavat pohjoiseen tyhjään metsään; Levin Iglut on yksi harvoista, joka kehystää valot valaistun tunturikylän siluetin yläpuolelle, parempi valokuvaajille ja näyttävämpi hämärässä.',
         'Kävelymatkan päässä Levin kylästä (gondolihissi, ravintolat, ski-in/ski-out), mutta itse iglut ovat rauhalliset. Talon oma Restaurant Aurora hankkii raaka-aineensa 100 km:n säteeltä.',
@@ -84,7 +84,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Lasiseinäinen sviitti Kaunispään tunturin laella, maan korkeimmalla sijaitseva revontulimakuuhuone.',
+      tagline: 'Lasiseinäinen sviitti Kaunispään laella, puurajan ja kylän valojen yläpuolella.',
       copy: [
         'Star Arctic sijaitsee aivan Kaunispään laella, sen tunturin, joka kohoaa suoraan Saariselän kylästä. Skyview-sviiteissä on täyskorkuiset lasiseinät kolmella sivulla, ei verhoja, ja kylliksi korkeutta paikallisen metsärajan ylittämiseen, mikä tarkoittaa aitoa 270 asteen panoraamaa sängystä.',
         'Lakitie on yksityinen ja valaistu öisin, joten vieraat voivat ajaa itse perille. Hotellilla on oma observatorio, ravintola ja kesäksi läskipyöräkalusto.',

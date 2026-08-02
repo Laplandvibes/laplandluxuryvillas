@@ -97,7 +97,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     destination: 'Rovaniemi',
     category: 'designer-suite',
     tier: 'signature',
-    tagline: 'Rajakangas-designed cantilevered suite with a full glass façade pointed at the auroras.',
+    tagline: 'Studio Puisto-designed cantilevered suite with a full glass façade pointed at the auroras.',
     copy: [
       'A 73 m² penthouse suite on stilts, with floor-to-ceiling glass running the full width. Designed by Studio Puisto. Private terrace with hot tub. The building was built around a single pine, every interior detail picked to disappear so the forest stays the only object in the room.',
       'Five minutes from Santa Claus Village, useful as a base for Christmas-season family travellers who want a quiet retreat at night and easy access to Rovaniemi by day.',
@@ -147,7 +147,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     destination: 'Levi',
     category: 'glass-roof',
     tier: 'signature',
-    tagline: 'Glass igloos perched above Levi fell, the only Lapland igloo cluster facing south to the valley.',
+    tagline: 'Glass igloos perched above Levi fell, facing south over the valley rather than north into forest.',
     copy: [
       'Forty-two glass igloos arranged on the southern shoulder of Levi fell. Most aurora cabins point north into a blank forest; Levin Iglut is one of very few that frames the lights above the lit fell-village skyline below, better for photographers, more dramatic at dusk.',
       'Walking distance to Levi village (gondola, restaurants, ski-in/ski-out) but the igloos themselves are quiet. Restaurant Aurora on-site, with the chef sourcing within 100 km.',
@@ -197,13 +197,13 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     destination: 'Saariselkä',
     category: 'designer-suite',
     tier: 'signature',
-    tagline: 'A glass-walled suite at the summit of Kaunispää fell, the highest aurora bedroom in the country.',
+    tagline: 'A glass-walled suite at the summit of Kaunispää fell, above the treeline and above the village lights.',
     copy: [
       'Star Arctic sits at the very top of Kaunispää, the fell that rises directly from Saariselkä village. The Skyview suites have full-height glass walls on three sides, no curtains, and an elevation high enough to clear the local treeline, meaning a true 270° panorama from the bed.',
       'The summit road is private and lit at night so guests can drive themselves. The hotel has its own observatory, restaurant, and a fleet of fat-bikes for the summer.',
     ],
     signature: [
-      '270° glass on the highest fell summit in the area',
+      '270° glass at the summit, above the treeline',
       'Private summit road, lit at night',
       'On-site dark-sky observatory (telescope nights)',
       'Sauna with floor-to-ceiling fell view',

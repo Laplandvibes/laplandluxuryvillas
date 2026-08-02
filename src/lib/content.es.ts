@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Suite voladiza diseñada por Rajakangas con una fachada de cristal íntegra orientada a las auroras.',
+      tagline: 'Suite voladiza diseñada por Studio Puisto con una fachada de cristal íntegra orientada a las auroras.',
       copy: [
         'Una suite penthouse de 73 m² sobre pilotes, con cristal de suelo a techo a todo lo ancho. Diseñada por Studio Puisto. Terraza privada con jacuzzi. El edificio se levantó en torno a un único pino, con cada detalle interior elegido para desaparecer y que el bosque sea el único objeto de la sala.',
         'A cinco minutos del Pueblo de Papá Noel: una base útil para familias que viajan en temporada navideña y desean un refugio tranquilo de noche y fácil acceso a Rovaniemi de día.',
@@ -41,7 +41,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: 'Veinticuatro cabañas de cristal frente a nada más que bosque y el óvalo auroral.',
       copy: [
-        'Inari se sitúa de lleno bajo el óvalo auroral: estadísticamente, la latitud de auroras boreales más fiable de Europa. Aurora Village es una finca de 24 cabañas sin tráfico de paso ni aldeas vecinas en el horizonte visible. Las cabañas están espaciadas para preservar la intimidad, con la cama bajo el cristal y el sofá orientado hacia él.',
+        'Inari se sitúa de lleno bajo el óvalo auroral: en la latitud donde el Instituto Meteorológico Finlandés observa la aurora unas tres noches de cada cuatro. Aurora Village es una finca de 24 cabañas sin tráfico de paso ni aldeas vecinas en el horizonte visible. Las cabañas están espaciadas para preservar la intimidad, con la cama bajo el cristal y el sofá orientado hacia él.',
         'El restaurante de la propiedad, dirigido por sami, ofrece un menú degustación en torno al reno, la trucha alpina y la mora ártica. Los avisos de aurora se transmiten por radio de cabaña a cabaña para que nadie despierte a la villa contigua.',
       ],
       signature: [
@@ -49,7 +49,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '24 cabañas en una finca de 30 hectáreas, ampliamente espaciadas',
         'Restaurante dirigido por sami en la propiedad, menú degustación cada noche',
         'Aviso de aurora por radio en la cabaña',
-        'Inari es la latitud de auroras más fiable de la UE',
+        'Aurora unas 3 de cada 4 noches en esta latitud (FMI)',
         'Sendero privado de raquetas de nieve gratuito desde la propiedad',
       ],
     },
@@ -84,13 +84,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Una suite con paredes de cristal en la cima del fell de Kaunispää: el dormitorio bajo la aurora más alto del país.',
+      tagline: 'Una suite con paredes de cristal en la cima del fell de Kaunispää: por encima de la línea de árboles y de las luces de la aldea.',
       copy: [
         'Star Arctic se asienta en lo más alto de Kaunispää, el fell que se eleva directamente desde la aldea de Saariselkä. Las suites Skyview tienen paredes de cristal a doble altura en tres de sus lados, sin cortinas, y una altitud suficiente para superar la línea de árboles local, lo que ofrece un verdadero panorama de 270° desde la cama.',
         'La carretera de la cima es privada y está iluminada de noche, de modo que los huéspedes pueden conducir ellos mismos. El hotel cuenta con su propio observatorio, restaurante y una flota de fat-bikes para el verano.',
       ],
       signature: [
-        'Cristal de 270° en la cima del fell más alto de la zona',
+        'Cristal de 270° en la cima, por encima de la línea de árboles',
         'Carretera privada a la cima, iluminada de noche',
         'Observatorio de cielo oscuro en la propiedad (noches de telescopio)',
         'Sauna con vistas al fell de suelo a techo',

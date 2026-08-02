@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Rajakangas 设计的悬挑式套房，整面玻璃墙正对极光。',
+      tagline: 'Studio Puisto 设计的悬挑式套房，整面玻璃墙正对极光。',
       copy: [
         '一间 73 m² 的高脚屋顶层套房，整面落地玻璃横贯全幅，由 Studio Puisto 设计。私人露台配有热浴桶。建筑围绕一棵松树而建、每一处室内细节都刻意隐去自身，让森林成为房中唯一的主角。',
         '距圣诞老人村（Santa Claus Village）五分钟车程、对于圣诞季携家出行、希望夜晚静谧退隐、白天又能便捷往返罗瓦涅米（Rovaniemi）的旅人而言，这是一处理想的落脚点。',
@@ -49,12 +49,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '30 公顷庄园上的 24 栋小屋，间距宽裕',
         '驻地萨米人（Sami）主理的餐厅，每晚品鉴菜单',
         '客房内无线电极光警报',
-        '伊纳里（Inari）是欧盟极光最可靠的纬度',
+        '该纬度约每 4 夜有 3 夜可见极光（芬兰气象研究所）',
         '从物业出发的免费私人雪鞋步道',
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: '高踞列维（Levi）山丘之上的玻璃冰屋、拉普兰唯一一处朝南面向山谷的冰屋群。',
+      tagline: '高踞列维（Levi）山丘之上的玻璃冰屋、朝南面向山谷，而非朝北望向森林的冰屋群。',
       copy: [
         '四十二栋玻璃冰屋排布在列维（Levi）山丘的南肩。多数极光小屋朝北望向一片空旷森林；而 Levin Iglut 是极少数能将极光框于下方灯火通明的山村天际线之上的去处、更利于摄影，黄昏时分也更具戏剧张力。',
         '步行即可抵达列维（Levi）村（缆车、餐厅、雪场门口出入），而冰屋本身却很安静。驻地设有 Restaurant Aurora，主厨在 100 公里半径内采购食材。',
@@ -84,13 +84,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: '一间立于考尼斯帕（Kaunispää）山丘之巅的玻璃墙套房、全国最高的极光卧室。',
+      tagline: '一间立于考尼斯帕（Kaunispää）山丘之巅的玻璃墙套房、位于林线与村庄灯火之上的极光卧室。',
       copy: [
         'Star Arctic 坐落在考尼斯帕（Kaunispää）的最高处，这座山丘直接自萨利色尔卡（Saariselkä）村拔地而起。Skyview 套房三面皆为整面落地玻璃墙，没有窗帘，海拔之高足以越过当地林线、意味着从床上即可享有真正的 270° 全景。',
         '通往山顶的道路是私人专用且夜间照明，宾客可自行驾车前往。酒店设有自己的天文台、餐厅，以及一支供夏季使用的胖胎单车车队。',
       ],
       signature: [
-        '区域内最高山丘之巅的 270° 玻璃墙',
+        '山巅之上、越过林线的 270° 玻璃墙',
         '私人山顶道路，夜间照明',
         '驻地暗夜星空天文台（望远镜观星之夜）',
         '可眺望整面山丘景致的桑拿',

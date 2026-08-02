@@ -24,7 +24,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'arctic-treehouse-suite': {
-      tagline: 'Utkragande svit ritad av Rajakangas med helt glasad fasad riktad mot norrskenet.',
+      tagline: 'Utkragande svit ritad av Studio Puisto med helt glasad fasad riktad mot norrskenet.',
       copy: [
         'En penthouse-svit på 73 m² på pelare, med glas från golv till tak i full bredd. Ritad av Studio Puisto. Privat terrass med badtunna. Byggnaden är rest kring en enda tall, varje inredningsdetalj är vald för att försvinna, så att skogen förblir det enda objektet i rummet.',
         'Fem minuter från Santa Claus Village, praktiskt som bas för familjer som reser under julsäsongen och vill ha en lugn tillflykt på kvällen med enkel tillgång till Rovaniemi på dagen.',
@@ -41,7 +41,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: 'Tjugofyra glasstugor med utsikt över inget annat än skog och norrskensovalen.',
       copy: [
-        'Inari ligger rakt under norrskensovalen, statistiskt sett den mest tillförlitliga breddgraden för norrsken i Europa. Aurora Village är ett område med 24 stugor utan genomfartstrafik och utan grannbyar vid den synliga horisonten. Stugorna står med avstånd för avskildhet, med sängen under glaset och soffan riktad mot det.',
+        'Inari ligger rakt under norrskensovalen, på den breddgrad där Meteorologiska institutet observerar norrsken ungefär tre nätter av fyra. Aurora Village är ett område med 24 stugor utan genomfartstrafik och utan grannbyar vid den synliga horisonten. Stugorna står med avstånd för avskildhet, med sängen under glaset och soffan riktad mot det.',
         'Den samiskt ledda restaurangen på området serverar en avsmakningsmeny kring ren, arktisk röding och hjortron. Norrskensväckningar skickas från stuga till stuga via radio, så att ingen väcker villan bredvid.',
       ],
       signature: [
@@ -49,12 +49,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '24 stugor på ett område på 30 hektar, glest placerade',
         'Samiskt ledd restaurang på området, avsmakningsmeny varje kväll',
         'Norrskensväckning via radio i stugan',
-        'Inari är EU:s mest tillförlitliga norrskensbreddgrad',
+        'Norrsken ungefär 3 nätter av 4 på denna breddgrad (FMI)',
         'Gratis privat led för snöskovandring från området',
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Glasigloor högt över Levifjället, Lapplands enda igluklunga som vetter söderut mot dalen.',
+      tagline: 'Glasigloor högt över Levifjället, vänd söderut mot dalen i stället för norrut in i skogen.',
       copy: [
         'Fyrtiotvå glasigloor på Levifjällets södra sluttning. De flesta norrskensstugor vetter mot norr, in i en tom skog; Levin Iglut är en av mycket få som ramar in ljuset ovanför den upplysta silhuetten av fjällbyn nedanför, bättre för fotografer, mer dramatiskt i skymningen.',
         'Gångavstånd till Levi by (gondol, restauranger, ski-in/ski-out), men igloorna själva är lugna. Restaurang Aurora på området, med en kock som handlar inom 100 km.',
@@ -84,13 +84,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'En svit med glasväggar på toppen av fjället Kaunispää, landets högst belägna norrskenssovrum.',
+      tagline: 'En svit med glasväggar på toppen av fjället Kaunispää, ovanför trädgränsen och ovanför byns ljus.',
       copy: [
         'Star Arctic ligger på den allra högsta punkten på Kaunispää, fjället som reser sig direkt ur byn Saariselkä. Skyview-sviterna har glasväggar från golv till tak på tre sidor, inga gardiner, och ligger tillräckligt högt för att nå ovanför den lokala trädgränsen, vilket ger en verklig 270°-panorama från sängen.',
         'Vägen till toppen är privat och upplyst på natten, så att gäster kan köra dit själva. Hotellet har ett eget observatorium, en restaurang och en flotta fatbikes för sommaren.',
       ],
       signature: [
-        '270° glas på den högsta fjälltoppen i området',
+        '270° glas på toppen, ovanför trädgränsen',
         'Egen väg till toppen, upplyst på natten',
         'Observatorium under mörk himmel på området (teleskopkvällar)',
         'Bastu med fjällutsikt från golv till tak',
