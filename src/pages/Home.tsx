@@ -130,6 +130,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* App launch block, directly under the site's own opening. At the foot
+          of the page it measured 81 % down a 33 000 px front page, and an
+          announcement nobody scrolls to is not an announcement. */}
+      <AppPromoHero />
 
       {/* Kumppaniosio ylhäällä (jaettu malli, Vesa 2026-07-11): kakkospääkumppani +
           6 premium-paikkaa — pääkumppanit eivät näy vierekkäin (banneri ↑) */}
@@ -238,9 +242,6 @@ export default function Home() {
       <RelatedSites />
 
       <NewsletterSection />
-    {/* App launch block. Bottom of the page on purpose: the site's own
-        hero is what the search result promised. */}
-    <AppPromoHero />
     </Page>
   )
 }
