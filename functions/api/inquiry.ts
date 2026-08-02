@@ -1,9 +1,9 @@
 // Cloudflare Pages Function — same-origin proxy to the Supabase Edge Function
-// `send-concierge-inquiry`. Lives at https://laplandluxuryvillas.com/api/inquiry.
+// `send-private-inquiry`. Lives at https://laplandluxuryvillas.com/api/inquiry.
 //
-// 🔴 The Supabase function name still says "concierge" and is deliberately NOT
-// renamed here: it is shared infrastructure, server-side only, and renaming it
-// means redeploying the Edge Function. Nothing a reader ever sees.
+// 🔴 Renamed from send-concierge-inquiry 2026-08-02 (Vesa). The old function
+// is still deployed and still works — it is the rollback. Delete it only once
+// this path has carried real enquiries for a while.
 //
 // Why a proxy?  The Supabase function's CORS policy allows only the LV
 // allowlist. Routing through this Function keeps the call same-origin in the
@@ -52,7 +52,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const anonKey = env.SUPABASE_PUBLISHABLE_KEY || SUPABASE_ANON_FALLBACK
 
   try {
-    const upstream = await fetch(`${supabaseUrl}/functions/v1/send-concierge-inquiry`, {
+    const upstream = await fetch(`${supabaseUrl}/functions/v1/send-private-inquiry`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
