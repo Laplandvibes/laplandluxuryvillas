@@ -41,6 +41,14 @@ import {
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 
+/**
+ * Fewest Google reviews that may render as a visible rating. Well below the
+ * editorial pick's threshold (PICK_MIN_REVIEWS = 100) on purpose: showing a
+ * number and crowning it are different claims, and this one only has to be
+ * more than a handful of people.
+ */
+export const RATING_MIN_REVIEWS = 10
+
 export default function GoogleRatingRow({
   property,
   className,
@@ -55,6 +63,14 @@ export default function GoogleRatingRow({
   if (typeof rating !== 'number' || typeof reviewCount !== 'number' || !googlePlaceId) {
     return null
   }
+  // 🔴 A RATING ROW IS A CLAIM ABOUT CONSENSUS, AND ONE REVIEW IS NOT ONE
+  // (2026-08-02). A newly listed Ylläs villa came back from the Places API as
+  // "5.0 · 1 review". True, and useless: printed beside Kakslauttanen's
+  // "4.1 · 1 415 reviews" it reads as the best property on the page. The
+  // editorial pick was already safe (PICK_MIN_REVIEWS = 100); the row itself
+  // was not. Below the floor the card simply shows no rating, which is the
+  // same honest state as a property Google has never rated.
+  if (reviewCount < RATING_MIN_REVIEWS) return null
 
   const e = COPY[lang].editorial
   const ratingText = formatRating(rating, lang)

@@ -176,6 +176,21 @@ export const PROPERTIES = withGoogleReviews({
   nellim: { name: "Wilderness Hotel Nellim", destination: "Wilderness Hotel Nellim", city: "Inari, Finland" },
   starArctic: { name: "Star Arctic Hotel", destination: "Star Arctic Hotel", city: "Saariselkä, Finland", sembo: ["1595634", "360532"], trip: ["10196", "7402448"] },
   apukka: { name: "Apukka Resort", destination: "Apukka Resort Rovaniemi", city: "Rovaniemi, Finland", sembo: ["656849", "360462"], trip: ["1794", "9940210"] },
+  // Ylläs, added 2026-08-02 (Vesa). Sembo codes read from the partner's own
+  // autosuggest and each one verified through the redirect Worker with
+  // locale=fi_FI: the property code lands in the outgoing Sembo URL, against
+  // a control (apukka) that is already live. `trip` is unset on all four
+  // until a Trip.com id is confirmed for each — an unset id falls back to the
+  // town listing honestly rather than deep-linking to the wrong property.
+  // 🔴 ONLY "B" IS REGISTERED, AND THAT IS DELIBERATE. Sembo sells Villa Noel
+  // A (28745205) and B (28744396) as two units. Google lists ONE record,
+  // "Villa Noel B". The sync happily matched A to it at dice 0.94 — the names
+  // differ by a single letter — which would have printed B's score under A's
+  // name. That is the fabrication this file exists to prevent, so A is not
+  // registered. Add it only if Google gains its own record for it.
+  villaNoelB: { name: "Villa Noel B", destination: "Villa Noel Ylläs", city: "Ylläs, Finland", sembo: ["28744396", "360476"] },
+  villaHellita: { name: "Villa Hellitä", destination: "Villa Hellitä Ylläsjärvi", city: "Ylläsjärvi, Finland", sembo: ["28767044", "360015"] },
+  laplandHotelsSaaga: { name: "Lapland Hotels Saaga", destination: "Lapland Hotels Saaga Ylläs", city: "Ylläs, Finland", sembo: ["1741117", "360476"] },
 } as const)
 
 /**

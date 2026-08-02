@@ -100,6 +100,20 @@ const TARGETS = {
   nellim:          { queryCity: 'Nellim, Inari, Lapland, Finland', locality: ['nellim', 'inari', 'ivalo'] },
   starArctic:      { queryCity: 'Saariselka, Lapland, Finland',  locality: ['saariselka', 'kaunispaa', 'inari', 'ivalo'] },
   apukka:          { queryCity: 'Rovaniemi, Lapland, Finland',   locality: ['rovaniemi'] },
+  // Ylläs, 2026-08-02. The resort spans two villages 15 km apart either side
+  // of the national park, so both are accepted for all four, plus the
+  // municipality (Kolari). A private villa may simply have no Google listing;
+  // that is a legitimate outcome and the card then renders no rating row.
+  // 🔴 '95980' is deliberate. Google returns these two as "Lännentie 7a/7b,
+  // 95980 Kittilä" and the guard rejected them — correctly, on the evidence it
+  // had. But 95980 is Ylläsjärvi in KOLARI (posti/postinumerot.fi), ~80 km from
+  // Kittilä, so Google's locality label is the thing that is wrong, not Sembo's
+  // classification. Matching on the postal code instead of adding 'kittila' to
+  // the allowlist keeps the guard exact: a real Kittilä property still fails.
+  villaNoelA:         { queryCity: 'Yllas, Kolari, Lapland, Finland',      locality: ['yllas', 'akaslompolo', 'yllasjarvi', 'kolari', '95980'] },
+  villaNoelB:         { queryCity: 'Yllas, Kolari, Lapland, Finland',      locality: ['yllas', 'akaslompolo', 'yllasjarvi', 'kolari', '95980'] },
+  villaHellita:       { queryCity: 'Yllasjarvi, Kolari, Lapland, Finland', locality: ['yllasjarvi', 'yllas', 'akaslompolo', 'kolari'] },
+  laplandHotelsSaaga: { queryCity: 'Yllas, Kolari, Lapland, Finland',      locality: ['yllas', 'akaslompolo', 'yllasjarvi', 'kolari'] },
 };
 
 /**
