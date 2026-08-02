@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { AppPromoNudge } from './components/AppPromo'
 import React, { useEffect, useReducer, lazy, Suspense } from 'react'
 import { COPY, loadCopy } from './locales/copy'
 import { isOverlayLoaded, loadOverlays } from './lib/villaI18n'
@@ -159,6 +160,7 @@ export default function App() {
       </CopyGate>
       <LocalisedCookieBanner />
       <NewsletterPopup />
+    <AppPromoNudge />
     </BrowserRouter>
   )
 }

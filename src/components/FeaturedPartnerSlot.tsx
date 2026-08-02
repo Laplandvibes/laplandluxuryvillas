@@ -39,6 +39,20 @@ import {
   type FeaturedPlacement,
 } from '../data/adSlots'
 
+/**
+ * Surfaces on which an UNSOLD slot may show the house ad.
+ *
+ * Currently NONE — the home page already carries the network-canonical ad row
+ * (`HomeAdSlots`: one banner plus two cards), and that is the site's single
+ * "advertise here" surface. Adding `home_signature` back would make four
+ * vacancy notices on the home page alone.
+ *
+ * Sold placements are unaffected and still render on all six surfaces, so no
+ * inventory is lost and no advertiser loses reach. Put a placement back in this
+ * set to restore its vacancy notice; that is the only change required.
+ */
+const HOUSE_AD_SURFACES = new Set<FeaturedPlacement>()
+
 /** fi/en/sv mainosmerkinnän copy. Ei 12-kielisissä tiedostoissa: paikka on gatettu. */
 function markerCopy(locale: string) {
   const l = (locale || 'en').toLowerCase()
@@ -99,6 +113,22 @@ export default function FeaturedPartnerSlot({
       </div>
     )
   }
+
+  // 🔴 An EMPTY slot is a vacancy notice, and a vacancy notice is not the same
+  // product as a sold placement (Vesa 2026-08-02: "aika paljon noita haluatko
+  // mainoksesi tähän osioita, tulee luxury-sivulla sellainen olo että ei
+  // hyvä"). He is right, and the count makes the case: a visitor going home →
+  // /villas → a villa → its destination met "Haluatko mainoksesi tähän?" five
+  // times on six surfaces. On a site whose entire proposition is discretion,
+  // that reads as a half-empty billboard wall.
+  //
+  // The fix keeps every sellable slot and removes only the SIGNAGE. A sold
+  // partner still renders on all six surfaces — no inventory is lost and no
+  // advertiser loses reach. The house ad now appears on the home page alone,
+  // which is also where a prospective advertiser actually lands, and the offer
+  // has its own page anyway (laplandvibes.com/media/site/laplandluxuryvillas,
+  // linked from the placeholder and from the footer).
+  if (!HOUSE_AD_SURFACES.has(placement)) return null
 
   return (
     <div className={wrap} data-featured-partner={placement}>
