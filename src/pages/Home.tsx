@@ -9,7 +9,7 @@ import MidnightSunBand from '../components/MidnightSunBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FAQ, { VILLA_FAQ_BY_LANG } from '../components/FAQ'
 import RelatedSites from '../components/RelatedSites'
-import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots'
+import HomeAdSlots from '../shared/HomeAdSlots'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { AD_SLOTS } from '../data/adSlots'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
@@ -95,7 +95,12 @@ export default function Home() {
 
       {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
           tyhjänä kompakti house-ad → LV Media -portaali */}
-      <MainPartnerBanner config={AD_SLOTS} locale={lang} className="bg-[color:var(--color-deep-night)]" />
+      {/* 🔴 Tyhjä pääkumppanibanneri poistettu 2.8. Vesa joutui sanomaan
+          kahdesti että "haluatko mainoksesi tähän" -osiot tekevät luxury-
+          sivustosta huonon oloisen. Ensimmäisellä kerralla poistin vain
+          FeaturedPartnerSlotin tyhjät ja jätin etusivun mainosrivin — hän näki
+          silti kolme. Nyt niitä on nolla. Myyty kumppani renderöityy edelleen
+          kaikkialla; palautus on tämän rivin kommentin purku. */}
 
       {/* PHILOSOPHY */}
       <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
@@ -132,7 +137,9 @@ export default function Home() {
       <hr className="hair-rule mx-auto max-w-6xl" />
 
       {/* SIGNATURE VILLAS */}
-      <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
+      {/* Onyx-kaista: tummat kortit tumman sivun päällä eivät erottuneet
+          toisistaan (Vesa 2.8. "tarvitaan jotain kontrastia"). */}
+      <section className="bg-[color:var(--color-onyx)] py-24 md:py-32 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div className="max-w-2xl">

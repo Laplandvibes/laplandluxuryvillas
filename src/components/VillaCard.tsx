@@ -76,8 +76,11 @@ export default function VillaCard({
             its own height and nothing lined up across the row. On the image it
             costs zero layout height, and it still reads as editorial rather
             than paid: snow + brass ring, never the pink "Mainos" pill. */}
+        {/* 🔴 Alhaalla vasemmalla, EI ylhäällä oikealla. Ylänurkassa se törmäsi
+            tier-badgeen heti kun kortti kapenee (etusivun neljän kortin
+            ruudukko) — Vesa 2.8. Tämä nurkka on aina vapaa. */}
         {isPick && (
-          <div className="absolute top-4 right-4">
+          <div className="absolute bottom-4 left-4">
             <EditorsPickChip label={c.editorial.pickLabel} reason={c.editorial.pickReason} />
           </div>
         )}
