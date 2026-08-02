@@ -59,7 +59,7 @@ IMGS: list[tuple[str, str, str]] = [
      "small window showing dark snow-covered spruce outside at blue hour. " + WINTER,
      "1536x1024"),
 
-    ("hero-concierge.webp",
+    ("hero-inquiry.webp",
      "Cinematic detail still life: an open hand-bound leather travel journal on a "
      "dark walnut desk, a vintage brass desk lamp casting warm light, a paper map of "
      "northern Finland half visible, a glass of amber whisky next to the journal, "

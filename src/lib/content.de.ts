@@ -72,7 +72,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Eine Glaskuppel-Suite am Rand des borealen Waldes, zwanzig Minuten von der russischen Grenze entfernt.',
       copy: [
         'Nellim ist ein bewohntes Wildnisdorf (220 Einwohner) am Ostufer des Inarisees. Die Polarlicht-Kuppeln liegen abseits der Hauptlodge auf einer eigenen Lichtung, jede mit einer transparenten Panoramakuppel über dem Bett und einem holzbefeuerten Whirlpool auf der Veranda.',
-        'Die Lodge veranstaltet samische Kulturabende, Eisfischen auf dem See und eines der wenigen zertifizierten geführten Programme für Polarlichtfotografie in Finnland. Die Zimmer sind für die Februar-Hochsaison ein Jahr im Voraus ausgebucht, der Concierge kann gelegentlich eine Freigabe finden.',
+        'Die Lodge veranstaltet samische Kulturabende, Eisfischen auf dem See und eines der wenigen zertifizierten geführten Programme für Polarlichtfotografie in Finnland. Die Zimmer sind für die Februar-Hochsaison ein Jahr im Voraus ausgebucht.',
       ],
       signature: [
         'Transparente Panoramakuppel über dem Bett',
@@ -113,36 +113,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Polarlicht-Weckruf + Whirlpool neben der Hütte',
       ],
     },
-    'private-lakeside-log-estate': {
-      tagline: 'Ein privates, handgebautes Blockhaus an einer eigenen Bucht des Inarisees. Nur auf Concierge-Anfrage.',
-      copy: [
-        'Ein Blockhaus-Anwesen mit vier Schlafzimmern an einer eigenen privaten Bucht, erreichbar über eine einzige Straße. Genutzt von einer kleinen Gruppe wiederkehrender Gäste, wir halten jede Saison einige Wochen als private Kontingente zurück.',
-        'Inklusive einer Rauchsauna, zweier holzbefeuerter Whirlpools, eines Bootshauses und einer privaten Kochbrigade, die wir koordinieren, wenn das Anwesen gebucht ist. Schneemobil- und Huskyzugang über die Bucht im Winter; Kanu und Angeln auf dem See in der Mitternachtssonnen-Saison.',
-      ],
-      signature: [
-        'Vier Schlafzimmer an einer privaten Bucht des Inarisees',
-        'Rauchsauna + zwei holzbefeuerte Whirlpools',
-        'Private Kochbrigade auf Anfrage organisiert',
-        'Schneemobil-/Huskyzugang über den See im Winter',
-        'Boot + Kanu + Steg für die Mitternachtssonnen-Saison',
-        'Concierge-Kontingent, nie in öffentlichen Angeboten',
-      ],
-    },
-    'designer-mountain-chalet-levi': {
-      tagline: 'Ein modernes, architektengeplantes Chalet am Südhang von Levi. Ski-in/Ski-out, private Wellnessetage.',
-      copy: [
-        'Architektengeplantes Chalet mit drei Schlafzimmern am Südhang des Levi-Fjells, mit einer Wellnessetage (Sauna, Dampfbad, Tauchbecken, Behandlungsraum) im Erdgeschoss und einem Wohnbereich, der sich zu einer 12 m langen, zum Tal ausgerichteten Terrasse öffnet.',
-        'Eine kurze Skiabfahrt zur Gondel von Levi; ein kurzer Aufstieg zurück über den beheizten Weg. Inklusive täglicher Reinigung, Frühstücksvorbereitung und einem auf Abruf verfügbaren Ski-Concierge.',
-      ],
-      signature: [
-        'Architektengeplantes Chalet mit drei Schlafzimmern, Südhang',
-        'Ski-in/Ski-out über den beheizten Weg',
-        'Private Wellnessetage: Sauna, Dampfbad, Tauchbecken, Behandlungsraum',
-        '12 m lange Glasterrasse mit Blick auf das Tal',
-        'Tägliche Reinigung + Frühstücksvorbereitung inbegriffen',
-        'Ski-Concierge auf Abruf während des gesamten Aufenthalts',
-      ],
-    },
   },
   destinations: {
     'saariselka': {
@@ -164,13 +134,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Unser nördlichstes Ziel, wo Polarlichter in etwa drei von vier Nächten beobachtet werden. Samisches Kernland, Inarisee, dunkle Himmel.',
       copy: [
         'Inari ist Finnlands nördlichste Gemeinde und die kulturelle Hauptstadt der finnischen Sami. Das Dorf liegt am Inarisee, dem drittgrößten See Finnlands, mit rund 3.000 Inseln, mehr als 200 km nördlich des Polarkreises und ohne Stadtlicht am Horizont.',
-        'Für Luxusreisen bedeutet das zweierlei. Erstens: Auf diesem Breitengrad beobachtet das Finnische Meteorologische Institut Polarlichter in etwa drei von vier Nächten, und sie stehen direkt über dem Kopf statt tief im Norden. Zweitens: Die Blockhaus-Anwesen am See, von denen wir einige privat halten, gehören zu den ruhigsten Unterkünften Lapplands: kein Durchgangsverkehr, keine benachbarten Dörfer am sichtbaren Horizont.',
+        'Für Luxusreisen bedeutet das zweierlei. Erstens: Auf diesem Breitengrad beobachtet das Finnische Meteorologische Institut Polarlichter in etwa drei von vier Nächten, und sie stehen direkt über dem Kopf statt tief im Norden. Zweitens: Die Blockhaus-Anwesen am See gehören zu den ruhigsten Unterkünften Lapplands: kein Durchgangsverkehr, keine benachbarten Dörfer am sichtbaren Horizont.',
       ],
       highlights: [
         'Aurora Village, eigens errichtetes 30 Hektar großes Glashütten-Anwesen',
         'Wilderness Hotel Nellim, Polarlicht-Kuppeln am Ostufer des Inarisees',
         'Sami-Museum SIIDA + ganzjährige Kulturprogramme',
-        'Private Blockhaus-Anwesen am See über den Concierge verfügbar',
+        'Inarisee, Finnlands drittgrößter See, rund 3 000 Inseln',
       ],
       arrival: 'Ivalo (IVL), 40 km, etwa 40 Min. per privatem Transfer',
       auroraNote: 'Unser nördlichstes Ziel und dasjenige, bei dem das Polarlicht am häufigsten direkt über dem Kopf steht statt tief im Norden. Der Inarisee gibt einen ununterbrochenen Horizont, auf dem kein Ortslicht liegt.',
@@ -233,7 +203,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Ein 45-minütiger Nachthubschrauberflug über die Wolkendecke zu den Polarlichtern selbst.',
       copy: [
         'Betrieben vom einzigen nach Nacht-VFR zertifizierten Hubschrauberbetreiber Finnlands aus Rovaniemi und Ivalo. Der Flug durchstößt die lokale Wolkendecke und kreist innerhalb des aktiven Polarlichtovals, eine vom Boden aus unmögliche Perspektive.',
-        'Bodenfotografie ist auf beiden Seiten des Fluges inbegriffen; der Flugteil selbst ist dem Erlebnis gewidmet, nicht der Kamera. Maximal vier Passagiere pro AS350. Wetterfensterabhängig, der Concierge verfolgt die Prognose und benachrichtigt am Vortag.',
+        'Bodenfotografie ist auf beiden Seiten des Fluges inbegriffen; der Flugteil selbst ist dem Erlebnis gewidmet, nicht der Kamera. Maximal vier Passagiere pro AS350. Wetterfensterabhängig: der Betreiber verfolgt die Prognose und benachrichtigt am Vortag.',
       ],
       available: 'Rovaniemi, Ivalo, Okt.–März (wetterabhängig)',
     },
@@ -273,7 +243,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Direkter Privatjet-Transfer nach Ivalo, Kittilä oder Rovaniemi, kein kommerzielles Check-in, kein Umsteigedrehkreuz.',
       copy: [
         'Koordiniert über unsere Jet-Partner in Helsinki, Genf und Doha. Direktflüge nach Ivalo (am nächsten zu den Villen in Saariselkä / Inari), Kittilä (am nächsten zu den Villen in Levi / Ylläs) oder Rovaniemi (am besten für das Arctic TreeHouse).',
-        'Vollständige Abfertigung: Bodentransfer zu Ihrer Villa mit einem beheizten Fahrzeug in arktischer Ausführung, Gepäckweiterleitung, Zollabfertigung ohne Warteschlange. Der Concierge meldet den Slot an und stimmt die Ankunft auf die Check-in-Zeit der Villa ab.',
+        'Vollständige Abfertigung: Bodentransfer zu Ihrer Villa mit einem beheizten Fahrzeug in arktischer Ausführung, Gepäckweiterleitung, Zollabfertigung ohne Warteschlange. Der Betreiber meldet den Slot an und stimmt die Ankunft auf die Check-in-Zeit der Villa ab.',
       ],
       available: 'Alle Reiseziele, ganzjährig',
     },
@@ -281,7 +251,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Aufnahme vom Regionalflughafen direkt zum Landeplatz Ihrer Villa, kein Straßentransfer.',
       copy: [
         'Am häufigsten genutzt für Ankünfte zu den privaten Blockhaus-Anwesen am Ufer des Inarisees. Das Fluggerät ist derselbe AS350, der für die Polarlichtflüge eingesetzt wird; ein einzelner Abschnitt dauert 20–45 Minuten.',
-        'Maximal fünf Passagiere + Gepäck. Der Concierge stimmt die Aufnahme auf das Check-in der Villa und das Tageslichtfenster ab, im tiefsten Winter geht die Sonne bereits um 15:00 Uhr unter.',
+        'Maximal fünf Passagiere + Gepäck. Der Betreiber stimmt die Aufnahme auf das Check-in der Villa und das Tageslichtfenster ab, im tiefsten Winter geht die Sonne bereits um 15:00 Uhr unter.',
       ],
       available: 'Rovaniemi, Ivalo → Anwesen am Inarisee',
     },

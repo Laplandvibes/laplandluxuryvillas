@@ -16,9 +16,9 @@
 // evidence and for what does and does not count as a source.
 //
 // When a rate is unset the card and the detail page render the existing "on
-// request" / concierge branch, which is already translated into all 12
+// request" / private-enquiry branch, which is already translated into all 12
 // locales. That branch is the correct answer, not a degraded one. Anything new
-// lives in the concierge funnel until a rate is genuinely verified.
+// lives behind the private enquiry until a rate is genuinely verified.
 //
 // Never invent a star rating either. Ratings come from real Google data via
 // `src/data/properties.ts`, and are always rendered with their scope stated.
@@ -26,7 +26,7 @@
 // Where a property has a bookable listing we deep-link through the redirect
 // Worker (`go.laplandvibes.com`; fi -> Sembo, other locales -> Trip.com).
 
-import { PROPERTY_SEARCH, HOTEL_SEARCH, type Lang } from './affiliate'
+import { PROPERTY_SEARCH, type Lang } from './affiliate'
 import type { VerifiedRate } from './rate'
 import { overlayVilla } from './villaI18n'
 
@@ -46,7 +46,7 @@ export interface Villa {
   /** 5–8 specifics. No marketing adjectives — only things you can verify on arrival. */
   signature: string[]
   /**
-   * Verified published nightly rate. Unset = the "on request" / concierge
+   * Verified published nightly rate. Unset = the "on request" / enquiry
    * branch renders and no `priceRange` is emitted to structured data.
    * 🔴 Never a hand-written estimate. See `src/lib/rate.ts`.
    */
@@ -55,16 +55,19 @@ export interface Villa {
   sleeps: number
   /** External Hotels.com search URL via go.lv (already built in lib/affiliate). */
   bookingUrl?: string
-  /** Treat as "private inquiry" — no public listing, route through concierge. */
-  conciergeOnly?: boolean
+  /** Treat as "private enquiry" — no public listing, route to /private-inquiry. */
+  inquiryOnly?: boolean
   /** Local image path (1600×1066) — placeholder gradient until generated. */
   image?: string
   imageGradient: string
 }
 
 export const getVillas = (lang: Lang = 'en'): Villa[] => {
+  // Every villa deep-links to its own property page. A city-level
+  // HOTEL_SEARCH fallback used to live here; it existed only for the two
+  // unnamed house-inventory entries removed 2026-08-02, and its absence is
+  // now the guard: a villa with no property to link is not a villa.
   const PS = PROPERTY_SEARCH(lang)
-  const HS = HOTEL_SEARCH(lang)
   const _list: Villa[] = [
   {
     slug: 'kakslauttanen-glass-igloo-suite',
@@ -175,7 +178,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tagline: 'A glass bubble suite at the edge of the boreal forest, twenty minutes from the Russian border.',
     copy: [
       'Nellim is a working wilderness village (population 220) on the eastern shore of Lake Inari. The aurora bubbles are set apart from the main lodge in their own clearing, each with a panoramic transparent dome over the bed and a wood-fired hot tub on the porch.',
-      'The lodge runs Sami cultural evenings, ice-fishing on the lake, and one of the few certified guided aurora-photography programmes in Finland. Rooms book out a year in advance for the February peak, concierge can sometimes find a release.',
+      'The lodge runs Sami cultural evenings, ice-fishing on the lake, and one of the few certified guided aurora-photography programmes in Finland. Rooms book out a year in advance for the February peak.',
     ],
     signature: [
       'Transparent panoramic dome over the bed',
@@ -240,58 +243,6 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bookingUrl: PS.apukka,
     image: '/images/villa-apukka.webp',
     imageGradient: 'linear-gradient(135deg, #1A1828 0%, #251F38 50%, #110E1C 100%)',
-  },
-  {
-    slug: 'private-lakeside-log-estate',
-    name: 'The Lakeside Log Estate',
-    destination: 'Inari',
-    category: 'log-estate',
-    tier: 'reserve',
-    tagline: 'A private hand-built log house on its own bay of Lake Inari. Concierge inquiry only.',
-    copy: [
-      'A four-bedroom log estate on its own private bay, accessed by a single road. Used by a small group of repeat guests, we hold a few weeks each season as a private allocation.',
-      'Includes a smoke sauna, two wood-fired hot tubs, a boat shed, and a private chef brigade we coordinate when the property is booked. Snowmobile and husky access via the bay in winter; canoe and lake fishing in the midnight-sun season.',
-    ],
-    signature: [
-      'Four bedrooms on a private bay of Lake Inari',
-      'Smoke sauna + two wood-fired hot tubs',
-      'Private chef brigade arranged on request',
-      'Snowmobile / husky access via the lake in winter',
-      'Boat + canoe + dock for the midnight-sun season',
-      'Concierge allocation, never on public listings',
-    ],
-    bedrooms: 4,
-    sleeps: 8,
-    conciergeOnly: true,
-    bookingUrl: HS.privateLogEstate,
-    image: '/images/villa-lakeside-log.webp',
-    imageGradient: 'linear-gradient(135deg, #0F1820 0%, #1A2735 50%, #0A1018 100%)',
-  },
-  {
-    slug: 'designer-mountain-chalet-levi',
-    name: 'The Designer Mountain Chalet',
-    destination: 'Levi',
-    category: 'alpine-chalet',
-    tier: 'private',
-    tagline: 'A modern architect-built chalet on Levi south slope. Ski-in / ski-out, private wellness floor.',
-    copy: [
-      'Three-bedroom architect-built chalet on the south slope of Levi fell, with a wellness floor (sauna, steam, plunge, treatment room) on the ground level and the living space opening to a 12 m terrace facing the valley.',
-      'A short ski down to the Levi gondola; a short walk back up via the heated path. Includes daily housekeeping, breakfast set-up, and an on-call ski concierge.',
-    ],
-    signature: [
-      'Architect-built three-bedroom chalet, south slope',
-      'Ski-in / ski-out via the heated path',
-      'Private wellness floor: sauna, steam, plunge, treatment room',
-      '12 m glass terrace facing the valley',
-      'Daily housekeeping + breakfast set-up included',
-      'On-call ski concierge throughout the stay',
-    ],
-    bedrooms: 3,
-    sleeps: 6,
-    conciergeOnly: true,
-    bookingUrl: HS.alpineChalet,
-    image: '/images/villa-mountain-chalet.webp',
-    imageGradient: 'linear-gradient(135deg, #1B1623 0%, #261E36 50%, #110D1B 100%)',
   },
   ]
   return _list.map((v) => overlayVilla(v, lang))

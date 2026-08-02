@@ -62,7 +62,7 @@ const sv: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Privat kollektion',
-    reserve: 'Reserv · endast via concierge',
+    reserve: 'Reserv · endast på förfrågan',
   },
   category: {
     'glass-roof': 'Villa med glastak',
@@ -71,29 +71,29 @@ const sv: SiteCopy = {
     'alpine-chalet': 'Fjällstuga',
     'lakeside-retreat': 'Strandnära boende',
   },
-  concierge: {
-    eyebrow: 'Den privata conciergen',
+  inquiry: {
+    eyebrow: 'Privat förfrågan',
     defaultTitle: 'Ett lugnare sätt att planera en resa till Lappland.',
-    defaultBody: 'Du skickar ett meddelande, önskemål, datum, sällskap, och vår concierge svarar inom en arbetsdag med en personlig kortlista. Ingen offentlig profil, inga delade kalendrar.',
+    defaultBody: 'Du skickar ett meddelande, önskemål, datum, sällskap, och du får inom en arbetsdag en personlig kortlista tillbaka. Ingen offentlig profil, inga delade kalendrar.',
     inquireBtn: 'Privat förfrågan',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Anonym reseplanering',
+      anonymous: 'Anonym förfrågan',
       reply: 'Svar inom en arbetsdag',
-      rates: 'Direktpriser på begäran',
+      rates: 'Länk till husets egen bokning',
     },
   },
   midnightSunBand: {
     eyebrow: '6 juni – 7 juli',
     h2: 'Samma villor, i en sommar av oavbrutet ljus.',
-    body: 'Samma arkitektur, en annan säsong. Glastaket blir ett takfönster mot en sol som aldrig går ner, sjön töar upp, skogen fylls av hjortron. Hälften av vinterns efterfrågan, och det enda fönstret på året då privatkockar, helikoptercharter och reservvillorna öppnar resten av sin kalender.',
+    body: 'Samma arkitektur, en annan säsong. Glastaket blir ett takfönster mot en sol som aldrig går ner, sjön töar upp, skogen fylls av hjortron. Sommaren är Lapplands lugnare säsong, och det är samma hus. Priset står på varje hus egen bokningssida.',
     primary: 'Se sommarkollektionen',
     secondary: 'Fråga om junidatum',
   },
   newsletter: {
     eyebrow: '#LaplandVibes-nyhetsbrevet',
     h2: 'Ett lugnt meddelande när villor öppnar nya datum och vi hör om en tillgänglighet under bordet.',
-    lede: 'Direktpriser. Sista minuten-öppningar via conciergen. Norrskensprognoser veckan före varje nymåne. Ingen nyhetsbrevsspam, skrivet i Finland, skickat bara när det finns något konkret att berätta.',
+    lede: 'Datum som blivit lediga. Hus värda en titt. Norrskensprognoser veckan före varje nymåne. Ingen nyhetsbrevsspam, skrivet i Finland, skickat bara när det finns något konkret att berätta.',
     emailPlaceholder: 'din@epost.se',
     footnote: 'Avsluta med ett klick.',
     welcome: 'Välkommen ombord. Första meddelandet kommer inom en vecka.',
@@ -109,14 +109,14 @@ const sv: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'Den privata kollektionen',
-      title: 'Finska Lappland, diskret, i toppen av marknaden.',
-      lede: 'En liten, handplockad kollektion privata lyxvillor i hela Lappland, med concierge, priser på begäran.',
+      title: 'Sju villor och sviter i fyra destinationer i Lappland.',
+      lede: 'En liten, handplockad kollektion privata lyxvillor i hela Lappland. Priser på varje hus egen bokningssida, eller skicka en privat förfrågan.',
       primary: 'Se kollektionen',
       secondary: 'Privat förfrågan',
     },
     villas: {
       eyebrow: 'Kollektionen',
-      title: 'Nio villor. Fem resmål. En privat förfrågan.',
+      title: 'Sju villor. Fyra resmål. En privat förfrågan.',
       lede: 'Varje boende nedan är verifierat mot operatörens publicerade information och färska gästrecensioner. Filtrera på den byggnadstyp du har i tankarna, eller skicka en privat förfrågan så sätter vi ihop en kortlista kring dina datum.',
     },
     suites: {
@@ -141,15 +141,15 @@ const sv: SiteCopy = {
       primary: 'Fråga om junidatum',
       secondary: 'Se kollektionen',
     },
-    concierge: {
-      eyebrow: 'Privat concierge',
+    inquiry: {
+      eyebrow: 'Privat förfrågan',
       title: 'Ett privat meddelande, en handplockad kortlista.',
-      lede: 'Du skickar dina datum, ditt sällskap och den sorts resa du har i tankarna. Vi svarar inom en arbetsdag, inklusive, där det passar, reservvillorna som aldrig visas offentligt.',
+      lede: 'Du skickar dina datum, ditt sällskap och den sorts resa du har i tankarna. Vi svarar inom en arbetsdag.',
     },
     about: {
       eyebrow: 'Om oss',
       title: 'En kort lista, medvetet hållen kort.',
-      lede: 'En privat kollektion av Lapplands finaste villor och sviter, anonym concierge, direktpriser där de finns, ingen plattform emellan.',
+      lede: 'Sju handplockade villor och sviter i finska Lappland, anonym förfrågan, en direktlänk till varje hus egen bokning, ingen plattform emellan.',
     },
   },
   home: {
@@ -157,14 +157,14 @@ const sv: SiteCopy = {
       eyebrow: 'Så arbetar vi',
       h2: 'Motsatsen till en bokningsplattform.',
       items: [
-        { title: 'En kort lista, ingen katalog.', body: 'Nio villor och sviter i de resmål som verkligen motiverar resan. Boenden nekas oftare än de läggs till, varje objekt på den här sidan är ett som en noggrann resenär kan boka utan att tveka.' },
-        { title: 'Anonym reseplanering.', body: 'En privat inkorg, ingen offentlig profil, inga kalendrar som delas med tredje part. Du skickar dina datum, sällskap och önskemål, och får en handplockad kortlista inom en arbetsdag.' },
-        { title: 'Direktpriser, där de finns.', body: 'Offentliga erbjudanden länkar till verifierade priser. Boenden som hålls under bordet, inklusive reservvillor utan offentlig tillgänglighet, offereras direkt. Svaret berättar vad som hör till vilken kategori.' },
+        { title: 'En kort lista, ingen katalog.', body: 'Sju villor och sviter i de resmål som verkligen motiverar resan. Boenden nekas oftare än de läggs till, varje objekt på den här sidan är ett som en noggrann resenär kan boka utan att tveka.' },
+        { title: 'Anonym förfrågan.', body: 'En privat inkorg, ingen offentlig profil, inga kalendrar som delas med tredje part. Du skickar dina datum, sällskap och önskemål, och får en handplockad kortlista inom en arbetsdag.' },
+        { title: 'Direktpriser, där de finns.', body: 'Offentliga erbjudanden länkar direkt till husets egen bokningssida, där priset står. Där inget pris är publicerat är det huset självt som offererar. Vi sätter inga priser och tar inte emot bokningar.' },
       ],
     },
     signature: {
       eyebrow: 'Signature-villor',
-      h2: 'Fyra ankare i Lappland-kollektionen.',
+      h2: 'De fyra vi rekommenderar oftast.',
       lede: 'De boenden vi rekommenderar oftast. Varje detalj nedan är verifierad mot operatörens information och färska recensioner, inte hämtad ur en broschyr.',
     },
     destinations: {
@@ -175,8 +175,8 @@ const sv: SiteCopy = {
   villasPage: {
     filters: { all: 'Alla', glassRoof: 'Glastak', logEstate: 'Timmergård', designerSuite: 'Designsvit', alpineChalet: 'Fjällstuga', lakeside: 'Vid sjön' },
     noVillas: 'Inga villor i den här kategorin ännu.',
-    conciergeTitle: 'Hittade du inte rätt alternativ?',
-    conciergeBody: 'Kollektionen ovan är det som är publicerat just nu. Ytterligare villor hålls under bordet, inklusive reservboenden utan offentligt erbjudande, och offereras direkt på begäran.',
+    inquiryTitle: 'Hittade du inte rätt alternativ?',
+    inquiryBody: 'Ovan finns hela den publicerade kollektionen. Passar inget, berätta vad du söker så föreslår vi vad vi själva skulle titta på, även utanför den här listan.',
   },
   suitesPage: {
     intro: {
@@ -186,8 +186,8 @@ const sv: SiteCopy = {
       glassRoof: 'stugan med glastak',
       p1Post: ', där taket är den viktigaste detaljen. Båda finns med nedan.',
     },
-    conciergeTitle: 'Två sviter tillsammans, eller ett privat våningsplan?',
-    conciergeBody: 'Flera av dessa boenden frigör under mellansäsongerna ett våningsplan med flera sviter för exklusiv användning. Dela dina datum och ditt sällskap.',
+    inquiryTitle: 'Två sviter tillsammans, eller ett privat våningsplan?',
+    inquiryBody: 'Flera av dessa boenden frigör under mellansäsongerna ett våningsplan med flera sviter för exklusiv användning. Dela dina datum och ditt sällskap.',
   },
   destinationsPage: {
     destinationLabel: (i) => `Resmål 0${i + 1}`,
@@ -202,8 +202,8 @@ const sv: SiteCopy = {
     villasHere: (n) => (n === 1 ? 'En villa är förankrad här.' : `${n} villor är förankrade här.`),
     villasHereH2: (n) => (n === 1 ? 'En villa är förankrad här.' : `${n} villor är förankrade här.`),
     fullCollection: 'Hela kollektionen',
-    conciergeTitle: (name) => `Planera en privat resa till ${name}.`,
-    conciergeBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål (privatkock, ankomst med helikopter, exklusiv användning). Vi svarar inom en arbetsdag med en kortlista.',
+    inquiryTitle: (name) => `Planera en privat resa till ${name}.`,
+    inquiryBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål (privatkock, ankomst med helikopter, exklusiv användning). Vi svarar inom en arbetsdag med en kortlista.',
   },
   experiencesPage: {
     sections: {
@@ -225,7 +225,7 @@ const sv: SiteCopy = {
     reasons: [
       { title: 'Arkitekturen får en annan karaktär.', body: 'Glastaken som finns till för norrskenet ramar nu in en oavbruten sol. Takfönster ovanför sängen, sol på sjön, ingen anledning att dra för en gardin, det finns ingen natt att krypa undan för.' },
       { title: 'Vildmarken blir tillgänglig.', body: 'Sjöarna töar, den boreala skogen öppnar sig, paddlingslederna dyker upp. Samma villa du nådde med snöskoter i februari ligger nu fem minuters båtfärd från bryggan.' },
-      { title: 'Reservvillorna öppnar.', body: 'De privata strandnära timmergårdarna och arkitektritade fjällstugorna frigör resten av sin kalender. Denna period är den enda på året då privatkockar och helikoptercharter offererar mellansäsongspriser.' },
+      { title: 'Samma hus, en annan årstid.', body: 'Kollektionen är densamma på sommaren som på vintern. Under samma glastak står en sol som inte går ner i stället för norrskenet, sjöarna är öppna och skogen går att gå i. Priset står på varje hus egen bokningssida, så skillnaden mellan säsongerna syns direkt.' },
       { title: 'Inga köer, inga grannar.', body: 'Lappland på sommaren ser en bråkdel av vinterns besökstäthet. Vildmarksstigen genom skogen, utsiktspunkten på fjället, de är i praktiken dina.' },
     ],
     summerCollection: {
@@ -241,14 +241,14 @@ const sv: SiteCopy = {
     },
     planning: {
       h2: 'En kommentar om att planera en midnattssolsresa.',
-      p1: 'Dagarna är korta och villorna är privatägda, kalendern fylls därför efter tillfälle snarare än jämnt. Conciergen håller varje sommar en liten reservation i reservgårdarna.',
+      p1: 'Dagarna är korta och villorna är privatägda, kalendern fylls därför efter tillfälle snarare än jämnt. Det lönar sig att fråga tidigt.',
       p2: 'Rätt tidpunkt att fråga om en viss juni ligger mellan januari och mars samma år. Senare förfrågningar är fortfarande värda besväret, platser frigörs, men det översta skiktet av utbudet är ofta borta tidigare.',
       quoting: 'Just nu offererar vi sommaren 2026 + 2027',
     },
-    conciergeTitle: 'Fråga om en midnattssolsresa.',
-    conciergeBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål. Ett svar kommer inom en arbetsdag med tillgängligheten i hela sommarkollektionen, inklusive reservvillor som inte listas offentligt.',
+    inquiryTitle: 'Fråga om en midnattssolsresa.',
+    inquiryBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål. Ett svar kommer inom en arbetsdag med tillgängligheten i hela sommarkollektionen.',
   },
-  conciergePage: {
+  inquiryPage: {
     eyebrow: 'Förfrågningsformuläret',
     h2: 'Berätta vad du har i tankarna.',
     intro: 'Fem korta fält. Ju mer specifika önskemål och ramar, desto mer användbar blir kortlistan. Namn och e-post är valfria, svar går till adressen meddelandet kommer från.',
@@ -340,8 +340,8 @@ const sv: SiteCopy = {
     signatureH2: 'Sex saker du kan verifiera vid ankomst.',
     destinationEyebrow: 'Resmålet',
     readProfile: (name) => `Läs profilen för ${name} →`,
-    conciergeTitle: (dest) => `Starta en förfrågan för ${dest}.`,
-    conciergeBody: 'Du skickar dina datum, ditt sällskap och dina önskemål. Ett svar kommer inom en arbetsdag med tillgängligheten, det faktiska nattpriset och eventuella reservvillor som passar väl till denna.',
+    inquiryTitle: (dest) => `Starta en förfrågan för ${dest}.`,
+    inquiryBody: 'Du skickar dina datum, ditt sällskap och dina önskemål. Vi svarar inom en arbetsdag: var du ser priset för det här huset och vad mer i kollektionen som passar bredvid.',
     alsoEyebrow: 'Även i kollektionen',
     alsoH2: 'Tre andra villor värda att överväga.',
   },
@@ -371,7 +371,7 @@ const sv: SiteCopy = {
       },
       general: {
         eyebrow: 'Allmänt & redaktionellt',
-        body: 'Allt annat. Långsammare hantering än private@; för reseplanering, använd concierge-inkorgen ovan.',
+        body: 'Allt annat. Långsammare hantering än private@; för reseplanering, använd den privata inkorgen ovan.',
       },
     },
     privateCta: 'Skicka en privat förfrågan',
@@ -382,14 +382,14 @@ const sv: SiteCopy = {
     aboutPost: ' för den bredare kontexten kring LaplandVibes-ekosystemet.',
   },
   footerNote:
-    'En privat kollektion, sammansatt i finska Lappland, senast granskad i maj 2026. Vissa bokningar ger en affiliateprovision, som aldrig avgör vilka villor som rekommenderas. Reserv- och de boenden som bara bokas via concierge betalar ingenting.',
+    'En privat kollektion, sammansatt i finska Lappland, senast granskad i maj 2026. Vissa bokningar ger en affiliateprovision, som aldrig avgör vilka villor som rekommenderas. Hus kan inte betala sig in i kollektionen.',
   footerPillars: [
     { name: 'Kollektionen', href: '/villas' },
     { name: 'Designsviter', href: '/suites' },
     { name: 'Resmål', href: '/destinations' },
     { name: 'Upplevelser', href: '/experiences' },
     { name: 'Midnattssol', href: '/midnight-sun' },
-    { name: 'Privat concierge', href: '/concierge' },
+    { name: 'Privat förfrågan', href: '/private-inquiry' },
   ],
 }
 

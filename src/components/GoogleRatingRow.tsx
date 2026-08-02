@@ -23,7 +23,7 @@
  *    `scripts/sync-villas.mjs`, so the verification date travels with it.
  *
  * Renders NOTHING when the sync produced no certain data, and nothing at all
- * for the two concierge-only house-inventory entries, which name no real
+ * for a villa with no property row in src/data/properties.ts, i.e. one naming no real
  * business. That is the fail-closed path and it must stay that way.
  *
  * Not an affiliate link: `rel="nofollow noopener"`, no `sponsored`. The card's

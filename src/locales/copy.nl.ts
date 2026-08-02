@@ -62,7 +62,7 @@ const nl: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Privécollectie',
-    reserve: 'Reserve · Alleen via conciërge',
+    reserve: 'Reserve · Alleen op aanvraag',
   },
   category: {
     'glass-roof': 'Villa met glazen dak',
@@ -71,29 +71,29 @@ const nl: SiteCopy = {
     'alpine-chalet': 'Alpenchalet',
     'lakeside-retreat': 'Verblijf aan het meer',
   },
-  concierge: {
-    eyebrow: 'De privéconciërge',
+  inquiry: {
+    eyebrow: 'Privéaanvraag',
     defaultTitle: 'Een rustigere manier om een reis naar Lapland te plannen.',
-    defaultBody: 'Stuurt u één bericht, voorkeuren, data, gezelschap, en onze conciërge antwoordt binnen één werkdag met een persoonlijke shortlist. Geen publiek profiel, geen gedeelde agenda\'s.',
+    defaultBody: 'Stuurt u één bericht, voorkeuren, data, gezelschap, en u ontvangt binnen één werkdag een persoonlijke shortlist. Geen publiek profiel, geen gedeelde agenda\'s.',
     inquireBtn: 'Privé-aanvraag',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Anonieme reisplanning',
+      anonymous: 'Anonieme aanvraag',
       reply: 'Antwoord binnen één werkdag',
-      rates: 'Directe tarieven op aanvraag',
+      rates: 'Link naar de boeking van het huis',
     },
   },
   midnightSunBand: {
     eyebrow: '6 juni – 7 juli',
     h2: 'Dezelfde villa\'s, in een zomer van ononderbroken licht.',
-    body: 'Dezelfde architectuur, een ander seizoen. Het glazen dak wordt een dakvenster op een zon die nooit ondergaat, het meer ontdooit, het bos vult zich met moltebessen. De helft van de wintervraag, en het enige venster per jaar waarin privékoks, helikoptercharters en de reservevilla\'s de rest van hun kalender openen.',
+    body: 'Dezelfde architectuur, een ander seizoen. Het glazen dak wordt een dakvenster op een zon die nooit ondergaat, het meer ontdooit, het bos vult zich met moltebessen. De zomer is Laplands rustigere seizoen, en het zijn dezelfde huizen. Het tarief staat op de boekingspagina van elk huis.',
     primary: 'Bekijk de zomercollectie',
     secondary: 'Junidata aanvragen',
   },
   newsletter: {
     eyebrow: 'De #LaplandVibes-nieuwsbrief',
     h2: 'Een rustig bericht wanneer villa\'s nieuwe data openen en wij van een onderhandse beschikbaarheid horen.',
-    lede: 'Directe tarieven. Last-minute openingen via de conciërge. Aurora-voorspellingen in de week voor elke nieuwe maan. Geen nieuwsbriefspam, geschreven in Finland, alleen verstuurd wanneer er iets concreets te melden is.',
+    lede: 'Data die zijn vrijgekomen. Huizen die een blik waard zijn. Aurora-voorspellingen in de week voor elke nieuwe maan. Geen nieuwsbriefspam, geschreven in Finland, alleen verstuurd wanneer er iets concreets te melden is.',
     emailPlaceholder: 'uw@email.com',
     footnote: 'Uitschrijven met één klik.',
     welcome: 'Welkom aan boord. Het eerste bericht arriveert binnen een week.',
@@ -109,14 +109,14 @@ const nl: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'De privécollectie',
-      title: 'Fins Lapland, discreet, aan de top van de markt.',
-      lede: 'Een kleine, met de hand samengestelde collectie privé-luxevilla\'s door heel Lapland, met conciërge, prijzen op aanvraag.',
+      title: 'Zeven villa\'s en suites in vier bestemmingen in Lapland.',
+      lede: 'Een kleine, met de hand samengestelde collectie privé-luxevilla\'s door heel Lapland. Prijzen op de eigen boekingspagina van elk huis, of stuur een privéaanvraag.',
       primary: 'Bekijk de collectie',
       secondary: 'Privé-aanvraag',
     },
     villas: {
       eyebrow: 'De collectie',
-      title: 'Negen villa\'s. Vijf bestemmingen. Eén privé-aanvraag.',
+      title: 'Zeven villa\'s. Vier bestemmingen. Eén privéaanvraag.',
       lede: 'Elk pand hieronder is geverifieerd aan de hand van de gepubliceerde informatie van de exploitant en recente gastbeoordelingen. Filter op het type gebouw dat u voor ogen heeft, of stuur een privé-aanvraag en wij stellen een shortlist samen rond uw data.',
     },
     suites: {
@@ -141,15 +141,15 @@ const nl: SiteCopy = {
       primary: 'Junidata aanvragen',
       secondary: 'Bekijk de collectie',
     },
-    concierge: {
-      eyebrow: 'Privéconciërge',
+    inquiry: {
+      eyebrow: 'Privéaanvraag',
       title: 'Eén privébericht, één samengestelde shortlist.',
-      lede: 'Stuurt u uw data, uw gezelschap en het soort reis dat u voor ogen heeft. Wij antwoorden binnen één werkdag, inclusief, waar het past, de reservevilla\'s die nooit publiek verschijnen.',
+      lede: 'Stuurt u uw data, uw gezelschap en het soort reis dat u voor ogen heeft. Wij antwoorden binnen één werkdag.',
     },
     about: {
       eyebrow: 'Over ons',
       title: 'Een korte lijst, met opzet kort gehouden.',
-      lede: 'Een privécollectie van de mooiste villa\'s en suites van Lapland, anonieme conciërge, directe tarieven waar die bestaan, geen platform ertussen.',
+      lede: 'Zeven met de hand gekozen villa\'s en suites in Fins Lapland, anonieme aanvraag, een directe link naar de boeking van elk huis, geen platform ertussen.',
     },
   },
   home: {
@@ -157,14 +157,14 @@ const nl: SiteCopy = {
       eyebrow: 'Hoe wij werken',
       h2: 'Het tegenovergestelde van een boekingsplatform.',
       items: [
-        { title: 'Een korte lijst, geen gids.', body: 'Negen villa\'s en suites in de bestemmingen die de reis werkelijk rechtvaardigen. Panden worden vaker afgewezen dan toegevoegd, elk item op deze pagina is er een die een zorgvuldige reiziger zonder aarzeling kan boeken.' },
-        { title: 'Anonieme reisplanning.', body: 'Eén privé-inbox, geen publiek profiel, geen agenda\'s die met derden worden gedeeld. Stuurt u uw data, gezelschap en voorkeuren, ontvang binnen één werkdag een samengestelde shortlist.' },
-        { title: 'Directe tarieven, waar die bestaan.', body: 'Publieke aanbiedingen verwijzen naar geverifieerde tarieven. Panden die onderhands worden gehouden, waaronder reservevilla\'s zonder publieke beschikbaarheid, worden rechtstreeks geoffreerd. Het antwoord vertelt u wat bij welke categorie hoort.' },
+        { title: 'Een korte lijst, geen gids.', body: 'Zeven villa\'s en suites in de bestemmingen die de reis werkelijk rechtvaardigen. Panden worden vaker afgewezen dan toegevoegd, elk item op deze pagina is er een die een zorgvuldige reiziger zonder aarzeling kan boeken.' },
+        { title: 'Anonieme aanvraag.', body: 'Eén privé-inbox, geen publiek profiel, geen agenda\'s die met derden worden gedeeld. Stuurt u uw data, gezelschap en voorkeuren, ontvang binnen één werkdag een samengestelde shortlist.' },
+        { title: 'Directe tarieven, waar die bestaan.', body: 'Publieke aanbiedingen verwijzen rechtstreeks naar de boekingspagina van het huis, waar het tarief staat. Waar geen tarief is gepubliceerd, geeft het huis dat zelf op. Wij stellen geen prijzen vast en nemen geen boekingen aan.' },
       ],
     },
     signature: {
       eyebrow: 'Signature-villa\'s',
-      h2: 'Vier ankers van de Lapland-collectie.',
+      h2: 'De vier die wij het vaakst aanbevelen.',
       lede: 'De panden die wij het vaakst aanbevelen. Elk detail hieronder is geverifieerd met de informatie van de exploitant en recente beoordelingen, niet overgenomen uit een brochure.',
     },
     destinations: {
@@ -175,8 +175,8 @@ const nl: SiteCopy = {
   villasPage: {
     filters: { all: 'Alle', glassRoof: 'Glazen dak', logEstate: 'Blokhutlandgoed', designerSuite: 'Designersuite', alpineChalet: 'Alpenchalet', lakeside: 'Aan het meer' },
     noVillas: 'Nog geen villa\'s in deze categorie.',
-    conciergeTitle: 'Niet de juiste optie gezien?',
-    conciergeBody: 'De collectie hierboven is wat op dit moment is gepubliceerd. Aanvullende villa\'s worden onderhands gehouden, waaronder reservepanden zonder publieke aanbieding, en op aanvraag rechtstreeks geoffreerd.',
+    inquiryTitle: 'Niet de juiste optie gezien?',
+    inquiryBody: 'Hierboven staat de volledige gepubliceerde collectie. Past er niets bij, vertel dan wat u zoekt en wij stellen voor wat wij zelf zouden bekijken, ook buiten deze lijst.',
   },
   suitesPage: {
     intro: {
@@ -186,8 +186,8 @@ const nl: SiteCopy = {
       glassRoof: 'cabine met glazen dak',
       p1Post: ', waar het plafond het belangrijkste detail is. Beide staan hieronder vermeld.',
     },
-    conciergeTitle: 'Twee suites samen, of een privéverdieping?',
-    conciergeBody: 'Verschillende van deze panden geven in de tussenseizoenen een verdieping met meerdere suites vrij voor exclusief gebruik. Deelt u uw data en gezelschap.',
+    inquiryTitle: 'Twee suites samen, of een privéverdieping?',
+    inquiryBody: 'Verschillende van deze panden geven in de tussenseizoenen een verdieping met meerdere suites vrij voor exclusief gebruik. Deelt u uw data en gezelschap.',
   },
   destinationsPage: {
     destinationLabel: (i) => `Bestemming 0${i + 1}`,
@@ -202,8 +202,8 @@ const nl: SiteCopy = {
     villasHere: (n) => (n === 1 ? 'Eén villa is hier verankerd.' : `${n} villa's zijn hier verankerd.`),
     villasHereH2: (n) => (n === 1 ? 'Eén villa is hier verankerd.' : `${n} villa's zijn hier verankerd.`),
     fullCollection: 'Volledige collectie',
-    conciergeTitle: (name) => `Plan een privéreis naar ${name}.`,
-    conciergeBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren (privékok, aankomst per helikopter, exclusief gebruik). Wij antwoorden binnen één werkdag met een shortlist.',
+    inquiryTitle: (name) => `Plan een privéreis naar ${name}.`,
+    inquiryBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren (privékok, aankomst per helikopter, exclusief gebruik). Wij antwoorden binnen één werkdag met een shortlist.',
   },
   experiencesPage: {
     sections: {
@@ -225,7 +225,7 @@ const nl: SiteCopy = {
     reasons: [
       { title: 'De architectuur krijgt een ander karakter.', body: 'De glazen daken die voor het noorderlicht bestaan, omlijsten nu een ononderbroken zon. Dakvenster boven het bed, zon op het meer, geen reden om een gordijn dicht te trekken, er is geen nacht om voor weg te kruipen.' },
       { title: 'De wildernis wordt toegankelijk.', body: 'De meren ontdooien, het boreale bos opent zich, de kanoroutes verschijnen. Dezelfde villa die u in februari per sneeuwscooter bereikte, ligt nu op vijf minuten varen van de steiger.' },
-      { title: 'De reservevilla\'s openen.', body: 'De private blokhutlandgoederen aan het meer en de architectchalets geven de rest van hun kalender vrij. Het venster is de enige periode in het jaar waarin privékoks en helikoptercharters tussenseizoentarieven offreren.' },
+      { title: 'Hetzelfde huis, een ander seizoen.', body: 'De collectie is in de zomer dezelfde als in de winter. Onder hetzelfde glazen dak staat een zon die niet ondergaat in plaats van de aurora, de meren zijn open en het bos is begaanbaar. Het tarief staat op de boekingspagina van elk huis, dus het seizoensverschil is daar direct te zien.' },
       { title: 'Geen rijen, geen buren.', body: 'Lapland in de zomer ziet een fractie van de bezoekersdichtheid van de winter. Het wildernispad door het bos, het uitkijkpunt op de fjell, ze zijn in wezen van u.' },
     ],
     summerCollection: {
@@ -241,14 +241,14 @@ const nl: SiteCopy = {
     },
     planning: {
       h2: 'Een opmerking over het plannen van een middernachtzonreis.',
-      p1: 'Het venster is kort en de villa\'s zijn in individueel bezit, de kalender vult zich daardoor naar gelegenheid in plaats van gelijkmatig. De conciërge houdt elke zomer een kleine reservering aan in de reservelandgoederen.',
+      p1: 'Het venster is kort en de villa\'s zijn in individueel bezit, de kalender vult zich daardoor naar gelegenheid in plaats van gelijkmatig. Het loont om vroeg te vragen.',
       p2: 'Het juiste moment om naar een bepaalde juni te informeren ligt tussen januari en maart van dat jaar. Latere aanvragen zijn nog steeds de moeite waard, er komen plekken vrij, maar het topsegment van de voorraad is vaak eerder weg.',
       quoting: 'Momenteel offreren wij zomer 2026 + 2027',
     },
-    conciergeTitle: 'Informeer naar een middernachtzonreis.',
-    conciergeBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren. Een antwoord arriveert binnen één werkdag met de beschikbaarheid in de hele zomercollectie, inclusief reservevilla\'s die niet publiek staan vermeld.',
+    inquiryTitle: 'Informeer naar een middernachtzonreis.',
+    inquiryBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren. Een antwoord arriveert binnen één werkdag met de beschikbaarheid in de hele zomercollectie.',
   },
-  conciergePage: {
+  inquiryPage: {
     eyebrow: 'Het aanvraagformulier',
     h2: 'Vertelt u ons wat u voor ogen heeft.',
     intro: 'Vijf korte velden. Hoe specifieker de voorkeuren en randvoorwaarden, hoe nuttiger de shortlist. Naam en e-mail blijven optioneel, antwoorden gaan naar het adres waarvandaan het bericht komt.',
@@ -340,8 +340,8 @@ const nl: SiteCopy = {
     signatureH2: 'Zes dingen die u bij aankomst kunt verifiëren.',
     destinationEyebrow: 'De bestemming',
     readProfile: (name) => `Lees het profiel van ${name} →`,
-    conciergeTitle: (dest) => `Start een aanvraag voor ${dest}.`,
-    conciergeBody: 'Stuurt u uw data, gezelschap en voorkeuren. Een antwoord arriveert binnen één werkdag met de beschikbaarheid, het werkelijke nachttarief en eventuele reservevilla\'s die goed bij deze passen.',
+    inquiryTitle: (dest) => `Start een aanvraag voor ${dest}.`,
+    inquiryBody: 'Stuurt u uw data, gezelschap en voorkeuren. Wij antwoorden binnen één werkdag: waar u het tarief van dit huis ziet en wat er in de collectie verder bij past.',
     alsoEyebrow: 'Ook in de collectie',
     alsoH2: 'Drie andere villa\'s die het overwegen waard zijn.',
   },
@@ -371,7 +371,7 @@ const nl: SiteCopy = {
       },
       general: {
         eyebrow: 'Algemeen & redactioneel',
-        body: 'Al het overige. Tragere afhandeling dan private@; gebruik voor reisplanning het conciërgepostvak hierboven.',
+        body: 'Al het overige. Tragere afhandeling dan private@; gebruik voor reisplanning het privépostvak hierboven.',
       },
     },
     privateCta: 'Stuur een privé-aanvraag',
@@ -382,14 +382,14 @@ const nl: SiteCopy = {
     aboutPost: ' voor de bredere context van het LaplandVibes-ecosysteem.',
   },
   footerNote:
-    'Een privécollectie, samengesteld in Fins Lapland, voor het laatst beoordeeld in mei 2026. Sommige boekingen leveren een affiliatiecommissie op, die nooit bepaalt welke villa\'s worden aanbevolen. De reserve- en uitsluitend via de conciërge geboekte panden betalen niets.',
+    'Een privécollectie, samengesteld in Fins Lapland, voor het laatst beoordeeld in mei 2026. Sommige boekingen leveren een affiliatiecommissie op, die nooit bepaalt welke villa\'s worden aanbevolen. Huizen kunnen zich niet in de collectie inkopen.',
   footerPillars: [
     { name: 'De collectie', href: '/villas' },
     { name: 'Designersuites', href: '/suites' },
     { name: 'Bestemmingen', href: '/destinations' },
     { name: 'Ervaringen', href: '/experiences' },
     { name: 'Middernachtzon', href: '/midnight-sun' },
-    { name: 'Privéconciërge', href: '/concierge' },
+    { name: 'Privéaanvraag', href: '/private-inquiry' },
   ],
 }
 

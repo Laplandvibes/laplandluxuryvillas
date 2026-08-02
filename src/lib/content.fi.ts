@@ -72,7 +72,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Lasikupolisviitti boreaalisen metsän laidalla, kahdenkymmenen minuutin päässä Venäjän rajasta.',
       copy: [
         'Nellim on toimiva erämaakylä (220 asukasta) Inarijärven itärannalla. Revontulikuplat on sijoitettu erilleen päärakennuksesta omalle aukiolleen, kullakin panoraaminen läpinäkyvä kupoli sängyn päällä ja puulämmitteinen palju kuistilla.',
-        'Lodge järjestää saamelaisia kulttuuri-iltoja, pilkkimistä järvellä ja yhden Suomen harvoista sertifioiduista opastetuista revontulivalokuvausohjelmista. Huoneet varataan vuotta etukäteen helmikuun huippukaudelle, concierge löytää toisinaan vapautuneen paikan.',
+        'Lodge järjestää saamelaisia kulttuuri-iltoja, pilkkimistä järvellä ja yhden Suomen harvoista sertifioiduista opastetuista revontulivalokuvausohjelmista. Huoneet varataan vuotta etukäteen helmikuun huippukaudelle.',
       ],
       signature: [
         'Läpinäkyvä panoraamakupoli sängyn päällä',
@@ -113,36 +113,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Revontulihälytys + mökin vieressä palju',
       ],
     },
-    'private-lakeside-log-estate': {
-      tagline: 'Yksityinen käsin rakennettu hirsitalo omalla Inarijärven lahdellaan. Vain conciergen kautta tiedustellen.',
-      copy: [
-        'Neljän makuuhuoneen hirsihuvila omalla yksityisellä lahdellaan, jonne johtaa yksi ainoa tie. Pienen vakioasiakaskunnan käytössä, varaamme muutaman viikon kaudessa yksityisenä allokaationa.',
-        'Sisältää savusaunan, kaksi puulämmitteistä paljua, venevajan ja oman kokkiryhmän, jonka koordinoimme kohdetta varatessa. Moottorikelkka- ja huskyyhteys lahden kautta talvella; kanoointi ja järvikalastus keskiyön auringon kaudella.',
-      ],
-      signature: [
-        'Neljä makuuhuonetta yksityisellä Inarijärven lahdella',
-        'Savusauna + kaksi puulämmitteistä paljua',
-        'Oma kokkiryhmä järjestetään pyynnöstä',
-        'Moottorikelkka-/huskyyhteys järven kautta talvella',
-        'Vene + kanootti + laituri keskiyön auringon kaudelle',
-        'Conciergen allokaatio, ei koskaan julkisissa listauksissa',
-      ],
-    },
-    'designer-mountain-chalet-levi': {
-      tagline: 'Moderni arkkitehdin suunnittelema chalet Levin etelärinteellä. Ski-in/ski-out, yksityinen hyvinvointikerros.',
-      copy: [
-        'Kolmen makuuhuoneen arkkitehdin suunnittelema chalet Levitunturin etelärinteellä, jossa hyvinvointikerros (sauna, höyry, avantoallas, hoitohuone) sijaitsee pohjakerroksessa ja olohuone avautuu 12 metrin terassille laaksoon päin.',
-        'Lyhyt laskettelumatka Levin gondolihissille; lyhyt kävelymatka takaisin ylös lämmitettyä polkua pitkin. Sisältää päivittäisen siivouksen, aamiaisen katteen ja päivystävän laskettelukonciergen.',
-      ],
-      signature: [
-        'Arkkitehdin suunnittelema kolmen makuuhuoneen chalet, etelärinne',
-        'Ski-in/ski-out lämmitettyä polkua pitkin',
-        'Yksityinen hyvinvointikerros: sauna, höyry, avantoallas, hoitohuone',
-        '12 metrin lasiterassi laaksoon päin',
-        'Päivittäinen siivous + aamiaisen kate sisältyy',
-        'Päivystävä laskettelu-concierge koko oleskelun ajan',
-      ],
-    },
   },
   destinations: {
     'saariselka': {
@@ -164,13 +134,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Pohjoisin kohteemme, jossa revontulia havaitaan noin kolmena yönä neljästä. Saamelaisten sydänmaa, Inarijärvi, pimeät taivaat.',
       copy: [
         'Inari on Suomen pohjoisin kunta ja suomensaamelaisten kulttuuripääkaupunki. Kylä sijaitsee Inarijärven, Suomen kolmanneksi suurimman järven, rannalla. Järvessä on noin 3 000 saarta, ja kylä on yli 200 kilometriä napapiirin pohjoispuolella ilman kaupungin valoja horisontissa.',
-        'Luksusmatkailulle tämä merkitsee kahta asiaa. Ensinnäkin: tällä leveysasteella Ilmatieteen laitos havaitsee revontulia keskimäärin kolmena yönä neljästä, ja ne avautuvat suoraan päälaen yllä eivätkä matalalla pohjoisessa. Toiseksi: rantojen hirsihuvilat, joista osaa pidämme yksityisesti, ovat Lapin rauhallisimpia majoituksia: ei läpikulkuliikennettä eikä naapurikyliä näkyvällä horisontilla.',
+        'Luksusmatkailulle tämä merkitsee kahta asiaa. Ensinnäkin: tällä leveysasteella Ilmatieteen laitos havaitsee revontulia keskimäärin kolmena yönä neljästä, ja ne avautuvat suoraan päälaen yllä eivätkä matalalla pohjoisessa. Toiseksi: rantojen hirsihuvilat ovat Lapin rauhallisimpia majoituksia: ei läpikulkuliikennettä eikä naapurikyliä näkyvällä horisontilla.',
       ],
       highlights: [
         'Aurora Village, varta vasten rakennettu 30 hehtaarin lasimökkialue',
         'Wilderness Hotel Nellim, revontulikuplat Inarijärven itärannalla',
         'Saamelaismuseo SIIDA + kulttuuriohjelmat ympäri vuoden',
-        'Yksityiset rantojen hirsihuvilat saatavilla conciergen kautta',
+        'Inarijärvi, Suomen kolmanneksi suurin järvi, noin 3 000 saarta',
       ],
       arrival: 'Ivalo (IVL), 40 km, noin 40 min yksityiskuljetuksella',
       auroraNote: 'Pohjoisin kohteemme ja se, jossa revontulet useimmiten avautuvat suoraan pään päälle eivätkä matalalle pohjoiseen. Inarijärvi antaa yhtenäisen horisontin, eikä siinä näy kylän valoja.',
@@ -233,7 +203,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: '45 minuutin yölentohelikopterilla pilvikerroksen yläpuolelle, suoraan revontulien luo.',
       copy: [
         'Lentoa operoi Suomen ainoa yö-VFR-sertifioitu helikopterioperaattori Rovaniemeltä ja Ivalosta. Lento nousee paikallisen pilvikerroksen yli ja kiertää aktiivisen revontuliovaalin sisällä, näkökulma, joka on maasta mahdoton.',
-        'Maakuvaus sisältyy lennon kummallekin puolelle; itse lento-osuus on elämystä, ei kameraa varten. Enintään neljä matkustajaa AS350-konetta kohti. Säärajoitteinen, concierge seuraa ennustetta ja ilmoittaa edellisenä päivänä.',
+        'Maakuvaus sisältyy lennon kummallekin puolelle; itse lento-osuus on elämystä, ei kameraa varten. Enintään neljä matkustajaa AS350-konetta kohti. Säärajoitteinen: operaattori seuraa ennustetta ja ilmoittaa edellisenä päivänä.',
       ],
       available: 'Rovaniemi, Ivalo, loka–maaliskuu (sääriippuvainen)',
     },
@@ -273,7 +243,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Suora yksityiskonekuljetus Ivaloon, Kittilään tai Rovaniemelle, ei kaupallista lähtöselvitystä, ei vaihtoasemaa.',
       copy: [
         'Koordinoidaan suihkukonekumppaniemme kautta Helsingissä, Genevessä ja Dohassa. Suorat lennot Ivaloon (lähimpänä Saariselän / Inarin huviloita), Kittilään (lähimpänä Levin / Ylläksen huviloita) tai Rovaniemelle (paras Arctic TreeHousea varten).',
-        'Täysi käsittely: maakuljetus huvilallesi lämmitetyllä arktisen tason autolla, matkatavarat eteenpäin, tulli ohi ilman jonoa. Concierge varaa lähtöslotin ja sovittaa saapumisen huvilan sisäänkirjautumisaikaan.',
+        'Täysi käsittely: maakuljetus huvilallesi lämmitetyllä arktisen tason autolla, matkatavarat eteenpäin, tulli ohi ilman jonoa. Operaattori varaa lähtöslotin ja sovittaa saapumisen huvilan sisäänkirjautumisaikaan.',
       ],
       available: 'Kaikki kohteet, ympäri vuoden',
     },
@@ -281,7 +251,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Nosto alueen lentoasemalta suoraan huvilasi laskeutumispaikalle, ei maakuljetusta.',
       copy: [
         'Käytetään useimmiten saavuttaessa Inarijärven yksityisille rantojen hirsitiloille. Kone on sama AS350, jota revontulilennoilla käytetään; yksi sektori kestää 20–45 minuuttia.',
-        'Enintään viisi matkustajaa + matkatavarat. Concierge ajoittaa noston huvilan sisäänkirjautumiseen ja valoisaan aikaan, talven syvimpään kauteen aurinko laskee jo klo 15.',
+        'Enintään viisi matkustajaa + matkatavarat. Operaattori ajoittaa noston huvilan sisäänkirjautumiseen ja valoisaan aikaan, talven syvimpään kauteen aurinko laskee jo klo 15.',
       ],
       available: 'Rovaniemi, Ivalo → Inarijärven tilat',
     },

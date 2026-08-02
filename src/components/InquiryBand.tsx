@@ -3,7 +3,7 @@ import { Mail, Lock, Phone } from 'lucide-react'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 
-interface ConciergeBandProps {
+interface InquiryBandProps {
   /** Override the headline. Default speaks to private trip-planning. */
   title?: string
   /** Override the lede. */
@@ -12,10 +12,10 @@ interface ConciergeBandProps {
   emailOnly?: boolean
 }
 
-export default function ConciergeBand({ title, body, emailOnly = false }: ConciergeBandProps) {
+export default function InquiryBand({ title, body, emailOnly = false }: InquiryBandProps) {
   const lang = useLang()
   const to = useLocalePath()
-  const c = COPY[lang].concierge
+  const c = COPY[lang].inquiry
   const t = title ?? c.defaultTitle
   const b = body ?? c.defaultBody
 
@@ -46,7 +46,7 @@ export default function ConciergeBand({ title, body, emailOnly = false }: Concie
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           {!emailOnly && (
             <Link
-              to={to('/concierge')}
+              to={to('/private-inquiry')}
               className="inline-flex items-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
             >
               {c.inquireBtn}

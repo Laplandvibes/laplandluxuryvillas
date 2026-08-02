@@ -18,7 +18,7 @@ type PageKey =
   | 'destinations'
   | 'experiences'
   | 'midnight-sun'
-  | 'concierge'
+  | 'private-inquiry'
   | 'about'
 
 const MAP = seoMeta as unknown as Record<string, Record<string, Entry>>

@@ -120,7 +120,7 @@ export default function Experiences() {
                         </div>
                         {e.inquiryOnly || !e.bookingUrl ? (
                           <Link
-                            to={to('/concierge')}
+                            to={to('/private-inquiry')}
                             className="inline-flex items-center gap-2 border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
                           >
                             {c.cta.inquire}

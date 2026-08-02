@@ -68,7 +68,7 @@ const de: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
-    reserve: 'Reserve · Nur Concierge',
+    reserve: 'Reserve · Nur auf Anfrage',
   },
   category: {
     'glass-roof': 'Glasiglu-Villa',
@@ -77,29 +77,29 @@ const de: SiteCopy = {
     'alpine-chalet': 'Alpenchalet',
     'lakeside-retreat': 'Seerefugium',
   },
-  concierge: {
-    eyebrow: 'Der private Concierge',
+  inquiry: {
+    eyebrow: 'Private Anfrage',
     defaultTitle: 'Eine ruhigere Art, eine Lappland-Reise zu planen.',
-    defaultBody: 'Senden Sie uns eine einzige Nachricht, Wünsche, Termine, Gästezahl, und unser Concierge antwortet mit einer privaten Auswahl innerhalb eines Werktags. Kein öffentliches Profil, keine geteilten Kalender.',
+    defaultBody: 'Senden Sie uns eine einzige Nachricht, Wünsche, Termine, Gästezahl, und Sie erhalten innerhalb eines Werktags eine private Auswahl zurück. Kein öffentliches Profil, keine geteilten Kalender.',
     inquireBtn: 'Private Anfrage starten',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Anonyme Reiseplanung',
+      anonymous: 'Anonyme Anfrage',
       reply: 'Antwort innerhalb eines Werktags',
-      rates: 'Direktpreise auf Anfrage',
+      rates: 'Link zur Buchung des Hauses',
     },
   },
   midnightSunBand: {
     eyebrow: '6. Juni – 7. Juli',
     h2: 'Die Villen, in einem Sommer ununterbrochenen Lichts.',
-    body: 'Dieselbe Architektur, andere Jahreszeit. Das Glasdach wird zum Oberlicht für eine Sonne, die nicht untergeht, der See taut auf, der Wald füllt sich mit Moltebeeren. Die Hälfte der Winternachfrage, und das einzige Fenster im Jahr, in dem private Köche, Hubschraubercharter und die Reserve-Villen den Rest ihres Kalenders öffnen.',
+    body: 'Dieselbe Architektur, andere Jahreszeit. Das Glasdach wird zum Oberlicht für eine Sonne, die nicht untergeht, der See taut auf, der Wald füllt sich mit Moltebeeren. Der Sommer ist Lapplands ruhigere Saison, und es sind dieselben Häuser. Den Preis nennt die Buchungsseite des jeweiligen Hauses.',
     primary: 'Sommerkollektion ansehen',
     secondary: 'Juni-Termine anfragen',
   },
   newsletter: {
     eyebrow: 'Der #LaplandVibes-Newsletter',
     h2: 'Eine ruhige Nachricht, wenn Villen neue Termine öffnen und wir von einer privaten Freigabe erfahren.',
-    lede: 'Direktpreise. Last-Minute-Concierge-Öffnungen. Polarlicht-Fenster-Prognosen in der Woche vor jedem Neumond. Kein Newsletter-Spam, geschrieben in Finnland, nur versendet, wenn es etwas Konkretes zu berichten gibt.',
+    lede: 'Frei gewordene Termine. Häuser, die einen Blick wert sind. Polarlicht-Fenster-Prognosen in der Woche vor jedem Neumond. Kein Newsletter-Spam, geschrieben in Finnland, nur versendet, wenn es etwas Konkretes zu berichten gibt.',
     emailPlaceholder: 'sie@e-mail.de',
     footnote: 'Abmeldung mit einem Klick.',
     welcome: 'Willkommen an Bord. Die erste Nachricht erreicht Sie binnen einer Woche.',
@@ -115,14 +115,14 @@ const de: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'Die private Kollektion',
-      title: 'Finnisch-Lappland, leise, an der Spitze des Marktes.',
-      lede: 'Eine kleine, handverlesene Kollektion privater Luxusvillen in ganz Lappland, Concierge-Service, Preise auf Anfrage.',
+      title: 'Sieben Villen und Suiten in vier Reisezielen Lapplands.',
+      lede: 'Eine kleine, handverlesene Kollektion privater Luxusvillen in ganz Lappland. Preise von der Buchungsseite des jeweiligen Hauses, oder senden Sie eine private Anfrage.',
       primary: 'Kollektion entdecken',
       secondary: 'Private Anfrage starten',
     },
     villas: {
       eyebrow: 'Die Kollektion',
-      title: 'Neun Villen. Fünf Reiseziele. Eine private Anfrage.',
+      title: 'Sieben Villen. Vier Reiseziele. Eine private Anfrage.',
       lede: 'Jedes der unten aufgeführten Anwesen ist anhand der veröffentlichten Angaben des Betreibers und aktueller Gästebewertungen geprüft. Filtern Sie nach Bauart, oder senden Sie eine private Anfrage und Sie erhalten eine Auswahl für Ihre Termine.',
     },
     suites: {
@@ -147,15 +147,15 @@ const de: SiteCopy = {
       primary: 'Juni-Termine anfragen',
       secondary: 'Kollektion ansehen',
     },
-    concierge: {
-      eyebrow: 'Privater Concierge',
+    inquiry: {
+      eyebrow: 'Private Anfrage',
       title: 'Eine private Nachricht, eine kuratierte Auswahl.',
-      lede: 'Senden Sie uns Termine, Gästezahl und die Art der Reise, die Sie sich vorstellen. Wir antworten innerhalb eines Werktags, auch, wo passend, mit den Reserve-Villen, die nie öffentlich auftauchen.',
+      lede: 'Senden Sie uns Termine, Gästezahl und die Art der Reise, die Sie sich vorstellen. Wir antworten innerhalb eines Werktags.',
     },
     about: {
       eyebrow: 'Über uns',
       title: 'Eine kurze Liste, absichtlich kurz gehalten.',
-      lede: 'Eine private Kollektion der feinsten Villen und Suiten Lapplands, anonymer Concierge, Direktpreise wo verfügbar, keine Plattform dazwischen.',
+      lede: 'Sieben handverlesene Villen und Suiten in Finnisch-Lappland, anonyme Anfrage, ein direkter Link zur Buchung des Hauses, keine Plattform dazwischen.',
     },
   },
   home: {
@@ -163,14 +163,14 @@ const de: SiteCopy = {
       eyebrow: 'So arbeiten wir',
       h2: 'Das Gegenteil einer Buchungsplattform.',
       items: [
-        { title: 'Eine kurze Liste, kein Verzeichnis.', body: 'Neun Villen und Suiten in den Reisezielen, die die Reise wirklich rechtfertigen. Anwesen werden öfter abgelehnt als hinzugefügt, jeder Eintrag auf dieser Seite ist einer, den ein sorgfältiger Reisender ohne Zögern buchen könnte.' },
-        { title: 'Anonyme Reiseplanung.', body: 'Ein einziger privater Posteingang, kein öffentliches Profil, keine geteilten Kalender mit Dritten. Senden Sie Termine, Gästezahl, Wünsche, und erhalten Sie eine kuratierte Auswahl innerhalb eines Werktags.' },
-        { title: 'Direktpreise, wo möglich.', body: 'Öffentliche Listings verweisen auf verifizierte Preise. Privat geführte Anwesen, einschließlich Reserve-Villen ohne öffentliche Verfügbarkeit, werden direkt bepreist. Die Antwort sagt Ihnen, was wozu gehört.' },
+        { title: 'Eine kurze Liste, kein Verzeichnis.', body: 'Sieben Villen und Suiten in den Reisezielen, die die Reise wirklich rechtfertigen. Anwesen werden öfter abgelehnt als hinzugefügt, jeder Eintrag auf dieser Seite ist einer, den ein sorgfältiger Reisender ohne Zögern buchen könnte.' },
+        { title: 'Anonyme Anfrage.', body: 'Ein einziger privater Posteingang, kein öffentliches Profil, keine geteilten Kalender mit Dritten. Senden Sie Termine, Gästezahl, Wünsche, und erhalten Sie eine kuratierte Auswahl innerhalb eines Werktags.' },
+        { title: 'Direktpreise, wo möglich.', body: 'Öffentliche Listings verweisen direkt auf die Buchungsseite des Hauses, auf der der Preis steht. Wo kein Preis veröffentlicht ist, nennt ihn das Haus selbst. Wir setzen keine Preise fest und nehmen keine Buchungen entgegen.' },
       ],
     },
     signature: {
       eyebrow: 'Signature-Villen',
-      h2: 'Vier Anker der Lappland-Kollektion.',
+      h2: 'Die vier, die wir am häufigsten empfehlen.',
       lede: 'Die am häufigsten empfohlenen Anwesen. Jedes Detail unten ist anhand der Betreiberangaben und aktueller Gästebewertungen verifiziert, nicht aus einer Broschüre übernommen.',
     },
     destinations: {
@@ -181,8 +181,8 @@ const de: SiteCopy = {
   villasPage: {
     filters: { all: 'Alle', glassRoof: 'Glasdach', logEstate: 'Blockhaus-Gut', designerSuite: 'Designer-Suite', alpineChalet: 'Alpenchalet', lakeside: 'Am See' },
     noVillas: 'In dieser Kategorie sind noch keine Villen.',
-    conciergeTitle: 'Nicht das Richtige gefunden?',
-    conciergeBody: 'Die obige Kollektion ist das, was derzeit veröffentlicht ist. Weitere Villen werden privat geführt, einschließlich Reserve-Anwesen ohne öffentliches Listing, und werden direkt auf Anfrage bepreist.',
+    inquiryTitle: 'Nicht das Richtige gefunden?',
+    inquiryBody: 'Oben steht die vollständige veröffentlichte Kollektion. Wenn nichts davon passt, schreiben Sie uns, wonach Sie suchen, und wir schlagen vor, was wir selbst ansehen würden, auch außerhalb dieser Liste.',
   },
   suitesPage: {
     intro: {
@@ -192,8 +192,8 @@ const de: SiteCopy = {
       glassRoof: 'Glasdach-Hütte',
       p1Post: ', bei der die Decke das Schlagzeilendetail ist. Beide sind unten aufgeführt.',
     },
-    conciergeTitle: 'Eine Zwei-Suiten-Buchung oder eine private Etage?',
-    conciergeBody: 'Mehrere dieser Anwesen geben in den Schulterwochen eine Mehrsuiten-Etage zur ausschließlichen Nutzung frei. Teilen Sie uns Termine und Gästezahl mit.',
+    inquiryTitle: 'Eine Zwei-Suiten-Buchung oder eine private Etage?',
+    inquiryBody: 'Mehrere dieser Anwesen geben in den Schulterwochen eine Mehrsuiten-Etage zur ausschließlichen Nutzung frei. Teilen Sie uns Termine und Gästezahl mit.',
   },
   destinationsPage: {
     destinationLabel: (i) => `Reiseziel 0${i + 1}`,
@@ -208,8 +208,8 @@ const de: SiteCopy = {
     villasHere: (n) => (n === 1 ? 'Eine Villa hier verankert.' : `${n} Villen hier verankert.`),
     villasHereH2: (n) => (n === 1 ? 'Eine Villa hier verankert.' : `${n} Villen hier verankert.`),
     fullCollection: 'Gesamte Kollektion',
-    conciergeTitle: (name) => `Planen Sie eine private ${name}-Reise.`,
-    conciergeBody: 'Senden Sie Termine, Gästezahl und etwaige Wünsche (privater Koch, Hubschrauberanreise, exklusive Nutzung). Eine Antwort mit Auswahl erreicht Sie innerhalb eines Werktags.',
+    inquiryTitle: (name) => `Planen Sie eine private ${name}-Reise.`,
+    inquiryBody: 'Senden Sie Termine, Gästezahl und etwaige Wünsche (privater Koch, Hubschrauberanreise, exklusive Nutzung). Eine Antwort mit Auswahl erreicht Sie innerhalb eines Werktags.',
   },
   experiencesPage: {
     sections: {
@@ -224,14 +224,14 @@ const de: SiteCopy = {
       { value: '32+', label: 'Tage ohne Sonnenuntergang in Rovaniemi, weiter nördlich mehr' },
       { value: '24h', label: 'Tageslicht am Höhepunkt, 21. Juni' },
       { value: '+18°C', label: 'Durchschnittstemperatur tagsüber Ende Juni' },
-      { value: '50%', label: 'Geringere Nachfrage als in der Polarlichtsaison' },
+      { value: '68,9°N', label: 'Inari, unser nördlichstes Ziel, wo es am längsten dauert' },
     ],
     fourReasons: 'Vier Gründe',
     h2: 'Lappland im Sommer ist ein eigenständiger Ort.',
     reasons: [
       { title: 'Die Architektur verändert ihren Charakter.', body: 'Die Glasdächer, die für die Polarlichter existieren, rahmen nun eine ununterbrochene Sonne. Oberlicht über dem Bett, Sonne auf dem See, kein Vorhang zu schließen, es gibt keine Nacht zum Verbergen.' },
       { title: 'Die Wildnis wird zugänglich.', body: 'Seen tauen, der boreale Wald öffnet sich, die Kanurouten erscheinen. Dieselbe Villa, die Sie im Februar per Schneemobil erreichten, ist nun eine fünfminütige Bootsfahrt vom Steg entfernt.' },
-      { title: 'Die Reserve-Villen öffnen.', body: 'Die privaten Seeufer-Blockhaus-Güter und die Architektenchalets geben den Rest ihres Kalenders frei. Das Fenster ist die einzige Zeit im Jahr, in der private Köche und Hubschraubercharter Schulterpreise bieten.' },
+      { title: 'Dasselbe Haus, eine andere Jahreszeit.', body: 'Die Kollektion ist im Sommer dieselbe wie im Winter. Unter demselben Glasdach steht statt des Polarlichts eine Sonne, die nicht untergeht, die Seen sind offen und der Wald begehbar. Den Preis nennt die Buchungsseite des jeweiligen Hauses, der Saisonunterschied ist dort direkt ablesbar.' },
       { title: 'Keine Schlangen, keine Nachbarn.', body: 'Lappland im Sommer sieht einen Bruchteil der Besucherdichte des Winters. Der Wildnispfad durch den Wald, der Aussichtspunkt vom Fjell, sie gehören praktisch Ihnen.' },
     ],
     summerCollection: {
@@ -247,14 +247,14 @@ const de: SiteCopy = {
     },
     planning: {
       h2: 'Eine Notiz zur Planung einer Mitternachtssonnen-Reise.',
-      p1: 'Das Fenster ist kurz und die Villen sind im Einzelbesitz, der Kalender füllt sich daher opportunistisch, nicht gleichmäßig. Der Concierge hält jeden Sommer ein kleines Kontingent in den Reserve-Anwesen.',
+      p1: 'Das Fenster ist kurz und die Villen sind im Einzelbesitz, der Kalender füllt sich daher opportunistisch, nicht gleichmäßig. Es lohnt sich, früh zu fragen.',
       p2: 'Der richtige Zeitpunkt, für einen bestimmten Juni anzufragen, liegt zwischen Januar und März desselben Jahres. Spätere Anfragen sind weiterhin sinnvoll, Freigaben kommen vor, aber das High-End des Inventars geht oft früher.',
       quoting: 'Wir bepreisen derzeit Sommer 2026 + 2027',
     },
-    conciergeTitle: 'Eine Mitternachtssonnen-Reise anfragen.',
-    conciergeBody: 'Senden Sie Termine, Gästezahl und Wünsche. Eine Antwort erreicht Sie innerhalb eines Werktags mit der Verfügbarkeit der Sommerkollektion, einschließlich Reserve-Villen, die nicht öffentlich gelistet sind.',
+    inquiryTitle: 'Eine Mitternachtssonnen-Reise anfragen.',
+    inquiryBody: 'Senden Sie Termine, Gästezahl und Wünsche. Eine Antwort erreicht Sie innerhalb eines Werktags mit der Verfügbarkeit der Sommerkollektion.',
   },
-  conciergePage: {
+  inquiryPage: {
     eyebrow: 'Das Anfrageformular',
     h2: 'Erzählen Sie uns, was Sie sich vorstellen.',
     intro: 'Fünf kurze Felder. Je konkreter Wünsche und Rahmenbedingungen, desto hilfreicher die Auswahl. Name und E-Mail bleiben optional, wir antworten an die Adresse, von der die Nachricht kommt.',
@@ -276,7 +276,7 @@ const de: SiteCopy = {
     options: {
       headcount: ['1–2 Gäste', '3–4 Gäste', '5–6 Gäste', '7–10 Gäste', 'Größere Gruppe'],
       intent: ['Polarlichtsaison, erster Besuch', 'Polarlichtsaison, wiederholter Besuch', 'Mitternachtssonne (Juni–Juli)', 'Weihnachten / Neujahr', 'Familiengruppe', 'Private Feier', 'Hochzeitsreise / Rückzug zu zweit', 'Anderes, in der Nachricht erläutern'],
-      budget: ['Unter 1.000 € / Nacht', '1.000 – 2.500 € / Nacht', '2.500 – 5.000 € / Nacht', 'Über 5.000 € / Nacht', 'Reserve-Anwesen, exklusive Nutzung', 'Keine Angabe'],
+      budget: ['Unter 1.000 € / Nacht', '1.000 – 2.500 € / Nacht', '2.500 – 5.000 € / Nacht', 'Über 5.000 € / Nacht', 'Exklusive Nutzung des ganzen Hauses', 'Keine Angabe'],
     },
     submit: 'Private Anfrage senden',
     sending: 'Wird gesendet…',
@@ -338,7 +338,7 @@ const de: SiteCopy = {
     nightlyHint: 'Richtwert Nebensaisonpreis. Der tatsächliche Nächtigungspreis hängt von Terminen, Aufenthaltsdauer und Einschlüssen ab.',
     rate: 'Preis',
     onRequest: 'Auf Anfrage',
-    reserveHint: 'Reserve-Anwesen, auf Anfrage privat bepreist, nie auf einem öffentlichen Listing.',
+    reserveHint: 'Für dieses Haus ist kein Preis veröffentlicht. Fragen Sie direkt beim Haus nach.',
     beginInquiry: 'Private Anfrage starten',
     viewRates: 'Öffentliche Preise ansehen',
     orSendInquiry: 'Oder eine private Anfrage senden',
@@ -346,8 +346,8 @@ const de: SiteCopy = {
     signatureH2: 'Sechs Details, die Sie bei der Ankunft prüfen können.',
     destinationEyebrow: 'Das Reiseziel',
     readProfile: (name) => `${name}-Profil lesen →`,
-    conciergeTitle: (dest) => `Eine ${dest}-Anfrage starten.`,
-    conciergeBody: 'Senden Sie Termine, Gästezahl und Wünsche. Eine Antwort erreicht Sie innerhalb eines Werktags mit Verfügbarkeit, tatsächlichem Nächtigungspreis und etwaigen Reserve-Villen, die als Ergänzung geeignet sind.',
+    inquiryTitle: (dest) => `Eine ${dest}-Anfrage starten.`,
+    inquiryBody: 'Senden Sie Termine, Gästezahl und Wünsche. Wir antworten innerhalb eines Werktags: wo Sie den Preis dieses Hauses sehen und was in der Kollektion sonst dazu passt.',
     alsoEyebrow: 'Ebenfalls in der Kollektion',
     alsoH2: 'Drei weitere Villen, die einen Blick wert sind.',
   },
@@ -377,7 +377,7 @@ const de: SiteCopy = {
       },
       general: {
         eyebrow: 'Allgemeines & Redaktion',
-        body: 'Alles Weitere. Längere Bearbeitungszeit als bei private@; für die Reiseplanung nutzen Sie bitte das Concierge-Postfach oben.',
+        body: 'Alles Weitere. Längere Bearbeitungszeit als bei private@; für die Reiseplanung nutzen Sie bitte das private Postfach oben.',
       },
     },
     privateCta: 'Private Anfrage senden',
@@ -388,14 +388,14 @@ const de: SiteCopy = {
     aboutPost: '.',
   },
   footerNote:
-    'Eine private Kollektion, kuratiert in Finnisch-Lappland, zuletzt überprüft im Mai 2026. Einige Buchungen bringen eine Partnerprovision, die nie beeinflusst, welche Villen empfohlen werden. Die Reserve- und Concierge-only-Anwesen zahlen nichts.',
+    'Eine private Kollektion, kuratiert in Finnisch-Lappland, zuletzt überprüft im Mai 2026. Einige Buchungen bringen eine Partnerprovision, die nie beeinflusst, welche Villen empfohlen werden. Häuser können sich nicht in die Kollektion einkaufen.',
   footerPillars: [
     { name: 'Die Kollektion', href: '/villas' },
     { name: 'Designer-Suiten', href: '/suites' },
     { name: 'Reiseziele', href: '/destinations' },
     { name: 'Erlebnisse', href: '/experiences' },
     { name: 'Mitternachtssonne', href: '/midnight-sun' },
-    { name: 'Privater Concierge', href: '/concierge' },
+    { name: 'Private Anfrage', href: '/private-inquiry' },
   ],
 }
 

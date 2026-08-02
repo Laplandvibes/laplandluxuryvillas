@@ -68,7 +68,7 @@ const fi: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
-    reserve: 'Reserve · Vain concierge-kanavan kautta',
+    reserve: 'Reserve · Vain tiedustelemalla',
   },
   category: {
     'glass-roof': 'Lasikattohuvila',
@@ -77,29 +77,29 @@ const fi: SiteCopy = {
     'alpine-chalet': 'Tunturichalet',
     'lakeside-retreat': 'Rantahuvila',
   },
-  concierge: {
-    eyebrow: 'Yksityinen concierge',
+  inquiry: {
+    eyebrow: 'Yksityinen tiedustelu',
     defaultTitle: 'Rauhallisempi tapa suunnitella Lapin-reissu.',
     defaultBody: 'Lähetä meille yksi viesti: toiveet, päivämäärät ja montako teitä on. Saat takaisin sinulle kootun lyhytlistan yhden työpäivän sisällä. Ei julkista profiilia, ei jaettuja kalentereita, ei tunnusta jota luoda.',
     inquireBtn: 'Aloita yksityinen tiedustelu',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Anonyymi matkasuunnittelu',
+      anonymous: 'Anonyymi tiedustelu',
       reply: 'Vastaus yhden työpäivän kuluessa',
-      rates: 'Suorat hinnat pyynnöstä',
+      rates: 'Linkki kohteen omaan varaukseen',
     },
   },
   midnightSunBand: {
     eyebrow: '6.6.–7.7.',
     h2: 'Samat huvilat, katkeamatonta valoa.',
-    body: 'Samat talot, täysin eri vuodenaika. Lasikatto, joka kehysti revontulia, pitää nyt aurinkoa joka ei laske, järvi on sula ja metsä täyttyy lakoista. Kysyntää on noin puolet talvesta, ja tämä on vuoden ainoa jakso, jolloin yksityiset kokit, helikopterikuljetukset ja reserve-huvilat avaavat hiljaa loppukalenterinsa.',
+    body: 'Samat talot, täysin eri vuodenaika. Lasikatto, joka kehysti revontulia, pitää nyt aurinkoa joka ei laske, järvi on sula ja metsä täyttyy lakoista. Kesä on Lapin hiljaisempi kausi, ja samat talot ovat auki. Hinta näkyy kunkin kohteen omalla varaussivulla.',
     primary: 'Katso kesän kokoelma',
     secondary: 'Tiedustele kesäkuun päiviä',
   },
   newsletter: {
     eyebrow: '#LaplandVibes-uutiskirje',
     h2: 'Hiljainen viesti, kun huviloihin vapautuu päiviä tai joku yksityinen tulee saataville.',
-    lede: 'Suorat hinnat, concierge-viime hetken paikat ja revontuliennuste viikkoa ennen uutta kuuta. Ei roskapostia. Kirjoitamme tämän Suomesta ja lähetämme vain, kun meillä on sinulle oikeasti jotain.',
+    lede: 'Vapautuneita päiviä, huomionarvoisia kohteita ja revontuliennuste viikkoa ennen uutta kuuta. Ei roskapostia. Kirjoitamme tämän Suomesta ja lähetämme vain, kun meillä on sinulle oikeasti jotain.',
     emailPlaceholder: 'sinä@sähköposti.fi',
     footnote: 'Peru tilaus yhdellä klikkauksella.',
     welcome: 'Tervetuloa mukaan. Ensimmäinen viesti saapuu viikon sisään.',
@@ -115,14 +115,14 @@ const fi: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'Yksityinen kokoelma',
-      title: 'Suomen Lappi, hiljaisesti markkinan huipulla.',
-      lede: 'Pieni, käsin valittu kokoelma yksityisiä luksushuviloita ympäri Lappia. Concierge hoitaa, hinnat pyynnöstä.',
+      title: 'Seitsemän huvilaa ja sviittiä neljässä Lapin kohteessa.',
+      lede: 'Pieni, käsin valittu kokoelma yksityisiä luksushuviloita ympäri Lappia. Hinnat kohteiden omilta varaussivuilta, tai lähetä yksityinen tiedustelu.',
       primary: 'Selaa kokoelmaa',
       secondary: 'Aloita yksityinen tiedustelu',
     },
     villas: {
       eyebrow: 'Kokoelma',
-      title: 'Yhdeksän huvilaa. Viisi kohdetta. Yksi yksityinen tiedustelu.',
+      title: 'Seitsemän huvilaa. Neljä kohdetta. Yksi yksityinen tiedustelu.',
       lede: 'Jokainen alla oleva kohde on käyty läpi kohteen omien julkaistujen tietojen ja tuoreiden vieraspalautteiden pohjalta. Suodata sen mukaan, millaista taloa mietit, tai lähetä yksityinen tiedustelu, niin kokoamme lyhytlistan päivämääriesi ympärille.',
     },
     suites: {
@@ -147,15 +147,15 @@ const fi: SiteCopy = {
       primary: 'Tiedustele kesäkuun päiviä',
       secondary: 'Katso kokoelma',
     },
-    concierge: {
-      eyebrow: 'Yksityinen concierge',
+    inquiry: {
+      eyebrow: 'Yksityinen tiedustelu',
       title: 'Yksi yksityinen viesti, yksi sinulle koottu lyhytlista.',
-      lede: 'Kerro päivämäärät, montako teitä on ja millaista matkaa mietit. Vastaus tulee yhden työpäivän sisällä, ja kun se sopii, mukana ovat myös reserve-huvilat, jotka eivät koskaan näy julkisesti.',
+      lede: 'Kerro päivämäärät, montako teitä on ja millaista matkaa mietit. Vastaus tulee yhden työpäivän sisällä.',
     },
     about: {
       eyebrow: 'Tietoa',
       title: 'Lyhyt lista, joka pidetään lyhyenä tarkoituksella.',
-      lede: 'Yksityinen kokoelma Lapin hienoimpia luksushuviloita ja sviittejä. Anonyymi concierge, suorat hinnat siellä missä niitä on, ei välittäjää välissä.',
+      lede: 'Seitsemän huvilaa ja sviittiä Suomen Lapissa, käsin valittuina. Anonyymi tiedustelu, suora linkki kohteen omaan varaukseen, ei välittäjää välissä.',
     },
   },
   home: {
@@ -163,14 +163,14 @@ const fi: SiteCopy = {
       eyebrow: 'Näin toimimme',
       h2: 'Varausalustan vastakohta.',
       items: [
-        { title: 'Lyhyt lista, ei hakemisto.', body: 'Yhdeksän huvilaa ja sviittiä niissä paikoissa, jotka oikeasti ovat matkan arvoisia. Käännytämme kohteita useammin kuin lisäämme niitä, joten jokainen tämän listan huvila on sellainen, jonka tarkka matkailija voisi varata epäröimättä.' },
-        { title: 'Anonyymi matkasuunnittelu.', body: 'Yksi yksityinen postilaatikko. Ei julkista profiilia, ei kenenkään muun kanssa jaettuja kalentereita. Kerro päivämäärät, montako teitä on ja mitä haette, niin sinulle koottu lyhytlista tulee yhden työpäivän sisällä.' },
-        { title: 'Suorat hinnat siellä missä niitä on.', body: 'Kun huvilalla on julkinen listaus, linkitämme suoraan varmistettuun hintaan. Yksityisesti pidetyt, mukaan lukien reserve-huvilat joita et löydä listattuna mistään, hinnoittelemme suoraan. Vastauksessa kerrotaan kumpi on kyseessä.' },
+        { title: 'Lyhyt lista, ei hakemisto.', body: 'Seitsemän huvilaa ja sviittiä niissä paikoissa, jotka oikeasti ovat matkan arvoisia. Käännytämme kohteita useammin kuin lisäämme niitä, joten jokainen tämän listan huvila on sellainen, jonka tarkka matkailija voisi varata epäröimättä.' },
+        { title: 'Anonyymi tiedustelu.', body: 'Yksi yksityinen postilaatikko. Ei julkista profiilia, ei kenenkään muun kanssa jaettuja kalentereita. Kerro päivämäärät, montako teitä on ja mitä haette, niin sinulle koottu lyhytlista tulee yhden työpäivän sisällä.' },
+        { title: 'Suorat hinnat siellä missä niitä on.', body: 'Kun huvilalla on julkinen listaus, linkitämme suoraan kohteen omalle varaussivulle, jossa hinta näkyy. Kun julkista hintaa ei ole, kohde hinnoittelee itse. Me emme aseta hintoja emmekä ota vastaan varauksia.' },
       ],
     },
     signature: {
       eyebrow: 'Signature-huvilat',
-      h2: 'Neljä Lapin kokoelman ankkuria.',
+      h2: 'Neljä, joita suosittelemme useimmin.',
       lede: 'Ne neljä, joita suosittelemme useimmin. Jokainen yksityiskohta on tarkistettu kohteen omista julkaistuista tiedoista ja tuoreista vieraspalautteista, ei napattu esitteestä.',
     },
     destinations: {
@@ -181,8 +181,8 @@ const fi: SiteCopy = {
   villasPage: {
     filters: { all: 'Kaikki', glassRoof: 'Lasikatto', logEstate: 'Hirsihuvila', designerSuite: 'Designer-sviitti', alpineChalet: 'Tunturichalet', lakeside: 'Rantakohde' },
     noVillas: 'Tässä kategoriassa ei ole vielä huviloita.',
-    conciergeTitle: 'Etkö löydä oikeaa?',
-    conciergeBody: 'Tämä on se mitä on nyt julkaistu. Pidämme lisää huviloita yksityisesti, mukaan lukien reserve-kohteet joilla ei ole julkista listausta lainkaan, ja hinnoittelemme ne suoraan kun tiedustelet.',
+    inquiryTitle: 'Etkö löydä oikeaa?',
+    inquiryBody: 'Yllä on koko julkaistu kokoelma. Jos mikään näistä ei ole oikea, kerro mitä haet, niin ehdotamme mitä itse katsoisimme, myös tämän listan ulkopuolelta.',
   },
   suitesPage: {
     intro: {
@@ -192,8 +192,8 @@ const fi: SiteCopy = {
       glassRoof: 'lasikattomökki',
       p1Post: ', jossa katto on otsikkoyksityiskohta. Molemmat on listattu alla.',
     },
-    conciergeTitle: 'Kahden sviitin varaus tai yksityinen kerros?',
-    conciergeBody: 'Useat näistä kohteista vapauttavat monisviittisen kerroksen yksinomaiseen käyttöön rauhallisempina viikkoina. Kerro päivämääräsi ja vieraslukumääräsi.',
+    inquiryTitle: 'Kahden sviitin varaus tai yksityinen kerros?',
+    inquiryBody: 'Useat näistä kohteista vapauttavat monisviittisen kerroksen yksinomaiseen käyttöön rauhallisempina viikkoina. Kerro päivämääräsi ja vieraslukumääräsi.',
   },
   destinationsPage: {
     destinationLabel: (i) => `Kohde 0${i + 1}`,
@@ -208,8 +208,8 @@ const fi: SiteCopy = {
     villasHere: (n) => (n === 1 ? 'Yksi huvila tässä kohteessa.' : `${n} huvilaa tässä kohteessa.`),
     villasHereH2: (n) => (n === 1 ? 'Yksi huvila tässä kohteessa.' : `${n} huvilaa tässä kohteessa.`),
     fullCollection: 'Koko kokoelma',
-    conciergeTitle: (name) => `Suunnittele yksityinen ${name}-matka.`,
-    conciergeBody: 'Lähetä päivämäärät, vieraat ja toiveet (yksityinen kokki, helikopterisaapuminen, eksklusiivinen käyttö). Saat lyhytlistan yhden työpäivän kuluessa.',
+    inquiryTitle: (name) => `Suunnittele yksityinen ${name}-matka.`,
+    inquiryBody: 'Lähetä päivämäärät, vieraat ja toiveet (yksityinen kokki, helikopterisaapuminen, eksklusiivinen käyttö). Saat lyhytlistan yhden työpäivän kuluessa.',
   },
   experiencesPage: {
     sections: {
@@ -224,14 +224,14 @@ const fi: SiteCopy = {
       { value: '32+', label: 'Päivää aurinko ei laske Rovaniemellä, pohjoisempana enemmän' },
       { value: '24h', label: 'Päivänvaloa huipulla, 21.6.' },
       { value: '+18°C', label: 'Päivälämpötila kesäkuun lopulla' },
-      { value: '50%', label: 'Pienempi kysyntä kuin revontulikaudella' },
+      { value: '68,9°N', label: 'Pohjoisin kohteemme, Inari, jossa jakso on pisin' },
     ],
     fourReasons: 'Neljä syytä',
     h2: 'Lappi kesällä on erillinen paikka.',
     reasons: [
       { title: 'Arkkitehtuuri muuttuu luonteeltaan.', body: 'Revontulia varten rakennetut lasikatot pitävät nyt katkeamatonta aurinkoa. Kattoikkuna sängyn yllä, aurinko järvellä, eikä syytä vetää verhoa, koska ei ole yötä jolta piiloutua.' },
       { title: 'Erämaasta tulee saavutettavaa.', body: 'Järvet sulavat, boreaalinen metsä avautuu, kanoottireitit ilmestyvät. Sama huvila johon pääsit moottorikelkalla helmikuussa on nyt viiden minuutin venematkan päässä laiturilta.' },
-      { title: 'Reserve-huvilat avautuvat.', body: 'Yksityiset järvenrantaiset hirsihuvilat ja arkkitehtuurichaletit vapauttavat loppukalenterinsa. Tämä jakso on vuoden ainoa aika, jolloin yksityiset kokit ja helikopterikuljetukset hinnoittelevat shoulder-hinnoin.' },
+      { title: 'Sama talo, eri vuodenaika.', body: 'Kokoelman talot ovat kesällä samat kuin talvella. Lasikaton alla on yötön yö revontulien sijaan, järvet ovat sulia ja metsä auki. Hinta näkyy kunkin kohteen omalla varaussivulla, joten kauden eron näkee suoraan.' },
       { title: 'Ei jonoja, ei naapureita.', body: 'Lapissa on kesällä murto-osa talven väkimäärästä. Polku metsän halki ja tunturin näköalapaikka ovat käytännössä omasi.' },
     ],
     summerCollection: {
@@ -247,14 +247,14 @@ const fi: SiteCopy = {
     },
     planning: {
       h2: 'Huomio yöttömän yön matkan suunnittelusta.',
-      p1: 'Jakso on lyhyt, ja huvilat ovat yksittäisten omistajien hallinnassa, joten kalenteri täyttyy epätasaisesti eikä siististi. Pidämme pienen allokaation reserve-kohteissa joka kesä.',
+      p1: 'Jakso on lyhyt, ja huvilat ovat yksittäisten omistajien hallinnassa, joten kalenteri täyttyy epätasaisesti eikä siististi. Kannattaa kysyä hyvissä ajoin.',
       p2: 'Tiettyä kesäkuuta kannattaa tiedustella saman vuoden tammi–maaliskuussa. Myöhemminkin kannattaa laittaa viestiä, koska päiviä vapautuu, mutta listan kärki menee yleensä ensin.',
       quoting: 'Tarjoamme parhaillaan kesän 2026 ja 2027 hintoja',
     },
-    conciergeTitle: 'Tiedustele yöttömän yön matkaa.',
-    conciergeBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy mitä kesän kokoelmasta on vapaana, myös reserve-huvilat, joita ei ole julkisesti listattu.',
+    inquiryTitle: 'Tiedustele yöttömän yön matkaa.',
+    inquiryBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy mitä kesän kokoelmasta on vapaana.',
   },
-  conciergePage: {
+  inquiryPage: {
     eyebrow: 'Tiedustelulomake',
     h2: 'Kerro mitä mietit.',
     intro: 'Viisi lyhyttä kenttää. Mitä tarkemmin kerrot mitä haluat ja mitä tarvitset, sitä hyödyllisempi lyhytlista on. Nimi ja sähköposti pysyvät vapaaehtoisina, ja vastaus menee siihen osoitteeseen, josta kirjoitat.',
@@ -276,7 +276,7 @@ const fi: SiteCopy = {
     options: {
       headcount: ['1–2 vierasta', '3–4 vierasta', '5–6 vierasta', '7–10 vierasta', 'Suurempi ryhmä'],
       intent: ['Revontulikausi, ensimmäinen kerta', 'Revontulikausi, on käyty ennenkin', 'Yötön yö (kesä–heinä)', 'Joulu / uusi vuosi', 'Perheryhmä', 'Yksityinen juhla', 'Häämatka / retriitti kahdelle', 'Jokin muu (kerro alla)'],
-      budget: ['Alle 1 000 € / yö', '1 000 – 2 500 € / yö', '2 500 – 5 000 € / yö', 'Yli 5 000 € / yö', 'Reserve-kohde, koko paikka omaan käyttöön', 'En halua kertoa'],
+      budget: ['Alle 1 000 € / yö', '1 000 – 2 500 € / yö', '2 500 – 5 000 € / yö', 'Yli 5 000 € / yö', 'Koko paikka omaan käyttöön', 'En halua kertoa'],
     },
     submit: 'Lähetä yksityinen tiedustelu',
     sending: 'Lähetetään…',
@@ -338,7 +338,7 @@ const fi: SiteCopy = {
     nightlyHint: 'Suuntaa-antava matalan sesongin hinta. Todellinen yöhinta riippuu päivämääristä, oleskelun pituudesta ja sisällytetyistä palveluista.',
     rate: 'Hinta',
     onRequest: 'Pyynnöstä',
-    reserveHint: 'Reserve-kohde. Hinnoitellaan yksityisesti tiedustelun perusteella, ei koskaan julkisesti.',
+    reserveHint: 'Tälle kohteelle ei ole julkaistua hintaa. Kysy sitä kohteelta itseltään.',
     beginInquiry: 'Aloita yksityinen tiedustelu',
     viewRates: 'Katso julkiset hinnat',
     orSendInquiry: 'Tai lähetä yksityinen tiedustelu',
@@ -346,8 +346,8 @@ const fi: SiteCopy = {
     signatureH2: 'Kuusi yksityiskohtaa, jotka voit todentaa paikan päällä.',
     destinationEyebrow: 'Kohde',
     readProfile: (name) => `Lue ${name}n profiili →`,
-    conciergeTitle: (dest) => `Aloita ${dest}-tiedustelu.`,
-    conciergeBody: 'Lähetä päivämäärät, vieraat ja toiveet. Vastaus saapuu yhden työpäivän kuluessa saatavuudella, todellisella yöhinnalla ja mahdollisilla reserve-huviloilla joita kannattaa harkita rinnalle.',
+    inquiryTitle: (dest) => `Aloita ${dest}-tiedustelu.`,
+    inquiryBody: 'Lähetä päivämäärät, vieraat ja toiveet. Vastaamme yhden työpäivän kuluessa: mistä tämän kohteen hinnan näkee ja mitä muuta kokoelmasta kannattaa katsoa rinnalle.',
     alsoEyebrow: 'Myös kokoelmassa',
     alsoH2: 'Kolme muuta harkitsemisen arvoista huvilaa.',
   },
@@ -377,7 +377,7 @@ const fi: SiteCopy = {
       },
       general: {
         eyebrow: 'Yleiset ja toimitukselliset',
-        body: 'Kaikki muu. Vastaus kestää kauemmin kuin private@-osoitteessa; matkasuunnitteluun käytä yllä olevaa concierge-osoitetta.',
+        body: 'Kaikki muu. Vastaus kestää kauemmin kuin private@-osoitteessa; matkasuunnitteluun käytä yllä olevaa yksityistä osoitetta.',
       },
     },
     privateCta: 'Lähetä yksityinen tiedustelu',
@@ -388,14 +388,14 @@ const fi: SiteCopy = {
     aboutPost: '-sivulta.',
   },
   footerNote:
-    'Yksityinen kokoelma, koottu Suomen Lapissa, viimeksi katselmoitu toukokuussa 2026. Jotkin varaukset tuottavat kumppanuusprovision, joka ei koskaan vaikuta siihen mitä huviloita suosittelemme. Reserve- ja concierge-only-kohteet eivät maksa mitään.',
+    'Yksityinen kokoelma, koottu Suomen Lapissa, viimeksi katselmoitu toukokuussa 2026. Jotkin varaukset tuottavat kumppanuusprovision, joka ei koskaan vaikuta siihen mitä huviloita suosittelemme. Kohteet eivät voi maksaa päästäkseen kokoelmaan.',
   footerPillars: [
     { name: 'Kokoelma', href: '/villas' },
     { name: 'Designer-sviitit', href: '/suites' },
     { name: 'Kohteet', href: '/destinations' },
     { name: 'Elämykset', href: '/experiences' },
     { name: 'Yötön yö', href: '/midnight-sun' },
-    { name: 'Yksityinen concierge', href: '/concierge' },
+    { name: 'Yksityinen tiedustelu', href: '/private-inquiry' },
   ],
 }
 

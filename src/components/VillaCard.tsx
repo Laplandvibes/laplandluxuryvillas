@@ -10,7 +10,7 @@ import { formatRate } from '../lib/rate'
 
 interface VillaCardProps {
   villa: Villa
-  /** When true, the booking button routes to the affiliate URL; otherwise to /concierge. */
+  /** When true, the booking button routes to the affiliate URL; otherwise to /private-inquiry. */
   showBooking?: boolean
   /**
    * The surface's earned editorial pick, from `bestGoogleRated()` over the
@@ -36,11 +36,11 @@ export default function VillaCard({
   const lang = useLang()
   const to = useLocalePath()
   const c = COPY[lang]
-  // Null for the two concierge-only house-inventory entries, which name no
+  // Null for any villa with no row in properties.ts, i.e. one naming no
   // real business — they show no rating and can never take the mark.
   const property = propertyForVilla(villa.slug)
   const isPick = pickProperty !== null && property === pickProperty
-  const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
+  const inquiryOnly = villa.inquiryOnly || villa.tier === 'reserve'
   // "View rates" is a promise that the click lands on THIS property's booking
   // page. It only holds where the partner serving this language has a page for
   // it — Nellim has none on either partner, Aurora Village none on Trip.com —
@@ -139,9 +139,10 @@ export default function VillaCard({
         {/* `mt-auto` pins the spec row and the price/CTA block to the bottom of
             the card. The grid already stretches every card to the row's height,
             but the CONTENT was top-aligned, so a card with no Google rating
-            (the two concierge-only entries have no business to rate) ended its
-            button a hundred pixels above its neighbour's. Now every row's
-            buttons sit on one line. */}
+            ended its button a hundred pixels above its neighbour's. Now every
+            row's buttons sit on one line. (Every villa has a rating again
+            since the two unnamed entries went in 2026-08-02, but keep this —
+            a new villa can land before its rating is synced.) */}
         <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-[color:var(--color-bone)]/75 pb-5 border-b border-[color:var(--color-mist)]/40">
           <span className="inline-flex items-center gap-1.5">
             <Bed size={13} className="text-[color:var(--color-brass)]" />
@@ -170,9 +171,9 @@ export default function VillaCard({
             )}
           </div>
 
-          {conciergeOnly || !showBooking ? (
+          {inquiryOnly || !showBooking ? (
             <Link
-              to={to('/concierge')}
+              to={to('/private-inquiry')}
               className="inline-flex items-center gap-2 border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
             >
               {c.cta.inquire}

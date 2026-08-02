@@ -149,11 +149,11 @@ export default function VillaDetail() {
                 <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{c.villaDetailPage.rate}</div>
                 <div className="font-heading text-3xl text-[color:var(--color-brass)] mb-2">{c.villaDetailPage.onRequest}</div>
                 {/* `reserveHint` asserts the property is "never on a public
-                    listing". That is true only for the two concierge-only
-                    house-inventory entries. The other seven have a public
-                    partner listing linked immediately below, so printing it
-                    there would be a false statement. Both groups publish no
-                    rate; only the reason differs. */}
+                    listing". No villa in the collection is in that state any
+                    more — the two entries that were went in 2026-08-02, and
+                    all seven survivors have a public partner listing linked
+                    immediately below, so printing it would be a false
+                    statement. The `inquiryOnly` guard keeps it that way. */}
                 {inquiryOnly ? (
                   <p className="text-xs text-[color:var(--color-bone)]/75 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
                 ) : (
@@ -165,7 +165,7 @@ export default function VillaDetail() {
             <div className="space-y-3">
               {inquiryOnly ? (
                 <Link
-                  to={to('/concierge')}
+                  to={to('/private-inquiry')}
                   className="block w-full text-center bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
                 >
                   {c.villaDetailPage.beginInquiry}
@@ -183,7 +183,7 @@ export default function VillaDetail() {
                       : c.cta.viewOptions}
                   </a>
                   <Link
-                    to={to('/concierge')}
+                    to={to('/private-inquiry')}
                     className="block w-full text-center border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
                   >
                     {c.villaDetailPage.orSendInquiry}

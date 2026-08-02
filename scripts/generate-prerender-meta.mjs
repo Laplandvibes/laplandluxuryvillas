@@ -131,9 +131,15 @@ const STATIC_ROUTE_OF_KEY = {
   destinations: '/destinations',
   experiences: '/experiences',
   'midnight-sun': '/midnight-sun',
-  concierge: '/concierge',
+  'private-inquiry': '/private-inquiry',
   about: '/about',
 };
+// 🔴 THIS MAP IS A META SOURCE IN ITS OWN RIGHT (2026-08-02). Renaming a page
+// means editing FIVE places, not three: copy.<lang>.ts, seo-meta.json, this
+// map, scripts/routes.json and index.html. Miss this one and the route still
+// prerenders — it just silently falls back to the EN title in all 11 other
+// locales. The build prints "no-meta: <lang> <route>" when that happens; that
+// line is the gate, do not ignore it.
 const destSuffix = seoMeta._destinationTitleSuffix || {};
 
 const meta = {};

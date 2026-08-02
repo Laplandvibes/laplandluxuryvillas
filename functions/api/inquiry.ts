@@ -1,5 +1,9 @@
 // Cloudflare Pages Function — same-origin proxy to the Supabase Edge Function
-// `send-concierge-inquiry`. Lives at https://laplandluxuryvillas.com/api/concierge.
+// `send-concierge-inquiry`. Lives at https://laplandluxuryvillas.com/api/inquiry.
+//
+// 🔴 The Supabase function name still says "concierge" and is deliberately NOT
+// renamed here: it is shared infrastructure, server-side only, and renaming it
+// means redeploying the Edge Function. Nothing a reader ever sees.
 //
 // Why a proxy?  The Supabase function's CORS policy allows only the LV
 // allowlist. Routing through this Function keeps the call same-origin in the

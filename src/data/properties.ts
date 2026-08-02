@@ -201,17 +201,19 @@ export type PropertyKey = keyof typeof PROPERTIES
 /**
  * Villa slug → the property that contains it.
  *
- * 🔴 TWO ENTRIES ARE DELIBERATELY ABSENT and must stay absent:
- *   `private-lakeside-log-estate`  ("The Lakeside Log Estate")
- *   `designer-mountain-chalet-levi` ("The Designer Mountain Chalet")
- * Neither names a real business — both are `conciergeOnly` house inventory
- * whose `bookingUrl` points at a CITY search ("Inari, Finland" / "Levi,
- * Finland"), not at a property. There is no Google record to attach, so they
- * render no rating and can never win the editorial pick. Attaching a nearby
- * property's score to them would be pure fabrication.
+ * 🔴 EVERY VILLA IN THE COLLECTION MUST HAVE A ROW HERE (2026-08-02).
+ * Two entries used to be deliberately absent — "The Lakeside Log Estate" and
+ * "The Designer Mountain Chalet". Neither named a real business; both were
+ * house inventory whose `bookingUrl` pointed at a CITY search ("Inari,
+ * Finland" / "Levi, Finland") and whose copy claimed we held weeks as a
+ * private allocation and coordinated a chef brigade. Vesa removed them: a
+ * property with no name, no booking page and no public record is a claim
+ * about stock we do not hold, not a listing.
  *
- * A slug missing from this map simply gets no rating — fail closed by
- * construction, no gate required.
+ * So "missing from this map" is no longer a legitimate state. If you add a
+ * villa, add its property here. A slug missing from this map renders no
+ * rating — fail closed by construction, no gate required — but it should now
+ * also make you ask whether the villa is real.
  */
 const VILLA_PROPERTY: Record<string, PropertyKey> = {
   'kakslauttanen-glass-igloo-suite': 'kakslauttanen',

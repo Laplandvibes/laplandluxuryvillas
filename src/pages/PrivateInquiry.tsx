@@ -10,10 +10,10 @@ import { getPageSeo } from '../lib/pageSeo'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error' | 'fallback'
 
-export default function Concierge() {
+export default function PrivateInquiry() {
   const lang = useLang()
   const c = COPY[lang]
-  const seo = getPageSeo('concierge', lang)
+  const seo = getPageSeo('private-inquiry', lang)
   const HEADCOUNT = c.inquiryPage.options.headcount
   const INTENT = c.inquiryPage.options.intent
   const BUDGET = c.inquiryPage.options.budget
@@ -58,7 +58,7 @@ export default function Concierge() {
     trackPrivateInquiry(form.intent)
 
     try {
-      const res = await fetch('/api/concierge', {
+      const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
@@ -84,8 +84,8 @@ export default function Concierge() {
       <SEO
         title={seo.title}
         description={seo.description}
-        canonicalPath="/concierge"
-        keywords={['lapland concierge', 'private villa inquiry lapland', 'anonymous luxury travel concierge']}
+        canonicalPath="/private-inquiry"
+        keywords={['private villa inquiry lapland', 'lapland luxury villa enquiry', 'anonymous villa enquiry lapland']}
       />
 
       <Hero
@@ -93,7 +93,7 @@ export default function Concierge() {
         eyebrow={c.hero.inquiry.eyebrow}
         title={c.hero.inquiry.title}
         lede={c.hero.inquiry.lede}
-        imageUrl="/images/hero-concierge.webp"
+        imageUrl="/images/hero-inquiry.webp"
         imageAlt="An open leather travel journal on a dark walnut desk with a vintage brass lamp"
       />
 

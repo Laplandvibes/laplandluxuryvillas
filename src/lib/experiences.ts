@@ -11,7 +11,7 @@
 // under a header that already said "never invent a price". They are gone.
 // Nothing here sets a rate today.
 //
-// These are GetYourGuide-linked or concierge-arranged products whose price
+// These are GetYourGuide-linked or enquiry-only products whose price
 // depends on group size, season and availability, so the affiliate landing
 // page is the only place a live figure legitimately exists. Unset renders the
 // "on request" branch, already translated into all 12 locales; let the partner
@@ -38,8 +38,8 @@ export interface Experience {
   fromPerPerson?: VerifiedRate
   /** Verified published per-group rate. Same rule as `fromPerPerson`. */
   fromPerGroup?: VerifiedRate
-  /** Concierge-only = no public booking widget; goes straight to private@laplandvibes.com. */
-  conciergeOnly?: boolean
+  /** Enquiry-only = no public booking widget; goes straight to private@laplandvibes.com. */
+  inquiryOnly?: boolean
   /** External booking URL (GYG affiliate-attributed) when available. */
   bookingUrl?: string
   imageGradient: string
@@ -66,7 +66,7 @@ export const EXPERIENCES: Experience[] = [
     hook: 'A 45-minute night helicopter flight above the cloud layer to the auroras themselves.',
     copy: [
       'Operated by Finland\'s only night-VFR-certified helicopter operator out of Rovaniemi and Ivalo. The flight clears the local cloud layer and circles inside the active aurora oval, a perspective impossible from the ground.',
-      'Ground photography is included on either side of the flight; the in-flight portion is for the experience itself, not the camera. Maximum four passengers per AS350. Weather-window dependent, concierge tracks the forecast and notifies the day before.',
+      'Ground photography is included on either side of the flight; the in-flight portion is for the experience itself, not the camera. Maximum four passengers per AS350. Weather-window dependent: the operator tracks the forecast and notifies the day before.',
     ],
     available: 'Rovaniemi, Ivalo, Oct–Mar (weather-dependent)',
     bookingUrl: GYG_LINKS.helicopter,
@@ -82,7 +82,7 @@ export const EXPERIENCES: Experience[] = [
       'Includes a wine pairing curated to the menu, ingredients, prep, service, and cleanup. Ten guests maximum. Vegetarian, gluten-free and shellfish-free menus on request, with at least 72 hours notice.',
     ],
     available: 'Any villa in the collection, year-round',
-    conciergeOnly: true,
+    inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #1F1813 0%, #2E2218 50%, #14100B 100%)',
   },
   {
@@ -131,10 +131,10 @@ export const EXPERIENCES: Experience[] = [
     hook: 'Direct private-jet transfer to Ivalo, Kittilä or Rovaniemi, no commercial check-in, no transit hub.',
     copy: [
       'Coordinated through our jet partners in Helsinki, Geneva and Doha. Direct flights into Ivalo (closest to Saariselkä / Inari villas), Kittilä (closest to Levi / Ylläs), or Rovaniemi (best for Arctic TreeHouse).',
-      'Full handling: ground transfer to your villa with a heated arctic-spec vehicle, luggage forwarded, customs cleared without queue. Concierge files the slot and pairs the arrival with the villa check-in time.',
+      'Full handling: ground transfer to your villa with a heated arctic-spec vehicle, luggage forwarded, customs cleared without queue. The operator files the slot and pairs the arrival with the villa check-in time.',
     ],
     available: 'All destinations, year-round',
-    conciergeOnly: true,
+    inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #1A1F2A 0%, #283246 50%, #0F141C 100%)',
   },
   {
@@ -144,10 +144,10 @@ export const EXPERIENCES: Experience[] = [
     hook: 'Lift from the regional airport directly to your villa landing pad, no road transfer.',
     copy: [
       'Used most often for arrivals to the private lakeside log estates on Lake Inari. The aircraft is the same AS350 used for the aurora flights; a single sector takes 20–45 minutes.',
-      'Maximum five passengers + luggage. Concierge times the lift to the villa check-in and the daylight window, winter sunset is 15:00 in deep season.',
+      'Maximum five passengers + luggage. The operator times the lift to the villa check-in and the daylight window, winter sunset is 15:00 in deep season.',
     ],
     available: 'Rovaniemi, Ivalo → Lake Inari estates',
-    conciergeOnly: true,
+    inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #1F1820 0%, #2D2230 50%, #100C12 100%)',
   },
 ]

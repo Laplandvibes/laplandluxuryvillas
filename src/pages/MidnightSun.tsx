@@ -28,7 +28,7 @@ export default function MidnightSun() {
         title={seo.title}
         description={seo.description}
         canonicalPath="/midnight-sun"
-        keywords={['midnight sun lapland', 'lapland summer luxury villa', 'midnight sun villa finland', 'lapland 24 hour daylight', 'lapland summer concierge']}
+        keywords={['midnight sun lapland', 'lapland summer luxury villa', 'midnight sun villa finland', 'lapland 24 hour daylight', 'lapland summer private villa']}
       />
 
       <Hero
@@ -36,7 +36,7 @@ export default function MidnightSun() {
         eyebrow={c.hero.midnightSun.eyebrow}
         title={c.hero.midnightSun.title}
         lede={c.hero.midnightSun.lede}
-        primary={{ to: to('/concierge'), label: c.hero.midnightSun.primary }}
+        primary={{ to: to('/private-inquiry'), label: c.hero.midnightSun.primary }}
         secondary={{ to: to('/villas'), label: c.hero.midnightSun.secondary }}
         imageUrl="/images/hero-midnight-sun.webp"
         imageAlt="A glass-roof Lapland villa in late-June midnight-sun light, lush green forest, lake unfrozen"
@@ -118,7 +118,7 @@ export default function MidnightSun() {
                     {card.copy}
                   </p>
                   <Link
-                    to={to('/concierge')}
+                    to={to('/private-inquiry')}
                     className="inline-flex items-center gap-2 self-start border border-[#FFC95A]/60 text-[#FFC95A] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[#FFC95A]/10 transition-colors"
                   >
                     {c.cta.inquireAboutJuneShort}

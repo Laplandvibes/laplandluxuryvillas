@@ -72,7 +72,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'En glasbubbelsvit vid kanten av den boreala skogen, tjugo minuter från ryska gränsen.',
       copy: [
         'Nellim är en levande vildmarksby (220 invånare) på Enaresjöns östra strand. Norrskensbubblorna står skilda från huvudlodgen på en egen glänta, var och en med en panoramaklar kupol ovanför sängen och en vedeldad badtunna på verandan.',
-        'Lodgen ordnar samiska kulturkvällar, pimpelfiske på sjön och ett av få certifierade guidade program för norrskensfotografering i Finland. Rummen är fullbokade ett år i förväg för toppen i februari, conciergen kan ibland hitta ett rum som blivit ledigt.',
+        'Lodgen ordnar samiska kulturkvällar, pimpelfiske på sjön och ett av få certifierade guidade program för norrskensfotografering i Finland. Rummen är fullbokade ett år i förväg för toppen i februari.',
       ],
       signature: [
         'Genomskinlig panoramakupol ovanför sängen',
@@ -113,36 +113,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Norrskensväckning + badtunna bredvid stugan',
       ],
     },
-    'private-lakeside-log-estate': {
-      tagline: 'En privat, handbyggd timmerstuga vid en egen vik av Enaresjön. Endast på begäran via concierge.',
-      copy: [
-        'En timmergård med fyra sovrum vid en egen privat vik, nåbar via en enda väg. Används av en liten grupp återkommande gäster, vi håller några veckor varje säsong som privat allokering.',
-        'Ingår gör en rökbastu, två vedeldade badtunnor, ett båthus och en privat köksbrigad som vi koordinerar när boendet är bokat. På vintern snöskoter- och huskytillgång via viken; kanot och fiske på sjön under midnattssolens säsong.',
-      ],
-      signature: [
-        'Fyra sovrum vid en privat vik av Enaresjön',
-        'Rökbastu + två vedeldade badtunnor',
-        'Privat köksbrigad ordnas på begäran',
-        'Snöskoter- / huskytillgång via sjön på vintern',
-        'Båt + kanot + brygga för midnattssolens säsong',
-        'Concierge-allokering, aldrig i offentliga erbjudanden',
-      ],
-    },
-    'designer-mountain-chalet-levi': {
-      tagline: 'En modern, arkitektbyggd stuga på Levis södra sluttning. Ski-in / ski-out, eget wellnessplan.',
-      copy: [
-        'En arkitektbyggd stuga med tre sovrum på Levifjällets södra sluttning, med ett wellnessplan (bastu, ångbad, doppkar, behandlingsrum) på bottenvåningen och ett vardagsrum som mynnar ut på en 12 m lång terrass med utsikt över dalen.',
-        'En kort utförsåkning till Levis gondol; en kort promenad tillbaka upp via den uppvärmda gången. Ingår gör daglig städning, frukostuppdukning och en skidconcierge på begäran.',
-      ],
-      signature: [
-        'Arkitektbyggd stuga med tre sovrum, södra sluttningen',
-        'Ski-in / ski-out via den uppvärmda gången',
-        'Eget wellnessplan: bastu, ångbad, doppkar, behandlingsrum',
-        'Glasterrass på 12 m med utsikt över dalen',
-        'Daglig städning + frukostuppdukning ingår',
-        'Skidconcierge på begäran under hela vistelsen',
-      ],
-    },
   },
   destinations: {
     'saariselka': {
@@ -164,13 +134,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Vårt nordligaste resmål, där norrsken observeras ungefär tre nätter av fyra. Samiskt kärnland, Enaresjön, mörk himmel.',
       copy: [
         'Inari är Finlands nordligaste kommun och de finska samernas kulturella huvudstad. Byn ligger vid Enaresjön, Finlands tredje största sjö, med omkring 3 000 öar, mer än 200 km norr om polcirkeln och utan stadsljus vid horisonten.',
-        'För lyxresor betyder det två saker. För det första: på den här breddgraden observerar Meteorologiska institutet norrsken i genomsnitt tre nätter av fyra, och det står rakt ovanför i stället för lågt i norr. För det andra: de strandnära timmergårdarna, varav vi håller några privata, hör till Lapplands lugnaste boenden: ingen genomfartstrafik, inga grannbyar vid den synliga horisonten.',
+        'För lyxresor betyder det två saker. För det första: på den här breddgraden observerar Meteorologiska institutet norrsken i genomsnitt tre nätter av fyra, och det står rakt ovanför i stället för lågt i norr. För det andra: de strandnära timmergårdarna hör till Lapplands lugnaste boenden: ingen genomfartstrafik, inga grannbyar vid den synliga horisonten.',
       ],
       highlights: [
         'Aurora Village, specialbyggt glasstugeområde på 30 hektar',
         'Wilderness Hotel Nellim, norrskensbubblor på Enaresjöns östra strand',
         'Samemuseet SIIDA + kulturprogram året runt',
-        'Privata strandnära timmergårdar tillgängliga via conciergen',
+        'Enare träsk, Finlands tredje största sjö, omkring 3 000 öar',
       ],
       arrival: 'Ivalo (IVL), 40 km, cirka 40 min med privat transfer',
       auroraNote: 'Vårt nordligaste resmål och det där norrskenet oftast står rakt ovanför i stället för lågt i norr. Enaresjön ger en obruten horisont, och inget byljus ligger på den.',
@@ -233,7 +203,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'En 45 minuter lång helikopterflygning på natten ovanför molntäcket, ända upp till norrskenet självt.',
       copy: [
         'Utförs av Finlands enda helikopteroperatör certifierad för natt-VFR, från Rovaniemi och Ivalo. Flygningen bryter igenom det lokala molntäcket och cirklar inom den aktiva norrskensovalen, ett perspektiv som är omöjligt från marken.',
-        'Fotografering på marken ingår på ömse sidor om flygningen; delen i luften är för själva upplevelsen, inte för kameran. Högst fyra passagerare per AS350. Beroende av väderfönstret, conciergen följer prognosen och meddelar dagen innan.',
+        'Fotografering på marken ingår på ömse sidor om flygningen; delen i luften är för själva upplevelsen, inte för kameran. Högst fyra passagerare per AS350. Beroende av väderfönstret: operatören följer prognosen och meddelar dagen innan.',
       ],
       available: 'Rovaniemi, Ivalo, okt–mars (väderberoende)',
     },
@@ -273,7 +243,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Direkt privatjettransfer till Ivalo, Kittilä eller Rovaniemi, ingen kommersiell incheckning, ingen bytenhubb.',
       copy: [
         'Koordineras via våra jetpartner i Helsingfors, Genève och Doha. Direktflyg till Ivalo (närmast villorna i Saariselkä / Inari), Kittilä (närmast villorna i Levi / Ylläs) eller Rovaniemi (bäst för Arctic TreeHouse).',
-        'Fullständig hantering: marktransfer till din villa med ett uppvärmt fordon av arktisk specifikation, bagage vidarebefordrat, tull utan kö. Conciergen lämnar in slottiden och stämmer av ankomsten mot villans incheckningstid.',
+        'Fullständig hantering: marktransfer till din villa med ett uppvärmt fordon av arktisk specifikation, bagage vidarebefordrat, tull utan kö. Operatören lämnar in slottiden och stämmer av ankomsten mot villans incheckningstid.',
       ],
       available: 'Alla resmål, året runt',
     },
@@ -281,7 +251,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Upphämtning från den regionala flygplatsen direkt till din villas landningsplats, ingen vägtransfer.',
       copy: [
         'Används oftast för ankomster till de privata strandnära timmergårdarna vid Enaresjön. Farkosten är samma AS350 som används för norrskensflygningarna; en sträcka tar 20 till 45 minuter.',
-        'Högst fem passagerare + bagage. Conciergen stämmer av upphämtningen mot villans incheckning och dagsljusfönstret, mitt i vintern går solen ner redan klockan 15:00.',
+        'Högst fem passagerare + bagage. Operatören stämmer av upphämtningen mot villans incheckning och dagsljusfönstret, mitt i vintern går solen ner redan klockan 15:00.',
       ],
       available: 'Rovaniemi, Ivalo → gårdarna vid Enaresjön',
     },

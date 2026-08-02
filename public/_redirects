@@ -1,0 +1,34 @@
+# /concierge -> /private-inquiry (2026-08-02)
+#
+# The site described a concierge service it does not run. The path went with
+# the copy. These are real 301s at the edge so Google replaces the indexed URL
+# instead of keeping both; the client-side route in App.tsx only catches stale
+# in-app links that never reach the network.
+#
+# One line per locale prefix, because a Finnish reader's bookmark must not
+# land in English. Trailing slash is the canonical form on this site.
+
+/concierge      /private-inquiry/      301
+/concierge/     /private-inquiry/      301
+/fi/concierge   /fi/private-inquiry/   301
+/fi/concierge/  /fi/private-inquiry/   301
+/de/concierge   /de/private-inquiry/   301
+/de/concierge/  /de/private-inquiry/   301
+/ja/concierge   /ja/private-inquiry/   301
+/ja/concierge/  /ja/private-inquiry/   301
+/es/concierge   /es/private-inquiry/   301
+/es/concierge/  /es/private-inquiry/   301
+/br/concierge   /br/private-inquiry/   301
+/br/concierge/  /br/private-inquiry/   301
+/cn/concierge   /cn/private-inquiry/   301
+/cn/concierge/  /cn/private-inquiry/   301
+/kr/concierge   /kr/private-inquiry/   301
+/kr/concierge/  /kr/private-inquiry/   301
+/fr/concierge   /fr/private-inquiry/   301
+/fr/concierge/  /fr/private-inquiry/   301
+/it/concierge   /it/private-inquiry/   301
+/it/concierge/  /it/private-inquiry/   301
+/nl/concierge   /nl/private-inquiry/   301
+/nl/concierge/  /nl/private-inquiry/   301
+/sv/concierge   /sv/private-inquiry/   301
+/sv/concierge/  /sv/private-inquiry/   301

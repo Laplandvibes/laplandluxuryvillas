@@ -72,7 +72,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Una suite burbuja de cristal al borde del bosque boreal, a veinte minutos de la frontera rusa.',
       copy: [
         'Nellim es una aldea silvestre en activo (220 habitantes) en la orilla oriental del lago Inari. Las burbujas de aurora se sitúan apartadas del refugio principal, en su propio claro, cada una con una cúpula panorámica transparente sobre la cama y un jacuzzi de leña en el porche.',
-        'El refugio organiza veladas culturales sami, pesca en el hielo del lago y uno de los pocos programas guiados certificados de fotografía de auroras de Finlandia. Las habitaciones se reservan con un año de antelación para el pico de febrero; la concierge puede a veces encontrar una liberación.',
+        'El refugio organiza veladas culturales sami, pesca en el hielo del lago y uno de los pocos programas guiados certificados de fotografía de auroras de Finlandia. Las habitaciones se reservan con un año de antelación para el pico de febrero.',
       ],
       signature: [
         'Cúpula panorámica transparente sobre la cama',
@@ -113,36 +113,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Aviso de aurora y jacuzzi junto a la cabaña',
       ],
     },
-    'private-lakeside-log-estate': {
-      tagline: 'Una casa de troncos privada construida a mano en su propia bahía del lago Inari. Solo por consulta a la concierge.',
-      copy: [
-        'Una finca de troncos de cuatro dormitorios en su propia bahía privada, a la que se accede por un único camino. Frecuentada por un reducido grupo de huéspedes habituales; reservamos algunas semanas cada temporada como asignación privada.',
-        'Incluye una sauna de humo, dos jacuzzis de leña, un cobertizo para barcas y una brigada de chef privado que coordinamos cuando la propiedad está reservada. Acceso en motonieve y husky por la bahía en invierno; canoa y pesca en el lago en la temporada del sol de medianoche.',
-      ],
-      signature: [
-        'Cuatro dormitorios en una bahía privada del lago Inari',
-        'Sauna de humo y dos jacuzzis de leña',
-        'Brigada de chef privado organizada bajo petición',
-        'Acceso en motonieve / husky por el lago en invierno',
-        'Barca, canoa y embarcadero para la temporada del sol de medianoche',
-        'Asignación de concierge: nunca en listados públicos',
-      ],
-    },
-    'designer-mountain-chalet-levi': {
-      tagline: 'Un chalé moderno de autor en la ladera sur de Levi. Ski-in / ski-out, planta de bienestar privada.',
-      copy: [
-        'Chalé de autor de tres dormitorios en la ladera sur del fell de Levi, con una planta de bienestar (sauna, baño de vapor, piscina de inmersión, sala de tratamientos) en el nivel inferior y el espacio de estar abierto a una terraza de 12 m orientada al valle.',
-        'Un breve descenso esquiando hasta la góndola de Levi; un breve paseo de vuelta por el sendero calefactado. Incluye limpieza diaria, preparación del desayuno y un concierge de esquí disponible bajo llamada.',
-      ],
-      signature: [
-        'Chalé de autor de tres dormitorios, ladera sur',
-        'Ski-in / ski-out por el sendero calefactado',
-        'Planta de bienestar privada: sauna, vapor, inmersión, sala de tratamientos',
-        'Terraza de cristal de 12 m orientada al valle',
-        'Limpieza diaria y preparación del desayuno incluidas',
-        'Concierge de esquí disponible bajo llamada durante toda la estancia',
-      ],
-    },
   },
   destinations: {
     'saariselka': {
@@ -164,13 +134,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Nuestro destino más septentrional, donde la aurora se observa unas tres noches de cada cuatro. Corazón sami, lago Inari, cielos oscuros.',
       copy: [
         'Inari es el municipio más septentrional de Finlandia y la capital cultural de los sami finlandeses. La aldea se sitúa en el lago Inari, el tercero más grande de Finlandia, con unas 3.000 islas, a más de 200 km al norte del círculo polar y sin ninguna luz urbana en el horizonte.',
-        'Para el viaje de lujo esto significa dos cosas. Primero: a esta latitud el Instituto Meteorológico Finlandés observa la aurora unas tres noches de cada cuatro, y aparece en el cenit en lugar de baja al norte. Segundo: las fincas de troncos junto al lago, algunas de las cuales reservamos en privado, están entre los alojamientos más tranquilos de Laponia: sin tráfico de paso ni aldeas vecinas en el horizonte visible.',
+        'Para el viaje de lujo esto significa dos cosas. Primero: a esta latitud el Instituto Meteorológico Finlandés observa la aurora unas tres noches de cada cuatro, y aparece en el cenit en lugar de baja al norte. Segundo: las fincas de troncos junto al lago están entre los alojamientos más tranquilos de Laponia: sin tráfico de paso ni aldeas vecinas en el horizonte visible.',
       ],
       highlights: [
         'Aurora Village: finca de cabañas de cristal de 30 hectáreas construida a tal fin',
         'Wilderness Hotel Nellim: burbujas de aurora en la orilla este del lago Inari',
         'Museo sami SIIDA y programas culturales durante todo el año',
-        'Fincas privadas de troncos junto al lago disponibles a través de la concierge',
+        'Lago Inari, el tercero más grande de Finlandia, unas 3 000 islas',
       ],
       arrival: 'Ivalo (IVL): 40 km, unos 40 min en traslado privado',
       auroraNote: 'Nuestro destino más septentrional y aquel en el que la aurora aparece más a menudo en el cenit en lugar de baja al norte. El lago Inari ofrece un horizonte ininterrumpido, sin luz de aldea sobre él.',
@@ -233,7 +203,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Un vuelo nocturno en helicóptero de 45 minutos por encima de la capa de nubes, hasta las propias auroras.',
       copy: [
         'Operado por el único operador de helicópteros de Finlandia certificado para vuelo nocturno VFR, desde Rovaniemi e Ivalo. El vuelo supera la capa de nubes local y traza círculos dentro del óvalo auroral activo: una perspectiva imposible desde el suelo.',
-        'La fotografía en tierra se incluye a ambos lados del vuelo; la parte en el aire es para la experiencia en sí, no para la cámara. Máximo cuatro pasajeros por AS350. Sujeto a ventana meteorológica: la concierge sigue la previsión y avisa el día anterior.',
+        'La fotografía en tierra se incluye a ambos lados del vuelo; la parte en el aire es para la experiencia en sí, no para la cámara. Máximo cuatro pasajeros por AS350. Sujeto a ventana meteorológica: el operador sigue la previsión y avisa el día anterior.',
       ],
       available: 'Rovaniemi, Ivalo: oct.–mar. (según meteorología)',
     },
@@ -273,7 +243,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Traslado directo en jet privado a Ivalo, Kittilä o Rovaniemi: sin facturación comercial, sin escala.',
       copy: [
         'Coordinado a través de nuestros socios de aviación privada en Helsinki, Ginebra y Doha. Vuelos directos a Ivalo (el más cercano a las villas de Saariselkä / Inari), Kittilä (el más cercano a las villas de Levi / Ylläs) o Rovaniemi (el mejor para Arctic TreeHouse).',
-        'Asistencia completa: traslado terrestre a tu villa en un vehículo calefactado de especificación ártica, equipaje reenviado, aduana sin cola. La concierge tramita el slot y ajusta la llegada a la hora de entrada en la villa.',
+        'Asistencia completa: traslado terrestre a tu villa en un vehículo calefactado de especificación ártica, equipaje reenviado, aduana sin cola. El operador tramita el slot y ajusta la llegada a la hora de entrada en la villa.',
       ],
       available: 'Todos los destinos: todo el año',
     },
@@ -281,7 +251,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Recogida desde el aeropuerto regional directamente al helipuerto de tu villa: sin traslado por carretera.',
       copy: [
         'Se usa con mayor frecuencia para las llegadas a las fincas privadas de troncos junto al lago Inari. La aeronave es el mismo AS350 de los vuelos de auroras; un solo trayecto dura entre 20 y 45 minutos.',
-        'Máximo cinco pasajeros más equipaje. La concierge ajusta la recogida a la entrada en la villa y a la ventana de luz diurna: en pleno invierno el sol se pone a las 15:00.',
+        'Máximo cinco pasajeros más equipaje. El operador ajusta la recogida a la entrada en la villa y a la ventana de luz diurna: en pleno invierno el sol se pone a las 15:00.',
       ],
       available: 'Rovaniemi, Ivalo → fincas del lago Inari',
     },

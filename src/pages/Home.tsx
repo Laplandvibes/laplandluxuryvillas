@@ -88,7 +88,7 @@ export default function Home() {
         title={c.hero.home.title}
         lede={c.hero.home.lede}
         primary={{ to: to('/villas'), label: c.hero.home.primary }}
-        secondary={{ to: to('/concierge'), label: c.hero.home.secondary }}
+        secondary={{ to: to('/private-inquiry'), label: c.hero.home.secondary }}
         imageUrl="/images/summer-villa-lakeside.webp"
         imageAlt="A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light"
         imgObjectPosition="20% 50%"
@@ -185,15 +185,22 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          {/* 🔴 TWO COLUMNS ON THE PHONE (Vesa 2026-08-02: the home page is too
+              long on mobile). Measured at 375×812 before this change: five
+              full-width cards with a 4:5 image = 3 511 px, 4.3 screens, for 71
+              words. It was the single longest block on the page and almost
+              none of it was text. Two columns and a shallower image on the
+              phone bring the same five destinations into ~1.6 screens with
+              nothing removed. */}
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
             {getDestinations(lang).map((d) => (
               <Link
                 key={d.slug}
                 to={to(`/destinations/${d.slug}`)}
-                className="group card-onyx p-6 flex flex-col"
+                className="group card-onyx p-4 sm:p-6 flex flex-col"
               >
                 <div
-                  className="aspect-[4/5] -mx-6 -mt-6 mb-5 overflow-hidden"
+                  className="aspect-[3/2] sm:aspect-[4/5] -mx-4 sm:-mx-6 -mt-4 sm:-mt-6 mb-4 sm:mb-5 overflow-hidden"
                   style={{ background: d.imageGradient }}
                 >
                   {d.image && (
@@ -206,13 +213,13 @@ export default function Home() {
                     />
                   )}
                 </div>
-                <h3 className="font-heading text-2xl text-[color:var(--color-snow)] mb-2 group-hover:text-[color:var(--color-brass)] transition-colors">
+                <h3 className="font-heading text-xl sm:text-2xl text-[color:var(--color-snow)] mb-2 group-hover:text-[color:var(--color-brass)] transition-colors">
                   {d.name}
                 </h3>
-                <p className="text-[color:var(--color-bone)]/70 text-sm font-body leading-relaxed flex-1">
+                <p className="text-[color:var(--color-bone)]/70 text-[13px] sm:text-sm font-body leading-relaxed flex-1">
                   {d.position}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-brass)]">
+                <span className="mt-4 sm:mt-5 inline-flex items-center gap-1.5 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-brass)]">
                   {c.cta.readProfile}
                   <ArrowUpRight size={12} />
                 </span>

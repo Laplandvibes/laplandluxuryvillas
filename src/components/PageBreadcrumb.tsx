@@ -22,7 +22,7 @@ export default function PageBreadcrumb() {
     '/destinations': c.nav.destinations,
     '/experiences': c.nav.experiences,
     '/midnight-sun': c.nav.midnightSun,
-    '/concierge': c.nav.privateInquiry,
+    '/private-inquiry': c.nav.privateInquiry,
     '/about': c.nav.about,
   }
   return (

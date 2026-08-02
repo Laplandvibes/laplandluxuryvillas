@@ -68,7 +68,7 @@ const en: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
-    reserve: 'Reserve · Concierge Only',
+    reserve: 'Reserve · By enquiry only',
   },
   category: {
     'glass-roof': 'Glass-roof Villa',
@@ -77,29 +77,29 @@ const en: SiteCopy = {
     'alpine-chalet': 'Alpine Chalet',
     'lakeside-retreat': 'Lakeside Retreat',
   },
-  concierge: {
-    eyebrow: 'The Private Concierge',
+  inquiry: {
+    eyebrow: 'Private enquiry',
     defaultTitle: 'A quieter way to plan your Lapland trip.',
     defaultBody: 'Send us one message with your preferences, your dates and how many of you there are. You get a private shortlist back within one working day. No public profile, no shared calendars, no account to set up.',
     inquireBtn: 'Private Inquiry',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Anonymous trip-planning',
+      anonymous: 'Anonymous enquiry',
       reply: 'Reply within one working day',
-      rates: 'Direct rates on request',
+      rates: 'A link to the property’s own booking',
     },
   },
   midnightSunBand: {
     eyebrow: 'Jun 6 – Jul 7',
     h2: 'The same villas, in a summer of unbroken light.',
-    body: 'Same houses, completely different season. The glass roof that framed the aurora now holds a sun that never sets, the lake is open water, the forest fills with cloudberry. Demand is roughly half what it is in winter, and it is the one stretch of the year when private chefs, helicopter charters and the reserve villas quietly open the rest of their calendar.',
+    body: 'Same houses, completely different season. The glass roof that framed the aurora now holds a sun that never sets, the lake is open water, the forest fills with cloudberry. Summer is Lapland\'s quieter season, and the same houses are open. The rate is shown on each property\'s own booking page.',
     primary: 'See the summer collection',
     secondary: 'Inquire about June dates',
   },
   newsletter: {
     eyebrow: 'The #LaplandVibes newsletter',
     h2: 'A quiet note when villas open new dates, or a private one comes free.',
-    lede: 'Direct rates, last-minute concierge openings, and the aurora forecast the week before each new moon. No spam. We write it from Finland and only send when we genuinely have something for you.',
+    lede: 'Dates that have opened up, properties worth a look, and the aurora forecast the week before each new moon. No spam. We write it from Finland and only send when we genuinely have something for you.',
     emailPlaceholder: 'your@email.com',
     footnote: 'Unsubscribe in one click.',
     welcome: 'Welcome aboard. The first note lands within a week.',
@@ -115,14 +115,14 @@ const en: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'The Private Collection',
-      title: 'Finnish Lapland, quietly at the top of the market.',
-      lede: 'A small, hand-picked collection of private luxury villas across Lapland. Concierge-led, prices on request.',
+      title: 'Seven villas and suites across four Lapland destinations.',
+      lede: 'A small, hand-picked collection of private luxury villas across Lapland. Rates from each property’s own booking page, or send a private enquiry.',
       primary: 'Browse the collection',
       secondary: 'Private Inquiry',
     },
     villas: {
       eyebrow: 'The Collection',
-      title: 'Nine villas. Five destinations. One private inquiry.',
+      title: 'Seven villas. Four destinations. One private enquiry.',
       lede: 'Every property below is vetted against the operator\'s own published information and recent guest reviews. Filter by the kind of building you have in mind, or send a private inquiry and we will shortlist around your dates.',
     },
     suites: {
@@ -147,15 +147,15 @@ const en: SiteCopy = {
       primary: 'Inquire about June dates',
       secondary: 'Browse the collection',
     },
-    concierge: {
-      eyebrow: 'Private Concierge',
+    inquiry: {
+      eyebrow: 'Private enquiry',
       title: 'One private message, one shortlist made for you.',
-      lede: 'Tell us your dates, how many of you there are, and the kind of trip you have in mind. We reply within one working day, and where it fits we include the reserve villas that never show up publicly.',
+      lede: 'Tell us your dates, how many of you there are, and the kind of trip you have in mind. We reply within one working day.',
     },
     about: {
       eyebrow: 'About',
       title: 'A short list, kept short on purpose.',
-      lede: 'A private collection of Lapland\'s finest villas and suites. Anonymous concierge, direct rates where they exist, no platform in between.',
+      lede: 'Seven hand-picked villas and suites in Finnish Lapland. Anonymous enquiry, a direct link to each property\'s own booking, no platform in between.',
     },
   },
   home: {
@@ -163,14 +163,14 @@ const en: SiteCopy = {
       eyebrow: 'How we work',
       h2: 'The opposite of a booking platform.',
       items: [
-        { title: 'A short list, not a directory.', body: 'Nine villas and suites, in the places that actually earn the journey north. We turn properties down more often than we add them, so every villa here is one a careful traveller could book without second-guessing it.' },
-        { title: 'Anonymous trip-planning.', body: 'One private inbox. No public profile, no shared calendars with anyone else. Send your dates, how many of you there are and what you are after, and a shortlist made for you comes back within one working day.' },
-        { title: 'Direct rates, where they exist.', body: 'Where a villa has a public listing we link you straight to the verified rate. The ones held privately, including reserve villas you will not find listed anywhere, we quote directly. The reply tells you which is which.' },
+        { title: 'A short list, not a directory.', body: 'Seven villas and suites, in the places that actually earn the journey north. We turn properties down more often than we add them, so every villa here is one a careful traveller could book without second-guessing it.' },
+        { title: 'Anonymous enquiry.', body: 'One private inbox. No public profile, no shared calendars with anyone else. Send your dates, how many of you there are and what you are after, and a shortlist made for you comes back within one working day.' },
+        { title: 'Direct rates, where they exist.', body: 'Where a villa has a public listing we link you straight to the property’s own booking page, where the rate is shown. Where no rate is published, the property quotes you itself. We do not set prices and we do not take bookings.' },
       ],
     },
     signature: {
       eyebrow: 'Signature villas',
-      h2: 'Four anchors of the Lapland collection.',
+      h2: 'The four we recommend most often.',
       lede: 'The four we recommend most. Every detail below is checked against the operator\'s published information and recent guest reviews, not lifted from a brochure.',
     },
     destinations: {
@@ -181,8 +181,8 @@ const en: SiteCopy = {
   villasPage: {
     filters: { all: 'All', glassRoof: 'Glass-roof', logEstate: 'Log Estate', designerSuite: 'Designer Suite', alpineChalet: 'Alpine Chalet', lakeside: 'Lakeside' },
     noVillas: 'No villas in that category yet.',
-    conciergeTitle: 'Don\'t see the right fit?',
-    conciergeBody: 'What you see above is what is currently published. We hold more villas privately, including reserve properties with no public listing at all, and quote those directly when you inquire.',
+    inquiryTitle: 'Don\'t see the right fit?',
+    inquiryBody: 'Above is the whole published collection. If none of it is right, tell us what you are after and we will suggest what we would look at ourselves, including places outside this list.',
   },
   suitesPage: {
     intro: {
@@ -192,8 +192,8 @@ const en: SiteCopy = {
       glassRoof: 'glass-roof cabin',
       p1Post: ', where the ceiling is the headline detail. Both are listed below.',
     },
-    conciergeTitle: 'A two-suite booking, or a private floor?',
-    conciergeBody: 'Several of these properties release a multi-suite floor for exclusive use during shoulder weeks. Share your dates and headcount.',
+    inquiryTitle: 'A two-suite booking, or a private floor?',
+    inquiryBody: 'Several of these properties release a multi-suite floor for exclusive use during shoulder weeks. Share your dates and headcount.',
   },
   destinationsPage: {
     destinationLabel: (i) => `Destination 0${i + 1}`,
@@ -208,8 +208,8 @@ const en: SiteCopy = {
     villasHere: (n) => (n === 1 ? 'One villa anchored here.' : `${n} villas anchored here.`),
     villasHereH2: (n) => (n === 1 ? 'One villa anchored here.' : `${n} villas anchored here.`),
     fullCollection: 'Full collection',
-    conciergeTitle: (name) => `Plan a private ${name} trip.`,
-    conciergeBody: 'Send dates, headcount and any preferences (private chef, helicopter arrival, exclusive use). We reply with a shortlist within one working day.',
+    inquiryTitle: (name) => `Plan a private ${name} trip.`,
+    inquiryBody: 'Send dates, headcount and any preferences (private chef, helicopter arrival, exclusive use). We reply with a shortlist within one working day.',
   },
   experiencesPage: {
     sections: {
@@ -224,14 +224,14 @@ const en: SiteCopy = {
       { value: '32+', label: 'Days the sun never sets at Rovaniemi, more further north' },
       { value: '24h', label: 'Daylight at peak, Jun 21' },
       { value: '+18°C', label: 'Average daytime in late June' },
-      { value: '50%', label: 'Lower demand than aurora-season' },
+      { value: '68.9°N', label: 'Our northernmost destination, Inari, where it runs longest' },
     ],
     fourReasons: 'Four reasons',
     h2: 'Lapland in summer is a separate place.',
     reasons: [
       { title: 'The architecture changes character.', body: 'The glass roofs built for the aurora now hold an unbroken sun. Skylight over the bed, sun on the lake, and no reason to draw a curtain, because there is no night to hide from.' },
       { title: 'The wilderness becomes accessible.', body: 'Lakes thaw, the boreal forest opens, the canoe routes appear. The same villa reached by snowmobile in February is now a five-minute boat ride from the dock.' },
-      { title: 'The reserve villas open.', body: 'The private lakeside log estates and the architect chalets release the rest of their calendar. The window is the one time of year private chefs and helicopter charters quote shoulder rates.' },
+      { title: 'The same house, a different season.', body: 'The collection is the same in summer as in winter. Under the same glass roof there is a sun that will not set instead of the aurora, the lakes are open water and the forest is walkable. The rate sits on the property own booking page, so the seasonal difference is visible directly.' },
       { title: 'No queues, no neighbours.', body: 'Lapland in summer sees a fraction of the winter crowd. The footpath through the forest and the lookout up on the fell are, in practice, yours.' },
     ],
     summerCollection: {
@@ -247,14 +247,14 @@ const en: SiteCopy = {
     },
     planning: {
       h2: 'A note on planning a midnight-sun trip.',
-      p1: 'The window is short, and the villas are individually owned, so the calendar fills unevenly rather than neatly. We hold a small allocation in the reserve estates each summer.',
+      p1: 'The window is short, and the villas are individually owned, so the calendar fills unevenly rather than neatly. It is worth asking early.',
       p2: 'For a given June, the time to ask is between January and March of that same year. Later is still worth a message, because dates do come free, but the very top of the list usually goes first.',
       quoting: 'Currently quoting summer 2026 + 2027',
     },
-    conciergeTitle: 'Inquire about a midnight-sun trip.',
-    conciergeBody: 'Send your dates, how many of you there are and any preferences. A reply lands within one working day with what is free across the summer collection, including reserve villas not listed publicly.',
+    inquiryTitle: 'Inquire about a midnight-sun trip.',
+    inquiryBody: 'Send your dates, how many of you there are and any preferences. A reply lands within one working day with what is free across the summer collection.',
   },
-  conciergePage: {
+  inquiryPage: {
     eyebrow: 'The inquiry form',
     h2: 'Tell us what you\'re picturing.',
     intro: 'Five short fields. The more specific you can be about what you want and what you need, the more useful the shortlist. Name and email stay optional, and replies go to whatever address you write from.',
@@ -276,7 +276,7 @@ const en: SiteCopy = {
     options: {
       headcount: ['1–2 guests', '3–4 guests', '5–6 guests', '7–10 guests', 'Larger group'],
       intent: ['Aurora season, first visit', 'Aurora season, been before', 'Midnight sun (Jun–Jul)', 'Christmas / New Year', 'Family group', 'Private celebration', 'Honeymoon / retreat for two', 'Something else (tell us below)'],
-      budget: ['Under €1,000 / night', '€1,000 – €2,500 / night', '€2,500 – €5,000 / night', '€5,000+ / night', 'Reserve property, exclusive use', 'Prefer not to say'],
+      budget: ['Under €1,000 / night', '€1,000 – €2,500 / night', '€2,500 – €5,000 / night', '€5,000+ / night', 'Exclusive use of the whole place', 'Prefer not to say'],
     },
     submit: 'Send private inquiry',
     sending: 'Sending…',
@@ -338,7 +338,7 @@ const en: SiteCopy = {
     nightlyHint: 'Indicative low-season rate. Actual nightly rate depends on dates, length of stay and inclusions.',
     rate: 'Rate',
     onRequest: 'On request',
-    reserveHint: 'Reserve property. Quoted privately on inquiry, never on a public listing.',
+    reserveHint: 'No published rate for this property. Ask the property itself.',
     beginInquiry: 'Begin private inquiry',
     viewRates: 'View public rates',
     orSendInquiry: 'Or send a private inquiry',
@@ -346,8 +346,8 @@ const en: SiteCopy = {
     signatureH2: 'Six things you can verify on arrival.',
     destinationEyebrow: 'The destination',
     readProfile: (name) => `Read the ${name} profile →`,
-    conciergeTitle: (dest) => `Begin a ${dest} inquiry.`,
-    conciergeBody: 'Send dates, headcount, preferences. A reply lands within one working day with availability, the actual nightly rate, and any reserve villas worth pairing with this one.',
+    inquiryTitle: (dest) => `Begin a ${dest} inquiry.`,
+    inquiryBody: 'Send dates, headcount, preferences. We reply within one working day: where to see this property’s rate, and what else in the collection is worth a look alongside it.',
     alsoEyebrow: 'Also in the collection',
     alsoH2: 'Three other villas worth considering.',
   },
@@ -377,7 +377,7 @@ const en: SiteCopy = {
       },
       general: {
         eyebrow: 'General editorial',
-        body: 'Anything else. Slower turn-around than private@; for trip-planning use the concierge inbox above.',
+        body: 'Anything else. Slower turn-around than private@; for trip-planning use the private inbox above.',
       },
     },
     privateCta: 'Send a private inquiry',
@@ -388,14 +388,14 @@ const en: SiteCopy = {
     aboutPost: ' page for the broader LaplandVibes ecosystem context.',
   },
   footerNote:
-    'A private collection curated in Finnish Lapland, last reviewed May 2026. Some bookings earn an affiliate commission, which never shapes which villas we recommend. The reserve and concierge-only properties pay nothing.',
+    'A private collection curated in Finnish Lapland, last reviewed May 2026. Some bookings earn an affiliate commission, which never shapes which villas we recommend. Properties cannot pay their way into the collection.',
   footerPillars: [
     { name: 'The Collection', href: '/villas' },
     { name: 'Designer Suites', href: '/suites' },
     { name: 'Destinations', href: '/destinations' },
     { name: 'Experiences', href: '/experiences' },
     { name: 'Midnight Sun', href: '/midnight-sun' },
-    { name: 'Private Concierge', href: '/concierge' },
+    { name: 'Private enquiry', href: '/private-inquiry' },
   ],
 }
 

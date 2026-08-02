@@ -68,7 +68,7 @@ const es: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Colección privada',
-    reserve: 'Reserve · Solo por conserjería',
+    reserve: 'Reserve · Solo bajo consulta',
   },
   category: {
     'glass-roof': 'Villa con techo de cristal',
@@ -77,29 +77,29 @@ const es: SiteCopy = {
     'alpine-chalet': 'Chalet alpino',
     'lakeside-retreat': 'Refugio junto al lago',
   },
-  concierge: {
-    eyebrow: 'La conserjería privada',
+  inquiry: {
+    eyebrow: 'Consulta privada',
     defaultTitle: 'Una forma más serena de planificar un viaje a Laponia.',
-    defaultBody: 'Envíe un solo mensaje, preferencias, fechas, número de personas, y nuestra conserjería le responde con una preselección privada en un día laborable. Sin perfil público, sin calendarios compartidos.',
+    defaultBody: 'Envíe un solo mensaje, preferencias, fechas, número de personas, y recibirá una preselección privada en un día laborable. Sin perfil público, sin calendarios compartidos.',
     inquireBtn: 'Consulta privada',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Planificación anónima del viaje',
+      anonymous: 'Consulta anónima',
       reply: 'Respuesta en un día laborable',
-      rates: 'Tarifas directas bajo solicitud',
+      rates: 'Enlace a la reserva de la casa',
     },
   },
   midnightSunBand: {
     eyebrow: '6 jun – 7 jul',
     h2: 'Las mismas villas, en un verano de luz ininterrumpida.',
-    body: 'La misma arquitectura, otra estación. El techo de cristal se convierte en una claraboya sobre un sol que nunca se pone, el lago se deshiela, el bosque se llena de moras árticas. La mitad de la demanda del invierno, y la única ventana del año en que los chefs privados, los vuelos en helicóptero y las villas reserve abren el resto de su calendario.',
+    body: 'La misma arquitectura, otra estación. El techo de cristal se convierte en una claraboya sobre un sol que nunca se pone, el lago se deshiela, el bosque se llena de moras árticas. El verano es la temporada tranquila de Laponia, y son las mismas casas. La tarifa figura en la página de reserva de cada casa.',
     primary: 'Ver la colección de verano',
     secondary: 'Consultar fechas de junio',
   },
   newsletter: {
     eyebrow: 'El boletín de #LaplandVibes',
     h2: 'Un aviso discreto cuando las villas abren nuevas fechas y sabemos de una disponibilidad privada.',
-    lede: 'Tarifas directas. Plazas de conserjería de última hora. Previsiones de la ventana de auroras la semana anterior a cada luna nueva. Sin spam, escrito en Finlandia, enviado solo cuando hay algo concreto que contar.',
+    lede: 'Fechas que se han liberado. Casas que merecen un vistazo. Previsiones de la ventana de auroras la semana anterior a cada luna nueva. Sin spam, escrito en Finlandia, enviado solo cuando hay algo concreto que contar.',
     emailPlaceholder: 'tu@email.com',
     footnote: 'Cancele la suscripción con un clic.',
     welcome: 'Bienvenido a bordo. El primer aviso llega en menos de una semana.',
@@ -115,14 +115,14 @@ const es: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'La colección privada',
-      title: 'Laponia finlandesa, discreta, en lo más alto del mercado.',
-      lede: 'Una pequeña colección de villas privadas de lujo seleccionadas a mano por toda Laponia, con conserjería, precios bajo solicitud.',
+      title: 'Siete villas y suites en cuatro destinos de Laponia.',
+      lede: 'Una pequeña colección de villas privadas de lujo seleccionadas a mano por toda Laponia. Tarifas en la propia página de reserva de cada casa, o envíe una consulta privada.',
       primary: 'Ver la colección',
       secondary: 'Consulta privada',
     },
     villas: {
       eyebrow: 'La colección',
-      title: 'Nueve villas. Cinco destinos. Una consulta privada.',
+      title: 'Siete villas. Cuatro destinos. Una consulta privada.',
       lede: 'Cada propiedad listada a continuación está verificada con la información publicada por el operador y reseñas recientes de huéspedes. Filtre por el tipo de edificio que tiene en mente, o envíe una consulta privada y elaboraremos una preselección según sus fechas.',
     },
     suites: {
@@ -147,15 +147,15 @@ const es: SiteCopy = {
       primary: 'Consultar fechas de junio',
       secondary: 'Ver la colección',
     },
-    concierge: {
-      eyebrow: 'Conserjería privada',
+    inquiry: {
+      eyebrow: 'Consulta privada',
       title: 'Un mensaje privado, una preselección curada.',
-      lede: 'Envíe fechas, número de personas y el tipo de viaje que tiene en mente. Respondemos en un día laborable, incluyendo, cuando encaja, las villas reserve que nunca aparecen públicamente.',
+      lede: 'Envíe fechas, número de personas y el tipo de viaje que tiene en mente. Respondemos en un día laborable.',
     },
     about: {
       eyebrow: 'Quiénes somos',
       title: 'Una lista corta, breve a propósito.',
-      lede: 'Una colección privada de las mejores villas y suites de Laponia, conserjería anónima, tarifas directas allí donde existen, sin plataforma de por medio.',
+      lede: 'Siete villas y suites escogidas a mano en la Laponia finlandesa, consulta anónima, enlace directo a la reserva de cada casa, sin plataforma de por medio.',
     },
   },
   home: {
@@ -163,14 +163,14 @@ const es: SiteCopy = {
       eyebrow: 'Cómo trabajamos',
       h2: 'Lo contrario de una plataforma de reservas.',
       items: [
-        { title: 'Una lista corta, no un directorio.', body: 'Nueve villas y suites en los destinos que de verdad justifican el viaje. Rechazamos propiedades más a menudo de las que añadimos, cada entrada de esta página es una que un viajero exigente podría reservar sin dudar.' },
-        { title: 'Planificación anónima del viaje.', body: 'Una sola bandeja de entrada privada, sin perfil público, sin calendarios compartidos con terceros. Envíe fechas, número de personas y preferencias, reciba una preselección curada en un día laborable.' },
-        { title: 'Tarifas directas, allí donde existen.', body: 'Los anuncios públicos enlazan con tarifas verificadas. Las propiedades reservadas en privado, incluidas las villas reserve sin disponibilidad pública, se cotizan directamente. La respuesta le dice cuál es cuál.' },
+        { title: 'Una lista corta, no un directorio.', body: 'Siete villas y suites en los destinos que de verdad justifican el viaje. Rechazamos propiedades más a menudo de las que añadimos, cada entrada de esta página es una que un viajero exigente podría reservar sin dudar.' },
+        { title: 'Consulta anónima.', body: 'Una sola bandeja de entrada privada, sin perfil público, sin calendarios compartidos con terceros. Envíe fechas, número de personas y preferencias, reciba una preselección curada en un día laborable.' },
+        { title: 'Tarifas directas, allí donde existen.', body: 'Los anuncios públicos enlazan directamente con la página de reserva de la casa, donde figura la tarifa. Donde no hay tarifa publicada, la cotiza la propia casa. No fijamos precios ni aceptamos reservas.' },
       ],
     },
     signature: {
       eyebrow: 'Villas signature',
-      h2: 'Cuatro pilares de la colección de Laponia.',
+      h2: 'Las cuatro que más recomendamos.',
       lede: 'Las propiedades que más recomendamos. Cada detalle que sigue está verificado con la información del operador y reseñas recientes de huéspedes, no copiado de un folleto.',
     },
     destinations: {
@@ -181,8 +181,8 @@ const es: SiteCopy = {
   villasPage: {
     filters: { all: 'Todas', glassRoof: 'Techo de cristal', logEstate: 'Propiedad de troncos', designerSuite: 'Suite de autor', alpineChalet: 'Chalet alpino', lakeside: 'Junto al lago' },
     noVillas: 'Todavía no hay villas en esa categoría.',
-    conciergeTitle: '¿No encuentra lo que busca?',
-    conciergeBody: 'La colección de arriba es lo que está publicado actualmente. Hay villas adicionales reservadas en privado, incluidas propiedades reserve sin anuncio público, que se cotizan directamente tras la consulta.',
+    inquiryTitle: '¿No encuentra lo que busca?',
+    inquiryBody: 'Arriba está toda la colección publicada. Si nada encaja, cuéntenos qué busca y le sugeriremos lo que miraríamos nosotros, incluso fuera de esta lista.',
   },
   suitesPage: {
     intro: {
@@ -192,8 +192,8 @@ const es: SiteCopy = {
       glassRoof: 'cabaña con techo de cristal',
       p1Post: ', donde el techo es el detalle protagonista. Ambas se listan a continuación.',
     },
-    conciergeTitle: '¿Una reserva de dos suites o una planta privada?',
-    conciergeBody: 'Varias de estas propiedades liberan una planta de varias suites para uso exclusivo en semanas de temporada media. Indíquenos sus fechas y el número de personas.',
+    inquiryTitle: '¿Una reserva de dos suites o una planta privada?',
+    inquiryBody: 'Varias de estas propiedades liberan una planta de varias suites para uso exclusivo en semanas de temporada media. Indíquenos sus fechas y el número de personas.',
   },
   destinationsPage: {
     destinationLabel: (i) => `Destino 0${i + 1}`,
@@ -208,8 +208,8 @@ const es: SiteCopy = {
     villasHere: (n) => (n === 1 ? 'Una villa en este destino.' : `${n} villas en este destino.`),
     villasHereH2: (n) => (n === 1 ? 'Una villa en este destino.' : `${n} villas en este destino.`),
     fullCollection: 'Colección completa',
-    conciergeTitle: (name) => `Planifique un viaje privado a ${name}.`,
-    conciergeBody: 'Envíe fechas, número de personas y cualquier preferencia (chef privado, llegada en helicóptero, uso exclusivo). Respondemos con una preselección en un día laborable.',
+    inquiryTitle: (name) => `Planifique un viaje privado a ${name}.`,
+    inquiryBody: 'Envíe fechas, número de personas y cualquier preferencia (chef privado, llegada en helicóptero, uso exclusivo). Respondemos con una preselección en un día laborable.',
   },
   experiencesPage: {
     sections: {
@@ -231,7 +231,7 @@ const es: SiteCopy = {
     reasons: [
       { title: 'La arquitectura cambia de carácter.', body: 'Los techos de cristal que existen para las auroras enmarcan ahora un sol ininterrumpido. Claraboya sobre la cama, sol sobre el lago, sin necesidad de correr una cortina, no hay noche que esconder.' },
       { title: 'La naturaleza salvaje se vuelve accesible.', body: 'Los lagos se deshielan, el bosque boreal se abre, aparecen las rutas en canoa. La misma villa a la que se llegaba en motonieve en febrero queda ahora a cinco minutos en barca desde el embarcadero.' },
-      { title: 'Las villas reserve se abren.', body: 'Las propiedades privadas de troncos junto al lago y los chalets de arquitecto liberan el resto de su calendario. La ventana es la única época del año en que chefs privados y vuelos en helicóptero cotizan tarifas de temporada media.' },
+      { title: 'La misma casa, otra estación.', body: 'La colección es la misma en verano que en invierno. Bajo el mismo techo de cristal hay un sol que no se pone en lugar de la aurora, los lagos están deshelados y el bosque es transitable. La tarifa está en la página de reserva de cada casa, así que la diferencia de temporada se ve directamente.' },
       { title: 'Sin colas, sin vecinos.', body: 'Laponia en verano recibe una fracción de la densidad de visitantes del invierno. El sendero por el bosque, el mirador en el fjell, son prácticamente suyos.' },
     ],
     summerCollection: {
@@ -247,14 +247,14 @@ const es: SiteCopy = {
     },
     planning: {
       h2: 'Una nota sobre cómo planificar un viaje de sol de medianoche.',
-      p1: 'La ventana es corta y las villas son de propiedad individual, por eso el calendario se llena de forma oportunista, no uniforme. La conserjería reserva una pequeña asignación en las propiedades reserve cada verano.',
+      p1: 'La ventana es corta y las villas son de propiedad individual, por eso el calendario se llena de forma oportunista, no uniforme. Conviene preguntar con antelación.',
       p2: 'El momento adecuado para consultar por un junio concreto es entre enero y marzo de ese año. Las consultas posteriores también merece la pena enviarlas, hay liberaciones, pero la gama alta del inventario suele irse antes.',
       quoting: 'Cotizando actualmente verano de 2026 y 2027',
     },
-    conciergeTitle: 'Consulte por un viaje de sol de medianoche.',
-    conciergeBody: 'Envíe fechas, número de personas y cualquier preferencia. La respuesta llega en un día laborable con disponibilidad en toda la colección de verano, incluidas villas reserve no listadas públicamente.',
+    inquiryTitle: 'Consulte por un viaje de sol de medianoche.',
+    inquiryBody: 'Envíe fechas, número de personas y cualquier preferencia. La respuesta llega en un día laborable con disponibilidad en toda la colección de verano.',
   },
-  conciergePage: {
+  inquiryPage: {
     eyebrow: 'El formulario de consulta',
     h2: 'Cuéntenos qué imagina.',
     intro: 'Cinco campos breves. Cuanto más concretas sean las preferencias y las restricciones, más útil será la preselección. El nombre y el correo son opcionales, las respuestas van a la dirección desde la que llega el mensaje.',
@@ -346,8 +346,8 @@ const es: SiteCopy = {
     signatureH2: 'Seis detalles que podrá comprobar al llegar.',
     destinationEyebrow: 'El destino',
     readProfile: (name) => `Leer el perfil de ${name} →`,
-    conciergeTitle: (dest) => `Inicie una consulta sobre ${dest}.`,
-    conciergeBody: 'Envíe fechas, número de personas y preferencias. La respuesta llega en un día laborable con disponibilidad, la tarifa real por noche y cualquier villa reserve que merezca la pena combinar con esta.',
+    inquiryTitle: (dest) => `Inicie una consulta sobre ${dest}.`,
+    inquiryBody: 'Envíe fechas, número de personas y preferencias. La respuesta llega en un día laborable con disponibilidad, la tarifa real por noche y cualquier villa reserve que merezca la pena combinar con esta.',
     alsoEyebrow: 'También en la colección',
     alsoH2: 'Otras tres villas que merece la pena considerar.',
   },
@@ -377,7 +377,7 @@ const es: SiteCopy = {
       },
       general: {
         eyebrow: 'Editorial general',
-        body: 'Cualquier otra cosa. Más lenta que private@; para planificar el viaje use la bandeja de conserjería de arriba.',
+        body: 'Cualquier otra cosa. Más lenta que private@; para planificar el viaje use la bandeja privada de arriba.',
       },
     },
     privateCta: 'Enviar una consulta privada',
@@ -388,14 +388,14 @@ const es: SiteCopy = {
     aboutPost: ' para conocer el contexto más amplio del ecosistema LaplandVibes.',
   },
   footerNote:
-    'Una colección privada curada en la Laponia finlandesa, última revisión en mayo de 2026. Algunas reservas generan una comisión de afiliado, que nunca influye en qué villas se recomiendan. Las propiedades reserve y solo por conserjería no pagan nada.',
+    'Una colección privada curada en la Laponia finlandesa, última revisión en mayo de 2026. Algunas reservas generan una comisión de afiliado, que nunca influye en qué villas se recomiendan. Las casas no pueden pagar por entrar en la colección.',
   footerPillars: [
     { name: 'La colección', href: '/villas' },
     { name: 'Suites de autor', href: '/suites' },
     { name: 'Destinos', href: '/destinations' },
     { name: 'Experiencias', href: '/experiences' },
     { name: 'Sol de medianoche', href: '/midnight-sun' },
-    { name: 'Conserjería privada', href: '/concierge' },
+    { name: 'Consulta privada', href: '/private-inquiry' },
   ],
 }
 

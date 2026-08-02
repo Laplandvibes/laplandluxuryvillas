@@ -2,7 +2,7 @@
   {
     "path": "/",
     "fallbackTitle": "LaplandLuxuryVillas: Private Villas, Glass Igloos & Aurora Lodges",
-    "fallbackDescription": "Hand-picked luxury stays in Finnish Lapland: private wilderness villas, glass igloos and aurora lodges, with concierge booking across Rovaniemi, Levi and Inari.",
+    "fallbackDescription": "Hand-picked luxury stays in Finnish Lapland: private wilderness villas, glass igloos and aurora lodges across Rovaniemi, Levi, Saariselkä and Inari.",
     "appendSiteName": false
   },
   {
@@ -26,8 +26,8 @@
     "fallbackTitle": "Midnight Sun | LaplandLuxuryVillas"
   },
   {
-    "path": "/concierge",
-    "fallbackTitle": "Concierge | LaplandLuxuryVillas"
+    "path": "/private-inquiry",
+    "fallbackTitle": "Private Inquiry | LaplandLuxuryVillas"
   },
   {
     "path": "/about",
@@ -70,12 +70,6 @@
   },
   {
     "path": "/villas/apukka-resort-aurora-cabin"
-  },
-  {
-    "path": "/villas/private-lakeside-log-estate"
-  },
-  {
-    "path": "/villas/designer-mountain-chalet-levi"
   },
   {
     "path": "/destinations/saariselka"

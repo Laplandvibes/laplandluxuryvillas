@@ -122,7 +122,7 @@ export type SiteCopy = {
     'alpine-chalet': string
     'lakeside-retreat': string
   }
-  concierge: {
+  inquiry: {
     eyebrow: string
     defaultTitle: string
     defaultBody: string
@@ -160,7 +160,7 @@ export type SiteCopy = {
     destinations: { eyebrow: string; title: string; lede: string }
     experiences: { eyebrow: string; title: string; lede: string }
     midnightSun: { eyebrow: string; title: string; lede: string; primary: string; secondary: string }
-    concierge: { eyebrow: string; title: string; lede: string }
+    inquiry: { eyebrow: string; title: string; lede: string }
     about: { eyebrow: string; title: string; lede: string }
   }
   home: {
@@ -182,13 +182,13 @@ export type SiteCopy = {
   villasPage: {
     filters: { all: string; glassRoof: string; logEstate: string; designerSuite: string; alpineChalet: string; lakeside: string }
     noVillas: string
-    conciergeTitle: string
-    conciergeBody: string
+    inquiryTitle: string
+    inquiryBody: string
   }
   suitesPage: {
     intro: { p1Pre: string; designerSuite: string; p1Mid: string; glassRoof: string; p1Post: string }
-    conciergeTitle: string
-    conciergeBody: string
+    inquiryTitle: string
+    inquiryBody: string
   }
   destinationsPage: {
     destinationLabel: (i: number) => string
@@ -203,8 +203,8 @@ export type SiteCopy = {
     villasHere: (n: number) => string
     villasHereH2: (n: number) => string
     fullCollection: string
-    conciergeTitle: (name: string) => string
-    conciergeBody: string
+    inquiryTitle: (name: string) => string
+    inquiryBody: string
   }
   experiencesPage: {
     sections: { aurora: SectionItem; wilderness: SectionItem; culinary: SectionItem; arrival: SectionItem }
@@ -226,10 +226,10 @@ export type SiteCopy = {
       p2: string
       quoting: string
     }
-    conciergeTitle: string
-    conciergeBody: string
+    inquiryTitle: string
+    inquiryBody: string
   }
-  conciergePage: {
+  inquiryPage: {
     eyebrow: string
     h2: string
     intro: string
@@ -283,8 +283,8 @@ export type SiteCopy = {
     signatureH2: string
     destinationEyebrow: string
     readProfile: (name: string) => string
-    conciergeTitle: (dest: string) => string
-    conciergeBody: string
+    inquiryTitle: (dest: string) => string
+    inquiryBody: string
     alsoEyebrow: string
     alsoH2: string
   }

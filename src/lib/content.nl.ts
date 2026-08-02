@@ -72,7 +72,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Een glazen bubbelsuite aan de rand van het boreale bos, twintig minuten van de Russische grens.',
       copy: [
         'Nellim is een werkend wildernisdorp (220 inwoners) aan de oostoever van het Inarimeer. De noorderlichtbubbels staan apart van de hoofdlodge in een eigen open plek, elk met een panoramische transparante koepel boven het bed en een houtgestookte hot tub op de veranda.',
-        'De lodge organiseert culturele Sami-avonden, ijsvissen op het meer en een van de weinige gecertificeerde begeleide noorderlicht-fotografieprogramma\'s in Finland. Kamers zijn een jaar van tevoren volgeboekt voor de piek in februari, de concierge kan soms een vrijgekomen kamer vinden.',
+        'De lodge organiseert culturele Sami-avonden, ijsvissen op het meer en een van de weinige gecertificeerde begeleide noorderlicht-fotografieprogramma\'s in Finland. Kamers zijn een jaar van tevoren volgeboekt voor de piek in februari.',
       ],
       signature: [
         'Transparante panoramische koepel boven het bed',
@@ -113,36 +113,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Noorderlichtwekker + hot tub naast de hut',
       ],
     },
-    'private-lakeside-log-estate': {
-      tagline: 'Een privé handgebouwd blokhuis aan een eigen baai van het Inarimeer. Uitsluitend op aanvraag via de concierge.',
-      copy: [
-        'Een blokhuislandgoed met vier slaapkamers aan een eigen privébaai, bereikbaar via één enkele weg. In gebruik bij een kleine groep terugkerende gasten, wij houden elk seizoen enkele weken aan als privé-allocatie.',
-        'Inbegrepen zijn een rooksauna, twee houtgestookte hot tubs, een botenhuis en een privé keukenbrigade die wij coördineren wanneer het pand geboekt is. In de winter sneeuwscooter- en huskytoegang via de baai; kano en vissen op het meer in het seizoen van de middernachtzon.',
-      ],
-      signature: [
-        'Vier slaapkamers aan een privébaai van het Inarimeer',
-        'Rooksauna + twee houtgestookte hot tubs',
-        'Privé keukenbrigade op aanvraag geregeld',
-        'Sneeuwscooter- / huskytoegang via het meer in de winter',
-        'Boot + kano + steiger voor het seizoen van de middernachtzon',
-        'Concierge-allocatie, nooit op openbare aanbiedingen',
-      ],
-    },
-    'designer-mountain-chalet-levi': {
-      tagline: 'Een modern, door een architect gebouwd chalet op de zuidhelling van Levi. Ski-in / ski-out, eigen wellnessverdieping.',
-      copy: [
-        'Een door een architect gebouwd chalet met drie slaapkamers op de zuidhelling van de fjeld van Levi, met een wellnessverdieping (sauna, stoombad, dompelbad, behandelkamer) op de begane grond en een woonruimte die uitkomt op een terras van 12 m met uitzicht op het dal.',
-        'Een korte afdaling op ski\'s naar de gondel van Levi; een korte wandeling terug omhoog via het verwarmde pad. Inclusief dagelijkse schoonmaak, ontbijtopstelling en een ski-concierge op afroep.',
-      ],
-      signature: [
-        'Door architect gebouwd chalet met drie slaapkamers, zuidhelling',
-        'Ski-in / ski-out via het verwarmde pad',
-        'Eigen wellnessverdieping: sauna, stoombad, dompelbad, behandelkamer',
-        'Glazen terras van 12 m met uitzicht op het dal',
-        'Dagelijkse schoonmaak + ontbijtopstelling inbegrepen',
-        'Ski-concierge op afroep gedurende het hele verblijf',
-      ],
-    },
   },
   destinations: {
     'saariselka': {
@@ -164,13 +134,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Onze noordelijkste bestemming, waar het noorderlicht ongeveer drie nachten op vier wordt waargenomen. Sami-hartland, Inarimeer, donkere hemel.',
       copy: [
         'Inari is de noordelijkste gemeente van Finland en de culturele hoofdstad van de Finse Sami. Het dorp ligt aan het Inarimeer, het op twee na grootste meer van Finland, met zo’n 3.000 eilanden, ruim 200 km ten noorden van de poolcirkel en zonder stadslicht aan de horizon.',
-        'Voor luxereizen betekent dit twee dingen. Ten eerste: op deze breedtegraad neemt het Fins Meteorologisch Instituut het noorderlicht ongeveer drie nachten op vier waar, en staat het recht boven je in plaats van laag in het noorden. Ten tweede: de blokhuislandgoederen aan het meer, waarvan wij er enkele privé aanhouden, behoren tot de rustigste accommodaties van Lapland: geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
+        'Voor luxereizen betekent dit twee dingen. Ten eerste: op deze breedtegraad neemt het Fins Meteorologisch Instituut het noorderlicht ongeveer drie nachten op vier waar, en staat het recht boven je in plaats van laag in het noorden. Ten tweede: de blokhuislandgoederen aan het meer behoren tot de rustigste accommodaties van Lapland: geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
       ],
       highlights: [
         'Aurora Village, speciaal gebouwd glashuttenlandgoed van 30 hectare',
         'Wilderness Hotel Nellim, noorderlichtbubbels aan de oostoever van het Inarimeer',
         'Sami-museum SIIDA + culturele programma\'s het hele jaar door',
-        'Privé blokhuislandgoederen aan het meer beschikbaar via de concierge',
+        'Inarimeer, het op twee na grootste meer van Finland, zo\'n 3 000 eilanden',
       ],
       arrival: 'Ivalo (IVL), 40 km, ongeveer 40 min per privétransfer',
       auroraNote: 'Onze noordelijkste bestemming, en die waar het noorderlicht het vaakst recht boven je staat in plaats van laag in het noorden. Het Inarimeer geeft een ononderbroken horizon, zonder dorpslicht erop.',
@@ -233,7 +203,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Een nachtelijke helikoptervlucht van 45 minuten boven het wolkendek, tot aan het noorderlicht zelf.',
       copy: [
         'Uitgevoerd door de enige voor nacht-VFR gecertificeerde helikopteroperator van Finland, vanuit Rovaniemi en Ivalo. De vlucht doorbreekt het plaatselijke wolkendek en cirkelt binnen de actieve noorderlichtovaal, een perspectief dat vanaf de grond onmogelijk is.',
-        'Fotografie op de grond is aan weerszijden van de vlucht inbegrepen; het deel in de lucht is voor de beleving zelf, niet voor de camera. Maximaal vier passagiers per AS350. Afhankelijk van het weervenster, de concierge volgt de voorspelling en meldt het de dag ervoor.',
+        'Fotografie op de grond is aan weerszijden van de vlucht inbegrepen; het deel in de lucht is voor de beleving zelf, niet voor de camera. Maximaal vier passagiers per AS350. Afhankelijk van het weervenster: de exploitant volgt de voorspelling en meldt het de dag ervoor.',
       ],
       available: 'Rovaniemi, Ivalo, okt–mrt (weersafhankelijk)',
     },
@@ -273,7 +243,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Directe privéjettransfer naar Ivalo, Kittilä of Rovaniemi, geen commerciële check-in, geen overstaphub.',
       copy: [
         'Gecoördineerd via onze jetpartners in Helsinki, Genève en Doha. Directe vluchten naar Ivalo (het dichtst bij de villa\'s van Saariselkä / Inari), Kittilä (het dichtst bij de villa\'s van Levi / Ylläs) of Rovaniemi (het beste voor het Arctic TreeHouse).',
-        'Volledige afhandeling: grondtransfer naar uw villa met een verwarmd voertuig van arctische specificatie, bagage doorgestuurd, douane zonder rij. De concierge dient de slot in en stemt de aankomst af op de incheck­tijd van de villa.',
+        'Volledige afhandeling: grondtransfer naar uw villa met een verwarmd voertuig van arctische specificatie, bagage doorgestuurd, douane zonder rij. De exploitant dient de slot in en stemt de aankomst af op de incheck­tijd van de villa.',
       ],
       available: 'Alle bestemmingen, het hele jaar door',
     },
@@ -281,7 +251,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Oppikken vanaf de regionale luchthaven rechtstreeks naar het landingsplatform van uw villa, geen wegtransfer.',
       copy: [
         'Het vaakst gebruikt voor aankomsten bij de private blokhuislandgoederen aan het Inarimeer. Het toestel is dezelfde AS350 die voor de noorderlichtvluchten wordt gebruikt; één sector duurt 20 tot 45 minuten.',
-        'Maximaal vijf passagiers + bagage. De concierge stemt het oppikken af op de incheck van de villa en het daglichtvenster, in het diepst van de winter gaat de zon al om 15:00 uur onder.',
+        'Maximaal vijf passagiers + bagage. De exploitant stemt het oppikken af op de incheck van de villa en het daglichtvenster, in het diepst van de winter gaat de zon al om 15:00 uur onder.',
       ],
       available: 'Rovaniemi, Ivalo → landgoederen aan het Inarimeer',
     },

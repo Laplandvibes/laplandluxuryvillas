@@ -47,7 +47,7 @@ export default function MidnightSunBand() {
                 {c.primary}
               </Link>
               <Link
-                to={to('/concierge')}
+                to={to('/private-inquiry')}
                 className="inline-flex items-center gap-3 border border-[#FFC95A]/60 text-[#FFC95A] px-7 py-4 text-[12px] tracking-[0.22em] uppercase font-body hover:bg-[#FFC95A]/10 transition-colors"
               >
                 {c.secondary}

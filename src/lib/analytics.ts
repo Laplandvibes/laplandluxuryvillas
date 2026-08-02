@@ -52,14 +52,14 @@ export function trackCtaClick(label: string, section: string) {
   })
 }
 
-// ─── Concierge inquiry (high-value lead) ──────────────────────────────────────
+// ─── Private enquiry (high-value lead) ───────────────────────────────────────
 
-export function trackConciergeInquiry(intent: string) {
-  gtag('event', 'concierge_inquiry', {
+export function trackPrivateInquiry(intent: string) {
+  gtag('event', 'private_inquiry', {
     event_category: 'conversion',
     event_label: intent,
   })
-  gtag('event', 'generate_lead', { lead_source: 'concierge', intent })
+  gtag('event', 'generate_lead', { lead_source: 'private_inquiry', intent })
 }
 
 // ─── Newsletter ───────────────────────────────────────────────────────────────

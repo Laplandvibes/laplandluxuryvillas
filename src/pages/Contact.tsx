@@ -32,7 +32,7 @@ export default function Contact() {
               body={c.cards.private.body}
               href="mailto:private@laplandvibes.com"
               cta={c.privateCta}
-              ctaTo="/concierge"
+              ctaTo="/private-inquiry"
             />
             <ContactCard
               icon={Mail}

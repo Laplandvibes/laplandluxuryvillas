@@ -208,7 +208,7 @@ export default function Nav() {
             )}
           </div>
           <Link
-            to={to('/concierge')}
+            to={to('/private-inquiry')}
             className="inline-flex items-center gap-2 whitespace-nowrap border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[12px] tracking-[0.16em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-all"
           >
             {c.nav.privateInquiry}
@@ -273,7 +273,7 @@ export default function Nav() {
             </li>
             <li className="pt-5">
               <Link
-                to={to('/concierge')}
+                to={to('/private-inquiry')}
                 onClick={() => setOpen(false)}
                 className="block w-full text-center border border-[color:var(--color-brass)] text-[color:var(--color-brass)] px-5 py-4 text-[13px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-all"
               >

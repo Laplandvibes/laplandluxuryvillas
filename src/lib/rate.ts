@@ -36,7 +36,7 @@
 //
 // If you are adding one back: verify it on the official domain, fill in all
 // four fields, and expect it to go stale. When in doubt, leave it unset — the
-// concierge path is already built, already translated into 12 locales, and
+// private-enquiry path is already built, already translated into 12 locales, and
 // costs us nothing. A wrong four-figure rate on a site that sells luxury is
 // the most expensive kind of mistake we can make.
 import type { Lang } from './affiliate'

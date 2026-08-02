@@ -19,16 +19,25 @@ export default function Villas() {
   const lang = useLang()
   const c = COPY[lang]
   const seo = getPageSeo('villas', lang)
-  const FILTERS: { id: 'all' | Villa['category']; label: string }[] = [
-    { id: 'all', label: c.villasPage.filters.all },
+  const VILLAS = getVillas(lang)
+  // 🔴 DERIVED FROM THE COLLECTION, never a hand-written list (2026-08-02).
+  // The chips used to be hard-coded. When the two unnamed house-inventory
+  // entries were removed, `log-estate` and `alpine-chalet` became empty and
+  // the page still offered both — a chip that answers "no villas in this
+  // category yet" reads as inventory we have but are not showing, which is
+  // the same false impression this whole pass exists to remove.
+  const CATEGORY_ORDER: { id: Villa['category']; label: string }[] = [
     { id: 'glass-roof', label: c.villasPage.filters.glassRoof },
     { id: 'log-estate', label: c.villasPage.filters.logEstate },
     { id: 'designer-suite', label: c.villasPage.filters.designerSuite },
     { id: 'alpine-chalet', label: c.villasPage.filters.alpineChalet },
     { id: 'lakeside-retreat', label: c.villasPage.filters.lakeside },
   ]
-  const [filter, setFilter] = useState<typeof FILTERS[number]['id']>('all')
-  const VILLAS = getVillas(lang)
+  const FILTERS: { id: 'all' | Villa['category']; label: string }[] = [
+    { id: 'all', label: c.villasPage.filters.all },
+    ...CATEGORY_ORDER.filter((f) => VILLAS.some((v) => v.category === f.id)),
+  ]
+  const [filter, setFilter] = useState<'all' | Villa['category']>('all')
   const list = filter === 'all' ? VILLAS : VILLAS.filter((v) => v.category === filter)
   // Derived from the CURRENTLY VISIBLE list, not the whole collection: the mark
   // claims "highest rated on this page", and the category filter changes what
