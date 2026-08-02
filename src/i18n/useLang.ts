@@ -24,13 +24,28 @@ const LANG_TO_PREFIX: Record<Lang, string> = {
   ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
 }
 
+/**
+ * Add the trailing slash the canonical URL and the sitemap both use.
+ *
+ * 🔴 Every internal link used to omit it. Cloudflare Pages answers `/fi/villas`
+ * with a 308 to `/fi/villas/`, so a browser following a link took two round
+ * trips and Googlebot crawled two URLs for every one page. Search Console on
+ * 2026-08-02 counted **328 pages in the "page with redirect" bucket** — the
+ * single largest reason in the not-indexed report, and pure waste: the
+ * redirect targets were already indexed.
+ *
+ * The canonical tag, the sitemap and the hreflang set have always used the
+ * trailing slash. This makes the links agree with them.
+ */
+const withSlash = (p: string): string => (p.endsWith('/') || p.includes('#') || p.includes('?') ? p : `${p}/`)
+
 export function useLocalePath() {
   const lang = useLang()
   return (path: string): string => {
-    if (lang === 'en') return path
+    if (lang === 'en') return withSlash(path)
     const prefix = `/${LANG_TO_PREFIX[lang]}`
-    if (path === '/') return prefix
-    return `${prefix}${path.startsWith('/') ? path : `/${path}`}`
+    if (path === '/') return `${prefix}/`
+    return withSlash(`${prefix}${path.startsWith('/') ? path : `/${path}`}`)
   }
 }
 

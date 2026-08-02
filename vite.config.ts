@@ -15,7 +15,18 @@ export default defineConfig({
         manualChunks(id: string) {
           if (id.includes('node_modules')) {
             if (/[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/.test(id)) return 'react-vendor'
-            if (/[\\/]node_modules[\\/]lucide-react/.test(id)) return 'ui-vendor'
+            // 🔴 `ui-vendor` (lucide-react) REMOVED 2026-08-02. Cloudflare
+            // served that one chunk as a persistent HTTP 520 with text/html
+            // while every other asset returned 200 application/javascript —
+            // three probes, same result. A chunk that fails to load takes the
+            // whole React tree with it, so the site rendered as a blank
+            // deep-night page. The file was present and intact in dist, so the
+            // fault was on the edge, not in the build.
+            //
+            // Deleting the split removes the file rather than trying to heal
+            // it: re-deploying an identical hash can be skipped as "already
+            // uploaded", which would have kept the broken object in place.
+            // The icons are ~8 KB and belong in the entry bundle anyway.
           }
           // 🔴 REMOVED 2026-08-01. This rule used to force every
           // `src/locales/copy.*.ts` into one chunk named `locales`. It was
