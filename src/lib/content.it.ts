@@ -98,6 +98,21 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Cinque minuti d’auto dal villaggio di Saariselkä',
       ],
     },
+    'lapland-hotels-saaga-apartment': {
+      tagline: 'Un appartamento indipendente ai piedi dei pendii sud dello Ylläs, con la spa dell’hotel alle spalle.',
+      copy: [
+        'Il Lapland Hotels Saaga si trova nel villaggio di Ylläsjärvi, subito sotto i pendii meridionali del comprensorio dello Ylläs. Oltre alle camere, affitta appartamenti per una-otto persone, all’interno dell’area dell’hotel o a circa 300 metri dall’edificio principale, così una famiglia o un piccolo gruppo ha il proprio spazio senza lasciare il resort.',
+        'Dietro gli appartamenti c’è tutto l’hotel: una spa con zona piscina, vasche idromassaggio e bagni di vapore, una sala fitness e trattamenti, e una sauna privata per un massimo di quindici persone con la propria area relax. Nell’area ci sono tre ristoranti, tra cui il buffet Biegga, e la colazione è costruita su ingredienti del nord.',
+      ],
+      signature: [
+        'Villaggio di Ylläsjärvi, sotto i pendii sud dello Ylläs',
+        'Appartamenti per 1–8 ospiti',
+        'Nell’area dell’hotel o a circa 300 m dall’edificio principale',
+        'Spa: zona piscina, idromassaggi, bagni di vapore, fitness',
+        'Sauna privata fino a 15 persone con area relax dedicata',
+        'Tre ristoranti nell’area, incluso il buffet Biegga',
+      ],
+    },
     'apukka-resort-aurora-cabin': {
       tagline: 'Vagoni aurora in stile storico sulla riva di un lago ghiacciato, a dieci minuti dall’aeroporto di Rovaniemi.',
       copy: [

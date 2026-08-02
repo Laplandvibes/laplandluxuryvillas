@@ -109,14 +109,14 @@ const sv: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'Den privata kollektionen',
-      title: 'Sju villor och sviter i fyra destinationer i Lappland.',
+      title: 'Åtta villor och sviter i fem destinationer i Lappland.',
       lede: 'En liten, handplockad kollektion privata lyxvillor i hela Lappland. Priser på varje hus egen bokningssida, eller skicka en privat förfrågan.',
       primary: 'Se kollektionen',
       secondary: 'Privat förfrågan',
     },
     villas: {
       eyebrow: 'Kollektionen',
-      title: 'Sju villor. Fyra resmål. En privat förfrågan.',
+      title: 'Åtta villor. Fem resmål. En privat förfrågan.',
       lede: 'Varje boende nedan är verifierat mot operatörens publicerade information och färska gästrecensioner. Filtrera på den byggnadstyp du har i tankarna, eller skicka en privat förfrågan så sätter vi ihop en kortlista kring dina datum.',
     },
     suites: {
@@ -149,7 +149,7 @@ const sv: SiteCopy = {
     about: {
       eyebrow: 'Om oss',
       title: 'En kort lista, medvetet hållen kort.',
-      lede: 'Sju handplockade villor och sviter i finska Lappland, anonym förfrågan, en direktlänk till varje hus egen bokning, ingen plattform emellan.',
+      lede: 'Åtta handplockade villor och sviter i finska Lappland, anonym förfrågan, en direktlänk till varje hus egen bokning, ingen plattform emellan.',
     },
   },
   home: {
@@ -157,7 +157,7 @@ const sv: SiteCopy = {
       eyebrow: 'Så arbetar vi',
       h2: 'Motsatsen till en bokningsplattform.',
       items: [
-        { title: 'En kort lista, ingen katalog.', body: 'Sju villor och sviter i de resmål som verkligen motiverar resan. Boenden nekas oftare än de läggs till, varje objekt på den här sidan är ett som en noggrann resenär kan boka utan att tveka.' },
+        { title: 'En kort lista, ingen katalog.', body: 'Åtta villor och sviter i de resmål som verkligen motiverar resan. Boenden nekas oftare än de läggs till, varje objekt på den här sidan är ett som en noggrann resenär kan boka utan att tveka.' },
         { title: 'Anonym förfrågan.', body: 'En privat inkorg, ingen offentlig profil, inga kalendrar som delas med tredje part. Du skickar dina datum, sällskap och önskemål, och får en handplockad kortlista inom en arbetsdag.' },
         { title: 'Direktpriser, där de finns.', body: 'Offentliga erbjudanden länkar direkt till husets egen bokningssida, där priset står. Där inget pris är publicerat är det huset självt som offererar. Vi sätter inga priser och tar inte emot bokningar.' },
       ],

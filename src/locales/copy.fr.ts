@@ -109,13 +109,13 @@ const fr: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'La collection privée',
-      title: 'Sept villas et suites dans quatre destinations de Laponie.',
+      title: 'Huit villas et suites dans cinq destinations de Laponie.',
       lede: 'Une petite collection de villas privées de luxe choisies à la main à travers la Laponie. Tarifs sur la page de réservation de chaque maison, ou envoyez une demande privée.',
       primary: 'Voir la collection', secondary: 'Demande privée',
     },
     villas: {
       eyebrow: 'La collection',
-      title: 'Sept villas. Quatre destinations. Une demande privée.',
+      title: 'Huit villas. Cinq destinations. Une demande privée.',
       lede: 'Chaque propriété listée ci-dessous est vérifiée à partir des informations publiées par l\'exploitant et d\'avis récents de voyageurs. Filtrez par type d\'édifice que vous avez en tête, ou envoyez une demande privée et nous composerons une présélection autour de vos dates.',
     },
     suites: {
@@ -147,7 +147,7 @@ const fr: SiteCopy = {
     about: {
       eyebrow: 'À propos',
       title: 'Une liste courte, gardée courte à dessein.',
-      lede: 'Sept villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme entre vous et nous.',
+      lede: 'Huit villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme entre vous et nous.',
     },
   },
   home: {
@@ -155,7 +155,7 @@ const fr: SiteCopy = {
       eyebrow: 'Notre façon de travailler',
       h2: 'L’exact opposé d’une plateforme de réservation.',
       items: [
-        { title: 'Une liste courte, pas un annuaire.', body: 'Sept villas et suites dans les destinations qui justifient vraiment le voyage. Nous refusons des propriétés plus souvent que nous n’en ajoutons, chaque entrée de cette page est une que l’on peut réserver sans hésiter.' },
+        { title: 'Une liste courte, pas un annuaire.', body: 'Huit villas et suites dans les destinations qui justifient vraiment le voyage. Nous refusons des propriétés plus souvent que nous n’en ajoutons, chaque entrée de cette page est une que l’on peut réserver sans hésiter.' },
         { title: 'Demande anonyme.', body: 'Une seule boîte de réception privée, aucun profil public, aucun calendrier partagé avec des tiers. Envoyez vos dates, le nombre de personnes et vos préférences, recevez une présélection soignée sous un jour ouvré.' },
         { title: 'Tarifs directs, là où ils existent.', body: 'Les annonces publiques renvoient directement vers la page de réservation de la maison, où le tarif est affiché. Lorsqu’aucun tarif n’est publié, c’est la maison qui le donne. Nous ne fixons pas les prix et ne prenons pas de réservations.' },
       ],
@@ -442,11 +442,11 @@ fr.hero.suites = { eyebrow: 'Suites design', title: 'Quand vous n\'avez pas beso
 fr.hero.destinations = { eyebrow: 'Destinations', title: 'Cinq lieux, chacun avec une raison claire d\'y être.', lede: 'La Laponie n\'est pas interchangeable. La fréquence d\'aurore, la logistique d\'arrivée et la densité d\'hébergement changent de façon significative tous les 50 km au nord du cercle polaire.' }
 fr.hero.experiences = { eyebrow: 'Expériences sur mesure', title: 'La journée, avant la nuit sous le verre.', lede: 'Huit expériences privées que nous associons aux villas, chacune réservée selon la fenêtre météo, la lumière du jour et l\'horaire d\'enregistrement.' }
 fr.hero.inquiry = { eyebrow: 'Demande privée', title: 'Un message privé, une présélection sur mesure.', lede: 'Envoyez dates, effectif et le type de voyage envisagé. Nous répondons en un jour ouvré.' }
-fr.hero.about = { eyebrow: 'À propos', title: 'Une liste courte, gardée courte volontairement.', lede: 'Sept villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme intermédiaire.' }
+fr.hero.about = { eyebrow: 'À propos', title: 'Une liste courte, gardée courte volontairement.', lede: 'Huit villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme intermédiaire.' }
 fr.home = {
   philosophy: { eyebrow: 'Notre façon de travailler', h2: 'L\'opposé d\'une plateforme de réservation.',
     items: [
-      { title: 'Une liste courte, pas un annuaire.', body: 'Sept villas et suites dans les destinations qui justifient réellement le voyage. Les propriétés sont plus souvent refusées qu\'ajoutées, chaque entrée de cette page est une que le voyageur attentionné peut réserver sans hésitation.' },
+      { title: 'Une liste courte, pas un annuaire.', body: 'Huit villas et suites dans les destinations qui justifient réellement le voyage. Les propriétés sont plus souvent refusées qu\'ajoutées, chaque entrée de cette page est une que le voyageur attentionné peut réserver sans hésitation.' },
       { title: 'Planification anonyme.', body: 'Une seule boîte de réception privée, aucun profil public, aucun calendrier partagé avec des tiers. Envoyez dates, effectif et préférences, recevez une présélection en un jour ouvré.' },
       { title: 'Tarifs directs, là où ils existent.', body: 'Les annonces publiques renvoient vers des tarifs vérifiés. Lorsqu’aucun tarif n’est publié, c’est la maison qui le donne. Nous ne fixons pas les prix et ne prenons pas de réservations.' },
     ] },

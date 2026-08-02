@@ -98,6 +98,21 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Fem minuters bilfärd till byn Saariselkä',
       ],
     },
+    'lapland-hotels-saaga-apartment': {
+      tagline: 'En egen lägenhet vid foten av Ylläs sydsluttningar, med hotellets spa bakom sig.',
+      copy: [
+        'Lapland Hotels Saaga ligger i byn Ylläsjärvi, alldeles nedanför sydsluttningarna i Ylläs skidanläggning. Vid sidan av hotellrummen hyr det ut semesterlägenheter för en till åtta gäster, antingen på hotellområdet eller cirka 300 meter från huvudbyggnaden, så att en familj eller ett mindre sällskap får eget utrymme utan att lämna anläggningen.',
+        'Bakom lägenheterna står hela hotellet: ett spa med poolavdelning, bubbelpooler och ångbastur, ett gym och behandlingar, samt en privat bastu för upp till femton personer med egen avkopplingsavdelning. På området finns tre restauranger, däribland bufférestaurangen Biegga, och frukosten bygger på nordliga råvaror.',
+      ],
+      signature: [
+        'Byn Ylläsjärvi, nedanför Ylläs sydsluttningar',
+        'Semesterlägenheter för 1–8 gäster',
+        'På hotellområdet eller cirka 300 m från huvudbyggnaden',
+        'Spa: poolavdelning, bubbelpooler, ångbastur, gym',
+        'Privat bastu för upp till 15 med egen avkopplingsavdelning',
+        'Tre restauranger på området, inklusive Biegga-buffén',
+      ],
+    },
     'apukka-resort-aurora-cabin': {
       tagline: 'Norrskensvagnar i heritagestil vid stranden av en frusen sjö, tio minuter från Rovaniemi flygplats.',
       copy: [

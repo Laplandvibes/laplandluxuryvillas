@@ -115,14 +115,14 @@ const fi: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'Yksityinen kokoelma',
-      title: 'Seitsemän huvilaa ja sviittiä neljässä Lapin kohteessa.',
+      title: 'Kahdeksan huvilaa ja sviittiä viidessä Lapin kohteessa.',
       lede: 'Pieni, käsin valittu kokoelma yksityisiä luksushuviloita ympäri Lappia. Hinnat kohteiden omilta varaussivuilta, tai lähetä yksityinen tiedustelu.',
       primary: 'Selaa kokoelmaa',
       secondary: 'Aloita yksityinen tiedustelu',
     },
     villas: {
       eyebrow: 'Kokoelma',
-      title: 'Seitsemän huvilaa. Neljä kohdetta. Yksi yksityinen tiedustelu.',
+      title: 'Kahdeksan huvilaa. Viisi kohdetta. Yksi yksityinen tiedustelu.',
       lede: 'Jokainen alla oleva kohde on käyty läpi kohteen omien julkaistujen tietojen ja tuoreiden vieraspalautteiden pohjalta. Suodata sen mukaan, millaista taloa mietit, tai lähetä yksityinen tiedustelu, niin kokoamme lyhytlistan päivämääriesi ympärille.',
     },
     suites: {
@@ -155,7 +155,7 @@ const fi: SiteCopy = {
     about: {
       eyebrow: 'Tietoa',
       title: 'Lyhyt lista, joka pidetään lyhyenä tarkoituksella.',
-      lede: 'Seitsemän huvilaa ja sviittiä Suomen Lapissa, käsin valittuina. Anonyymi tiedustelu, suora linkki kohteen omaan varaukseen, ei välittäjää välissä.',
+      lede: 'Kahdeksan huvilaa ja sviittiä Suomen Lapissa, käsin valittuina. Anonyymi tiedustelu, suora linkki kohteen omaan varaukseen, ei välittäjää välissä.',
     },
   },
   home: {
@@ -163,7 +163,7 @@ const fi: SiteCopy = {
       eyebrow: 'Näin toimimme',
       h2: 'Varausalustan vastakohta.',
       items: [
-        { title: 'Lyhyt lista, ei hakemisto.', body: 'Seitsemän huvilaa ja sviittiä niissä paikoissa, jotka oikeasti ovat matkan arvoisia. Käännytämme kohteita useammin kuin lisäämme niitä, joten jokainen tämän listan huvila on sellainen, jonka tarkka matkailija voisi varata epäröimättä.' },
+        { title: 'Lyhyt lista, ei hakemisto.', body: 'Kahdeksan huvilaa ja sviittiä niissä paikoissa, jotka oikeasti ovat matkan arvoisia. Käännytämme kohteita useammin kuin lisäämme niitä, joten jokainen tämän listan huvila on sellainen, jonka tarkka matkailija voisi varata epäröimättä.' },
         { title: 'Anonyymi tiedustelu.', body: 'Yksi yksityinen postilaatikko. Ei julkista profiilia, ei kenenkään muun kanssa jaettuja kalentereita. Kerro päivämäärät, montako teitä on ja mitä haette, niin sinulle koottu lyhytlista tulee yhden työpäivän sisällä.' },
         { title: 'Suorat hinnat siellä missä niitä on.', body: 'Kun huvilalla on julkinen listaus, linkitämme suoraan kohteen omalle varaussivulle, jossa hinta näkyy. Kun julkista hintaa ei ole, kohde hinnoittelee itse. Me emme aseta hintoja emmekä ota vastaan varauksia.' },
       ],

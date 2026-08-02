@@ -109,14 +109,14 @@ const nl: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'De privécollectie',
-      title: 'Zeven villa\'s en suites in vier bestemmingen in Lapland.',
+      title: 'Acht villa\'s en suites in vijf bestemmingen in Lapland.',
       lede: 'Een kleine, met de hand samengestelde collectie privé-luxevilla\'s door heel Lapland. Prijzen op de eigen boekingspagina van elk huis, of stuur een privéaanvraag.',
       primary: 'Bekijk de collectie',
       secondary: 'Privé-aanvraag',
     },
     villas: {
       eyebrow: 'De collectie',
-      title: 'Zeven villa\'s. Vier bestemmingen. Eén privéaanvraag.',
+      title: 'Acht villa\'s. Vijf bestemmingen. Eén privéaanvraag.',
       lede: 'Elk pand hieronder is geverifieerd aan de hand van de gepubliceerde informatie van de exploitant en recente gastbeoordelingen. Filter op het type gebouw dat u voor ogen heeft, of stuur een privé-aanvraag en wij stellen een shortlist samen rond uw data.',
     },
     suites: {
@@ -149,7 +149,7 @@ const nl: SiteCopy = {
     about: {
       eyebrow: 'Over ons',
       title: 'Een korte lijst, met opzet kort gehouden.',
-      lede: 'Zeven met de hand gekozen villa\'s en suites in Fins Lapland, anonieme aanvraag, een directe link naar de boeking van elk huis, geen platform ertussen.',
+      lede: 'Acht met de hand gekozen villa\'s en suites in Fins Lapland, anonieme aanvraag, een directe link naar de boeking van elk huis, geen platform ertussen.',
     },
   },
   home: {
@@ -157,7 +157,7 @@ const nl: SiteCopy = {
       eyebrow: 'Hoe wij werken',
       h2: 'Het tegenovergestelde van een boekingsplatform.',
       items: [
-        { title: 'Een korte lijst, geen gids.', body: 'Zeven villa\'s en suites in de bestemmingen die de reis werkelijk rechtvaardigen. Panden worden vaker afgewezen dan toegevoegd, elk item op deze pagina is er een die een zorgvuldige reiziger zonder aarzeling kan boeken.' },
+        { title: 'Een korte lijst, geen gids.', body: 'Acht villa\'s en suites in de bestemmingen die de reis werkelijk rechtvaardigen. Panden worden vaker afgewezen dan toegevoegd, elk item op deze pagina is er een die een zorgvuldige reiziger zonder aarzeling kan boeken.' },
         { title: 'Anonieme aanvraag.', body: 'Eén privé-inbox, geen publiek profiel, geen agenda\'s die met derden worden gedeeld. Stuurt u uw data, gezelschap en voorkeuren, ontvang binnen één werkdag een samengestelde shortlist.' },
         { title: 'Directe tarieven, waar die bestaan.', body: 'Publieke aanbiedingen verwijzen rechtstreeks naar de boekingspagina van het huis, waar het tarief staat. Waar geen tarief is gepubliceerd, geeft het huis dat zelf op. Wij stellen geen prijzen vast en nemen geen boekingen aan.' },
       ],

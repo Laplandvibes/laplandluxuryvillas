@@ -51,7 +51,15 @@ export interface Villa {
    * 🔴 Never a hand-written estimate. See `src/lib/rate.ts`.
    */
   fromPerNight?: VerifiedRate
-  bedrooms: number
+  /**
+   * 🔴 OPTIONAL SINCE 2026-08-02, and that is the point. Not every property
+   * publishes a bedroom count — Lapland Hotels Saaga publishes "holiday
+   * apartments accommodating 1 to 8 people" and nothing more, and its
+   * apartments genuinely differ. A required field here forced a number to
+   * exist, and the only way to satisfy it for such a property is to make one
+   * up. Unset renders no bedroom chip and emits no `numberOfRooms`.
+   */
+  bedrooms?: number
   sleeps: number
   /** External Hotels.com search URL via go.lv (already built in lib/affiliate). */
   bookingUrl?: string
@@ -243,6 +251,37 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bookingUrl: PS.apukka,
     image: '/images/villa-apukka.webp',
     imageGradient: 'linear-gradient(135deg, #1A1828 0%, #251F38 50%, #110E1C 100%)',
+  },
+  {
+    // Ylläs, added 2026-08-02 (Vesa: "THERE IS VILLAS"). 🔴 EVERY LINE BELOW
+    // COMES FROM THE PROPERTY'S OWN PUBLISHED PAGES (laplandhotels.com,
+    // read 2026-08-02) OR FROM THE VERIFIED GOOGLE RECORD — nothing here is
+    // inferred. Notably absent: a bedroom count and a named room type,
+    // because the hotel publishes neither. It publishes "holiday apartments
+    // accommodating 1 to 8 people", so that is exactly what this says.
+    slug: 'lapland-hotels-saaga-apartment',
+    name: 'Saaga Holiday Apartment',
+    destination: 'Ylläs',
+    category: 'alpine-chalet',
+    tier: 'private',
+    tagline: 'A self-contained apartment at the foot of Ylläs’ southern slopes, with the hotel’s spa attached.',
+    copy: [
+      'Lapland Hotels Saaga sits in Ylläsjärvi village, immediately below the southern slopes of the Ylläs ski resort. Alongside its hotel rooms it lets holiday apartments for one to eight guests, either inside the hotel grounds or about 300 metres from the main building, so a family or a small group gets its own space without leaving the resort.',
+      'The apartments come with the hotel behind them: a spa with a pool area, whirlpools and steam saunas, a fitness room and treatments, and a private sauna for up to fifteen people with its own relaxation area. There are three restaurants on site, including the Biegga buffet, and breakfast is built on northern ingredients.',
+    ],
+    signature: [
+      'Ylläsjärvi village, below the southern slopes of Ylläs',
+      'Holiday apartments for 1–8 guests',
+      'On the hotel grounds or about 300 m from the main building',
+      'Spa: pool area, whirlpools, steam saunas, fitness room',
+      'Private sauna for up to 15 with its own relaxation area',
+      'Three restaurants on site, including the Biegga buffet',
+    ],
+    // 🔴 No `bedrooms`: the hotel publishes a guest range, not a room count,
+    // and its apartments differ. `sleeps: 8` is the published upper bound.
+    sleeps: 8,
+    bookingUrl: PS.laplandHotelsSaaga,
+    imageGradient: 'linear-gradient(135deg, #12212E 0%, #1D3242 50%, #0C1720 100%)',
   },
   ]
   return _list.map((v) => overlayVilla(v, lang))

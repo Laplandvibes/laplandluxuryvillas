@@ -115,14 +115,14 @@ const en: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'The Private Collection',
-      title: 'Seven villas and suites across four Lapland destinations.',
+      title: 'Eight villas and suites across five Lapland destinations.',
       lede: 'A small, hand-picked collection of private luxury villas across Lapland. Rates from each property’s own booking page, or send a private enquiry.',
       primary: 'Browse the collection',
       secondary: 'Private Inquiry',
     },
     villas: {
       eyebrow: 'The Collection',
-      title: 'Seven villas. Four destinations. One private enquiry.',
+      title: 'Eight villas. Five destinations. One private enquiry.',
       lede: 'Every property below is vetted against the operator\'s own published information and recent guest reviews. Filter by the kind of building you have in mind, or send a private inquiry and we will shortlist around your dates.',
     },
     suites: {
@@ -155,7 +155,7 @@ const en: SiteCopy = {
     about: {
       eyebrow: 'About',
       title: 'A short list, kept short on purpose.',
-      lede: 'Seven hand-picked villas and suites in Finnish Lapland. Anonymous enquiry, a direct link to each property\'s own booking, no platform in between.',
+      lede: 'Eight hand-picked villas and suites in Finnish Lapland. Anonymous enquiry, a direct link to each property\'s own booking, no platform in between.',
     },
   },
   home: {
@@ -163,7 +163,7 @@ const en: SiteCopy = {
       eyebrow: 'How we work',
       h2: 'The opposite of a booking platform.',
       items: [
-        { title: 'A short list, not a directory.', body: 'Seven villas and suites, in the places that actually earn the journey north. We turn properties down more often than we add them, so every villa here is one a careful traveller could book without second-guessing it.' },
+        { title: 'A short list, not a directory.', body: 'Eight villas and suites, in the places that actually earn the journey north. We turn properties down more often than we add them, so every villa here is one a careful traveller could book without second-guessing it.' },
         { title: 'Anonymous enquiry.', body: 'One private inbox. No public profile, no shared calendars with anyone else. Send your dates, how many of you there are and what you are after, and a shortlist made for you comes back within one working day.' },
         { title: 'Direct rates, where they exist.', body: 'Where a villa has a public listing we link you straight to the property’s own booking page, where the rate is shown. Where no rate is published, the property quotes you itself. We do not set prices and we do not take bookings.' },
       ],

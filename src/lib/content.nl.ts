@@ -98,6 +98,21 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Vijf minuten rijden naar het dorp Saariselkä',
       ],
     },
+    'lapland-hotels-saaga-apartment': {
+      tagline: 'Een zelfstandig appartement aan de voet van de zuidhellingen van Ylläs, met de spa van het hotel erachter.',
+      copy: [
+        'Lapland Hotels Saaga ligt in het dorp Ylläsjärvi, direct onder de zuidhellingen van skigebied Ylläs. Naast hotelkamers verhuurt het vakantieappartementen voor één tot acht gasten, op het hotelterrein of zo’n 300 meter van het hoofdgebouw, zodat een gezin of kleine groep een eigen plek heeft zonder het resort te verlaten.',
+        'Achter de appartementen staat het hele hotel: een spa met zwembadgedeelte, whirlpools en stoomsauna’s, een fitnessruimte en behandelingen, en een privésauna voor maximaal vijftien personen met een eigen relaxruimte. Op het terrein zijn drie restaurants, waaronder het Biegga-buffet, en het ontbijt is gebouwd op noordelijke ingrediënten.',
+      ],
+      signature: [
+        'Dorp Ylläsjärvi, onder de zuidhellingen van Ylläs',
+        'Vakantieappartementen voor 1–8 gasten',
+        'Op het hotelterrein of zo’n 300 m van het hoofdgebouw',
+        'Spa: zwembadgedeelte, whirlpools, stoomsauna’s, fitness',
+        'Privésauna voor maximaal 15 met eigen relaxruimte',
+        'Drie restaurants op het terrein, waaronder het Biegga-buffet',
+      ],
+    },
     'apukka-resort-aurora-cabin': {
       tagline: 'Noorderlichtwagons in heritage-stijl aan de oever van een bevroren meer, tien minuten van de luchthaven van Rovaniemi.',
       copy: [

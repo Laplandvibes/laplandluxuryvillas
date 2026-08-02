@@ -115,14 +115,14 @@ const es: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'La colección privada',
-      title: 'Siete villas y suites en cuatro destinos de Laponia.',
+      title: 'Ocho villas y suites en cinco destinos de Laponia.',
       lede: 'Una pequeña colección de villas privadas de lujo seleccionadas a mano por toda Laponia. Tarifas en la propia página de reserva de cada casa, o envíe una consulta privada.',
       primary: 'Ver la colección',
       secondary: 'Consulta privada',
     },
     villas: {
       eyebrow: 'La colección',
-      title: 'Siete villas. Cuatro destinos. Una consulta privada.',
+      title: 'Ocho villas. Cinco destinos. Una consulta privada.',
       lede: 'Cada propiedad listada a continuación está verificada con la información publicada por el operador y reseñas recientes de huéspedes. Filtre por el tipo de edificio que tiene en mente, o envíe una consulta privada y elaboraremos una preselección según sus fechas.',
     },
     suites: {
@@ -155,7 +155,7 @@ const es: SiteCopy = {
     about: {
       eyebrow: 'Quiénes somos',
       title: 'Una lista corta, breve a propósito.',
-      lede: 'Siete villas y suites escogidas a mano en la Laponia finlandesa, consulta anónima, enlace directo a la reserva de cada casa, sin plataforma de por medio.',
+      lede: 'Ocho villas y suites escogidas a mano en la Laponia finlandesa, consulta anónima, enlace directo a la reserva de cada casa, sin plataforma de por medio.',
     },
   },
   home: {
@@ -163,7 +163,7 @@ const es: SiteCopy = {
       eyebrow: 'Cómo trabajamos',
       h2: 'Lo contrario de una plataforma de reservas.',
       items: [
-        { title: 'Una lista corta, no un directorio.', body: 'Siete villas y suites en los destinos que de verdad justifican el viaje. Rechazamos propiedades más a menudo de las que añadimos, cada entrada de esta página es una que un viajero exigente podría reservar sin dudar.' },
+        { title: 'Una lista corta, no un directorio.', body: 'Ocho villas y suites en los destinos que de verdad justifican el viaje. Rechazamos propiedades más a menudo de las que añadimos, cada entrada de esta página es una que un viajero exigente podría reservar sin dudar.' },
         { title: 'Consulta anónima.', body: 'Una sola bandeja de entrada privada, sin perfil público, sin calendarios compartidos con terceros. Envíe fechas, número de personas y preferencias, reciba una preselección curada en un día laborable.' },
         { title: 'Tarifas directas, allí donde existen.', body: 'Los anuncios públicos enlazan directamente con la página de reserva de la casa, donde figura la tarifa. Donde no hay tarifa publicada, la cotiza la propia casa. No fijamos precios ni aceptamos reservas.' },
       ],

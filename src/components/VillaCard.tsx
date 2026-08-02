@@ -144,10 +144,15 @@ export default function VillaCard({
             since the two unnamed entries went in 2026-08-02, but keep this —
             a new villa can land before its rating is synced.) */}
         <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-[color:var(--color-bone)]/75 pb-5 border-b border-[color:var(--color-mist)]/40">
-          <span className="inline-flex items-center gap-1.5">
-            <Bed size={13} className="text-[color:var(--color-brass)]" />
-            {villa.bedrooms} {villa.bedrooms === 1 ? c.badges.bedroom : c.badges.bedrooms}
-          </span>
+          {/* Omitted where the property publishes no bedroom count. See the
+              `bedrooms` note in lib/villas.ts — an empty chip is better than
+              an invented number. */}
+          {villa.bedrooms !== undefined && (
+            <span className="inline-flex items-center gap-1.5">
+              <Bed size={13} className="text-[color:var(--color-brass)]" />
+              {villa.bedrooms} {villa.bedrooms === 1 ? c.badges.bedroom : c.badges.bedrooms}
+            </span>
+          )}
           <span className="inline-flex items-center gap-1.5">
             <Users size={13} className="text-[color:var(--color-brass)]" />
             {c.badges.sleeps} {villa.sleeps}

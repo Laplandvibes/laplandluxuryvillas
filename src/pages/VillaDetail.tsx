@@ -43,7 +43,7 @@ export default function VillaDetail() {
             description: `${villa.tagline} ${villa.copy[0]}`,
             address: { '@type': 'PostalAddress', addressLocality: villa.destination, addressCountry: 'FI' },
             ...(priceRange ? { priceRange } : {}),
-            numberOfRooms: villa.bedrooms,
+            ...(villa.bedrooms !== undefined ? { numberOfRooms: villa.bedrooms } : {}),
             amenityFeature: villa.signature.map((s) => ({ '@type': 'LocationFeatureSpecification', name: s })),
           },
           {
@@ -126,10 +126,12 @@ export default function VillaDetail() {
 
           <aside className="card-onyx p-7 lg:sticky lg:top-28 self-start">
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-6 pb-6 border-b border-[color:var(--color-mist)]/40">
-              <span className="inline-flex items-center gap-1.5 text-sm font-body text-[color:var(--color-bone)]/80">
-                <Bed size={15} className="text-[color:var(--color-brass)]" />
-                {villa.bedrooms} {villa.bedrooms === 1 ? c.villaDetailPage.bedroom : c.villaDetailPage.bedrooms}
-              </span>
+              {villa.bedrooms !== undefined && (
+                <span className="inline-flex items-center gap-1.5 text-sm font-body text-[color:var(--color-bone)]/80">
+                  <Bed size={15} className="text-[color:var(--color-brass)]" />
+                  {villa.bedrooms} {villa.bedrooms === 1 ? c.villaDetailPage.bedroom : c.villaDetailPage.bedrooms}
+                </span>
+              )}
               <span className="inline-flex items-center gap-1.5 text-sm font-body text-[color:var(--color-bone)]/80">
                 <Users size={15} className="text-[color:var(--color-brass)]" />
                 {c.villaDetailPage.sleeps} {villa.sleeps}

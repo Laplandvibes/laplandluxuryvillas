@@ -238,6 +238,7 @@ const VILLA_PROPERTY: Record<string, PropertyKey> = {
   'wilderness-hotel-nellim-aurora-bubble': 'nellim',
   'star-arctic-suite': 'starArctic',
   'apukka-resort-aurora-cabin': 'apukka',
+  'lapland-hotels-saaga-apartment': 'laplandHotelsSaaga',
 }
 
 /**

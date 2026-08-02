@@ -115,14 +115,14 @@ const de: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'Die private Kollektion',
-      title: 'Sieben Villen und Suiten in vier Reisezielen Lapplands.',
+      title: 'Acht Villen und Suiten in fünf Reisezielen Lapplands.',
       lede: 'Eine kleine, handverlesene Kollektion privater Luxusvillen in ganz Lappland. Preise von der Buchungsseite des jeweiligen Hauses, oder senden Sie eine private Anfrage.',
       primary: 'Kollektion entdecken',
       secondary: 'Private Anfrage starten',
     },
     villas: {
       eyebrow: 'Die Kollektion',
-      title: 'Sieben Villen. Vier Reiseziele. Eine private Anfrage.',
+      title: 'Acht Villen. Fünf Reiseziele. Eine private Anfrage.',
       lede: 'Jedes der unten aufgeführten Anwesen ist anhand der veröffentlichten Angaben des Betreibers und aktueller Gästebewertungen geprüft. Filtern Sie nach Bauart, oder senden Sie eine private Anfrage und Sie erhalten eine Auswahl für Ihre Termine.',
     },
     suites: {
@@ -155,7 +155,7 @@ const de: SiteCopy = {
     about: {
       eyebrow: 'Über uns',
       title: 'Eine kurze Liste, absichtlich kurz gehalten.',
-      lede: 'Sieben handverlesene Villen und Suiten in Finnisch-Lappland, anonyme Anfrage, ein direkter Link zur Buchung des Hauses, keine Plattform dazwischen.',
+      lede: 'Acht handverlesene Villen und Suiten in Finnisch-Lappland, anonyme Anfrage, ein direkter Link zur Buchung des Hauses, keine Plattform dazwischen.',
     },
   },
   home: {
@@ -163,7 +163,7 @@ const de: SiteCopy = {
       eyebrow: 'So arbeiten wir',
       h2: 'Das Gegenteil einer Buchungsplattform.',
       items: [
-        { title: 'Eine kurze Liste, kein Verzeichnis.', body: 'Sieben Villen und Suiten in den Reisezielen, die die Reise wirklich rechtfertigen. Anwesen werden öfter abgelehnt als hinzugefügt, jeder Eintrag auf dieser Seite ist einer, den ein sorgfältiger Reisender ohne Zögern buchen könnte.' },
+        { title: 'Eine kurze Liste, kein Verzeichnis.', body: 'Acht Villen und Suiten in den Reisezielen, die die Reise wirklich rechtfertigen. Anwesen werden öfter abgelehnt als hinzugefügt, jeder Eintrag auf dieser Seite ist einer, den ein sorgfältiger Reisender ohne Zögern buchen könnte.' },
         { title: 'Anonyme Anfrage.', body: 'Ein einziger privater Posteingang, kein öffentliches Profil, keine geteilten Kalender mit Dritten. Senden Sie Termine, Gästezahl, Wünsche, und erhalten Sie eine kuratierte Auswahl innerhalb eines Werktags.' },
         { title: 'Direktpreise, wo möglich.', body: 'Öffentliche Listings verweisen direkt auf die Buchungsseite des Hauses, auf der der Preis steht. Wo kein Preis veröffentlicht ist, nennt ihn das Haus selbst. Wir setzen keine Preise fest und nehmen keine Buchungen entgegen.' },
       ],

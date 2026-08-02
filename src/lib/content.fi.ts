@@ -98,6 +98,21 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Viiden minuutin ajomatka Saariselän kylään',
       ],
     },
+    'lapland-hotels-saaga-apartment': {
+      tagline: 'Oma huoneisto Ylläksen etelärinteiden juurella, hotellin kylpylä takanaan.',
+      copy: [
+        'Lapland Hotels Saaga sijaitsee Ylläsjärven kylässä aivan Ylläksen laskettelurinteiden eteläpuolella. Hotellihuoneiden ohella se vuokraa lomahuoneistoja yhdestä kahdeksaan vieraalle, joko hotellin alueella tai noin 300 metrin päässä päärakennuksesta, joten perhe tai pieni seurue saa oman tilansa poistumatta keskuksesta.',
+        'Huoneistojen takana on koko hotelli: kylpylä allasosastoineen, poreammeineen ja höyrysaunoineen, kuntosali ja hoidot sekä yksityissauna enintään 15 hengelle omalla oleskelutilallaan. Alueella on kolme ravintolaa, joista Biegga on buffet, ja aamiainen rakentuu pohjoisen raaka-aineille.',
+      ],
+      signature: [
+        'Ylläsjärven kylä, Ylläksen etelärinteiden alla',
+        'Lomahuoneistot 1–8 vieraalle',
+        'Hotellin alueella tai noin 300 m päärakennuksesta',
+        'Kylpylä: allasosasto, poreammeet, höyrysaunat, kuntosali',
+        'Yksityissauna 15 hengelle omalla oleskelutilalla',
+        'Kolme ravintolaa alueella, mukaan lukien Biegga-buffet',
+      ],
+    },
     'apukka-resort-aurora-cabin': {
       tagline: 'Perinnetyyliset revontulivaunut jäätyneen järven rannalla, kymmenen minuutin päässä Rovaniemen lentoasemalta.',
       copy: [

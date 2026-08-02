@@ -109,13 +109,13 @@ const it: SiteCopy = {
   hero: {
     home: {
       eyebrow: 'La collezione privata',
-      title: 'Sette ville e suite in quattro destinazioni della Lapponia.',
+      title: 'Otto ville e suite in cinque destinazioni della Lapponia.',
       lede: 'Una piccola collezione di ville private di lusso scelte a mano in tutta la Lapponia. Tariffe sulla pagina di prenotazione di ogni casa, oppure invia una richiesta privata.',
       primary: 'Sfoglia la collezione', secondary: 'Richiesta privata',
     },
     villas: {
       eyebrow: 'La collezione',
-      title: 'Sette ville. Quattro destinazioni. Una richiesta privata.',
+      title: 'Otto ville. Cinque destinazioni. Una richiesta privata.',
       lede: 'Ogni immobile elencato sotto è verificato sulla base delle informazioni pubblicate dal gestore e delle recensioni recenti degli ospiti. Filtra per la tipologia di edificio che hai in mente, oppure invia una richiesta privata e costruiremo una short list intorno alle tue date.',
     },
     suites: {
@@ -147,7 +147,7 @@ const it: SiteCopy = {
     about: {
       eyebrow: 'Chi siamo',
       title: 'Un elenco breve, tenuto breve di proposito.',
-      lede: 'Sette ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma in mezzo.',
+      lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma in mezzo.',
     },
   },
   home: {
@@ -155,7 +155,7 @@ const it: SiteCopy = {
       eyebrow: 'Come lavoriamo',
       h2: 'L’esatto contrario di una piattaforma di prenotazione.',
       items: [
-        { title: 'Un elenco breve, non una directory.', body: 'Sette ville e suite nelle destinazioni che giustificano davvero il viaggio. Rifiutiamo immobili più spesso di quanto ne aggiungiamo, ogni voce di questa pagina è una che un viaggiatore attento prenoterebbe senza esitare.' },
+        { title: 'Un elenco breve, non una directory.', body: 'Otto ville e suite nelle destinazioni che giustificano davvero il viaggio. Rifiutiamo immobili più spesso di quanto ne aggiungiamo, ogni voce di questa pagina è una che un viaggiatore attento prenoterebbe senza esitare.' },
         { title: 'Richiesta anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invia date, numero di persone e preferenze, ricevi una short list curata entro un giorno lavorativo.' },
         { title: 'Tariffe dirette, dove esistono.', body: 'Gli annunci pubblici rimandano direttamente alla pagina di prenotazione della casa, dove la tariffa è indicata. Dove non c’è una tariffa pubblicata, è la casa stessa a quotarla. Non fissiamo prezzi e non accettiamo prenotazioni.' },
       ],
@@ -442,11 +442,11 @@ it.hero.suites = { eyebrow: 'Suite d\'autore', title: 'Quando non Le serve una v
 it.hero.destinations = { eyebrow: 'Destinazioni', title: 'Cinque luoghi, ognuno con una ragione precisa per esserci.', lede: 'La Lapponia non è intercambiabile. Frequenza dell\'aurora, logistica d\'arrivo e densità ricettiva cambiano in modo significativo ogni 50 km a nord del Circolo Polare.' }
 it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Il giorno, prima della notte sotto il vetro.', lede: 'Otto esperienze private abbinate alle ville, ciascuna prenotata in funzione della finestra meteo, della luce diurna e dell\'orario di check-in.' }
 it.hero.inquiry = { eyebrow: 'Richiesta privata', title: 'Un messaggio privato, una shortlist curata.', lede: 'Invii date, numero di ospiti e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo, incluse, dove appropriato, le ville di riserva che non appaiono mai pubblicamente.' }
-it.hero.about = { eyebrow: 'Chi siamo', title: 'Un elenco breve, tenuto breve di proposito.', lede: 'Sette ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
+it.hero.about = { eyebrow: 'Chi siamo', title: 'Un elenco breve, tenuto breve di proposito.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
 it.home = {
   philosophy: { eyebrow: 'Come lavoriamo', h2: 'L\'opposto di una piattaforma di prenotazione.',
     items: [
-      { title: 'Un elenco breve, non una directory.', body: 'Sette ville e suite nelle destinazioni che davvero giustificano il viaggio. Le proprietà vengono respinte più spesso che aggiunte, ogni voce in questa pagina è quella che un viaggiatore attento può prenotare senza esitazione.' },
+      { title: 'Un elenco breve, non una directory.', body: 'Otto ville e suite nelle destinazioni che davvero giustificano il viaggio. Le proprietà vengono respinte più spesso che aggiunte, ogni voce in questa pagina è quella che un viaggiatore attento può prenotare senza esitazione.' },
       { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
       { title: 'Tariffe dirette, dove esistono.', body: 'Le inserzioni pubbliche rimandano a tariffe verificate. Le proprietà tenute privatamente, incluse le ville di riserva senza disponibilità pubblica, sono quotate direttamente. La risposta Le dice quale è quale.' },
     ] },
