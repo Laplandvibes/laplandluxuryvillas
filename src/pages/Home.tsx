@@ -104,15 +104,15 @@ export default function Home() {
           kaikkialla; palautus on tämän rivin kommentin purku. */}
 
       {/* PHILOSOPHY */}
-      <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
+      <section className="bg-[color:var(--color-deep-night)] py-14 sm:py-20 md:py-32">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
             <span className="eyebrow">{c.home.philosophy.eyebrow}</span>
-            <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
+            <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
               {c.home.philosophy.h2}
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid md:grid-cols-3 gap-10 md:gap-12">
             {c.home.philosophy.items.map((p, i) => {
               const Icon = PHILOSOPHY_ICONS[i]
               return (
@@ -144,12 +144,12 @@ export default function Home() {
       {/* SIGNATURE VILLAS */}
       {/* Onyx-kaista: tummat kortit tumman sivun päällä eivät erottuneet
           toisistaan (Vesa 2.8. "tarvitaan jotain kontrastia"). */}
-      <section className="bg-[color:var(--color-onyx)] py-24 md:py-32 border-y border-[color:var(--color-mist)]/60">
+      <section className="bg-[color:var(--color-onyx)] py-14 sm:py-20 md:py-32 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-9 sm:mb-14">
             <div className="max-w-2xl">
               <span className="eyebrow">{c.home.signature.eyebrow}</span>
-              <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
+              <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
                 {c.home.signature.h2}
               </h2>
               <p className="mt-5 text-[color:var(--color-bone)]/75 text-base font-body leading-relaxed">
@@ -180,11 +180,11 @@ export default function Home() {
       </section>
 
       {/* DESTINATIONS RAIL */}
-      <section className="bg-[color:var(--color-onyx)] py-24 md:py-32 border-y border-[color:var(--color-mist)]/60">
+      <section className="bg-[color:var(--color-onyx)] py-14 sm:py-20 md:py-32 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-9 sm:mb-14">
             <span className="eyebrow">{c.home.destinations.eyebrow}</span>
-            <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
+            <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
               {c.home.destinations.h2}
             </h2>
           </div>

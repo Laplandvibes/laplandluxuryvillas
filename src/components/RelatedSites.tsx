@@ -145,41 +145,86 @@ const COPY: Record<Lang, { eyebrow: string; h2: string; cards: Card[] }> = {
   },
 }
 
+/**
+ * Card artwork, keyed by the sibling's host so it cannot drift out of step
+ * with the twelve translated card lists (Vesa 2026-08-02: "totta kai näissä
+ * pitää olla kuvat myös" — the grid was five text boxes).
+ *
+ * The images are decorative: `alt=""` and aria-hidden, because the card's own
+ * heading already states where the link goes. An alt here would either repeat
+ * that heading to a screen reader or need twelve translations of a sentence
+ * nobody asked for.
+ *
+ * 🔴 Generated for this site only. No LV image may appear on two ecosystem
+ * sites, so these are NOT the sibling sites' own artwork — they are scenes
+ * that describe what the reader will find there.
+ */
+const CARD_IMAGE: Record<string, string> = {
+  'laplandstays.com': '/images/net-stays.webp',
+  'laplandwellness.com': '/images/net-wellness.webp',
+  'laplandhoteldeals.com': '/images/net-hoteldeals.webp',
+  'laplandkids.com': '/images/net-kids.webp',
+  'laplandactivities.fi': '/images/net-activities.webp',
+}
+
+const cardImage = (href: string): string | undefined => {
+  try {
+    return CARD_IMAGE[new URL(href).hostname.replace(/^www\./, '')]
+  } catch {
+    return undefined
+  }
+}
+
 export default function RelatedSites() {
   const lang = useLang()
   const t = COPY[lang]
 
   return (
-    <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
+    <section className="bg-[color:var(--color-deep-night)] py-14 sm:py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-7">
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-9 sm:mb-14">
           <span className="eyebrow">{t.eyebrow}</span>
-          <h2 className="mt-5 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
+          <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
             {t.h2}
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
-          {t.cards.map((card) => (
-            <a
-              key={card.href}
-              href={card.href}
-              target="_blank"
-              rel="noopener"
-              className="group card-onyx p-7 flex flex-col"
-            >
-              <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-snug flex items-start gap-2 group-hover:text-[color:var(--color-brass)] transition-colors">
-                {card.label}
-                <ArrowUpRight
-                  size={18}
-                  className="mt-1 shrink-0 text-[color:var(--color-brass)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                />
-              </h3>
-              <p className="mt-3 text-[color:var(--color-bone)]/70 text-sm font-body leading-relaxed">
-                {card.body}
-              </p>
-            </a>
-          ))}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {t.cards.map((card) => {
+            const img = cardImage(card.href)
+            return (
+              <a
+                key={card.href}
+                href={card.href}
+                target="_blank"
+                rel="noopener"
+                className="group card-onyx p-5 sm:p-7 flex flex-col"
+              >
+                {img && (
+                  <div className="aspect-[2/1] sm:aspect-[16/9] -mx-5 sm:-mx-7 -mt-5 sm:-mt-7 mb-5 sm:mb-6 overflow-hidden bg-[color:var(--color-deep-night)]">
+                    <img
+                      src={img}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                  </div>
+                )}
+                <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-snug flex items-start gap-2 group-hover:text-[color:var(--color-brass)] transition-colors">
+                  {card.label}
+                  <ArrowUpRight
+                    size={18}
+                    className="mt-1 shrink-0 text-[color:var(--color-brass)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
+                </h3>
+                <p className="mt-3 text-[color:var(--color-bone)]/70 text-sm font-body leading-relaxed">
+                  {card.body}
+                </p>
+              </a>
+            )
+          })}
         </div>
       </div>
     </section>

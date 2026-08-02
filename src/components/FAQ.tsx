@@ -388,7 +388,7 @@ export default function FAQ() {
   const links = FAQ_LINKS[lang]
 
   return (
-    <section className="bg-[color:var(--color-onyx)] py-24 md:py-32 border-y border-[color:var(--color-mist)]/60">
+    <section className="bg-[color:var(--color-onyx)] py-14 sm:py-20 md:py-32 border-y border-[color:var(--color-mist)]/60">
       <div className="mx-auto max-w-3xl px-5 sm:px-7">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="eyebrow">{h.eyebrow}</span>

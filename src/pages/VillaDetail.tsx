@@ -78,7 +78,7 @@ export default function VillaDetail() {
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
           <Link
             to={to('/villas')}
-            className="inline-flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
+            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.villaDetailPage.backLink}
           </Link>

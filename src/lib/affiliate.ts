@@ -223,14 +223,35 @@ export const CARS = (lang: Lang = "en") => ({
 // ship — a wrong GetYourGuide id serves a plausible page for another product in
 // another country rather than a 404. Until each is verified, these cards say
 // "view options" and search, which is a promise we can keep.
-function gygSearch(sid: string, q: string): string {
-  return `${REDIRECT_BASE}/go/activities?sid=${encodeURIComponent(sid)}&q=${encodeURIComponent(q)}`
+//
+// ─── Language ────────────────────────────────────────────────────────────────
+// 🔴 Vesa 2026-08-02: "jos helicopter klikkiä painaa japaniksi niin siellä on
+// japanin kielellä kaikki jos vain mahdollista?" It was not — all twelve
+// locales landed on the English page. This site's own per-locale GYG hosts and
+// `?language=` were deleted on 2026-08-01 when these links were routed through
+// the Worker, and nothing replaced them.
+//
+// We send the site language and the WORKER does the work, because the fix
+// belongs to the whole network rather than to this file: GetYourGuide
+// localises by a `<lang>-<country>/` path prefix and resolves the product from
+// its `-tNNNNN` id, so the Worker can prefix any path it is given. Measured
+// 2026-08-02 in a real browser — and note that `?language=xx`, which is what
+// this file used to send, does nothing at all at GetYourGuide.
+//
+// `toLowerCase()` is the whole mapping: the Worker knows `fi`/`de`/`ja`/… and
+// passes `pt-br`/`zh-cn` through by shape.
+function gygLang(lang: Lang): string {
+  return lang.toLowerCase()
+}
+
+function gygSearch(sid: string, q: string, lang: Lang): string {
+  return `${REDIRECT_BASE}/go/activities?sid=${encodeURIComponent(sid)}&q=${encodeURIComponent(q)}&language=${gygLang(lang)}`
 }
 
 /** Product-path deep link through the Worker. Path = `<place-lNNN>/<slug-tNNN>`. */
-export function gygProduct(path: string, sid: string): string {
+export function gygProduct(path: string, sid: string, lang: Lang = 'en'): string {
   const clean = path.replace(/^\/+/, '').replace(/\/+$/, '')
-  return `${REDIRECT_BASE}/go/activities/${clean}?sid=${encodeURIComponent(sid)}`
+  return `${REDIRECT_BASE}/go/activities/${clean}?sid=${encodeURIComponent(sid)}&language=${gygLang(lang)}`
 }
 
 // ─── Lomarengas cabin showcase ───────────────────────────────────────────────
@@ -249,14 +270,25 @@ export function lomarengasCabinUrl(slug: string, sid: string, lang: Lang = 'en')
   return `${REDIRECT_BASE}/go/lomarengas?sid=${encodeURIComponent(sid)}&dest=${encodeURIComponent(dest)}`
 }
 
-export const GYG_LINKS = {
-  laplandPremium: gygSearch('experiences_premium', 'private tour Lapland Finland'),
-  helicopter: gygSearch('experience_helicopter', 'helicopter tour Lapland Finland'),
-  privateAurora: gygSearch('experience_private_aurora', 'private northern lights tour Lapland'),
-  snowmobileVip: gygSearch('experience_snowmobile_vip', 'private snowmobile tour Lapland'),
-  husky: gygSearch('experience_husky', 'private husky safari Lapland'),
-  reindeer: gygSearch('experience_reindeer', 'private reindeer sleigh Lapland'),
-}
+// A function of the language, like HOTEL_SEARCH and CARS: as a module-level
+// const these six URLs were fixed at import time and could not carry the
+// reader's language.
+//
+// The search TERMS stay English on purpose. They are stable identifiers into
+// GetYourGuide's index, the results page renders in the requested locale
+// regardless (verified: `/ja-jp/s?q=helicopter tour Lapland Finland` returns a
+// Japanese UI with 500+ results), and a translated term would quietly change
+// which products come back.
+export const GYG_LINKS = (lang: Lang = 'en') => ({
+  laplandPremium: gygSearch('experiences_premium', 'private tour Lapland Finland', lang),
+  helicopter: gygSearch('experience_helicopter', 'helicopter tour Lapland Finland', lang),
+  privateAurora: gygSearch('experience_private_aurora', 'private northern lights tour Lapland', lang),
+  snowmobileVip: gygSearch('experience_snowmobile_vip', 'private snowmobile tour Lapland', lang),
+  husky: gygSearch('experience_husky', 'private husky safari Lapland', lang),
+  reindeer: gygSearch('experience_reindeer', 'private reindeer sleigh Lapland', lang),
+})
+
+export type GygLinkKey = keyof ReturnType<typeof GYG_LINKS>
 
 /**
  * Anchor any lodging search to Finnish Lapland. A bare "Lapland"/"Levi"/etc.

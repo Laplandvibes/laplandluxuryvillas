@@ -51,7 +51,7 @@ export default function VillaCard({
   return (
     <article className="card-onyx flex flex-col h-full overflow-hidden">
       <div
-        className="aspect-[4/3] w-full relative overflow-hidden"
+        className="aspect-[16/10] sm:aspect-[4/3] w-full relative overflow-hidden"
         style={{ background: villa.imageGradient }}
       >
         {villa.image && (
@@ -86,7 +86,7 @@ export default function VillaCard({
         )}
       </div>
 
-      <div className="flex-1 flex flex-col p-7">
+      <div className="flex-1 flex flex-col p-5 sm:p-7">
         <div className="flex items-center gap-2 text-[color:var(--color-bone)]/75 text-xs font-body mb-3">
           <MapPin size={13} className="text-[color:var(--color-brass)]" />
           <span className="tracking-[0.18em] uppercase">{villa.destination}</span>

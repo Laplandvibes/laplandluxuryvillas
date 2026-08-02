@@ -8,6 +8,8 @@ import PartnerStayAd from '../components/PartnerStayAd'
 import CabinCarousel from '../components/CabinCarousel'
 import DestinationFacts from '../components/DestinationFacts'
 import DestinationFaq, { destinationFaqItems } from '../components/DestinationFaq'
+import { DestinationLocator, DestinationSeason, DestinationExperiences } from '../components/DestinationPlanner'
+import { SECTION_LABELS, s } from '../lib/destinationSections.i18n'
 import RelatedSites from '../components/RelatedSites'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
@@ -96,13 +98,19 @@ export default function DestinationPage() {
             its own drop-shadow anyway. */}
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/35 to-transparent" />
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
+          {/* 🔴 `flex w-fit`, not `inline-flex`: the eyebrow below is an inline
+              <span>, so an inline-level back link sat on the SAME line as it
+              and the hero read "← KOHTEETKOHDE · SUOMEN LAPPI" (Vesa 2026-08-02).
+              `mb-8` cannot separate two inline boxes on one line. VillaDetail
+              only escaped this because a block <div> follows its link; both
+              heroes now use the same shape so it cannot come back. */}
           <Link
             to={to('/destinations')}
-            className="inline-flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
+            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.destinationPage.backLink}
           </Link>
-          <span className="eyebrow text-[color:var(--color-brass)] drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">{c.destinationPage.eyebrow}</span>
+          <span className="eyebrow block text-[color:var(--color-brass)] drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">{c.destinationPage.eyebrow}</span>
           <h1 className="mt-4 font-heading text-4xl sm:text-6xl md:text-7xl text-[color:var(--color-snow)] leading-[1.05] break-words drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)]">
             {dest.name}
           </h1>
@@ -148,11 +156,49 @@ export default function DestinationPage() {
         </div>
       </section>
 
+      {/* 🔴 Vesa 2026-08-02, asked what these pages still lacked, put images
+          first: "vain hero on kuva". Two frames of the same country in its two
+          opposite lights — which is also what the seasonal band below is
+          about, so the picture and the data argue the same point.
+
+          Decorative (alt=""): the caption states the season, the section under
+          it states the light in hours, and neither needs a screen reader to
+          hear a description of a photograph. */}
+      <section className="bg-[color:var(--color-deep-night)] pb-4 md:pb-8">
+        <div className="mx-auto max-w-6xl px-5 sm:px-7">
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-5">
+            {([['winter', s(SECTION_LABELS.capWinter, lang)], ['summer', s(SECTION_LABELS.capSummer, lang)]] as const).map(([season, caption]) => (
+              <figure key={season} className="m-0">
+                <div className="aspect-[16/10] overflow-hidden bg-[color:var(--color-onyx)]">
+                  <img
+                    src={`/images/dest-${dest.slug}-${season}.webp`}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {caption && (
+                  <figcaption className="mt-2 text-[11px] tracking-[0.14em] uppercase font-body text-[color:var(--color-bone)]/60">
+                    {caption}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Sourced facts from the network's per-municipality registry. Added
           2026-08-01: the page had two paragraphs and a sidebar and nothing a
           reader could check, which is what "ei tietoa ja ihan keskeneräiset"
           meant. Every number here links to the official page it came from. */}
       <DestinationFacts slug={dest.slug} />
+
+      {/* Where it sits, and when to come — the other two things Vesa named. */}
+      <DestinationLocator slug={dest.slug} />
+      <DestinationSeason slug={dest.slug} />
 
       {/* VILLAS IN THIS DESTINATION */}
       {villas.length > 0 && (
@@ -186,6 +232,10 @@ export default function DestinationPage() {
           </div>
         </section>
       )}
+
+      {/* Something to actually book in the place itself. Until now "highlights"
+          was a list of words with no link behind any of them. */}
+      <DestinationExperiences slug={dest.slug} name={dest.name} />
 
       {/* Partner stay — Lomarengas whole-cabin alternative (covers all of Lapland). */}
       <section className="bg-[color:var(--color-deep-night)] py-16 md:py-24">

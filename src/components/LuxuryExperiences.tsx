@@ -57,7 +57,7 @@ export default function LuxuryExperiences() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {LUXURY_PICKS.map((p) => {
             const id = p.path.slice(p.path.lastIndexOf('-t') + 2)
-            const href = gygProduct(p.path, `experience_${id}`)
+            const href = gygProduct(p.path, `experience_${id}`, lang)
             return (
               <a
                 key={p.path}

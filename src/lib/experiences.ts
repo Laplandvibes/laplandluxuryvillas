@@ -16,7 +16,7 @@
 // page is the only place a live figure legitimately exists. Unset renders the
 // "on request" branch, already translated into all 12 locales; let the partner
 // page quote the price.
-import { GYG_LINKS } from './affiliate'
+import { GYG_LINKS, type GygLinkKey } from './affiliate'
 import type { Lang } from './affiliate'
 import type { VerifiedRate } from './rate'
 import { overlayExperience } from './villaI18n'
@@ -40,7 +40,14 @@ export interface Experience {
   fromPerGroup?: VerifiedRate
   /** Enquiry-only = no public booking widget; goes straight to private@laplandvibes.com. */
   inquiryOnly?: boolean
-  /** External booking URL (GYG affiliate-attributed) when available. */
+  /**
+   * Which curated GetYourGuide search this experience books through. Stored as
+   * a KEY, not a URL: the URL carries the reader's language and so cannot be
+   * fixed at module load (Vesa 2026-08-02 — every locale was landing on the
+   * English page). The accessors below resolve it per language.
+   */
+  bookingKey?: GygLinkKey
+  /** Resolved from `bookingKey` by the accessors. Never set by hand. */
   bookingUrl?: string
   imageGradient: string
 }
@@ -56,7 +63,7 @@ export const EXPERIENCES: Experience[] = [
       'Hot food and reindeer-fur ground covers come standard. Coaching covers exposure for the aurora itself, foreground composition, and post-processing for the same evening.',
     ],
     available: 'Inari, Saariselkä, Levi, Rovaniemi, Sep–Apr',
-    bookingUrl: GYG_LINKS.privateAurora,
+    bookingKey: 'privateAurora',
     imageGradient: 'linear-gradient(135deg, #0A1A2E 0%, #14304A 50%, #061020 100%)',
   },
   {
@@ -69,7 +76,7 @@ export const EXPERIENCES: Experience[] = [
       'Ground photography is included on either side of the flight; the in-flight portion is for the experience itself, not the camera. Maximum four passengers per AS350. Weather-window dependent: the operator tracks the forecast and notifies the day before.',
     ],
     available: 'Rovaniemi, Ivalo, Oct–Mar (weather-dependent)',
-    bookingUrl: GYG_LINKS.helicopter,
+    bookingKey: 'helicopter',
     imageGradient: 'linear-gradient(135deg, #1A0F2E 0%, #2A1A4A 50%, #100820 100%)',
   },
   {
@@ -95,7 +102,7 @@ export const EXPERIENCES: Experience[] = [
       'You drive your own sled (a 20-minute briefing first). Wool overalls, mittens, and arctic boots are provided. Group of two to six, no shared groups, never combined with strangers.',
     ],
     available: 'Rovaniemi, Levi, Saariselkä, Dec–Apr',
-    bookingUrl: GYG_LINKS.husky,
+    bookingKey: 'husky',
     imageGradient: 'linear-gradient(135deg, #1A2515 0%, #243321 50%, #0F1810 100%)',
   },
   {
@@ -108,7 +115,7 @@ export const EXPERIENCES: Experience[] = [
       'BRP machines, helmets, balaclavas and wool overalls included. Two-person sleds available. Driving license required for the driver; passenger seat needs no license. Maximum four sleds per group.',
     ],
     available: 'Saariselkä, Inari, Levi, Dec–Apr',
-    bookingUrl: GYG_LINKS.snowmobileVip,
+    bookingKey: 'snowmobileVip',
     imageGradient: 'linear-gradient(135deg, #1A1F2A 0%, #232A3A 50%, #0F121A 100%)',
   },
   {
@@ -121,7 +128,7 @@ export const EXPERIENCES: Experience[] = [
       'Dinner is sautéed reindeer with mashed potatoes and lingonberry, prepared on the open fire. Stories about the herd, the migration year, the joik singing tradition. Maximum twelve guests.',
     ],
     available: 'Inari, Saariselkä, year-round (sledding Dec–Mar)',
-    bookingUrl: GYG_LINKS.reindeer,
+    bookingKey: 'reindeer',
     imageGradient: 'linear-gradient(135deg, #2A1B12 0%, #3A2818 50%, #1A100A 100%)',
   },
   {
@@ -152,10 +159,18 @@ export const EXPERIENCES: Experience[] = [
   },
 ]
 
+/**
+ * Resolve `bookingKey` into a booking URL in the reader's language. Both
+ * accessors go through here so no page can accidentally serve an English
+ * GetYourGuide link to a Japanese reader.
+ */
+const withBooking = (e: Experience, lang: Lang): Experience =>
+  e.bookingKey ? { ...e, bookingUrl: GYG_LINKS(lang)[e.bookingKey] } : e
+
 export const experiencesByCategory = (cat: Experience['category'], lang: Lang = 'en') =>
-  EXPERIENCES.filter((e) => e.category === cat).map((e) => overlayExperience(e, lang))
+  EXPERIENCES.filter((e) => e.category === cat).map((e) => withBooking(overlayExperience(e, lang), lang))
 
 export const experienceBySlug = (slug: string, lang: Lang = 'en') => {
   const e = EXPERIENCES.find((x) => x.slug === slug)
-  return e ? overlayExperience(e, lang) : undefined
+  return e ? withBooking(overlayExperience(e, lang), lang) : undefined
 }

@@ -10,18 +10,37 @@ export default function MidnightSunBand() {
 
   return (
     <section
-      className="relative overflow-hidden py-20 md:py-28"
+      className="relative overflow-hidden py-14 sm:py-20 md:py-28"
       style={{
         background:
           'linear-gradient(135deg, #2A1F0E 0%, #3D2D14 35%, #1F1608 100%)',
       }}
     >
+      {/* 🔴 Vesa 2026-08-02: "ei mitään kuvaa tässä? poor poor". The band sold
+          the midnight sun with a sun ICON on a flat gradient. The gradient
+          stays underneath as the loading colour and as the fallback if the
+          image 404s. */}
+      <img
+        src="/images/band-midnight-sun.webp"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover object-[70%_50%]"
+      />
+      {/* Scrim: the photograph is brightest on the right, where the sun sits,
+          and the copy sits left — so this is a horizontal wash, not a flat
+          overlay that would grey out the whole picture. */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 70% 50% at 75% 30%, rgba(255, 200, 90, 0.22) 0%, transparent 55%)',
+            'linear-gradient(90deg, rgba(20,14,6,0.94) 0%, rgba(20,14,6,0.82) 38%, rgba(20,14,6,0.45) 68%, rgba(20,14,6,0.25) 100%)',
         }}
+      />
+      <div
+        className="absolute inset-0 pointer-events-none md:hidden"
+        style={{ background: 'rgba(20,14,6,0.42)' }}
       />
 
       <div className="relative mx-auto max-w-5xl px-5 sm:px-7">
