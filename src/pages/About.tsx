@@ -1,7 +1,7 @@
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -58,7 +58,7 @@ export default function About() {
         </div>
       </article>
 
-      <ConciergeBand />
+      <InquiryBand />
       <NewsletterSection />
     </Page>
   )

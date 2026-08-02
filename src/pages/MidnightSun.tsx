@@ -3,7 +3,7 @@ import { Sun, Calendar, ArrowUpRight } from 'lucide-react'
 import SEO from '../components/SEO'
 import Page from '../components/Page'
 import Hero from '../components/Hero'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -151,7 +151,7 @@ export default function MidnightSun() {
         </div>
       </section>
 
-      <ConciergeBand title={c.midnightSunPage.conciergeTitle} body={c.midnightSunPage.conciergeBody} />
+      <InquiryBand title={c.midnightSunPage.inquiryTitle} body={c.midnightSunPage.inquiryBody} />
 
       <NewsletterSection />
     </Page>

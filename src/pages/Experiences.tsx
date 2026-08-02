@@ -4,7 +4,7 @@ import { ArrowUpRight, MapPin } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import AffiliateDisclosure from '../components/AffiliateDisclosure'
 import { experiencesByCategory } from '../lib/experiences'
@@ -118,7 +118,7 @@ export default function Experiences() {
                             </>
                           )}
                         </div>
-                        {e.conciergeOnly || !e.bookingUrl ? (
+                        {e.inquiryOnly || !e.bookingUrl ? (
                           <Link
                             to={to('/concierge')}
                             className="inline-flex items-center gap-2 border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
@@ -151,7 +151,7 @@ export default function Experiences() {
         <AffiliateDisclosure variant="full" />
       </section>
 
-      <ConciergeBand />
+      <InquiryBand />
       <LuxuryExperiences />
       <NewsletterSection />
     </Page>

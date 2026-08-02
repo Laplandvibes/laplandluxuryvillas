@@ -3,7 +3,7 @@ import { Mail, Lock, ShieldCheck, Send, Check, Loader2, AlertCircle } from 'luci
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
-import { trackConciergeInquiry } from '../lib/analytics'
+import { trackPrivateInquiry } from '../lib/analytics'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
@@ -14,9 +14,9 @@ export default function Concierge() {
   const lang = useLang()
   const c = COPY[lang]
   const seo = getPageSeo('concierge', lang)
-  const HEADCOUNT = c.conciergePage.options.headcount
-  const INTENT = c.conciergePage.options.intent
-  const BUDGET = c.conciergePage.options.budget
+  const HEADCOUNT = c.inquiryPage.options.headcount
+  const INTENT = c.inquiryPage.options.intent
+  const BUDGET = c.inquiryPage.options.budget
 
   const [form, setForm] = useState({
     headcount: HEADCOUNT[0],
@@ -55,7 +55,7 @@ export default function Concierge() {
     if (status === 'sending' || status === 'sent') return
     setStatus('sending')
     setErrorMsg('')
-    trackConciergeInquiry(form.intent)
+    trackPrivateInquiry(form.intent)
 
     try {
       const res = await fetch('/api/concierge', {
@@ -90,9 +90,9 @@ export default function Concierge() {
 
       <Hero
         compact
-        eyebrow={c.hero.concierge.eyebrow}
-        title={c.hero.concierge.title}
-        lede={c.hero.concierge.lede}
+        eyebrow={c.hero.inquiry.eyebrow}
+        title={c.hero.inquiry.title}
+        lede={c.hero.inquiry.lede}
         imageUrl="/images/hero-concierge.webp"
         imageAlt="An open leather travel journal on a dark walnut desk with a vintage brass lamp"
       />
@@ -100,7 +100,7 @@ export default function Concierge() {
       {/* TRUST STRIP */}
       <section className="bg-[color:var(--color-onyx)] py-12 md:py-14 border-b border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-5xl px-5 sm:px-7 grid sm:grid-cols-3 gap-8">
-          {c.conciergePage.trustStrip.map((item, i) => {
+          {c.inquiryPage.trustStrip.map((item, i) => {
             const Icon = trustIcons[i]
             return (
               <div key={item.title} className="text-center sm:text-left">
@@ -120,17 +120,17 @@ export default function Concierge() {
             <div className="text-center">
               <Check size={48} strokeWidth={1.5} className="mx-auto text-[color:var(--color-brass)] mb-6" />
               <h2 className="font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] mb-4">
-                {c.conciergePage.successH2}
+                {c.inquiryPage.successH2}
               </h2>
               <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-8 max-w-xl mx-auto">
-                {c.conciergePage.successBody}{' '}
+                {c.inquiryPage.successBody}{' '}
                 <a
                   href="mailto:private@laplandvibes.com"
                   className="text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] underline underline-offset-4"
                 >
                   private@laplandvibes.com
                 </a>
-                {c.conciergePage.successFollowUp}
+                {c.inquiryPage.successFollowUp}
               </p>
               <button
                 type="button"
@@ -146,16 +146,16 @@ export default function Concierge() {
           ) : (
             <>
               <div className="mb-10 max-w-2xl">
-                <span className="eyebrow">{c.conciergePage.eyebrow}</span>
+                <span className="eyebrow">{c.inquiryPage.eyebrow}</span>
                 <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-4">
-                  {c.conciergePage.h2}
+                  {c.inquiryPage.h2}
                 </h2>
-                <p className="text-[color:var(--color-bone)]/75 font-body leading-relaxed">{c.conciergePage.intro}</p>
+                <p className="text-[color:var(--color-bone)]/75 font-body leading-relaxed">{c.inquiryPage.intro}</p>
               </div>
 
               <form onSubmit={onSubmit} className="space-y-7">
                 <div className="grid sm:grid-cols-2 gap-5">
-                  <Field label={c.conciergePage.fields.headcount}>
+                  <Field label={c.inquiryPage.fields.headcount}>
                     <select
                       value={form.headcount}
                       onChange={(e) => setForm({ ...form, headcount: e.target.value })}
@@ -166,7 +166,7 @@ export default function Concierge() {
                       ))}
                     </select>
                   </Field>
-                  <Field label={c.conciergePage.fields.tripIntent}>
+                  <Field label={c.inquiryPage.fields.tripIntent}>
                     <select
                       value={form.intent}
                       onChange={(e) => setForm({ ...form, intent: e.target.value })}
@@ -179,7 +179,7 @@ export default function Concierge() {
                   </Field>
                 </div>
 
-                <Field label={c.conciergePage.fields.budget}>
+                <Field label={c.inquiryPage.fields.budget}>
                   <select
                     value={form.budget}
                     onChange={(e) => setForm({ ...form, budget: e.target.value })}
@@ -191,17 +191,17 @@ export default function Concierge() {
                   </select>
                 </Field>
 
-                <Field label={c.conciergePage.fields.datesLabel} hint={c.conciergePage.fields.datesHint}>
+                <Field label={c.inquiryPage.fields.datesLabel} hint={c.inquiryPage.fields.datesHint}>
                   <input
                     type="text"
                     value={form.dates}
                     onChange={(e) => setForm({ ...form, dates: e.target.value })}
-                    placeholder={c.conciergePage.fields.datesPlaceholder}
+                    placeholder={c.inquiryPage.fields.datesPlaceholder}
                     className="form-input"
                   />
                 </Field>
 
-                <Field label={c.conciergePage.fields.messageLabel} hint={c.conciergePage.fields.messageHint}>
+                <Field label={c.inquiryPage.fields.messageLabel} hint={c.inquiryPage.fields.messageHint}>
                   <textarea
                     rows={5}
                     value={form.message}
@@ -211,22 +211,22 @@ export default function Concierge() {
                 </Field>
 
                 <div className="grid sm:grid-cols-2 gap-5 pt-4 border-t border-[color:var(--color-mist)]/40">
-                  <Field label={c.conciergePage.fields.nameLabel}>
+                  <Field label={c.inquiryPage.fields.nameLabel}>
                     <input
                       type="text"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      placeholder={c.conciergePage.fields.namePlaceholder}
+                      placeholder={c.inquiryPage.fields.namePlaceholder}
                       className="form-input"
                     />
                   </Field>
-                  <Field label={c.conciergePage.fields.emailLabel} hint={c.conciergePage.fields.emailHint}>
+                  <Field label={c.inquiryPage.fields.emailLabel} hint={c.inquiryPage.fields.emailHint}>
                     <input
                       type="email"
                       inputMode="email"
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      placeholder={c.conciergePage.fields.emailPlaceholder}
+                      placeholder={c.inquiryPage.fields.emailPlaceholder}
                       className="form-input"
                     />
                   </Field>
@@ -238,7 +238,7 @@ export default function Concierge() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors disabled:opacity-60"
                 >
                   {status === 'sending' ? <Loader2 size={14} className="animate-spin" /> : <Send size={14} />}
-                  {status === 'sending' ? c.conciergePage.sending : c.conciergePage.submit}
+                  {status === 'sending' ? c.inquiryPage.sending : c.inquiryPage.submit}
                 </button>
 
                 {status === 'error' && (
@@ -247,7 +247,7 @@ export default function Concierge() {
                     <div>
                       <p className="font-medium mb-1">{errorMsg}</p>
                       <p className="text-red-200/75">
-                        {c.conciergePage.errorFallback}{' '}
+                        {c.inquiryPage.errorFallback}{' '}
                         <a href="mailto:private@laplandvibes.com" className="underline underline-offset-2">
                           private@laplandvibes.com
                         </a>
@@ -259,11 +259,11 @@ export default function Concierge() {
 
                 {status === 'fallback' && (
                   <p className="text-sm text-[color:var(--color-bone)]/65 font-body">
-                    {c.conciergePage.fallbackNotice}
+                    {c.inquiryPage.fallbackNotice}
                   </p>
                 )}
 
-                <p className="text-xs text-[color:var(--color-bone)]/75 font-body">{c.conciergePage.fineprint}</p>
+                <p className="text-xs text-[color:var(--color-bone)]/75 font-body">{c.inquiryPage.fineprint}</p>
               </form>
             </>
           )}

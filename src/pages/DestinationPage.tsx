@@ -3,7 +3,7 @@ import { Plane, Compass, ArrowLeft, ArrowUpRight } from 'lucide-react'
 import SEO from '../components/SEO'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import PartnerStayAd from '../components/PartnerStayAd'
 import CabinCarousel from '../components/CabinCarousel'
 import DestinationFacts from '../components/DestinationFacts'
@@ -195,7 +195,7 @@ export default function DestinationPage() {
         </div>
       </section>
 
-      <ConciergeBand title={c.destinationPage.conciergeTitle(dest.name)} body={c.destinationPage.conciergeBody} />
+      <InquiryBand title={c.destinationPage.inquiryTitle(dest.name)} body={c.destinationPage.inquiryBody} />
 
       {/* Sibling sites, including family itineraries and aurora activities —
           a destination page is where a reader wants the rest of the trip. */}

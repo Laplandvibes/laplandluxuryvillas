@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { Bed, Users, MapPin, Check, ArrowLeft } from 'lucide-react'
 import SEO from '../components/SEO'
 import Page from '../components/Page'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import GoogleRatingRow from '../components/GoogleRatingRow'
@@ -22,7 +22,7 @@ export default function VillaDetail() {
 
   if (!villa) return <Navigate to={to('/villas')} replace />
 
-  const conciergeOnly = villa.conciergeOnly || villa.tier === 'reserve'
+  const inquiryOnly = villa.inquiryOnly || villa.tier === 'reserve'
   const dest = destinationBySlug(villa.destination.toLowerCase())
   // Undefined unless this villa carries a verified rate, in which case the key
   // is omitted from the LodgingBusiness node entirely. See lib/rate.ts.
@@ -154,7 +154,7 @@ export default function VillaDetail() {
                     partner listing linked immediately below, so printing it
                     there would be a false statement. Both groups publish no
                     rate; only the reason differs. */}
-                {conciergeOnly ? (
+                {inquiryOnly ? (
                   <p className="text-xs text-[color:var(--color-bone)]/75 font-body mb-6">{c.villaDetailPage.reserveHint}</p>
                 ) : (
                   <div className="mb-6" />
@@ -163,7 +163,7 @@ export default function VillaDetail() {
             )}
 
             <div className="space-y-3">
-              {conciergeOnly ? (
+              {inquiryOnly ? (
                 <Link
                   to={to('/concierge')}
                   className="block w-full text-center bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-5 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
@@ -245,9 +245,9 @@ export default function VillaDetail() {
         </section>
       )}
 
-      <ConciergeBand
-        title={c.villaDetailPage.conciergeTitle(villa.destination)}
-        body={c.villaDetailPage.conciergeBody}
+      <InquiryBand
+        title={c.villaDetailPage.inquiryTitle(villa.destination)}
+        body={c.villaDetailPage.inquiryBody}
       />
 
       {/* OTHER VILLAS */}

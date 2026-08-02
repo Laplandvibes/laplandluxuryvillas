@@ -2,7 +2,7 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
@@ -64,7 +64,7 @@ export default function Suites() {
         </div>
       </section>
 
-      <ConciergeBand title={c.suitesPage.conciergeTitle} body={c.suitesPage.conciergeBody} />
+      <InquiryBand title={c.suitesPage.inquiryTitle} body={c.suitesPage.inquiryBody} />
 
       <NewsletterSection />
     </Page>

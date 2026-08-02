@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import MidnightSunBand from '../components/MidnightSunBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FAQ, { VILLA_FAQ_BY_LANG } from '../components/FAQ'
@@ -18,6 +18,7 @@ import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+import { AppPromoHero } from '../components/AppPromo';
 
 export default function Home() {
   const lang = useLang()
@@ -221,7 +222,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ConciergeBand />
+      <InquiryBand />
 
       <MidnightSunBand />
 
@@ -230,6 +231,9 @@ export default function Home() {
       <RelatedSites />
 
       <NewsletterSection />
+    {/* App launch block. Bottom of the page on purpose: the site's own
+        hero is what the search result promised. */}
+    <AppPromoHero />
     </Page>
   )
 }

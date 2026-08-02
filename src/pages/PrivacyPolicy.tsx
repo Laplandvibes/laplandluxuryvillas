@@ -1,7 +1,7 @@
 import SEO from '../components/SEO'
 import Page from '../components/Page'
 import PrivacyContent from '../shared/Legal/PrivacyContent'
-import ConciergePrivacy from '../components/ConciergePrivacy'
+import InquiryPrivacy from '../components/InquiryPrivacy'
 import { useLang } from '../i18n/useLang'
 
 export default function PrivacyPolicy() {
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
       {/* Site-specific: the shared policy covers what every LV site does, and
           said nothing about this site's own concierge funnel. See the component
           header for why this is not in shared/Legal. */}
-      <ConciergePrivacy />
+      <InquiryPrivacy />
     </Page>
   )
 }

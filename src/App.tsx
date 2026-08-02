@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { AppPromoNudge } from './components/AppPromo'
 import React, { useEffect, useReducer, lazy, Suspense } from 'react'
 import { COPY, loadCopy } from './locales/copy'
@@ -19,7 +19,7 @@ const Destinations = lazy(() => import('./pages/Destinations'))
 const DestinationPage = lazy(() => import('./pages/DestinationPage'))
 const Experiences = lazy(() => import('./pages/Experiences'))
 const MidnightSun = lazy(() => import('./pages/MidnightSun'))
-const Concierge = lazy(() => import('./pages/Concierge'))
+const PrivateInquiry = lazy(() => import('./pages/PrivateInquiry'))
 const About = lazy(() => import('./pages/About'))
 const Contact = lazy(() => import('./pages/Contact'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
@@ -106,7 +106,11 @@ function LocalizedRoutes() {
       {localized('/destinations/:slug', <DestinationPage />)}
       {localized('/experiences', <Experiences />)}
       {localized('/midnight-sun', <MidnightSun />)}
-      {localized('/concierge', <Concierge />)}
+      {localized('/private-inquiry', <PrivateInquiry />)}
+      {/* /concierge was the path until 2026-08-02. `public/_redirects` sends
+          it on with a real 301 at the edge; this client route only catches a
+          stale in-app link that never hits the network. */}
+      {localized('/concierge', <LegacyConciergeRedirect />)}
       {localized('/about', <About />)}
       {localized('/contact', <Contact />)}
       {localized('/privacy', <PrivacyPolicy />)}
@@ -116,6 +120,16 @@ function LocalizedRoutes() {
     </Routes>
     </Suspense>
   )
+}
+
+/**
+ * Preserves the visitor's locale prefix: /fi/concierge -> /fi/private-inquiry.
+ * Prefix-aware rather than a flat redirect to the EN path, so a Finnish
+ * bookmark does not land the reader in English.
+ */
+function LegacyConciergeRedirect() {
+  const { pathname } = useLocation()
+  return <Navigate to={pathname.replace(/\/concierge\/?$/, '/private-inquiry/')} replace />
 }
 
 function LocalisedCookieBanner() {

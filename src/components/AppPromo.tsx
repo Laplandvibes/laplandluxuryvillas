@@ -492,6 +492,13 @@ export function AppPromoNudge() {
     }
   };
 
+  /** Same destination and same bookkeeping wherever the button lands — the
+   *  phone layout puts it on its own row, the wide one keeps it inline. */
+  const openApp = () => {
+    track('nudge');
+    close();
+  };
+
   if (!show) return null;
 
   return (
@@ -502,21 +509,24 @@ export function AppPromoNudge() {
     >
       <style>{`@keyframes lvSlideUp{from{transform:translateY(110%);opacity:0}to{transform:translateY(0);opacity:1}}`}</style>
       <div className="mx-auto max-w-2xl rounded-2xl border border-vibe-pink/30 bg-deep-night/95 backdrop-blur px-4 py-3.5 shadow-[0_-8px_40px_-12px_rgba(0,0,0,0.9)]">
-        <div className="flex items-center gap-3.5">
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-vibe-pink">
+        {/* 🔴 The button cannot share a row with the words on a phone. It is
+            shrink-0 and ~190 px wide; with the 44 px icon, the close button and
+            three gaps that comes to more than the ~300 px a 375 px screen has
+            to give, so the text column collapsed to a sliver and set one word
+            per line. Below sm the button takes a full-width row of its own, and
+            the reassurance line steps aside — the button carries the offer. */}
+        <div className="flex items-center gap-3 sm:gap-3.5">
+          <span className="grid h-10 w-10 sm:h-11 sm:w-11 shrink-0 place-items-center rounded-xl bg-vibe-pink">
             <Smartphone className="h-5 w-5 text-white" />
           </span>
           <div className="min-w-0 flex-1">
-            <p className="text-snow font-semibold text-[15px] leading-snug">{c.title}</p>
-            <p className="text-snow/65 text-xs mt-0.5">{c.free}</p>
+            <p className="text-snow font-semibold text-[15px] leading-snug text-pretty">{c.title}</p>
+            <p className="hidden sm:block text-snow/65 text-xs mt-0.5">{c.free}</p>
           </div>
           <a
             href={APP_URL}
-            onClick={() => {
-              track('nudge');
-              close();
-            }}
-            className="shrink-0 rounded-full bg-vibe-pink px-4 py-2 text-sm font-semibold text-white active:scale-[0.98] transition-transform"
+            onClick={openApp}
+            className="hidden sm:inline-flex shrink-0 rounded-full bg-vibe-pink px-4 py-2 text-sm font-semibold text-white active:scale-[0.98] transition-transform"
           >
             {c.cta}
           </a>
@@ -528,6 +538,14 @@ export function AppPromoNudge() {
             <X className="h-4 w-4" />
           </button>
         </div>
+
+        <a
+          href={APP_URL}
+          onClick={openApp}
+          className="mt-3 flex w-full items-center justify-center rounded-full bg-vibe-pink px-4 py-3 text-sm font-semibold text-white no-underline transition-transform active:scale-[0.98] sm:hidden"
+        >
+          {c.cta}
+        </a>
       </div>
     </div>
   );

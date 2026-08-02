@@ -3,7 +3,7 @@ import { ArrowUpRight, Plane, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -91,7 +91,7 @@ export default function Destinations() {
         </div>
       </section>
 
-      <ConciergeBand />
+      <InquiryBand />
       <NewsletterSection />
     </Page>
   )

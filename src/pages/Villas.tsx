@@ -3,7 +3,7 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
-import ConciergeBand from '../components/ConciergeBand'
+import InquiryBand from '../components/InquiryBand'
 import PartnerStayAd from '../components/PartnerStayAd'
 import CabinCarousel from '../components/CabinCarousel'
 import NewsletterSection from '../components/NewsletterSection'
@@ -129,7 +129,7 @@ export default function Villas() {
         </div>
       </section>
 
-      <ConciergeBand title={c.villasPage.conciergeTitle} body={c.villasPage.conciergeBody} />
+      <InquiryBand title={c.villasPage.inquiryTitle} body={c.villasPage.inquiryBody} />
 
       <NewsletterSection />
     </Page>
