@@ -91,7 +91,7 @@ const de: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6. Juni – 7. Juli',
-    h2: 'Die Villen, in 32 Tagen ununterbrochenen Lichts.',
+    h2: 'Die Villen, in einem Sommer ununterbrochenen Lichts.',
     body: 'Dieselbe Architektur, andere Jahreszeit. Das Glasdach wird zum Oberlicht für eine Sonne, die nicht untergeht, der See taut auf, der Wald füllt sich mit Moltebeeren. Die Hälfte der Winternachfrage, und das einzige Fenster im Jahr, in dem private Köche, Hubschraubercharter und die Reserve-Villen den Rest ihres Kalenders öffnen.',
     primary: 'Sommerkollektion ansehen',
     secondary: 'Juni-Termine anfragen',
@@ -142,7 +142,7 @@ const de: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6. Juni – 7. Juli',
-      title: 'Das 32-Tage-Fenster, in dem die Sonne nie untergeht.',
+      title: 'Das Fenster, in dem die Sonne nie untergeht.',
       lede: 'Dieselben Villen, in der Zeit der Mitternachtssonne, weniger Gäste, sanftes endloses Licht.',
       primary: 'Juni-Termine anfragen',
       secondary: 'Kollektion ansehen',
@@ -221,7 +221,7 @@ const de: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Tage, an denen die Sonne nicht untergeht' },
+      { value: '32+', label: 'Tage ohne Sonnenuntergang in Rovaniemi, weiter nördlich mehr' },
       { value: '24h', label: 'Tageslicht am Höhepunkt, 21. Juni' },
       { value: '+18°C', label: 'Durchschnittstemperatur tagsüber Ende Juni' },
       { value: '50%', label: 'Geringere Nachfrage als in der Polarlichtsaison' },
@@ -231,7 +231,7 @@ const de: SiteCopy = {
     reasons: [
       { title: 'Die Architektur verändert ihren Charakter.', body: 'Die Glasdächer, die für die Polarlichter existieren, rahmen nun eine ununterbrochene Sonne. Oberlicht über dem Bett, Sonne auf dem See, kein Vorhang zu schließen, es gibt keine Nacht zum Verbergen.' },
       { title: 'Die Wildnis wird zugänglich.', body: 'Seen tauen, der boreale Wald öffnet sich, die Kanurouten erscheinen. Dieselbe Villa, die Sie im Februar per Schneemobil erreichten, ist nun eine fünfminütige Bootsfahrt vom Steg entfernt.' },
-      { title: 'Die Reserve-Villen öffnen.', body: 'Die privaten Seeufer-Blockhaus-Güter und die Architektenchalets geben den Rest ihres Kalenders frei. Das 32-Tage-Fenster ist die einzige Zeit im Jahr, in der private Köche und Hubschraubercharter Schulterpreise bieten.' },
+      { title: 'Die Reserve-Villen öffnen.', body: 'Die privaten Seeufer-Blockhaus-Güter und die Architektenchalets geben den Rest ihres Kalenders frei. Das Fenster ist die einzige Zeit im Jahr, in der private Köche und Hubschraubercharter Schulterpreise bieten.' },
       { title: 'Keine Schlangen, keine Nachbarn.', body: 'Lappland im Sommer sieht einen Bruchteil der Besucherdichte des Winters. Der Wildnispfad durch den Wald, der Aussichtspunkt vom Fjell, sie gehören praktisch Ihnen.' },
     ],
     summerCollection: {
@@ -247,7 +247,7 @@ const de: SiteCopy = {
     },
     planning: {
       h2: 'Eine Notiz zur Planung einer Mitternachtssonnen-Reise.',
-      p1: 'Das 32-Tage-Fenster ist kurz und die Villen sind im Einzelbesitz, der Kalender füllt sich daher opportunistisch, nicht gleichmäßig. Der Concierge hält jeden Sommer ein kleines Kontingent in den Reserve-Anwesen.',
+      p1: 'Das Fenster ist kurz und die Villen sind im Einzelbesitz, der Kalender füllt sich daher opportunistisch, nicht gleichmäßig. Der Concierge hält jeden Sommer ein kleines Kontingent in den Reserve-Anwesen.',
       p2: 'Der richtige Zeitpunkt, für einen bestimmten Juni anzufragen, liegt zwischen Januar und März desselben Jahres. Spätere Anfragen sind weiterhin sinnvoll, Freigaben kommen vor, aber das High-End des Inventars geht oft früher.',
       quoting: 'Wir bepreisen derzeit Sommer 2026 + 2027',
     },

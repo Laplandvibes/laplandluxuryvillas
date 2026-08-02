@@ -85,7 +85,7 @@ const nl: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6 juni – 7 juli',
-    h2: 'Dezelfde villa\'s, in 32 dagen ononderbroken licht.',
+    h2: 'Dezelfde villa\'s, in een zomer van ononderbroken licht.',
     body: 'Dezelfde architectuur, een ander seizoen. Het glazen dak wordt een dakvenster op een zon die nooit ondergaat, het meer ontdooit, het bos vult zich met moltebessen. De helft van de wintervraag, en het enige venster per jaar waarin privékoks, helikoptercharters en de reservevilla\'s de rest van hun kalender openen.',
     primary: 'Bekijk de zomercollectie',
     secondary: 'Junidata aanvragen',
@@ -136,7 +136,7 @@ const nl: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6 juni – 7 juli',
-      title: 'Het venster van 32 dagen waarin de zon nooit ondergaat.',
+      title: 'Het venster waarin de zon nooit ondergaat.',
       lede: 'Dezelfde villa\'s, in het seizoen van de middernachtzon, minder gasten, zacht eindeloos licht.',
       primary: 'Junidata aanvragen',
       secondary: 'Bekijk de collectie',
@@ -215,7 +215,7 @@ const nl: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Dagen dat de zon niet ondergaat' },
+      { value: '32+', label: 'Dagen zonder zonsondergang in Rovaniemi, noordelijker meer' },
       { value: '24 u', label: 'Daglicht op de piek, 21 juni' },
       { value: '+18 °C', label: 'Gemiddeld overdag eind juni' },
       { value: '50 %', label: 'Lagere vraag dan in het auroraseizoen' },
@@ -225,7 +225,7 @@ const nl: SiteCopy = {
     reasons: [
       { title: 'De architectuur krijgt een ander karakter.', body: 'De glazen daken die voor het noorderlicht bestaan, omlijsten nu een ononderbroken zon. Dakvenster boven het bed, zon op het meer, geen reden om een gordijn dicht te trekken, er is geen nacht om voor weg te kruipen.' },
       { title: 'De wildernis wordt toegankelijk.', body: 'De meren ontdooien, het boreale bos opent zich, de kanoroutes verschijnen. Dezelfde villa die u in februari per sneeuwscooter bereikte, ligt nu op vijf minuten varen van de steiger.' },
-      { title: 'De reservevilla\'s openen.', body: 'De private blokhutlandgoederen aan het meer en de architectchalets geven de rest van hun kalender vrij. Het venster van 32 dagen is de enige periode in het jaar waarin privékoks en helikoptercharters tussenseizoentarieven offreren.' },
+      { title: 'De reservevilla\'s openen.', body: 'De private blokhutlandgoederen aan het meer en de architectchalets geven de rest van hun kalender vrij. Het venster is de enige periode in het jaar waarin privékoks en helikoptercharters tussenseizoentarieven offreren.' },
       { title: 'Geen rijen, geen buren.', body: 'Lapland in de zomer ziet een fractie van de bezoekersdichtheid van de winter. Het wildernispad door het bos, het uitkijkpunt op de fjell, ze zijn in wezen van u.' },
     ],
     summerCollection: {
@@ -241,7 +241,7 @@ const nl: SiteCopy = {
     },
     planning: {
       h2: 'Een opmerking over het plannen van een middernachtzonreis.',
-      p1: 'Het venster van 32 dagen is kort en de villa\'s zijn in individueel bezit, de kalender vult zich daardoor naar gelegenheid in plaats van gelijkmatig. De conciërge houdt elke zomer een kleine reservering aan in de reservelandgoederen.',
+      p1: 'Het venster is kort en de villa\'s zijn in individueel bezit, de kalender vult zich daardoor naar gelegenheid in plaats van gelijkmatig. De conciërge houdt elke zomer een kleine reservering aan in de reservelandgoederen.',
       p2: 'Het juiste moment om naar een bepaalde juni te informeren ligt tussen januari en maart van dat jaar. Latere aanvragen zijn nog steeds de moeite waard, er komen plekken vrij, maar het topsegment van de voorraad is vaak eerder weg.',
       quoting: 'Momenteel offreren wij zomer 2026 + 2027',
     },

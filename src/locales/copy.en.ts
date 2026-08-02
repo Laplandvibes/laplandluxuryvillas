@@ -91,7 +91,7 @@ const en: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: 'Jun 6 – Jul 7',
-    h2: 'The same villas, in 32 days of unbroken light.',
+    h2: 'The same villas, in a summer of unbroken light.',
     body: 'Same houses, completely different season. The glass roof that framed the aurora now holds a sun that never sets, the lake is open water, the forest fills with cloudberry. Demand is roughly half what it is in winter, and it is the one stretch of the year when private chefs, helicopter charters and the reserve villas quietly open the rest of their calendar.',
     primary: 'See the summer collection',
     secondary: 'Inquire about June dates',
@@ -142,7 +142,7 @@ const en: SiteCopy = {
     },
     midnightSun: {
       eyebrow: 'Jun 6 – Jul 7',
-      title: 'The 32-day window when the sun never sets.',
+      title: 'The window when the sun never sets.',
       lede: 'The same villas in the midnight-sun season. Fewer guests, soft endless light.',
       primary: 'Inquire about June dates',
       secondary: 'Browse the collection',
@@ -221,7 +221,7 @@ const en: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Days the sun never sets' },
+      { value: '32+', label: 'Days the sun never sets at Rovaniemi, more further north' },
       { value: '24h', label: 'Daylight at peak, Jun 21' },
       { value: '+18°C', label: 'Average daytime in late June' },
       { value: '50%', label: 'Lower demand than aurora-season' },
@@ -231,7 +231,7 @@ const en: SiteCopy = {
     reasons: [
       { title: 'The architecture changes character.', body: 'The glass roofs built for the aurora now hold an unbroken sun. Skylight over the bed, sun on the lake, and no reason to draw a curtain, because there is no night to hide from.' },
       { title: 'The wilderness becomes accessible.', body: 'Lakes thaw, the boreal forest opens, the canoe routes appear. The same villa reached by snowmobile in February is now a five-minute boat ride from the dock.' },
-      { title: 'The reserve villas open.', body: 'The private lakeside log estates and the architect chalets release the rest of their calendar. The 32-day window is the one time of year private chefs and helicopter charters quote shoulder rates.' },
+      { title: 'The reserve villas open.', body: 'The private lakeside log estates and the architect chalets release the rest of their calendar. The window is the one time of year private chefs and helicopter charters quote shoulder rates.' },
       { title: 'No queues, no neighbours.', body: 'Lapland in summer sees a fraction of the winter crowd. The footpath through the forest and the lookout up on the fell are, in practice, yours.' },
     ],
     summerCollection: {
@@ -247,7 +247,7 @@ const en: SiteCopy = {
     },
     planning: {
       h2: 'A note on planning a midnight-sun trip.',
-      p1: 'The 32-day window is short, and the villas are individually owned, so the calendar fills unevenly rather than neatly. We hold a small allocation in the reserve estates each summer.',
+      p1: 'The window is short, and the villas are individually owned, so the calendar fills unevenly rather than neatly. We hold a small allocation in the reserve estates each summer.',
       p2: 'For a given June, the time to ask is between January and March of that same year. Later is still worth a message, because dates do come free, but the very top of the list usually goes first.',
       quoting: 'Currently quoting summer 2026 + 2027',
     },

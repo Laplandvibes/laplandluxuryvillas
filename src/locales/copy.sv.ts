@@ -85,7 +85,7 @@ const sv: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6 juni – 7 juli',
-    h2: 'Samma villor, i 32 dagar av oavbrutet ljus.',
+    h2: 'Samma villor, i en sommar av oavbrutet ljus.',
     body: 'Samma arkitektur, en annan säsong. Glastaket blir ett takfönster mot en sol som aldrig går ner, sjön töar upp, skogen fylls av hjortron. Hälften av vinterns efterfrågan, och det enda fönstret på året då privatkockar, helikoptercharter och reservvillorna öppnar resten av sin kalender.',
     primary: 'Se sommarkollektionen',
     secondary: 'Fråga om junidatum',
@@ -136,7 +136,7 @@ const sv: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6 juni – 7 juli',
-      title: 'De 32 dagarna då solen aldrig går ner.',
+      title: 'Dagarna då solen aldrig går ner.',
       lede: 'Samma villor, i midnattssolens säsong, färre gäster, mjukt oändligt ljus.',
       primary: 'Fråga om junidatum',
       secondary: 'Se kollektionen',
@@ -215,7 +215,7 @@ const sv: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Dagar då solen inte går ner' },
+      { value: '32+', label: 'Dagar utan solnedgång i Rovaniemi, längre norrut fler' },
       { value: '24 h', label: 'Dagsljus på toppen, 21 juni' },
       { value: '+18 °C', label: 'Snitt på dagen i slutet av juni' },
       { value: '50 %', label: 'Lägre efterfrågan än norrskenssäsongen' },
@@ -225,7 +225,7 @@ const sv: SiteCopy = {
     reasons: [
       { title: 'Arkitekturen får en annan karaktär.', body: 'Glastaken som finns till för norrskenet ramar nu in en oavbruten sol. Takfönster ovanför sängen, sol på sjön, ingen anledning att dra för en gardin, det finns ingen natt att krypa undan för.' },
       { title: 'Vildmarken blir tillgänglig.', body: 'Sjöarna töar, den boreala skogen öppnar sig, paddlingslederna dyker upp. Samma villa du nådde med snöskoter i februari ligger nu fem minuters båtfärd från bryggan.' },
-      { title: 'Reservvillorna öppnar.', body: 'De privata strandnära timmergårdarna och arkitektritade fjällstugorna frigör resten av sin kalender. De 32 dagarna är den enda perioden på året då privatkockar och helikoptercharter offererar mellansäsongspriser.' },
+      { title: 'Reservvillorna öppnar.', body: 'De privata strandnära timmergårdarna och arkitektritade fjällstugorna frigör resten av sin kalender. Denna period är den enda på året då privatkockar och helikoptercharter offererar mellansäsongspriser.' },
       { title: 'Inga köer, inga grannar.', body: 'Lappland på sommaren ser en bråkdel av vinterns besökstäthet. Vildmarksstigen genom skogen, utsiktspunkten på fjället, de är i praktiken dina.' },
     ],
     summerCollection: {
@@ -241,7 +241,7 @@ const sv: SiteCopy = {
     },
     planning: {
       h2: 'En kommentar om att planera en midnattssolsresa.',
-      p1: 'De 32 dagarna är korta och villorna är privatägda, kalendern fylls därför efter tillfälle snarare än jämnt. Conciergen håller varje sommar en liten reservation i reservgårdarna.',
+      p1: 'Dagarna är korta och villorna är privatägda, kalendern fylls därför efter tillfälle snarare än jämnt. Conciergen håller varje sommar en liten reservation i reservgårdarna.',
       p2: 'Rätt tidpunkt att fråga om en viss juni ligger mellan januari och mars samma år. Senare förfrågningar är fortfarande värda besväret, platser frigörs, men det översta skiktet av utbudet är ofta borta tidigare.',
       quoting: 'Just nu offererar vi sommaren 2026 + 2027',
     },

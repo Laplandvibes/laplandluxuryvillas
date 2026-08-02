@@ -85,7 +85,7 @@ const it: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6 giu – 7 lug',
-    h2: 'Le stesse ville, in 32 giorni di luce ininterrotta.',
+    h2: 'Le stesse ville, in un’estate di luce ininterrotta.',
     body: 'Stessa architettura, altra stagione. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, il bosco si riempie di camemori. Metà della domanda dell’inverno, e l’unica finestra dell’anno in cui chef privati, voli in elicottero e le ville reserve aprono il resto del loro calendario.',
     primary: 'Vedi la collezione estiva',
     secondary: 'Richiedi le date di giugno',
@@ -135,7 +135,7 @@ const it: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6 giu – 7 lug',
-      title: 'La finestra di 32 giorni in cui il sole non tramonta.',
+      title: 'La finestra in cui il sole non tramonta.',
       lede: 'Le stesse ville, nella stagione del sole di mezzanotte, meno ospiti, una luce infinita e morbida.',
       primary: 'Richiedi le date di giugno', secondary: 'Sfoglia la collezione',
     },
@@ -213,7 +213,7 @@ const it: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Giorni in cui il sole non tramonta' },
+      { value: '32+', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' },
       { value: '24 h', label: 'Luce al culmine, 21 giu' },
       { value: '+18 °C', label: 'Temperatura diurna media a fine giugno' },
       { value: '50 %', label: 'Domanda inferiore alla stagione delle aurore' },
@@ -223,7 +223,7 @@ const it: SiteCopy = {
     reasons: [
       { title: 'L’architettura cambia carattere.', body: 'I tetti in vetro pensati per le aurore ora incorniciano un sole ininterrotto. Lucernario sopra il letto, sole sul lago, nessun bisogno di tirare una tenda, non c’è notte da nascondere.' },
       { title: 'La natura selvaggia diventa accessibile.', body: 'I laghi si sciolgono, il bosco boreale si apre, compaiono i percorsi in canoa. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
-      { title: 'Le ville reserve si aprono.', body: 'Le dimore private in tronchi sul lago e gli chalet d’architetto liberano il resto del loro calendario. La finestra di 32 giorni è l’unico periodo dell’anno in cui chef privati e voli in elicottero quotano tariffe di bassa stagione.' },
+      { title: 'Le ville reserve si aprono.', body: 'Le dimore private in tronchi sul lago e gli chalet d’architetto liberano il resto del loro calendario. La finestra è l’unico periodo dell’anno in cui chef privati e voli in elicottero quotano tariffe di bassa stagione.' },
       { title: 'Niente code, niente vicini.', body: 'La Lapponia d’estate vede una frazione della densità di visitatori dell’inverno. Il sentiero nel bosco, il belvedere sul fjell, sono praticamente tuoi.' },
     ],
     summerCollection: {
@@ -239,7 +239,7 @@ const it: SiteCopy = {
     },
     planning: {
       h2: 'Una nota sull’organizzazione di un viaggio nel sole di mezzanotte.',
-      p1: 'La finestra di 32 giorni è breve e le ville sono di proprietà individuale, perciò il calendario si riempie in modo opportunistico, non uniforme. Il concierge tiene una piccola allocazione nelle dimore reserve ogni estate.',
+      p1: 'La finestra è breve e le ville sono di proprietà individuale, perciò il calendario si riempie in modo opportunistico, non uniforme. Il concierge tiene una piccola allocazione nelle dimore reserve ogni estate.',
       p2: 'Il momento giusto per informarsi su un determinato giugno è tra gennaio e marzo dello stesso anno. Anche le richieste successive vale la pena inviarle, capitano dei rilasci, ma la fascia alta dell’offerta va spesso via prima.',
       quoting: 'Attualmente quotiamo le estati 2026 e 2027',
     },
@@ -419,7 +419,7 @@ Object.assign(it.concierge, {
 })
 Object.assign(it.midnightSunBand, {
   eyebrow: '6 giu – 7 lug',
-  h2: 'Le stesse ville, in 32 giorni di luce ininterrotta.',
+  h2: 'Le stesse ville, in un’estate di luce ininterrotta.',
   body: 'Stessa architettura, stagione diversa. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, la foresta si riempie di lamponi artici. Metà domanda dell\'inverno, e l\'unica finestra dell\'anno in cui chef privati, charter di elicotteri e ville di riserva aprono il resto del calendario.',
   primary: 'Vedi la collezione estiva', secondary: 'Richiedere date di giugno',
 })
@@ -483,12 +483,12 @@ Object.assign(it.experiencesPage, {
   },
 })
 Object.assign(it.midnightSunPage, {
-  facts: [{ value: '32', label: 'Giorni senza tramonto' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '50%', label: 'Domanda inferiore alla stagione aurorale' }],
+  facts: [{ value: '32+', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '50%', label: 'Domanda inferiore alla stagione aurorale' }],
   fourReasons: 'Quattro ragioni', h2: 'La Lapponia in estate è un altro luogo.',
   reasons: [
     { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },
     { title: 'La natura diventa accessibile.', body: 'I laghi si sciolgono, la foresta boreale si apre, le rotte in canoa appaiono. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
-    { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra di 32 giorni è l\'unico momento dell\'anno in cui chef privati e charter di elicotteri quotano tariffe di spalla.' },
+    { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati e charter di elicotteri quotano tariffe di spalla.' },
     { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjell, sono essenzialmente Suoi.' },
   ],
   summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, fotografate nella luce del sole di mezzanotte di fine giugno.',
@@ -498,7 +498,7 @@ Object.assign(it.midnightSunPage, {
       { title: 'Chalet d\'autore sul fjell', copy: 'Eriofori e fiori selvatici sostituiscono la pista da sci, stessa facciata panoramica in vetro.' },
       { title: 'Villa moderna in foresta', copy: 'Edificio in legno a sbalzo nel verde dei pini boreali, calore dorato del sole di mezzanotte sulla facciata.' },
     ] },
-  planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra di 32 giorni è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Il concierge mantiene una piccola allocazione nelle tenute di riserva ogni estate.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Attualmente quotiamo estate 2026 + 2027' },
+  planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Il concierge mantiene una piccola allocazione nelle tenute di riserva ogni estate.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Attualmente quotiamo estate 2026 + 2027' },
   conciergeTitle: 'Richiedere un viaggio al sole di mezzanotte.', conciergeBody: 'Invii date, numero di ospiti e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con la disponibilità sulla collezione estiva, incluse le ville di riserva non elencate pubblicamente.',
 })
 Object.assign(it.conciergePage, {

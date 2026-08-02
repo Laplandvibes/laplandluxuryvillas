@@ -173,6 +173,28 @@ export default function PartnerSlot({ partner, variant, locale, className, place
       : t.sponsorSub;
     const topLabel = placeholder.label || t.slotOpen;
 
+    // 🔴 HOUSE-AD KÄÄNTYY PINNAN MUKAAN (Vesa 2026-08-02: "haluatko mainoksesi
+    // tähän -osio on vaalea vaaleaa vasten").
+    //
+    // Paikka oli aiemmin AINA vaalea (`bg-[#F9FAFB]`) riippumatta pinnasta.
+    // Tummilla sivustoilla se toimii, mutta vaaleilla (gifts, nature, stays,
+    // christmas, hoteldeals) kortti oli lähes sama väri kuin sivu:
+    // mitattuna #F9FAFB vs laplandgiftsin #FBF9F5 = 1.01:1, eli ero on
+    // olematon. Ainoa erottava tekijä oli katkoviivareunus.
+    //
+    // Vaaleilla pinnoilla kortti on nyt tumma: #0F172A vs #FBF9F5 = 16.98:1.
+    // Väri on verkoston oma deep-night, joten myyntipaikka näyttää
+    // tarkoitukselliselta eikä tyhjältä alueelta. Kokeilin myös pinkkejä
+    // täyttöjä, mutta ne jäivät 1.31–1.72:1 eli eivät ratkaisseet ongelmaa.
+    //
+    // Tummilla pinnoilla mikään ei muutu.
+    const houseFill = light
+      ? 'bg-[#0F172A] border-[#EC4899]/55 hover:border-[#EC4899]'
+      : 'bg-[#F9FAFB] border-[#EC4899]/45 hover:border-[#EC4899]';
+    const houseTitle = light ? 'text-[#F9FAFB]' : 'text-[#0F172A]';
+    const houseLabel = light ? 'text-[#F9FAFB]/70' : 'text-[#0F172A]/55';
+    const houseSub = light ? 'text-[#F9FAFB]/75' : 'text-[#0F172A]/65';
+
     // BANNER-variantin house-ad: kompakti vaakarivi (heron alle, ei työnnä sisältöä)
     if (variant === 'banner') {
       return (
@@ -185,7 +207,7 @@ export default function PartnerSlot({ partner, variant, locale, className, place
             // Vaalea lumipinta myyntipaikalle (Vesa 2026-07-24): erottuu sekä
             // tummilta että vaaleilta sivustoilta, dashed-pinkki = "vapaa paikka".
             'rounded-2xl border-2 border-dashed px-5 py-4 sm:px-7 sm:py-5 transition-all duration-300',
-            'bg-[#F9FAFB] border-[#EC4899]/45 hover:border-[#EC4899]',
+            houseFill,
             className,
           ]
             .filter(Boolean)
@@ -201,11 +223,11 @@ export default function PartnerSlot({ partner, variant, locale, className, place
           <span className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 min-w-0">
             <span className="flex items-center gap-2 min-w-0">
               <span aria-hidden="true" className="shrink-0 inline-block w-2 h-2 rounded-full bg-[#EC4899]" />
-              <span className="text-[10px] font-semibold uppercase tracking-widest truncate text-[#0F172A]/55">
+              <span className={`text-[10px] font-semibold uppercase tracking-widest truncate ${houseLabel}`}>
                 {topLabel}
               </span>
             </span>
-            <span className="font-heading text-xl sm:text-2xl tracking-wide leading-tight text-[#0F172A]">
+            <span className={`font-heading text-xl sm:text-2xl tracking-wide leading-tight ${houseTitle}`}>
               {t.wantYourAd}
             </span>
           </span>
@@ -225,7 +247,7 @@ export default function PartnerSlot({ partner, variant, locale, className, place
           'group relative flex h-full flex-col items-center justify-center text-center gap-2.5',
           // Vaalea lumipinta myyntipaikalle (Vesa 2026-07-24): ks. banner-variantti.
           'rounded-2xl border-2 border-dashed px-6 py-8 sm:py-10 transition-all duration-300',
-          'bg-[#F9FAFB] border-[#EC4899]/45 hover:border-[#EC4899]',
+          houseFill,
           className,
         ]
           .filter(Boolean)
@@ -234,14 +256,14 @@ export default function PartnerSlot({ partner, variant, locale, className, place
         style={{ boxShadow: light ? '0 8px 24px rgba(236,72,153,0.14)' : '0 12px 40px rgba(236,72,153,0.22)' }}
         aria-label={t.wantYourAd}
       >
-        <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-widest text-[#0F172A]/55">
+        <span className={`inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-widest ${houseLabel}`}>
           <span aria-hidden="true" className="inline-block w-2 h-2 rounded-full bg-[#EC4899]" />
           {topLabel}
         </span>
-        <p className="font-heading text-2xl sm:text-3xl tracking-wide leading-tight text-[#0F172A]">
+        <p className={`font-heading text-2xl sm:text-3xl tracking-wide leading-tight ${houseTitle}`}>
           {t.wantYourAd}
         </p>
-        <p className="text-sm leading-snug max-w-xs text-[#0F172A]/65">
+        <p className={`text-sm leading-snug max-w-xs ${houseSub}`}>
           {sub}
         </p>
         <span className="mt-1.5 inline-flex items-center rounded-full bg-[#EC4899] px-4 py-2 text-sm font-semibold text-white shadow-sm group-hover:bg-[#DB2777] group-hover:translate-x-0.5 transition-all duration-200">

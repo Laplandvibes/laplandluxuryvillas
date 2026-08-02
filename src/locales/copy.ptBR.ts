@@ -91,7 +91,7 @@ const ptBR: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6 jun – 7 jul',
-    h2: 'As mesmas vilas, em 32 dias de luz ininterrupta.',
+    h2: 'As mesmas vilas, em um verão de luz ininterrupta.',
     body: 'A mesma arquitetura, outra estação. O teto de vidro vira uma claraboia sobre um sol que nunca se põe, o lago degela, a floresta se enche de amoras-árticas. Metade da demanda do inverno, e a única janela do ano em que chefs particulares, voos de helicóptero e as vilas reserve abrem o restante de seu calendário.',
     primary: 'Ver a coleção de verão',
     secondary: 'Consultar datas de junho',
@@ -142,7 +142,7 @@ const ptBR: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6 jun – 7 jul',
-      title: 'A janela de 32 dias em que o sol não se põe.',
+      title: 'A janela em que o sol não se põe.',
       lede: 'As mesmas vilas, na temporada do sol da meia-noite, menos hóspedes, uma luz infinita e suave.',
       primary: 'Consultar datas de junho',
       secondary: 'Ver a coleção',
@@ -221,7 +221,7 @@ const ptBR: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Dias em que o sol não se põe' },
+      { value: '32+', label: 'Dias sem pôr do sol em Rovaniemi, mais ao norte mais' },
       { value: '24 h', label: 'Luz do dia no pico, 21 jun' },
       { value: '+18 °C', label: 'Temperatura diurna média no fim de junho' },
       { value: '50 %', label: 'Demanda menor que na temporada de auroras' },
@@ -231,7 +231,7 @@ const ptBR: SiteCopy = {
     reasons: [
       { title: 'A arquitetura muda de caráter.', body: 'Os tetos de vidro que existem para as auroras agora emolduram um sol ininterrupto. Claraboia sobre a cama, sol sobre o lago, sem precisar fechar uma cortina, não há noite para esconder.' },
       { title: 'A natureza selvagem fica acessível.', body: 'Os lagos degelam, a floresta boreal se abre, surgem as rotas de canoa. A mesma vila alcançada de snowmobile em fevereiro fica agora a cinco minutos de barco do ancoradouro.' },
-      { title: 'As vilas reserve se abrem.', body: 'As propriedades privadas de troncos à beira do lago e os chalés de arquiteto liberam o restante de seu calendário. A janela de 32 dias é a única época do ano em que chefs particulares e voos de helicóptero cotam tarifas de baixa temporada.' },
+      { title: 'As vilas reserve se abrem.', body: 'As propriedades privadas de troncos à beira do lago e os chalés de arquiteto liberam o restante de seu calendário. A janela é a única época do ano em que chefs particulares e voos de helicóptero cotam tarifas de baixa temporada.' },
       { title: 'Sem filas, sem vizinhos.', body: 'A Lapônia no verão recebe uma fração da densidade de visitantes do inverno. A trilha pela floresta, o mirante no fjell, são praticamente seus.' },
     ],
     summerCollection: {
@@ -247,7 +247,7 @@ const ptBR: SiteCopy = {
     },
     planning: {
       h2: 'Uma nota sobre como planejar uma viagem de sol da meia-noite.',
-      p1: 'A janela de 32 dias é curta e as vilas são de propriedade individual, por isso o calendário enche de forma oportunista, não uniforme. O concierge mantém uma pequena alocação nas propriedades reserve a cada verão.',
+      p1: 'A janela é curta e as vilas são de propriedade individual, por isso o calendário enche de forma oportunista, não uniforme. O concierge mantém uma pequena alocação nas propriedades reserve a cada verão.',
       p2: 'O momento certo para consultar sobre um junho específico é entre janeiro e março daquele ano. Consultas posteriores também valem a pena, surgem liberações, mas o topo do inventário costuma ir mais cedo.',
       quoting: 'Cotando atualmente verão de 2026 e 2027',
     },

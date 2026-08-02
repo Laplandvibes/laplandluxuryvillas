@@ -85,7 +85,7 @@ const fr: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6 juin – 7 juillet',
-    h2: 'Les mêmes villas, dans 32 jours de lumière ininterrompue.',
+    h2: 'Les mêmes villas, dans un été de lumière ininterrompue.',
     body: 'Même architecture, autre saison. Le toit de verre devient une verrière ouverte sur un soleil qui ne se couche jamais, le lac dégèle, la forêt se couvre de mûres arctiques. Moitié moins de demande qu’en hiver, et la seule fenêtre de l’année où chefs privés, vols en hélicoptère et villas reserve ouvrent le reste de leur calendrier.',
     primary: 'Voir la collection d’été',
     secondary: 'Demander les dates de juin',
@@ -135,7 +135,7 @@ const fr: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6 juin – 7 juillet',
-      title: 'La fenêtre de 32 jours où le soleil ne se couche pas.',
+      title: 'La fenêtre où le soleil ne se couche pas.',
       lede: 'Les mêmes villas, à la saison du soleil de minuit, moins de voyageurs, une lumière infinie et douce.',
       primary: 'Demander les dates de juin', secondary: 'Voir la collection',
     },
@@ -213,7 +213,7 @@ const fr: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Jours où le soleil ne se couche pas' },
+      { value: '32+', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' },
       { value: '24 h', label: 'Lumière au pic, 21 juin' },
       { value: '+18 °C', label: 'Température diurne moyenne fin juin' },
       { value: '50 %', label: 'Demande inférieure à la saison des aurores' },
@@ -223,7 +223,7 @@ const fr: SiteCopy = {
     reasons: [
       { title: 'L’architecture change de caractère.', body: 'Les toits de verre conçus pour les aurores encadrent désormais un soleil ininterrompu. Verrière au-dessus du lit, soleil sur le lac, nul besoin de tirer un rideau, il n’y a aucune nuit où se cacher.' },
       { title: 'La nature sauvage devient accessible.', body: 'Les lacs dégèlent, la forêt boréale s’ouvre, les routes de canoë apparaissent. La même villa atteinte en motoneige en février se trouve désormais à cinq minutes de bateau du ponton.' },
-      { title: 'Les villas reserve s’ouvrent.', body: 'Les domaines privés en rondins au bord du lac et les chalets d’architecte libèrent le reste de leur calendrier. La fenêtre de 32 jours est le seul moment de l’année où chefs privés et vols en hélicoptère chiffrent à des tarifs de basse saison.' },
+      { title: 'Les villas reserve s’ouvrent.', body: 'Les domaines privés en rondins au bord du lac et les chalets d’architecte libèrent le reste de leur calendrier. La fenêtre est le seul moment de l’année où chefs privés et vols en hélicoptère chiffrent à des tarifs de basse saison.' },
       { title: 'Ni files, ni voisins.', body: 'La Laponie en été ne voit qu’une fraction de la densité de visiteurs de l’hiver. Le sentier à travers la forêt, le belvédère sur le fjell, ils sont pour ainsi dire à vous.' },
     ],
     summerCollection: {
@@ -239,7 +239,7 @@ const fr: SiteCopy = {
     },
     planning: {
       h2: 'Une note sur la préparation d’un voyage au soleil de minuit.',
-      p1: 'La fenêtre de 32 jours est courte et les villas appartiennent à des propriétaires individuels, le calendrier se remplit donc au gré des occasions, pas uniformément. La conciergerie réserve une petite allocation dans les domaines reserve chaque été.',
+      p1: 'La fenêtre est courte et les villas appartiennent à des propriétaires individuels, le calendrier se remplit donc au gré des occasions, pas uniformément. La conciergerie réserve une petite allocation dans les domaines reserve chaque été.',
       p2: 'Le bon moment pour s’enquérir d’un juin donné se situe entre janvier et mars de la même année. Les demandes plus tardives valent tout de même la peine, des libérations surviennent, mais le haut de gamme part souvent plus tôt.',
       quoting: 'Nous chiffrons actuellement les étés 2026 et 2027',
     },
@@ -419,7 +419,7 @@ Object.assign(fr.concierge, {
 })
 Object.assign(fr.midnightSunBand, {
   eyebrow: '6 juin – 7 juillet',
-  h2: 'Les villas, en 32 jours de lumière ininterrompue.',
+  h2: 'Les villas, en un été de lumière ininterrompue.',
   body: 'Même architecture, autre saison. Le toit de verre devient une lucarne sur un soleil qui ne se couche jamais, le lac dégèle, la forêt se remplit de mûres arctiques. Demande divisée par deux par rapport à l\'hiver, et l\'unique fenêtre de l\'année où chefs privés, charters d\'hélicoptère et villas de réserve ouvrent le reste de leur calendrier.',
   primary: 'Voir la collection estivale', secondary: 'Consulter les dates de juin',
 })
@@ -483,12 +483,12 @@ Object.assign(fr.experiencesPage, {
   },
 })
 Object.assign(fr.midnightSunPage, {
-  facts: [{ value: '32', label: 'Jours où le soleil ne se couche pas' }, { value: '24h', label: 'Lumière au pic, 21 juin' }, { value: '+18°C', label: 'Moyenne diurne fin juin' }, { value: '50%', label: 'Demande inférieure à la saison aurore' }],
+  facts: [{ value: '32+', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' }, { value: '24h', label: 'Lumière au pic, 21 juin' }, { value: '+18°C', label: 'Moyenne diurne fin juin' }, { value: '50%', label: 'Demande inférieure à la saison aurore' }],
   fourReasons: 'Quatre raisons', h2: 'La Laponie en été est un autre lieu.',
   reasons: [
     { title: 'L\'architecture change de caractère.', body: 'Les toits de verre qui existent pour les aurores encadrent désormais un soleil ininterrompu. Lucarne sur le lit, soleil sur le lac, aucune raison de tirer un rideau, il n\'y a pas de nuit pour se cacher.' },
     { title: 'La nature devient accessible.', body: 'Les lacs dégèlent, la forêt boréale s\'ouvre, les routes de canoë apparaissent. La même villa atteinte en motoneige en février est désormais à cinq minutes en bateau du ponton.' },
-    { title: 'Les villas de réserve ouvrent.', body: 'Les propriétés privées au bord du lac et les chalets d\'architecte libèrent le reste de leur calendrier. La fenêtre de 32 jours est le seul moment de l\'année où chefs privés et charters d\'hélicoptère cotent en mi-saison.' },
+    { title: 'Les villas de réserve ouvrent.', body: 'Les propriétés privées au bord du lac et les chalets d\'architecte libèrent le reste de leur calendrier. La fenêtre est le seul moment de l\'année où chefs privés et charters d\'hélicoptère cotent en mi-saison.' },
     { title: 'Pas de files, pas de voisins.', body: 'La Laponie en été voit une fraction de la densité de visiteurs hivernale. Le sentier sauvage dans la forêt, le belvédère au sommet, ils sont essentiellement à vous.' },
   ],
   summerCollection: { eyebrow: 'La collection estivale', h2: 'Quatre caractères de villa, en lumière estivale.', lede: 'Mêmes catégories architecturales que la collection hivernale, cabines à toit de verre, propriétés en rondins au lac, chalets alpins, villas en forêt, photographiées en lumière de soleil de minuit pour montrer la seconde moitié de l\'histoire.',
@@ -498,7 +498,7 @@ Object.assign(fr.midnightSunPage, {
       { title: 'Chalet design sur le fjell', copy: 'Linaigrettes et fleurs sauvages remplacent la piste, même façade panoramique en verre.' },
       { title: 'Villa moderne en forêt', copy: 'Bâtiment en bois en porte-à-faux au cœur des pins boréaux verts, chaleur dorée du soleil de minuit sur la façade.' },
     ] },
-  planning: { h2: 'Une note sur la planification d\'un voyage au soleil de minuit.', p1: 'La fenêtre de 32 jours est courte et les villas sont individuellement détenues, le calendrier se remplit donc de manière opportuniste plutôt qu\'uniforme. La conciergerie conserve une petite allocation chaque été dans les domaines de réserve.', p2: 'Le bon moment pour s\'enquérir d\'un mois de juin donné est entre janvier et mars de la même année. Les demandes ultérieures valent toujours la peine d\'être envoyées, des disponibilités apparaissent, mais le haut de gamme part souvent plus tôt.', quoting: 'Cotations actuelles : étés 2026 + 2027' },
+  planning: { h2: 'Une note sur la planification d\'un voyage au soleil de minuit.', p1: 'La fenêtre est courte et les villas sont individuellement détenues, le calendrier se remplit donc de manière opportuniste plutôt qu\'uniforme. La conciergerie conserve une petite allocation chaque été dans les domaines de réserve.', p2: 'Le bon moment pour s\'enquérir d\'un mois de juin donné est entre janvier et mars de la même année. Les demandes ultérieures valent toujours la peine d\'être envoyées, des disponibilités apparaissent, mais le haut de gamme part souvent plus tôt.', quoting: 'Cotations actuelles : étés 2026 + 2027' },
   conciergeTitle: 'Demander un séjour au soleil de minuit.', conciergeBody: 'Envoyez dates, effectif et toute préférence. Une réponse arrive en un jour ouvré avec la disponibilité sur la collection estivale, y compris les villas de réserve non listées publiquement.',
 })
 Object.assign(fr.conciergePage, {

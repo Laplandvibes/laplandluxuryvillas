@@ -91,7 +91,7 @@ const fi: SiteCopy = {
   },
   midnightSunBand: {
     eyebrow: '6.6.–7.7.',
-    h2: 'Samat huvilat, 32 päivää katkeamatonta valoa.',
+    h2: 'Samat huvilat, katkeamatonta valoa.',
     body: 'Samat talot, täysin eri vuodenaika. Lasikatto, joka kehysti revontulia, pitää nyt aurinkoa joka ei laske, järvi on sula ja metsä täyttyy lakoista. Kysyntää on noin puolet talvesta, ja tämä on vuoden ainoa jakso, jolloin yksityiset kokit, helikopterikuljetukset ja reserve-huvilat avaavat hiljaa loppukalenterinsa.',
     primary: 'Katso kesän kokoelma',
     secondary: 'Tiedustele kesäkuun päiviä',
@@ -142,7 +142,7 @@ const fi: SiteCopy = {
     },
     midnightSun: {
       eyebrow: '6.6.–7.7.',
-      title: '32 päivän jakso, jolloin aurinko ei laske.',
+      title: 'Jakso, jolloin aurinko ei laske.',
       lede: 'Samat huvilat yöttömän yön aikaan. Vähemmän vieraita, pehmeä loputon valo.',
       primary: 'Tiedustele kesäkuun päiviä',
       secondary: 'Katso kokoelma',
@@ -221,7 +221,7 @@ const fi: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Päivää aurinko ei laske' },
+      { value: '32+', label: 'Päivää aurinko ei laske Rovaniemellä, pohjoisempana enemmän' },
       { value: '24h', label: 'Päivänvaloa huipulla, 21.6.' },
       { value: '+18°C', label: 'Päivälämpötila kesäkuun lopulla' },
       { value: '50%', label: 'Pienempi kysyntä kuin revontulikaudella' },
@@ -231,7 +231,7 @@ const fi: SiteCopy = {
     reasons: [
       { title: 'Arkkitehtuuri muuttuu luonteeltaan.', body: 'Revontulia varten rakennetut lasikatot pitävät nyt katkeamatonta aurinkoa. Kattoikkuna sängyn yllä, aurinko järvellä, eikä syytä vetää verhoa, koska ei ole yötä jolta piiloutua.' },
       { title: 'Erämaasta tulee saavutettavaa.', body: 'Järvet sulavat, boreaalinen metsä avautuu, kanoottireitit ilmestyvät. Sama huvila johon pääsit moottorikelkalla helmikuussa on nyt viiden minuutin venematkan päässä laiturilta.' },
-      { title: 'Reserve-huvilat avautuvat.', body: 'Yksityiset järvenrantaiset hirsihuvilat ja arkkitehtuurichaletit vapauttavat loppukalenterinsa. 32 päivän ikkuna on vuoden ainoa aika, jolloin yksityiset kokit ja helikopterikuljetukset hinnoittelevat shoulder-hinnoin.' },
+      { title: 'Reserve-huvilat avautuvat.', body: 'Yksityiset järvenrantaiset hirsihuvilat ja arkkitehtuurichaletit vapauttavat loppukalenterinsa. Tämä jakso on vuoden ainoa aika, jolloin yksityiset kokit ja helikopterikuljetukset hinnoittelevat shoulder-hinnoin.' },
       { title: 'Ei jonoja, ei naapureita.', body: 'Lapissa on kesällä murto-osa talven väkimäärästä. Polku metsän halki ja tunturin näköalapaikka ovat käytännössä omasi.' },
     ],
     summerCollection: {
@@ -247,7 +247,7 @@ const fi: SiteCopy = {
     },
     planning: {
       h2: 'Huomio yöttömän yön matkan suunnittelusta.',
-      p1: '32 päivän jakso on lyhyt, ja huvilat ovat yksittäisten omistajien hallinnassa, joten kalenteri täyttyy epätasaisesti eikä siististi. Pidämme pienen allokaation reserve-kohteissa joka kesä.',
+      p1: 'Jakso on lyhyt, ja huvilat ovat yksittäisten omistajien hallinnassa, joten kalenteri täyttyy epätasaisesti eikä siististi. Pidämme pienen allokaation reserve-kohteissa joka kesä.',
       p2: 'Tiettyä kesäkuuta kannattaa tiedustella saman vuoden tammi–maaliskuussa. Myöhemminkin kannattaa laittaa viestiä, koska päiviä vapautuu, mutta listan kärki menee yleensä ensin.',
       quoting: 'Tarjoamme parhaillaan kesän 2026 ja 2027 hintoja',
     },
