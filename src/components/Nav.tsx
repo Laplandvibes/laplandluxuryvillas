@@ -131,9 +131,16 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto max-w-screen-2xl px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-3 sm:gap-4">
-        <div className="flex items-center gap-3 sm:gap-5 shrink-0">
+        {/* 🔴 This group used to be `shrink-0`. With the wordmark at 212px on a
+            375px screen the row's min-content came to ~400px, and the last item
+            in the bar — the menu button — was pushed off the right edge. A fixed
+            bar contributes nothing to document.scrollWidth, so there was no
+            horizontal scroll to reveal it: on an iPhone SE the site simply had no
+            menu. The group now yields space, and the wordmark clips rather than
+            evicting the button. (Measured with _navprobe.mjs at 375/390.) */}
+        <div className="flex items-center gap-2 sm:gap-5 min-w-0">
           <EcosystemMenu lang={lang} currentDomain="laplandluxuryvillas.com" />
-          <Link to={to('/')} className="min-w-0 shrink" aria-label="LaplandLuxuryVillas, home">
+          <Link to={to('/')} className="min-w-0 shrink overflow-hidden" aria-label="LaplandLuxuryVillas, home">
             <Logo />
           </Link>
         </div>
