@@ -1121,9 +1121,9 @@ export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPilla
             <div className="flex flex-col items-center gap-3 text-xs font-normal">
               <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-1">
                 {[
-                  { to: `${localePrefix}/privacy`, label: d.legal.privacy },
-                  { to: `${localePrefix}/cookie-policy`, label: d.legal.cookie },
-                  { to: `${localePrefix}/terms`, label: d.legal.terms },
+                  { to: `${localePrefix}/privacy/`, label: d.legal.privacy },
+                  { to: `${localePrefix}/cookie-policy/`, label: d.legal.cookie },
+                  { to: `${localePrefix}/terms/`, label: d.legal.terms },
                   ...extraLegalLinks,
                 ].map(({ to, label }) => (
                   <Link
