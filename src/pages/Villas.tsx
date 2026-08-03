@@ -14,6 +14,7 @@ import { ratePriceRange } from '../lib/rate'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+import { withCounts } from '../lib/copyCounts'
 
 export default function Villas() {
   const lang = useLang()
@@ -80,9 +81,9 @@ export default function Villas() {
 
       <Hero
         compact
-        eyebrow={c.hero.villas.eyebrow}
-        title={c.hero.villas.title}
-        lede={c.hero.villas.lede}
+        eyebrow={withCounts(c.hero.villas.eyebrow)}
+        title={withCounts(c.hero.villas.title)}
+        lede={withCounts(c.hero.villas.lede)}
         imageUrl="/images/summer-villa-forest.webp"
         imageAlt="A luxury Lapland villa set among tall green summer forest, floor-to-ceiling glass framing the sunlit trees"
       />

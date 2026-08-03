@@ -351,18 +351,18 @@ export const VILLA_FAQ_BY_LANG: Record<Lang, VillaFaq[]> = {
 // Contextual links under the FAQ — the natural next step after reading the
 // answers (premium_design_standard: FAQ/big blocks get contextual links).
 const FAQ_LINKS: Record<Lang, { prompt: string; collection: string; inquiry: string }> = {
-  en: { prompt: 'Still wondering about something?', collection: 'Browse the collection', inquiry: 'Send a private enquiry' },
-  fi: { prompt: 'Jäikö jokin mietityttämään?', collection: 'Selaa kokoelmaa', inquiry: 'Lähetä yksityinen tiedustelu' },
-  de: { prompt: 'Noch eine Frage offen?', collection: 'Kollektion ansehen', inquiry: 'Private Anfrage senden' },
-  ja: { prompt: 'まだ気になることがありますか?', collection: 'コレクションを見る', inquiry: 'プライベートお問い合わせを送る' },
-  es: { prompt: '¿Te queda alguna duda?', collection: 'Ver la colección', inquiry: 'Enviar una consulta privada' },
-  'pt-BR': { prompt: 'Ainda ficou com alguma dúvida?', collection: 'Ver a coleção', inquiry: 'Enviar uma consulta privada' },
-  'zh-CN': { prompt: '还有想了解的吗?', collection: '浏览别墅精选', inquiry: '发送私人咨询' },
-  ko: { prompt: '아직 궁금한 점이 있으신가요?', collection: '컬렉션 둘러보기', inquiry: '비공개 문의 보내기' },
-  fr: { prompt: 'Une question vous reste ?', collection: 'Voir la collection', inquiry: 'Envoyer une demande privée' },
-  it: { prompt: 'Resta qualche dubbio?', collection: 'Vedi la collezione', inquiry: 'Invia una richiesta privata' },
-  nl: { prompt: 'Zit je nog met een vraag?', collection: 'Bekijk de collectie', inquiry: 'Stuur een privéaanvraag' },
-  sv: { prompt: 'Undrar du fortfarande över något?', collection: 'Bläddra i kollektionen', inquiry: 'Skicka en privat förfrågan' },
+  en: { prompt: 'Still wondering about something?', collection: 'See the villas', inquiry: 'Ask for suggestions' },
+  fi: { prompt: 'Jäikö jokin mietityttämään?', collection: 'Katso huvilat', inquiry: 'Pyydä ehdotus' },
+  de: { prompt: 'Noch eine Frage offen?', collection: 'Zu den Villen', inquiry: 'Vorschläge anfragen' },
+  ja: { prompt: 'まだ気になることがありますか?', collection: 'ヴィラを見る', inquiry: '提案を頼む' },
+  es: { prompt: '¿Te queda alguna duda?', collection: 'Ver las villas', inquiry: 'Pedir sugerencias' },
+  'pt-BR': { prompt: 'Ainda ficou com alguma dúvida?', collection: 'Ver as vilas', inquiry: 'Pedir sugestões' },
+  'zh-CN': { prompt: '还有想了解的吗?', collection: '查看别墅', inquiry: '请求推荐' },
+  ko: { prompt: '아직 궁금한 점이 있으신가요?', collection: '빌라 보기', inquiry: '추천 요청' },
+  fr: { prompt: 'Une question vous reste ?', collection: 'Voir les villas', inquiry: 'Demander des suggestions' },
+  it: { prompt: 'Resta qualche dubbio?', collection: 'Vedi le ville', inquiry: 'Chiedi una proposta' },
+  nl: { prompt: 'Zit je nog met een vraag?', collection: "Bekijk de villa's", inquiry: 'Vraag om suggesties' },
+  sv: { prompt: 'Undrar du fortfarande över något?', collection: 'Se villorna', inquiry: 'Be om förslag' },
 }
 
 const HEADINGS: Record<Lang, { eyebrow: string; h2: string }> = {

@@ -18,6 +18,7 @@ import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+import { withCounts } from '../lib/copyCounts'
 import { AppPromoHero } from '../components/AppPromo';
 
 export default function Home() {
@@ -84,9 +85,9 @@ export default function Home() {
       />
 
       <Hero
-        eyebrow={c.hero.home.eyebrow}
-        title={c.hero.home.title}
-        lede={c.hero.home.lede}
+        eyebrow={withCounts(c.hero.home.eyebrow)}
+        title={withCounts(c.hero.home.title)}
+        lede={withCounts(c.hero.home.lede)}
         primary={{ to: to('/villas'), label: c.hero.home.primary }}
         secondary={{ to: to('/private-inquiry'), label: c.hero.home.secondary }}
         imageUrl="/images/summer-villa-lakeside.webp"
@@ -122,7 +123,7 @@ export default function Home() {
                     {p.title}
                   </h3>
                   <p className="mt-4 text-[color:var(--color-bone)]/75 text-sm sm:text-base font-body leading-relaxed">
-                    {p.body}
+                    {withCounts(p.body)}
                   </p>
                 </div>
               )

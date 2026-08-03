@@ -6,6 +6,7 @@ import NewsletterSection from '../components/NewsletterSection'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+import { withCounts } from '../lib/copyCounts'
 
 type ParaItem =
   | string
@@ -27,7 +28,7 @@ export default function About() {
         compact
         eyebrow={c.hero.about.eyebrow}
         title={c.hero.about.title}
-        lede={c.hero.about.lede}
+        lede={withCounts(c.hero.about.lede)}
         imageUrl="/images/hero-about.webp"
         imageAlt="Hand-stacked kelo-pine wall corner of a luxury Lapland villa at blue hour"
       />
