@@ -75,7 +75,18 @@ export function MainPartnerBanner({ config, locale, surface = 'dark', className 
   const partner = config.mainPartner ?? config.sponsors?.[0] ?? null;
   return (
     <section data-lv-main-partner className={['px-6 md:px-12 lg:px-20 py-4', className].filter(Boolean).join(' ')}>
-      <div className="max-w-6xl mx-auto">
+      {/* 🔴 This band was handed `bg-deep-night` — the exact page colour — so
+          the best-paid placement on the site had no edge and read as page furniture
+          (Vesa 2026-08-01: "miksi kaytatte edelleen mainoksissa samaa pohjavaria kun
+          sivun tausta on? ei mitaan kontrastia"). A slot we sell has to LOOK like a
+          slot, or the buyer is paying for camouflage. Keyed to `surface` so the
+          light-themed sites in the network get the same separation inverted. */}
+      <div
+        className={[
+          'max-w-6xl mx-auto rounded-2xl border p-3 sm:p-4',
+          surface === 'light' ? 'bg-vibe-pink/[0.05] border-vibe-pink/20' : 'bg-vibe-pink/[0.07] border-vibe-pink/25',
+        ].join(' ')}
+      >
         <PartnerSlot
           variant="banner"
           partner={partner}
