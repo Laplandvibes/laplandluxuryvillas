@@ -16,8 +16,11 @@
 //        dest:   title = `${name} — <localized suffix>`            (suffix from seo-meta.json)
 //                desc  = `${position} ${auroraNote}`               (localized, EN fallback)
 //
-// Contact + legal pages are handled in routes.json (copyKey / fallbackTitle), so
-// they are intentionally NOT emitted here.
+// Legal pages (/privacy /terms /cookie-policy) are STATIC pages too: their
+// per-locale meta lives in seo-meta.json like every other static page (2026-08-03;
+// before that they fell back to the EN routes.json fallbackTitle in all 11 non-EN
+// locales — the "no-meta: <lang> /privacy" build lines). Only /contact stays in
+// routes.json (copyKey), intentionally not emitted here.
 //
 // Idempotent. Run from the site root after/with vite build:
 //   node scripts/generate-prerender-meta.mjs
@@ -133,6 +136,9 @@ const STATIC_ROUTE_OF_KEY = {
   'midnight-sun': '/midnight-sun',
   'private-inquiry': '/private-inquiry',
   about: '/about',
+  privacy: '/privacy',
+  terms: '/terms',
+  'cookie-policy': '/cookie-policy',
 };
 // 🔴 THIS MAP IS A META SOURCE IN ITS OWN RIGHT (2026-08-02). Renaming a page
 // means editing FIVE places, not three: copy.<lang>.ts, seo-meta.json, this
@@ -199,5 +205,23 @@ console.log(
     `${Object.keys(STATIC_ROUTE_OF_KEY).length} static + ${villaCount} villas + ${destCount} destinations ` +
     `= ${Object.keys(meta).length} routes × ${LANGS.length} locales`
 );
-if (villaCount !== 9) console.warn(`[gen-meta] WARN: expected 9 villas, parsed ${villaCount}`);
-if (destCount !== 5) console.warn(`[gen-meta] WARN: expected 5 destinations, parsed ${destCount}`);
+// Drift check against routes.json, the authoritative list of prerendered detail
+// routes — not a hardcoded count (the old `expected 9 villas` went stale the
+// moment the collection changed). Both directions matter: a route whose slug we
+// failed to parse ships EN-fallback meta; a parsed entity without a route never
+// gets prerendered at all.
+const routesJson = JSON.parse(readFileSync(join(ROOT, 'scripts', 'routes.json'), 'utf-8'));
+const routeSlugs = (prefix) =>
+  routesJson.map((r) => r.path).filter((p) => p.startsWith(`/${prefix}/`)).map((p) => p.slice(prefix.length + 2));
+for (const [label, prefix, parsed] of [
+  ['villa', 'villas', villaBase],
+  ['destination', 'destinations', destBase],
+]) {
+  const expected = routeSlugs(prefix);
+  for (const slug of expected) {
+    if (!parsed[slug]) console.warn(`[gen-meta] WARN: routes.json lists /${prefix}/${slug} but no ${label} parsed from src/lib — route will prerender with EN fallback meta`);
+  }
+  for (const slug of Object.keys(parsed)) {
+    if (!expected.includes(slug)) console.warn(`[gen-meta] WARN: ${label} '${slug}' parsed from src/lib has no /${prefix}/ route in routes.json — page will not be prerendered`);
+  }
+}

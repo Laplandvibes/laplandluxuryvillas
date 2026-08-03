@@ -413,5 +413,155 @@
       "title": "Privat förfrågan — villor och sviter i Lappland",
       "description": "Skicka en privat förfrågan: sällskap, datum, önskemål. En människa läser den och svarar inom en arbetsdag med förslag. Inget konto, ingen offentlig profil."
     }
+  },
+  "privacy": {
+    "en": {
+      "title": "Privacy Policy | LaplandLuxuryVillas",
+      "description": "How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, EU-only processors, and exactly what happens to a private enquiry."
+    },
+    "fi": {
+      "title": "Tietosuojaseloste | LaplandLuxuryVillas",
+      "description": "Näin LaplandLuxuryVillas (ylläpitäjänä Lapeso Oy) käsittelee tietojasi: GDPR-yhteensopivasti, vain EU-käsittelijöillä — ja mitä yksityistiedustelulle tapahtuu."
+    },
+    "de": {
+      "title": "Datenschutzerklärung | LaplandLuxuryVillas",
+      "description": "So verarbeitet LaplandLuxuryVillas (betrieben von Lapeso Oy) Ihre Daten: DSGVO-konform, nur EU-Auftragsverarbeiter — und was mit einer privaten Anfrage geschieht."
+    },
+    "ja": {
+      "title": "プライバシーポリシー | LaplandLuxuryVillas",
+      "description": "LaplandLuxuryVillas（運営：Lapeso Oy）の個人データの取り扱いについて。GDPR準拠、処理はEU内のみ。プライベートなお問い合わせの扱いも明記しています。"
+    },
+    "es": {
+      "title": "Política de privacidad | LaplandLuxuryVillas",
+      "description": "Cómo trata sus datos LaplandLuxuryVillas (operado por Lapeso Oy): conforme al RGPD, procesadores solo en la UE y qué ocurre exactamente con una consulta privada."
+    },
+    "pt-BR": {
+      "title": "Política de privacidade | LaplandLuxuryVillas",
+      "description": "Como o LaplandLuxuryVillas (operado pela Lapeso Oy) trata seus dados: conforme o GDPR, processadores só na UE e o que acontece com uma consulta privada."
+    },
+    "zh-CN": {
+      "title": "隐私政策 | LaplandLuxuryVillas",
+      "description": "LaplandLuxuryVillas（由 Lapeso Oy 运营）如何处理您的数据：符合 GDPR，仅使用欧盟境内的处理方，并说明私人咨询的具体去向。"
+    },
+    "ko": {
+      "title": "개인정보 처리방침 | LaplandLuxuryVillas",
+      "description": "LaplandLuxuryVillas(운영사 Lapeso Oy)의 데이터 처리 방식: GDPR 준수, EU 내 처리자만 사용, 프라이빗 문의가 어떻게 처리되는지까지 안내합니다."
+    },
+    "fr": {
+      "title": "Politique de confidentialité | LaplandLuxuryVillas",
+      "description": "Comment LaplandLuxuryVillas (exploité par Lapeso Oy) traite vos données : conforme au RGPD, sous-traitants UE uniquement, et le sort exact d'une demande privée."
+    },
+    "it": {
+      "title": "Informativa sulla privacy | LaplandLuxuryVillas",
+      "description": "Come LaplandLuxuryVillas (gestito da Lapeso Oy) tratta i tuoi dati: conforme al GDPR, responsabili solo nella UE e cosa accade esattamente a una richiesta privata."
+    },
+    "nl": {
+      "title": "Privacybeleid | LaplandLuxuryVillas",
+      "description": "Hoe LaplandLuxuryVillas (beheerd door Lapeso Oy) met uw gegevens omgaat: AVG-conform, verwerkers alleen in de EU, en wat er precies met een privéaanvraag gebeurt."
+    },
+    "sv": {
+      "title": "Integritetspolicy | LaplandLuxuryVillas",
+      "description": "Så hanterar LaplandLuxuryVillas (drivs av Lapeso Oy) dina uppgifter: GDPR-kompatibelt, endast EU-baserade behandlare — och vad som händer med en privat förfrågan."
+    }
+  },
+  "terms": {
+    "en": {
+      "title": "Terms of Service | LaplandLuxuryVillas",
+      "description": "Terms governing use of laplandluxuryvillas.com. Operated by Lapeso Oy in Finland."
+    },
+    "fi": {
+      "title": "Käyttöehdot | LaplandLuxuryVillas",
+      "description": "laplandluxuryvillas.com-sivuston käyttöä koskevat ehdot. Ylläpitäjänä Lapeso Oy Suomessa."
+    },
+    "de": {
+      "title": "Nutzungsbedingungen | LaplandLuxuryVillas",
+      "description": "Bedingungen für die Nutzung von laplandluxuryvillas.com. Betrieben von Lapeso Oy in Finnland."
+    },
+    "ja": {
+      "title": "利用規約 | LaplandLuxuryVillas",
+      "description": "laplandluxuryvillas.comの利用に適用される規約。フィンランドのLapeso Oyが運営しています。"
+    },
+    "es": {
+      "title": "Términos de servicio | LaplandLuxuryVillas",
+      "description": "Términos que rigen el uso de laplandluxuryvillas.com. Operado por Lapeso Oy en Finlandia."
+    },
+    "pt-BR": {
+      "title": "Termos de serviço | LaplandLuxuryVillas",
+      "description": "Termos que regem o uso de laplandluxuryvillas.com. Operado pela Lapeso Oy na Finlândia."
+    },
+    "zh-CN": {
+      "title": "服务条款 | LaplandLuxuryVillas",
+      "description": "适用于 laplandluxuryvillas.com 使用的条款。由芬兰的 Lapeso Oy 运营。"
+    },
+    "ko": {
+      "title": "이용약관 | LaplandLuxuryVillas",
+      "description": "laplandluxuryvillas.com 이용에 적용되는 약관. 핀란드의 Lapeso Oy가 운영합니다."
+    },
+    "fr": {
+      "title": "Conditions d'utilisation | LaplandLuxuryVillas",
+      "description": "Conditions régissant l'utilisation de laplandluxuryvillas.com. Exploité par Lapeso Oy en Finlande."
+    },
+    "it": {
+      "title": "Termini di servizio | LaplandLuxuryVillas",
+      "description": "Termini che regolano l'uso di laplandluxuryvillas.com. Gestito da Lapeso Oy in Finlandia."
+    },
+    "nl": {
+      "title": "Gebruiksvoorwaarden | LaplandLuxuryVillas",
+      "description": "Voorwaarden voor het gebruik van laplandluxuryvillas.com. Beheerd door Lapeso Oy in Finland."
+    },
+    "sv": {
+      "title": "Användarvillkor | LaplandLuxuryVillas",
+      "description": "Villkor för användning av laplandluxuryvillas.com. Drivs av Lapeso Oy i Finland."
+    }
+  },
+  "cookie-policy": {
+    "en": {
+      "title": "Cookie Policy | LaplandLuxuryVillas",
+      "description": "Cookie usage on laplandluxuryvillas.com. Default-denied analytics until consent given via the Finnish-flag banner. Operated by Lapeso Oy."
+    },
+    "fi": {
+      "title": "Evästekäytäntö | LaplandLuxuryVillas",
+      "description": "Evästeiden käyttö laplandluxuryvillas.com-sivustolla. Analytiikka on oletuksena estetty, kunnes annat suostumuksen Suomen lippu -bannerista. Ylläpitäjänä Lapeso Oy."
+    },
+    "de": {
+      "title": "Cookie-Richtlinie | LaplandLuxuryVillas",
+      "description": "Cookie-Nutzung auf laplandluxuryvillas.com. Analyse standardmäßig deaktiviert, bis Sie über das Finnland-Flaggen-Banner einwilligen. Betrieben von Lapeso Oy."
+    },
+    "ja": {
+      "title": "クッキーポリシー | LaplandLuxuryVillas",
+      "description": "laplandluxuryvillas.comのクッキー使用について。分析は初期状態で無効、フィンランド国旗のバナーから同意した場合のみ有効になります。運営はLapeso Oy。"
+    },
+    "es": {
+      "title": "Política de cookies | LaplandLuxuryVillas",
+      "description": "Uso de cookies en laplandluxuryvillas.com. Analítica denegada por defecto hasta dar consentimiento en el banner de la bandera finlandesa. Operado por Lapeso Oy."
+    },
+    "pt-BR": {
+      "title": "Política de cookies | LaplandLuxuryVillas",
+      "description": "Uso de cookies em laplandluxuryvillas.com. Análise negada por padrão até o consentimento no banner da bandeira finlandesa. Operado pela Lapeso Oy."
+    },
+    "zh-CN": {
+      "title": "Cookie 政策 | LaplandLuxuryVillas",
+      "description": "laplandluxuryvillas.com 的 Cookie 使用说明：分析功能默认关闭，仅在您通过芬兰国旗横幅同意后启用。由 Lapeso Oy 运营。"
+    },
+    "ko": {
+      "title": "쿠키 정책 | LaplandLuxuryVillas",
+      "description": "laplandluxuryvillas.com의 쿠키 사용 안내: 분석 쿠키는 기본 차단되며 핀란드 국기 배너에서 동의해야 활성화됩니다. 운영사 Lapeso Oy."
+    },
+    "fr": {
+      "title": "Politique de cookies | LaplandLuxuryVillas",
+      "description": "Cookies sur laplandluxuryvillas.com : analyse refusée par défaut jusqu'au consentement via la bannière au drapeau finlandais. Exploité par Lapeso Oy."
+    },
+    "it": {
+      "title": "Informativa sui cookie | LaplandLuxuryVillas",
+      "description": "Uso dei cookie su laplandluxuryvillas.com. Analisi negata di default fino al consenso tramite il banner con bandiera finlandese. Gestito da Lapeso Oy."
+    },
+    "nl": {
+      "title": "Cookiebeleid | LaplandLuxuryVillas",
+      "description": "Cookiegebruik op laplandluxuryvillas.com. Analytics standaard geweigerd tot u toestemming geeft via de Finse-vlagbanner. Beheerd door Lapeso Oy."
+    },
+    "sv": {
+      "title": "Cookiepolicy | LaplandLuxuryVillas",
+      "description": "Cookieanvändning på laplandluxuryvillas.com. Analys nekad som standard tills du samtycker via bannern med finska flaggan. Drivs av Lapeso Oy."
+    }
   }
 }
