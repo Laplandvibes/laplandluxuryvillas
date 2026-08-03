@@ -16,9 +16,12 @@
  *   placeholder-propsilla tyhjä paikka renderöi house-adin
  *   (data-partner-slot="house-ad") joka linkittää LV Media -portaaliin.
  *
- * Affiliate-huomio: kumppanilinkki EI kulje go.laplandvibes.com-Workerin
- *   kautta (ei CJ-attribuutiota → ei noreferrer-kieltoa). Käytetään vain
- *   rel="sponsored noopener".
+ * Affiliate-huomio: maksetun mainospaikan linkki käyttää AINA
+ *   rel="sponsored nofollow noopener" — samaa LV-speciä kuin shared/ads/AdUnit.
+ *   Dofollow-arvo jonka kumppani osti asuu esittelyartikkelin linkeissä, EI
+ *   mainos-CTA:ssa (ks. shared/ads/advertisers/bearkuusamo.ts). noreferrer ei
+ *   kuulu mihinkään: Worker-reititetty kumppanilinkki lukee Refererin
+ *   klikkilokiin, ja suoralle linkille se on tarpeeton.
  */
 
 import { adSlotsCopy, mediaSiteUrl, fireAdvertiseHereClick, normalizeAdLocale } from './adSlotsCopy';
@@ -335,7 +338,7 @@ export default function PartnerSlot({ partner, variant, locale, className, place
         <a
           href={partnerHref}
           target="_blank"
-          rel="sponsored noopener"
+          rel="sponsored nofollow noopener"
           aria-label={`${badge}: ${partner.name}`}
           className="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vibe-pink"
         >
@@ -445,7 +448,7 @@ export default function PartnerSlot({ partner, variant, locale, className, place
                 <a
                   href={partnerHref}
                   target="_blank"
-                  rel="sponsored noopener"
+                  rel="sponsored nofollow noopener"
                   className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-sm transition-all duration-200 hover:translate-x-0.5"
                   style={{ backgroundColor: partner.accent || '#EC4899' }}
                 >
@@ -459,6 +462,8 @@ export default function PartnerSlot({ partner, variant, locale, className, place
               {articleUrl && articleLabel && (
                 <a
                   href={articleUrl}
+                  target="_blank"
+                  rel="noopener"
                   className={[
                     'inline-flex items-center gap-1.5 text-sm sm:text-base font-semibold underline underline-offset-4 transition-colors',
                     lightCard
@@ -486,7 +491,7 @@ export default function PartnerSlot({ partner, variant, locale, className, place
         data-partner-slot="banner"
         href={partnerHref}
         target="_blank"
-        rel="sponsored noopener"
+        rel="sponsored nofollow noopener"
         className={[
           'group relative flex items-center gap-4 overflow-hidden rounded-2xl border',
           'border-white/15 bg-white/5 backdrop-blur-sm px-5 py-4 sm:px-8 sm:py-5',
@@ -545,7 +550,7 @@ export default function PartnerSlot({ partner, variant, locale, className, place
       data-partner-slot="listing"
       href={partnerHref}
       target="_blank"
-      rel="sponsored noopener"
+      rel="sponsored nofollow noopener"
       className={[
         'group relative flex items-center gap-3 overflow-hidden rounded-xl border',
         'border-vibe-pink/30 bg-vibe-pink/5 px-4 py-3',
