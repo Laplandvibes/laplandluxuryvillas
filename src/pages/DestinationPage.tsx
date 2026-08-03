@@ -110,7 +110,10 @@ export default function DestinationPage() {
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.destinationPage.backLink}
           </Link>
-          <span className="eyebrow block text-[color:var(--color-brass)] drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">{c.destinationPage.eyebrow}</span>
+          {/* Same 1.48:1 contrast failure as Hero.tsx, same fix — the eyebrow
+              sits on a photograph here too (Vesa 2026-08-03). `w-fit` keeps the
+              plate the width of the words instead of the column. */}
+          <span className="eyebrow inline-flex w-fit items-center px-3 py-1.5 rounded-sm bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm border border-[color:var(--color-brass)]/30 text-[color:var(--color-brass)]">{c.destinationPage.eyebrow}</span>
           <h1 className="mt-4 font-heading text-4xl sm:text-6xl md:text-7xl text-[color:var(--color-snow)] leading-[1.05] break-words drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)]">
             {dest.name}
           </h1>

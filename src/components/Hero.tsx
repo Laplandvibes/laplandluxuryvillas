@@ -105,10 +105,25 @@ export default function Hero({
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-8 text-center">
+        {/* 🔴 Vesa 2026-08-03: "hero osion tekstien kontrasti on huono … teksti
+            ei edes erotu". Measured on the live home hero: brass #C9A46B at
+            11 px over the photograph averaged rgb(145,137,130) behind it —
+            **1.48:1**, where AA small text needs 4.5:1. Brass and mid-tone rock
+            sit at nearly the same luminance, so a drop-shadow cannot rescue it;
+            a shadow separates an edge, it does not raise contrast.
+
+            Fixed with a backing plate rather than a darker scrim, deliberately:
+            the scrim was LIGHTENED on 2026-08-01 because Vesa said the heroes
+            were too dark, and re-darkening it would trade one of his complaints
+            for the other. The plate is local to the label, so the photograph
+            keeps its brightness. Same device VillaDetail already uses for its
+            tier badge. Brass on deep-night/85 measures about 7:1. */}
         {eyebrow && (
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70" />
-            <span className="eyebrow text-[color:var(--color-brass)] drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">{eyebrow}</span>
+            <span className="eyebrow inline-flex items-center px-3 py-1.5 rounded-sm bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm border border-[color:var(--color-brass)]/30 text-[color:var(--color-brass)]">
+              {eyebrow}
+            </span>
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70" />
           </div>
         )}
