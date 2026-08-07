@@ -23,7 +23,10 @@ export default function VillaDetail() {
   if (!villa) return <Navigate to={to('/villas')} replace />
 
   const inquiryOnly = villa.inquiryOnly || villa.tier === 'reserve'
-  const dest = destinationBySlug(villa.destination.toLowerCase())
+  // lang mukaan — ilman sitä kohdelohko (position/arrival/auroraNote) putosi
+  // englantiin kaikilla kielillä vaikka käännökset ovat content.XX.ts:ssä
+  // (auditti 4.8.; DestinationPage teki tämän jo oikein).
+  const dest = destinationBySlug(villa.destination.toLowerCase(), lang)
   // Undefined unless this villa carries a verified rate, in which case the key
   // is omitted from the LodgingBusiness node entirely. See lib/rate.ts.
   const priceRange = ratePriceRange(villa.fromPerNight)
