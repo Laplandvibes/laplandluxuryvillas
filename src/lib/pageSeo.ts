@@ -20,6 +20,9 @@ type PageKey =
   | 'midnight-sun'
   | 'private-inquiry'
   | 'about'
+  | 'privacy'
+  | 'terms'
+  | 'cookie-policy'
 
 const MAP = seoMeta as unknown as Record<string, Record<string, Entry>>
 
