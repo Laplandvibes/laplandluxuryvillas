@@ -2,6 +2,7 @@ import { ExternalLink } from 'lucide-react'
 import { destinationFacts, AURORA_BANDS, AURORA_SOURCE, AURORA_VERIFIED, type SourcedNumber } from '../shared/destinations/facts'
 import { FACT_LABELS, t } from '../shared/destinations/labels'
 import { useLang } from '../i18n/useLang'
+import { factText } from '../shared/destinations/factsI18n'
 
 /**
  * The checkable half of a destination page.
@@ -24,7 +25,7 @@ function Fact({ label, value, fact, lang }: { label: string; value: string; fact
       <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{label}</div>
       <p className="text-[color:var(--color-bone)]/90 font-body text-sm leading-relaxed">{value}</p>
       {fact?.note && (
-        <p className="text-[color:var(--color-bone)]/75 font-body text-xs leading-relaxed mt-1">{fact.note}</p>
+        <p className="text-[color:var(--color-bone)]/75 font-body text-xs leading-relaxed mt-1">{factText(fact.note, l)}</p>
       )}
       {fact && (
         <a

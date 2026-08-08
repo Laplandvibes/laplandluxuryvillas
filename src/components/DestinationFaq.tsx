@@ -1,4 +1,5 @@
 import { destinationFacts, AURORA_BANDS, type DestinationFacts } from '../shared/destinations/facts'
+import { factText } from '../shared/destinations/factsI18n'
 import { useLang, type Lang } from '../i18n/useLang'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -234,7 +235,7 @@ export function destinationFaqItems(slug: string, lang: Lang): FaqItem[] {
   const band = AURORA_BANDS[f.auroraBand]
   const p = f.name
   const items: FaqItem[] = [
-    { q: `${p}: ${t.qArrive}`, a: t.aArrive(f.airport.name, f.airport.iata, f.airport.distanceKm.value, f.airport.distanceKm.note ?? '') },
+    { q: `${p}: ${t.qArrive}`, a: t.aArrive(f.airport.name, f.airport.iata, f.airport.distanceKm.value, factText(f.airport.distanceKm.note, lang) ?? '') },
     { q: `${p}: ${t.qAurora}`, a: t.aAurora(band.nightsIn[0], band.nightsIn[1], band.reference) },
     {
       q: `${p}: ${t.qWhen}`,
@@ -242,7 +243,7 @@ export function destinationFaqItems(slug: string, lang: Lang): FaqItem[] {
     },
   ]
   if (f.ski) items.push({ q: `${p}: ${t.qSki}`, a: t.aSki(f.ski.slopes.value, f.ski.lifts.value) })
-  if (f.nationalPark) items.push({ q: `${p}: ${t.qPark}`, a: t.aPark(f.nationalPark.name) })
+  if (f.nationalPark) items.push({ q: `${p}: ${t.qPark}`, a: t.aPark(factText(f.nationalPark.name, lang) ?? f.nationalPark.name) })
   return items
 }
 
