@@ -90,7 +90,7 @@ export default function DestinationFacts({ slug }: { slug: string }) {
           )}
 
           {f.nationalPark && (
-            <Fact lang={lang} label={t(FACT_LABELS.nationalPark, l)} value={f.nationalPark.name} fact={f.nationalPark} />
+            <Fact lang={lang} label={t(FACT_LABELS.nationalPark, l)} value={factText(f.nationalPark.name, l) ?? f.nationalPark.name} fact={f.nationalPark} />
           )}
         </div>
       </div>
