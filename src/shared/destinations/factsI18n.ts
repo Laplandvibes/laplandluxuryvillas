@@ -191,7 +191,7 @@ const TABLES: Partial<Record<FactLocale, Record<string, string>>> = {
     "Pallas-Yllästunturi National Park": "帕拉斯-于莱斯通图里国家公园",
     "Road distance Ivalo airport to Inari village, roughly 40 minutes by car.": "伊瓦洛（Ivalo）机场至伊纳里（Inari）村的公路距离，驾车大约 40 分钟。",
     "Road distance Ivalo airport to Saariselkä village, about half an hour by car.": "伊瓦洛（Ivalo）机场至萨利色尔卡（Saariselkä）村的公路距离，驾车约半小时。",
-    "Road distance Kittilä airport to Levi village, about 20 minutes by car.": "基蒂莱（Kittilä）机场至列维（Levi）村的公路距离，驾车约 20 分钟。",
+    "Road distance Kittilä airport to Levi village, about 20 minutes by car.": "基蒂莱（Kittilä）机场至莱维（Levi）村的公路距离，驾车约 20 分钟。",
     "Road distance Kittilä airport to Äkäslompolo, about 45 minutes by car.": "基蒂莱（Kittilä）机场至阿卡斯隆波洛（Äkäslompolo）的公路距离，驾车约 45 分钟。",
     "Saariselkä sits on its northern edge; the park is one of the largest in Finland.": "萨利色尔卡（Saariselkä）位于公园北缘；该公园是芬兰最大的国家公园之一。",
     "Total length of groomed downhill slopes.": "压雪滑降雪道的总长度。",
