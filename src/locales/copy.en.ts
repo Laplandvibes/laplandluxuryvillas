@@ -98,8 +98,8 @@ const en: SiteCopy = {
   },
   newsletter: {
     eyebrow: 'The #LaplandVibes newsletter',
-    h2: 'A quiet note when villas open new dates, or a private one comes free.',
-    lede: 'Dates that have opened up, properties worth a look, and the aurora forecast the week before each new moon. No spam. We write it from Finland and only send when we genuinely have something for you.',
+    h2: 'Open villa dates and the quiet weeks.',
+    lede: 'Freed-up dates, places worth noting and how to read the aurora forecast. No spam. We write this from Finland and send only when we truly have something for you.',
     emailPlaceholder: 'your@email.com',
     footnote: 'Unsubscribe in one click.',
     welcome: 'Welcome aboard. The first note lands within a week.',

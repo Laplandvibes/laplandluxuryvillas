@@ -98,8 +98,8 @@ const fi: SiteCopy = {
   },
   newsletter: {
     eyebrow: '#LaplandVibes-uutiskirje',
-    h2: 'Hiljainen viesti, kun huviloihin vapautuu päiviä tai joku yksityinen tulee saataville.',
-    lede: 'Vapautuneita päiviä, huomionarvoisia kohteita ja revontuliennuste viikkoa ennen uutta kuuta. Ei roskapostia. Kirjoitamme tämän Suomesta ja lähetämme vain, kun meillä on sinulle oikeasti jotain.',
+    h2: 'Huviloiden vapaat päivät ja hiljaiset viikot.',
+    lede: 'Vapautuneita päiviä, huomionarvoisia kohteita ja revontuliennusteen lukuohjeet. Ei roskapostia. Kirjoitamme tämän Suomesta ja lähetämme vain, kun meillä on sinulle oikeasti jotain.',
     emailPlaceholder: 'sinä@sähköposti.fi',
     footnote: 'Peru tilaus yhdellä klikkauksella.',
     welcome: 'Tervetuloa mukaan. Ensimmäinen viesti saapuu viikon sisään.',

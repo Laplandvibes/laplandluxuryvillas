@@ -98,8 +98,8 @@ const de: SiteCopy = {
   },
   newsletter: {
     eyebrow: 'Der #LaplandVibes-Newsletter',
-    h2: 'Eine ruhige Nachricht, wenn Villen neue Termine öffnen und wir von einer privaten Freigabe erfahren.',
-    lede: 'Frei gewordene Termine. Häuser, die einen Blick wert sind. Polarlicht-Fenster-Prognosen in der Woche vor jedem Neumond. Kein Newsletter-Spam, geschrieben in Finnland, nur versendet, wenn es etwas Konkretes zu berichten gibt.',
+    h2: 'Freie Villentermine und die stillen Wochen.',
+    lede: 'Frei gewordene Termine, bemerkenswerte Häuser und wie man die Polarlicht-Prognose liest. Kein Spam. Wir schreiben aus Finnland und senden nur, wenn wir wirklich etwas für Sie haben.',
     emailPlaceholder: 'sie@e-mail.de',
     footnote: 'Abmeldung mit einem Klick.',
     welcome: 'Willkommen an Bord. Die erste Nachricht erreicht Sie binnen einer Woche.',

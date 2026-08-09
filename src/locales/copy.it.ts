@@ -92,8 +92,8 @@ const it: SiteCopy = {
   },
   newsletter: {
     eyebrow: 'La newsletter #LaplandVibes',
-    h2: 'Un avviso discreto quando le ville aprono nuove date e veniamo a sapere di una disponibilità privata.',
-    lede: 'Date che si liberano. Case che meritano uno sguardo. Previsioni della finestra delle aurore la settimana prima di ogni novilunio. Niente spam, scritta in Finlandia, inviata solo quando c’è qualcosa di concreto da dire.',
+    h2: 'Date libere delle ville e le settimane tranquille.',
+    lede: 'Date liberate, indirizzi degni di nota e come leggere le previsioni delle aurore. Niente spam. Scriviamo dalla Finlandia e inviamo solo quando abbiamo davvero qualcosa per te.',
     emailPlaceholder: 'tua@email.com',
     footnote: 'Disiscrizione con un clic.',
     welcome: 'Benvenuto a bordo. Il primo avviso arriva entro una settimana.',

@@ -92,8 +92,8 @@ const sv: SiteCopy = {
   },
   newsletter: {
     eyebrow: '#LaplandVibes-nyhetsbrevet',
-    h2: 'Ett lugnt meddelande när villor öppnar nya datum och vi hör om en tillgänglighet under bordet.',
-    lede: 'Datum som blivit lediga. Hus värda en titt. Norrskensprognoser veckan före varje nymåne. Ingen nyhetsbrevsspam, skrivet i Finland, skickat bara när det finns något konkret att berätta.',
+    h2: 'Lediga villadatum och de lugna veckorna.',
+    lede: 'Datum som frigjorts, ställen värda att notera och hur man läser norrskensprognosen. Ingen skräppost. Vi skriver detta från Finland och skickar bara när vi verkligen har något till dig.',
     emailPlaceholder: 'din@epost.se',
     footnote: 'Avsluta med ett klick.',
     welcome: 'Välkommen ombord. Första meddelandet kommer inom en vecka.',

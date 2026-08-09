@@ -98,8 +98,8 @@ const es: SiteCopy = {
   },
   newsletter: {
     eyebrow: 'El boletín de #LaplandVibes',
-    h2: 'Un aviso discreto cuando las villas abren nuevas fechas y sabemos de una disponibilidad privada.',
-    lede: 'Fechas que se han liberado. Casas que merecen un vistazo. Previsiones de la ventana de auroras la semana anterior a cada luna nueva. Sin spam, escrito en Finlandia, enviado solo cuando hay algo concreto que contar.',
+    h2: 'Fechas libres en las villas y las semanas tranquilas.',
+    lede: 'Fechas liberadas, casas dignas de atención y cómo leer el pronóstico de auroras. Sin spam. Escribimos desde Finlandia y enviamos solo cuando de verdad tenemos algo para ti.',
     emailPlaceholder: 'tu@email.com',
     footnote: 'Cancele la suscripción con un clic.',
     welcome: 'Bienvenido a bordo. El primer aviso llega en menos de una semana.',

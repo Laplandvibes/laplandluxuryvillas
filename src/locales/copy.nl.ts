@@ -92,8 +92,8 @@ const nl: SiteCopy = {
   },
   newsletter: {
     eyebrow: 'De #LaplandVibes-nieuwsbrief',
-    h2: 'Een rustig bericht wanneer villa\'s nieuwe data openen en wij van een onderhandse beschikbaarheid horen.',
-    lede: 'Data die zijn vrijgekomen. Huizen die een blik waard zijn. Aurora-voorspellingen in de week voor elke nieuwe maan. Geen nieuwsbriefspam, geschreven in Finland, alleen verstuurd wanneer er iets concreets te melden is.',
+    h2: 'Vrijgekomen villadata en de stille weken.',
+    lede: 'Vrijgekomen data, opmerkelijke adressen en hoe je de noorderlichtvoorspelling leest. Geen spam. We schrijven dit vanuit Finland en sturen alleen als we echt iets voor je hebben.',
     emailPlaceholder: 'uw@email.com',
     footnote: 'Uitschrijven met één klik.',
     welcome: 'Welkom aan boord. Het eerste bericht arriveert binnen een week.',
