@@ -3,6 +3,7 @@ import { Send, CheckCircle, Loader2 } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
+import FounderByline from '../shared/FounderByline';
 
 type Status = 'idle' | 'loading' | 'success' | 'already' | 'error'
 
@@ -69,6 +70,7 @@ export default function NewsletterSection() {
           {c.lede}
         </p>
 
+        <FounderByline tone="pink" />
         <form onSubmit={onSubmit} className="mt-10 flex flex-col sm:flex-row items-stretch gap-3 max-w-xl mx-auto">
           <input
             type="email"
