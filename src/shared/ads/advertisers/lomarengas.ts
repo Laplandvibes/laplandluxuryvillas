@@ -9,7 +9,16 @@ const lomarengas: AdSpec = {
   key: 'lomarengas',
   brand: 'Lomarengas',
   logo: '/images/partners/lomarengas.png',
-  linkFor: (sid) => `https://go.laplandvibes.com/go/lomarengas?sid=${encodeURIComponent(sid)}`,
+  // dest=Lapin mökkihaku: ilman destiä Adtraction-wrap pudottaa lomarengas.fi:n
+  // ETUSIVULLE (lv_permanent_rules §5, Vesa 2026-08-09). Polut SSR-title-
+  // verifioitu 2026-08-09; Lomarenkaalla on vain fi- ja en-sivustot, joten
+  // kaikki muut kielet saavat /en-polun.
+  linkFor: (sid, lang) => {
+    const dest = (lang ?? '').slice(0, 2) === 'fi'
+      ? 'https://www.lomarengas.fi/mokkihaku/lappi'
+      : 'https://www.lomarengas.fi/en/cottage-search/lappi'
+    return `https://go.laplandvibes.com/go/lomarengas?sid=${encodeURIComponent(sid)}&dest=${encodeURIComponent(dest)}`
+  },
   accent: '#10B981',
   accentDark: '#047857',
   icon: Home,
