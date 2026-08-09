@@ -70,7 +70,7 @@ export default function NewsletterSection() {
           {c.lede}
         </p>
 
-        <FounderByline tone="pink" />
+        <><FounderByline tone="pink" />
         <form onSubmit={onSubmit} className="mt-10 flex flex-col sm:flex-row items-stretch gap-3 max-w-xl mx-auto">
           <input
             type="email"
@@ -93,7 +93,7 @@ export default function NewsletterSection() {
             {status === 'idle' || status === 'error' ? <Send size={16} /> : null}
             {status === 'success' || status === 'already' ? ct.subscribed : ct.subscribe}
           </button>
-        </form>
+        </form></>
 
         {message && (
           <p
