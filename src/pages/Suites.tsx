@@ -5,6 +5,7 @@ import VillaCard from '../components/VillaCard'
 import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
+import LaplandObjects from '../components/LaplandObjects'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { getVillas } from '../lib/villas'
 import { useLang } from '../i18n/useLang'
@@ -63,6 +64,12 @@ export default function Suites() {
           </div>
         </div>
       </section>
+
+      {/* 🔴 Esineet TÄSSÄ, kuutta kohdetta esittelevän ruudukon jälkeen ja
+          ennen tiedustelunauhaa (Vesa 12.8.). Lukija on juuri katsonut mihin
+          hän majoittuu; se on ainoa hetki jolloin villaan kuuluva huopa on
+          kiinnostava eikä keskeytys. */}
+      <LaplandObjects />
 
       <InquiryBand title={c.suitesPage.inquiryTitle} body={c.suitesPage.inquiryBody} />
 
