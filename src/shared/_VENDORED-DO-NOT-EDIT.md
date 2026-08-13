@@ -16,6 +16,7 @@ mirror. To vendor a new one: `cp ../shared/<file> src/shared/<file>` and commit.
 - CookieBanner.tsx
 - EcosystemMenu.tsx
 - Footer.tsx
+- FounderByline.tsx
 - HomeAdSlots.tsx
 - Legal/CookieContent.tsx
 - Legal/PrivacyContent.tsx
@@ -29,6 +30,7 @@ mirror. To vendor a new one: `cp ../shared/<file> src/shared/<file>` and commit.
 - ads/AdUnit.tsx
 - ads/advertisers/lomarengas.ts
 - destinations/facts.ts
+- destinations/factsI18n.ts
 - destinations/labels.ts
 - gyg/luxury.ts
 
