@@ -727,6 +727,7 @@ function fallbackMeta(routePath, route) {
 
 // ---------- write loop ----------
 let written = 0;
+let lastOut = null;
 const summary = [];
 const debugNoMeta = [];
 
@@ -836,6 +837,7 @@ for (const route of routes) {
 
     mkdirSync(dirname(outPath), { recursive: true });
     writeFileSync(outPath, html, 'utf-8');
+    lastOut = outPath;
     written++;
     if (summary.length < 6) {
       summary.push(`  ${loc.lang.padEnd(5)} ${routePath.padEnd(34)} → ${outPath.replace(DIST + '\\', '').replace(DIST + '/', '')}`);
@@ -856,4 +858,32 @@ summary.forEach((l) => console.log(l));
 if (debugNoMeta.length) {
   console.log(`[prerender] some routes fell back to EN (first ${debugNoMeta.length}):`);
   debugNoMeta.forEach((l) => console.log(l));
+}
+
+// ---------- smoke gate (--crawlableBody) ----------
+// The crawlable block is deliberately fail-open: a missing module or an
+// unparseable shared Footer only warns, so a standalone checkout can still
+// build. That also means the feature can switch itself off in production
+// without anything going red — build-all.sh reads exit 0 as success and the
+// warning scrolls past. The network has been bitten by exactly this shape
+// before (wrangler pin, 2026-08-11: every build green, the failure visible
+// only in the deploy log).
+//
+// So assert the finished artefact, not the intent: read back a file we just
+// wrote and fail the build if the block is gone. Uses the LAST path written,
+// so it cannot pass against a stale dist.
+if (args.crawlableBody && NETWORK && lastOut) {
+  const probe = readFileSync(lastOut, 'utf-8');
+  const problems = [];
+  if (!probe.includes('id="lv-prerender"')) problems.push('crawlable body block missing');
+  if (!/<div id="root"><(?:div|style)/.test(probe)) problems.push('block is not inside #root');
+
+  if (problems.length) {
+    console.error(`
+[prerender] SMOKE GATE FAILED on ${lastOut}:`);
+    for (const p of problems) console.error(`  - ${p}`);
+    console.error('Refusing to exit 0 — a green build here would ship pages with no crawlable content.\n');
+    process.exit(1);
+  }
+  console.log('[prerender] smoke gate OK — crawlable block present inside #root');
 }

@@ -193,7 +193,7 @@ export function buildCrawlableBody(
     .filter((l) => l.url !== origin)
     .map((l) => {
       const text = dict[l.key] || l.url.replace(/^https:\/\//, '');
-      return `<li><a href="${l.url}/" style="color:inherit;text-decoration:none">${esc(text)}</a></li>`;
+      return `<li><a href="${l.url}/">${esc(text)}</a></li>`;
     })
     .join('');
   if (!items) return null;
@@ -210,7 +210,7 @@ export function buildCrawlableBody(
     .filter((l) => l && l.url && l.text && !seenInternal.has(l.url) && seenInternal.add(l.url))
     .map(
       (l) =>
-        `<li><a href="${l.url}" style="color:inherit;text-decoration:none">${esc(l.text)}</a></li>`
+        `<li><a href="${l.url}">${esc(l.text)}</a></li>`
     )
     .join('');
 
@@ -227,6 +227,12 @@ export function buildCrawlableBody(
 
   return (
     `<div id="lv-prerender" style="${wrap}">` +
+    // One rule instead of the same 44-byte inline style on every anchor. The block
+    // carries 27 network links + up to ~200 internal ones, so inline styling cost
+    // ~3,2 kB per page on weddings (72 anchors) and would scale with route count —
+    // gifts has 201 routes. Scoped to #lv-prerender so it cannot leak into the app,
+    // and it is removed with the block when React mounts.
+    `<style>#lv-prerender a{color:inherit;text-decoration:none}</style>` +
     `<h1 style="${h1}">${esc(title)}</h1>` +
     (description ? `<p style="${p}">${esc(description)}</p>` : '') +
     (internalItems
