@@ -13,8 +13,8 @@ import { ArrowRight } from 'lucide-react'
 // render, so 20+ advertisers never bloat a site's bundle:
 //
 //   import AdUnit from '../../../shared/ads/AdUnit'
-//   import kiwitaxi from '../../../shared/ads/advertisers/kiwitaxi'
-//   <AdUnit spec={kiwitaxi} sid="home_map_transfer" lang={lang} variant="dark"
+//   import lomarengas from '../../../shared/ads/advertisers/lomarengas'
+//   <AdUnit spec={lomarengas} sid="home_cabins" lang={lang} variant="dark"
 //           onCtaClick={(k, s, u) => trackAffiliateClick(k, `ad_unit:${s}`, u)}
 //           disclosure={<AffiliateDisclosure />} />
 //
