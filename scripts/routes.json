@@ -40,15 +40,24 @@
   },
   {
     "path": "/privacy",
-    "fallbackTitle": "Privacy | LaplandLuxuryVillas"
+    "fallbackTitle": "Privacy | LaplandLuxuryVillas",
+    "harvestFiles": [
+      "../shared/Legal/PrivacyContent.tsx"
+    ]
   },
   {
     "path": "/terms",
-    "fallbackTitle": "Terms | LaplandLuxuryVillas"
+    "fallbackTitle": "Terms | LaplandLuxuryVillas",
+    "harvestFiles": [
+      "../shared/Legal/TermsContent.tsx"
+    ]
   },
   {
     "path": "/cookie-policy",
-    "fallbackTitle": "Cookie Policy | LaplandLuxuryVillas"
+    "fallbackTitle": "Cookie Policy | LaplandLuxuryVillas",
+    "harvestFiles": [
+      "../shared/Legal/CookieContent.tsx"
+    ]
   },
   {
     "path": "/villas/kakslauttanen-glass-igloo-suite"
