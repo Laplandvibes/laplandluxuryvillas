@@ -1,10 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Send, CheckCircle, Loader2 } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import FounderByline from '../shared/FounderByline';
+
+/**
+ * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,
+ * ei jaettua importtia (vendoroitu sync on refresh-only). Ei saa koskaan
+ * rikkoa lomaketta. Standardi: memory _procedural/lv_form_funnel_events.md.
+ */
+function track(event: string, data?: Record<string, unknown>) {
+  try {
+    (window as unknown as { umami?: { track: (e: string, d?: unknown) => void } }).umami?.track(event, data);
+  } catch { /* ignore */ }
+}
 
 type Status = 'idle' | 'loading' | 'success' | 'already' | 'error'
 
@@ -83,17 +94,47 @@ export default function NewsletterSection() {
   const [status, setStatus] = useState<Status>('idle')
   const [message, setMessage] = useState('')
 
+  // [LV-FUNNEL] view = osio vieritetty näkyviin (kerran), start = 1. fokus,
+  // blocked kerran per submit-yritys (natiivi invalid laukeaa per kenttä).
+  const funnelData = { surface: 'inline', lang }
+  const sectionRef = useRef<HTMLElement | null>(null)
+  const startTracked = useRef(false)
+  const blockedTracked = useRef(false)
+  useEffect(() => {
+    const el = sectionRef.current
+    if (!el || typeof IntersectionObserver === 'undefined') return
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((en) => en.isIntersecting)) {
+        track('nl_view', funnelData)
+        io.disconnect()
+      }
+    }, { threshold: 0.4 })
+    io.observe(el)
+    return () => io.disconnect()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  const trackStart = () => {
+    if (startTracked.current) return
+    startTracked.current = true
+    track('nl_start', funnelData)
+  }
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (status === 'loading' || status === 'success' || status === 'already') return
-    if (!consented) return
+    if (!consented) {
+      track('nl_blocked', { ...funnelData, reason: 'consent' })
+      return
+    }
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
       setStatus('error')
       setMessage(c.invalidEmail)
+      track('nl_blocked', { ...funnelData, reason: 'email' })
       return
     }
     setStatus('loading')
     setMessage('')
+    track('nl_submit', funnelData)
     try {
       const res = await fetch('/api/newsletter', {
         method: 'POST',
@@ -110,24 +151,28 @@ export default function NewsletterSection() {
       if (!res.ok) {
         setStatus('error')
         setMessage(data?.error || c.genericError)
+        track('nl_error', funnelData)
         return
       }
       if (data?.alreadySubscribed) {
         setStatus('already')
         setMessage(c.already)
+        track('nl_success', { ...funnelData, already: true })
       } else {
         setStatus('success')
         setMessage(c.welcome)
+        track('nl_success', funnelData)
       }
       trackNewsletterSignup('laplandluxuryvillas-inline')
     } catch {
       setStatus('error')
       setMessage(c.networkError)
+      track('nl_error', funnelData)
     }
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-[color:var(--color-vibe-pink)] to-[#BE2470] py-20 md:py-28 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-gradient-to-br from-[color:var(--color-vibe-pink)] to-[#BE2470] py-20 md:py-28 overflow-hidden">
       <div
         className="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none"
         style={{
@@ -145,7 +190,17 @@ export default function NewsletterSection() {
         </p>
 
         <><FounderByline tone="pink" />
-        <form onSubmit={onSubmit} className="mt-10 max-w-xl mx-auto">
+        <form
+          onSubmit={onSubmit}
+          onInvalidCapture={(e) => {
+            if (blockedTracked.current) return
+            blockedTracked.current = true
+            window.setTimeout(() => { blockedTracked.current = false }, 400)
+            const t = e.target as HTMLInputElement
+            track('nl_blocked', { ...funnelData, reason: t.type === 'checkbox' ? 'consent' : 'email' })
+          }}
+          className="mt-10 max-w-xl mx-auto"
+        >
           <div className="flex flex-col sm:flex-row items-stretch gap-3">
             <input
               type="email"
@@ -153,6 +208,7 @@ export default function NewsletterSection() {
               autoComplete="email"
               required
               value={email}
+              onFocus={trackStart}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={c.emailPlaceholder}
               disabled={status === 'loading' || status === 'success' || status === 'already'}

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { Mail, Lock, ShieldCheck, Send, Check, Loader2, AlertCircle } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
@@ -7,6 +7,17 @@ import { trackPrivateInquiry } from '../lib/analytics'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+
+/**
+ * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,
+ * ei jaettua importtia (vendoroitu sync on refresh-only). Ei saa koskaan
+ * rikkoa lomaketta. Standardi: memory _procedural/lv_form_funnel_events.md.
+ */
+function track(event: string, data?: Record<string, unknown>) {
+  try {
+    (window as unknown as { umami?: { track: (e: string, d?: unknown) => void } }).umami?.track(event, data);
+  } catch { /* ignore */ }
+}
 
 type Status = 'idle' | 'sending' | 'sent' | 'error' | 'fallback'
 
@@ -29,6 +40,17 @@ export default function PrivateInquiry() {
   })
   const [status, setStatus] = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+
+  // [LV-FUNNEL] Koko sivun lomake: ei view-eventtiä (pageview kattaa),
+  // start = 1. kenttäfokus. Lomakkeessa ei ole validointia joka voisi
+  // estää lähetyksen, joten blocked-eventtiä ei ole.
+  const funnelData = { lang }
+  const startTracked = useRef(false)
+  const trackStart = () => {
+    if (startTracked.current) return
+    startTracked.current = true
+    track('inquiry_start', funnelData)
+  }
 
   const mailto = useMemo(() => {
     const subject = `Private villa inquiry: ${form.intent}`
@@ -56,6 +78,7 @@ export default function PrivateInquiry() {
     setStatus('sending')
     setErrorMsg('')
     trackPrivateInquiry(form.intent)
+    track('inquiry_submit', funnelData)
 
     try {
       const res = await fetch('/api/inquiry', {
@@ -67,12 +90,15 @@ export default function PrivateInquiry() {
 
       if (res.ok) {
         setStatus('sent')
+        track('inquiry_success', funnelData)
         return
       }
       setStatus('error')
       setErrorMsg(data?.error || `Server error ${res.status}.`)
+      track('inquiry_error', funnelData)
     } catch {
       setStatus('fallback')
+      track('inquiry_error', funnelData)
       window.location.href = mailto
     }
   }
@@ -158,6 +184,7 @@ export default function PrivateInquiry() {
                   <Field label={c.inquiryPage.fields.headcount}>
                     <select
                       value={form.headcount}
+                      onFocus={trackStart}
                       onChange={(e) => setForm({ ...form, headcount: e.target.value })}
                       className="form-select"
                     >
@@ -169,6 +196,7 @@ export default function PrivateInquiry() {
                   <Field label={c.inquiryPage.fields.tripIntent}>
                     <select
                       value={form.intent}
+                      onFocus={trackStart}
                       onChange={(e) => setForm({ ...form, intent: e.target.value })}
                       className="form-select"
                     >
@@ -182,6 +210,7 @@ export default function PrivateInquiry() {
                 <Field label={c.inquiryPage.fields.budget}>
                   <select
                     value={form.budget}
+                    onFocus={trackStart}
                     onChange={(e) => setForm({ ...form, budget: e.target.value })}
                     className="form-select"
                   >
@@ -195,6 +224,7 @@ export default function PrivateInquiry() {
                   <input
                     type="text"
                     value={form.dates}
+                    onFocus={trackStart}
                     onChange={(e) => setForm({ ...form, dates: e.target.value })}
                     placeholder={c.inquiryPage.fields.datesPlaceholder}
                     className="form-input"
@@ -205,6 +235,7 @@ export default function PrivateInquiry() {
                   <textarea
                     rows={5}
                     value={form.message}
+                    onFocus={trackStart}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     className="form-input resize-y"
                   />
@@ -215,6 +246,7 @@ export default function PrivateInquiry() {
                     <input
                       type="text"
                       value={form.name}
+                      onFocus={trackStart}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       placeholder={c.inquiryPage.fields.namePlaceholder}
                       className="form-input"
@@ -225,6 +257,7 @@ export default function PrivateInquiry() {
                       type="email"
                       inputMode="email"
                       value={form.email}
+                      onFocus={trackStart}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
                       placeholder={c.inquiryPage.fields.emailPlaceholder}
                       className="form-input"
