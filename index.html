@@ -89,9 +89,6 @@
     <meta name="twitter:title" content="Lapland Luxury Villas: Private Aurora Residences &amp; Suites" />
     <meta name="twitter:description" content="Curated villas and suites across Finnish Lapland. Rates on each property's own booking page." />
     <!-- Google Fonts — Cormorant Garamond (display) + DM Sans (body) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Hero LCP preload — homepage hero background image -->
     <link rel="preload" as="image" href="/images/summer-villa-lakeside.webp" fetchpriority="high" />
@@ -188,6 +185,13 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <!-- Umami Cloud — cookieless analytics, no consent gate needed (writes nothing to the browser) -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="001f6073-2ade-4d00-8bd0-893e9f8bb515" data-domains="laplandluxuryvillas.com,www.laplandluxuryvillas.com"></script>
+      <!-- Self-hosted fonts (2026-08-16). Preload is required: without it the
+         browser cannot discover the faces until the bundled CSS has parsed,
+         which guarantees a visible pass in the fallback sans on every cold
+         load. crossorigin is required even same-origin — fonts are fetched in
+         CORS mode and a preload without it downloads the file twice. -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/v21-co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/v17-rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2" />
   </head>
   <body>
     <div id="root"></div>
