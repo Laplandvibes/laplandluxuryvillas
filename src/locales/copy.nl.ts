@@ -173,6 +173,9 @@ const nl: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Wat er in deze selectie staat',
+    leadP1: 'Acht kamers, geen acht hotels. Elke vermelding hier is een specifiek kamertype binnen een echt huis: een glasdakhut bij Kakslauttanen, een uitkragende suite in Arctic TreeHouse, een aurorabubbel aan het Inarimeer. Dat is de eenheid die u werkelijk boekt, dus die vermelden wij.',
+    leadP2: 'De beoordelingen op deze site komen van Google en gelden het hele huis, nooit de losse kamer, en elke kaart zegt dat erbij. De selectie is bewust kort: vijf bestemmingen en vijf bouwtypen, van glasdak tot blokhut, en daar houdt zij op in plaats van de lijst op te vullen.',
     filters: { all: 'Alle', glassRoof: 'Glazen dak', logEstate: 'Blokhutlandgoed', designerSuite: 'Designersuite', alpineChalet: 'Alpenchalet', lakeside: 'Aan het meer' },
     noVillas: 'Nog geen villa\'s in deze categorie.',
     inquiryTitle: 'Niet de juiste optie gezien?',
@@ -190,6 +193,9 @@ const nl: SiteCopy = {
     inquiryBody: 'Verschillende van deze panden geven in de tussenseizoenen een verdieping met meerdere suites vrij voor exclusief gebruik. Deelt u uw data en gezelschap.',
   },
   destinationsPage: {
+    leadTitle: 'Vijf plekken, vijf verschillende luchten',
+    leadP1: 'Deze vijf bestemmingen zijn niet onderling uitwisselbaar. Inari ligt het verst noordelijk, aan een meer zonder stadslicht op de zichtbare horizon. Saariselkä ligt aan de noordrand van nationaal park Urho Kekkonen en daar begon de glasdakaccommodatie. Rovaniemi heeft de vluchten, Levi de resortvoorzieningen, Ylläs de rust.',
+    leadP2: 'Elk profiel hieronder noemt de luchthaven van aankomst en de transfertijd, hoe de lucht daar werkelijk is — horizon, licht van bebouwing, hoe hoog de boog doorgaans staat — en welke villa\'s in dat gebied liggen. Een frequentiecijfer voor noorderlicht per dorp publiceren wij niet, want niemand meet er een per dorp.',
     destinationLabel: (i) => `Bestemming 0${i + 1}`,
     readTheProfile: (name) => `Lees het profiel van ${name}`,
   },

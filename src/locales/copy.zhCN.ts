@@ -179,6 +179,9 @@ const zhCN: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: '这份精选里有什么',
+    leadP1: '是八间客房，不是八家酒店。这里的每一条都是真实住宿之内的一种具体房型：Kakslauttanen 的玻璃屋顶小屋、Arctic TreeHouse 的悬挑套房、Inari 湖上的极光泡泡。你真正预订的就是这个单位，所以我们也按这个单位来列。',
+    leadP2: '本站的评分来自谷歌，对应的是整家住宿，而不是单独那一间房，每张卡片上都写明了这一点。精选做得短是有意的：五个目的地、五种建筑类型，从玻璃屋顶到原木庄园，到此为止，不靠凑数把清单撑长。',
     filters: { all: '全部', glassRoof: '玻璃屋顶', logEstate: '原木庄园', designerSuite: '设计师套房', alpineChalet: '高山木屋', lakeside: '湖畔' },
     noVillas: '该类别暂无别墅。',
     inquiryTitle: '没找到合适的?',
@@ -196,6 +199,9 @@ const zhCN: SiteCopy = {
     inquiryBody: '其中数处物业会在淡旺交替的周次开放整层多套房供独享使用。请告知您的日期与人数。',
   },
   destinationsPage: {
+    leadTitle: '五个地方，五片不同的天空',
+    leadP1: '这五个目的地彼此不可替换。Inari 最靠北，临湖，视野内的地平线上没有城镇灯光。Saariselkä 位于 Urho Kekkonen 国家公园北缘，玻璃屋顶住宿正是从这里开始的。罗瓦涅米有航班，Levi 有度假区配套，Ylläs 有安静。',
+    leadP2: '下面每一篇介绍都会写明抵达机场与接送时间、那里的天空究竟是什么样子（地平线、聚落灯光、极光弧通常站得多高），以及哪几处别墅位于该区域。我们不发布按村庄计的极光出现频率数字，因为没有人按村庄去测量。',
     destinationLabel: (i) => `目的地 0${i + 1}`,
     readTheProfile: (name) => `阅读${name}介绍`,
   },

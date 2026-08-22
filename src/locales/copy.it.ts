@@ -172,6 +172,9 @@ const it: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Che cosa contiene questa selezione',
+    leadP1: 'Otto camere, non otto hotel. Ogni voce di questo elenco è un tipo di camera preciso all\'interno di una struttura reale: una capanna con tetto in vetro a Kakslauttanen, una suite a sbalzo all\'Arctic TreeHouse, una bolla per l\'aurora sul lago Inari. È l\'unità che si prenota davvero, quindi è quella che elenchiamo.',
+    leadP2: 'I giudizi su questo sito vengono da Google e riguardano l\'intera struttura, mai la singola camera, e ogni scheda lo dichiara. La selezione è breve di proposito: cinque destinazioni e cinque tipi costruttivi, dal tetto in vetro alla tenuta in tronchi, e si ferma lì invece di allungare l\'elenco.',
     filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d’autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
     noVillas: 'Ancora nessuna villa in questa categoria.',
     inquiryTitle: 'Non trovi la soluzione giusta?',
@@ -189,6 +192,9 @@ const it: SiteCopy = {
     inquiryBody: 'Diversi di questi immobili liberano un piano con più suite a uso esclusivo nelle settimane di bassa stagione. Indicaci le tue date e il numero di persone.',
   },
   destinationsPage: {
+    leadTitle: 'Cinque luoghi, cinque cieli diversi',
+    leadP1: 'Queste cinque destinazioni non sono intercambiabili. Inari è la più settentrionale, su un lago il cui orizzonte visibile non porta alcuna luce di città. Saariselkä sta sul margine nord del parco nazionale di Urho Kekkonen, ed è lì che è nato l\'alloggio con tetto in vetro. Rovaniemi ha i voli, Levi i servizi della stazione, Ylläs il silenzio.',
+    leadP2: 'Ogni profilo qui sotto indica l\'aeroporto di arrivo e il tempo di transfer, com\'è davvero il cielo lì — l\'orizzonte, la luce degli abitati, quanto in alto tende a stare l\'arco — e quali ville si trovano in quella zona. Non pubblichiamo alcun dato di frequenza dell\'aurora per villaggio, perché nessuno lo misura per villaggio.',
     destinationLabel: (i) => `Destinazione 0${i + 1}`,
     readTheProfile: (name) => `Leggi il profilo di ${name}`,
   },

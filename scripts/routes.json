@@ -22,23 +22,28 @@
   },
   {
     "path": "/destinations",
-    "fallbackTitle": "Destinations | LaplandLuxuryVillas"
+    "fallbackTitle": "Destinations | LaplandLuxuryVillas",
+    "copyKey": "destinationsPage"
   },
   {
     "path": "/experiences",
-    "fallbackTitle": "Experiences | LaplandLuxuryVillas"
+    "fallbackTitle": "Experiences | LaplandLuxuryVillas",
+    "copyKey": "experiencesPage"
   },
   {
     "path": "/midnight-sun",
-    "fallbackTitle": "Midnight Sun | LaplandLuxuryVillas"
+    "fallbackTitle": "Midnight Sun | LaplandLuxuryVillas",
+    "copyKey": "midnightSunPage"
   },
   {
     "path": "/private-inquiry",
-    "fallbackTitle": "Private Inquiry | LaplandLuxuryVillas"
+    "fallbackTitle": "Private Inquiry | LaplandLuxuryVillas",
+    "copyKey": "inquiryPage"
   },
   {
     "path": "/about",
-    "fallbackTitle": "About | LaplandLuxuryVillas"
+    "fallbackTitle": "About | LaplandLuxuryVillas",
+    "copyKey": "aboutPage"
   },
   {
     "path": "/contact",
@@ -67,42 +72,107 @@
     ]
   },
   {
-    "path": "/villas/kakslauttanen-glass-igloo-suite"
+    "path": "/villas/kakslauttanen-glass-igloo-suite",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "kakslauttanen-glass-igloo-suite"
+    }
   },
   {
-    "path": "/villas/arctic-treehouse-suite"
+    "path": "/villas/arctic-treehouse-suite",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "arctic-treehouse-suite"
+    }
   },
   {
-    "path": "/villas/aurora-village-glass-cabin"
+    "path": "/villas/aurora-village-glass-cabin",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "aurora-village-glass-cabin"
+    }
   },
   {
-    "path": "/villas/levin-iglut-golden-crown"
+    "path": "/villas/levin-iglut-golden-crown",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "levin-iglut-golden-crown"
+    }
   },
   {
-    "path": "/villas/wilderness-hotel-nellim-aurora-bubble"
+    "path": "/villas/wilderness-hotel-nellim-aurora-bubble",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "wilderness-hotel-nellim-aurora-bubble"
+    }
   },
   {
-    "path": "/villas/star-arctic-suite"
+    "path": "/villas/star-arctic-suite",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "star-arctic-suite"
+    }
   },
   {
-    "path": "/villas/apukka-resort-aurora-cabin"
+    "path": "/villas/apukka-resort-aurora-cabin",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "apukka-resort-aurora-cabin"
+    }
   },
   {
-    "path": "/villas/lapland-hotels-saaga-apartment"
+    "path": "/villas/lapland-hotels-saaga-apartment",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/villas.ts",
+      "key": "lapland-hotels-saaga-apartment"
+    }
   },
   {
-    "path": "/destinations/saariselka"
+    "path": "/destinations/saariselka",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/destinations.ts",
+      "key": "saariselka"
+    }
   },
   {
-    "path": "/destinations/inari"
+    "path": "/destinations/inari",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/destinations.ts",
+      "key": "inari"
+    }
   },
   {
-    "path": "/destinations/rovaniemi"
+    "path": "/destinations/rovaniemi",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/destinations.ts",
+      "key": "rovaniemi"
+    }
   },
   {
-    "path": "/destinations/levi"
+    "path": "/destinations/levi",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/destinations.ts",
+      "key": "levi"
+    }
   },
   {
-    "path": "/destinations/yllas"
+    "path": "/destinations/yllas",
+    "harvestRecord": {
+      "file": "src/lib/content.{lang}.ts",
+      "baseFile": "src/lib/destinations.ts",
+      "key": "yllas"
+    }
   }
 ]

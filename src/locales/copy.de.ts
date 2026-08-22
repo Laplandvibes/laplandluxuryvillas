@@ -179,6 +179,9 @@ const de: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Was in dieser Auswahl steht',
+    leadP1: 'Acht Zimmer, nicht acht Hotels. Jeder Eintrag hier ist ein bestimmter Zimmertyp innerhalb eines realen Hauses: eine Glasdachhütte in Kakslauttanen, eine auskragende Suite im Arctic TreeHouse, eine Aurora-Bubble am Inarisee. Das ist die Einheit, die Sie tatsächlich buchen, also listen wir sie.',
+    leadP2: 'Die Bewertungen auf dieser Seite stammen von Google und gelten dem ganzen Haus, nie dem einzelnen Zimmer, und jede Karte sagt das dazu. Die Auswahl ist bewusst kurz: fünf Ziele und fünf Bauarten, vom Glasdach bis zum Blockhaus, und dann hört sie auf, statt die Liste zu füllen.',
     filters: { all: 'Alle', glassRoof: 'Glasdach', logEstate: 'Blockhaus-Gut', designerSuite: 'Designer-Suite', alpineChalet: 'Alpenchalet', lakeside: 'Am See' },
     noVillas: 'In dieser Kategorie sind noch keine Villen.',
     inquiryTitle: 'Nicht das Richtige gefunden?',
@@ -196,6 +199,9 @@ const de: SiteCopy = {
     inquiryBody: 'Mehrere dieser Anwesen geben in den Schulterwochen eine Mehrsuiten-Etage zur ausschließlichen Nutzung frei. Teilen Sie uns Termine und Gästezahl mit.',
   },
   destinationsPage: {
+    leadTitle: 'Fünf Orte, fünf verschiedene Himmel',
+    leadP1: 'Diese fünf Ziele sind nicht austauschbar. Inari liegt am weitesten nördlich, an einem See, auf dessen sichtbarem Horizont kein Stadtlicht steht. Saariselkä liegt am Nordrand des Nationalparks Urho Kekkonen, und dort begann die Glasdach-Unterkunft. Rovaniemi hat die Flüge, Levi die Resort-Infrastruktur, Ylläs die Ruhe.',
+    leadP2: 'Jedes Profil unten nennt den Ankunftsflughafen und die Transferzeit, wie der Himmel dort wirklich ist — Horizont, Siedlungslicht, wie hoch der Bogen meist steht — und welche Villen in dieser Gegend liegen. Eine Häufigkeitszahl für Nordlichter pro Dorf veröffentlichen wir nicht, weil niemand eine pro Dorf misst.',
     destinationLabel: (i) => `Reiseziel 0${i + 1}`,
     readTheProfile: (name) => `${name}-Profil lesen`,
   },

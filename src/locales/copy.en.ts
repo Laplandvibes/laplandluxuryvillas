@@ -179,6 +179,9 @@ const en: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'What is in this collection',
+    leadP1: 'Eight rooms, not eight hotels. Every listing here is a specific room type inside a real property: a glass-roof cabin at Kakslauttanen, a cantilevered suite at Arctic TreeHouse, an aurora bubble on Lake Inari. That is the unit you actually book, so that is the unit we list.',
+    leadP2: 'Ratings on this site come from Google and belong to the whole property, never to the single room, and every card says so. The collection is deliberately short: five destinations, five build types, from glass roof to log estate, and it stops there rather than padding the list.',
     filters: { all: 'All', glassRoof: 'Glass-roof', logEstate: 'Log Estate', designerSuite: 'Designer Suite', alpineChalet: 'Alpine Chalet', lakeside: 'Lakeside' },
     noVillas: 'No villas in that category yet.',
     inquiryTitle: 'Don\'t see the right fit?',
@@ -196,6 +199,9 @@ const en: SiteCopy = {
     inquiryBody: 'Several of these properties release a multi-suite floor for exclusive use during shoulder weeks. Share your dates and headcount.',
   },
   destinationsPage: {
+    leadTitle: 'Five places, five different skies',
+    leadP1: 'These five destinations are not interchangeable. Inari sits furthest north, on a lake with no town light on the visible horizon. Saariselkä is on the northern fringe of Urho Kekkonen National Park and is where glass-roof accommodation started. Rovaniemi has the flights, Levi the resort infrastructure, Ylläs the quiet.',
+    leadP2: 'Each profile below gives the arrival airport and transfer time, what the sky is actually like there — the horizon, the settlement light, how high the arc tends to stand — and which of the villas sit in that area. We publish no aurora frequency figure per village, because nobody measures one per village.',
     destinationLabel: (i) => `Destination 0${i + 1}`,
     readTheProfile: (name) => `Read the ${name} profile`,
   },

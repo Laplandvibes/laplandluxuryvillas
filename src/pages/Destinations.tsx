@@ -33,6 +33,16 @@ export default function Destinations() {
         imageAlt="Wide cinematic Lapland twilight landscape with low fells and a frozen lake"
       />
 
+      {/* EDITORIAL LEAD — same COPY block the prerenderer harvests through
+          routes.json copyKey "destinationsPage", so reader and crawler get one text. */}
+      <section className="bg-[color:var(--color-deep-night)] pt-14 md:pt-20">
+        <div className="mx-auto max-w-3xl px-5 sm:px-7">
+          <h2 className="font-display text-2xl md:text-3xl text-[color:var(--color-bone)]">{c.destinationsPage.leadTitle}</h2>
+          <p className="mt-5 font-body text-[color:var(--color-bone)]/75 leading-relaxed">{c.destinationsPage.leadP1}</p>
+          <p className="mt-4 font-body text-[color:var(--color-bone)]/75 leading-relaxed">{c.destinationsPage.leadP2}</p>
+        </div>
+      </section>
+
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-5 sm:px-7 space-y-20 md:space-y-24">
           {getDestinations(lang).map((d, i) => (

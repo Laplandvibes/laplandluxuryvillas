@@ -88,6 +88,16 @@ export default function Villas() {
         imageAlt="A luxury Lapland villa set among tall green summer forest, floor-to-ceiling glass framing the sunlit trees"
       />
 
+      {/* EDITORIAL LEAD — same COPY block the prerenderer harvests through
+          routes.json copyKey "villasPage", so reader and crawler get one text. */}
+      <section className="bg-[color:var(--color-deep-night)] pt-14 md:pt-20">
+        <div className="mx-auto max-w-3xl px-5 sm:px-7">
+          <h2 className="font-display text-2xl md:text-3xl text-[color:var(--color-bone)]">{c.villasPage.leadTitle}</h2>
+          <p className="mt-5 font-body text-[color:var(--color-bone)]/75 leading-relaxed">{c.villasPage.leadP1}</p>
+          <p className="mt-4 font-body text-[color:var(--color-bone)]/75 leading-relaxed">{c.villasPage.leadP2}</p>
+        </div>
+      </section>
+
       {/* FILTER BAR */}
       <section className="bg-[color:var(--color-deep-night)] py-10 md:py-12 border-b border-[color:var(--color-mist)]/40">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">

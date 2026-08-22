@@ -180,6 +180,11 @@ export type SiteCopy = {
     }
   }
   villasPage: {
+    /** Editorial lead rendered above the grid AND harvested into the crawlable
+     *  body via routes.json copyKey — one text, both surfaces. */
+    leadTitle: string
+    leadP1: string
+    leadP2: string
     filters: { all: string; glassRoof: string; logEstate: string; designerSuite: string; alpineChalet: string; lakeside: string }
     noVillas: string
     inquiryTitle: string
@@ -191,6 +196,11 @@ export type SiteCopy = {
     inquiryBody: string
   }
   destinationsPage: {
+    /** Editorial lead rendered above the list AND harvested into the crawlable
+     *  body via routes.json copyKey — one text, both surfaces. */
+    leadTitle: string
+    leadP1: string
+    leadP2: string
     destinationLabel: (i: number) => string
     readTheProfile: (name: string) => string
   }

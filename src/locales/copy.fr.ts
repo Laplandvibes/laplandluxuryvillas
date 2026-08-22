@@ -172,6 +172,9 @@ const fr: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Ce que contient cette sélection',
+    leadP1: 'Huit chambres, pas huit hôtels. Chaque entrée ici est un type de chambre précis à l\'intérieur d\'un établissement réel : une cabane à toit de verre à Kakslauttanen, une suite en porte-à-faux à l\'Arctic TreeHouse, une bulle aurores sur le lac Inari. C\'est l\'unité que vous réservez vraiment, donc c\'est celle que nous listons.',
+    leadP2: 'Les notes de ce site viennent de Google et portent sur l\'établissement entier, jamais sur la chambre seule, et chaque fiche le précise. La sélection est courte à dessein : cinq destinations et cinq types de construction, du toit de verre au domaine en rondins, et elle s\'arrête là plutôt que de gonfler la liste.',
     filters: { all: 'Toutes', glassRoof: 'Toit de verre', logEstate: 'Domaine en rondins', designerSuite: 'Suite design', alpineChalet: 'Chalet alpin', lakeside: 'Au bord du lac' },
     noVillas: 'Aucune villa dans cette catégorie pour l’instant.',
     inquiryTitle: 'Vous ne trouvez pas le bon choix ?',
@@ -189,6 +192,9 @@ const fr: SiteCopy = {
     inquiryBody: 'Plusieurs de ces propriétés libèrent un étage de plusieurs suites en usage exclusif lors des semaines creuses. Indiquez-nous vos dates et le nombre de personnes.',
   },
   destinationsPage: {
+    leadTitle: 'Cinq lieux, cinq ciels différents',
+    leadP1: 'Ces cinq destinations ne sont pas interchangeables. Inari est la plus septentrionale, au bord d\'un lac dont l\'horizon visible ne porte aucune lumière de ville. Saariselkä borde le nord du parc national d\'Urho Kekkonen, et c\'est là qu\'est né l\'hébergement à toit de verre. Rovaniemi a les vols, Levi les infrastructures de station, Ylläs le calme.',
+    leadP2: 'Chaque profil ci-dessous donne l\'aéroport d\'arrivée et le temps de transfert, ce qu\'est réellement le ciel sur place — l\'horizon, la lumière des habitations, la hauteur habituelle de l\'arc — et quelles villas se trouvent dans cette zone. Nous ne publions aucun chiffre de fréquence des aurores par village, parce que personne n\'en mesure par village.',
     destinationLabel: (i) => `Destination 0${i + 1}`,
     readTheProfile: (name) => `Lire le profil de ${name}`,
   },

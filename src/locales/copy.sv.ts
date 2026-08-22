@@ -173,6 +173,9 @@ const sv: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Vad som ingår i den här samlingen',
+    leadP1: 'Åtta rum, inte åtta hotell. Varje post här är en bestämd rumstyp inne i en verklig anläggning: en glastakstuga på Kakslauttanen, en utskjutande svit på Arctic TreeHouse, en norrskensbubbla vid Enare träsk. Det är enheten du faktiskt bokar, så det är enheten vi listar.',
+    leadP2: 'Omdömena på den här sajten kommer från Google och gäller hela anläggningen, aldrig det enskilda rummet, och varje kort säger det. Samlingen är kort med flit: fem resmål och fem byggnadstyper, från glastak till timmerhus, och där slutar den i stället för att fylla ut listan.',
     filters: { all: 'Alla', glassRoof: 'Glastak', logEstate: 'Timmergård', designerSuite: 'Designsvit', alpineChalet: 'Fjällstuga', lakeside: 'Vid sjön' },
     noVillas: 'Inga villor i den här kategorin ännu.',
     inquiryTitle: 'Hittade du inte rätt alternativ?',
@@ -190,6 +193,9 @@ const sv: SiteCopy = {
     inquiryBody: 'Flera av dessa boenden frigör under mellansäsongerna ett våningsplan med flera sviter för exklusiv användning. Dela dina datum och ditt sällskap.',
   },
   destinationsPage: {
+    leadTitle: 'Fem platser, fem olika himlar',
+    leadP1: 'De här fem resmålen är inte utbytbara mot varandra. Enare ligger längst norrut, vid en sjö utan stadsljus på den synliga horisonten. Saariselkä ligger i norra utkanten av Urho Kekkonens nationalpark, och det var där glastaksboendet började. Rovaniemi har flygen, Levi resortens service, Ylläs tystnaden.',
+    leadP2: 'Varje profil nedan anger ankomstflygplats och transfertid, hur himlen faktiskt ser ut där — horisonten, ljuset från bebyggelse, hur högt bågen brukar stå — och vilka villor som ligger i området. Vi publicerar ingen frekvenssiffra för norrsken per by, eftersom ingen mäter någon per by.',
     destinationLabel: (i) => `Resmål 0${i + 1}`,
     readTheProfile: (name) => `Läs profilen för ${name}`,
   },

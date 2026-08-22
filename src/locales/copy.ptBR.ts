@@ -179,6 +179,9 @@ const ptBR: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'O que há nesta seleção',
+    leadP1: 'Oito quartos, não oito hotéis. Cada item desta lista é um tipo de quarto específico dentro de uma propriedade real: uma cabana de teto de vidro em Kakslauttanen, uma suíte em balanço no Arctic TreeHouse, uma bolha de aurora no lago Inari. Essa é a unidade que você realmente reserva, então é a unidade que listamos.',
+    leadP2: 'As avaliações deste site vêm do Google e se referem à propriedade inteira, nunca ao quarto isolado, e cada card diz isso. A seleção é curta de propósito: cinco destinos e cinco tipos de construção, do teto de vidro à propriedade de troncos, e para por aí em vez de encher a lista.',
     filters: { all: 'Todas', glassRoof: 'Teto de vidro', logEstate: 'Propriedade de troncos', designerSuite: 'Suíte de autor', alpineChalet: 'Chalé alpino', lakeside: 'À beira do lago' },
     noVillas: 'Ainda não há vilas nessa categoria.',
     inquiryTitle: 'Não encontrou o que procura?',
@@ -196,6 +199,9 @@ const ptBR: SiteCopy = {
     inquiryBody: 'Várias dessas propriedades liberam um andar de várias suítes para uso exclusivo em semanas de baixa temporada. Informe suas datas e o número de pessoas.',
   },
   destinationsPage: {
+    leadTitle: 'Cinco lugares, cinco céus diferentes',
+    leadP1: 'Estes cinco destinos não são intercambiáveis. Inari é o mais ao norte, à beira de um lago sem luz de cidade no horizonte visível. Saariselkä fica na borda norte do parque nacional Urho Kekkonen, e foi ali que começou a hospedagem de teto de vidro. Rovaniemi tem os voos, Levi a infraestrutura de resort, Ylläs o silêncio.',
+    leadP2: 'Cada perfil abaixo informa o aeroporto de chegada e o tempo de transfer, como o céu realmente é ali — o horizonte, a luz dos povoados, a que altura o arco costuma ficar — e quais villas ficam naquela área. Não publicamos nenhum número de frequência de aurora por vilarejo, porque ninguém mede um por vilarejo.',
     destinationLabel: (i) => `Destino 0${i + 1}`,
     readTheProfile: (name) => `Ler o perfil de ${name}`,
   },

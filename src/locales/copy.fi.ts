@@ -179,6 +179,9 @@ const fi: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Mitä tähän kokoelmaan kuuluu',
+    leadP1: 'Kahdeksan huonetta, ei kahdeksaa hotellia. Jokainen kohde tällä listalla on tietty huonetyyppi todellisen majoituskohteen sisällä: lasikattoinen mökki Kakslauttasella, ulokkeinen sviitti Arctic TreeHousessa, revontulikupla Inarijärvellä. Sen yksikön oikeasti varaat, joten sen me listaamme.',
+    leadP2: 'Arviot tällä sivustolla tulevat Googlesta ja koskevat koko majoituskohdetta, eivät yksittäistä huonetta, ja jokainen kortti kertoo sen. Kokoelma on tarkoituksella lyhyt: viisi kohdetta ja viisi rakennustyyppiä lasikatosta hirsihuvilaan, eikä listaa pidennetä täytteellä.',
     filters: { all: 'Kaikki', glassRoof: 'Lasikatto', logEstate: 'Hirsihuvila', designerSuite: 'Designer-sviitti', alpineChalet: 'Tunturichalet', lakeside: 'Rantakohde' },
     noVillas: 'Tässä kategoriassa ei ole vielä huviloita.',
     inquiryTitle: 'Etkö löydä oikeaa?',
@@ -196,6 +199,9 @@ const fi: SiteCopy = {
     inquiryBody: 'Useat näistä kohteista vapauttavat monisviittisen kerroksen yksinomaiseen käyttöön rauhallisempina viikkoina. Kerro päivämääräsi ja vieraslukumääräsi.',
   },
   destinationsPage: {
+    leadTitle: 'Viisi paikkaa, viisi erilaista taivasta',
+    leadP1: 'Nämä viisi kohdetta eivät ole vaihtokelpoisia keskenään. Inari on pohjoisin, järven rannalla, eikä näkyvällä horisontilla ole kaupungin valoja. Saariselkä on Urho Kekkosen kansallispuiston pohjoisreunalla, ja siitä lasikattomajoitus aikanaan alkoi. Rovaniemellä ovat lennot, Levillä hiihtokeskuksen palvelut, Ylläksellä hiljaisuus.',
+    leadP2: 'Jokainen alla oleva esittely kertoo saapumislentoaseman ja siirtymäajan, millainen taivas siellä oikeasti on — horisontti, asutuksen valot, kuinka korkealla kaari tyypillisesti seisoo — ja mitkä huvilat sijaitsevat alueella. Emme julkaise kylätason lukua revontulten esiintymistiheydestä, koska sellaista ei kylätasolla mitata.',
     destinationLabel: (i) => `Kohde 0${i + 1}`,
     readTheProfile: (name) => `Lue ${name}n profiili`,
   },

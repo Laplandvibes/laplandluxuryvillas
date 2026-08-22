@@ -179,6 +179,9 @@ const es: SiteCopy = {
     },
   },
   villasPage: {
+    leadTitle: 'Qué contiene esta selección',
+    leadP1: 'Ocho habitaciones, no ocho hoteles. Cada entrada de esta lista es un tipo de habitación concreto dentro de un establecimiento real: una cabaña de techo de cristal en Kakslauttanen, una suite en voladizo en Arctic TreeHouse, una burbuja de auroras en el lago Inari. Esa es la unidad que usted reserva de verdad, así que esa es la que listamos.',
+    leadP2: 'Las valoraciones de este sitio proceden de Google y se refieren al establecimiento entero, nunca a la habitación suelta, y cada ficha lo indica. La selección es corta a propósito: cinco destinos y cinco tipos de construcción, del techo de cristal a la finca de troncos, y ahí se detiene en lugar de rellenar la lista.',
     filters: { all: 'Todas', glassRoof: 'Techo de cristal', logEstate: 'Propiedad de troncos', designerSuite: 'Suite de autor', alpineChalet: 'Chalet alpino', lakeside: 'Junto al lago' },
     noVillas: 'Todavía no hay villas en esa categoría.',
     inquiryTitle: '¿No encuentra lo que busca?',
@@ -196,6 +199,9 @@ const es: SiteCopy = {
     inquiryBody: 'Varias de estas propiedades liberan una planta de varias suites para uso exclusivo en semanas de temporada media. Indíquenos sus fechas y el número de personas.',
   },
   destinationsPage: {
+    leadTitle: 'Cinco lugares, cinco cielos distintos',
+    leadP1: 'Estos cinco destinos no son intercambiables. Inari es el más septentrional, junto a un lago sin luz de ciudad en el horizonte visible. Saariselkä está en el borde norte del parque nacional Urho Kekkonen, y allí empezó el alojamiento de techo de cristal. Rovaniemi tiene los vuelos, Levi la infraestructura de estación, Ylläs el silencio.',
+    leadP2: 'Cada perfil de abajo indica el aeropuerto de llegada y el tiempo de traslado, cómo es realmente el cielo allí — el horizonte, la luz de los núcleos habitados, a qué altura suele situarse el arco — y qué villas quedan en esa zona. No publicamos ninguna cifra de frecuencia de auroras por pueblo, porque nadie mide una por pueblo.',
     destinationLabel: (i) => `Destino 0${i + 1}`,
     readTheProfile: (name) => `Leer el perfil de ${name}`,
   },
