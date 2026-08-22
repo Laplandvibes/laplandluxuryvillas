@@ -143,16 +143,37 @@ export default function NotFound({
   const dark = variant === 'dark'
 
   // Tab title + robots noindex, without depending on the site's head library.
+  //
+  // 2026-08-13: index.html ships a static <meta name="robots" content="index,
+  // follow, …"> on 19 of 27 sites, and the SPA fallback serves that shell with
+  // HTTP 200 for EVERY unknown path — so a nonexistent URL arrives advertising
+  // itself as indexable. Appending a second robots meta left two contradictory
+  // tags in the head; Google resolves that in favour of the most restrictive
+  // one, so noindex did win, but only after JS ran. Rewrite the existing tag in
+  // place instead of adding a rival, and restore its previous value on unmount
+  // so a client-side route change back to a real page keeps its own directives.
   useEffect(() => {
     const prevTitle = document.title
     document.title = `404: ${siteName}`
-    const meta = document.createElement('meta')
-    meta.setAttribute('name', 'robots')
+
+    const existing = document.head.querySelector<HTMLMetaElement>('meta[name="robots"]')
+    const prevContent = existing ? existing.getAttribute('content') : null
+    const meta = existing ?? document.createElement('meta')
+    if (!existing) {
+      meta.setAttribute('name', 'robots')
+      document.head.appendChild(meta)
+    }
     meta.setAttribute('content', 'noindex')
-    document.head.appendChild(meta)
+
     return () => {
       document.title = prevTitle
-      meta.remove()
+      if (!existing) {
+        meta.remove()
+      } else if (prevContent === null) {
+        existing.removeAttribute('content')
+      } else {
+        existing.setAttribute('content', prevContent)
+      }
     }
   }, [siteName])
 
