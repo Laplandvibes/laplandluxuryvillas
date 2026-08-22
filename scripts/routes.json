@@ -49,21 +49,21 @@
     "path": "/privacy",
     "fallbackTitle": "Privacy | LaplandLuxuryVillas",
     "harvestFiles": [
-      "../shared/Legal/PrivacyContent.tsx"
+      "src/shared/Legal/PrivacyContent.tsx"
     ]
   },
   {
     "path": "/terms",
     "fallbackTitle": "Terms | LaplandLuxuryVillas",
     "harvestFiles": [
-      "../shared/Legal/TermsContent.tsx"
+      "src/shared/Legal/TermsContent.tsx"
     ]
   },
   {
     "path": "/cookie-policy",
     "fallbackTitle": "Cookie Policy | LaplandLuxuryVillas",
     "harvestFiles": [
-      "../shared/Legal/CookieContent.tsx"
+      "src/shared/Legal/CookieContent.tsx"
     ]
   },
   {
