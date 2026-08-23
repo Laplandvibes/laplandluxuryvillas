@@ -61,7 +61,7 @@ export interface Villa {
    */
   bedrooms?: number
   sleeps: number
-  /** External Hotels.com search URL via go.lv (already built in lib/affiliate). */
+  /** External lodging search URL via go.lv (already built in lib/affiliate). */
   bookingUrl?: string
   /** Treat as "private enquiry" — no public listing, route to /private-inquiry. */
   inquiryOnly?: boolean

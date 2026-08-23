@@ -2,7 +2,7 @@
 // Worker resolves per-site CJ Website ID from the Referer header.
 // Spec: "LaplandVibes Affiliate System — Developer Handoff" (2026-04-25).
 //
-// LaplandLuxuryVillas tilt: every Hotels.com search defaults to the city/region
+// LaplandLuxuryVillas tilt: every lodging search defaults to the city/region
 // where the *premium* inventory concentrates. SIDs are snake_case with no
 // domain prefix (Worker injects the domain from Referer for CJ attribution).
 
