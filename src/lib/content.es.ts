@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Recogida desde el aeropuerto regional directamente al helipuerto de tu villa: sin traslado por carretera.',
       copy: [
         'Se usa con mayor frecuencia para las llegadas a las fincas privadas de troncos junto al lago Inari. La aeronave es el mismo AS350 de los vuelos de auroras; un solo trayecto dura entre 20 y 45 minutos.',
-        'Máximo cinco pasajeros más equipaje. El operador ajusta la recogida a la entrada en la villa y a la ventana de luz diurna: en pleno invierno el sol se pone a las 15:00.',
+        'Máximo cinco pasajeros más equipaje. El operador ajusta la recogida a la entrada en la villa y a la ventana de luz diurna, que en pleno invierno son solo unas horas de penumbra en torno al mediodía: en la latitud de Inari el sol no llega a salir.',
       ],
       available: 'Rovaniemi, Ivalo → fincas del lago Inari',
     },

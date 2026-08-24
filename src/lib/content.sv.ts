@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Upphämtning från den regionala flygplatsen direkt till din villas landningsplats, ingen vägtransfer.',
       copy: [
         'Används oftast för ankomster till de privata strandnära timmergårdarna vid Enaresjön. Farkosten är samma AS350 som används för norrskensflygningarna; en sträcka tar 20 till 45 minuter.',
-        'Högst fem passagerare + bagage. Operatören stämmer av upphämtningen mot villans incheckning och dagsljusfönstret, mitt i vintern går solen ner redan klockan 15:00.',
+        'Högst fem passagerare + bagage. Operatören stämmer av upphämtningen mot villans incheckning och dagsljusfönstret, som mitt i vintern bara är några skymningstimmar kring middagstid — på Inaris breddgrad går solen inte upp alls.',
       ],
       available: 'Rovaniemi, Ivalo → gårdarna vid Enaresjön',
     },

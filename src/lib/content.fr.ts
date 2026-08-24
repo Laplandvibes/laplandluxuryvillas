@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Prise en charge depuis l\'aéroport régional directement vers l\'hélisurface de votre villa, sans transfert routier.',
       copy: [
         'Utilisé le plus souvent pour les arrivées vers les domaines en rondins privés au bord du lac Inari. L\'appareil est le même AS350 que celui des vols auroraux ; un seul secteur prend 20 à 45 minutes.',
-        'Maximum cinq passagers + bagages. L\'opérateur accorde la prise en charge à l\'enregistrement de la villa et à la fenêtre de lumière du jour, au cœur de l\'hiver, le soleil se couche dès 15 h.',
+        'Maximum cinq passagers + bagages. L\'opérateur accorde la prise en charge à l\'enregistrement de la villa et à la fenêtre de lumière du jour, qui au cœur de l\'hiver se réduit à quelques heures de crépuscule autour de midi : à la latitude d\'Inari, le soleil ne se lève pas du tout.',
       ],
       available: 'Rovaniemi, Ivalo → domaines du lac Inari',
     },

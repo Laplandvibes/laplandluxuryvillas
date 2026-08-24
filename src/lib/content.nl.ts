@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Oppikken vanaf de regionale luchthaven rechtstreeks naar het landingsplatform van uw villa, geen wegtransfer.',
       copy: [
         'Het vaakst gebruikt voor aankomsten bij de private blokhuislandgoederen aan het Inarimeer. Het toestel is dezelfde AS350 die voor de noorderlichtvluchten wordt gebruikt; één sector duurt 20 tot 45 minuten.',
-        'Maximaal vijf passagiers + bagage. De exploitant stemt het oppikken af op de incheck van de villa en het daglichtvenster, in het diepst van de winter gaat de zon al om 15:00 uur onder.',
+        'Maximaal vijf passagiers + bagage. De exploitant stemt het oppikken af op de incheck van de villa en het daglichtvenster, dat midden in de winter maar een paar schemeruren rond het middaguur is — op de breedte van Inari komt de zon helemaal niet op.',
       ],
       available: 'Rovaniemi, Ivalo → landgoederen aan het Inarimeer',
     },

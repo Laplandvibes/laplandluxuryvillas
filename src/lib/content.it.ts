@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Sollevamento dall’aeroporto regionale direttamente alla piazzola della vostra villa: niente transfer su strada.',
       copy: [
         'Usato piu spesso per gli arrivi alle tenute private di tronchi in riva al lago Inari. Il velivolo e lo stesso AS350 usato per i voli aurora; un singolo settore richiede dai 20 ai 45 minuti.',
-        'Massimo cinque passeggeri + bagagli. L’operatore accorda il sollevamento al check-in della villa e alla finestra di luce diurna: nel cuore dell’inverno il sole tramonta gia alle 15:00.',
+        'Massimo cinque passeggeri + bagagli. L’operatore accorda il sollevamento al check-in della villa e alla finestra di luce diurna, che nel cuore dell’inverno è solo qualche ora di crepuscolo attorno a mezzogiorno: alla latitudine di Inari il sole non sorge affatto.',
       ],
       available: 'Rovaniemi, Ivalo → tenute del lago Inari',
     },

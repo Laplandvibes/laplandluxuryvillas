@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Aufnahme vom Regionalflughafen direkt zum Landeplatz Ihrer Villa, kein Straßentransfer.',
       copy: [
         'Am häufigsten genutzt für Ankünfte zu den privaten Blockhaus-Anwesen am Ufer des Inarisees. Das Fluggerät ist derselbe AS350, der für die Polarlichtflüge eingesetzt wird; ein einzelner Abschnitt dauert 20–45 Minuten.',
-        'Maximal fünf Passagiere + Gepäck. Der Betreiber stimmt die Aufnahme auf das Check-in der Villa und das Tageslichtfenster ab, im tiefsten Winter geht die Sonne bereits um 15:00 Uhr unter.',
+        'Maximal fünf Passagiere + Gepäck. Der Betreiber stimmt die Aufnahme auf das Check-in der Villa und das Tageslichtfenster ab, das im Hochwinter nur wenige Dämmerstunden um die Mittagszeit umfasst — auf der Breite von Inari geht die Sonne gar nicht auf.',
       ],
       available: 'Rovaniemi, Ivalo → Anwesen am Inarisee',
     },

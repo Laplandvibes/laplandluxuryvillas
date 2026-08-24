@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Embarque a partir do aeroporto regional direto para o heliponto da sua villa, sem transfer rodoviário.',
       copy: [
         'Usado com mais frequência para chegadas às propriedades de madeira privativas à beira do Lago Inari. A aeronave é o mesmo AS350 usado nos voos de aurora; um único trecho leva de 20 a 45 minutos.',
-        'Máximo de cinco passageiros + bagagem. O operador ajusta o embarque ao check-in da villa e à janela de luz do dia, no auge do inverno, o sol se põe às 15h.',
+        'Máximo de cinco passageiros + bagagem. O operador ajusta o embarque ao check-in da villa e à janela de luz do dia, que no auge do inverno é apenas algumas horas de penumbra em torno do meio-dia — na latitude de Inari o sol não chega a nascer.',
       ],
       available: 'Rovaniemi, Ivalo → propriedades do Lago Inari',
     },
