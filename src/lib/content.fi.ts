@@ -133,7 +133,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Pohjois-Suomen luksusrevontulikeskus, Kakslauttanen, Star Arctic ja Urho Kekkosen villi reuna.',
       copy: [
-        'Saariselkä sijaitsee Urho Kekkosen kansallispuiston, yhden Suomen laajimmista erämaa-alueista, pohjoisreunalla, ja se on kylä joka määritteli lasikattoisen revontulimajoituksen. Suurin osa maan tunnetuimmista lasimökeistä (Kakslauttanen, Star Arctic, Northern Lights Village) on 10 kilometrin säteellä kylästä.',
+        'Saariselkä sijaitsee Urho Kekkosen kansallispuiston, yhden Suomen laajimmista erämaa-alueista, pohjoisreunalla, ja se on kylä, joka määritteli lasikattoisen revontulimajoituksen. Suurin osa maan tunnetuimmista lasimökeistä (Kakslauttanen, Star Arctic, Northern Lights Village) on 10 kilometrin säteellä kylästä.',
         'Itse kylä on pieni ja kävellen kierrettävä: yksi pääraitti, muutama ravintola ja suora yhteys kansallispuistoon. Ivalon lentoasemalle on 27 kilometriä eli noin puoli tuntia yksityiskuljetuksella, ja se palvelee sekä reittiliikennettä että yksityiskoneita.',
       ],
       highlights: [
@@ -143,7 +143,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Ivalon lentoasema, yksityislentokelpoinen, 30 min kuljetus',
       ],
       arrival: 'Ivalo (IVL), 27 km, noin 30 min yksityiskuljetuksella',
-      auroraNote: 'Sisämaan havumetsää, jossa ei ole asutuksen valoja kymmeniin kilometreihin mihinkään suuntaan. Tunturit antavat korkean ja avoimen horisontin, mikä ratkaisee niinä öinä kun kaari jää matalalle pohjoiseen.',
+      auroraNote: 'Sisämaan havumetsää, jossa ei ole asutuksen valoja kymmeniin kilometreihin mihinkään suuntaan. Tunturit antavat korkean ja avoimen horisontin, mikä ratkaisee niinä öinä, kun kaari jää matalalle pohjoiseen.',
     },
     'inari': {
       position: 'Pohjoisin kohteemme, jossa revontulia havaitaan noin kolmena yönä neljästä. Saamelaisten sydänmaa, Inarijärvi, pimeät taivaat.',
@@ -202,7 +202,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Noin 300 km hoidettua latua, siitä yli 30 km valaistuna',
       ],
       arrival: 'Kittilä (KTT), 40 km, noin 45 min yksityiskuljetuksella',
-      auroraNote: 'Chalet’t sijaitsevat kansallispuistoa vasten eivätkä keskuksen keskellä, joten astut ovesta suoraan pimeään sen sijaan että ajaisit sitä etsimään.',
+      auroraNote: 'Chalet’t sijaitsevat kansallispuistoa vasten eivätkä keskuksen keskellä, joten astut ovesta suoraan pimeään sen sijaan, että ajaisit sitä etsimään.',
     },
   },
   experiences: {

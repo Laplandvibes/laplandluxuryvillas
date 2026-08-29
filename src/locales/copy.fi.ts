@@ -201,7 +201,7 @@ const fi: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Viisi paikkaa, viisi erilaista taivasta',
     leadP1: 'Nämä viisi kohdetta eivät ole vaihtokelpoisia keskenään. Inari on pohjoisin, järven rannalla, eikä näkyvällä horisontilla ole kaupungin valoja. Saariselkä on Urho Kekkosen kansallispuiston pohjoisreunalla, ja siitä lasikattomajoitus aikanaan alkoi. Rovaniemellä ovat lennot, Levillä hiihtokeskuksen palvelut, Ylläksellä hiljaisuus.',
-    leadP2: 'Jokainen alla oleva esittely kertoo saapumislentoaseman ja siirtymäajan, millainen taivas siellä oikeasti on — horisontti, asutuksen valot, kuinka korkealla kaari tyypillisesti seisoo — ja mitkä huvilat sijaitsevat alueella. Emme julkaise kylätason lukua revontulten esiintymistiheydestä, koska sellaista ei kylätasolla mitata.',
+    leadP2: 'Jokainen alla oleva esittely kertoo saapumislentoaseman ja siirtymäajan, millainen taivas siellä oikeasti on (horisontti, asutuksen valot, kuinka korkealla kaari tyypillisesti seisoo) ja mitkä huvilat sijaitsevat alueella. Emme julkaise kylätason lukua revontulten esiintymistiheydestä, koska sellaista ei kylätasolla mitata.',
     destinationLabel: (i) => `Kohde 0${i + 1}`,
     readTheProfile: (name) => `Lue ${name}n profiili`,
   },
@@ -235,7 +235,7 @@ const fi: SiteCopy = {
     fourReasons: 'Neljä syytä',
     h2: 'Lappi kesällä on erillinen paikka.',
     reasons: [
-      { title: 'Arkkitehtuuri muuttuu luonteeltaan.', body: 'Revontulia varten rakennetut lasikatot pitävät nyt katkeamatonta aurinkoa. Kattoikkuna sängyn yllä, aurinko järvellä, eikä syytä vetää verhoa, koska ei ole yötä jolta piiloutua.' },
+      { title: 'Arkkitehtuuri muuttuu luonteeltaan.', body: 'Revontulia varten rakennetut lasikatot pitävät nyt katkeamatonta aurinkoa. Kattoikkuna sängyn yllä, aurinko järvellä, eikä syytä vetää verhoa, koska ei ole yötä, jolta piiloutua.' },
       { title: 'Erämaasta tulee saavutettavaa.', body: 'Järvet sulavat, boreaalinen metsä avautuu, kanoottireitit ilmestyvät. Sama huvila johon pääsit moottorikelkalla helmikuussa on nyt viiden minuutin venematkan päässä laiturilta.' },
       { title: 'Sama talo, eri vuodenaika.', body: 'Kokoelman talot ovat kesällä samat kuin talvella. Lasikaton alla on yötön yö revontulien sijaan, järvet ovat sulia ja metsä auki. Hinta näkyy kunkin kohteen omalla varaussivulla, joten kauden eron näkee suoraan.' },
       { title: 'Ei jonoja, ei naapureita.', body: 'Lapissa on kesällä murto-osa talven väkimäärästä. Polku metsän halki ja tunturin näköalapaikka ovat käytännössä omasi.' },
@@ -246,7 +246,7 @@ const fi: SiteCopy = {
       lede: 'Samat talotyypit kuin talvikokoelmassa (lasikattomökit, järvenrantaiset hirsihuvilat, tunturichaletit, metsähuvilat), kuvattuna kesäkuun lopun yöttömän yön valossa, jotta näet tarinan toisenkin puoliskon.',
       cards: [
         { title: 'Lasikattomökki vihreässä', copy: 'Revontulten arkkitehtuuri kello 23 kultaisessa valossa, ympärillä rehevä metsä lumen sijaan.' },
-        { title: 'Järvenrantainen hirsihuvila', copy: 'Yksityinen poukama Inarinjärvellä, taas sulana: kanootti laiturilla ja savua nousemassa puulämmitteisestä saunasta.' },
+        { title: 'Järvenrantainen hirsihuvila', copy: 'Yksityinen poukama Inarijärvellä, taas sulana: kanootti laiturilla ja savua nousemassa puulämmitteisestä saunasta.' },
         { title: 'Designer-chalet tunturilla', copy: 'Tupasvilla ja niittykukat laskettelurinteen tilalla, saman panoraamalasin takana.' },
         { title: 'Moderni metsähuvila', copy: 'Konsolimainen puurakennus syvällä vihreässä boreaalisessa männikössä, kultainen yöttömän yön lämpö julkisivulla.' },
       ],
@@ -258,12 +258,12 @@ const fi: SiteCopy = {
       quoting: 'Tarjoamme parhaillaan kesän 2026 ja 2027 hintoja',
     },
     inquiryTitle: 'Tiedustele yöttömän yön matkaa.',
-    inquiryBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy mitä kesän kokoelmasta on vapaana.',
+    inquiryBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy, mitä kesän kokoelmasta on vapaana.',
   },
   inquiryPage: {
     eyebrow: 'Tiedustelulomake',
     h2: 'Kerro mitä mietit.',
-    intro: 'Viisi lyhyttä kenttää. Mitä tarkemmin kerrot mitä haluat ja mitä tarvitset, sitä hyödyllisempi lyhytlista on. Nimi ja sähköposti pysyvät vapaaehtoisina, ja vastaus menee siihen osoitteeseen, josta kirjoitat.',
+    intro: 'Viisi lyhyttä kenttää. Mitä tarkemmin kerrot, mitä haluat ja mitä tarvitset, sitä hyödyllisempi lyhytlista on. Nimi ja sähköposti pysyvät vapaaehtoisina, ja vastaus menee siihen osoitteeseen, josta kirjoitat.',
     fields: {
       headcount: 'Vieraita',
       tripIntent: 'Matkan tarkoitus',
@@ -303,7 +303,7 @@ const fi: SiteCopy = {
       {
         title: 'Miksi tämä kokoelma on olemassa',
         paragraphs: [
-          'Lapin luksusmajoitus on pieni maailma. Samat muutamat huvilat ja parikymmentä sviittiä toistuvat jokaisella varausalustalla, usein samoilla kuvapankkikuvilla ja samalla epämääräisellä hintahaarukalla. Kun ne ilmeisimmät reissut on jo tehty, kysymykset tarkentuvat: minkä huvilan itse oikeasti varaisit, mihin majoitat yhdeksänhenkisen perheen, mikä on se paikka josta kukaan ei kirjoita?',
+          'Lapin luksusmajoitus on pieni maailma. Samat muutamat huvilat ja parikymmentä sviittiä toistuvat jokaisella varausalustalla, usein samoilla kuvapankkikuvilla ja samalla epämääräisellä hintahaarukalla. Kun ne ilmeisimmät reissut on jo tehty, kysymykset tarkentuvat: minkä huvilan itse oikeasti varaisit, mihin majoitat yhdeksänhenkisen perheen, mikä on se paikka, josta kukaan ei kirjoita?',
           'Tämä sivusto on lyhyt, harkittu vastaus noihin kysymyksiin. Käsin valittu lista huviloista ja sviiteistä, jotka mielestämme ovat aidosti matkan arvoisia.',
         ],
       },
@@ -324,7 +324,7 @@ const fi: SiteCopy = {
             href: 'https://laplandvibes.com',
             post: ' -ekosysteemiä, toimituksellista keskusta ja Lapin matkasivustojen verkostoa. Tämä on se osa työstä, joka keskittyy Lapin omaleimaisimpiin huviloihin ja sviitteihin.',
           },
-          'Tiedustelusi päätyy yhteen postilaatikkoon ja siihen vastaa ihminen, ei chatbotti eikä ulkoistettu puhelinpalvelu. Jos jokin ei sovi tähän kokoelmaan, ryhmä on liian iso tai kohde sellainen jota emme kata, sanomme sen rehellisesti ja ohjaamme sinut mahdollisuuksien mukaan parempaan suuntaan.',
+          'Tiedustelusi päätyy yhteen postilaatikkoon ja siihen vastaa ihminen, ei chatbotti eikä ulkoistettu puhelinpalvelu. Jos jokin ei sovi tähän kokoelmaan, ryhmä on liian iso tai kohde sellainen, jota emme kata, sanomme sen rehellisesti ja ohjaamme sinut mahdollisuuksien mukaan parempaan suuntaan.',
         ],
       },
       {

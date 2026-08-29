@@ -23,7 +23,7 @@ const FI_DICT: FooterDict = {
   travelGuideKicker: 'Lapin matkaopas',
   about: {
     eyebrow: 'Tietoa LaplandVibesista',
-    body: 'Lopullinen opas Suomen Lappiin, revontulista yöttömään yöhön. Käsin valitut elämykset, paikalliset vinkit ja käytännön perustiedot arktisen matkasi suunnitteluun.',
+    body: 'Kattavin opas Suomen Lappiin, revontulista yöttömään yöhön. Käsin valitut elämykset, paikalliset vinkit ja käytännön perustiedot arktisen matkasi suunnitteluun.',
     badge: 'Riippumattomasti ylläpidetty · lähteet näkyvillä',
   },
   spottedError: {
