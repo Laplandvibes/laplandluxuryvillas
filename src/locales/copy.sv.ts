@@ -195,7 +195,7 @@ const sv: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Fem platser, fem olika himlar',
     leadP1: 'De här fem resmålen är inte utbytbara mot varandra. Enare ligger längst norrut, vid en sjö utan stadsljus på den synliga horisonten. Saariselkä ligger i norra utkanten av Urho Kekkonens nationalpark, och det var där glastaksboendet började. Rovaniemi har flygen, Levi resortens service, Ylläs tystnaden.',
-    leadP2: 'Varje profil nedan anger ankomstflygplats och transfertid, hur himlen faktiskt ser ut där — horisonten, ljuset från bebyggelse, hur högt bågen brukar stå — och vilka villor som ligger i området. Vi publicerar ingen frekvenssiffra för norrsken per by, eftersom ingen mäter någon per by.',
+    leadP2: 'Varje profil nedan anger ankomstflygplats och transfertid, hur himlen faktiskt ser ut där ( horisonten, ljuset från bebyggelse, hur högt bågen brukar stå ) och vilka villor som ligger i området. Vi publicerar ingen frekvenssiffra för norrsken per by, eftersom ingen mäter någon per by.',
     destinationLabel: (i) => `Resmål 0${i + 1}`,
     readTheProfile: (name) => `Läs profilen för ${name}`,
   },

@@ -201,7 +201,7 @@ const en: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Five places, five different skies',
     leadP1: 'These five destinations are not interchangeable. Inari sits furthest north, on a lake with no town light on the visible horizon. Saariselkä is on the northern fringe of Urho Kekkonen National Park and is where glass-roof accommodation started. Rovaniemi has the flights, Levi the resort infrastructure, Ylläs the quiet.',
-    leadP2: 'Each profile below gives the arrival airport and transfer time, what the sky is actually like there — the horizon, the settlement light, how high the arc tends to stand — and which of the villas sit in that area. We publish no aurora frequency figure per village, because nobody measures one per village.',
+    leadP2: 'Each profile below gives the arrival airport and transfer time, what the sky is actually like there ( the horizon, the settlement light, how high the arc tends to stand ) and which of the villas sit in that area. We publish no aurora frequency figure per village, because nobody measures one per village.',
     destinationLabel: (i) => `Destination 0${i + 1}`,
     readTheProfile: (name) => `Read the ${name} profile`,
   },

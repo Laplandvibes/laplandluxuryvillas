@@ -194,7 +194,7 @@ const fr: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Cinq lieux, cinq ciels différents',
     leadP1: 'Ces cinq destinations ne sont pas interchangeables. Inari est la plus septentrionale, au bord d\'un lac dont l\'horizon visible ne porte aucune lumière de ville. Saariselkä borde le nord du parc national d\'Urho Kekkonen, et c\'est là qu\'est né l\'hébergement à toit de verre. Rovaniemi a les vols, Levi les infrastructures de station, Ylläs le calme.',
-    leadP2: 'Chaque profil ci-dessous donne l\'aéroport d\'arrivée et le temps de transfert, ce qu\'est réellement le ciel sur place — l\'horizon, la lumière des habitations, la hauteur habituelle de l\'arc — et quelles villas se trouvent dans cette zone. Nous ne publions aucun chiffre de fréquence des aurores par village, parce que personne n\'en mesure par village.',
+    leadP2: 'Chaque profil ci-dessous donne l\'aéroport d\'arrivée et le temps de transfert, ce qu\'est réellement le ciel sur place ( l\'horizon, la lumière des habitations, la hauteur habituelle de l\'arc ) et quelles villas se trouvent dans cette zone. Nous ne publions aucun chiffre de fréquence des aurores par village, parce que personne n\'en mesure par village.',
     destinationLabel: (i) => `Destination 0${i + 1}`,
     readTheProfile: (name) => `Lire le profil de ${name}`,
   },

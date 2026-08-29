@@ -151,7 +151,7 @@ export const EXPERIENCES: Experience[] = [
     hook: 'Lift from the regional airport directly to your villa landing pad, no road transfer.',
     copy: [
       'Used most often for arrivals to the private lakeside log estates on Lake Inari. The aircraft is the same AS350 used for the aurora flights; a single sector takes 20–45 minutes.',
-      'Maximum five passengers + luggage. The operator times the lift to the villa check-in and the daylight window, which in midwinter is only a few hours of twilight around midday — at Inari’s latitude the sun does not rise at all.',
+      'Maximum five passengers + luggage. The operator times the lift to the villa check-in and the daylight window, which in midwinter is only a few hours of twilight around midday, at Inari’s latitude the sun does not rise at all.',
     ],
     available: 'Rovaniemi, Ivalo → Lake Inari estates',
     inquiryOnly: true,

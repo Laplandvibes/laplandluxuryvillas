@@ -266,7 +266,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Nosto alueen lentoasemalta suoraan huvilasi laskeutumispaikalle, ei maakuljetusta.',
       copy: [
         'Käytetään useimmiten saavuttaessa Inarijärven yksityisille rantojen hirsitiloille. Kone on sama AS350, jota revontulilennoilla käytetään; yksi sektori kestää 20–45 minuuttia.',
-        'Enintään viisi matkustajaa + matkatavarat. Operaattori ajoittaa noston huvilan sisäänkirjautumiseen ja valoisaan aikaan, joka on keskitalvella vain muutama hämärän tunti keskipäivän molemmin puolin — Inarin leveysasteella aurinko ei nouse lainkaan.',
+        'Enintään viisi matkustajaa + matkatavarat. Operaattori ajoittaa noston huvilan sisäänkirjautumiseen ja valoisaan aikaan, joka on keskitalvella vain muutama hämärän tunti keskipäivän molemmin puolin, Inarin leveysasteella aurinko ei nouse lainkaan.',
       ],
       available: 'Rovaniemi, Ivalo → Inarijärven tilat',
     },

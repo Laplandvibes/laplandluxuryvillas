@@ -201,7 +201,7 @@ const es: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Cinco lugares, cinco cielos distintos',
     leadP1: 'Estos cinco destinos no son intercambiables. Inari es el más septentrional, junto a un lago sin luz de ciudad en el horizonte visible. Saariselkä está en el borde norte del parque nacional Urho Kekkonen, y allí empezó el alojamiento de techo de cristal. Rovaniemi tiene los vuelos, Levi la infraestructura de estación, Ylläs el silencio.',
-    leadP2: 'Cada perfil de abajo indica el aeropuerto de llegada y el tiempo de traslado, cómo es realmente el cielo allí — el horizonte, la luz de los núcleos habitados, a qué altura suele situarse el arco — y qué villas quedan en esa zona. No publicamos ninguna cifra de frecuencia de auroras por pueblo, porque nadie mide una por pueblo.',
+    leadP2: 'Cada perfil de abajo indica el aeropuerto de llegada y el tiempo de traslado, cómo es realmente el cielo allí, el horizonte, la luz de los núcleos habitados, a qué altura suele situarse el arco, y qué villas quedan en esa zona. No publicamos ninguna cifra de frecuencia de auroras por pueblo, porque nadie mide una por pueblo.',
     destinationLabel: (i) => `Destino 0${i + 1}`,
     readTheProfile: (name) => `Leer el perfil de ${name}`,
   },

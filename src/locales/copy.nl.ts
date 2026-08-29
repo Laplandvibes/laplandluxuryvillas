@@ -195,7 +195,7 @@ const nl: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Vijf plekken, vijf verschillende luchten',
     leadP1: 'Deze vijf bestemmingen zijn niet onderling uitwisselbaar. Inari ligt het verst noordelijk, aan een meer zonder stadslicht op de zichtbare horizon. Saariselkä ligt aan de noordrand van nationaal park Urho Kekkonen en daar begon de glasdakaccommodatie. Rovaniemi heeft de vluchten, Levi de resortvoorzieningen, Ylläs de rust.',
-    leadP2: 'Elk profiel hieronder noemt de luchthaven van aankomst en de transfertijd, hoe de lucht daar werkelijk is — horizon, licht van bebouwing, hoe hoog de boog doorgaans staat — en welke villa\'s in dat gebied liggen. Een frequentiecijfer voor noorderlicht per dorp publiceren wij niet, want niemand meet er een per dorp.',
+    leadP2: 'Elk profiel hieronder noemt de luchthaven van aankomst en de transfertijd, hoe de lucht daar werkelijk is ( horizon, licht van bebouwing, hoe hoog de boog doorgaans staat ) en welke villa\'s in dat gebied liggen. Een frequentiecijfer voor noorderlicht per dorp publiceren wij niet, want niemand meet er een per dorp.',
     destinationLabel: (i) => `Bestemming 0${i + 1}`,
     readTheProfile: (name) => `Lees het profiel van ${name}`,
   },

@@ -201,7 +201,7 @@ const ptBR: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Cinco lugares, cinco céus diferentes',
     leadP1: 'Estes cinco destinos não são intercambiáveis. Inari é o mais ao norte, à beira de um lago sem luz de cidade no horizonte visível. Saariselkä fica na borda norte do parque nacional Urho Kekkonen, e foi ali que começou a hospedagem de teto de vidro. Rovaniemi tem os voos, Levi a infraestrutura de resort, Ylläs o silêncio.',
-    leadP2: 'Cada perfil abaixo informa o aeroporto de chegada e o tempo de transfer, como o céu realmente é ali — o horizonte, a luz dos povoados, a que altura o arco costuma ficar — e quais villas ficam naquela área. Não publicamos nenhum número de frequência de aurora por vilarejo, porque ninguém mede um por vilarejo.',
+    leadP2: 'Cada perfil abaixo informa o aeroporto de chegada e o tempo de transfer, como o céu realmente é ali ( o horizonte, a luz dos povoados, a que altura o arco costuma ficar ) e quais villas ficam naquela área. Não publicamos nenhum número de frequência de aurora por vilarejo, porque ninguém mede um por vilarejo.',
     destinationLabel: (i) => `Destino 0${i + 1}`,
     readTheProfile: (name) => `Ler o perfil de ${name}`,
   },

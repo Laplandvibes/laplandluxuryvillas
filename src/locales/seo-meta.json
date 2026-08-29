@@ -366,15 +366,15 @@
   },
   "private-inquiry": {
     "en": {
-      "title": "Private Enquiry — Lapland Villas and Suites",
+      "title": "Private Enquiry: Lapland Villas and Suites",
       "description": "Send one private enquiry: headcount, dates, preferences. A person reads it and replies within one working day with suggestions. No account, no public profile."
     },
     "fi": {
-      "title": "Yksityinen tiedustelu — Lapin huvilat ja sviitit",
+      "title": "Yksityinen tiedustelu: Lapin huvilat ja sviitit",
       "description": "Lähetä yksi yksityinen tiedustelu: henget, päivät, toiveet. Ihminen lukee sen ja vastaa yhden työpäivän kuluessa ehdotuksella. Ei tunnusta, ei julkista profiilia."
     },
     "de": {
-      "title": "Private Anfrage — Villen und Suiten in Lappland",
+      "title": "Private Anfrage: Villen und Suiten in Lappland",
       "description": "Senden Sie eine private Anfrage: Personenzahl, Daten, Wünsche. Ein Mensch liest sie und antwortet binnen eines Werktags mit Vorschlägen. Kein Konto, kein Profil."
     },
     "ja": {
@@ -382,11 +382,11 @@
       "description": "一通のお問い合わせを：人数、日程、ご希望。人が読み、1営業日以内にご提案をお返しします。アカウント登録も公開プロフィールもありません。"
     },
     "es": {
-      "title": "Consulta privada — villas y suites de Laponia",
+      "title": "Consulta privada: villas y suites de Laponia",
       "description": "Envía una consulta privada: huéspedes, fechas y preferencias. Una persona la lee y responde en un día laborable con sugerencias. Sin cuenta ni perfil público."
     },
     "pt-BR": {
-      "title": "Consulta privada — vilas e suítes da Lapônia",
+      "title": "Consulta privada: vilas e suítes da Lapônia",
       "description": "Envie uma consulta privada: hóspedes, datas e preferências. Uma pessoa lê e responde em um dia útil com sugestões. Sem cadastro, sem perfil público."
     },
     "zh-CN": {
@@ -394,23 +394,23 @@
       "description": "只需发送一份私人咨询：人数、日期与偏好。由真人阅读，并在一个工作日内回复建议。无需注册，也没有公开档案。"
     },
     "ko": {
-      "title": "비공개 문의 — 라플란드 빌라와 스위트",
+      "title": "비공개 문의: 라플란드 빌라와 스위트",
       "description": "비공개 문의 하나만 보내세요: 인원, 날짜, 선호. 사람이 읽고 영업일 하루 안에 제안을 담아 답장합니다. 계정도, 공개 프로필도 없습니다."
     },
     "fr": {
-      "title": "Demande privée — villas et suites de Laponie",
+      "title": "Demande privée: villas et suites de Laponie",
       "description": "Envoyez une demande privée : personnes, dates, préférences. Une personne la lit et répond sous un jour ouvré avec des suggestions. Sans compte ni profil public."
     },
     "it": {
-      "title": "Richiesta privata — ville e suite della Lapponia",
+      "title": "Richiesta privata: ville e suite della Lapponia",
       "description": "Invii una richiesta privata: ospiti, date, preferenze. Una persona la legge e risponde entro un giorno lavorativo con dei suggerimenti. Nessun account, nessun profilo."
     },
     "nl": {
-      "title": "Privéaanvraag — villa’s en suites in Lapland",
+      "title": "Privéaanvraag: villa’s en suites in Lapland",
       "description": "Stuur één privéaanvraag: personen, data, voorkeuren. Een mens leest die en antwoordt binnen één werkdag met suggesties. Geen account, geen publiek profiel."
     },
     "sv": {
-      "title": "Privat förfrågan — villor och sviter i Lappland",
+      "title": "Privat förfrågan: villor och sviter i Lappland",
       "description": "Skicka en privat förfrågan: sällskap, datum, önskemål. En människa läser den och svarar inom en arbetsdag med förslag. Inget konto, ingen offentlig profil."
     }
   },
@@ -421,11 +421,11 @@
     },
     "fi": {
       "title": "Tietosuojaseloste | LaplandLuxuryVillas",
-      "description": "Näin LaplandLuxuryVillas (ylläpitäjänä Lapeso Oy) käsittelee tietojasi: GDPR-yhteensopivasti, vain EU-käsittelijöillä — ja mitä yksityistiedustelulle tapahtuu."
+      "description": "Näin LaplandLuxuryVillas (ylläpitäjänä Lapeso Oy) käsittelee tietojasi: GDPR-yhteensopivasti, vain EU-käsittelijöillä, ja mitä yksityistiedustelulle tapahtuu."
     },
     "de": {
       "title": "Datenschutzerklärung | LaplandLuxuryVillas",
-      "description": "So verarbeitet LaplandLuxuryVillas (betrieben von Lapeso Oy) Ihre Daten: DSGVO-konform, nur EU-Auftragsverarbeiter — und was mit einer privaten Anfrage geschieht."
+      "description": "So verarbeitet LaplandLuxuryVillas (betrieben von Lapeso Oy) Ihre Daten: DSGVO-konform, nur EU-Auftragsverarbeiter, und was mit einer privaten Anfrage geschieht."
     },
     "ja": {
       "title": "プライバシーポリシー | LaplandLuxuryVillas",
@@ -461,7 +461,7 @@
     },
     "sv": {
       "title": "Integritetspolicy | LaplandLuxuryVillas",
-      "description": "Så hanterar LaplandLuxuryVillas (drivs av Lapeso Oy) dina uppgifter: GDPR-kompatibelt, endast EU-baserade behandlare — och vad som händer med en privat förfrågan."
+      "description": "Så hanterar LaplandLuxuryVillas (drivs av Lapeso Oy) dina uppgifter: GDPR-kompatibelt, endast EU-baserade behandlare, och vad som händer med en privat förfrågan."
     }
   },
   "terms": {

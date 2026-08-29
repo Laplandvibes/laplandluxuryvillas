@@ -201,7 +201,7 @@ const de: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Fünf Orte, fünf verschiedene Himmel',
     leadP1: 'Diese fünf Ziele sind nicht austauschbar. Inari liegt am weitesten nördlich, an einem See, auf dessen sichtbarem Horizont kein Stadtlicht steht. Saariselkä liegt am Nordrand des Nationalparks Urho Kekkonen, und dort begann die Glasdach-Unterkunft. Rovaniemi hat die Flüge, Levi die Resort-Infrastruktur, Ylläs die Ruhe.',
-    leadP2: 'Jedes Profil unten nennt den Ankunftsflughafen und die Transferzeit, wie der Himmel dort wirklich ist — Horizont, Siedlungslicht, wie hoch der Bogen meist steht — und welche Villen in dieser Gegend liegen. Eine Häufigkeitszahl für Nordlichter pro Dorf veröffentlichen wir nicht, weil niemand eine pro Dorf misst.',
+    leadP2: 'Jedes Profil unten nennt den Ankunftsflughafen und die Transferzeit, wie der Himmel dort wirklich ist ( Horizont, Siedlungslicht, wie hoch der Bogen meist steht ) und welche Villen in dieser Gegend liegen. Eine Häufigkeitszahl für Nordlichter pro Dorf veröffentlichen wir nicht, weil niemand eine pro Dorf misst.',
     destinationLabel: (i) => `Reiseziel 0${i + 1}`,
     readTheProfile: (name) => `${name}-Profil lesen`,
   },
