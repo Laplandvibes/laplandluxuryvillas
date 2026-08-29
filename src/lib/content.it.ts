@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La principale stazione sciistica della Finlandia. Chalet di lusso sul versante sud, ski-in / ski-out dalla gondola di Levi.',
       copy: [
         'Levi e la stazione di fell piu sviluppata della Lapponia, un completo villaggio di sport invernali con 44 piste e 26 impianti, due dei quali gondole. Il mercato del noleggio di chalet di design e diventato serio nell’ultimo decennio. La gondola va dal centro del villaggio alla vetta a 531 metri; sul versante sud sorgono gli chalet privati, e li apre una nuova seggiovia per la stagione 2026-2027.',
-        'La visibilita dell’aurora da Levi e rivolta a sud e suggestiva, cosa rara per la Lapponia, poiche lo skyline illuminato del villaggio entra a far parte della fotografia. Da abbinare a una o due notti piu a nord (Inari o Saariselkä) per una vera aurora wilderness, prima di tornare qui per lo sci.',
+        'La visibilita dell’aurora da Levi e rivolta a sud e suggestiva, cosa rara per la Lapponia, e lo skyline illuminato del villaggio entra a far parte della fotografia. Da abbinare a una o due notti piu a nord (Inari o Saariselkä) per una vera aurora wilderness, prima di tornare qui per lo sci.',
       ],
       highlights: [
         'Levin Iglut, igloo di vetro rivolti a sud sopra il villaggio di fell',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'Un volo notturno in elicottero di 45 minuti sopra lo strato di nubi, fino alle aurore stesse.',
       copy: [
-        'Operato dall’unico operatore di elicotteri della Finlandia certificato per il volo notturno VFR, da Rovaniemi e Ivalo. Il volo supera lo strato di nubi locale e gira all’interno dell’ovale aurorale attivo: una prospettiva impossibile da terra.',
+        'Operato da un operatore di elicotteri certificato per il volo notturno VFR, da Rovaniemi e Ivalo. Il volo supera lo strato di nubi locale e gira all’interno dell’ovale aurorale attivo: una prospettiva impossibile da terra.',
         'La fotografia a terra e inclusa su entrambi i lati del volo; la parte in volo e dedicata all’esperienza in se, non alla fotocamera. Massimo quattro passeggeri per AS350. Soggetto a finestra meteo: l’operatore segue le previsioni e avvisa il giorno prima.',
       ],
       available: 'Rovaniemi, Ivalo, ott–mar (dipende dal meteo)',

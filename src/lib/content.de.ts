@@ -42,12 +42,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Vierundzwanzig Glashütten, die auf nichts als Wald und das Polarlichtoval blicken.',
       copy: [
         'Inari liegt genau unter dem Polarlichtoval, auf dem Breitengrad, auf dem das Finnische Meteorologische Institut das Polarlicht in etwa drei von vier Nächten beobachtet. Aurora Village ist ein Anwesen mit 24 Hütten ohne Durchgangsverkehr und ohne benachbarte Dörfer am sichtbaren Horizont. Die Hütten sind für Privatsphäre verteilt, mit dem Bett unter dem Glas und dem Sofa darauf ausgerichtet.',
-        'Das hauseigene, von Sami geführte Restaurant bietet ein Degustationsmenü rund um Rentier, Saibling und Moltebeere. Polarlicht-Weckrufe werden von Hütte zu Hütte gefunkt, damit niemand die Nachbarvilla weckt.',
+        'Das hauseigene, samisch geführte Restaurant bietet ein Degustationsmenü rund um Rentier, Saibling und Moltebeere. Polarlicht-Weckrufe werden von Hütte zu Hütte gefunkt, damit niemand die Nachbarvilla weckt.',
       ],
       signature: [
         'Hütte mit Glasdach und Bett unter dem Scheitelpunkt',
         '24 Hütten auf einem 30 Hektar großen Anwesen, großzügig verteilt',
-        'Von Sami geführtes Restaurant vor Ort, jeden Abend Degustationsmenü',
+        'Samisch geführtes Restaurant vor Ort, jeden Abend Degustationsmenü',
         'Polarlicht-Weckruf über Funk in der Hütte',
         'Polarlicht an etwa 3 von 4 Nächten auf diesem Breitengrad (FMI)',
         'Kostenloser privater Schneeschuhpfad ab dem Anwesen',
@@ -155,7 +155,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Aurora Village, eigens errichtetes 30 Hektar großes Glashütten-Anwesen',
         'Wilderness Hotel Nellim, Polarlicht-Kuppeln am Ostufer des Inarisees',
         'Sami-Museum SIIDA + ganzjährige Kulturprogramme',
-        'Inarisee, Finnlands drittgrößter See, rund 3 000 Inseln',
+        'Inarisee, Finnlands drittgrößter See, rund 3.000 Inseln',
       ],
       arrival: 'Ivalo (IVL), 40 km, etwa 40 Min. per privatem Transfer',
       auroraNote: 'Unser nördlichstes Ziel und dasjenige, bei dem das Polarlicht am häufigsten direkt über dem Kopf steht statt tief im Norden. Der Inarisee gibt einen ununterbrochenen Horizont, auf dem kein Ortslicht liegt.',
@@ -175,10 +175,10 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       auroraNote: 'Unser südlichstes Ziel und das einzige mit Stadtlicht am Horizont, deshalb erscheint das Polarlicht hier seltener und ist schwerer zu sehen, wenn es kommt. Am besten kombiniert mit mindestens einer Nacht in einem Fjelldorf weiter nördlich.',
     },
     'levi': {
-      position: 'Finnlands führendes Skigebiet. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi.',
+      position: 'Finnlands führendes Skizentrum. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi.',
       copy: [
-        'Levi ist das am besten erschlossene Fjell-Resort Lapplands, ein komplettes Wintersportdorf mit 44 Pisten und 26 Liften, davon zwei Gondeln. Der Markt für Designer-Chaletvermietung ist hier im letzten Jahrzehnt ernsthaft gewachsen. Die Gondel fährt vom Dorfzentrum auf den 531 Meter hohen Gipfel; am Südhang liegen die privaten Chalets, und für die Saison 2026-2027 kommt dort ein neuer Sessellift dazu.',
-        'Die Polarlichtsicht von Levi aus ist nach Süden gerichtet und dramatisch, selten für Lappland, da die beleuchtete Dorfsilhouette Teil des Fotos wird. Am besten kombiniert mit ein oder zwei Nächten weiter nördlich (Inari oder Saariselkä) für echte Wildnis-Polarlichter, bevor man zum Skifahren hierher zurückkehrt.',
+        'Levi ist das am besten erschlossene Fjell-Resort Lapplands, ein komplettes Wintersportdorf mit 44 Pisten und 26 Liften, davon zwei Gondeln. Der Markt für Designer-Chaletvermietung ist hier im letzten Jahrzehnt deutlich gewachsen. Die Gondel fährt vom Dorfzentrum auf den 531 Meter hohen Gipfel; am Südhang liegen die privaten Chalets, und für die Saison 2026-2027 kommt dort ein neuer Sessellift dazu.',
+        'Die Polarlichtsicht von Levi aus ist nach Süden gerichtet und dramatisch, in Lappland selten, sodass die beleuchtete Dorfsilhouette Teil des Fotos wird. Am besten kombiniert mit ein oder zwei Nächten weiter nördlich (Inari oder Saariselkä) für echte Wildnis-Polarlichter, bevor man zum Skifahren hierher zurückkehrt.',
       ],
       highlights: [
         'Levin Iglut, nach Süden ausgerichtete Glasiglus über dem Fjelldorf',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'Ein 45-minütiger Nachthubschrauberflug über die Wolkendecke zu den Polarlichtern selbst.',
       copy: [
-        'Betrieben vom einzigen nach Nacht-VFR zertifizierten Hubschrauberbetreiber Finnlands aus Rovaniemi und Ivalo. Der Flug durchstößt die lokale Wolkendecke und kreist innerhalb des aktiven Polarlichtovals, eine vom Boden aus unmögliche Perspektive.',
+        'Betrieben von einem nach Nacht-VFR zertifizierten Hubschrauberbetreiber ab Rovaniemi und Ivalo. Der Flug durchstößt die lokale Wolkendecke und kreist innerhalb des aktiven Polarlichtovals, eine vom Boden aus unmögliche Perspektive.',
         'Bodenfotografie ist auf beiden Seiten des Fluges inbegriffen; der Flugteil selbst ist dem Erlebnis gewidmet, nicht der Kamera. Maximal vier Passagiere pro AS350. Wetterfensterabhängig: der Betreiber verfolgt die Prognose und benachrichtigt am Vortag.',
       ],
       available: 'Rovaniemi, Ivalo, Okt.–März (wetterabhängig)',
@@ -231,9 +231,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Jede Villa der Kollektion, ganzjährig',
     },
     'private-husky-safari': {
-      hook: 'Ihr eigenes Schlittengespann, Ihr eigener Zwinger-Guide, hinein in den borealen Wald im ersten Licht.',
+      hook: 'Ihr eigenes Schlittengespann, Ihr eigener Musher, hinein in den borealen Wald im ersten Licht.',
       copy: [
-        'Ein privates Gespann aus sechzehn Schlittenhunden und ein Zwinger-Guide. Die Route führt in das Arbeitstrailnetz eines ernstzunehmenden Schlittenhundezwingers, typischerweise 35 km, mit einer Feuerpause für heißen Preiselbeersaft und gegrillte Wurst auf halber Strecke.',
+        'Ein privates Gespann aus sechzehn Schlittenhunden und ein Musher. Die Route führt in das Wegenetz einer ernstzunehmenden Huskyfarm, typischerweise 35 km, mit einer Feuerpause für heißen Preiselbeersaft und gegrillte Wurst auf halber Strecke.',
         'Sie lenken Ihren eigenen Schlitten (zuvor eine 20-minütige Einweisung). Wolloveralls, Fäustlinge und arktische Stiefel werden gestellt. Gruppe von zwei bis sechs Personen, keine geteilten Gruppen, nie mit Fremden zusammengelegt.',
       ],
       available: 'Rovaniemi, Levi, Saariselkä, Dez.–Apr.',
@@ -247,9 +247,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Saariselkä, Inari, Levi, Dez.–Apr.',
     },
     'private-reindeer-sami-evening': {
-      hook: 'Rentierschlittenfahrt auf einer Arbeitsfarm, danach ein Abend in einer privaten Kota mit einem samischen Gastgeber.',
+      hook: 'Rentierschlittenfahrt auf einem bewirtschafteten Rentierhof, danach ein Abend in einer privaten Kota mit einem samischen Gastgeber.',
       copy: [
-        'Zwei Stunden Rentierschlittenfahrt auf einer aktiven Herdenfarm, gefolgt von einem privaten Abend in einer beheizten Kota (Tipi mit offenem Feuer). Der Gastgeber ist ein samischer Rentierzüchter, der die Farm führt, das Gespräch, kein Skript, ist das Erlebnis.',
+        'Zwei Stunden Rentierschlittenfahrt auf einem bewirtschafteten Rentierhof, gefolgt von einem privaten Abend in einer beheizten Kota (Tipi mit offenem Feuer). Der Gastgeber ist ein samischer Rentierzüchter, der die Farm führt, das Gespräch, kein Skript, ist das Erlebnis.',
         'Zum Abendessen sautiertes Rentier mit Kartoffelpüree und Preiselbeeren, über offenem Feuer zubereitet. Geschichten über die Herde, das Wanderjahr und die Joik-Gesangstradition. Maximal zwölf Gäste.',
       ],
       available: 'Inari, Saariselkä, ganzjährig (Schlittenfahrt Dez.–März)',

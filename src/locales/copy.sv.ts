@@ -175,7 +175,7 @@ const sv: SiteCopy = {
   villasPage: {
     leadTitle: 'Vad som ingår i den här samlingen',
     leadP1: 'Åtta rum, inte åtta hotell. Varje post här är en bestämd rumstyp inne i en verklig anläggning: en glastakstuga på Kakslauttanen, en utskjutande svit på Arctic TreeHouse, en norrskensbubbla vid Enare träsk. Det är enheten du faktiskt bokar, så det är enheten vi listar.',
-    leadP2: 'Omdömena på den här sajten kommer från Google och gäller hela anläggningen, aldrig det enskilda rummet, och varje kort säger det. Samlingen är kort med flit: fem resmål och fem byggnadstyper, från glastak till timmerhus, och där slutar den i stället för att fylla ut listan.',
+    leadP2: 'Omdömena på den här sajten kommer från Google och gäller hela anläggningen, aldrig det enskilda rummet, och varje kort säger det. Samlingen är kort med flit: fem resmål och fyra byggnadstyper, från glastak till fjällstuga, och där slutar den i stället för att fylla ut listan.',
     filters: { all: 'Alla', glassRoof: 'Glastak', logEstate: 'Timmergård', designerSuite: 'Designsvit', alpineChalet: 'Fjällstuga', lakeside: 'Vid sjön' },
     noVillas: 'Inga villor i den här kategorin ännu.',
     inquiryTitle: 'Hittade du inte rätt alternativ?',
@@ -185,7 +185,7 @@ const sv: SiteCopy = {
     intro: {
       p1Pre: '"Svit" täcker i Lappland två skilda arkitektoniska val, båda värda att känna till. Det första är ',
       designerSuite: 'designsviten',
-      p1Mid: ', där en ledande finsk studio (Studio Puisto, ALA, Avanto) har byggt ett sovrum kring en enda utsikt. Det andra är ',
+      p1Mid: ', där en finsk arkitektstudio som Studio Puisto har byggt ett sovrum kring en enda utsikt. Det andra är ',
       glassRoof: 'stugan med glastak',
       p1Post: ', där taket är den viktigaste detaljen. Båda finns med nedan.',
     },
@@ -221,7 +221,7 @@ const sv: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Dagar utan solnedgång i Rovaniemi, längre norrut fler' },
+      { value: '32', label: 'Dagar utan solnedgång i Rovaniemi, längre norrut fler' },
       { value: '24 h', label: 'Dagsljus på toppen, 21 juni' },
       { value: '+18 °C', label: 'Snitt på dagen i slutet av juni' },
       { value: '50 %', label: 'Lägre efterfrågan än norrskenssäsongen' },
@@ -237,7 +237,7 @@ const sv: SiteCopy = {
     summerCollection: {
       eyebrow: 'Sommarkollektionen',
       h2: 'Fyra villakaraktärer, i sommarljus.',
-      lede: 'Samma arkitektoniska kategorier som vinterkollektionen, stugor med glastak, strandnära timmergårdar, fjällstugor, skogsvillor, fotograferade i midnattssolens ljus i slutet av juni för att visa andra halvan av berättelsen.',
+      lede: 'Samma arkitektoniska kategorier som vinterkollektionen, stugor med glastak, strandnära timmergårdar, fjällstugor, skogsvillor, visade i midnattssolens ljus i slutet av juni för att visa andra halvan av berättelsen.',
       cards: [
         { title: 'Stuga med glastak i grönskan', copy: 'Norrskensarkitekturen i det gyllene ljuset klockan 23, omgiven av frodig skog i stället för snö.' },
         { title: 'Strandnära timmergård', copy: 'En privat vik vid Enaresjön, upptöad, en kanot vid bryggan, rök från den vedeldade bastun.' },
@@ -249,7 +249,7 @@ const sv: SiteCopy = {
       h2: 'En kommentar om att planera en midnattssolsresa.',
       p1: 'Dagarna är korta och villorna är privatägda, kalendern fylls därför efter tillfälle snarare än jämnt. Det lönar sig att fråga tidigt.',
       p2: 'Rätt tidpunkt att fråga om en viss juni ligger mellan januari och mars samma år. Senare förfrågningar är fortfarande värda besväret, platser frigörs, men det översta skiktet av utbudet är ofta borta tidigare.',
-      quoting: 'Just nu offererar vi sommaren 2026 + 2027',
+      quoting: 'Just nu besvarar vi förfrågningar för somrarna 2026 och 2027',
     },
     inquiryTitle: 'Fråga om en midnattssolsresa.',
     inquiryBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål. Ett svar kommer inom en arbetsdag med tillgängligheten i hela sommarkollektionen.',

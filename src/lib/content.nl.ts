@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Het toonaangevende skiresort van Finland. Luxechalets op de zuidhelling, ski-in / ski-out vanaf de gondel van Levi.',
       copy: [
         'Levi is het meest ontwikkelde fjeldresort van Lapland, een compleet wintersportdorp met 44 pistes en 26 liften, waarvan twee gondels. De verhuurmarkt voor designerchalets is er het afgelopen decennium serieus gegroeid. De gondel loopt van het dorpscentrum naar de top op 531 meter; op de zuidhelling staan de privéchalets, en daar opent een nieuwe stoeltjeslift voor het seizoen 2026-2027.',
-        'De noorderlichtzichtbaarheid vanuit Levi is op het zuiden gericht en dramatisch, zeldzaam voor Lapland, omdat de verlichte dorpsskyline onderdeel wordt van de foto. Het best gecombineerd met een of twee nachten verder naar het noorden (Inari of Saariselkä) voor echt wildernis-noorderlicht, voordat u hier terugkeert om te skiën.',
+        'De noorderlichtzichtbaarheid vanuit Levi is op het zuiden gericht en dramatisch, zeldzaam voor Lapland, waardoor de verlichte dorpsskyline onderdeel wordt van de foto. Het best gecombineerd met een of twee nachten verder naar het noorden (Inari of Saariselkä) voor echt wildernis-noorderlicht, voordat u hier terugkeert om te skiën.',
       ],
       highlights: [
         'Levin Iglut, glazen iglo\'s op het zuiden boven het fjelddorp',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'Een nachtelijke helikoptervlucht van 45 minuten boven het wolkendek, tot aan het noorderlicht zelf.',
       copy: [
-        'Uitgevoerd door de enige voor nacht-VFR gecertificeerde helikopteroperator van Finland, vanuit Rovaniemi en Ivalo. De vlucht doorbreekt het plaatselijke wolkendek en cirkelt binnen de actieve noorderlichtovaal, een perspectief dat vanaf de grond onmogelijk is.',
+        'Uitgevoerd door een voor nacht-VFR gecertificeerde helikopteroperator, vanuit Rovaniemi en Ivalo. De vlucht doorbreekt het plaatselijke wolkendek en cirkelt binnen de actieve noorderlichtovaal, een perspectief dat vanaf de grond onmogelijk is.',
         'Fotografie op de grond is aan weerszijden van de vlucht inbegrepen; het deel in de lucht is voor de beleving zelf, niet voor de camera. Maximaal vier passagiers per AS350. Afhankelijk van het weervenster: de exploitant volgt de voorspelling en meldt het de dag ervoor.',
       ],
       available: 'Rovaniemi, Ivalo, okt–mrt (weersafhankelijk)',

@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Suomen johtava hiihtokeskus. Luksuschalet’t etelärinteellä, ski-in/ski-out Levin gondolihissiltä.',
       copy: [
         'Levi on Lapin kehittynein tunturikeskus, täysimittainen talviurheilukylä, jossa on 44 rinnettä ja 26 hissiä, joista kaksi on gondoleita. Designchalet’ien vuokramarkkina on kasvanut täällä vakavasti otettavaksi viimeisen vuosikymmenen aikana. Gondolihissi kulkee kylän keskustasta 531 metrin laelle, ja etelärinteellä sijaitsevat yksityiset chalet’t. Samalle rinteelle avautuu uusi tuolihissi kaudeksi 2026–2027.',
-        'Revontulinäkyvyys Leviltä avautuu etelään ja on näyttävä, harvinaista Lapissa, sillä valaistu kylän siluetti tulee osaksi valokuvaa. Paras yhdistettynä yhteen tai kahteen yöhön kauempana pohjoisessa (Inari tai Saariselkä) aitoa erämaarevontulta varten ennen paluuta tänne laskettelemaan.',
+        'Revontulinäkyvyys Leviltä avautuu etelään ja on näyttävä, harvinaista Lapissa, jolloin valaistu kylän siluetti tulee osaksi valokuvaa. Paras yhdistettynä yhteen tai kahteen yöhön kauempana pohjoisessa (Inari tai Saariselkä) aitoa erämaarevontulta varten ennen paluuta tänne laskettelemaan.',
       ],
       highlights: [
         'Levin Iglut, etelään avautuvat lasi-iglut tunturikylän yllä',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: '45 minuutin yölentohelikopterilla pilvikerroksen yläpuolelle, suoraan revontulien luo.',
       copy: [
-        'Lentoa operoi Suomen ainoa yö-VFR-sertifioitu helikopterioperaattori Rovaniemeltä ja Ivalosta. Lento nousee paikallisen pilvikerroksen yli ja kiertää aktiivisen revontuliovaalin sisällä, näkökulma, joka on maasta mahdoton.',
+        'Lentoa operoi yö-VFR-sertifioitu helikopterioperaattori Rovaniemeltä ja Ivalosta. Lento nousee paikallisen pilvikerroksen yli ja kiertää aktiivisen revontuliovaalin sisällä, näkökulma, joka on maasta mahdoton.',
         'Maakuvaus sisältyy lennon kummallekin puolelle; itse lento-osuus on elämystä, ei kameraa varten. Enintään neljä matkustajaa AS350-konetta kohti. Säärajoitteinen: operaattori seuraa ennustetta ja ilmoittaa edellisenä päivänä.',
       ],
       available: 'Rovaniemi, Ivalo, loka–maaliskuu (sääriippuvainen)',

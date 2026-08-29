@@ -322,7 +322,17 @@ function readPerLangCopy(loc, copyKey) {
   if (!copyKey) return null;
   const src = perLangSources[loc.lang];
   if (!src) return null;
-  let block = findKeyBlockWithMeta(src, copyKey);
+  // Dotted copyKey ("category.themes.cabins") walks nested blocks so a route can
+  // address one theme's meta. Before this, every blog /category/* page rendered
+  // the FIRST metaTitle inside the shared parent block (aurora's) in all 12
+  // languages — measured 29.8. A single-part key behaves exactly as before.
+  const parts = copyKey.split('.');
+  let scope = src;
+  for (let i = 0; i < parts.length - 1; i++) {
+    scope = findKeyBlock(scope, parts[i]);
+    if (!scope) return null;
+  }
+  let block = findKeyBlockWithMeta(scope, parts[parts.length - 1]);
   return pickTD(block);
 }
 

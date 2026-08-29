@@ -58,7 +58,7 @@ const VILLA_ANGLE: Record<Lang, AdCopy> = {
     eyebrow: 'Das ganze Haus, kein Hotelzimmer',
     headline: 'Lomarengas: ein ganzes Ferienhaus in Lappland mieten, mit eigener Seesauna und Platz für alle',
     sub: 'Wenn die Villen-Auswahl ausgebucht ist oder Sie einfach einen Ort ganz für sich möchten, ist ein handverlesenes Ferienhaus die warme Alternative. Lomarengas ist Finnlands größter Ferienhaus-Vermittler, mit Tausenden Hütten in ganz Lappland, viele mit eigener Seesauna und Kamin. Sie buchen direkt und haben das ganze Haus, nicht nur ein Zimmer.',
-    trust: ['Eigene Sauna in den meisten', 'Das ganze Haus, nicht geteilt', 'Tausende in ganz Lappland'],
+    trust: ['Eigene Sauna in den meisten Hütten', 'Das ganze Haus, nicht geteilt', 'Tausende in ganz Lappland'],
     cta: 'Freie Hütten ansehen',
     poweredBy: 'Buchung über Lomarengas',
   },

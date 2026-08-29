@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La première station de ski de Finlande. Chalets de luxe sur le versant sud, ski-in / ski-out depuis la télécabine de Levi.',
       copy: [
         'Levi est la station de fjell la plus développée de Laponie, un véritable village de sports d\'hiver avec 44 pistes et 26 remontées, dont deux télécabines. Le marché de la location de chalets de designer y est devenu sérieux au cours de la dernière décennie. La télécabine relie le centre du village au sommet à 531 mètres ; c\'est sur le versant sud que se trouvent les chalets privés, et un nouveau télésiège y ouvre pour la saison 2026-2027.',
-        'La visibilité des aurores depuis Levi est orientée sud et spectaculaire, chose rare en Laponie, puisque la ligne d\'horizon illuminée du village fait partie de la photographie. À combiner idéalement avec une ou deux nuits plus au nord (Inari ou Saariselkä) pour de vraies aurores sauvages avant de revenir ici pour le ski.',
+        'La visibilité des aurores depuis Levi est orientée sud et spectaculaire, chose rare en Laponie, de sorte que la ligne d\'horizon illuminée du village fait partie de la photographie. À combiner idéalement avec une ou deux nuits plus au nord (Inari ou Saariselkä) pour de vraies aurores sauvages avant de revenir ici pour le ski.',
       ],
       highlights: [
         'Levin Iglut, igloos de verre orientés sud au-dessus du village de fjell',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'Un vol de nuit en hélicoptère de 45 minutes au-dessus de la couche nuageuse, jusqu\'aux aurores elles-mêmes.',
       copy: [
-        'Opéré par le seul exploitant d\'hélicoptères de Finlande certifié pour le vol de nuit VFR, au départ de Rovaniemi et d\'Ivalo. Le vol franchit la couche nuageuse locale et tourne à l\'intérieur de l\'ovale auroral actif, une perspective impossible depuis le sol.',
+        'Opéré par un exploitant d\'hélicoptères certifié pour le vol de nuit VFR, au départ de Rovaniemi et d\'Ivalo. Le vol franchit la couche nuageuse locale et tourne à l\'intérieur de l\'ovale auroral actif, une perspective impossible depuis le sol.',
         'La photographie au sol est incluse de part et d\'autre du vol ; la partie en vol est consacrée à l\'expérience elle-même, pas à l\'appareil photo. Maximum quatre passagers par AS350. Tributaire d\'une fenêtre météo : l\'opérateur suit la prévision et prévient la veille.',
       ],
       available: 'Rovaniemi, Ivalo, oct.–mars (selon météo)',

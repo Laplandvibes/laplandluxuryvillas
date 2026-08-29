@@ -181,7 +181,7 @@ const ptBR: SiteCopy = {
   villasPage: {
     leadTitle: 'O que há nesta seleção',
     leadP1: 'Oito quartos, não oito hotéis. Cada item desta lista é um tipo de quarto específico dentro de uma propriedade real: uma cabana de teto de vidro em Kakslauttanen, uma suíte em balanço no Arctic TreeHouse, uma bolha de aurora no lago Inari. Essa é a unidade que você realmente reserva, então é a unidade que listamos.',
-    leadP2: 'As avaliações deste site vêm do Google e se referem à propriedade inteira, nunca ao quarto isolado, e cada card diz isso. A seleção é curta de propósito: cinco destinos e cinco tipos de construção, do teto de vidro à propriedade de troncos, e para por aí em vez de encher a lista.',
+    leadP2: 'As avaliações deste site vêm do Google e se referem à propriedade inteira, nunca ao quarto isolado, e cada card diz isso. A seleção é curta de propósito: cinco destinos e quatro tipos de construção, do teto de vidro ao chalé alpino, e para por aí em vez de encher a lista.',
     filters: { all: 'Todas', glassRoof: 'Teto de vidro', logEstate: 'Propriedade de troncos', designerSuite: 'Suíte de autor', alpineChalet: 'Chalé alpino', lakeside: 'À beira do lago' },
     noVillas: 'Ainda não há vilas nessa categoria.',
     inquiryTitle: 'Não encontrou o que procura?',
@@ -191,7 +191,7 @@ const ptBR: SiteCopy = {
     intro: {
       p1Pre: '«Suíte» na Lapônia abrange dois gestos arquitetônicos distintos, ambos vale a pena conhecer. O primeiro é a ',
       designerSuite: 'suíte de autor',
-      p1Mid: ', em que um renomado estúdio finlandês (Studio Puisto, ALA, Avanto) construiu um único quarto em torno de uma única vista. O segundo é a ',
+      p1Mid: ', em que um escritório de arquitetura finlandês como o Studio Puisto construiu um único quarto em torno de uma única vista. O segundo é a ',
       glassRoof: 'cabana com teto de vidro',
       p1Post: ', em que o teto é o detalhe protagonista. Ambas estão listadas abaixo.',
     },
@@ -227,7 +227,7 @@ const ptBR: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Dias sem pôr do sol em Rovaniemi, mais ao norte mais' },
+      { value: '32', label: 'Dias sem pôr do sol em Rovaniemi, mais ao norte mais' },
       { value: '24 h', label: 'Luz do dia no pico, 21 jun' },
       { value: '+18 °C', label: 'Temperatura diurna média no fim de junho' },
       { value: '50 %', label: 'Demanda menor que na temporada de auroras' },
@@ -243,7 +243,7 @@ const ptBR: SiteCopy = {
     summerCollection: {
       eyebrow: 'A coleção de verão',
       h2: 'Quatro caracteres de vila, sob a luz do verão.',
-      lede: 'As mesmas categorias arquitetônicas da coleção de inverno, cabanas com teto de vidro, propriedades de troncos à beira do lago, chalés alpinos, vilas na floresta, fotografadas sob a luz do sol da meia-noite no fim de junho para mostrar a segunda metade da história.',
+      lede: 'As mesmas categorias arquitetônicas da coleção de inverno, cabanas com teto de vidro, propriedades de troncos à beira do lago, chalés alpinos, vilas na floresta, mostradas sob a luz do sol da meia-noite no fim de junho para mostrar a segunda metade da história.',
       cards: [
         { title: 'Cabana com teto de vidro no verde', copy: 'A arquitetura da aurora sob a luz dourada das 23h, cercada de floresta densa em vez de neve.' },
         { title: 'Propriedade de troncos à beira do lago', copy: 'Baía privativa no lago Inari sem gelo, canoa no ancoradouro, fumaça da sauna a lenha.' },
@@ -255,7 +255,7 @@ const ptBR: SiteCopy = {
       h2: 'Uma nota sobre como planejar uma viagem de sol da meia-noite.',
       p1: 'A janela é curta e as vilas são de propriedade individual, por isso o calendário enche de forma oportunista, não uniforme. Vale perguntar com antecedência.',
       p2: 'O momento certo para consultar sobre um junho específico é entre janeiro e março daquele ano. Consultas posteriores também valem a pena, surgem liberações, mas o topo do inventário costuma ir mais cedo.',
-      quoting: 'Cotando atualmente verão de 2026 e 2027',
+      quoting: 'Atendendo consultas para os verões de 2026 e 2027',
     },
     inquiryTitle: 'Consulte sobre uma viagem de sol da meia-noite.',
     inquiryBody: 'Envie datas, número de pessoas e quaisquer preferências. A resposta chega em um dia útil com disponibilidade em toda a coleção de verão.',

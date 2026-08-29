@@ -175,7 +175,7 @@ const nl: SiteCopy = {
   villasPage: {
     leadTitle: 'Wat er in deze selectie staat',
     leadP1: 'Acht kamers, geen acht hotels. Elke vermelding hier is een specifiek kamertype binnen een echt huis: een glasdakhut bij Kakslauttanen, een uitkragende suite in Arctic TreeHouse, een aurorabubbel aan het Inarimeer. Dat is de eenheid die u werkelijk boekt, dus die vermelden wij.',
-    leadP2: 'De beoordelingen op deze site komen van Google en gelden het hele huis, nooit de losse kamer, en elke kaart zegt dat erbij. De selectie is bewust kort: vijf bestemmingen en vijf bouwtypen, van glasdak tot blokhut, en daar houdt zij op in plaats van de lijst op te vullen.',
+    leadP2: 'De beoordelingen op deze site komen van Google en gelden het hele huis, nooit de losse kamer, en elke kaart zegt dat erbij. De selectie is bewust kort: vijf bestemmingen en vier bouwtypen, van glasdak tot alpenchalet, en daar houdt zij op in plaats van de lijst op te vullen.',
     filters: { all: 'Alle', glassRoof: 'Glazen dak', logEstate: 'Blokhutlandgoed', designerSuite: 'Designersuite', alpineChalet: 'Alpenchalet', lakeside: 'Aan het meer' },
     noVillas: 'Nog geen villa\'s in deze categorie.',
     inquiryTitle: 'Niet de juiste optie gezien?',
@@ -185,7 +185,7 @@ const nl: SiteCopy = {
     intro: {
       p1Pre: '"Suite" dekt in Lapland twee verschillende architecturale keuzes, beide de moeite van het kennen waard. De eerste is de ',
       designerSuite: 'designersuite',
-      p1Mid: ', waar een toonaangevende Finse studio (Studio Puisto, ALA, Avanto) één slaapkamer rond één uitzicht heeft gebouwd. De tweede is de ',
+      p1Mid: ', waar een Fins architectenbureau als Studio Puisto één slaapkamer rond één uitzicht heeft gebouwd. De tweede is de ',
       glassRoof: 'cabine met glazen dak',
       p1Post: ', waar het plafond het belangrijkste detail is. Beide staan hieronder vermeld.',
     },
@@ -221,7 +221,7 @@ const nl: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Dagen zonder zonsondergang in Rovaniemi, noordelijker meer' },
+      { value: '32', label: 'Dagen zonder zonsondergang in Rovaniemi, noordelijker meer' },
       { value: '24 u', label: 'Daglicht op de piek, 21 juni' },
       { value: '+18 °C', label: 'Gemiddeld overdag eind juni' },
       { value: '50 %', label: 'Lagere vraag dan in het auroraseizoen' },
@@ -237,7 +237,7 @@ const nl: SiteCopy = {
     summerCollection: {
       eyebrow: 'De zomercollectie',
       h2: 'Vier villakarakters, in zomerlicht.',
-      lede: 'Dezelfde architecturale categorieën als de wintercollectie, cabines met glazen dak, blokhutlandgoederen aan het meer, alpenchalets, bosvilla\'s, gefotografeerd in het middernachtzonlicht van eind juni om de tweede helft van het verhaal te tonen.',
+      lede: 'Dezelfde architecturale categorieën als de wintercollectie, cabines met glazen dak, blokhutlandgoederen aan het meer, alpenchalets, bosvilla\'s, getoond in het middernachtzonlicht van eind juni om de tweede helft van het verhaal te tonen.',
       cards: [
         { title: 'Cabine met glazen dak in het groen', copy: 'De aurora-architectuur in het gouden licht van 23 uur, omringd door weelderig bos in plaats van sneeuw.' },
         { title: 'Blokhutlandgoed aan het meer', copy: 'Een private baai aan het Inarimeer, ontdooid, een kano aan de steiger, rook uit de houtgestookte sauna.' },
@@ -249,7 +249,7 @@ const nl: SiteCopy = {
       h2: 'Een opmerking over het plannen van een middernachtzonreis.',
       p1: 'Het venster is kort en de villa\'s zijn in individueel bezit, de kalender vult zich daardoor naar gelegenheid in plaats van gelijkmatig. Het loont om vroeg te vragen.',
       p2: 'Het juiste moment om naar een bepaalde juni te informeren ligt tussen januari en maart van dat jaar. Latere aanvragen zijn nog steeds de moeite waard, er komen plekken vrij, maar het topsegment van de voorraad is vaak eerder weg.',
-      quoting: 'Momenteel offreren wij zomer 2026 + 2027',
+      quoting: 'Wij behandelen momenteel aanvragen voor zomer 2026 en 2027',
     },
     inquiryTitle: 'Informeer naar een middernachtzonreis.',
     inquiryBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren. Een antwoord arriveert binnen één werkdag met de beschikbaarheid in de hele zomercollectie.',

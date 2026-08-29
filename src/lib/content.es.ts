@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La principal estación de esquí de Finlandia. Chalés de lujo en la ladera sur, ski-in / ski-out desde la góndola de Levi.',
       copy: [
         'Levi es la estación de fell más desarrollada de Laponia: una completa aldea de deportes de invierno con 44 pistas y 26 remontes, dos de ellos telecabinas. El mercado de alquiler de chalés de diseño se ha vuelto serio en la última década. La góndola sube del centro de la aldea a la cima, a 531 metros; en la ladera sur se asientan los chalés privados, y allí abre un telesilla nuevo para la temporada 2026-2027.',
-        'La visibilidad de auroras desde Levi es orientada al sur y espectacular,poco habitual en Laponia, ya que el perfil iluminado de la aldea pasa a formar parte de la fotografía. Mejor combinada con una o dos noches más al norte (Inari o Saariselkä) para una aurora de naturaleza salvaje genuina antes de regresar aquí a esquiar.',
+        'La visibilidad de auroras desde Levi está orientada al sur y es espectacular, algo poco habitual en Laponia, de modo que el perfil iluminado de la aldea pasa a formar parte de la fotografía. Mejor combinada con una o dos noches más al norte (Inari o Saariselkä) para una aurora de naturaleza salvaje genuina antes de regresar aquí a esquiar.',
       ],
       highlights: [
         'Levin Iglut: iglús de cristal orientados al sur sobre la aldea del fell',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'Un vuelo nocturno en helicóptero de 45 minutos por encima de la capa de nubes, hasta las propias auroras.',
       copy: [
-        'Operado por el único operador de helicópteros de Finlandia certificado para vuelo nocturno VFR, desde Rovaniemi e Ivalo. El vuelo supera la capa de nubes local y traza círculos dentro del óvalo auroral activo: una perspectiva imposible desde el suelo.',
+        'Operado por un operador de helicópteros certificado para vuelo nocturno VFR, desde Rovaniemi e Ivalo. El vuelo supera la capa de nubes local y traza círculos dentro del óvalo auroral activo: una perspectiva imposible desde el suelo.',
         'La fotografía en tierra se incluye a ambos lados del vuelo; la parte en el aire es para la experiencia en sí, no para la cámara. Máximo cuatro pasajeros por AS350. Sujeto a ventana meteorológica: el operador sigue la previsión y avisa el día anterior.',
       ],
       available: 'Rovaniemi, Ivalo: oct.–mar. (según meteorología)',

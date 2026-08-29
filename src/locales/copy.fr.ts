@@ -174,7 +174,7 @@ const fr: SiteCopy = {
   villasPage: {
     leadTitle: 'Ce que contient cette sélection',
     leadP1: 'Huit chambres, pas huit hôtels. Chaque entrée ici est un type de chambre précis à l\'intérieur d\'un établissement réel : une cabane à toit de verre à Kakslauttanen, une suite en porte-à-faux à l\'Arctic TreeHouse, une bulle aurores sur le lac Inari. C\'est l\'unité que vous réservez vraiment, donc c\'est celle que nous listons.',
-    leadP2: 'Les notes de ce site viennent de Google et portent sur l\'établissement entier, jamais sur la chambre seule, et chaque fiche le précise. La sélection est courte à dessein : cinq destinations et cinq types de construction, du toit de verre au domaine en rondins, et elle s\'arrête là plutôt que de gonfler la liste.',
+    leadP2: 'Les notes de ce site viennent de Google et portent sur l\'établissement entier, jamais sur la chambre seule, et chaque fiche le précise. La sélection est courte à dessein : cinq destinations et quatre types de construction, du toit de verre au chalet alpin, et elle s\'arrête là plutôt que de gonfler la liste.',
     filters: { all: 'Toutes', glassRoof: 'Toit de verre', logEstate: 'Domaine en rondins', designerSuite: 'Suite design', alpineChalet: 'Chalet alpin', lakeside: 'Au bord du lac' },
     noVillas: 'Aucune villa dans cette catégorie pour l’instant.',
     inquiryTitle: 'Vous ne trouvez pas le bon choix ?',
@@ -184,7 +184,7 @@ const fr: SiteCopy = {
     intro: {
       p1Pre: '« Suite » en Laponie recouvre deux gestes architecturaux distincts, tous deux dignes d’intérêt. Le premier est la ',
       designerSuite: 'suite design',
-      p1Mid: ', où un grand studio finlandais (Studio Puisto, ALA, Avanto) a bâti une chambre unique autour d’une vue unique. Le second est la ',
+      p1Mid: ', où un studio d’architecture finlandais comme Studio Puisto a bâti une chambre unique autour d’une vue unique. Le second est la ',
       glassRoof: 'cabane à toit de verre',
       p1Post: ', où le plafond est le détail vedette. Les deux sont listées ci-dessous.',
     },
@@ -220,7 +220,7 @@ const fr: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' },
+      { value: '32', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' },
       { value: '24 h', label: 'Lumière au pic, 21 juin' },
       { value: '+18 °C', label: 'Température diurne moyenne fin juin' },
       { value: '50 %', label: 'Demande inférieure à la saison des aurores' },
@@ -236,7 +236,7 @@ const fr: SiteCopy = {
     summerCollection: {
       eyebrow: 'La collection d’été',
       h2: 'Quatre caractères de villa, dans la lumière de l’été.',
-      lede: 'Les mêmes catégories architecturales que la collection d’hiver, cabanes à toit de verre, domaines en rondins au bord du lac, chalets alpins, villas en forêt, photographiées dans la lumière du soleil de minuit de fin juin pour montrer la seconde moitié de l’histoire.',
+      lede: 'Les mêmes catégories architecturales que la collection d’hiver, cabanes à toit de verre, domaines en rondins au bord du lac, chalets alpins, villas en forêt, montrées dans la lumière du soleil de minuit de fin juin pour montrer la seconde moitié de l’histoire.',
       cards: [
         { title: 'Cabane à toit de verre dans la verdure', copy: 'L’architecture des aurores dans la lumière dorée de 23 h, entourée d’une forêt luxuriante plutôt que de neige.' },
         { title: 'Domaine en rondins au bord du lac', copy: 'Baie privée sur le lac Inari dégelée, canoë au ponton, fumée du sauna au feu de bois.' },
@@ -248,7 +248,7 @@ const fr: SiteCopy = {
       h2: 'Une note sur la préparation d’un voyage au soleil de minuit.',
       p1: 'La fenêtre est courte et les villas appartiennent à des propriétaires individuels, le calendrier se remplit donc au gré des occasions, pas uniformément. Mieux vaut demander tôt.',
       p2: 'Le bon moment pour s’enquérir d’un juin donné se situe entre janvier et mars de la même année. Les demandes plus tardives valent tout de même la peine, des libérations surviennent, mais le haut de gamme part souvent plus tôt.',
-      quoting: 'Nous chiffrons actuellement les étés 2026 et 2027',
+      quoting: 'Nous répondons actuellement aux demandes pour les étés 2026 et 2027',
     },
     inquiryTitle: 'Renseignez-vous sur un voyage au soleil de minuit.',
     inquiryBody: 'Envoyez vos dates, le nombre de personnes et toute préférence. Une réponse arrive sous un jour ouvré avec les disponibilités de toute la collection d’été.',
@@ -467,7 +467,7 @@ Object.assign(fr.villasPage, {
   inquiryBody: 'La collection ci-dessus est ce qui est actuellement publié. D\'autres villas sont détenues en privé, y compris des propriétés de réserve sans annonce publique, et cotées directement sur demande.',
 })
 Object.assign(fr.suitesPage, {
-  intro: { p1Pre: '« Suite » en Laponie recouvre deux gestes architecturaux distincts, tous deux à connaître. Le premier est la ', designerSuite: 'suite design', p1Mid: ', où un studio finlandais de premier plan (Studio Puisto, ALA, Avanto) a bâti une chambre unique autour d\'une vue unique. Le second est la ', glassRoof: 'cabine à toit de verre', p1Post: ', où le plafond est le détail principal. Les deux sont listés ci-dessous.' },
+  intro: { p1Pre: '« Suite » en Laponie recouvre deux gestes architecturaux distincts, tous deux à connaître. Le premier est la ', designerSuite: 'suite design', p1Mid: ', où un studio d’architecture finlandais comme Studio Puisto a bâti une chambre unique autour d\'une vue unique. Le second est la ', glassRoof: 'cabine à toit de verre', p1Post: ', où le plafond est le détail principal. Les deux sont listés ci-dessous.' },
   inquiryTitle: 'Une réservation deux-suites, ou un étage privé ?',
   inquiryBody: 'Plusieurs de ces propriétés libèrent un étage multi-suites en usage exclusif en mi-saison. Partagez vos dates et votre effectif.',
 })
@@ -490,7 +490,7 @@ Object.assign(fr.experiencesPage, {
   },
 })
 Object.assign(fr.midnightSunPage, {
-  facts: [{ value: '32+', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' }, { value: '24h', label: 'Lumière au pic, 21 juin' }, { value: '+18°C', label: 'Moyenne diurne fin juin' }, { value: '68,9°N', label: 'Inari, notre destination la plus au nord, où il dure le plus' }],
+  facts: [{ value: '32', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' }, { value: '24h', label: 'Lumière au pic, 21 juin' }, { value: '+18°C', label: 'Moyenne diurne fin juin' }, { value: '68,9°N', label: 'Inari, notre destination la plus au nord, où il dure le plus' }],
   fourReasons: 'Quatre raisons', h2: 'La Laponie en été est un autre lieu.',
   reasons: [
     { title: 'L\'architecture change de caractère.', body: 'Les toits de verre qui existent pour les aurores encadrent désormais un soleil ininterrompu. Lucarne sur le lit, soleil sur le lac, aucune raison de tirer un rideau, il n\'y a pas de nuit pour se cacher.' },
@@ -505,7 +505,7 @@ Object.assign(fr.midnightSunPage, {
       { title: 'Chalet design sur le fjell', copy: 'Linaigrettes et fleurs sauvages remplacent la piste, même façade panoramique en verre.' },
       { title: 'Villa moderne en forêt', copy: 'Bâtiment en bois en porte-à-faux au cœur des pins boréaux verts, chaleur dorée du soleil de minuit sur la façade.' },
     ] },
-  planning: { h2: 'Une note sur la planification d\'un voyage au soleil de minuit.', p1: 'La fenêtre est courte et les villas sont individuellement détenues, le calendrier se remplit donc de manière opportuniste plutôt qu\'uniforme. Mieux vaut demander tôt.', p2: 'Le bon moment pour s\'enquérir d\'un mois de juin donné est entre janvier et mars de la même année. Les demandes ultérieures valent toujours la peine d\'être envoyées, des disponibilités apparaissent, mais le haut de gamme part souvent plus tôt.', quoting: 'Cotations actuelles : étés 2026 + 2027' },
+  planning: { h2: 'Une note sur la planification d\'un voyage au soleil de minuit.', p1: 'La fenêtre est courte et les villas sont individuellement détenues, le calendrier se remplit donc de manière opportuniste plutôt qu\'uniforme. Mieux vaut demander tôt.', p2: 'Le bon moment pour s\'enquérir d\'un mois de juin donné est entre janvier et mars de la même année. Les demandes ultérieures valent toujours la peine d\'être envoyées, des disponibilités apparaissent, mais le haut de gamme part souvent plus tôt.', quoting: 'Demandes en cours : étés 2026 + 2027' },
   inquiryTitle: 'Demander un séjour au soleil de minuit.', inquiryBody: 'Envoyez dates, effectif et toute préférence. Une réponse arrive en un jour ouvré avec la disponibilité sur la collection estivale.',
 })
 Object.assign(fr.inquiryPage, {

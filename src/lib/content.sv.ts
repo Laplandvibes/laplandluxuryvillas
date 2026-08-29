@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Finlands ledande skidort. Lyxstugor på södra sluttningen, ski-in / ski-out från Levis gondol.',
       copy: [
         'Levi är Lapplands mest utvecklade fjällort, en komplett vintersportby med 44 backar och 26 liftar, varav två gondoler. Uthyrningsmarknaden för designstugor har vuxit rejält det senaste decenniet. Gondolen går från byns centrum till toppen på 531 meter, och på södra sluttningen står privatstugorna. Dit kommer en ny stollift till säsongen 2026-2027.',
-        'Norrskenssikten från Levi är riktad mot söder och dramatisk, ovanligt för Lappland, eftersom den upplysta bysilhuetten blir en del av bilden. Bäst i kombination med en eller två nätter längre norrut (Inari eller Saariselkä) för äkta vildmarksnorrsken, innan du återvänder hit för att åka skidor.',
+        'Norrskenssikten från Levi är riktad mot söder och dramatisk, ovanligt för Lappland, så att den upplysta bysilhuetten blir en del av bilden. Bäst i kombination med en eller två nätter längre norrut (Inari eller Saariselkä) för äkta vildmarksnorrsken, innan du återvänder hit för att åka skidor.',
       ],
       highlights: [
         'Levin Iglut, glasigloor mot söder ovanför fjällbyn',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'En 45 minuter lång helikopterflygning på natten ovanför molntäcket, ända upp till norrskenet självt.',
       copy: [
-        'Utförs av Finlands enda helikopteroperatör certifierad för natt-VFR, från Rovaniemi och Ivalo. Flygningen bryter igenom det lokala molntäcket och cirklar inom den aktiva norrskensovalen, ett perspektiv som är omöjligt från marken.',
+        'Utförs av en helikopteroperatör certifierad för natt-VFR, från Rovaniemi och Ivalo. Flygningen bryter igenom det lokala molntäcket och cirklar inom den aktiva norrskensovalen, ett perspektiv som är omöjligt från marken.',
         'Fotografering på marken ingår på ömse sidor om flygningen; delen i luften är för själva upplevelsen, inte för kameran. Högst fyra passagerare per AS350. Beroende av väderfönstret: operatören följer prognosen och meddelar dagen innan.',
       ],
       available: 'Rovaniemi, Ivalo, okt–mars (väderberoende)',

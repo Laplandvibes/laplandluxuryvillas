@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'O principal resort de esqui da Finlândia. Chalés de luxo na encosta sul, ski-in / ski-out a partir da gôndola de Levi.',
       copy: [
         'Levi é o resort de fell mais desenvolvido da Lapônia, uma vila completa de esportes de inverno com 44 pistas e 26 teleféricos, dois deles gôndolas. O mercado de aluguel de chalés de design se tornou sério na última década. A gôndola vai do centro da vila até o cume, a 531 metros; é na encosta sul que ficam os chalés privativos, e ali abre um novo teleférico de cadeiras para a temporada 2026-2027.',
-        'A visibilidade de auroras em Levi é voltada para o sul e dramática, algo raro na Lapônia, já que o horizonte iluminado da vila passa a fazer parte da fotografia. Melhor combinada com uma ou duas noites mais ao norte (Inari ou Saariselkä) para auroras de natureza selvagem de verdade, antes de voltar aqui para o esqui.',
+        'A visibilidade de auroras em Levi é voltada para o sul e dramática, algo raro na Lapônia, de modo que o horizonte iluminado da vila passa a fazer parte da fotografia. Melhor combinada com uma ou duas noites mais ao norte (Inari ou Saariselkä) para auroras de natureza selvagem de verdade, antes de voltar aqui para o esqui.',
       ],
       highlights: [
         'Levin Iglut, iglus de vidro voltados para o sul acima da fell-village',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: 'Um voo noturno de helicóptero de 45 minutos acima da camada de nuvens, até as próprias auroras.',
       copy: [
-        'Operado pelo único operador de helicópteros da Finlândia certificado para voo noturno VFR, a partir de Rovaniemi e Ivalo. O voo ultrapassa a camada de nuvens local e circula dentro do oval auroral ativo, uma perspectiva impossível a partir do solo.',
+        'Operado por um operador de helicópteros certificado para voo noturno VFR, a partir de Rovaniemi e Ivalo. O voo ultrapassa a camada de nuvens local e circula dentro do oval auroral ativo, uma perspectiva impossível a partir do solo.',
         'A fotografia em terra está incluída antes e depois do voo; a parte no ar é para a experiência em si, não para a câmera. Máximo de quatro passageiros por AS350. Sujeito à janela meteorológica: o operador acompanha a previsão e avisa na véspera.',
       ],
       available: 'Rovaniemi, Ivalo, out.–mar. (depende do tempo)',

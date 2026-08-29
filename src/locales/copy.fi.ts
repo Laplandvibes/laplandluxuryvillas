@@ -181,7 +181,7 @@ const fi: SiteCopy = {
   villasPage: {
     leadTitle: 'Mitä tähän kokoelmaan kuuluu',
     leadP1: 'Kahdeksan huonetta, ei kahdeksaa hotellia. Jokainen kohde tällä listalla on tietty huonetyyppi todellisen majoituskohteen sisällä: lasikattoinen mökki Kakslauttasella, ulokkeinen sviitti Arctic TreeHousessa, revontulikupla Inarijärvellä. Sen yksikön oikeasti varaat, joten sen me listaamme.',
-    leadP2: 'Arviot tällä sivustolla tulevat Googlesta ja koskevat koko majoituskohdetta, eivät yksittäistä huonetta, ja jokainen kortti kertoo sen. Kokoelma on tarkoituksella lyhyt: viisi kohdetta ja viisi rakennustyyppiä lasikatosta hirsihuvilaan, eikä listaa pidennetä täytteellä.',
+    leadP2: 'Arviot tällä sivustolla tulevat Googlesta ja koskevat koko majoituskohdetta, eivät yksittäistä huonetta, ja jokainen kortti kertoo sen. Kokoelma on tarkoituksella lyhyt: viisi kohdetta ja neljä rakennustyyppiä lasikatosta tunturichaletiin, eikä listaa pidennetä täytteellä.',
     filters: { all: 'Kaikki', glassRoof: 'Lasikatto', logEstate: 'Hirsihuvila', designerSuite: 'Designer-sviitti', alpineChalet: 'Tunturichalet', lakeside: 'Rantakohde' },
     noVillas: 'Tässä kategoriassa ei ole vielä huviloita.',
     inquiryTitle: 'Etkö löydä oikeaa?',
@@ -191,7 +191,7 @@ const fi: SiteCopy = {
     intro: {
       p1Pre: '"Sviitti" tarkoittaa Lapissa kahta varsin eri asiaa, ja molemmat on hyvä tietää. Ensimmäinen on ',
       designerSuite: 'designer-sviitti',
-      p1Mid: ', jossa johtava suomalainen studio (Studio Puisto, ALA, Avanto) on rakentanut yksittäisen makuuhuoneen yksittäisen näkymän ympärille. Toinen on ',
+      p1Mid: ', jossa suomalainen arkkitehtitoimisto, esimerkiksi Studio Puisto, on rakentanut yksittäisen makuuhuoneen yksittäisen näkymän ympärille. Toinen on ',
       glassRoof: 'lasikattomökki',
       p1Post: ', jossa katto on otsikkoyksityiskohta. Molemmat on listattu alla.',
     },
@@ -227,7 +227,7 @@ const fi: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Päivää aurinko ei laske Rovaniemellä, pohjoisempana enemmän' },
+      { value: '32', label: 'Päivää aurinko ei laske Rovaniemellä, pohjoisempana enemmän' },
       { value: '24h', label: 'Päivänvaloa huipulla, 21.6.' },
       { value: '+18°C', label: 'Päivälämpötila kesäkuun lopulla' },
       { value: '68,9°N', label: 'Pohjoisin kohteemme, Inari, jossa jakso on pisin' },
@@ -243,7 +243,7 @@ const fi: SiteCopy = {
     summerCollection: {
       eyebrow: 'Kesän kokoelma',
       h2: 'Neljä huvilan luonnetta kesäisessä valossa.',
-      lede: 'Samat talotyypit kuin talvikokoelmassa (lasikattomökit, järvenrantaiset hirsihuvilat, tunturichaletit, metsähuvilat), kuvattuna kesäkuun lopun yöttömän yön valossa, jotta näet tarinan toisenkin puoliskon.',
+      lede: 'Samat talotyypit kuin talvikokoelmassa (lasikattomökit, järvenrantaiset hirsihuvilat, tunturichaletit, metsähuvilat) kesäkuun lopun yöttömän yön valossa, jotta näet tarinan toisenkin puoliskon.',
       cards: [
         { title: 'Lasikattomökki vihreässä', copy: 'Revontulten arkkitehtuuri kello 23 kultaisessa valossa, ympärillä rehevä metsä lumen sijaan.' },
         { title: 'Järvenrantainen hirsihuvila', copy: 'Yksityinen poukama Inarijärvellä, taas sulana: kanootti laiturilla ja savua nousemassa puulämmitteisestä saunasta.' },
@@ -255,7 +255,7 @@ const fi: SiteCopy = {
       h2: 'Huomio yöttömän yön matkan suunnittelusta.',
       p1: 'Jakso on lyhyt, ja huvilat ovat yksittäisten omistajien hallinnassa, joten kalenteri täyttyy epätasaisesti eikä siististi. Kannattaa kysyä hyvissä ajoin.',
       p2: 'Tiettyä kesäkuuta kannattaa tiedustella saman vuoden tammi–maaliskuussa. Myöhemminkin kannattaa laittaa viestiä, koska päiviä vapautuu, mutta listan kärki menee yleensä ensin.',
-      quoting: 'Tarjoamme parhaillaan kesän 2026 ja 2027 hintoja',
+      quoting: 'Vastaamme parhaillaan kesien 2026 ja 2027 kyselyihin',
     },
     inquiryTitle: 'Tiedustele yöttömän yön matkaa.',
     inquiryBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy, mitä kesän kokoelmasta on vapaana.',

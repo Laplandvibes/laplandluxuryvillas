@@ -82,7 +82,7 @@ const L: Record<Lang, T> = {
     aWhenAurora: 'Für das Polarlicht die dunkle Jahreszeit, etwa von Ende August bis Anfang April. Im Hochwinter sind die Nächte am längsten, und außerhalb der Ferienwochen ist es am ruhigsten.',
     aWhenSki: 'Die Abfahrtssaison reicht vom Winter bis ins Frühjahr; März und April verbinden lange Tage mit gutem Schnee.',
     aWhenSummer: 'Im Sommer wird die Nacht nicht dunkel, Wandern und Zeit auf dem Wasser gehen also durch. Polarlichter sind dann nicht zu sehen.',
-    qSki: 'gibt es Abfahrtsski?',
+    qSki: 'gibt es hier Skipisten?',
     aSki: (s, l) => `Ja. ${s} Pisten und ${l} Lifte.`,
     qPark: 'gibt es einen Nationalpark in der Nähe?',
     aPark: (n) => `Ja: ${n}.`,

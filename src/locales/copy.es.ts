@@ -181,7 +181,7 @@ const es: SiteCopy = {
   villasPage: {
     leadTitle: 'Qué contiene esta selección',
     leadP1: 'Ocho habitaciones, no ocho hoteles. Cada entrada de esta lista es un tipo de habitación concreto dentro de un establecimiento real: una cabaña de techo de cristal en Kakslauttanen, una suite en voladizo en Arctic TreeHouse, una burbuja de auroras en el lago Inari. Esa es la unidad que usted reserva de verdad, así que esa es la que listamos.',
-    leadP2: 'Las valoraciones de este sitio proceden de Google y se refieren al establecimiento entero, nunca a la habitación suelta, y cada ficha lo indica. La selección es corta a propósito: cinco destinos y cinco tipos de construcción, del techo de cristal a la finca de troncos, y ahí se detiene en lugar de rellenar la lista.',
+    leadP2: 'Las valoraciones de este sitio proceden de Google y se refieren al establecimiento entero, nunca a la habitación suelta, y cada ficha lo indica. La selección es corta a propósito: cinco destinos y cuatro tipos de construcción, del techo de cristal al chalet alpino, y ahí se detiene en lugar de rellenar la lista.',
     filters: { all: 'Todas', glassRoof: 'Techo de cristal', logEstate: 'Propiedad de troncos', designerSuite: 'Suite de autor', alpineChalet: 'Chalet alpino', lakeside: 'Junto al lago' },
     noVillas: 'Todavía no hay villas en esa categoría.',
     inquiryTitle: '¿No encuentra lo que busca?',
@@ -191,7 +191,7 @@ const es: SiteCopy = {
     intro: {
       p1Pre: '«Suite» en Laponia abarca dos gestos arquitectónicos distintos, ambos vale la pena conocerlos. El primero es la ',
       designerSuite: 'suite de autor',
-      p1Mid: ', donde un destacado estudio finlandés (Studio Puisto, ALA, Avanto) ha construido un único dormitorio en torno a una única vista. El segundo es la ',
+      p1Mid: ', donde un estudio de arquitectura finlandés como Studio Puisto ha construido un único dormitorio en torno a una única vista. El segundo es la ',
       glassRoof: 'cabaña con techo de cristal',
       p1Post: ', donde el techo es el detalle protagonista. Ambas se listan a continuación.',
     },
@@ -227,7 +227,7 @@ const es: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Días sin puesta de sol en Rovaniemi, más al norte más' },
+      { value: '32', label: 'Días sin puesta de sol en Rovaniemi, más al norte más' },
       { value: '24 h', label: 'Luz diurna en el punto álgido, 21 jun' },
       { value: '+18 °C', label: 'Temperatura diurna media a finales de junio' },
       { value: '50 %', label: 'Menor demanda que en temporada de auroras' },
@@ -243,7 +243,7 @@ const es: SiteCopy = {
     summerCollection: {
       eyebrow: 'La colección de verano',
       h2: 'Cuatro caracteres de villa, bajo la luz del verano.',
-      lede: 'Las mismas categorías arquitectónicas que la colección de invierno, cabañas con techo de cristal, propiedades de troncos junto al lago, chalets alpinos, villas en el bosque, fotografiadas bajo la luz del sol de medianoche de finales de junio para mostrar la segunda mitad de la historia.',
+      lede: 'Las mismas categorías arquitectónicas que la colección de invierno, cabañas con techo de cristal, propiedades de troncos junto al lago, chalets alpinos, villas en el bosque, mostradas bajo la luz del sol de medianoche de finales de junio para mostrar la segunda mitad de la historia.',
       cards: [
         { title: 'Cabaña con techo de cristal en el verde', copy: 'La arquitectura de la aurora bajo la luz dorada de las 23:00, rodeada de bosque frondoso en lugar de nieve.' },
         { title: 'Propiedad de troncos junto al lago', copy: 'Bahía privada en el lago Inari deshelada, canoa en el embarcadero, humo de la sauna de leña.' },
@@ -255,7 +255,7 @@ const es: SiteCopy = {
       h2: 'Una nota sobre cómo planificar un viaje de sol de medianoche.',
       p1: 'La ventana es corta y las villas son de propiedad individual, por eso el calendario se llena de forma oportunista, no uniforme. Conviene preguntar con antelación.',
       p2: 'El momento adecuado para consultar por un junio concreto es entre enero y marzo de ese año. Las consultas posteriores también merece la pena enviarlas, hay liberaciones, pero la gama alta del inventario suele irse antes.',
-      quoting: 'Cotizando actualmente verano de 2026 y 2027',
+      quoting: 'Atendiendo consultas para los veranos de 2026 y 2027',
     },
     inquiryTitle: 'Consulte por un viaje de sol de medianoche.',
     inquiryBody: 'Envíe fechas, número de personas y cualquier preferencia. La respuesta llega en un día laborable con disponibilidad en toda la colección de verano.',

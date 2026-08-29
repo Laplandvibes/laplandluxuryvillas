@@ -174,7 +174,7 @@ const it: SiteCopy = {
   villasPage: {
     leadTitle: 'Che cosa contiene questa selezione',
     leadP1: 'Otto camere, non otto hotel. Ogni voce di questo elenco è un tipo di camera preciso all\'interno di una struttura reale: una capanna con tetto in vetro a Kakslauttanen, una suite a sbalzo all\'Arctic TreeHouse, una bolla per l\'aurora sul lago Inari. È l\'unità che si prenota davvero, quindi è quella che elenchiamo.',
-    leadP2: 'I giudizi su questo sito vengono da Google e riguardano l\'intera struttura, mai la singola camera, e ogni scheda lo dichiara. La selezione è breve di proposito: cinque destinazioni e cinque tipi costruttivi, dal tetto in vetro alla tenuta in tronchi, e si ferma lì invece di allungare l\'elenco.',
+    leadP2: 'I giudizi su questo sito vengono da Google e riguardano l\'intera struttura, mai la singola camera, e ogni scheda lo dichiara. La selezione è breve di proposito: cinque destinazioni e quattro tipi costruttivi, dal tetto in vetro allo chalet alpino, e si ferma lì invece di allungare l\'elenco.',
     filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d’autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
     noVillas: 'Ancora nessuna villa in questa categoria.',
     inquiryTitle: 'Non trovi la soluzione giusta?',
@@ -184,7 +184,7 @@ const it: SiteCopy = {
     intro: {
       p1Pre: '«Suite» in Lapponia comprende due gesti architettonici distinti, entrambi da conoscere. Il primo è la ',
       designerSuite: 'suite d’autore',
-      p1Mid: ', dove un importante studio finlandese (Studio Puisto, ALA, Avanto) ha costruito un’unica camera attorno a un’unica vista. Il secondo è la ',
+      p1Mid: ', dove uno studio di architettura finlandese come Studio Puisto ha costruito un’unica camera attorno a un’unica vista. Il secondo è la ',
       glassRoof: 'cabina con tetto in vetro',
       p1Post: ', dove il soffitto è il dettaglio protagonista. Entrambe sono elencate qui sotto.',
     },
@@ -220,7 +220,7 @@ const it: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' },
+      { value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' },
       { value: '24 h', label: 'Luce al culmine, 21 giu' },
       { value: '+18 °C', label: 'Temperatura diurna media a fine giugno' },
       { value: '50 %', label: 'Domanda inferiore alla stagione delle aurore' },
@@ -236,7 +236,7 @@ const it: SiteCopy = {
     summerCollection: {
       eyebrow: 'La collezione estiva',
       h2: 'Quattro caratteri di villa, nella luce dell’estate.',
-      lede: 'Le stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville nel bosco, fotografate nella luce del sole di mezzanotte di fine giugno per mostrare la seconda metà della storia.',
+      lede: 'Le stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville nel bosco, mostrate nella luce del sole di mezzanotte di fine giugno per mostrare la seconda metà della storia.',
       cards: [
         { title: 'Cabina con tetto in vetro nel verde', copy: 'L’architettura dell’aurora nella luce dorata delle 23:00, circondata da una foresta rigogliosa anziché dalla neve.' },
         { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari libera dal ghiaccio, canoa al pontile, fumo dalla sauna a legna.' },
@@ -248,7 +248,7 @@ const it: SiteCopy = {
       h2: 'Una nota sull’organizzazione di un viaggio nel sole di mezzanotte.',
       p1: 'La finestra è breve e le ville sono di proprietà individuale, perciò il calendario si riempie in modo opportunistico, non uniforme. Conviene chiedere per tempo.',
       p2: 'Il momento giusto per informarsi su un determinato giugno è tra gennaio e marzo dello stesso anno. Anche le richieste successive vale la pena inviarle, capitano dei rilasci, ma la fascia alta dell’offerta va spesso via prima.',
-      quoting: 'Attualmente quotiamo le estati 2026 e 2027',
+      quoting: 'Attualmente rispondiamo alle richieste per le estati 2026 e 2027',
     },
     inquiryTitle: 'Informati su un viaggio nel sole di mezzanotte.',
     inquiryBody: 'Invia date, numero di persone e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con le disponibilità di tutta la collezione estiva.',
@@ -467,7 +467,7 @@ Object.assign(it.villasPage, {
   inquiryBody: 'La collezione sopra è quella attualmente pubblicata. Altre ville sono tenute privatamente, incluse proprietà di riserva senza inserzione pubblica, e quotate direttamente su richiesta.',
 })
 Object.assign(it.suitesPage, {
-  intro: { p1Pre: '"Suite" in Lapponia copre due gesti architettonici distinti, entrambi da conoscere. Il primo è la ', designerSuite: 'suite d\'autore', p1Mid: ', dove uno studio finlandese di primo piano (Studio Puisto, ALA, Avanto) ha costruito una camera intorno a una sola vista. Il secondo è la ', glassRoof: 'cabina con tetto in vetro', p1Post: ', dove il soffitto è il dettaglio principale. Entrambe sono elencate sotto.' },
+  intro: { p1Pre: '"Suite" in Lapponia copre due gesti architettonici distinti, entrambi da conoscere. Il primo è la ', designerSuite: 'suite d\'autore', p1Mid: ', dove uno studio di architettura finlandese come Studio Puisto ha costruito una camera intorno a una sola vista. Il secondo è la ', glassRoof: 'cabina con tetto in vetro', p1Post: ', dove il soffitto è il dettaglio principale. Entrambe sono elencate sotto.' },
   inquiryTitle: 'Prenotare due suite, o un piano privato?',
   inquiryBody: 'Diverse di queste proprietà liberano un piano multi-suite a uso esclusivo nelle settimane di spalla. Condivida date e numero di ospiti.',
 })
@@ -490,7 +490,7 @@ Object.assign(it.experiencesPage, {
   },
 })
 Object.assign(it.midnightSunPage, {
-  facts: [{ value: '32+', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '68,9°N', label: 'Inari, la nostra meta più a nord, dove dura di più' }],
+  facts: [{ value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '68,9°N', label: 'Inari, la nostra meta più a nord, dove dura di più' }],
   fourReasons: 'Quattro ragioni', h2: 'La Lapponia in estate è un altro luogo.',
   reasons: [
     { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },
@@ -498,14 +498,14 @@ Object.assign(it.midnightSunPage, {
     { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati e charter di elicotteri quotano tariffe di spalla.' },
     { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjell, sono essenzialmente Suoi.' },
   ],
-  summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, fotografate nella luce del sole di mezzanotte di fine giugno.',
+  summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, mostrate nella luce del sole di mezzanotte di fine giugno.',
     cards: [
       { title: 'Cabina con tetto in vetro nel verde', copy: 'L\'architettura aurorale in luce dorata delle 23, circondata da foresta lussureggiante invece di neve.' },
       { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari disgelata, canoa al pontile, fumo dalla sauna a legna.' },
       { title: 'Chalet d\'autore sul fjell', copy: 'Eriofori e fiori selvatici sostituiscono la pista da sci, stessa facciata panoramica in vetro.' },
       { title: 'Villa moderna in foresta', copy: 'Edificio in legno a sbalzo nel verde dei pini boreali, calore dorato del sole di mezzanotte sulla facciata.' },
     ] },
-  planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Conviene chiedere per tempo.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Attualmente quotiamo estate 2026 + 2027' },
+  planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Conviene chiedere per tempo.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Richieste in corso: estate 2026 + 2027' },
   inquiryTitle: 'Richiedere un viaggio al sole di mezzanotte.', inquiryBody: 'Invii date, numero di ospiti e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con la disponibilità sulla collezione estiva, incluse le ville di riserva non elencate pubblicamente.',
 })
 Object.assign(it.inquiryPage, {

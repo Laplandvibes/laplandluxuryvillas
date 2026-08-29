@@ -2,7 +2,7 @@
   "/": {
     "en": {
       "title": "Lapland Luxury Villas: Private Aurora Residences & Suites",
-      "description": "A private collection of Lapland’s finest villas and suites: glass-roof cabins, designer aurora suites, one lakeside retreat. Rates on each property’s own booking page."
+      "description": "A private collection of Lapland’s most distinctive villas and suites: glass-roof cabins, designer aurora suites, one lakeside retreat."
     },
     "fi": {
       "title": "Lapin luksushuvilat: yksityiset revontuli-residenssit",
@@ -10,7 +10,7 @@
     },
     "de": {
       "title": "Luxusvillen in Lappland: private Polarlicht-Residenzen",
-      "description": "Eine private Sammlung der schönsten Villen und Suiten Lapplands: Glasdach-Hütten, Designer-Polarlichtsuiten, ein Seeufer-Refugium. Preise auf der Buchungsseite des Hauses."
+      "description": "Eine private Auswahl der eigenständigsten Villen und Suiten Lapplands: Glasdach-Hütten, Designer-Polarlichtsuiten, ein Seeufer-Refugium."
     },
     "ja": {
       "title": "ラップランド ラグジュアリーヴィラ｜プライベート・オーロラ邸宅",
@@ -52,7 +52,7 @@
   "/villas": {
     "en": {
       "title": "The Collection, Lapland Luxury Villas & Glass Cabins",
-      "description": "A short, curated list of private villas in Finnish Lapland: glass-roof aurora cabins, designer suites and a lakeside retreat. Eight houses across five destinations."
+      "description": "A short, curated list of private villas in Finnish Lapland: glass-roof aurora cabins, designer suites and a lakeside retreat. Eight rooms across five destinations."
     },
     "fi": {
       "title": "Kokoelma, Lapin luksushuvilat ja lasikabiinit",
@@ -60,7 +60,7 @@
     },
     "de": {
       "title": "Die Kollektion, Luxusvillen & Glashütten in Lappland",
-      "description": "Eine kurze, kuratierte Auswahl privater Villen in Finnisch-Lappland: Glasdach-Polarlichthütten, Designer-Suiten und ein Seeufer-Refugium. Acht Häuser, fünf Reiseziele."
+      "description": "Kuratierte Auswahl privater Villen in Finnisch-Lappland: Glasdach-Polarlichthütten, Designer-Suiten, ein Seeufer-Refugium. Acht Zimmer in fünf Zielen."
     },
     "ja": {
       "title": "ザ・コレクション｜ラップランドのヴィラとガラスキャビン",
@@ -110,7 +110,7 @@
     },
     "de": {
       "title": "Designer-Suiten & Glasdach-Polarlichtzimmer, Lappland",
-      "description": "Eine kurze Auswahl der Designer-Suiten und Glasdach-Hütten Lapplands: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glas, Levin Iglut. Preise auf Anfrage."
+      "description": "Kurze Auswahl der Designer-Suiten und Glasdach-Hütten Lapplands: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glas, Levin Iglut. Preise auf Anfrage."
     },
     "ja": {
       "title": "デザイナーズスイートとガラス天井のオーロラ寝室",
@@ -152,7 +152,7 @@
   "/destinations": {
     "en": {
       "title": "Where to Stay in Lapland · Five Destinations Worth It",
-      "description": "Saariselkä, Inari, Rovaniemi, Levi and Ylläs, the five Lapland destinations worth a luxury journey. Aurora frequency, arrival logistics and the villas in each."
+      "description": "Saariselkä, Inari, Rovaniemi, Levi and Ylläs, the five Lapland destinations worth a luxury journey. Aurora conditions, arrival logistics and the villas in each."
     },
     "fi": {
       "title": "Missä yöpyä Lapissa, viisi kohdetta matkan arvoista",
@@ -210,7 +210,7 @@
     },
     "de": {
       "title": "Maßgeschneiderte Lappland-Erlebnisse · Polarlicht & mehr",
-      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Helikopterflüge, Chef-Tastings in der Villa, exklusive Husky-Safaris und Privatjet-Anreise. Von den jeweiligen Anbietern durchgeführt."
+      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Helikopterflüge, Privatkoch in der Villa, Husky-Safaris, Privatjet-Anreise. Vom jeweiligen Anbieter durchgeführt."
     },
     "ja": {
       "title": "オーダーメイドのラップランド体験｜オーロラ・ヘリ・シェフ",
@@ -252,7 +252,7 @@
   "/midnight-sun": {
     "en": {
       "title": "Midnight Sun, Lapland Luxury Villas in Unbroken Light",
-      "description": "Jun 6 – Jul 7: the window when the sun does not set in Lapland. The same villas you book for the auroras, in their summer character, chefs, half the demand."
+      "description": "Jun 6 – Jul 7: the window when the sun does not set in Lapland. The same villas you book for the auroras, in their summer character and a far quieter season."
     },
     "fi": {
       "title": "Keskiyön aurinko, Lapin luksushuvilat yöttömässä yössä",
@@ -260,7 +260,7 @@
     },
     "de": {
       "title": "Mitternachtssonne, Luxusvillen im ununterbrochenen Licht",
-      "description": "6. Juni – 7. Juli: das Fenster, in dem die Sonne in Lappland nicht untergeht. Dieselben Villen wie für die Polarlichter, im Sommer, Privatköche, halbe Nachfrage."
+      "description": "6. Juni – 7. Juli: die Wochen, in denen die Sonne in Lappland nicht untergeht. Dieselben Villen wie für die Polarlichter, nur in viel ruhigerer Saison."
     },
     "ja": {
       "title": "白夜｜光に満ちる夏のラップランド・ヴィラ",
@@ -301,8 +301,8 @@
   },
   "/private-inquiry": {
     "en": {
-      "title": "Private Enquiry: Lapland Villas and Suites",
-      "description": "Send one private enquiry: headcount, dates, preferences. A person reads it and replies within one working day with suggestions. No account, no public profile."
+      "title": "Private Inquiry: Lapland Villas and Suites",
+      "description": "Send one private inquiry: headcount, dates, preferences. A person reads it and replies within one working day with suggestions. No account, no public profile."
     },
     "fi": {
       "title": "Yksityinen tiedustelu: Lapin huvilat ja sviitit",
@@ -352,7 +352,7 @@
   "/about": {
     "en": {
       "title": "About, Lapland Luxury Villas, curated from Finland",
-      "description": "A short, curated private collection of Lapland's finest villas and suites, run from Finnish Lapland by Lapeso Oy, part of the LaplandVibes network."
+      "description": "A short, curated private collection of Lapland's most distinctive villas and suites, run from Finnish Lapland by Lapeso Oy, part of the LaplandVibes network."
     },
     "fi": {
       "title": "Tietoa, Lapin luksushuvilat, koottu Suomesta",
@@ -360,7 +360,7 @@
     },
     "de": {
       "title": "Über uns, Luxusvillen in Lappland, aus Finnland geführt",
-      "description": "Eine kurze, kuratierte Privatsammlung der schönsten Villen und Suiten Lapplands, von Lapeso Oy aus Finnisch-Lappland geführt, Teil des LaplandVibes-Netzwerks."
+      "description": "Eine kuratierte Privatsammlung der eigenständigsten Villen und Suiten Lapplands, von Lapeso Oy aus Finnisch-Lappland geführt, Teil des LaplandVibes-Netzwerks."
     },
     "ja": {
       "title": "私たちについて｜フィンランド発、厳選のラップランド・ヴィラ",
@@ -402,7 +402,7 @@
   "/privacy": {
     "en": {
       "title": "Privacy Policy | LaplandLuxuryVillas",
-      "description": "How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, EU-only processors, and exactly what happens to a private enquiry."
+      "description": "How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, EU-only processors, and exactly what happens to a private inquiry."
     },
     "fi": {
       "title": "Tietosuojaseloste | LaplandLuxuryVillas",
@@ -1110,7 +1110,7 @@
     },
     "de": {
       "title": "Levi: Lappland · Privatvillen, Suiten & Polarlicht",
-      "description": "Finnlands führendes Skigebiet. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi. Ein nach Süden ausgerichtetes Panorama, in Lappland selten…"
+      "description": "Finnlands führendes Skizentrum. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi. Ein nach Süden ausgerichtetes Panorama, in Lappland selten…"
     },
     "ja": {
       "title": "Levi: ラップランド · プライベートヴィラ、スイート、オーロラ",
