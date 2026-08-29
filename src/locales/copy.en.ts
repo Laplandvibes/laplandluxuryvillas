@@ -42,7 +42,7 @@ const en: SiteCopy = {
     fromPerGroup: 'From / group',
     rate: 'Rate',
     bedroom: 'bedroom',
-    bedrooms: 'bedroom',
+    bedrooms: 'bedrooms',
     sleeps: 'Sleeps',
     arrival: 'Arrival',
     aurora: 'Aurora',
@@ -68,7 +68,7 @@ const en: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
-    reserve: 'Reserve · By enquiry only',
+    reserve: 'Reserve · By inquiry only',
   },
   category: {
     'glass-roof': 'Glass-roof Villa',
@@ -78,13 +78,13 @@ const en: SiteCopy = {
     'lakeside-retreat': 'Lakeside Retreat',
   },
   inquiry: {
-    eyebrow: 'Private enquiry',
+    eyebrow: 'Private inquiry',
     defaultTitle: 'A quieter way to plan your Lapland trip.',
     defaultBody: 'Send us one message with your preferences, your dates and how many of you there are. You get a private shortlist back within one working day. No public profile, no shared calendars, no account to set up.',
     inquireBtn: 'Private Inquiry',
     emailLabel: 'private@laplandvibes.com',
     badges: {
-      anonymous: 'Anonymous enquiry',
+      anonymous: 'Anonymous inquiry',
       reply: 'Reply within one working day',
       rates: 'A link to the property’s own booking',
     },
@@ -92,7 +92,7 @@ const en: SiteCopy = {
   midnightSunBand: {
     eyebrow: 'Jun 6 – Jul 7',
     h2: 'The same villas, in a summer of unbroken light.',
-    body: 'Same houses, completely different season. The glass roof that framed the aurora now holds a sun that never sets, the lake is open water, the forest fills with cloudberry. Summer is Lapland\'s quieter season, and the same houses are open. The rate is shown on each property\'s own booking page.',
+    body: 'Same houses, completely different season. The glass roof that framed the aurora now holds a sun that never sets; the lake is open water; the forest fills with cloudberry. Summer is Lapland\'s quieter season, and the same houses are open. The rate is shown on each property\'s own booking page.',
     primary: 'See the summer villas',
     secondary: 'Inquire about June dates',
   },
@@ -148,7 +148,7 @@ const en: SiteCopy = {
       secondary: 'See the villas',
     },
     inquiry: {
-      eyebrow: 'Private enquiry',
+      eyebrow: 'Private inquiry',
       title: 'One private message, one shortlist made for you.',
       lede: 'Tell us your dates, how many of you there are, and the kind of trip you have in mind. We reply within one working day.',
     },
@@ -171,7 +171,7 @@ const en: SiteCopy = {
     signature: {
       eyebrow: 'Signature villas',
       h2: 'The four we recommend most often.',
-      lede: 'The four we recommend most. Every detail below is checked against the operator\'s published information and recent guest reviews, not lifted from a brochure.',
+      lede: 'Every detail below is checked against the operator\'s published information and recent guest reviews, not lifted from a brochure.',
     },
     destinations: {
       eyebrow: 'Destinations',
@@ -181,7 +181,7 @@ const en: SiteCopy = {
   villasPage: {
     leadTitle: 'What is in this collection',
     leadP1: 'Eight rooms, not eight hotels. Every listing here is a specific room type inside a real property: a glass-roof cabin at Kakslauttanen, a cantilevered suite at Arctic TreeHouse, an aurora bubble on Lake Inari. That is the unit you actually book, so that is the unit we list.',
-    leadP2: 'Ratings on this site come from Google and belong to the whole property, never to the single room, and every card says so. The collection is deliberately short: five destinations, five build types, from glass roof to log estate, and it stops there rather than padding the list.',
+    leadP2: 'Ratings on this site come from Google and belong to the whole property, never to the single room, and every card says so. The collection is deliberately short: five destinations, four build types, from glass roof to alpine chalet, and it stops there rather than padding the list.',
     filters: { all: 'All', glassRoof: 'Glass-roof', logEstate: 'Log Estate', designerSuite: 'Designer Suite', alpineChalet: 'Alpine Chalet', lakeside: 'Lakeside' },
     noVillas: 'No villas in that category yet.',
     inquiryTitle: 'Don\'t see the right fit?',
@@ -191,7 +191,7 @@ const en: SiteCopy = {
     intro: {
       p1Pre: '"Suite" in Lapland means two quite different things, and both are worth knowing. The first is the ',
       designerSuite: 'designer-suite',
-      p1Mid: ', where a leading Finnish studio (Studio Puisto, ALA, Avanto) has built a single bedroom around a single view. The second is the ',
+      p1Mid: ', where a Finnish architecture studio such as Studio Puisto has built a single bedroom around a single view. The second is the ',
       glassRoof: 'glass-roof cabin',
       p1Post: ', where the ceiling is the headline detail. Both are listed below.',
     },
@@ -201,7 +201,7 @@ const en: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Five places, five different skies',
     leadP1: 'These five destinations are not interchangeable. Inari sits furthest north, on a lake with no town light on the visible horizon. Saariselkä is on the northern fringe of Urho Kekkonen National Park and is where glass-roof accommodation started. Rovaniemi has the flights, Levi the resort infrastructure, Ylläs the quiet.',
-    leadP2: 'Each profile below gives the arrival airport and transfer time, what the sky is actually like there ( the horizon, the settlement light, how high the arc tends to stand ) and which of the villas sit in that area. We publish no aurora frequency figure per village, because nobody measures one per village.',
+    leadP2: 'Each profile below gives the arrival airport and transfer time, what the sky is actually like there (the horizon, the settlement light, how high the arc tends to stand) and which of the villas sit in that area. We publish no aurora frequency figure per village, because nobody measures one per village.',
     destinationLabel: (i) => `Destination 0${i + 1}`,
     readTheProfile: (name) => `Read the ${name} profile`,
   },
@@ -227,7 +227,7 @@ const en: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32+', label: 'Days the sun never sets at Rovaniemi, more further north' },
+      { value: '32', label: 'Days the sun never sets at Rovaniemi, longer further north' },
       { value: '24h', label: 'Daylight at peak, Jun 21' },
       { value: '+18°C', label: 'Average daytime in late June' },
       { value: '68.9°N', label: 'Our northernmost destination, Inari, where it runs longest' },
@@ -237,13 +237,13 @@ const en: SiteCopy = {
     reasons: [
       { title: 'The architecture changes character.', body: 'The glass roofs built for the aurora now hold an unbroken sun. Skylight over the bed, sun on the lake, and no reason to draw a curtain, because there is no night to hide from.' },
       { title: 'The wilderness becomes accessible.', body: 'Lakes thaw, the boreal forest opens, the canoe routes appear. The same villa reached by snowmobile in February is now a five-minute boat ride from the dock.' },
-      { title: 'The same house, a different season.', body: 'The collection is the same in summer as in winter. Under the same glass roof there is a sun that will not set instead of the aurora, the lakes are open water and the forest is walkable. The rate sits on the property own booking page, so the seasonal difference is visible directly.' },
+      { title: 'The same house, a different season.', body: 'The collection is the same in summer as in winter. Under the same glass roof there is a sun that will not set instead of the aurora; the lakes are open water and the forest is walkable. The rate sits on the property\'s own booking page, so the seasonal difference is visible directly.' },
       { title: 'No queues, no neighbours.', body: 'Lapland in summer sees a fraction of the winter crowd. The footpath through the forest and the lookout up on the fell are, in practice, yours.' },
     ],
     summerCollection: {
       eyebrow: 'The summer collection',
       h2: 'Four villa characters, in summer light.',
-      lede: 'The same kinds of building as the winter collection (glass-roof cabins, lakeside log estates, alpine chalets, forest villas), shot in late-June midnight-sun light so you can see the other half of the story.',
+      lede: 'The same kinds of building as the winter collection (glass-roof cabins, lakeside log estates, alpine chalets, forest villas), shown in late-June midnight-sun light so you can see the other half of the story.',
       cards: [
         { title: 'Glass-roof cabin in the green', copy: 'The aurora architecture in 23:00 golden light, surrounded by lush forest instead of snow.' },
         { title: 'Lakeside log estate', copy: 'A private bay on Lake Inari, open water again, canoe at the dock and smoke rising from the wood-fired sauna.' },
@@ -255,7 +255,7 @@ const en: SiteCopy = {
       h2: 'A note on planning a midnight-sun trip.',
       p1: 'The window is short, and the villas are individually owned, so the calendar fills unevenly rather than neatly. It is worth asking early.',
       p2: 'For a given June, the time to ask is between January and March of that same year. Later is still worth a message, because dates do come free, but the very top of the list usually goes first.',
-      quoting: 'Currently quoting summer 2026 + 2027',
+      quoting: 'Now answering inquiries for summer 2026 and 2027',
     },
     inquiryTitle: 'Inquire about a midnight-sun trip.',
     inquiryBody: 'Send your dates, how many of you there are and any preferences. A reply lands within one working day with what is free across the summer collection.',
@@ -338,7 +338,7 @@ const en: SiteCopy = {
   villaDetailPage: {
     backLink: 'Villas',
     bedroom: 'bedroom',
-    bedrooms: 'bedroom',
+    bedrooms: 'bedrooms',
     sleeps: 'Sleeps',
     fromPerNight: 'From / night',
     nightlyHint: 'Indicative low-season rate. Actual nightly rate depends on dates, length of stay and inclusions.',
@@ -401,7 +401,7 @@ const en: SiteCopy = {
     { name: 'Destinations', href: '/destinations' },
     { name: 'Experiences', href: '/experiences' },
     { name: 'Midnight Sun', href: '/midnight-sun' },
-    { name: 'Private enquiry', href: '/private-inquiry' },
+    { name: 'Private inquiry', href: '/private-inquiry' },
   ],
 }
 

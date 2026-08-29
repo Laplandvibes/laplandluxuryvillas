@@ -11,7 +11,7 @@
 - [Experiences](https://laplandluxuryvillas.com/experiences/): Experiences around the stays
 - [Midnight sun](https://laplandluxuryvillas.com/midnight-sun/): Summer and midnight sun stays
 - [About](https://laplandluxuryvillas.com/about/): About the collection
-- [Private inquiry](https://laplandluxuryvillas.com/private-inquiry/): Private booking inquiry
+- [Private inquiry](https://laplandluxuryvillas.com/private-inquiry/): Send dates and headcount, get a shortlist by reply
 
 ## Languages
 
@@ -21,4 +21,4 @@ English (default), Finnish (/fi/), Swedish (/sv/), German (/de/), French (/fr/),
 
 - [LaplandVibes hub](https://laplandvibes.com/)
 - [Sitemap](https://laplandluxuryvillas.com/sitemap.xml)
-- Contact: info@laplandluxuryvillas.com
+- Contact: info@laplandvibes.com

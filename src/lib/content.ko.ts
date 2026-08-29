@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'Levi의 조용한 대안. Pallas-Yllästunturi 국립공원, 적은 인파, 더 깊은 숲.',
       copy: [
-        'Ylläs에는 핀란드 어느 리조트보다 많은 62개의 슬로프가 있고, 해발 719m 민둥 정상에서 골짜기까지 3km가 넘는 국내 최장 활강 코스가 있습니다. 그런데도 Levi의 일부처럼 느껴지는 것은, 마을이 15km 떨어진 두 정착지(Äkäslompolo와 Ylläsjärvi)로 흩어져 있고 그 사이를 펠과 Pallas-Yllästunturi 국립공원이 가르고 있기 때문입니다.',
+        'Ylläs에는 핀란드 어느 스키 지역보다 많은 62개의 슬로프가 있고, 해발 719m 민둥 정상에서 골짜기까지 3km가 넘는 국내 최장 활강 코스가 있습니다. 그런데도 Levi의 일부처럼 느껴지는 것은, 마을이 15km 떨어진 두 정착지(Äkäslompolo와 Ylläsjärvi)로 흩어져 있고 그 사이를 펠과 Pallas-Yllästunturi 국립공원이 가르고 있기 때문입니다.',
         '럭셔리 여행에서의 매력은 공간입니다. 이곳의 건축가가 지은 샬레는 펠 비탈에 홀로 서 있고, 국립공원 트레일이 숙소에서 시작되며, 사람들이 실제로 값을 치르는 것은 그 고요함입니다. 크로스컨트리 코스는 약 300km이며 그중 30km 넘게 조명이 들어옵니다.',
       ],
       highlights: [

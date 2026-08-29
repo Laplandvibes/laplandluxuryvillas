@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'L\'alternative paisible à Levi. Parc national de Pallas-Yllästunturi, moins de foule, forêt plus profonde.',
       copy: [
-        'Ylläs compte 62 pistes, plus que toute autre station de Finlande, et les plus longues descentes du pays : plus de trois kilomètres depuis le sommet dénudé à 719 mètres jusqu\'à la vallée. La station paraît pourtant une fraction de Levi, car le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjell et par le parc national de Pallas-Yllästunturi.',
+        'Ylläs compte 62 pistes, plus que tout autre domaine skiable de Finlande, et les plus longues descentes du pays : plus de trois kilomètres depuis le sommet dénudé à 719 mètres jusqu\'à la vallée. La station paraît pourtant une fraction de Levi, car le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjell et par le parc national de Pallas-Yllästunturi.',
         'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjell, les sentiers du parc national partent de la propriété, et le silence est ce pour quoi les gens paient réellement. Le réseau de fond compte environ 300 kilomètres, dont plus de 30 éclairés.',
       ],
       highlights: [

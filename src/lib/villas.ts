@@ -89,7 +89,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
       'Located inside the Kakslauttanen estate near Urho Kekkonen National Park, a 35-minute private transfer from Ivalo airport. Half-board with the resort restaurant available; private chef on request.',
     ],
     signature: [
-      'Heated glass roof over the bedroom (clear in −30 °C)',
+      'Heated glass roof over the bedroom (clear at −30 °C)',
       'Private wood-burning sauna + outdoor wood-fired hot tub',
       'Two bedrooms, full kitchen, fireplace lounge',
       'Private transfer included from Ivalo airport',
@@ -110,7 +110,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tier: 'signature',
     tagline: 'Studio Puisto-designed cantilevered suite with a full glass façade pointed at the auroras.',
     copy: [
-      'A 73 m² penthouse suite on stilts, with floor-to-ceiling glass running the full width. Designed by Studio Puisto. Private terrace with hot tub. The building was built around a single pine, every interior detail picked to disappear so the forest stays the only object in the room.',
+      'A 73 m² penthouse suite on stilts, with floor-to-ceiling glass running the full width. Designed by Studio Puisto. Private terrace with hot tub. The building is wrapped around a single pine, every interior detail picked to disappear so the forest stays the only object in the room.',
       'Five minutes from Santa Claus Village, useful as a base for Christmas-season family travellers who want a quiet retreat at night and easy access to Rovaniemi by day.',
     ],
     signature: [
@@ -160,7 +160,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tier: 'signature',
     tagline: 'Glass igloos perched above Levi fell, facing south over the valley rather than north into forest.',
     copy: [
-      'Forty-two glass igloos arranged on the southern shoulder of Levi fell. Most aurora cabins point north into a blank forest; Levin Iglut is one of very few that frames the lights above the lit fell-village skyline below, better for photographers, more dramatic at dusk.',
+      'Forty-two glass igloos arranged on the southern shoulder of Levi fell. Most aurora cabins point north into a blank forest; Levin Iglut is one of very few that frames the lights above the lit fell-village skyline below: better for photographers, more dramatic at dusk.',
       'Walking distance to Levi village (gondola, restaurants, ski-in/ski-out) but the igloos themselves are quiet. Restaurant Aurora on-site, with the chef sourcing within 100 km.',
     ],
     signature: [

@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'Leviの静かな代替地。Pallas-Yllästunturi国立公園、少ない人出、より深い森。',
       copy: [
-        'Ylläsにはフィンランドのどのリゾートより多い62本のコースがあり、標高719 mの樹木限界を超えた山頂から谷まで3 kmを超える、国内最長の滑走が可能です。それでもLeviのごく一部の規模に感じられるのは、村がÄkäslompoloとYlläsjärviの二つの集落に分かれ、その間を15 kmの山とPallas-Yllästunturi国立公園が隔てているからです。',
+        'Ylläsにはフィンランドのどのスキーエリアより多い62本のコースがあり、標高719 mの樹木限界を超えた山頂から谷まで3 kmを超える、国内最長の滑走が可能です。それでもLeviのごく一部の規模に感じられるのは、村がÄkäslompoloとYlläsjärviの二つの集落に分かれ、その間を15 kmの山とPallas-Yllästunturi国立公園が隔てているからです。',
         '高級旅行にとっての魅力は、空間です。ここの建築家設計シャレーは山腹に一軒で佇み、国立公園のトレイルは敷地から始まり、人々が実際に対価を払うのはその静けさです。クロスカントリーコースは約300 km、うち30 km以上が照明付きです。',
       ],
       highlights: [

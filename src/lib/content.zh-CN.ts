@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: '列维（Levi）的静谧之选。帕拉斯-于莱斯通图里（Pallas-Yllästunturi）国家公园，人群更少，森林更深。',
       copy: [
-        '于莱斯（Ylläs）拥有 62 条雪道，多于芬兰任何一处度假胜地，也拥有全国最长的滑降：从海拔 719 米的无林山顶到谷底超过三公里。它体感却只有列维的一小部分，因为村庄分散于两处聚落（Äkäslompolo 与 Ylläsjärvi），由 15 公里的山丘和帕拉斯-于莱斯通图里国家公园（Pallas-Yllästunturi National Park）相隔。',
+        '于莱斯（Ylläs）拥有 62 条雪道，多于芬兰任何一处滑雪区域，也拥有全国最长的滑降：从海拔 719 米的无林山顶到谷底超过三公里。它体感却只有列维的一小部分，因为村庄分散于两处聚落（Äkäslompolo 与 Ylläsjärvi），由 15 公里的山丘和帕拉斯-于莱斯通图里国家公园（Pallas-Yllästunturi National Park）相隔。',
         '对奢华旅行而言，其魅力在于空间。此处由建筑师打造的小屋独立伫立于山坡之上，国家公园的步道从物业出发，人们真正为之买单的，正是这份静谧。越野滑雪道网络约 300 公里，其中 30 多公里配有照明。',
       ],
       highlights: [

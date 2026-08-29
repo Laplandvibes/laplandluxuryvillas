@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'L’alternativa tranquilla a Levi. Parco nazionale Pallas-Yllästunturi, meno folla, foresta piu profonda.',
       copy: [
-        'Ylläs conta 62 piste, piu di ogni altra stazione della Finlandia, e le discese piu lunghe del paese: oltre tre chilometri dalla vetta spoglia a 719 metri fino a valle. Sembra comunque una frazione di Levi, perche il villaggio e disperso su due insediamenti (Äkäslompolo e Ylläsjärvi), separati da 15 km di fell e dal Parco Nazionale Pallas-Yllästunturi.',
+        'Ylläs conta 62 piste, piu di ogni altro comprensorio sciistico della Finlandia, e le discese piu lunghe del paese: oltre tre chilometri dalla vetta spoglia a 719 metri fino a valle. Sembra comunque una frazione di Levi, perche il villaggio e disperso su due insediamenti (Äkäslompolo e Ylläsjärvi), separati da 15 km di fell e dal Parco Nazionale Pallas-Yllästunturi.',
         'Per il viaggio di lusso l’attrattiva e lo spazio. Gli chalet firmati da architetti qui sorgono isolati sul fianco della fell, i sentieri del parco nazionale partono dalla proprieta, e il silenzio e cio per cui la gente paga davvero. La rete di fondo misura circa 300 chilometri, di cui oltre 30 illuminati.',
       ],
       highlights: [

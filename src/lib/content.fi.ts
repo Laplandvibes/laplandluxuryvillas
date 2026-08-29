@@ -192,13 +192,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'Levin rauhallinen vaihtoehto. Pallas-Yllästunturin kansallispuisto, vähemmän ruuhkaa, syvempi metsä.',
       copy: [
-        'Ylläksellä on 62 rinnettä, enemmän kuin missään muussa Suomen hiihtokeskuksessa, ja maan pisimmät laskettelurinteet: yli kolme kilometriä paljaalta 719 metrin laelta laaksoon. Silti se tuntuu murto-osalta Levin kokoiselta, sillä kylä on hajautunut kahteen taajamaan (Äkäslompolo ja Ylläsjärvi), joita erottaa 15 kilometriä tunturia ja Pallas-Yllästunturin kansallispuisto.',
+        'Ylläksellä on 62 rinnettä, enemmän kuin millään muulla Suomen hiihtoalueella, ja maan pisimmät laskettelurinteet: yli kolme kilometriä paljaalta 719 metrin laelta laaksoon. Silti se tuntuu murto-osalta Levin kokoiselta, sillä kylä on hajautunut kahteen taajamaan (Äkäslompolo ja Ylläsjärvi), joita erottaa 15 kilometriä tunturia ja Pallas-Yllästunturin kansallispuisto.',
         'Luksusmatkailulle vetovoima on tila. Arkkitehdin suunnittelemat chalet’t sijaitsevat täällä yksinään tunturin rinteellä, kansallispuiston reitit lähtevät suoraan kohteesta, ja hiljaisuus on se mistä ihmiset todella maksavat. Latuverkostoa on noin 300 kilometriä, siitä yli 30 kilometriä valaistuna.',
       ],
       highlights: [
         'Pallas-Yllästunturin kansallispuisto, Suomen 3. suurin',
         'Kaksi hiihtokylää Ylläksen tunturin vastakkaisilla puolilla',
-        'Kansallispuiston sisällä, joten tunturin puolella ei ole keskuksen valoja',
+        'Kansallispuiston reunalla, joten tunturin puolella ei ole keskuksen valoja',
         'Noin 300 km hoidettua latua, siitä yli 30 km valaistuna',
       ],
       arrival: 'Kittilä (KTT), 40 km, noin 45 min yksityiskuljetuksella',

@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'Det lugna alternativet till Levi. Pallas-Yllästunturi nationalpark, mindre trängsel, djupare skog.',
       copy: [
-        'Ylläs har 62 backar, fler än någon annan skidort i Finland, och landets längsta utförsåkning: över tre kilometer från den kala toppen på 719 meter ner till dalen. Ändå känns orten som en bråkdel av Levi, eftersom byn är utspridd över två orter (Äkäslompolo och Ylläsjärvi), åtskilda av 15 km fjäll och Pallas-Yllästunturi nationalpark.',
+        'Ylläs har 62 backar, fler än något annat skidområde i Finland, och landets längsta utförsåkning: över tre kilometer från den kala toppen på 719 meter ner till dalen. Ändå känns orten som en bråkdel av Levi, eftersom byn är utspridd över två orter (Äkäslompolo och Ylläsjärvi), åtskilda av 15 km fjäll och Pallas-Yllästunturi nationalpark.',
         'För lyxresor sitter dragningskraften i rymligheten. Arkitektbyggda stugor står här ensamma på fjällsluttningen, nationalparkens leder utgår från boendet, och tystnaden är det folk faktiskt betalar för. Spårnätet omfattar omkring 300 kilometer, varav över 30 kilometer är belysta.',
       ],
       highlights: [

@@ -17,7 +17,7 @@
   "home": {
     "en": {
       "title": "Lapland Luxury Villas: Private Aurora Residences & Suites",
-      "description": "A private collection of Lapland’s finest villas and suites: glass-roof cabins, designer aurora suites, one lakeside retreat. Rates on each property’s own booking page."
+      "description": "A private collection of Lapland’s most distinctive villas and suites: glass-roof cabins, designer aurora suites, one lakeside retreat."
     },
     "fi": {
       "title": "Lapin luksushuvilat: yksityiset revontuli-residenssit",
@@ -67,7 +67,7 @@
   "villas": {
     "en": {
       "title": "The Collection, Lapland Luxury Villas & Glass Cabins",
-      "description": "A short, curated list of private villas in Finnish Lapland: glass-roof aurora cabins, designer suites and a lakeside retreat. Eight houses across five destinations."
+      "description": "A short, curated list of private villas in Finnish Lapland: glass-roof aurora cabins, designer suites and a lakeside retreat. Eight rooms across five destinations."
     },
     "fi": {
       "title": "Kokoelma, Lapin luksushuvilat ja lasikabiinit",
@@ -167,7 +167,7 @@
   "destinations": {
     "en": {
       "title": "Where to Stay in Lapland · Five Destinations Worth It",
-      "description": "Saariselkä, Inari, Rovaniemi, Levi and Ylläs, the five Lapland destinations worth a luxury journey. Aurora frequency, arrival logistics and the villas in each."
+      "description": "Saariselkä, Inari, Rovaniemi, Levi and Ylläs, the five Lapland destinations worth a luxury journey. Aurora conditions, arrival logistics and the villas in each."
     },
     "fi": {
       "title": "Missä yöpyä Lapissa, viisi kohdetta matkan arvoista",
@@ -267,7 +267,7 @@
   "midnight-sun": {
     "en": {
       "title": "Midnight Sun, Lapland Luxury Villas in Unbroken Light",
-      "description": "Jun 6 – Jul 7: the window when the sun does not set in Lapland. The same villas you book for the auroras, in their summer character, chefs, half the demand."
+      "description": "Jun 6 – Jul 7: the window when the sun does not set in Lapland. The same villas you book for the auroras, in their summer character and a far quieter season."
     },
     "fi": {
       "title": "Keskiyön aurinko, Lapin luksushuvilat yöttömässä yössä",
@@ -317,7 +317,7 @@
   "about": {
     "en": {
       "title": "About, Lapland Luxury Villas, curated from Finland",
-      "description": "A short, curated private collection of Lapland's finest villas and suites, run from Finnish Lapland by Lapeso Oy, part of the LaplandVibes network."
+      "description": "A short, curated private collection of Lapland's most distinctive villas and suites, run from Finnish Lapland by Lapeso Oy, part of the LaplandVibes network."
     },
     "fi": {
       "title": "Tietoa, Lapin luksushuvilat, koottu Suomesta",
@@ -366,8 +366,8 @@
   },
   "private-inquiry": {
     "en": {
-      "title": "Private Enquiry: Lapland Villas and Suites",
-      "description": "Send one private enquiry: headcount, dates, preferences. A person reads it and replies within one working day with suggestions. No account, no public profile."
+      "title": "Private Inquiry: Lapland Villas and Suites",
+      "description": "Send one private inquiry: headcount, dates, preferences. A person reads it and replies within one working day with suggestions. No account, no public profile."
     },
     "fi": {
       "title": "Yksityinen tiedustelu: Lapin huvilat ja sviitit",
@@ -417,7 +417,7 @@
   "privacy": {
     "en": {
       "title": "Privacy Policy | LaplandLuxuryVillas",
-      "description": "How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, EU-only processors, and exactly what happens to a private enquiry."
+      "description": "How LaplandLuxuryVillas (operated by Lapeso Oy) handles your data: GDPR-compliant, EU-only processors, and exactly what happens to a private inquiry."
     },
     "fi": {
       "title": "Tietosuojaseloste | LaplandLuxuryVillas",

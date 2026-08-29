@@ -192,7 +192,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'yllas': {
       position: 'La alternativa tranquila a Levi. Parque nacional de Pallas-Yllästunturi, menos gente, bosque más profundo.',
       copy: [
-        'Ylläs tiene 62 pistas, más que ninguna otra estación de Finlandia, y los descensos más largos del país: más de tres kilómetros desde la cima pelada de 719 metros hasta el valle. Aun así parece una fracción de Levi, porque la aldea se reparte entre dos asentamientos (Äkäslompolo y Ylläsjärvi), separados por 15 km de fell y por el Parque Nacional de Pallas-Yllästunturi.',
+        'Ylläs tiene 62 pistas, más que ninguna otra área esquiable de Finlandia, y los descensos más largos del país: más de tres kilómetros desde la cima pelada de 719 metros hasta el valle. Aun así parece una fracción de Levi, porque la aldea se reparte entre dos asentamientos (Äkäslompolo y Ylläsjärvi), separados por 15 km de fell y por el Parque Nacional de Pallas-Yllästunturi.',
         'Para el viaje de lujo el atractivo es el espacio. Los chalés de autor se asientan aquí en solitario en la ladera del fell, los senderos del parque nacional parten desde la propiedad, y el silencio es lo que la gente realmente paga. La red de fondo suma unos 300 kilómetros, más de 30 de ellos iluminados.',
       ],
       highlights: [

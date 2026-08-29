@@ -198,7 +198,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       highlights: [
         'Pallas-Yllästunturi-Nationalpark, Finnlands drittgrößter',
         'Zwei Skidörfer auf gegenüberliegenden Seiten des Ylläs-Fjells',
-        'Im Nationalpark, daher kein Resortlicht auf der Fjellseite',
+        'Am Rand des Nationalparks, daher kein Resortlicht auf der Fjellseite',
         'Rund 300 km gespurte Loipen, davon über 30 km beleuchtet',
       ],
       arrival: 'Kittilä (KTT), 40 km, etwa 45 Min. per privatem Transfer',

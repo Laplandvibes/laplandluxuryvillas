@@ -47,7 +47,7 @@ const COPY: Record<Lang, Block> = {
     rights: 'Voit milloin tahansa pyytää nähdä, oikaista tai poistaa tiedustelusi lähettämällä viestin osoitteeseen private@laplandvibes.com. Poistamme sen ilman erillistä perustelua. Sinulla on myös oikeus tehdä valitus tietosuojavaltuutetun toimistolle.',
   },
   en: {
-    heading: 'Private enquiry',
+    heading: 'Private inquiry',
     collected: 'When you submit the form on the Private Inquiry page we ask for: party size, the nature of the trip, a budget band, preferred dates, a free-text message, and your name and email address. Nothing else. We never ask for a phone number, a postal address, an identity number or payment details at any point.',
     route: 'The form is sent from our own server (laplandluxuryvillas.com/api/inquiry) on to a Supabase service function, which delivers the message to private@laplandvibes.com. The controller is Lapeso Oy. The processors are Cloudflare (site and API hosting) and Supabase (message delivery). We do not sell or disclose the content of an inquiry to third parties and we do not use it to target advertising. Analytics receives only the fact that an inquiry was sent and which category it was about, never the message, the name or the email address.',
     basis: 'The lawful basis is legitimate interest and pre-contractual steps: you cannot get an answer to an inquiry unless we read it. We keep an inquiry and the correspondence around it for at most 24 months from the last contact, after which it is deleted.',
