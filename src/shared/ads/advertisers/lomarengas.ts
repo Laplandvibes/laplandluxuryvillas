@@ -106,7 +106,7 @@ const lomarengas: AdSpec = {
     nl: {
       eyebrow: 'Een heel huisje, geen hotelkamer',
       headline: 'Huur een heel Lapland-huisje, met eigen sauna en plek voor iedereen',
-      sub: "Finlands grootste verhuurder van vakantiehuisjes. Duizenden huisjes door heel Lapland, veel met een eigen sauna aan het meer en een open haard. Je boekt rechtstreeks en hebt het hele huisje voor jezelf, niet alleen een kamer. Wil je ruimte, rust en je eigen keuken, dan wint het huisje het van het hotel.",
+      sub: "Finlands grootste verhuurder van vakantiehuisjes. Duizenden huisjes door heel Lapland, veel met een eigen sauna aan het meer en een open haard. U boekt rechtstreeks en hebt het hele huisje voor uzelf, niet alleen een kamer. Wilt u ruimte, rust en uw eigen keuken, dan wint het huisje het van het hotel.",
       trust: ['Eigen sauna in de meeste', 'Het hele huisje, niet gedeeld', 'Huisjes door heel Lapland'],
       cta: 'Bekijk vrije huisjes',
       poweredBy: 'Boeking via Lomarengas',
