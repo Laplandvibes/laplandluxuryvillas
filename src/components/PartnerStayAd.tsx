@@ -112,8 +112,8 @@ const VILLA_ANGLE: Record<Lang, AdCopy> = {
   },
   it: {
     eyebrow: 'La baita intera, non una stanza',
-    headline: 'Lomarengas: affitta una baita intera in Lapponia, con la tua sauna sul lago e spazio per tutti',
-    sub: "Quando la collezione di ville è al completo, o volete semplicemente un posto tutto vostro, una baita scelta con cura è l'alternativa accogliente. Lomarengas è la più grande agenzia di affitto baite della Finlandia, con migliaia in tutta la Lapponia, molte con sauna privata sul lago e camino. Prenoti diretto e hai tutta la casa, non solo una stanza.",
+    headline: 'Lomarengas: affitti una baita intera in Lapponia, con la Sua sauna sul lago e spazio per tutti',
+    sub: "Quando la collezione di ville è al completo, o vuole semplicemente un posto tutto Suo, una baita scelta con cura è l'alternativa accogliente. Lomarengas è la più grande agenzia di affitto baite della Finlandia, con migliaia in tutta la Lapponia, molte con sauna privata sul lago e camino. Prenoti diretto e hai tutta la casa, non solo una stanza.",
     trust: ['Sauna privata nella maggior parte', "L'intera baita, non condivisa", 'Migliaia in tutta la Lapponia'],
     cta: 'Vedi baite disponibili',
     poweredBy: 'Prenotazione con Lomarengas',

@@ -1,6 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AlertCircle, Briefcase, Newspaper, X } from 'lucide-react';
+
+/**
+ * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin (contact_view/-start/
+ * -blocked/-submit/-success/-error + data.kind). Paikallinen apuri — ei
+ * jaettua importtia (vendoroitu sync on refresh-only). Ei saa koskaan rikkoa
+ * lomaketta. Standardi: memory _procedural/lv_form_funnel_events.md.
+ */
+function track(event: string, data?: Record<string, unknown>) {
+  try {
+    (window as unknown as { umami?: { track: (e: string, d?: unknown) => void } }).umami?.track(event, data);
+  } catch { /* ignore */ }
+}
 
 // Finnish flag colors, match CookieBanner
 const BLUE = '#002F6C';
@@ -704,6 +716,22 @@ interface SharedFooterProps {
    */
   extraLegalLinks?: { to: string; label: string }[];
   /**
+   * Per-site slugs for the three canonical legal pages. Defaults are the
+   * network standard and 26/27 sites need nothing here.
+   *
+   * 🔴 laplandskiresorts serves its privacy policy at `/privacy-policy` — its
+   * canonical, sitemap and hreflang set have carried that slug since launch and
+   * `/privacy` has never existed there. The hardcoded `/privacy` link therefore
+   * pointed at a real 404 in the footer of every page on that site (found by
+   * e2e/check-links.mjs 2026-08-22). The same split already exists in
+   * shared/NewsletterPopup (`privacyHref`), which is why this is a prop and not
+   * a per-site fork of the Footer.
+   *
+   * Pass the slug WITHOUT locale prefix and WITHOUT trailing slash; the Footer
+   * adds both, so the link stays canonical and Cloudflare never answers 308.
+   */
+  legalPaths?: { privacy?: string; cookie?: string; terms?: string };
+  /**
    * Destination for the "Website by …" credit link. Defaults to yrityspaketit.fi;
    * pass e.g. "https://www.zatap.fi" on sites whose `websiteBy` label names Zatap,
    * so the label and the link target match.
@@ -718,7 +746,7 @@ interface SharedFooterProps {
 
 // In-page contact form modal. Replaces the old mailto: links (which opened the
 // OS "choose an app" dialog). Posts to the hub send-contact-email edge function.
-function ContactModal({ kind, title, c, onClose }: { kind: ContactKind; title: string; c: ContactFormCopy; onClose: () => void }) {
+function ContactModal({ kind, title, c, lang, onClose }: { kind: ContactKind; title: string; c: ContactFormCopy; lang: string; onClose: () => void }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState(c.subj[kind]);
@@ -726,6 +754,15 @@ function ContactModal({ kind, title, c, onClose }: { kind: ContactKind; title: s
   const [website, setWebsite] = useState(''); // honeypot, humans leave blank
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
   const [err, setErr] = useState('');
+  // [LV-FUNNEL] view = modaali auki (mount), start = 1. kenttäfokus.
+  const funnelData = { kind };
+  const startTracked = useRef(false);
+  useEffect(() => { track('contact_view', { kind }); }, [kind]);
+  const trackStart = () => {
+    if (startTracked.current) return;
+    startTracked.current = true;
+    track('contact_start', funnelData);
+  };
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
@@ -740,8 +777,16 @@ function ContactModal({ kind, title, c, onClose }: { kind: ContactKind; title: s
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!canSend) { setErr(c.required); setStatus('error'); return; }
+    if (!canSend) {
+      setErr(c.required); setStatus('error');
+      track('contact_blocked', {
+        ...funnelData,
+        reason: !name.trim() ? 'name' : !emailValid ? 'email' : !subject.trim() ? 'subject' : 'message',
+      });
+      return;
+    }
     setStatus('sending'); setErr('');
+    track('contact_submit', funnelData);
     const host = typeof window !== 'undefined' ? window.location.hostname : '';
     try {
       const res = await fetch(CONTACT_ENDPOINT, {
@@ -752,13 +797,19 @@ function ContactModal({ kind, title, c, onClose }: { kind: ContactKind; title: s
           email: email.trim(),
           subject: subject.trim(),
           message: `${message.trim()}\n\n, sent from ${host}`,
+          // [LV 2026-08-22] Lukijan kieli => send-contact-email lahettaa
+          // automaattivastauksen samalla kielella. Ilman kenttaa funktio
+          // palaa entiseen FI+EN-muotoon, joten kentan puuttuminen ei riko.
+          lang,
           website, // honeypot
         }),
       });
       if (!res.ok) throw new Error(String(res.status));
       setStatus('success');
+      track('contact_success', funnelData);
     } catch {
       setErr(c.errorMsg); setStatus('error');
+      track('contact_error', funnelData);
     }
   }
 
@@ -793,19 +844,19 @@ function ContactModal({ kind, title, c, onClose }: { kind: ContactKind; title: s
               <p className="font-heading" style={{ fontSize: 22, color: BLUE, marginBottom: 18, letterSpacing: '0.02em', paddingRight: 24 }}>{title}</p>
               <div style={{ marginBottom: 12 }}>
                 <label style={labelStyle} htmlFor="cf-name">{c.name}</label>
-                <input id="cf-name" type="text" value={name} onChange={(e) => setName(e.target.value)} style={inputStyle} autoComplete="name" required />
+                <input id="cf-name" type="text" value={name} onFocus={trackStart} onChange={(e) => setName(e.target.value)} style={inputStyle} autoComplete="name" required />
               </div>
               <div style={{ marginBottom: 12 }}>
                 <label style={labelStyle} htmlFor="cf-email">{c.email}</label>
-                <input id="cf-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} style={inputStyle} autoComplete="email" required />
+                <input id="cf-email" type="email" value={email} onFocus={trackStart} onChange={(e) => setEmail(e.target.value)} style={inputStyle} autoComplete="email" required />
               </div>
               <div style={{ marginBottom: 12 }}>
                 <label style={labelStyle} htmlFor="cf-subject">{c.subject}</label>
-                <input id="cf-subject" type="text" value={subject} onChange={(e) => setSubject(e.target.value)} style={inputStyle} required />
+                <input id="cf-subject" type="text" value={subject} onFocus={trackStart} onChange={(e) => setSubject(e.target.value)} style={inputStyle} required />
               </div>
               <div style={{ marginBottom: 16 }}>
                 <label style={labelStyle} htmlFor="cf-message">{c.message}</label>
-                <textarea id="cf-message" value={message} onChange={(e) => setMessage(e.target.value)} rows={4} style={{ ...inputStyle, resize: 'vertical', minHeight: 96 }} required />
+                <textarea id="cf-message" value={message} onFocus={trackStart} onChange={(e) => setMessage(e.target.value)} rows={4} style={{ ...inputStyle, resize: 'vertical', minHeight: 96 }} required />
               </div>
               {/* honeypot, visually hidden, off-screen, not announced */}
               <input
@@ -828,7 +879,7 @@ function ContactModal({ kind, title, c, onClose }: { kind: ContactKind; title: s
   );
 }
 
-export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPillarClick, editorialNote, extraLegalLinks = [], dict, websiteByHref = 'https://yrityspaketit.fi' }: SharedFooterProps) {
+export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPillarClick, editorialNote, extraLegalLinks = [], legalPaths, dict, websiteByHref = 'https://yrityspaketit.fi' }: SharedFooterProps) {
   const d = mergeDict(dict);
   const siteGroups = buildSiteGroups(d);
   const [contactKind, setContactKind] = useState<ContactKind | null>(null);
@@ -952,6 +1003,8 @@ export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPilla
                 href="https://app.laplandvibes.com"
                 target="_blank"
                 rel="noopener"
+                data-umami-event="app_cta"
+                data-umami-event-surface="footer"
                 className="inline-flex items-center gap-1.5 mt-3 px-3.5 py-2 rounded-full text-[13px] font-semibold transition-colors duration-200 min-h-[44px] sm:min-h-0"
                 // #FFFFFF, ei #F9FAFB: lumenvalkoinen jaa 4,40:1 -- juuri alle rajan.
                 style={{ background: PINK_FILL, color: '#FFFFFF' }}
@@ -1233,6 +1286,13 @@ export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPilla
                 {editorialNote}
               </p>
             )}
+            {/* 🔴 Kumppanuusmerkintä on lakisääteinen, ja tämä on koko verkoston
+                ainoa paikka jossa se näkyy joka sivulla — footer on kopioitu
+                sellaisenaan jokaiselle sivustolle, joten yksi väri ratkaisee
+                kaikki. Alpha 0,65 antoi 4,47:1 (mitattu 17.8.), ja 11–12 px
+                teksti vaatii 4,5:1 — se jäi rikki hiuksenhienosti joka
+                sivustolla yhtä aikaa. 0,75 = 5,98:1 ja pysyy yhä selvästi
+                vaimeampana kuin yläpuolinen editorialNote. */}
             <p className="text-[12px] sm:text-[11px] leading-relaxed text-center md:text-left" style={{ color: 'rgba(0,47,108,0.75)' }}>
               <span aria-hidden="true">ⓘ </span>
               {d.affiliate}
@@ -1247,9 +1307,9 @@ export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPilla
             <div className="flex flex-col items-center gap-3 text-xs font-normal">
               <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-1">
                 {[
-                  { to: `${localePrefix}/privacy/`, label: d.legal.privacy },
-                  { to: `${localePrefix}/cookie-policy/`, label: d.legal.cookie },
-                  { to: `${localePrefix}/terms/`, label: d.legal.terms },
+                  { to: `${localePrefix}${legalPaths?.privacy ?? '/privacy'}/`, label: d.legal.privacy },
+                  { to: `${localePrefix}${legalPaths?.cookie ?? '/cookie-policy'}/`, label: d.legal.cookie },
+                  { to: `${localePrefix}${legalPaths?.terms ?? '/terms'}/`, label: d.legal.terms },
                   ...extraLegalLinks,
                 ].map(({ to, label }) => (
                   <Link
@@ -1321,6 +1381,7 @@ export default function SharedFooter({ pillarLinks = defaultPillarLinks, onPilla
           kind={contactKind}
           title={contactTitle[contactKind]}
           c={contactCopy}
+          lang={lang}
           onClose={() => setContactKind(null)}
         />
       )}

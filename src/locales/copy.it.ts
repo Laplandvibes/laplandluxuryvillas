@@ -93,7 +93,7 @@ const it: SiteCopy = {
   newsletter: {
     eyebrow: 'La newsletter #LaplandVibes',
     h2: 'Date libere delle ville e le settimane tranquille.',
-    lede: 'Date liberate, indirizzi degni di nota e come leggere le previsioni delle aurore. Niente spam. Scriviamo dalla Finlandia e inviamo solo quando abbiamo davvero qualcosa per te.',
+    lede: 'Date liberate, indirizzi degni di nota e come leggere le previsioni delle aurore. Niente spam. Scriviamo dalla Finlandia e inviamo solo quando abbiamo davvero qualcosa da dire.',
     emailPlaceholder: 'sua@email.com',
     footnote: 'Disiscrizione con un clic.',
     welcome: 'Benvenuto a bordo. Il primo avviso arriva entro una settimana.',
@@ -117,11 +117,11 @@ const it: SiteCopy = {
     villas: {
       eyebrow: 'Le ville',
       title: '{n} ville. {m} destinazioni. Basta un messaggio.',
-      lede: 'Ogni immobile elencato sotto è verificato sulla base delle informazioni pubblicate dal gestore e delle recensioni recenti degli ospiti. Filtra per la tipologia di edificio che hai in mente, oppure invia una richiesta privata e costruiremo una short list intorno alle tue date.',
+      lede: 'Ogni immobile elencato sotto è verificato sulla base delle informazioni pubblicate dal gestore e delle recensioni recenti degli ospiti. Filtri per la tipologia di edificio che ha in mente, oppure invii una richiesta privata e costruiremo una short list intorno alle Sue date.',
     },
     suites: {
       eyebrow: 'Suite d’autore',
-      title: 'Quando non ti serve una villa, ma ti serve quel tetto in vetro.',
+      title: 'Quando non Le serve una villa, ma Le serve quel tetto in vetro.',
       lede: 'Un breve elenco di suite con una camera e cabine per l’aurora dove l’architettura stessa è l’esperienza. Meno persone, lo stesso soffitto panoramico.',
     },
     destinations: {
@@ -178,7 +178,7 @@ const it: SiteCopy = {
     filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d’autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
     noVillas: 'Ancora nessuna villa in questa categoria.',
     inquiryTitle: 'Non trovi la soluzione giusta?',
-    inquiryBody: 'Qui sopra c’è l’intera collezione pubblicata. Se nulla è adatto, dicci che cosa cerchi e ti suggeriremo quello che guarderemmo noi, anche fuori da questo elenco.',
+    inquiryBody: 'Qui sopra c’è l’intera collezione pubblicata. Se nulla è adatto, ci dica che cosa cerca e Le suggeriremo quello che guarderemmo noi, anche fuori da questo elenco.',
   },
   suitesPage: {
     intro: {
@@ -189,7 +189,7 @@ const it: SiteCopy = {
       p1Post: ', dove il soffitto è il dettaglio protagonista. Entrambe sono elencate qui sotto.',
     },
     inquiryTitle: 'Una prenotazione di due suite, o un piano privato?',
-    inquiryBody: 'Diversi di questi immobili liberano un piano con più suite a uso esclusivo nelle settimane di bassa stagione. Indicaci le tue date e il numero di persone.',
+    inquiryBody: 'Diversi di questi immobili liberano un piano con più suite a uso esclusivo nelle settimane di bassa stagione. Ci indichi le Sue date e il numero di persone.',
   },
   destinationsPage: {
     leadTitle: 'Cinque luoghi, cinque cieli diversi',
@@ -214,7 +214,7 @@ const it: SiteCopy = {
     sections: {
       aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
       wilderness: { title: 'Natura selvaggia', intro: 'Le versioni private delle esperienze per cui tutti vengono in Lapponia, husky, motoslitta, renna, senza il bus condiviso e il percorso ad anello.' },
-      culinary: { title: 'Cucina', intro: 'Uno chef in attività di una delle cucine serie della Lapponia, nella tua villa, per una sera, oppure il menù degustazione in loco quando è la cucina la ragione della tua venuta.' },
+      culinary: { title: 'Cucina', intro: 'Uno chef in attività di una delle cucine serie della Lapponia, nella Sua villa, per una sera, oppure il menù degustazione in loco quando è la cucina la ragione della Sua venuta.' },
       arrival: { title: 'Arrivo', intro: 'Jet privato, transfer in elicottero, veicoli terrestri in versione artica. Prenotati in base allo slot, alla finestra di luce e al check-in della villa.' },
     },
   },
@@ -231,7 +231,7 @@ const it: SiteCopy = {
       { title: 'L’architettura cambia carattere.', body: 'I tetti in vetro pensati per le aurore ora incorniciano un sole ininterrotto. Lucernario sopra il letto, sole sul lago, nessun bisogno di tirare una tenda, non c’è notte da nascondere.' },
       { title: 'La natura selvaggia diventa accessibile.', body: 'I laghi si sciolgono, il bosco boreale si apre, compaiono i percorsi in canoa. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
       { title: 'La stessa casa, un’altra stagione.', body: 'La collezione in estate è la stessa dell’inverno. Sotto lo stesso tetto di vetro c’è un sole che non tramonta al posto dell’aurora, i laghi sono liberi e il bosco è percorribile. La tariffa è sulla pagina di prenotazione di ogni casa, così la differenza di stagione si legge direttamente.' },
-      { title: 'Niente code, niente vicini.', body: 'La Lapponia d’estate vede una frazione della densità di visitatori dell’inverno. Il sentiero nel bosco, il belvedere sul fjell, sono praticamente tuoi.' },
+      { title: 'Niente code, niente vicini.', body: 'La Lapponia d’estate vede una frazione della densità di visitatori dell’inverno. Il sentiero nel bosco, il belvedere sul fjell, sono praticamente solo Suoi.' },
     ],
     summerCollection: {
       eyebrow: 'La collezione estiva',
@@ -269,7 +269,7 @@ const it: SiteCopy = {
       nameLabel: 'Nome (facoltativo)',
       namePlaceholder: 'Anonimo se vuoto',
       emailLabel: 'Email di risposta',
-      emailHint: 'Se vuoto, le risposte vanno al tuo indirizzo di invio.',
+      emailHint: 'Se vuoto, le risposte vanno al Suo indirizzo di invio.',
       emailPlaceholder: 'facoltativo',
     },
     options: {
@@ -283,7 +283,7 @@ const it: SiteCopy = {
     successBody: 'Riceverai una risposta entro un giorno lavorativo. Se desideri contattarci direttamente, puoi anche scriverci a',
     successFollowUp: '.',
     errorFallback: 'Puoi anche scriverci direttamente a',
-    fallbackNotice: 'Apertura del tuo client di posta per inviare la richiesta direttamente.',
+    fallbackNotice: 'Apertura del Suo client di posta per inviare la richiesta direttamente.',
     fineprint: 'Gli invii vengono inoltrati tramite una connessione cifrata a un’unica casella di posta privata in Finlandia. Nessun CRM di terzi, nessuna attribuzione pubblicitaria nel corpo del messaggio.',
     trustStrip: [
       { title: 'Anonimo', body: 'Nome ed email sono facoltativi. La richiesta viene inviata tramite un modulo cifrato a un’unica casella di posta.' },
