@@ -100,7 +100,7 @@ const es: SiteCopy = {
     eyebrow: 'El boletín de #LaplandVibes',
     h2: 'Fechas libres en las villas y las semanas tranquilas.',
     lede: 'Fechas liberadas, casas dignas de atención y cómo leer el pronóstico de auroras. Sin spam. Escribimos desde Finlandia y enviamos solo cuando de verdad tenemos algo para ti.',
-    emailPlaceholder: 'tu@email.com',
+    emailPlaceholder: 'sua@email.com',
     footnote: 'Cancele la suscripción con un clic.',
     welcome: 'Bienvenido a bordo. El primer aviso llega en menos de una semana.',
     already: 'Ya está en la lista, nos vemos en el próximo aviso.',

@@ -94,7 +94,7 @@ const it: SiteCopy = {
     eyebrow: 'La newsletter #LaplandVibes',
     h2: 'Date libere delle ville e le settimane tranquille.',
     lede: 'Date liberate, indirizzi degni di nota e come leggere le previsioni delle aurore. Niente spam. Scriviamo dalla Finlandia e inviamo solo quando abbiamo davvero qualcosa per te.',
-    emailPlaceholder: 'tua@email.com',
+    emailPlaceholder: 'sua@email.com',
     footnote: 'Disiscrizione con un clic.',
     welcome: 'Benvenuto a bordo. Il primo avviso arriva entro una settimana.',
     already: 'Sei già nella lista, ci vediamo al prossimo avviso.',
@@ -104,7 +104,7 @@ const it: SiteCopy = {
   },
   affiliateDisclosure: {
     compact: 'Link di affiliazione, riceviamo una piccola commissione senza costi aggiuntivi quando prenoti.',
-    full: 'Questa pagina contiene link di affiliazione. Se prenoti tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi per te.',
+    full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi per Lei.',
   },
   hero: {
     home: {
