@@ -194,11 +194,11 @@ const L: Record<Lang, T> = {
   },
   nl: {
     heading: 'Veelgestelde vragen',
-    qArrive: 'hoe kom je er?',
+    qArrive: 'hoe komt u er?',
     aArrive: (ap, ia, km, n) => `De dichtstbijzijnde luchthaven is ${ap} (${ia}), op ${km} km. ${n}`,
     qAurora: 'hoe vaak is het noorderlicht te zien?',
     aAurora: (a, b, ref) => `Het Fins Meteorologisch Instituut neemt het noorderlicht op deze breedtegraad ongeveer ${a} op ${b} nachten waar. Het referentiepunt is ${ref}. Dat cijfer zegt hoe vaak het noorderlicht actief is, niet hoe vaak de hemel helder is.`,
-    qWhen: 'wanneer kun je het beste komen?',
+    qWhen: 'wanneer kunt u het beste komen?',
     aWhenAurora: 'Voor het noorderlicht het donkere seizoen, grofweg eind augustus tot begin april. Midden in de winter zijn de nachten het langst, en de weken buiten de schoolvakanties het rustigst.',
     aWhenSki: 'Het alpineseizoen loopt van de winter tot in het voorjaar; maart en april combineren lange dagen met goede sneeuw.',
     aWhenSummer: 'In de zomer wordt het ’s nachts niet donker, dus wandelen en tijd op het water gaan door. Het noorderlicht is dan niet te zien.',

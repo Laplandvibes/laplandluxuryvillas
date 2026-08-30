@@ -120,8 +120,8 @@ const VILLA_ANGLE: Record<Lang, AdCopy> = {
   },
   nl: {
     eyebrow: 'Het hele huisje, geen hotelkamer',
-    headline: 'Lomarengas: huur een heel Lapland-huisje, met je eigen sauna aan het meer en plek voor iedereen',
-    sub: 'Als de villacollectie vol is, of je wilt gewoon een plek helemaal voor jezelf, dan is een zorgvuldig gekozen huisje het warme alternatief. Lomarengas is de grootste verhuurder van vakantiehuisjes van Finland, met duizenden door heel Lapland, veel met een eigen sauna aan het meer en een open haard. Je boekt rechtstreeks en hebt het hele huis, niet alleen een kamer.',
+    headline: 'Lomarengas: huur een heel Lapland-huisje, met uw eigen sauna aan het meer en plek voor iedereen',
+    sub: 'Als de villacollectie vol is, of u wilt gewoon een plek helemaal voor uzelf, dan is een zorgvuldig gekozen huisje het warme alternatief. Lomarengas is de grootste verhuurder van vakantiehuisjes van Finland, met duizenden door heel Lapland, veel met een eigen sauna aan het meer en een open haard. U boekt rechtstreeks en hebt het hele huis, niet alleen een kamer.',
     trust: ['Eigen sauna in de meeste', 'Het hele huisje, niet gedeeld', 'Duizenden in heel Lapland'],
     cta: 'Bekijk vrije huisjes',
     poweredBy: 'Boeking via Lomarengas',

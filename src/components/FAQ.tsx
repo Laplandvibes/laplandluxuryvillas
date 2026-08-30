@@ -296,7 +296,7 @@ export const VILLA_FAQ_BY_LANG: Record<Lang, VillaFaq[]> = {
   nl: [
     {
       q: 'Wat is een privé-auroravilla in Lapland?',
-      a: 'Een privé-auroravilla is een vrijstaande luxeresidentie in Fins Lapland, ontworpen om het noorderlicht vanuit je eigen ruimte te bekijken, meestal door een glazen dak, glazen wanden of grote panoramaramen. Anders dan een hotelkamer is de villa tijdens je verblijf helemaal van jou, en ligt ze vaak buiten de lichtvervuiling, zodat de aurora op een heldere nacht beter te zien is.',
+      a: 'Een privé-auroravilla is een vrijstaande luxeresidentie in Fins Lapland, ontworpen om het noorderlicht vanuit uw eigen ruimte te bekijken, meestal door een glazen dak, glazen wanden of grote panoramaramen. Anders dan een hotelkamer is de villa tijdens uw verblijf helemaal van u, en ligt ze vaak buiten de lichtvervuiling, zodat de aurora op een heldere nacht beter te zien is.',
     },
     {
       q: 'Wat is inbegrepen bij een luxe villa in Lapland?',

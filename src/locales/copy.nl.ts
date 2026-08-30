@@ -93,7 +93,7 @@ const nl: SiteCopy = {
   newsletter: {
     eyebrow: 'De #LaplandVibes-nieuwsbrief',
     h2: 'Vrijgekomen villadata en de stille weken.',
-    lede: 'Vrijgekomen data, opmerkelijke adressen en hoe je de noorderlichtvoorspelling leest. Geen spam. We schrijven dit vanuit Finland en sturen alleen als we echt iets voor je hebben.',
+    lede: 'Vrijgekomen data, opmerkelijke adressen en hoe u de noorderlichtvoorspelling leest. Geen spam. We schrijven dit vanuit Finland en sturen alleen als we echt iets voor u hebben.',
     emailPlaceholder: 'uw@email.com',
     footnote: 'Uitschrijven met één klik.',
     welcome: 'Welkom aan boord. Het eerste bericht arriveert binnen een week.',
@@ -110,7 +110,7 @@ const nl: SiteCopy = {
     home: {
       eyebrow: '{n} villa\'s · {m} bestemmingen',
       title: 'Een villa in Lapland, zonder giswerk.',
-      lede: 'Elk huis is gecontroleerd aan de hand van zijn eigen gepubliceerde informatie en recente gastbeoordelingen. Boek rechtstreeks bij het huis, of geef je data en gezelschap door en wij stellen binnen een dag de beste opties voor.',
+      lede: 'Elk huis is gecontroleerd aan de hand van zijn eigen gepubliceerde informatie en recente gastbeoordelingen. Boek rechtstreeks bij het huis, of geef uw data en gezelschap door en wij stellen binnen een dag de beste opties voor.',
       primary: 'Bekijk de villa\'s',
       secondary: 'Vraag om suggesties',
     },
@@ -149,17 +149,17 @@ const nl: SiteCopy = {
     about: {
       eyebrow: 'Over ons',
       title: 'Een korte lijst, met opzet kort gehouden.',
-      lede: '{n} met zorg gekozen villa\'s en suites in Fins Lapland. Directe link naar de eigen boeking van het huis, geen platform ertussen, en je gegevens gaan nergens heen totdat je zelf contact opneemt.',
+      lede: '{n} met zorg gekozen villa\'s en suites in Fins Lapland. Directe link naar de eigen boeking van het huis, geen platform ertussen, en uw gegevens gaan nergens heen totdat u zelf contact opneemt.',
     },
   },
   home: {
     philosophy: {
       eyebrow: 'Zo werkt het',
-      h2: 'Wij controleren en stellen voor. Jij boekt rechtstreeks bij het huis.',
+      h2: 'Wij controleren en stellen voor. U boekt rechtstreeks bij het huis.',
       items: [
         { title: 'Alleen gecontroleerde huizen.', body: 'De lijst telt {n} villa\'s en suites, niet meer. Elk huis is gecontroleerd aan de hand van zijn eigen gepubliceerde informatie en recente gastbeoordelingen, en de lijst leeft: een huis valt eraf als het niveau niet meer overeind blijft.' },
-        { title: 'Een voorstel binnen een dag, vrijblijvend.', body: 'Geef je data, de grootte van je gezelschap en wat jullie zoeken door. Je krijgt binnen een dag een voorstel met de beste opties, en je contactgegevens worden met geen enkel huis gedeeld totdat je zelf contact opneemt.' },
-        { title: 'De prijs ligt bij het huis, niet bij ons.', body: 'Heeft een villa een openbare boekingspagina, dan brengt de link je er rechtstreeks heen en zie je de prijs vóór je beslist. Is er geen prijs gepubliceerd, dan doet het huis je rechtstreeks een voorstel. Wij bepalen geen prijzen en nemen geen boekingen aan.' },
+        { title: 'Een voorstel binnen een dag, vrijblijvend.', body: 'Geef uw data, de grootte van uw gezelschap en wat u zoekt door. U krijgt binnen een dag een voorstel met de beste opties, en uw contactgegevens worden met geen enkel huis gedeeld totdat u zelf contact opneemt.' },
+        { title: 'De prijs ligt bij het huis, niet bij ons.', body: 'Heeft een villa een openbare boekingspagina, dan brengt de link u er rechtstreeks heen en ziet u de prijs vóór u beslist. Is er geen prijs gepubliceerd, dan doet het huis u rechtstreeks een voorstel. Wij bepalen geen prijzen en nemen geen boekingen aan.' },
       ],
     },
     signature: {
