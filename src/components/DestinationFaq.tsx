@@ -100,7 +100,7 @@ const L: Record<Lang, T> = {
     qSki: 'スキー場はありますか？',
     aSki: (s, l) => `あります。コース${s}本、リフト${l}基です。`,
     qPark: '近くに国立公園はありますか？',
-    aPark: (n) => `あります: ${n}。`,
+    aPark: (n) => `あります：${n}。`,
   },
   es: {
     heading: 'Preguntas frecuentes',

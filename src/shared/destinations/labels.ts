@@ -33,7 +33,7 @@ export const FACT_LABELS: {
     en: 'Observed on about {a} nights in {b}. Reference point: {ref} (Finnish Meteorological Institute)',
     fi: 'Havaitaan noin {a} yönä {b}:sta. Vertailupiste: {ref} (Ilmatieteen laitos)',
     de: 'Etwa {a} von {b} Nächten beobachtet. Referenzpunkt: {ref} (Finnisches Meteorologisches Institut)',
-    ja: 'およそ{b}夜に{a}夜観測されます。基準地点: {ref}（フィンランド気象庁）',
+    ja: 'およそ{b}夜に{a}夜観測されます。基準地点：{ref}（フィンランド気象庁）',
     es: 'Observada unas {a} de cada {b} noches. Punto de referencia: {ref} (Instituto Meteorológico Finlandés)',
     'pt-BR': 'Observada em cerca de {a} de cada {b} noites. Ponto de referência: {ref} (Instituto Meteorológico Finlandês)',
     'zh-CN': '每 {b} 夜约有 {a} 夜可观测到。参考地点：{ref}（芬兰气象研究所）',
