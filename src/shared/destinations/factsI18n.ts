@@ -174,10 +174,10 @@ const TABLES: Partial<Record<FactLocale, Record<string, string>>> = {
     "Maintained tracks, more than 30 km lit.": "관리되는 코스이며, 30km 넘게 조명이 들어옵니다.",
     "Pallas-Yllästunturi National Park": "팔라스-윌래스툰투리 국립공원",
     "Road distance Ivalo airport to Inari village, roughly 40 minutes by car.": "이발로 공항에서 이나리 마을까지의 도로 거리. 차로 대략 40분.",
-    "Road distance Ivalo airport to Saariselkä village, about half an hour by car.": "이발로 공항에서 사리셀캐 마을까지의 도로 거리. 차로 약 30분.",
+    "Road distance Ivalo airport to Saariselkä village, about half an hour by car.": "이발로 공항에서 사리셀카 마을까지의 도로 거리. 차로 약 30분.",
     "Road distance Kittilä airport to Levi village, about 20 minutes by car.": "키틸래 공항에서 레비 마을까지의 도로 거리. 차로 약 20분.",
     "Road distance Kittilä airport to Äkäslompolo, about 45 minutes by car.": "키틸래 공항에서 애캐슬롬폴로까지의 도로 거리. 차로 약 45분.",
-    "Saariselkä sits on its northern edge; the park is one of the largest in Finland.": "사리셀캐는 공원의 북쪽 끝자락에 자리하며, 이 공원은 핀란드에서 손꼽히게 넓습니다.",
+    "Saariselkä sits on its northern edge; the park is one of the largest in Finland.": "사리셀카는 공원의 북쪽 끝자락에 자리하며, 이 공원은 핀란드에서 손꼽히게 넓습니다.",
     "Total length of groomed downhill slopes.": "정설된 활강 슬로프의 총길이.",
     "Urho Kekkonen National Park": "우르호 케코넨 국립공원"
   },
