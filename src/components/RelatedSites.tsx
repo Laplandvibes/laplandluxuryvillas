@@ -81,7 +81,7 @@ const COPY: Record<Lang, { eyebrow: string; h2: string; cards: Card[] }> = {
     eyebrow: '来自网络',
     h2: '来自我们网络的更多拉普兰内容',
     cards: [
-      { href: 'https://laplandstays.com/property-types/', label: '比较拉普兰的所有住宿', body: '从玻璃冰屋到木屋和酒店,遍及整个地区。' },
+      { href: 'https://laplandstays.com/property-types/', label: '比较拉普兰的所有住宿', body: '从玻璃冰屋到木屋和酒店，遍及整个地区。' },
       { href: 'https://laplandwellness.com/spas/', label: 'Spa 与桑拿静养', body: '养生住宿、传统桑拿与北极 Spa 体验。' },
       { href: 'https://laplandhoteldeals.com/deals/', label: '豪华酒店优惠', body: '拉普兰高端酒店与精选季节优惠。' },
       { href: 'https://laplandkids.com/itineraries/', label: '拉普兰亲子行程', body: '按天规划的冬季与夏季行程，专为带孩子出行的家庭。' },
