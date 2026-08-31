@@ -148,7 +148,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'Nuestro destino más septentrional, donde la aurora se observa unas tres noches de cada cuatro. Corazón sami, lago Inari, cielos oscuros.',
       copy: [
-        'Inari es el municipio más septentrional de Finlandia y la capital cultural de los sami finlandeses. La aldea se sitúa en el lago Inari, el tercero más grande de Finlandia, con unas 3.000 islas, a más de 200 km al norte del círculo polar y sin ninguna luz urbana en el horizonte.',
+        'Inari es el municipio más extenso de Finlandia y la capital cultural de los sami finlandeses. La aldea se sitúa en el lago Inari, el tercero más grande de Finlandia, con unas 3.000 islas, a más de 200 km al norte del círculo polar y sin ninguna luz urbana en el horizonte.',
         'Para el viaje de lujo esto significa dos cosas. Primero: a esta latitud el Instituto Meteorológico Finlandés observa la aurora unas tres noches de cada cuatro, y aparece en el cenit en lugar de baja al norte. Segundo: las fincas de troncos junto al lago están entre los alojamientos más tranquilos de Laponia: sin tráfico de paso ni aldeas vecinas en el horizonte visible.',
       ],
       highlights: [

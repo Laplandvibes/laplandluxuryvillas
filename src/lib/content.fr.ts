@@ -54,9 +54,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Igloos de verre perchés au-dessus du fjell de Levi, le seul ensemble d\'igloos de Laponie tourné au sud, vers la vallée.',
+      tagline: 'Igloos de verre perchés au-dessus du fjäll de Levi, le seul ensemble d\'igloos de Laponie tourné au sud, vers la vallée.',
       copy: [
-        'Quarante-deux igloos de verre disposés sur le flanc sud du fjell de Levi. La plupart des cabanes aurorales pointent vers le nord, sur une forêt sans relief ; Levin Iglut est l\'une des très rares à cadrer les lumières au-dessus de la ligne d\'horizon illuminée du village de fjell en contrebas, meilleur pour les photographes, plus spectaculaire au crépuscule.',
+        'Quarante-deux igloos de verre disposés sur le flanc sud du fjäll de Levi. La plupart des cabanes aurorales pointent vers le nord, sur une forêt sans relief ; Levin Iglut est l\'une des très rares à cadrer les lumières au-dessus de la ligne d\'horizon illuminée du village de fjäll en contrebas, meilleur pour les photographes, plus spectaculaire au crépuscule.',
         'À distance de marche du village de Levi (télécabine, restaurants, ski-in/ski-out), mais les igloos eux-mêmes restent paisibles. Restaurant Aurora sur place, le chef s\'approvisionnant dans un rayon de 100 km.',
       ],
       signature: [
@@ -84,16 +84,16 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Une suite aux parois de verre au sommet du fjell de Kaunispää, au-dessus de la limite des arbres et des lumières du village.',
+      tagline: 'Une suite aux parois de verre au sommet du fjäll de Kaunispää, au-dessus de la limite des arbres et des lumières du village.',
       copy: [
-        'Star Arctic se dresse tout en haut de Kaunispää, le fjell qui s\'élève directement depuis le village de Saariselkä. Les suites Skyview disposent de parois de verre toute hauteur sur trois côtés, sans rideaux, et d\'une altitude suffisante pour dépasser la cime des arbres, soit un véritable panorama à 270° depuis le lit.',
+        'Star Arctic se dresse tout en haut de Kaunispää, le fjäll qui s\'élève directement depuis le village de Saariselkä. Les suites Skyview disposent de parois de verre toute hauteur sur trois côtés, sans rideaux, et d\'une altitude suffisante pour dépasser la cime des arbres, soit un véritable panorama à 270° depuis le lit.',
         'La route du sommet est privée et éclairée la nuit, les hôtes peuvent donc conduire eux-mêmes. L\'hôtel possède son propre observatoire, son restaurant et une flotte de fat-bikes pour l\'été.',
       ],
       signature: [
         'Verre à 270° au sommet, au-dessus de la limite des arbres',
         'Route privée jusqu\'au sommet, éclairée la nuit',
         'Observatoire à ciel noir sur place (soirées télescope)',
-        'Sauna avec vue sur le fjell du sol au plafond',
+        'Sauna avec vue sur le fjäll du sol au plafond',
         'Suites premium, verre d\'angle, salon séparé',
         'Cinq minutes en voiture du village de Saariselkä',
       ],
@@ -138,17 +138,17 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, la propriété au toit de verre originelle',
-        'Star Arctic Hotel, suites de sommet sur le fjell de Kaunispää',
+        'Star Arctic Hotel, suites de sommet sur le fjäll de Kaunispää',
         'Accès direct au parc national d\'Urho Kekkonen (de niveau nature sauvage)',
         'Aéroport d\'Ivalo, capable d\'accueillir des charters privés, 30 min de transfert',
       ],
       arrival: 'Ivalo (IVL), 27 km, environ 30 min en transfert privé',
-      auroraNote: 'Forêt boréale intérieure, sans aucune lumière d\'habitation sur des dizaines de kilomètres dans toutes les directions. Les fjells offrent un horizon haut et dégagé, ce qui compte les nuits où l\'arc reste bas sur le nord.',
+      auroraNote: 'Forêt boréale intérieure, sans aucune lumière d\'habitation sur des dizaines de kilomètres dans toutes les directions. Les fjälls offrent un horizon haut et dégagé, ce qui compte les nuits où l\'arc reste bas sur le nord.',
     },
     'inari': {
       position: 'Notre destination la plus septentrionale, où les aurores sont observées environ trois nuits sur quatre. Cœur sami, lac Inari, ciels noirs.',
       copy: [
-        'Inari est la commune la plus septentrionale de Finlande et la capitale culturelle des Samis finlandais. Le village est situé sur le lac Inari, le troisième plus grand lac de Finlande, avec quelque 3 000 îles, à plus de 200 km au nord du cercle polaire et sans aucune lumière urbaine sur l\'horizon.',
+        'Inari est la plus vaste commune de Finlande et la capitale culturelle des Samis finlandais. Le village est situé sur le lac Inari, le troisième plus grand lac de Finlande, avec quelque 3 000 îles, à plus de 200 km au nord du cercle polaire et sans aucune lumière urbaine sur l\'horizon.',
         'Pour le voyage de luxe, cela signifie deux choses. D\'abord : à cette latitude, l\'Institut météorologique finlandais observe les aurores environ trois nuits sur quatre, et elles se tiennent à la verticale plutôt que basses sur le nord. Ensuite : les domaines en rondins au bord du lac comptent parmi les hébergements les plus paisibles de Laponie : sans circulation de passage, sans village voisin sur l\'horizon visible.',
       ],
       highlights: [
@@ -172,32 +172,32 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Vols directs depuis Londres / Francfort / Vienne / Doha (saisonniers)',
       ],
       arrival: 'Rovaniemi (RVN), 10 km, 10 à 15 min du centre-ville',
-      auroraNote: 'Notre destination la plus méridionale et la seule dont l\'horizon porte les lumières d\'une ville, si bien que l\'aurore y est à la fois moins fréquente et plus difficile à voir. À combiner avec au moins une nuit dans un village de fjell plus au nord.',
+      auroraNote: 'Notre destination la plus méridionale et la seule dont l\'horizon porte les lumières d\'une ville, si bien que l\'aurore y est à la fois moins fréquente et plus difficile à voir. À combiner avec au moins une nuit dans un village de fjäll plus au nord.',
     },
     'levi': {
       position: 'La première station de ski de Finlande. Chalets de luxe sur le versant sud, ski-in / ski-out depuis la télécabine de Levi.',
       copy: [
-        'Levi est la station de fjell la plus développée de Laponie, un véritable village de sports d\'hiver avec 44 pistes et 26 remontées, dont deux télécabines. Le marché de la location de chalets de designer y est devenu sérieux au cours de la dernière décennie. La télécabine relie le centre du village au sommet à 531 mètres ; c\'est sur le versant sud que se trouvent les chalets privés, et un nouveau télésiège y ouvre pour la saison 2026-2027.',
+        'Levi est la station de fjäll la plus développée de Laponie, un véritable village de sports d\'hiver avec 44 pistes et 26 remontées, dont deux télécabines. Le marché de la location de chalets de designer y est devenu sérieux au cours de la dernière décennie. La télécabine relie le centre du village au sommet à 531 mètres ; c\'est sur le versant sud que se trouvent les chalets privés, et un nouveau télésiège y ouvre pour la saison 2026-2027.',
         'La visibilité des aurores depuis Levi est orientée sud et spectaculaire, chose rare en Laponie, de sorte que la ligne d\'horizon illuminée du village fait partie de la photographie. À combiner idéalement avec une ou deux nuits plus au nord (Inari ou Saariselkä) pour de vraies aurores sauvages avant de revenir ici pour le ski.',
       ],
       highlights: [
-        'Levin Iglut, igloos de verre orientés sud au-dessus du village de fjell',
+        'Levin Iglut, igloos de verre orientés sud au-dessus du village de fjäll',
         'Chalets d\'architecte de designer, versant sud, ski-in/out',
         '44 pistes, 26 remontées (deux télécabines), 38,5 km de piste damée',
         'L\'aéroport de Kittilä (KTT) accueille des vols intl. directs saisonniers',
       ],
       arrival: 'Kittilä (KTT), 15 km, environ 20 min en transfert privé',
-      auroraNote: 'Un panorama orienté sud, chose rare en Laponie : le village de fjell illuminé devient le premier plan de la photo. La contrepartie est cette lumière même, et la vue la plus sombre se trouve donc à quelques minutes de voiture.',
+      auroraNote: 'Un panorama orienté sud, chose rare en Laponie : le village de fjäll illuminé devient le premier plan de la photo. La contrepartie est cette lumière même, et la vue la plus sombre se trouve donc à quelques minutes de voiture.',
     },
     'yllas': {
       position: 'L\'alternative paisible à Levi. Parc national de Pallas-Yllästunturi, moins de foule, forêt plus profonde.',
       copy: [
-        'Ylläs compte 62 pistes, plus que tout autre domaine skiable de Finlande, et les plus longues descentes du pays : plus de trois kilomètres depuis le sommet dénudé à 719 mètres jusqu\'à la vallée. La station paraît pourtant une fraction de Levi, car le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjell et par le parc national de Pallas-Yllästunturi.',
-        'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjell, les sentiers du parc national partent de la propriété, et le silence est ce pour quoi les gens paient réellement. Le réseau de fond compte environ 300 kilomètres, dont plus de 30 éclairés.',
+        'Ylläs compte 62 pistes, plus que tout autre domaine skiable de Finlande, et les plus longues descentes du pays : plus de trois kilomètres depuis le sommet dénudé à 719 mètres jusqu\'à la vallée. La station paraît pourtant une fraction de Levi, car le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjäll et par le parc national de Pallas-Yllästunturi.',
+        'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjäll, les sentiers du parc national partent de la propriété, et le silence est ce pour quoi les gens paient réellement. Le réseau de fond compte environ 300 kilomètres, dont plus de 30 éclairés.',
       ],
       highlights: [
         'Parc national de Pallas-Yllästunturi, le 3e plus grand de Finlande',
-        'Deux villages de ski de part et d\'autre du fjell d\'Ylläs',
+        'Deux villages de ski de part et d\'autre du fjäll d\'Ylläs',
         'Pollution lumineuse plus faible que toute autre station de ski',
         'Environ 300 km de pistes de fond entretenues, plus de 30 km éclairés',
       ],
@@ -241,7 +241,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-snowmobile-wilderness': {
       hook: 'Un itinéraire guidé en motoneige de 80 km à travers lacs gelés et forêt vierge, avec un déjeuner cuit au feu de bois.',
       copy: [
-        'Un itinéraire guidé en motoneige d\'une journée complète sur les pistes des hauts fjells, le réseau qu\'utilisent les guides locaux, pas la boucle touristique. Le déjeuner est cuisiné au feu sur la piste (ragoût de renne, pain cuit au feu, jus chaud) par le guide.',
+        'Un itinéraire guidé en motoneige d\'une journée complète sur les pistes des hauts fjälls, le réseau qu\'utilisent les guides locaux, pas la boucle touristique. Le déjeuner est cuisiné au feu sur la piste (ragoût de renne, pain cuit au feu, jus chaud) par le guide.',
         'Machines BRP, casques, cagoules et combinaisons en laine inclus. Motoneiges biplaces disponibles. Permis de conduire requis pour le pilote ; la place passager n\'en demande aucun. Maximum quatre motoneiges par groupe.',
       ],
       available: 'Saariselkä, Inari, Levi, déc.–avr.',

@@ -148,7 +148,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'Pohjoisin kohteemme, jossa revontulia havaitaan noin kolmena yönä neljästä. Saamelaisten sydänmaa, Inarijärvi, pimeät taivaat.',
       copy: [
-        'Inari on Suomen pohjoisin kunta ja suomensaamelaisten kulttuuripääkaupunki. Kylä sijaitsee Inarijärven, Suomen kolmanneksi suurimman järven, rannalla. Järvessä on noin 3 000 saarta, ja kylä on yli 200 kilometriä napapiirin pohjoispuolella ilman kaupungin valoja horisontissa.',
+        'Inari on Suomen pinta-alaltaan suurin kunta ja suomensaamelaisten kulttuuripääkaupunki. Kylä sijaitsee Inarijärven, Suomen kolmanneksi suurimman järven, rannalla. Järvessä on noin 3 000 saarta, ja kylä on yli 200 kilometriä napapiirin pohjoispuolella ilman kaupungin valoja horisontissa.',
         'Luksusmatkailulle tämä merkitsee kahta asiaa. Ensinnäkin: tällä leveysasteella Ilmatieteen laitos havaitsee revontulia keskimäärin kolmena yönä neljästä, ja ne avautuvat suoraan päälaen yllä eivätkä matalalla pohjoisessa. Toiseksi: rantojen hirsihuvilat ovat Lapin rauhallisimpia majoituksia: ei läpikulkuliikennettä eikä naapurikyliä näkyvällä horisontilla.',
       ],
       highlights: [

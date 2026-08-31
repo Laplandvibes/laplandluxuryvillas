@@ -232,7 +232,7 @@ const nl: SiteCopy = {
       { title: 'De architectuur krijgt een ander karakter.', body: 'De glazen daken die voor het noorderlicht bestaan, omlijsten nu een ononderbroken zon. Dakvenster boven het bed, zon op het meer, geen reden om een gordijn dicht te trekken, er is geen nacht om voor weg te kruipen.' },
       { title: 'De wildernis wordt toegankelijk.', body: 'De meren ontdooien, het boreale bos opent zich, de kanoroutes verschijnen. Dezelfde villa die u in februari per sneeuwscooter bereikte, ligt nu op vijf minuten varen van de steiger.' },
       { title: 'Hetzelfde huis, een ander seizoen.', body: 'De collectie is in de zomer dezelfde als in de winter. Onder hetzelfde glazen dak staat een zon die niet ondergaat in plaats van het noorderlicht, de meren zijn open en het bos is begaanbaar. Het tarief staat op de boekingspagina van elk huis, dus het seizoensverschil is daar direct te zien.' },
-      { title: 'Geen rijen, geen buren.', body: 'Lapland in de zomer ziet een fractie van de bezoekersdichtheid van de winter. Het wildernispad door het bos, het uitkijkpunt op de fjell, ze zijn in wezen van u.' },
+      { title: 'Geen rijen, geen buren.', body: 'Lapland in de zomer ziet een fractie van de bezoekersdichtheid van de winter. Het wildernispad door het bos, het uitkijkpunt op de fjäll, ze zijn in wezen van u.' },
     ],
     summerCollection: {
       eyebrow: 'De zomercollectie',
@@ -241,7 +241,7 @@ const nl: SiteCopy = {
       cards: [
         { title: 'Cabine met glazen dak in het groen', copy: 'De noorderlichtarchitectuur in het gouden licht van 23 uur, omringd door weelderig bos in plaats van sneeuw.' },
         { title: 'Blokhutlandgoed aan het meer', copy: 'Een private baai aan het Inarimeer, ontdooid, een kano aan de steiger, rook uit de houtgestookte sauna.' },
-        { title: 'Designerchalet op de fjell', copy: 'Veenpluis en wilde bloemen vervangen de skipiste, dezelfde panoramische glazen gevel.' },
+        { title: 'Designerchalet op de fjäll', copy: 'Veenpluis en wilde bloemen vervangen de skipiste, dezelfde panoramische glazen gevel.' },
         { title: 'Moderne bosvilla', copy: 'Een uitkragend houten gebouw diep in de groene boreale dennen, de gouden warmte van de middernachtzon op de gevel.' },
       ],
     },

@@ -231,7 +231,7 @@ const fr: SiteCopy = {
       { title: 'L’architecture change de caractère.', body: 'Les toits de verre conçus pour les aurores encadrent désormais un soleil ininterrompu. Verrière au-dessus du lit, soleil sur le lac, nul besoin de tirer un rideau, il n’y a aucune nuit où se cacher.' },
       { title: 'La nature sauvage devient accessible.', body: 'Les lacs dégèlent, la forêt boréale s’ouvre, les routes de canoë apparaissent. La même villa atteinte en motoneige en février se trouve désormais à cinq minutes de bateau du ponton.' },
       { title: 'La même maison, une autre saison.', body: 'La collection est la même en été qu’en hiver. Sous le même toit de verre, un soleil qui ne se couche pas remplace l’aurore, les lacs sont dégelés et la forêt est praticable. Le tarif figure sur la page de réservation de chaque maison : l’écart entre les saisons s’y lit directement.' },
-      { title: 'Ni files, ni voisins.', body: 'La Laponie en été ne voit qu’une fraction de la densité de visiteurs de l’hiver. Le sentier à travers la forêt, le belvédère sur le fjell, ils sont pour ainsi dire à vous.' },
+      { title: 'Ni files, ni voisins.', body: 'La Laponie en été ne voit qu’une fraction de la densité de visiteurs de l’hiver. Le sentier à travers la forêt, le belvédère sur le fjäll, ils sont pour ainsi dire à vous.' },
     ],
     summerCollection: {
       eyebrow: 'La collection d’été',
@@ -240,7 +240,7 @@ const fr: SiteCopy = {
       cards: [
         { title: 'Cabane à toit de verre dans la verdure', copy: 'L’architecture des aurores dans la lumière dorée de 23 h, entourée d’une forêt luxuriante plutôt que de neige.' },
         { title: 'Domaine en rondins au bord du lac', copy: 'Baie privée sur le lac Inari dégelée, canoë au ponton, fumée du sauna au feu de bois.' },
-        { title: 'Chalet design sur le fjell', copy: 'La linaigrette et les fleurs sauvages remplacent la piste de ski, la même façade panoramique de verre.' },
+        { title: 'Chalet design sur le fjäll', copy: 'La linaigrette et les fleurs sauvages remplacent la piste de ski, la même façade panoramique de verre.' },
         { title: 'Villa moderne en forêt', copy: 'Bâtiment de bois en porte-à-faux au cœur du pin boréal vert, chaleur dorée du soleil de minuit sur la façade.' },
       ],
     },
@@ -490,7 +490,7 @@ Object.assign(fr.experiencesPage, {
   },
 })
 Object.assign(fr.midnightSunPage, {
-  facts: [{ value: '32', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' }, { value: '24h', label: 'Lumière au pic, 21 juin' }, { value: '+18°C', label: 'Moyenne diurne fin juin' }, { value: '68,9°N', label: 'Inari, notre destination la plus au nord, où il dure le plus' }],
+  facts: [{ value: '32', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' }, { value: '24 h', label: 'Lumière au pic, 21 juin' }, { value: '+18 °C', label: 'Moyenne diurne fin juin' }, { value: '68,9°N', label: 'Inari, notre destination la plus au nord, où il dure le plus' }],
   fourReasons: 'Quatre raisons', h2: 'La Laponie en été est un autre lieu.',
   reasons: [
     { title: 'L\'architecture change de caractère.', body: 'Les toits de verre qui existent pour les aurores encadrent désormais un soleil ininterrompu. Lucarne sur le lit, soleil sur le lac, aucune raison de tirer un rideau, il n\'y a pas de nuit pour se cacher.' },
@@ -502,7 +502,7 @@ Object.assign(fr.midnightSunPage, {
     cards: [
       { title: 'Cabine à toit de verre dans la verdure', copy: 'L\'architecture aurorale en lumière dorée de 23 h, entourée d\'une forêt luxuriante au lieu de neige.' },
       { title: 'Propriété en rondins au bord du lac', copy: 'Baie privée sur le lac Inari dégelée, canoë au ponton, fumée du sauna à bois.' },
-      { title: 'Chalet design sur le fjell', copy: 'Linaigrettes et fleurs sauvages remplacent la piste, même façade panoramique en verre.' },
+      { title: 'Chalet design sur le fjäll', copy: 'Linaigrettes et fleurs sauvages remplacent la piste, même façade panoramique en verre.' },
       { title: 'Villa moderne en forêt', copy: 'Bâtiment en bois en porte-à-faux au cœur des pins boréaux verts, chaleur dorée du soleil de minuit sur la façade.' },
     ] },
   planning: { h2: 'Une note sur la planification d\'un voyage au soleil de minuit.', p1: 'La fenêtre est courte et les villas sont individuellement détenues, le calendrier se remplit donc de manière opportuniste plutôt qu\'uniforme. Mieux vaut demander tôt.', p2: 'Le bon moment pour s\'enquérir d\'un mois de juin donné est entre janvier et mars de la même année. Les demandes ultérieures valent toujours la peine d\'être envoyées, des disponibilités apparaissent, mais le haut de gamme part souvent plus tôt.', quoting: 'Demandes en cours : étés 2026 + 2027' },

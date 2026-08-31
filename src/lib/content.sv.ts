@@ -148,7 +148,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'Vårt nordligaste resmål, där norrsken observeras ungefär tre nätter av fyra. Samiskt kärnland, Enaresjön, mörk himmel.',
       copy: [
-        'Inari är Finlands nordligaste kommun och de finska samernas kulturella huvudstad. Byn ligger vid Enaresjön, Finlands tredje största sjö, med omkring 3 000 öar, mer än 200 km norr om polcirkeln och utan stadsljus vid horisonten.',
+        'Inari är Finlands till ytan största kommun och de finska samernas kulturella huvudstad. Byn ligger vid Enaresjön, Finlands tredje största sjö, med omkring 3 000 öar, mer än 200 km norr om polcirkeln och utan stadsljus vid horisonten.',
         'För lyxresor betyder det två saker. För det första: på den här breddgraden observerar Meteorologiska institutet norrsken i genomsnitt tre nätter av fyra, och det står rakt ovanför i stället för lågt i norr. För det andra: de strandnära timmergårdarna hör till Lapplands lugnaste boenden: ingen genomfartstrafik, inga grannbyar vid den synliga horisonten.',
       ],
       highlights: [

@@ -231,7 +231,7 @@ const it: SiteCopy = {
       { title: 'L’architettura cambia carattere.', body: 'I tetti in vetro pensati per le aurore ora incorniciano un sole ininterrotto. Lucernario sopra il letto, sole sul lago, nessun bisogno di tirare una tenda, non c’è notte da nascondere.' },
       { title: 'La natura selvaggia diventa accessibile.', body: 'I laghi si sciolgono, il bosco boreale si apre, compaiono i percorsi in canoa. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
       { title: 'La stessa casa, un’altra stagione.', body: 'La collezione in estate è la stessa dell’inverno. Sotto lo stesso tetto di vetro c’è un sole che non tramonta al posto dell’aurora, i laghi sono liberi e il bosco è percorribile. La tariffa è sulla pagina di prenotazione di ogni casa, così la differenza di stagione si legge direttamente.' },
-      { title: 'Niente code, niente vicini.', body: 'La Lapponia d’estate vede una frazione della densità di visitatori dell’inverno. Il sentiero nel bosco, il belvedere sul fjell, sono praticamente solo Suoi.' },
+      { title: 'Niente code, niente vicini.', body: 'La Lapponia d’estate vede una frazione della densità di visitatori dell’inverno. Il sentiero nel bosco, il belvedere sul fjäll, sono praticamente solo Suoi.' },
     ],
     summerCollection: {
       eyebrow: 'La collezione estiva',
@@ -240,7 +240,7 @@ const it: SiteCopy = {
       cards: [
         { title: 'Cabina con tetto in vetro nel verde', copy: 'L’architettura dell’aurora nella luce dorata delle 23:00, circondata da una foresta rigogliosa anziché dalla neve.' },
         { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari libera dal ghiaccio, canoa al pontile, fumo dalla sauna a legna.' },
-        { title: 'Chalet d’autore sul fjell', copy: 'Eriofori e fiori selvatici al posto della pista da sci, la stessa facciata panoramica in vetro.' },
+        { title: 'Chalet d’autore sul fjäll', copy: 'Eriofori e fiori selvatici al posto della pista da sci, la stessa facciata panoramica in vetro.' },
         { title: 'Villa moderna nel bosco', copy: 'Edificio in legno a sbalzo nel folto del pino boreale verde, calore dorato del sole di mezzanotte sulla facciata.' },
       ],
     },
@@ -496,13 +496,13 @@ Object.assign(it.midnightSunPage, {
     { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },
     { title: 'La natura diventa accessibile.', body: 'I laghi si sciolgono, la foresta boreale si apre, le rotte in canoa appaiono. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
     { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati e charter di elicotteri quotano tariffe di spalla.' },
-    { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjell, sono essenzialmente Suoi.' },
+    { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjäll, sono essenzialmente Suoi.' },
   ],
   summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, mostrate nella luce del sole di mezzanotte di fine giugno.',
     cards: [
       { title: 'Cabina con tetto in vetro nel verde', copy: 'L\'architettura aurorale in luce dorata delle 23, circondata da foresta lussureggiante invece di neve.' },
       { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari disgelata, canoa al pontile, fumo dalla sauna a legna.' },
-      { title: 'Chalet d\'autore sul fjell', copy: 'Eriofori e fiori selvatici sostituiscono la pista da sci, stessa facciata panoramica in vetro.' },
+      { title: 'Chalet d\'autore sul fjäll', copy: 'Eriofori e fiori selvatici sostituiscono la pista da sci, stessa facciata panoramica in vetro.' },
       { title: 'Villa moderna in foresta', copy: 'Edificio in legno a sbalzo nel verde dei pini boreali, calore dorato del sole di mezzanotte sulla facciata.' },
     ] },
   planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Conviene chiedere per tempo.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Richieste in corso: estate 2026 + 2027' },

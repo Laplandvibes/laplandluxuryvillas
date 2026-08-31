@@ -54,9 +54,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Glazen iglo\'s hoog boven de fjeld van Levi, op het zuiden naar het dal gericht in plaats van noordwaarts het bos in.',
+      tagline: 'Glazen iglo\'s hoog boven de fjäll van Levi, op het zuiden naar het dal gericht in plaats van noordwaarts het bos in.',
       copy: [
-        'Tweeënveertig glazen iglo\'s op de zuidelijke flank van de fjeld van Levi. De meeste noorderlichthutten kijken naar het noorden, een leeg bos in; Levin Iglut is een van de zeer weinige die het licht boven de verlichte skyline van het fjelddorp eronder kadert, beter voor fotografen, dramatischer in de schemering.',
+        'Tweeënveertig glazen iglo\'s op de zuidelijke flank van de fjäll van Levi. De meeste noorderlichthutten kijken naar het noorden, een leeg bos in; Levin Iglut is een van de zeer weinige die het licht boven de verlichte skyline van het fjälldorp eronder kadert, beter voor fotografen, dramatischer in de schemering.',
         'Op loopafstand van het dorp Levi (gondel, restaurants, ski-in/ski-out), maar de iglo\'s zelf zijn rustig. Restaurant Aurora op het terrein, met een chef-kok die binnen 100 km inkoopt.',
       ],
       signature: [
@@ -84,16 +84,16 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Een suite met glazen wanden op de top van de fjeld Kaunispää, boven de boomgrens en boven de lichten van het dorp.',
+      tagline: 'Een suite met glazen wanden op de top van de fjäll Kaunispää, boven de boomgrens en boven de lichten van het dorp.',
       copy: [
-        'Star Arctic ligt op het allerhoogste punt van Kaunispää, de fjeld die direct vanuit het dorp Saariselkä oprijst. De Skyview-suites hebben aan drie zijden glazen wanden van vloer tot plafond, geen gordijnen, en liggen hoog genoeg om de plaatselijke boomgrens te overstijgen, wat een echt panorama van 270° vanuit het bed oplevert.',
+        'Star Arctic ligt op het allerhoogste punt van Kaunispää, de fjäll die direct vanuit het dorp Saariselkä oprijst. De Skyview-suites hebben aan drie zijden glazen wanden van vloer tot plafond, geen gordijnen, en liggen hoog genoeg om de plaatselijke boomgrens te overstijgen, wat een echt panorama van 270° vanuit het bed oplevert.',
         'De weg naar de top is privé en \'s nachts verlicht, zodat gasten er zelf naartoe kunnen rijden. Het hotel heeft een eigen sterrenwacht, een restaurant en een vloot fatbikes voor de zomer.',
       ],
       signature: [
-        '270° glas op de hoogste fjeldtop in de omgeving',
+        '270° glas op de hoogste fjälltop in de omgeving',
         'Eigen weg naar de top, \'s nachts verlicht',
         'Sterrenwacht onder donkere hemel op het terrein (telescoopavonden)',
-        'Sauna met fjeldzicht van vloer tot plafond',
+        'Sauna met fjällzicht van vloer tot plafond',
         'Premiumsuites, hoekglas, aparte lounge',
         'Vijf minuten rijden naar het dorp Saariselkä',
       ],
@@ -138,17 +138,17 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, het oorspronkelijke pand met glazen dak',
-        'Star Arctic Hotel, topsuites op de fjeld Kaunispää',
+        'Star Arctic Hotel, topsuites op de fjäll Kaunispää',
         'Directe toegang tot het Nationaal Park Urho Kekkonen (wildernisniveau)',
         'Luchthaven van Ivalo, geschikt voor privécharters, transfer van 30 min',
       ],
       arrival: 'Ivalo (IVL), 27 km, ongeveer 30 min per privétransfer',
-      auroraNote: 'Boreaal bos in het binnenland, zonder bewoningslicht over tientallen kilometers in welke richting dan ook. De fjelden geven een hoge, open horizon, en dat telt op de nachten dat de boog laag in het noorden blijft.',
+      auroraNote: 'Boreaal bos in het binnenland, zonder bewoningslicht over tientallen kilometers in welke richting dan ook. De fjällen geven een hoge, open horizon, en dat telt op de nachten dat de boog laag in het noorden blijft.',
     },
     'inari': {
       position: 'Onze noordelijkste bestemming, waar het noorderlicht ongeveer drie nachten op vier wordt waargenomen. Sami-hartland, Inarimeer, donkere hemel.',
       copy: [
-        'Inari is de noordelijkste gemeente van Finland en de culturele hoofdstad van de Finse Sami. Het dorp ligt aan het Inarimeer, het op twee na grootste meer van Finland, met zo’n 3.000 eilanden, ruim 200 km ten noorden van de poolcirkel en zonder stadslicht aan de horizon.',
+        'Inari is qua oppervlakte de grootste gemeente van Finland en de culturele hoofdstad van de Finse Sami. Het dorp ligt aan het Inarimeer, het op twee na grootste meer van Finland, met zo’n 3.000 eilanden, ruim 200 km ten noorden van de poolcirkel en zonder stadslicht aan de horizon.',
         'Voor luxereizen betekent dit twee dingen. Ten eerste: op deze breedtegraad neemt het Fins Meteorologisch Instituut het noorderlicht ongeveer drie nachten op vier waar, en staat het recht boven je in plaats van laag in het noorden. Ten tweede: de blokhuislandgoederen aan het meer behoren tot de rustigste accommodaties van Lapland: geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
       ],
       highlights: [
@@ -172,32 +172,32 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Directe vluchten vanuit Londen / Frankfurt / Wenen / Doha (seizoensgebonden)',
       ],
       arrival: 'Rovaniemi (RVN), 10 km, 10 tot 15 min van het stadscentrum',
-      auroraNote: 'Onze zuidelijkste bestemming en de enige met stadslicht aan de horizon, waardoor het noorderlicht hier zowel minder vaak verschijnt als lastiger te zien is. Het best gecombineerd met minstens één nacht in een fjelddorp verder naar het noorden.',
+      auroraNote: 'Onze zuidelijkste bestemming en de enige met stadslicht aan de horizon, waardoor het noorderlicht hier zowel minder vaak verschijnt als lastiger te zien is. Het best gecombineerd met minstens één nacht in een fjälldorp verder naar het noorden.',
     },
     'levi': {
       position: 'Het toonaangevende skiresort van Finland. Luxechalets op de zuidhelling, ski-in / ski-out vanaf de gondel van Levi.',
       copy: [
-        'Levi is het meest ontwikkelde fjeldresort van Lapland, een compleet wintersportdorp met 44 pistes en 26 liften, waarvan twee gondels. De verhuurmarkt voor designerchalets is er het afgelopen decennium serieus gegroeid. De gondel loopt van het dorpscentrum naar de top op 531 meter; op de zuidhelling staan de privéchalets, en daar opent een nieuwe stoeltjeslift voor het seizoen 2026-2027.',
+        'Levi is het meest ontwikkelde fjällresort van Lapland, een compleet wintersportdorp met 44 pistes en 26 liften, waarvan twee gondels. De verhuurmarkt voor designerchalets is er het afgelopen decennium serieus gegroeid. De gondel loopt van het dorpscentrum naar de top op 531 meter; op de zuidhelling staan de privéchalets, en daar opent een nieuwe stoeltjeslift voor het seizoen 2026-2027.',
         'De noorderlichtzichtbaarheid vanuit Levi is op het zuiden gericht en dramatisch, zeldzaam voor Lapland, waardoor de verlichte dorpsskyline onderdeel wordt van de foto. Het best gecombineerd met een of twee nachten verder naar het noorden (Inari of Saariselkä) voor echt wildernis-noorderlicht, voordat u hier terugkeert om te skiën.',
       ],
       highlights: [
-        'Levin Iglut, glazen iglo\'s op het zuiden boven het fjelddorp',
+        'Levin Iglut, glazen iglo\'s op het zuiden boven het fjälldorp',
         'Door architecten gebouwde designerchalets, zuidhelling, ski-in/out',
         '44 pistes, 26 liften (twee gondels), 38,5 km geprepareerde piste',
         'Luchthaven Kittilä (KTT) handelt seizoensgebonden directe internationale vluchten af',
       ],
       arrival: 'Kittilä (KTT), 15 km, ongeveer 20 min per privétransfer',
-      auroraNote: 'Een panorama op het zuiden, wat in Lapland zeldzaam is: het verlichte fjelddorp wordt de voorgrond van de foto. De prijs is datzelfde dorpslicht, dus het donkerste uitzicht ligt een korte autorit verderop.',
+      auroraNote: 'Een panorama op het zuiden, wat in Lapland zeldzaam is: het verlichte fjälldorp wordt de voorgrond van de foto. De prijs is datzelfde dorpslicht, dus het donkerste uitzicht ligt een korte autorit verderop.',
     },
     'yllas': {
       position: 'Het rustige alternatief voor Levi. Nationaal Park Pallas-Yllästunturi, minder drukte, dieper bos.',
       copy: [
-        'Ylläs heeft 62 pistes, meer dan welk ander skigebied van Finland ook, en de langste afdalingen van het land: ruim drie kilometer vanaf de kale top op 719 meter naar het dal. Toch voelt het als een fractie van Levi, want het dorp is verspreid over twee nederzettingen (Äkäslompolo en Ylläsjärvi), gescheiden door 15 km fjeld en het Nationaal Park Pallas-Yllästunturi.',
-        'Voor luxereizen zit de aantrekkingskracht in de ruimte. Door architecten gebouwde chalets staan hier alleen op de fjeldflank, de paden van het nationaal park vertrekken vanaf het pand, en de stilte is waar mensen werkelijk voor betalen. Het loipenetwerk telt ongeveer 300 kilometer, waarvan ruim 30 kilometer verlicht.',
+        'Ylläs heeft 62 pistes, meer dan welk ander skigebied van Finland ook, en de langste afdalingen van het land: ruim drie kilometer vanaf de kale top op 719 meter naar het dal. Toch voelt het als een fractie van Levi, want het dorp is verspreid over twee nederzettingen (Äkäslompolo en Ylläsjärvi), gescheiden door 15 km fjäll en het Nationaal Park Pallas-Yllästunturi.',
+        'Voor luxereizen zit de aantrekkingskracht in de ruimte. Door architecten gebouwde chalets staan hier alleen op de fjällflank, de paden van het nationaal park vertrekken vanaf het pand, en de stilte is waar mensen werkelijk voor betalen. Het loipenetwerk telt ongeveer 300 kilometer, waarvan ruim 30 kilometer verlicht.',
       ],
       highlights: [
         'Nationaal Park Pallas-Yllästunturi, het op twee na grootste van Finland',
-        'Twee skidorpen aan weerszijden van de fjeld van Ylläs',
+        'Twee skidorpen aan weerszijden van de fjäll van Ylläs',
         'Lagere lichtvervuiling dan welk ander skiresort ook',
         'Ongeveer 300 km geprepareerde loipes, ruim 30 km verlicht',
       ],
@@ -241,7 +241,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-snowmobile-wilderness': {
       hook: 'Een begeleide sneeuwscooterroute van 80 km door bevroren meren en ongerept bos, met een op houtvuur bereide lunch.',
       copy: [
-        'Een begeleide sneeuwscooterroute van een hele dag over de hoge fjeldtrails, het netwerk dat de plaatselijke gidsen gebruiken, niet de toeristenlus. De lunch wordt door de gids op een vuur langs de route bereid (rendierstoofpot, op vuur gebakken brood, warm sap).',
+        'Een begeleide sneeuwscooterroute van een hele dag over de hoge fjälltrails, het netwerk dat de plaatselijke gidsen gebruiken, niet de toeristenlus. De lunch wordt door de gids op een vuur langs de route bereid (rendierstoofpot, op vuur gebakken brood, warm sap).',
         'BRP-machines, helmen, bivakmutsen en wollen overalls inbegrepen. Tweepersoonssleeën beschikbaar. Rijbewijs vereist voor de bestuurder; de passagiersstoel heeft er geen nodig. Maximaal vier sleeën per groep.',
       ],
       available: 'Saariselkä, Inari, Levi, dec–apr',

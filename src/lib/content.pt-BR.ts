@@ -148,7 +148,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'Nosso destino mais ao norte, onde a aurora é observada em cerca de três noites a cada quatro. Coração Sami, Lago Inari, céus escuros.',
       copy: [
-        'Inari é o município mais ao norte da Finlândia e a capital cultural dos Sami finlandeses. A vila fica no Lago Inari, o terceiro maior lago da Finlândia, com cerca de 3.000 ilhas, a mais de 200 km ao norte do círculo polar e sem nenhuma luz de cidade no horizonte.',
+        'Inari é o maior município da Finlândia em área e a capital cultural dos Sami finlandeses. A vila fica no Lago Inari, o terceiro maior lago da Finlândia, com cerca de 3.000 ilhas, a mais de 200 km ao norte do círculo polar e sem nenhuma luz de cidade no horizonte.',
         'Para o turismo de luxo, isso significa duas coisas. Primeiro: nesta latitude o Instituto Meteorológico Finlandês observa a aurora em cerca de três noites a cada quatro, e ela aparece no zênite em vez de baixa ao norte. Segundo: as propriedades de madeira à beira do lago estão entre as hospedagens mais tranquilas da Lapônia: sem tráfego de passagem, sem vilarejos vizinhos no horizonte visível.',
       ],
       highlights: [

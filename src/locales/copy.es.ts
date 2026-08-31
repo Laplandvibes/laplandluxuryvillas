@@ -238,7 +238,7 @@ const es: SiteCopy = {
       { title: 'La arquitectura cambia de carácter.', body: 'Los techos de cristal que existen para las auroras enmarcan ahora un sol ininterrumpido. Claraboya sobre la cama, sol sobre el lago, sin necesidad de correr una cortina, no hay noche que esconder.' },
       { title: 'La naturaleza salvaje se vuelve accesible.', body: 'Los lagos se deshielan, el bosque boreal se abre, aparecen las rutas en canoa. La misma villa a la que se llegaba en motonieve en febrero queda ahora a cinco minutos en barca desde el embarcadero.' },
       { title: 'La misma casa, otra estación.', body: 'La colección es la misma en verano que en invierno. Bajo el mismo techo de cristal hay un sol que no se pone en lugar de la aurora, los lagos están deshelados y el bosque es transitable. La tarifa está en la página de reserva de cada casa, así que la diferencia de temporada se ve directamente.' },
-      { title: 'Sin colas, sin vecinos.', body: 'Laponia en verano recibe una fracción de la densidad de visitantes del invierno. El sendero por el bosque, el mirador en el fjell, son prácticamente suyos.' },
+      { title: 'Sin colas, sin vecinos.', body: 'Laponia en verano recibe una fracción de la densidad de visitantes del invierno. El sendero por el bosque, el mirador en el fjäll, son prácticamente suyos.' },
     ],
     summerCollection: {
       eyebrow: 'La colección de verano',
@@ -247,7 +247,7 @@ const es: SiteCopy = {
       cards: [
         { title: 'Cabaña con techo de cristal en el verde', copy: 'La arquitectura de la aurora bajo la luz dorada de las 23:00, rodeada de bosque frondoso en lugar de nieve.' },
         { title: 'Propiedad de troncos junto al lago', copy: 'Bahía privada en el lago Inari deshelada, canoa en el embarcadero, humo de la sauna de leña.' },
-        { title: 'Chalet de autor en el fjell', copy: 'Algodón de pantano y flores silvestres sustituyen la pista de esquí, la misma fachada panorámica de cristal.' },
+        { title: 'Chalet de autor en el fjäll', copy: 'Algodón de pantano y flores silvestres sustituyen la pista de esquí, la misma fachada panorámica de cristal.' },
         { title: 'Villa moderna en el bosque', copy: 'Edificio de madera en voladizo en lo profundo del pino boreal verde, calidez dorada del sol de medianoche sobre la fachada.' },
       ],
     },

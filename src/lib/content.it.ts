@@ -148,7 +148,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'La nostra destinazione piu settentrionale, dove l’aurora si osserva circa tre notti su quattro. Cuore Sami, lago Inari, cieli bui.',
       copy: [
-        'Inari e il comune piu settentrionale della Finlandia e la capitale culturale dei Sami finlandesi. Il villaggio sorge sul lago Inari, il terzo lago piu grande della Finlandia, con circa 3.000 isole, oltre 200 km a nord del circolo polare e senza alcuna luce di citta all’orizzonte.',
+        'Inari e il comune piu esteso della Finlandia e la capitale culturale dei Sami finlandesi. Il villaggio sorge sul lago Inari, il terzo lago piu grande della Finlandia, con circa 3.000 isole, oltre 200 km a nord del circolo polare e senza alcuna luce di citta all’orizzonte.',
         'Per il viaggio di lusso questo significa due cose. Primo: a questa latitudine l’Istituto meteorologico finlandese osserva l’aurora circa tre notti su quattro, e appare allo zenit anziche bassa a nord. Secondo: le tenute di tronchi in riva al lago sono tra gli alloggi piu tranquilli della Lapponia: nessun traffico di passaggio, nessun villaggio vicino all’orizzonte visibile.',
       ],
       highlights: [

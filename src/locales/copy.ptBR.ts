@@ -238,7 +238,7 @@ const ptBR: SiteCopy = {
       { title: 'A arquitetura muda de caráter.', body: 'Os tetos de vidro que existem para as auroras agora emolduram um sol ininterrupto. Claraboia sobre a cama, sol sobre o lago, sem precisar fechar uma cortina, não há noite para esconder.' },
       { title: 'A natureza selvagem fica acessível.', body: 'Os lagos degelam, a floresta boreal se abre, surgem as rotas de canoa. A mesma vila alcançada de snowmobile em fevereiro fica agora a cinco minutos de barco do ancoradouro.' },
       { title: 'A mesma casa, outra estação.', body: 'A coleção é a mesma no verão e no inverno. Sob o mesmo teto de vidro há um sol que não se põe no lugar da aurora, os lagos estão abertos e a floresta é caminhável. A tarifa está na página de reserva de cada casa, então a diferença de estação se vê direto.' },
-      { title: 'Sem filas, sem vizinhos.', body: 'A Lapônia no verão recebe uma fração da densidade de visitantes do inverno. A trilha pela floresta, o mirante no fjell, são praticamente seus.' },
+      { title: 'Sem filas, sem vizinhos.', body: 'A Lapônia no verão recebe uma fração da densidade de visitantes do inverno. A trilha pela floresta, o mirante no fjäll, são praticamente seus.' },
     ],
     summerCollection: {
       eyebrow: 'A coleção de verão',
@@ -247,7 +247,7 @@ const ptBR: SiteCopy = {
       cards: [
         { title: 'Cabana com teto de vidro no verde', copy: 'A arquitetura da aurora sob a luz dourada das 23h, cercada de floresta densa em vez de neve.' },
         { title: 'Propriedade de troncos à beira do lago', copy: 'Baía privativa no lago Inari sem gelo, canoa no ancoradouro, fumaça da sauna a lenha.' },
-        { title: 'Chalé de autor no fjell', copy: 'Algodão-do-pântano e flores silvestres substituem a pista de esqui, a mesma fachada panorâmica de vidro.' },
+        { title: 'Chalé de autor no fjäll', copy: 'Algodão-do-pântano e flores silvestres substituem a pista de esqui, a mesma fachada panorâmica de vidro.' },
         { title: 'Vila moderna na floresta', copy: 'Edifício de madeira em balanço no fundo do pinheiral boreal verde, calor dourado do sol da meia-noite na fachada.' },
       ],
     },

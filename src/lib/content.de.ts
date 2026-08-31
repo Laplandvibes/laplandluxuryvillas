@@ -54,9 +54,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Glasiglus hoch über dem Fjell von Levi, nach Süden zum Tal ausgerichtet statt nach Norden in den Wald.',
+      tagline: 'Glasiglus hoch über dem Fjäll von Levi, nach Süden zum Tal ausgerichtet statt nach Norden in den Wald.',
       copy: [
-        'Zweiundvierzig Glasiglus, angeordnet an der Südschulter des Levi-Fjells. Die meisten Polarlichthütten blicken nach Norden in einen leeren Wald; Levin Iglut ist eines der ganz wenigen, das die Lichter über der beleuchteten Skyline des Fjelldorfs darunter einrahmt, besser für Fotografen, dramatischer in der Dämmerung.',
+        'Zweiundvierzig Glasiglus, angeordnet an der Südschulter des Levi-Fjälls. Die meisten Polarlichthütten blicken nach Norden in einen leeren Wald; Levin Iglut ist eines der ganz wenigen, das die Lichter über der beleuchteten Skyline des Fjälldorfs darunter einrahmt, besser für Fotografen, dramatischer in der Dämmerung.',
         'Zu Fuß erreichbar zum Dorf Levi (Gondel, Restaurants, Ski-in/Ski-out), doch die Iglus selbst sind ruhig. Restaurant Aurora vor Ort, dessen Küchenchef innerhalb von 100 km einkauft.',
       ],
       signature: [
@@ -84,16 +84,16 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Eine verglaste Suite auf dem Gipfel des Kaunispää-Fjells, oberhalb der Baumgrenze und über den Lichtern des Dorfes.',
+      tagline: 'Eine verglaste Suite auf dem Gipfel des Kaunispää-Fjälls, oberhalb der Baumgrenze und über den Lichtern des Dorfes.',
       copy: [
-        'Star Arctic liegt ganz oben auf dem Kaunispää, dem Fjell, das sich direkt aus dem Dorf Saariselkä erhebt. Die Skyview-Suiten haben raumhohe Glaswände an drei Seiten, keine Vorhänge und eine Lage hoch genug über der lokalen Baumgrenze, das bedeutet ein echtes 270°-Panorama vom Bett aus.',
+        'Star Arctic liegt ganz oben auf dem Kaunispää, dem Fjäll, das sich direkt aus dem Dorf Saariselkä erhebt. Die Skyview-Suiten haben raumhohe Glaswände an drei Seiten, keine Vorhänge und eine Lage hoch genug über der lokalen Baumgrenze, das bedeutet ein echtes 270°-Panorama vom Bett aus.',
         'Die Gipfelstraße ist privat und nachts beleuchtet, sodass Gäste selbst fahren können. Das Hotel verfügt über eine eigene Sternwarte, ein Restaurant und eine Flotte von Fatbikes für den Sommer.',
       ],
       signature: [
-        '270°-Glas auf dem höchsten Fjellgipfel der Region',
+        '270°-Glas auf dem höchsten Fjällgipfel der Region',
         'Private Gipfelstraße, nachts beleuchtet',
         'Hauseigene Sternwarte unter dunklem Himmel (Teleskopnächte)',
-        'Sauna mit raumhohem Blick auf das Fjell',
+        'Sauna mit raumhohem Blick auf das Fjäll',
         'Premium-Suiten, Eckverglasung, separate Lounge',
         'Fünf Minuten Fahrt zum Dorf Saariselkä',
       ],
@@ -138,17 +138,17 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, die ursprüngliche Unterkunft mit Glasdach',
-        'Star Arctic Hotel, Gipfelsuiten auf dem Kaunispää-Fjell',
+        'Star Arctic Hotel, Gipfelsuiten auf dem Kaunispää-Fjäll',
         'Direkter Zugang zum Urho-Kekkonen-Nationalpark (Wildnisniveau)',
         'Flughafen Ivalo, privatchartertauglich, 30 Min. Transfer',
       ],
       arrival: 'Ivalo (IVL), 27 km, etwa 30 Min. per privatem Transfer',
-      auroraNote: 'Borealer Binnenwald, in dem es auf Dutzenden Kilometern in jede Richtung kein Siedlungslicht gibt. Die Fjells geben einen hohen, offenen Horizont, worauf es in den Nächten ankommt, in denen der Bogen tief im Norden steht.',
+      auroraNote: 'Borealer Binnenwald, in dem es auf Dutzenden Kilometern in jede Richtung kein Siedlungslicht gibt. Die Fjälls geben einen hohen, offenen Horizont, worauf es in den Nächten ankommt, in denen der Bogen tief im Norden steht.',
     },
     'inari': {
       position: 'Unser nördlichstes Ziel, wo Polarlichter in etwa drei von vier Nächten beobachtet werden. Samisches Kernland, Inarisee, dunkle Himmel.',
       copy: [
-        'Inari ist Finnlands nördlichste Gemeinde und die kulturelle Hauptstadt der finnischen Sami. Das Dorf liegt am Inarisee, dem drittgrößten See Finnlands, mit rund 3.000 Inseln, mehr als 200 km nördlich des Polarkreises und ohne Stadtlicht am Horizont.',
+        'Inari ist Finnlands flächengrößte Gemeinde und die kulturelle Hauptstadt der finnischen Sami. Das Dorf liegt am Inarisee, dem drittgrößten See Finnlands, mit rund 3.000 Inseln, mehr als 200 km nördlich des Polarkreises und ohne Stadtlicht am Horizont.',
         'Für Luxusreisen bedeutet das zweierlei. Erstens: Auf diesem Breitengrad beobachtet das Finnische Meteorologische Institut Polarlichter in etwa drei von vier Nächten, und sie stehen direkt über dem Kopf statt tief im Norden. Zweitens: Die Blockhaus-Anwesen am See gehören zu den ruhigsten Unterkünften Lapplands: kein Durchgangsverkehr, keine benachbarten Dörfer am sichtbaren Horizont.',
       ],
       highlights: [
@@ -172,33 +172,33 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Direktflüge aus London / Frankfurt / Wien / Doha (saisonal)',
       ],
       arrival: 'Rovaniemi (RVN), 10 km, 10 bis 15 Min. vom Stadtzentrum',
-      auroraNote: 'Unser südlichstes Ziel und das einzige mit Stadtlicht am Horizont, deshalb erscheint das Polarlicht hier seltener und ist schwerer zu sehen, wenn es kommt. Am besten kombiniert mit mindestens einer Nacht in einem Fjelldorf weiter nördlich.',
+      auroraNote: 'Unser südlichstes Ziel und das einzige mit Stadtlicht am Horizont, deshalb erscheint das Polarlicht hier seltener und ist schwerer zu sehen, wenn es kommt. Am besten kombiniert mit mindestens einer Nacht in einem Fjälldorf weiter nördlich.',
     },
     'levi': {
       position: 'Finnlands führendes Skizentrum. Luxuschalets am Südhang, Ski-in/Ski-out von der Gondel in Levi.',
       copy: [
-        'Levi ist das am besten erschlossene Fjell-Resort Lapplands, ein komplettes Wintersportdorf mit 44 Pisten und 26 Liften, davon zwei Gondeln. Der Markt für Designer-Chaletvermietung ist hier im letzten Jahrzehnt deutlich gewachsen. Die Gondel fährt vom Dorfzentrum auf den 531 Meter hohen Gipfel; am Südhang liegen die privaten Chalets, und für die Saison 2026-2027 kommt dort ein neuer Sessellift dazu.',
+        'Levi ist das am besten erschlossene Fjäll-Resort Lapplands, ein komplettes Wintersportdorf mit 44 Pisten und 26 Liften, davon zwei Gondeln. Der Markt für Designer-Chaletvermietung ist hier im letzten Jahrzehnt deutlich gewachsen. Die Gondel fährt vom Dorfzentrum auf den 531 Meter hohen Gipfel; am Südhang liegen die privaten Chalets, und für die Saison 2026-2027 kommt dort ein neuer Sessellift dazu.',
         'Die Polarlichtsicht von Levi aus ist nach Süden gerichtet und dramatisch, in Lappland selten, sodass die beleuchtete Dorfsilhouette Teil des Fotos wird. Am besten kombiniert mit ein oder zwei Nächten weiter nördlich (Inari oder Saariselkä) für echte Wildnis-Polarlichter, bevor man zum Skifahren hierher zurückkehrt.',
       ],
       highlights: [
-        'Levin Iglut, nach Süden ausgerichtete Glasiglus über dem Fjelldorf',
+        'Levin Iglut, nach Süden ausgerichtete Glasiglus über dem Fjälldorf',
         'Architektengeplante Designer-Chalets, Südhang, Ski-in/out',
         '44 Pisten, 26 Lifte (zwei Gondeln), 38,5 km präparierte Piste',
         'Flughafen Kittilä (KTT) bedient saisonale internationale Direktflüge',
       ],
       arrival: 'Kittilä (KTT), 15 km, etwa 20 Min. per privatem Transfer',
-      auroraNote: 'Ein nach Süden ausgerichtetes Panorama, in Lappland selten: das beleuchtete Fjelldorf wird zum Vordergrund des Fotos. Der Preis dafür ist eben dieses Ortslicht, die dunkelste Sicht liegt also eine kurze Autofahrt entfernt.',
+      auroraNote: 'Ein nach Süden ausgerichtetes Panorama, in Lappland selten: das beleuchtete Fjälldorf wird zum Vordergrund des Fotos. Der Preis dafür ist eben dieses Ortslicht, die dunkelste Sicht liegt also eine kurze Autofahrt entfernt.',
     },
     'yllas': {
       position: 'Die ruhige Alternative zu Levi. Pallas-Yllästunturi-Nationalpark, weniger Menschenmengen, tieferer Wald.',
       copy: [
-        'Ylläs hat 62 Pisten, mehr als jedes andere Skigebiet Finnlands, und die längsten Abfahrten des Landes: über drei Kilometer vom baumlosen 719-Meter-Gipfel hinunter. Trotzdem wirkt es wie ein Bruchteil von Levi, denn der Ort ist auf zwei Siedlungen verteilt (Äkäslompolo und Ylläsjärvi), getrennt durch 15 km Fjell und den Pallas-Yllästunturi-Nationalpark.',
-        'Für Luxusreisen liegt der Reiz im Raum. Architektengeplante Chalets stehen hier allein am Fjellhang, die Wege des Nationalparks führen direkt vom Anwesen weg, und die Stille ist es, wofür die Menschen tatsächlich zahlen. Das Loipennetz umfasst rund 300 Kilometer, davon über 30 Kilometer beleuchtet.',
+        'Ylläs hat 62 Pisten, mehr als jedes andere Skigebiet Finnlands, und die längsten Abfahrten des Landes: über drei Kilometer vom baumlosen 719-Meter-Gipfel hinunter. Trotzdem wirkt es wie ein Bruchteil von Levi, denn der Ort ist auf zwei Siedlungen verteilt (Äkäslompolo und Ylläsjärvi), getrennt durch 15 km Fjäll und den Pallas-Yllästunturi-Nationalpark.',
+        'Für Luxusreisen liegt der Reiz im Raum. Architektengeplante Chalets stehen hier allein am Fjällhang, die Wege des Nationalparks führen direkt vom Anwesen weg, und die Stille ist es, wofür die Menschen tatsächlich zahlen. Das Loipennetz umfasst rund 300 Kilometer, davon über 30 Kilometer beleuchtet.',
       ],
       highlights: [
         'Pallas-Yllästunturi-Nationalpark, Finnlands drittgrößter',
-        'Zwei Skidörfer auf gegenüberliegenden Seiten des Ylläs-Fjells',
-        'Am Rand des Nationalparks, daher kein Resortlicht auf der Fjellseite',
+        'Zwei Skidörfer auf gegenüberliegenden Seiten des Ylläs-Fjälls',
+        'Am Rand des Nationalparks, daher kein Resortlicht auf der Fjällseite',
         'Rund 300 km gespurte Loipen, davon über 30 km beleuchtet',
       ],
       arrival: 'Kittilä (KTT), 40 km, etwa 45 Min. per privatem Transfer',
@@ -241,7 +241,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-snowmobile-wilderness': {
       hook: 'Eine geführte 80-km-Schneemobilroute durch zugefrorene Seen und unberührten Wald, mit einem über Holzfeuer zubereiteten Mittagessen.',
       copy: [
-        'Eine ganztägige geführte Schneemobilroute auf den oberen Fjelltrails, das Netz, das die einheimischen Guides nutzen, nicht die Touristenschleife. Das Mittagessen wird vom Guide über einem Feuer am Trail gekocht (Rentiereintopf, im Feuer gebackenes Brot, heißer Saft).',
+        'Eine ganztägige geführte Schneemobilroute auf den oberen Fjälltrails, das Netz, das die einheimischen Guides nutzen, nicht die Touristenschleife. Das Mittagessen wird vom Guide über einem Feuer am Trail gekocht (Rentiereintopf, im Feuer gebackenes Brot, heißer Saft).',
         'BRP-Maschinen, Helme, Sturmhauben und Wolloveralls inbegriffen. Zweisitzer-Schlitten verfügbar. Führerschein für den Fahrer erforderlich; der Beifahrersitz benötigt keinen. Maximal vier Schlitten pro Gruppe.',
       ],
       available: 'Saariselkä, Inari, Levi, Dez.–Apr.',
