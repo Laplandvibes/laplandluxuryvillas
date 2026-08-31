@@ -49,7 +49,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '24 cabanes sur un domaine de 30 hectares, généreusement espacées',
         'Restaurant dirigé par les Samis sur place, menu dégustation chaque soir',
         'Alerte aurores par radio en cabane',
-        'Aurore environ 3 nuits sur 4 à cette latitude (FMI)',
+        'Aurore environ 3 nuits sur 4 à cette latitude (institut météo finlandais)',
         'Sentier privé de raquette gratuit au départ de la propriété',
       ],
     },
