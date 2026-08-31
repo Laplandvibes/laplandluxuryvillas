@@ -59,7 +59,7 @@ export default function Home() {
             email: 'private@laplandvibes.com',
             parentOrganization: {
               '@type': 'Organization',
-              name: 'Lapeso Oy',
+              name: 'LaPeso Oy',
               url: 'https://laplandvibes.com',
             },
             sameAs: ['https://laplandvibes.com', 'https://laplandstays.com'],
@@ -70,7 +70,7 @@ export default function Home() {
             url: 'https://laplandluxuryvillas.com',
             name: 'LaplandLuxuryVillas',
             inLanguage: lang === 'fi' ? 'fi' : lang === 'de' ? 'de' : 'en',
-            publisher: { '@type': 'Organization', name: 'Lapeso Oy' },
+            publisher: { '@type': 'Organization', name: 'LaPeso Oy' },
           },
           {
             '@context': 'https://schema.org',

@@ -11,7 +11,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'kakslauttanen-glass-igloo-suite': {
       tagline: 'Vidro térmico aquecido sobre uma cabana de pinho kelo feita à mão, o quarto-aurora original.',
       copy: [
-        'Uma villa de madeira autossuficiente, com seu próprio quarto de teto de vidro, cozinha privativa, sala com lareira e sauna finlandesa. O vidro térmico permanece transparente a −30 °C, então você observa as auroras de uma cama king-size sem sair do edredom.',
+        'Uma vila de madeira autossuficiente, com seu próprio quarto de teto de vidro, cozinha privativa, sala com lareira e sauna finlandesa. O vidro térmico permanece transparente a −30 °C, então você observa as auroras de uma cama king-size sem sair do edredom.',
         'Localizada dentro da propriedade Kakslauttanen, perto do Parque Nacional Urho Kekkonen, a 35 minutos do aeroporto de Ivalo por transfer privativo. Meia pensão no restaurante do resort disponível; chef particular sob solicitação.',
       ],
       signature: [
@@ -42,21 +42,21 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Vinte e quatro cabanas de vidro voltadas para nada além de floresta e do oval da aurora.',
       copy: [
         'Inari fica exatamente sob o oval auroral, na latitude em que o Instituto Meteorológico Finlandês observa a aurora em cerca de três noites a cada quatro. A Aurora Village é uma propriedade de 24 cabanas, sem tráfego de passagem, sem vilarejos vizinhos no horizonte visível. As cabanas são espaçadas para garantir privacidade, com a cama sob o vidro e o sofá voltado para ele.',
-        'O restaurante no local, conduzido por Sami, oferece um menu degustação em torno de rena, salmão-ártico e amora-branca. Os alarmes de aurora são transmitidos por rádio de cabana em cabana, para que ninguém acorde a villa ao lado.',
+        'O restaurante no local, de gestão sámi, oferece um menu degustação em torno de rena, salmão-ártico e amora-branca. Os alarmes de aurora são transmitidos por rádio de cabana em cabana, para que ninguém acorde a vila ao lado.',
       ],
       signature: [
         'Cabana de teto de vidro com a cama sob o ápice',
         '24 cabanas em uma propriedade de 30 hectares, generosamente espaçadas',
-        'Restaurante conduzido por Sami no local, menu degustação todas as noites',
+        'Restaurante de gestão sámi no local, menu degustação todas as noites',
         'Alarme de aurora via rádio na cabana',
-        'Aurora em cerca de 3 de 4 noites nesta latitude (FMI)',
+        'Aurora em cerca de 3 a cada 4 noites nesta latitude (FMI)',
         'Trilha privativa gratuita de raquetes de neve a partir da propriedade',
       ],
     },
     'levin-iglut-golden-crown': {
       tagline: 'Iglus de vidro empoleirados acima do fell de Levi, o único conjunto de iglus da Lapônia voltado para o sul, para o vale.',
       copy: [
-        'Quarenta e dois iglus de vidro dispostos na encosta sul do fell de Levi. A maioria das cabanas-aurora aponta para o norte, para uma floresta vazia; a Levin Iglut é uma das pouquíssimas que enquadra as luzes acima do horizonte iluminado da fell-village logo abaixo, melhor para fotógrafos, mais dramático ao entardecer.',
+        'Quarenta e dois iglus de vidro dispostos na encosta sul do fell de Levi. A maioria das cabanas-aurora aponta para o norte, para uma floresta vazia; a Levin Iglut é uma das pouquíssimas que enquadra as luzes acima do horizonte iluminado da vila de fell logo abaixo, melhor para fotógrafos, mais dramático ao entardecer.',
         'A distância de caminhada da vila de Levi (gôndola, restaurantes, ski-in/ski-out), mas os próprios iglus são tranquilos. Restaurant Aurora no local, com o chef se abastecendo num raio de 100 km.',
       ],
       signature: [
@@ -72,14 +72,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Uma suíte-bolha de vidro na borda da floresta boreal, a vinte minutos da fronteira russa.',
       copy: [
         'Nellim é um vilarejo de natureza selvagem em atividade (população de 220) na margem leste do Lago Inari. As bolhas-aurora ficam afastadas do chalé principal, em sua própria clareira, cada uma com um domo panorâmico transparente sobre a cama e um ofurô a lenha na varanda.',
-        'O chalé promove noites culturais Sami, pesca no gelo no lago e um dos poucos programas guiados certificados de fotografia de auroras da Finlândia. Os quartos esgotam com um ano de antecedência para o pico de fevereiro.',
+        'O chalé promove noites culturais sámi, pesca no gelo no lago e um dos poucos programas guiados certificados de fotografia de auroras da Finlândia. Os quartos esgotam com um ano de antecedência para o pico de fevereiro.',
       ],
       signature: [
         'Domo panorâmico transparente sobre a cama',
         'Ofurô privativo a lenha na varanda',
         'Localização em vilarejo selvagem, a 20 min da fronteira russa',
         'Programa guiado certificado de fotografia de auroras',
-        'Programa cultural Sami várias noites por semana',
+        'Programa cultural sámi várias noites por semana',
         'Pesca no Lago Inari + sauna tradicional a fumaça',
       ],
     },
@@ -143,18 +143,18 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Aeroporto de Ivalo, apto a voos fretados particulares, transfer de 30 min',
       ],
       arrival: 'Ivalo (IVL), 27 km, cerca de 30 min por transfer privativo',
-      auroraNote: 'Floresta boreal do interior, sem luz de povoados por dezenas de quilômetros em qualquer direção. As fells dão um horizonte alto e aberto, o que conta nas noites em que o arco fica baixo ao norte.',
+      auroraNote: 'Floresta boreal do interior, sem luz de povoados por dezenas de quilômetros em qualquer direção. Os fells dão um horizonte alto e aberto, o que conta nas noites em que o arco fica baixo ao norte.',
     },
     'inari': {
-      position: 'Nosso destino mais ao norte, onde a aurora é observada em cerca de três noites a cada quatro. Coração Sami, Lago Inari, céus escuros.',
+      position: 'Nosso destino mais ao norte, onde a aurora é observada em cerca de três noites a cada quatro. Coração sámi, Lago Inari, céus escuros.',
       copy: [
-        'Inari é o maior município da Finlândia em área e a capital cultural dos Sami finlandeses. A vila fica no Lago Inari, o terceiro maior lago da Finlândia, com cerca de 3.000 ilhas, a mais de 200 km ao norte do círculo polar e sem nenhuma luz de cidade no horizonte.',
+        'Inari é o maior município da Finlândia em área e a capital cultural dos sámi finlandeses. A vila fica no Lago Inari, o terceiro maior lago da Finlândia, com cerca de 3.000 ilhas, a mais de 200 km ao norte do círculo polar e sem nenhuma luz de cidade no horizonte.',
         'Para o turismo de luxo, isso significa duas coisas. Primeiro: nesta latitude o Instituto Meteorológico Finlandês observa a aurora em cerca de três noites a cada quatro, e ela aparece no zênite em vez de baixa ao norte. Segundo: as propriedades de madeira à beira do lago estão entre as hospedagens mais tranquilas da Lapônia: sem tráfego de passagem, sem vilarejos vizinhos no horizonte visível.',
       ],
       highlights: [
         'Aurora Village, propriedade de cabanas de vidro de 30 hectares, construída para esse fim',
         'Wilderness Hotel Nellim, bolhas-aurora na margem leste do Lago Inari',
-        'Museu Sami SIIDA + programas culturais o ano todo',
+        'Museu Sámi Siida + programas culturais o ano todo',
         'Lago Inari, o terceiro maior da Finlândia, cerca de 3 000 ilhas',
       ],
       arrival: 'Ivalo (IVL), 40 km, cerca de 40 min por transfer privativo',
@@ -181,7 +181,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'A visibilidade de auroras em Levi é voltada para o sul e dramática, algo raro na Lapônia, de modo que o horizonte iluminado da vila passa a fazer parte da fotografia. Melhor combinada com uma ou duas noites mais ao norte (Inari ou Saariselkä) para auroras de natureza selvagem de verdade, antes de voltar aqui para o esqui.',
       ],
       highlights: [
-        'Levin Iglut, iglus de vidro voltados para o sul acima da fell-village',
+        'Levin Iglut, iglus de vidro voltados para o sul acima da vila de fell',
         'Chalés de design projetados por arquitetos, encosta sul, ski-in/out',
         '44 pistas, 26 teleféricos (duas gôndolas), 38,5 km de pista preparada',
         'Aeroporto de Kittilä (KTT) opera voos internacionais diretos sazonais',

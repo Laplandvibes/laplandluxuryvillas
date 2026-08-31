@@ -62,7 +62,7 @@ export default function Contact() {
               <Building2 size={22} strokeWidth={1.5} className="text-[color:var(--color-brass)] shrink-0 mt-1" />
               <div>
                 <div className="eyebrow text-[color:var(--color-bone)]/75 mb-1">{c.operatorEyebrow}</div>
-                <div className="font-heading text-2xl text-[color:var(--color-snow)]">Lapeso Oy</div>
+                <div className="font-heading text-2xl text-[color:var(--color-snow)]">LaPeso Oy</div>
               </div>
             </div>
             <div className="flex items-start gap-4 text-[color:var(--color-bone)]/75 font-body text-sm leading-relaxed">

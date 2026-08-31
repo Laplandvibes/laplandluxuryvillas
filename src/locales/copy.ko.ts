@@ -358,7 +358,7 @@ const ko: SiteCopy = {
   },
   contactPage: {
     seoTitle: '문의 · LaplandLuxuryVillas',
-    seoDescription: '단일 프라이빗 메일함: private@laplandvibes.com. 핀란드 라플란드의 Lapeso Oy가 운영합니다. 언론·제휴·직접 거래 문의처는 아래에 있습니다.',
+    seoDescription: '단일 프라이빗 메일함: private@laplandvibes.com. 핀란드 라플란드의 LaPeso Oy가 운영합니다. 언론·제휴·직접 거래 문의처는 아래에 있습니다.',
     eyebrow: '문의',
     h1: '하나의 메일함, 하나의 운영자.',
     cards: {

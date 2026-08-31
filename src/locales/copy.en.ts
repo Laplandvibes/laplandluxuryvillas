@@ -365,7 +365,7 @@ const en: SiteCopy = {
   },
   contactPage: {
     seoTitle: 'Contact · LaplandLuxuryVillas',
-    seoDescription: 'Single private inbox: private@laplandvibes.com. Operated by Lapeso Oy from Finnish Lapland. Press, partnership and direct-deal contacts below.',
+    seoDescription: 'Single private inbox: private@laplandvibes.com. Operated by LaPeso Oy from Finnish Lapland. Press, partnership and direct-deal contacts below.',
     eyebrow: 'Contact',
     h1: 'One inbox, one operator.',
     cards: {

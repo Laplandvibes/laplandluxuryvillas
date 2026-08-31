@@ -358,7 +358,7 @@ const fr: SiteCopy = {
   },
   contactPage: {
     seoTitle: 'Contact · LaplandLuxuryVillas',
-    seoDescription: 'Une seule boîte privée : private@laplandvibes.com. Exploitée par Lapeso Oy depuis la Laponie finlandaise. Contacts presse, partenariats et accords directs ci-dessous.',
+    seoDescription: 'Une seule boîte privée : private@laplandvibes.com. Exploitée par LaPeso Oy depuis la Laponie finlandaise. Contacts presse, partenariats et accords directs ci-dessous.',
     eyebrow: 'Contact',
     h1: 'Une seule boîte, un seul opérateur.',
     cards: {

@@ -189,7 +189,7 @@ const ptBR: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '«Suíte» na Lapônia abrange dois gestos arquitetônicos distintos, ambos vale a pena conhecer. O primeiro é a ',
+      p1Pre: '«Suíte» na Lapônia abrange dois gestos arquitetônicos distintos, ambos valem a pena conhecer. O primeiro é a ',
       designerSuite: 'suíte de autor',
       p1Mid: ', em que um escritório de arquitetura finlandês como o Studio Puisto construiu um único quarto em torno de uma única vista. O segundo é a ',
       glassRoof: 'cabana com teto de vidro',
@@ -201,7 +201,7 @@ const ptBR: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Cinco lugares, cinco céus diferentes',
     leadP1: 'Estes cinco destinos não são intercambiáveis. Inari é o mais ao norte, à beira de um lago sem luz de cidade no horizonte visível. Saariselkä fica na borda norte do parque nacional Urho Kekkonen, e foi ali que começou a hospedagem de teto de vidro. Rovaniemi tem os voos, Levi a infraestrutura de resort, Ylläs o silêncio.',
-    leadP2: 'Cada perfil abaixo informa o aeroporto de chegada e o tempo de transfer, como o céu realmente é ali ( o horizonte, a luz dos povoados, a que altura o arco costuma ficar ) e quais villas ficam naquela área. Não publicamos nenhum número de frequência de aurora por vilarejo, porque ninguém mede um por vilarejo.',
+    leadP2: 'Cada perfil abaixo informa o aeroporto de chegada e o tempo de transfer, como o céu realmente é ali (o horizonte, a luz dos povoados, a que altura o arco costuma ficar) e quais vilas ficam naquela área. Não publicamos nenhum número de frequência de aurora por vilarejo, porque ninguém mede um por vilarejo.',
     destinationLabel: (i) => `Destino 0${i + 1}`,
     readTheProfile: (name) => `Ler o perfil de ${name}`,
   },
@@ -227,7 +227,7 @@ const ptBR: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Dias sem pôr do sol em Rovaniemi, mais ao norte mais' },
+      { value: '32', label: 'Dias sem pôr do sol em Rovaniemi, mais ao norte, ainda mais' },
       { value: '24 h', label: 'Luz do dia no pico, 21 jun' },
       { value: '+18 °C', label: 'Temperatura diurna média no fim de junho' },
       { value: '50 %', label: 'Demanda menor que na temporada de auroras' },
@@ -238,7 +238,7 @@ const ptBR: SiteCopy = {
       { title: 'A arquitetura muda de caráter.', body: 'Os tetos de vidro que existem para as auroras agora emolduram um sol ininterrupto. Claraboia sobre a cama, sol sobre o lago, sem precisar fechar uma cortina, não há noite para esconder.' },
       { title: 'A natureza selvagem fica acessível.', body: 'Os lagos degelam, a floresta boreal se abre, surgem as rotas de canoa. A mesma vila alcançada de snowmobile em fevereiro fica agora a cinco minutos de barco do ancoradouro.' },
       { title: 'A mesma casa, outra estação.', body: 'A coleção é a mesma no verão e no inverno. Sob o mesmo teto de vidro há um sol que não se põe no lugar da aurora, os lagos estão abertos e a floresta é caminhável. A tarifa está na página de reserva de cada casa, então a diferença de estação se vê direto.' },
-      { title: 'Sem filas, sem vizinhos.', body: 'A Lapônia no verão recebe uma fração da densidade de visitantes do inverno. A trilha pela floresta, o mirante no fjäll, são praticamente seus.' },
+      { title: 'Sem filas, sem vizinhos.', body: 'A Lapônia no verão recebe uma fração da densidade de visitantes do inverno. A trilha pela floresta, o mirante no fell, são praticamente seus.' },
     ],
     summerCollection: {
       eyebrow: 'A coleção de verão',
@@ -247,7 +247,7 @@ const ptBR: SiteCopy = {
       cards: [
         { title: 'Cabana com teto de vidro no verde', copy: 'A arquitetura da aurora sob a luz dourada das 23h, cercada de floresta densa em vez de neve.' },
         { title: 'Propriedade de troncos à beira do lago', copy: 'Baía privativa no lago Inari sem gelo, canoa no ancoradouro, fumaça da sauna a lenha.' },
-        { title: 'Chalé de autor no fjäll', copy: 'Algodão-do-pântano e flores silvestres substituem a pista de esqui, a mesma fachada panorâmica de vidro.' },
+        { title: 'Chalé de autor no fell', copy: 'Algodão-do-pântano e flores silvestres substituem a pista de esqui, a mesma fachada panorâmica de vidro.' },
         { title: 'Vila moderna na floresta', copy: 'Edifício de madeira em balanço no fundo do pinheiral boreal verde, calor dourado do sol da meia-noite na fachada.' },
       ],
     },
@@ -365,7 +365,7 @@ const ptBR: SiteCopy = {
   },
   contactPage: {
     seoTitle: 'Contato · LaplandLuxuryVillas',
-    seoDescription: 'Uma única caixa de entrada privada: private@laplandvibes.com. Operada pela Lapeso Oy, na Lapônia finlandesa. Contatos de imprensa, parcerias e negócios diretos abaixo.',
+    seoDescription: 'Uma única caixa de entrada privada: private@laplandvibes.com. Operada pela LaPeso Oy, na Lapônia finlandesa. Contatos de imprensa, parcerias e negócios diretos abaixo.',
     eyebrow: 'Contato',
     h1: 'Uma caixa de entrada, um operador.',
     cards: {
