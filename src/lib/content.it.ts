@@ -84,13 +84,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Una suite con pareti di vetro sulla vetta della fell di Kaunispää: la camera aurora piu alta del paese.',
+      tagline: 'Una suite con pareti di vetro sulla vetta della fell di Kaunispää, sopra il limite del bosco e sopra le luci del villaggio.',
       copy: [
         'Star Arctic si trova proprio in cima a Kaunispää, la fell che si erge direttamente dal villaggio di Saariselkä. Le suite Skyview hanno pareti di vetro a tutta altezza su tre lati, nessuna tenda e un’altitudine sufficiente a superare la linea degli alberi locale, offrendo un autentico panorama di 270° dal letto.',
         'La strada per la vetta e privata e illuminata di notte, cosi gli ospiti possono guidare da soli. L’hotel dispone di un proprio osservatorio, un ristorante e una flotta di fat-bike per l’estate.',
       ],
       signature: [
-        'Vetro a 270° sulla vetta della fell piu alta della zona',
+        'Vetro a 270° sulla vetta, sopra il limite del bosco',
         'Strada privata per la vetta, illuminata di notte',
         'Osservatorio a cielo buio nella struttura (serate al telescopio)',
         'Sauna con vista sulla fell dal pavimento al soffitto',

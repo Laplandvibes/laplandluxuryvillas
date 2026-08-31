@@ -90,7 +90,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Lakitie on yksityinen ja valaistu öisin, joten vieraat voivat ajaa itse perille. Hotellilla on oma observatorio, ravintola ja kesäksi läskipyöräkalusto.',
       ],
       signature: [
-        '270 asteen lasi alueen korkeimman tunturin laella',
+        '270 asteen lasi laella, puurajan yläpuolella',
         'Yksityinen lakitie, valaistu öisin',
         'Talon oma pimeän taivaan observatorio (kaukoputki-illat)',
         'Sauna lattiasta kattoon ulottuvalla tunturinäkymällä',

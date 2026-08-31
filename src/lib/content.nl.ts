@@ -90,7 +90,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'De weg naar de top is privé en \'s nachts verlicht, zodat gasten er zelf naartoe kunnen rijden. Het hotel heeft een eigen sterrenwacht, een restaurant en een vloot fatbikes voor de zomer.',
       ],
       signature: [
-        '270° glas op de hoogste fjälltop in de omgeving',
+        '270° glas op de top, boven de boomgrens',
         'Eigen weg naar de top, \'s nachts verlicht',
         'Sterrenwacht onder donkere hemel op het terrein (telescoopavonden)',
         'Sauna met fjällzicht van vloer tot plafond',

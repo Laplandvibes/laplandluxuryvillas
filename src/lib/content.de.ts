@@ -90,7 +90,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Die Gipfelstraße ist privat und nachts beleuchtet, sodass Gäste selbst fahren können. Das Hotel verfügt über eine eigene Sternwarte, ein Restaurant und eine Flotte von Fatbikes für den Sommer.',
       ],
       signature: [
-        '270°-Glas auf dem höchsten Fjällgipfel der Region',
+        '270°-Glas auf dem Gipfel, oberhalb der Baumgrenze',
         'Private Gipfelstraße, nachts beleuchtet',
         'Hauseigene Sternwarte unter dunklem Himmel (Teleskopnächte)',
         'Sauna mit raumhohem Blick auf das Fjäll',
