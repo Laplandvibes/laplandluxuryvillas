@@ -149,7 +149,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Onze noordelijkste bestemming, waar het noorderlicht ongeveer drie nachten op vier wordt waargenomen. Sami-hartland, Inarimeer, donkere hemel.',
       copy: [
         'Inari is qua oppervlakte de grootste gemeente van Finland en de culturele hoofdstad van de Finse Sami. Het dorp ligt aan het Inarimeer, het op twee na grootste meer van Finland, met zo’n 3.000 eilanden, ruim 200 km ten noorden van de poolcirkel en zonder stadslicht aan de horizon.',
-        'Voor luxereizen betekent dit twee dingen. Ten eerste: op deze breedtegraad neemt het Fins Meteorologisch Instituut het noorderlicht ongeveer drie nachten op vier waar, en staat het recht boven je in plaats van laag in het noorden. Ten tweede: de blokhuislandgoederen aan het meer behoren tot de rustigste accommodaties van Lapland: geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
+        'Voor luxereizen betekent dit twee dingen. Ten eerste: op deze breedtegraad neemt het Fins Meteorologisch Instituut het noorderlicht ongeveer drie nachten op vier waar, en staat het recht boven u in plaats van laag in het noorden. Ten tweede: de blokhuislandgoederen aan het meer behoren tot de rustigste accommodaties van Lapland: geen doorgaand verkeer, geen naburige dorpen aan de zichtbare horizon.',
       ],
       highlights: [
         'Aurora Village, speciaal gebouwd glashuttenlandgoed van 30 hectare',
@@ -158,7 +158,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Inarimeer, het op twee na grootste meer van Finland, zo\'n 3 000 eilanden',
       ],
       arrival: 'Ivalo (IVL), 40 km, ongeveer 40 min per privétransfer',
-      auroraNote: 'Onze noordelijkste bestemming, en die waar het noorderlicht het vaakst recht boven je staat in plaats van laag in het noorden. Het Inarimeer geeft een ononderbroken horizon, zonder dorpslicht erop.',
+      auroraNote: 'Onze noordelijkste bestemming, en die waar het noorderlicht het vaakst recht boven u staat in plaats van laag in het noorden. Het Inarimeer geeft een ononderbroken horizon, zonder dorpslicht erop.',
     },
     'rovaniemi': {
       position: 'De aankomststad. Door architecten gebouwde suites, dagelijkse directe vluchten vanaf grote hubs.',
@@ -202,7 +202,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Ongeveer 300 km geprepareerde loipes, ruim 30 km verlicht',
       ],
       arrival: 'Kittilä (KTT), 40 km, ongeveer 45 min per privétransfer',
-      auroraNote: 'De chalets staan tegen het nationaal park aan in plaats van midden in een resort, dus je stapt de deur uit zo de duisternis in in plaats van ernaartoe te rijden.',
+      auroraNote: 'De chalets staan tegen het nationaal park aan in plaats van midden in een resort, dus u stapt de deur uit zo de duisternis in in plaats van ernaartoe te rijden.',
     },
   },
   experiences: {
