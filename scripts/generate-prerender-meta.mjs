@@ -118,6 +118,21 @@ function parseOverlay(file, section, fields) {
 function trimDesc(s, max = 160) {
   const t = String(s).replace(/\s+/g, ' ').trim();
   if ([...t].length <= max) return t;
+  // 🔴 Ellipsi tuloslistalla kertoo etta teksti loppui kesken. Mitattu
+  // metaportilla 1.9.2026: 5 hollanninkielista kuvausta paattyi ellipsiin, ja
+  // hollannin CTR on verkoston heikoin. Kokonainen ajatus voittaa pidemman
+  // katkennaneen — ota niin monta KOKONAISTA VIRKETTA kuin budjettiin mahtuu.
+  const virkkeet = t.match(/[^.!?]+[.!?]+/g) || [];
+  let kertyy = '';
+  for (const v of virkkeet) {
+    // v alkaa valilyonnilla (regex ottaa sen mukaan) ⇒ trimmaa ennen liitosta,
+    // muuten virkkeiden valiin jaa kaksoisvalilyonti.
+    const ehdokas = (kertyy ? kertyy + ' ' + v.trim() : v.trim());
+    if ([...ehdokas].length > max) break;
+    kertyy = ehdokas;
+  }
+  kertyy = kertyy.trim();
+  if ([...kertyy].length >= 50) return kertyy;
   const chars = [...t];
   let cut = chars.slice(0, max - 2).join('');
   const sp = cut.lastIndexOf(' ');
