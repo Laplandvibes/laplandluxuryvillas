@@ -58,7 +58,7 @@ const lomarengas: AdSpec = {
     es: {
       eyebrow: 'Una cabaña entera, no una habitación',
       headline: 'Alquila una cabaña entera en Laponia, con sauna propia y sitio para todos',
-      sub: 'La mayor agencia de alquiler de cabañas de Finlandia. Miles de cabañas por toda Laponia, muchas con sauna privada junto al lago y chimenea. Reservas directamente y tienes todo el sitio para ti, no solo una habitación. Cuando quieres espacio, calma y tu propia cocina, la cabaña gana al hotel.',
+      sub: 'La mayor agencia de alquiler de cabañas de Finlandia. Miles de cabañas por toda Laponia, muchas con sauna privada junto al lago y chimenea. Reserva directamente y tiene todo el sitio para usted, no solo una habitación. Cuando quiere espacio, calma y su propia cocina, la cabaña gana al hotel.',
       trust: ['Sauna privada en la mayoría', 'La cabaña entera, sin compartir', 'Cabañas por toda Laponia'],
       cta: 'Ver cabañas disponibles',
       poweredBy: 'Reserva con Lomarengas',
