@@ -361,7 +361,7 @@ const FAQ_LINKS: Record<Lang, { prompt: string; collection: string; inquiry: str
   ko: { prompt: '아직 궁금한 점이 있으신가요?', collection: '빌라 보기', inquiry: '추천 요청' },
   fr: { prompt: 'Une question vous reste ?', collection: 'Voir les villas', inquiry: 'Demander des suggestions' },
   it: { prompt: 'Resta qualche dubbio?', collection: 'Vedi le ville', inquiry: 'Chiedi una proposta' },
-  nl: { prompt: 'Zit je nog met een vraag?', collection: "Bekijk de villa's", inquiry: 'Vraag om suggesties' },
+  nl: { prompt: 'Zit u nog met een vraag?', collection: "Bekijk de villa's", inquiry: 'Vraag om suggesties' },
   sv: { prompt: 'Undrar du fortfarande över något?', collection: 'Se villorna', inquiry: 'Be om förslag' },
 }
 
