@@ -355,7 +355,7 @@ const FAQ_LINKS: Record<Lang, { prompt: string; collection: string; inquiry: str
   fi: { prompt: 'Jäikö jokin mietityttämään?', collection: 'Katso huvilat', inquiry: 'Pyydä ehdotus' },
   de: { prompt: 'Noch eine Frage offen?', collection: 'Zu den Villen', inquiry: 'Vorschläge anfragen' },
   ja: { prompt: 'まだ気になることがありますか？', collection: 'ヴィラを見る', inquiry: '提案を頼む' },
-  es: { prompt: '¿Te queda alguna duda?', collection: 'Ver las villas', inquiry: 'Pedir sugerencias' },
+  es: { prompt: '¿Le queda alguna duda?', collection: 'Ver las villas', inquiry: 'Pedir sugerencias' },
   'pt-BR': { prompt: 'Ainda ficou com alguma dúvida?', collection: 'Ver as vilas', inquiry: 'Pedir sugestões' },
   'zh-CN': { prompt: '还有想了解的吗？', collection: '查看别墅', inquiry: '请求推荐' },
   ko: { prompt: '아직 궁금한 점이 있으신가요?', collection: '빌라 보기', inquiry: '추천 요청' },

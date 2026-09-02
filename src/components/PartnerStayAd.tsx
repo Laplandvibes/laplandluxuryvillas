@@ -72,8 +72,8 @@ const VILLA_ANGLE: Record<Lang, AdCopy> = {
   },
   es: {
     eyebrow: 'La cabaña entera, no una habitación',
-    headline: 'Lomarengas: alquila una cabaña entera en Laponia, con tu propia sauna junto al lago y sitio para todos',
-    sub: 'Cuando la colección de villas está reservada, o simplemente queréis un sitio solo para vosotros, una cabaña escogida con cuidado es la alternativa cálida. Lomarengas es la mayor agencia de alquiler de cabañas de Finlandia, con miles por toda Laponia, muchas con sauna privada junto al lago y chimenea. Reservas directamente y tienes toda la casa, no solo una habitación.',
+    headline: 'Lomarengas: alquile una cabaña entera en Laponia, con su propia sauna junto al lago y sitio para todos',
+    sub: 'Cuando la colección de villas está reservada, o simplemente quieren un sitio solo para ustedes, una cabaña escogida con cuidado es la alternativa cálida. Lomarengas es la mayor agencia de alquiler de cabañas de Finlandia, con miles por toda Laponia, muchas con sauna privada junto al lago y chimenea. Reserva directamente y tiene toda la casa, no solo una habitación.',
     trust: ['Sauna privada en la mayoría', 'La cabaña entera, sin compartir', 'Miles por toda Laponia'],
     cta: 'Ver cabañas disponibles',
     poweredBy: 'Reserva con Lomarengas',

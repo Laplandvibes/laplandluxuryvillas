@@ -99,7 +99,7 @@ const es: SiteCopy = {
   newsletter: {
     eyebrow: 'El boletín de #LaplandVibes',
     h2: 'Fechas libres en las villas y las semanas tranquilas.',
-    lede: 'Fechas liberadas, casas dignas de atención y cómo leer el pronóstico de auroras. Sin spam. Escribimos desde Finlandia y enviamos solo cuando de verdad tenemos algo para ti.',
+    lede: 'Fechas liberadas, casas dignas de atención y cómo leer el pronóstico de auroras. Sin spam. Escribimos desde Finlandia y enviamos solo cuando de verdad tenemos algo para usted.',
     emailPlaceholder: 'sua@email.com',
     footnote: 'Cancele la suscripción con un clic.',
     welcome: 'Bienvenido a bordo. El primer aviso llega en menos de una semana.',
@@ -116,7 +116,7 @@ const es: SiteCopy = {
     home: {
       eyebrow: '{n} villas · {m} destinos',
       title: 'Una villa en Laponia, sin conjeturas.',
-      lede: 'Cada alojamiento está verificado con su propia información publicada y reseñas recientes de huéspedes. Reserva directamente con el alojamiento, o dinos tus fechas y tu grupo y te proponemos los que mejor encajan en un día.',
+      lede: 'Cada alojamiento está verificado con su propia información publicada y reseñas recientes de huéspedes. Reserve directamente con el alojamiento, o díganos sus fechas y su grupo y le proponemos los que mejor encajan en un día.',
       primary: 'Ver las villas',
       secondary: 'Pedir sugerencias',
     },
@@ -155,17 +155,17 @@ const es: SiteCopy = {
     about: {
       eyebrow: 'Quiénes somos',
       title: 'Una lista corta, breve a propósito.',
-      lede: '{n} villas y suites escogidas a mano en la Laponia finlandesa. Enlace directo a la reserva propia de cada alojamiento, sin plataforma de por medio, y tus datos no van a ninguna parte hasta que tú mismo contactes.',
+      lede: '{n} villas y suites escogidas a mano en la Laponia finlandesa. Enlace directo a la reserva propia de cada alojamiento, sin plataforma de por medio, y sus datos no van a ninguna parte hasta que usted mismo contacte.',
     },
   },
   home: {
     philosophy: {
       eyebrow: 'Cómo funciona',
-      h2: 'Nosotros verificamos y proponemos. Tú reservas directamente con el alojamiento.',
+      h2: 'Nosotros verificamos y proponemos. Usted reserva directamente con el alojamiento.',
       items: [
         { title: 'Solo alojamientos verificados.', body: 'La lista tiene {n} villas y suites, ni una más. Cada una está verificada con su propia información publicada y reseñas recientes de huéspedes, y la lista está viva: un alojamiento sale de ella si el nivel deja de sostenerse.' },
-        { title: 'Una propuesta en un día, sin compromiso.', body: 'Dinos tus fechas, el tamaño del grupo y lo que buscáis. Recibes una propuesta con las mejores opciones en un día, y tus datos de contacto no se comparten con ningún alojamiento hasta que tú mismo lo contactes.' },
-        { title: 'El precio está en el alojamiento, no con nosotros.', body: 'Cuando una villa tiene página pública de reservas, el enlace lleva directamente allí y el precio se ve antes de decidir. Cuando no hay precio publicado, el alojamiento te lo cotiza directamente. No fijamos precios ni aceptamos reservas.' },
+        { title: 'Una propuesta en un día, sin compromiso.', body: 'Díganos sus fechas, el tamaño del grupo y lo que buscan. Recibe una propuesta con las mejores opciones en un día, y sus datos de contacto no se comparten con ningún alojamiento hasta que usted mismo lo contacte.' },
+        { title: 'El precio está en el alojamiento, no con nosotros.', body: 'Cuando una villa tiene página pública de reservas, el enlace lleva directamente allí y el precio se ve antes de decidir. Cuando no hay precio publicado, el alojamiento se lo cotiza directamente. No fijamos precios ni aceptamos reservas.' },
       ],
     },
     signature: {
@@ -303,7 +303,7 @@ const es: SiteCopy = {
       {
         title: 'Por qué existe esta colección',
         paragraphs: [
-          'El alojamiento de lujo en Laponia es un mundo pequeño. El mismo puñado de villas y unas pocas docenas de suites aparecen en todas las plataformas de reservas, a menudo con las mismas fotos de stock y el mismo rango de precios impreciso. Quienes ya han hecho los viajes obvios empiezan a preguntar por Laponia con más precisión: qué villa reservarías tú de verdad, dónde alojas a una familia de nueve, cuál es el lugar del que nadie escribe.',
+          'El alojamiento de lujo en Laponia es un mundo pequeño. El mismo puñado de villas y unas pocas docenas de suites aparecen en todas las plataformas de reservas, a menudo con las mismas fotos de stock y el mismo rango de precios impreciso. Quienes ya han hecho los viajes obvios empiezan a preguntar por Laponia con más precisión: qué villa reservaría usted de verdad, dónde aloja a una familia de nueve, cuál es el lugar del que nadie escribe.',
           'Este sitio es una respuesta breve y meditada a esas preguntas, una selección hecha a mano de las villas y suites que creemos que merecen el viaje.',
         ],
       },
