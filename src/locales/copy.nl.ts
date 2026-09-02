@@ -122,12 +122,12 @@ const nl: SiteCopy = {
     suites: {
       eyebrow: 'Designersuites',
       title: 'Wanneer u geen villa nodig heeft, maar wel het glazen dak.',
-      lede: 'Een korte lijst van eenkamersuites en aurora-cabines waar de architectuur zelf de ervaring is. Een kleiner gezelschap, hetzelfde panoramische plafond.',
+      lede: 'Een korte lijst van eenkamersuites en noorderlichtcabines waar de architectuur zelf de ervaring is. Een kleiner gezelschap, hetzelfde panoramische plafond.',
     },
     destinations: {
       eyebrow: 'Bestemmingen',
       title: 'Vijf plekken, elk met een duidelijke reden om er te zijn.',
-      lede: 'Lapland is niet uitwisselbaar. De aurorafrequentie, de aankomstlogistiek en de accommodatiedichtheid veranderen merkbaar om de 50 km ten noorden van de poolcirkel.',
+      lede: 'Lapland is niet uitwisselbaar. De noorderlichtfrequentie, de aankomstlogistiek en de accommodatiedichtheid veranderen merkbaar om de 50 km ten noorden van de poolcirkel.',
     },
     experiences: {
       eyebrow: 'Ervaringen op maat',
@@ -174,7 +174,7 @@ const nl: SiteCopy = {
   },
   villasPage: {
     leadTitle: 'Wat er in deze selectie staat',
-    leadP1: 'Acht kamers, geen acht hotels. Elke vermelding hier is een specifiek kamertype binnen een echt huis: een glasdakhut bij Kakslauttanen, een uitkragende suite in Arctic TreeHouse, een aurorabubbel aan het Inarimeer. Dat is de eenheid die u werkelijk boekt, dus die vermelden wij.',
+    leadP1: 'Acht kamers, geen acht hotels. Elke vermelding hier is een specifiek kamertype binnen een echt huis: een glasdakhut bij Kakslauttanen, een uitkragende suite in Arctic TreeHouse, een noorderlichtbubbel aan het Inarimeer. Dat is de eenheid die u werkelijk boekt, dus die vermelden wij.',
     leadP2: 'De beoordelingen op deze site komen van Google en gelden het hele huis, nooit de losse kamer, en elke kaart zegt dat erbij. De selectie is bewust kort: vijf bestemmingen en vier bouwtypen, van glasdak tot alpenchalet, en daar houdt zij op in plaats van de lijst op te vullen.',
     filters: { all: 'Alle', glassRoof: 'Glazen dak', logEstate: 'Blokhutlandgoed', designerSuite: 'Designersuite', alpineChalet: 'Alpenchalet', lakeside: 'Aan het meer' },
     noVillas: 'Nog geen villa\'s in deze categorie.',
@@ -195,7 +195,7 @@ const nl: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Vijf plekken, vijf verschillende luchten',
     leadP1: 'Deze vijf bestemmingen zijn niet onderling uitwisselbaar. Inari ligt het verst noordelijk, aan een meer zonder stadslicht op de zichtbare horizon. Saariselkä ligt aan de noordrand van nationaal park Urho Kekkonen en daar begon de glasdakaccommodatie. Rovaniemi heeft de vluchten, Levi de resortvoorzieningen, Ylläs de rust.',
-    leadP2: 'Elk profiel hieronder noemt de luchthaven van aankomst en de transfertijd, hoe de lucht daar werkelijk is ( horizon, licht van bebouwing, hoe hoog de boog doorgaans staat ) en welke villa\'s in dat gebied liggen. Een frequentiecijfer voor noorderlicht per dorp publiceren wij niet, want niemand meet er een per dorp.',
+    leadP2: 'Elk profiel hieronder noemt de luchthaven van aankomst en de transfertijd, hoe de lucht daar werkelijk is (horizon, licht van bebouwing, hoe hoog de boog doorgaans staat) en welke villa\'s in dat gebied liggen. Een frequentiecijfer voor noorderlicht per dorp publiceren wij niet, want niemand meet er een per dorp.',
     destinationLabel: (i) => `Bestemming 0${i + 1}`,
     readTheProfile: (name) => `Lees het profiel van ${name}`,
   },
@@ -224,7 +224,7 @@ const nl: SiteCopy = {
       { value: '32', label: 'Dagen zonder zonsondergang in Rovaniemi, noordelijker meer' },
       { value: '24 u', label: 'Daglicht op de piek, 21 juni' },
       { value: '+18 °C', label: 'Gemiddeld overdag eind juni' },
-      { value: '50 %', label: 'Lagere vraag dan in het auroraseizoen' },
+      { value: '50 %', label: 'Lagere vraag dan in het noorderlichtseizoen' },
     ],
     fourReasons: 'Vier redenen',
     h2: 'Lapland in de zomer is een andere plek.',
@@ -275,7 +275,7 @@ const nl: SiteCopy = {
     },
     options: {
       headcount: ['1–2 gasten', '3–4 gasten', '5–6 gasten', '7–10 gasten', 'Grotere groep'],
-      intent: ['Auroraseizoen, eerste bezoek', 'Auroraseizoen, terugkerend bezoek', 'Middernachtzon (juni–juli)', 'Kerst / Nieuwjaar', 'Gezinsgroep', 'Privéviering', 'Huwelijksreis / retraite met z\'n tweeën', 'Anders, leg uit in het bericht'],
+      intent: ['Noorderlichtseizoen, eerste bezoek', 'Noorderlichtseizoen, terugkerend bezoek', 'Middernachtzon (juni–juli)', 'Kerst / Nieuwjaar', 'Gezinsgroep', 'Privéviering', 'Huwelijksreis / retraite met z\'n tweeën', 'Anders, leg uit in het bericht'],
       budget: ['Onder de € 1.000 / nacht', '€ 1.000 – € 2.500 / nacht', '€ 2.500 – € 5.000 / nacht', '€ 5.000+ / nacht', 'Reservepand, exclusief gebruik', 'Zeg ik liever niet'],
     },
     submit: 'Privé-aanvraag versturen',

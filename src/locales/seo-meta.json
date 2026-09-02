@@ -11,7 +11,7 @@
     "ko": "라플란드 · 프라이빗 빌라, 스위트, 오로라",
     "fr": "Laponie · villas privées, suites et aurores",
     "it": "Lapponia · ville private, suite e aurore",
-    "nl": "Lapland · privévilla's, suites en aurora",
+    "nl": "Lapland · privévilla's, suites en noorderlicht",
     "sv": "Lappland · privata villor, sviter och norrsken"
   },
   "home": {
@@ -56,8 +56,8 @@
       "description": "Una collezione privata delle più belle ville e suite della Lapponia: cabine con tetto di vetro, suite di design sotto l’aurora, un rifugio sul lago. Tariffe sulla pagina di ogni casa."
     },
     "nl": {
-      "title": "Luxe villa's in Lapland: privé aurora-residenties",
-      "description": "Een privécollectie van Laplands mooiste villa’s en suites: cabines met glazen dak, designsuites onder de aurora, één plek aan het meer. Tarieven op de pagina van elk huis."
+      "title": "Luxe villa's in Lapland: privé noorderlichtresidenties",
+      "description": "Een privécollectie van Laplands mooiste villa’s en suites: cabines met glazen dak, designsuites onder het noorderlicht, één plek aan het meer. Tarieven op de pagina van elk huis."
     },
     "sv": {
       "title": "Lyxvillor i Lappland: privata norrskensresidens",
@@ -107,7 +107,7 @@
     },
     "nl": {
       "title": "De Collectie, luxe villa's en glazen cabins",
-      "description": "Een korte, samengestelde lijst van privévilla’s in Fins Lapland: aurora-cabins met glazen dak, designsuites en één plek aan het meer. Acht huizen, vijf bestemmingen."
+      "description": "Een korte, samengestelde lijst van privévilla’s in Fins Lapland: noorderlichtcabins met glazen dak, designsuites en één plek aan het meer. Acht huizen, vijf bestemmingen."
     },
     "sv": {
       "title": "Samlingen, lyxvillor och glasstugor i Lappland",
@@ -156,8 +156,8 @@
       "description": "Suite d'autore e cabine aurora della Lapponia: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Tariffe su richiesta."
     },
     "nl": {
-      "title": "Designsuites en aurora-slaapkamers met glazen dak",
-      "description": "Designsuites en aurora-cabins met glazen dak: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Tarieven op aanvraag."
+      "title": "Designsuites en noorderlicht-slaapkamers met glazen dak",
+      "description": "Designsuites en noorderlicht-cabins met glazen dak: Star Arctic Skyview, Arctic TreeHouse, Kakslauttanen Kelo-Glass, Levin Iglut, Aurora Village. Tarieven op aanvraag."
     },
     "sv": {
       "title": "Designsviter och norrskensrum med glastak, Lappland",
@@ -207,7 +207,7 @@
     },
     "nl": {
       "title": "Waar te verblijven in Lapland · vijf bestemmingen",
-      "description": "Saariselkä, Inari, Rovaniemi, Levi en Ylläs, de vijf bestemmingen in Lapland voor een luxereis. Aurorafrequentie, aankomstlogistiek en de villa's per plek."
+      "description": "Saariselkä, Inari, Rovaniemi, Levi en Ylläs, de vijf bestemmingen in Lapland voor een luxereis. Noorderlichtfrequentie, aankomstlogistiek en de villa's per plek."
     },
     "sv": {
       "title": "Var du bor i Lappland · fem resmål värda resan",
@@ -256,8 +256,8 @@
       "description": "Esperienze private in Lapponia: fotografia delle aurore, voli in elicottero, degustazioni con chef in villa, safari husky esclusivi e arrivo in jet privato."
     },
     "nl": {
-      "title": "Lapland-ervaringen op maat · aurora, heli, chef",
-      "description": "Privé-ervaringen in Lapland: aurorafotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+      "title": "Lapland-ervaringen op maat · noorderlicht, heli, chef",
+      "description": "Privé-ervaringen in Lapland: noorderlichtfotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
     },
     "sv": {
       "title": "Skräddarsydda Lapplandsupplevelser · norrsken, chef",
@@ -307,7 +307,7 @@
     },
     "nl": {
       "title": "Middernachtzon, luxe villa's in ononderbroken licht",
-      "description": "6 juni – 7 juli: het venster waarin de zon in Lapland niet ondergaat. Dezelfde villa's die u voor de aurora boekt, in hun zomerse karakter, privéchefs, halve vraag."
+      "description": "6 juni – 7 juli: het venster waarin de zon in Lapland niet ondergaat. Dezelfde villa's die u voor het noorderlicht boekt, in hun zomerse karakter, privéchefs, halve vraag."
     },
     "sv": {
       "title": "Midnattssol, lyxvillor i oavbrutet ljus",

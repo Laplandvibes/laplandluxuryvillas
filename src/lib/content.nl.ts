@@ -9,7 +9,7 @@ type ExpOv = Partial<Pick<Experience, 'hook' | 'copy' | 'available'>>;
 const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, DestOv>; experiences: Record<string, ExpOv> } = {
   villas: {
     'kakslauttanen-glass-igloo-suite': {
-      tagline: 'Verwarmd thermisch glas boven een handgebouwde kelo-dennenhutten, de oorspronkelijke noorderlichtslaapkamer.',
+      tagline: 'Verwarmd thermisch glas boven een handgebouwde kelo-dennenhut, de oorspronkelijke noorderlichtslaapkamer.',
       copy: [
         'Een zelfstandige blokhutvilla met een eigen glazen-dakslaapkamer, privékeuken, lounge met open haard en Finse sauna. Het thermische glas blijft helder bij −30 °C, zodat u het noorderlicht vanuit een kingsize bed bekijkt zonder onder het dekbed vandaan te komen.',
         'Gelegen op het Kakslauttanen-landgoed nabij het Nationaal Park Urho Kekkonen, op 35 minuten privétransfer van de luchthaven van Ivalo. Halfpension via het resortrestaurant is beschikbaar; privékok op aanvraag.',
@@ -42,7 +42,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Vierentwintig glazen hutten met uitzicht op niets dan bos en de noorderlichtovaal.',
       copy: [
         'Inari ligt pal onder de noorderlichtovaal, op de breedtegraad waar het Fins Meteorologisch Instituut het noorderlicht ongeveer drie op vier nachten waarneemt. Aurora Village is een landgoed met 24 hutten zonder doorgaand verkeer en zonder naburige dorpen aan de zichtbare horizon. De hutten staan op afstand voor privacy, met het bed onder het glas en de bank ernaar gericht.',
-        'Het Sami-geleide restaurant op het terrein serveert een proefmenu rond rendier, arctische saibling en kruipbraam. Noorderlichtwekkers worden van hut tot hut doorgegeven via de radio, zodat niemand de villa ernaast wakker maakt.',
+        'Het Sami-geleide restaurant op het terrein serveert een proefmenu rond rendier, beekridder en kruipbraam. Noorderlichtwekkers worden van hut tot hut doorgegeven via de radio, zodat niemand de villa ernaast wakker maakt.',
       ],
       signature: [
         'Hut met glazen dak en het bed onder de nok',
@@ -155,7 +155,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Aurora Village, speciaal gebouwd glashuttenlandgoed van 30 hectare',
         'Wilderness Hotel Nellim, noorderlichtbubbels aan de oostoever van het Inarimeer',
         'Sami-museum SIIDA + culturele programma\'s het hele jaar door',
-        'Inarimeer, het op twee na grootste meer van Finland, zo\'n 3 000 eilanden',
+        'Inarimeer, het op twee na grootste meer van Finland, zo\'n 3.000 eilanden',
       ],
       arrival: 'Ivalo (IVL), 40 km, ongeveer 40 min per privétransfer',
       auroraNote: 'Onze noordelijkste bestemming, en die waar het noorderlicht het vaakst recht boven u staat in plaats van laag in het noorden. Het Inarimeer geeft een ononderbroken horizon, zonder dorpslicht erop.',
