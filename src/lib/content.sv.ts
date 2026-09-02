@@ -114,7 +114,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'apukka-resort-aurora-cabin': {
-      tagline: 'Norrskensvagnar i heritagestil vid stranden av en frusen sjö, tio minuter från Rovaniemi flygplats.',
+      tagline: 'Norrskensvagnar i historisk stil vid stranden av en frusen sjö, tio minuter från Rovaniemi flygplats.',
       copy: [
         'En handfull restaurerade historiska tågvagnar, ombyggda till norrskensstugor med glastak, precis vid kanten av sjön Apukkajärvi. Praktiskt om du bara har två nätter och vill landa, transferera och ligga i din säng under glaset inom en timme.',
         'Egen huskygård, renar, pimpelfiske och en snöskoterled ut i vildmarken. Vagnarna själva är intima (ett sovrum, ett badrum, lounge); resorten sköter all logistik kring aktiviteterna.',
@@ -155,7 +155,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Aurora Village, specialbyggt glasstugeområde på 30 hektar',
         'Wilderness Hotel Nellim, norrskensbubblor på Enaresjöns östra strand',
         'Samemuseet SIIDA + kulturprogram året runt',
-        'Enare träsk, Finlands tredje största sjö, omkring 3 000 öar',
+        'Enaresjön, Finlands tredje största sjö, omkring 3 000 öar',
       ],
       arrival: 'Ivalo (IVL), 40 km, cirka 40 min med privat transfer',
       auroraNote: 'Vårt nordligaste resmål och det där norrskenet oftast står rakt ovanför i stället för lågt i norr. Enaresjön ger en obruten horisont, och inget byljus ligger på den.',
