@@ -269,7 +269,7 @@ const ja: SiteCopy = {
       tripIntent: '旅の目的',
       budget: '1泊あたりの目安予算',
       datesLabel: '日程（または希望期間）',
-      datesHint: '例:「2月14日〜21日」または「3月前半に5泊」',
+      datesHint: '例：「2月14日〜21日」または「3月前半に5泊」',
       datesPlaceholder: '任意',
       messageLabel: 'ご希望や条件',
       messageHint: '専用シェフ、ヘリコプター到着、貸切利用、バリアフリー、食事制限、写真撮影重視——ショートリストに反映したい条件をお書きください。',

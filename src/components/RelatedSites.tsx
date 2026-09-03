@@ -48,7 +48,7 @@ const COPY: Record<Lang, { eyebrow: string; h2: string; cards: Card[] }> = {
     eyebrow: 'ネットワークから',
     h2: 'ネットワークから、ラップランドをもっと',
     cards: [
-      { href: 'https://laplandstays.com/property-types/', label: 'ラップランドの宿泊先を比較', body: 'ガラスイグルーからログキャビン、ホテルまで地域全体から。' },
+      { href: 'https://laplandstays.com/property-types/', label: 'ラップランドの宿泊先を比較', body: 'グラスイグルーからログキャビン、ホテルまで地域全体から。' },
       { href: 'https://laplandwellness.com/spas/', label: 'スパ＆サウナの保養', body: 'ウェルネス滞在、伝統的なサウナ、北極圏のスパ体験。' },
       { href: 'https://laplandhoteldeals.com/deals/', label: '高級ホテルのお得情報', body: 'ラップランドの上質なホテルと厳選した季節のオファー。' },
       { href: 'https://laplandkids.com/itineraries/', label: 'ラップランドの家族向け旅程', body: '子ども連れの旅のための、冬と夏の一日ごとのプラン。' },

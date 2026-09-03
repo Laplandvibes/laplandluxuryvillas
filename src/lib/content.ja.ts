@@ -54,9 +54,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Levi山の上にせり出すガラスイグルー——北の森ではなく、谷へ向かって南を望むイグルー群。',
+      tagline: 'Levi山の上にせり出すグラスイグルー——北の森ではなく、谷へ向かって南を望むイグルー群。',
       copy: [
-        'Levi山の南斜面に42棟のガラスイグルーが配されています。多くのオーロラキャビンが何もない森の北側を向くのに対し、Levin Iglutは眼下に灯る山の村の稜線の上にオーロラを切り取る、Laplandでも数少ない一軒。写真家には好都合で、夕暮れにはいっそう劇的です。',
+        'Levi山の南斜面に42棟のグラスイグルーが配されています。多くのオーロラキャビンが何もない森の北側を向くのに対し、Levin Iglutは眼下に灯る山の村の稜線の上にオーロラを切り取る、Laplandでも数少ない一軒。写真家には好都合で、夕暮れにはいっそう劇的です。',
         'Levi村（ゴンドラ、レストラン、スキーイン/スキーアウト）まで徒歩圏ながら、イグルー自体は静か。館内のRestaurant Auroraは半径100 km以内から食材を調達するシェフが腕を振るいます。',
       ],
       signature: [
@@ -181,7 +181,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Leviからのオーロラの見え方は南向きで劇的です。Laplandでは稀なことで、灯る村の稜線が写真の一部となります。北側でさらに一、二泊（InariまたはSaariselkä）して真の原野のオーロラを楽しんだのち、スキーのためにここへ戻るのが最良です。',
       ],
       highlights: [
-        'Levin Iglut, 山の村の上に広がる南向きガラスイグルー',
+        'Levin Iglut, 山の村の上に広がる南向きグラスイグルー',
         'デザイナー建築家設計のシャレー——南斜面、スキーイン/アウト',
         '44本のコース、26基のリフト（うちゴンドラ2基）、整備斜面38.5 km',
         'Kittilä空港 (KTT) は季節運航の直行国際便に対応',
@@ -228,7 +228,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Laplandの本格的なキッチンの現役シェフが、一夜あなたのヴィラを訪れます。メニューはその週に実際に旬を迎えるものを軸に組み立てられます。冷水のホッキョクイワナ、クラウドベリー、燻製トナカイ、新鮮な森のきのこ、シーバックソーン、ジュニパー。',
         'メニューに合わせて選んだワインペアリング、食材、仕込み、サービス、片付けまで含みます。最大10名。ベジタリアン、グルテンフリー、甲殻類抜きのメニューはご要望に応じ、最低72時間前までにお知らせください。',
       ],
-      available: 'コレクションのいずれのヴィラでも,通年',
+      available: 'コレクションのいずれのヴィラでも、通年',
     },
     'private-husky-safari': {
       hook: 'あなただけの犬ぞりチームと専属の犬舎ガイドとともに、夜明けの光のなか北方林へ。',
@@ -260,7 +260,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Helsinki、Geneva、Dohaのジェットパートナーを通じて手配します。Ivalo（Saariselkä / Inariのヴィラに最寄り）、Kittilä（Levi / Ylläsのヴィラに最寄り）、またはRovaniemi（Arctic TreeHouseに最適）への直行便。',
         'すべての手配を一括で：寒冷地仕様の暖房付き車両でヴィラまでの陸上送迎、手荷物の転送、列に並ばない通関。運航会社がスロットを申請し、到着をヴィラのチェックイン時刻に合わせます。',
       ],
-      available: 'すべての目的地,通年',
+      available: 'すべての目的地、通年',
     },
     'helicopter-villa-transfer': {
       hook: '地域空港からヴィラの着陸地点へと直接ピックアップ——陸路の送迎なし。',
