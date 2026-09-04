@@ -164,7 +164,7 @@ const de: SiteCopy = {
       h2: 'Wir prüfen und schlagen vor. Sie buchen direkt beim Haus.',
       items: [
         { title: 'Nur geprüfte Häuser.', body: 'Auf der Liste stehen {n} Villen und Suiten, nicht mehr. Jedes Haus ist anhand seiner eigenen veröffentlichten Angaben und aktueller Gästebewertungen geprüft, und die Liste lebt: Ein Haus fällt heraus, wenn der Standard nicht mehr hält.' },
-        { title: 'Ein Vorschlag innerhalb eines Tages, unverbindlich.', body: 'Nennen Sie Reisedaten, Gruppengröße und was Sie suchen. Sie erhalten innerhalb eines Tages einen Vorschlag der passendsten Häuser, und Ihre Kontaktdaten gehen an kein Haus, bevor Sie sich nicht selbst melden.' },
+        { title: 'Ein Vorschlag innerhalb eines Tages, unverbindlich.', body: 'Nennen Sie Reisedaten, Gruppengröße und was Sie suchen. Sie erhalten innerhalb eines Tages einen Vorschlag der passendsten Häuser, und Ihre Kontaktdaten gehen an kein Haus, bevor Sie sich selbst melden.' },
         { title: 'Der Preis liegt beim Haus, nicht bei uns.', body: 'Hat eine Villa eine öffentliche Buchungsseite, führt der Link direkt dorthin und der Preis ist vor der Entscheidung sichtbar. Ist kein Preis veröffentlicht, macht das Haus Ihnen direkt ein Angebot. Wir setzen keine Preise fest und nehmen keine Buchungen an.' },
       ],
     },

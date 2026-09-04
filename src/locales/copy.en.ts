@@ -189,7 +189,7 @@ const en: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '"Suite" in Lapland means two quite different things, and both are worth knowing. The first is the ',
+      p1Pre: '“Suite” in Lapland means two quite different things, and both are worth knowing. The first is the ',
       designerSuite: 'designer-suite',
       p1Mid: ', where a Finnish architecture studio such as Studio Puisto has built a single bedroom around a single view. The second is the ',
       glassRoof: 'glass-roof cabin',

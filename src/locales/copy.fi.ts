@@ -189,7 +189,7 @@ const fi: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '"Sviitti" tarkoittaa Lapissa kahta varsin eri asiaa, ja molemmat on hyvä tietää. Ensimmäinen on ',
+      p1Pre: '”Sviitti” tarkoittaa Lapissa kahta varsin eri asiaa, ja molemmat on hyvä tietää. Ensimmäinen on ',
       designerSuite: 'designer-sviitti',
       p1Mid: ', jossa suomalainen arkkitehtitoimisto, esimerkiksi Studio Puisto, on rakentanut yksittäisen makuuhuoneen yksittäisen näkymän ympärille. Toinen on ',
       glassRoof: 'lasikattomökki',

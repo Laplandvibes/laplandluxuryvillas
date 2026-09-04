@@ -110,7 +110,7 @@ const fr: SiteCopy = {
     home: {
       eyebrow: '{n} villas · {m} destinations',
       title: 'Une villa en Laponie, sans approximation.',
-      lede: 'Chaque maison est vérifiée à partir de ses propres informations publiées et d\'avis récents de voyageurs. Réservez directement auprès de la maison, ou indiquez vos dates et votre groupe et nous vous proposons les meilleures options sous un jour.',
+      lede: 'Chaque maison est vérifiée à partir de ses propres informations publiées et d\'avis récents de voyageurs. Réservez directement auprès de la maison, ou indiquez vos dates et votre groupe et nous vous proposons les meilleures options sous 24 heures.',
       primary: 'Voir les villas',
       secondary: 'Demander des suggestions',
     },
@@ -186,7 +186,7 @@ const fr: SiteCopy = {
       designerSuite: 'suite design',
       p1Mid: ', où un studio d’architecture finlandais comme Studio Puisto a bâti une chambre unique autour d’une vue unique. Le second est la ',
       glassRoof: 'cabane à toit de verre',
-      p1Post: ', où le plafond est le détail vedette. Les deux sont listées ci-dessous.',
+      p1Post: ', où le plafond est le détail vedette. Les deux sont listés ci-dessous.',
     },
     inquiryTitle: 'Une réservation de deux suites, ou un étage privé ?',
     inquiryBody: 'Plusieurs de ces propriétés libèrent un étage de plusieurs suites en usage exclusif lors des semaines creuses. Indiquez-nous vos dates et le nombre de personnes.',

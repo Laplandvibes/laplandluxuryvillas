@@ -164,7 +164,7 @@ const ptBR: SiteCopy = {
       h2: 'Nós verificamos e sugerimos. Você reserva direto com a propriedade.',
       items: [
         { title: 'Só propriedades verificadas.', body: 'A lista tem {n} vilas e suítes, nada além disso. Cada uma é verificada com base nas informações publicadas pela própria propriedade e em avaliações recentes de hóspedes, e a lista é viva: uma propriedade sai dela se o padrão deixar de se sustentar.' },
-        { title: 'Uma sugestão em um dia, sem compromisso.', body: 'Diga suas datas, o tamanho do grupo e o que vocês procuram. Você recebe uma sugestão com as melhores opções em um dia, e seus contatos não são compartilhados com nenhuma propriedade até você mesmo procurá-la.' },
+        { title: 'Uma sugestão em um dia, sem compromisso.', body: 'Diga suas datas, o tamanho do grupo e o que você procura. Você recebe uma sugestão com as melhores opções em um dia, e seus contatos não são compartilhados com nenhuma propriedade até você mesmo procurá-la.' },
         { title: 'O preço fica com a propriedade, não conosco.', body: 'Quando uma vila tem página pública de reservas, o link leva direto até lá e o preço aparece antes de você decidir. Quando não há preço publicado, a propriedade envia a cotação diretamente. Não definimos preços nem recebemos reservas.' },
       ],
     },
@@ -189,7 +189,7 @@ const ptBR: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '«Suíte» na Lapônia abrange dois gestos arquitetônicos distintos, ambos valem a pena conhecer. O primeiro é a ',
+      p1Pre: '"Suíte" na Lapônia abrange dois gestos arquitetônicos distintos, ambos valem a pena conhecer. O primeiro é a ',
       designerSuite: 'suíte de autor',
       p1Mid: ', em que um escritório de arquitetura finlandês como o Studio Puisto construiu um único quarto em torno de uma única vista. O segundo é a ',
       glassRoof: 'cabana com teto de vidro',

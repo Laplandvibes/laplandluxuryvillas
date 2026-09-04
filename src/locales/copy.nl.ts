@@ -183,7 +183,7 @@ const nl: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '"Suite" dekt in Lapland twee verschillende architecturale keuzes, beide de moeite van het kennen waard. De eerste is de ',
+      p1Pre: '„Suite” dekt in Lapland twee verschillende architecturale keuzes, beide de moeite van het kennen waard. De eerste is de ',
       designerSuite: 'designersuite',
       p1Mid: ', waar een Fins architectenbureau als Studio Puisto één slaapkamer rond één uitzicht heeft gebouwd. De tweede is de ',
       glassRoof: 'cabine met glazen dak',

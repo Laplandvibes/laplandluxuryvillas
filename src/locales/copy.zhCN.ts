@@ -138,7 +138,7 @@ const zhCN: SiteCopy = {
     experiences: {
       eyebrow: '定制体验',
       title: '玻璃下的夜晚之前，先过好这一天。',
-      lede: '我们为别墅搭配八项私人体验，每一项都依天气窗口、日照时长与别墅入住时间来安排。',
+      lede: '我们为别墅搭配八项私人体验，每一项都视天气情况、日照时长与别墅入住时间而定。',
     },
     midnightSun: {
       eyebrow: '6月6日 – 7月7日',
@@ -189,7 +189,7 @@ const zhCN: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '在拉普兰，「套房」涵盖两种截然不同的建筑思路，都值得了解。第一种是',
+      p1Pre: '在拉普兰，“套房”涵盖两种截然不同的建筑思路，都值得了解。第一种是',
       designerSuite: '设计师套房',
       p1Mid: '，由芬兰建筑事务所（如 Studio Puisto）围绕一处景致打造的单卧空间。第二种是',
       glassRoof: '玻璃屋顶小屋',

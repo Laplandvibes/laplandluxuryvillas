@@ -143,7 +143,7 @@ const it: SiteCopy = {
     inquiry: {
       eyebrow: 'Richiesta privata',
       title: 'Un messaggio privato, una short list curata.',
-      lede: 'Invia date, numero di persone e il tipo di viaggio che hai in mente. Rispondiamo entro un giorno lavorativo.',
+      lede: 'Invii date, numero di persone e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo.',
     },
     about: {
       eyebrow: 'Chi siamo',
@@ -157,7 +157,7 @@ const it: SiteCopy = {
       h2: 'Noi verifichiamo e proponiamo. Lei prenota direttamente con la struttura.',
       items: [
         { title: 'Solo strutture verificate.', body: 'La lista conta {n} ville e suite, non di più. Ognuna è verificata sulle informazioni pubblicate dalla struttura stessa e sulle recensioni recenti degli ospiti, e la lista è viva: una struttura esce se il livello non regge più.' },
-        { title: 'Una proposta entro un giorno, senza impegno.', body: 'Ci dica le date, la dimensione del gruppo e cosa cercate. Riceve una proposta con le opzioni più adatte entro un giorno, e i suoi contatti non vengono condivisi con nessuna struttura finché non è lei a farsi avanti.' },
+        { title: 'Una proposta entro un giorno, senza impegno.', body: 'Ci dica le date, la dimensione del gruppo e cosa cerca. Riceve una proposta con le opzioni più adatte entro un giorno, e i Suoi contatti non vengono condivisi con nessuna struttura finché non è lei a farsi avanti.' },
         { title: 'Il prezzo sta alla struttura, non a noi.', body: 'Quando una villa ha una pagina di prenotazione pubblica, il link porta direttamente lì e la tariffa si vede prima di decidere. Quando non c\'è una tariffa pubblicata, la struttura la propone direttamente a lei. Non fissiamo prezzi e non accettiamo prenotazioni.' },
       ],
     },

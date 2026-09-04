@@ -61,7 +61,7 @@
     },
     "sv": {
       "title": "Lyxvillor i Lappland: privata norrskensresidens",
-      "description": "En privat samling av Lapplands finaste villor och sviter: stugor med glastak, designsviter under norrskenet, ett boende vid sjön. Priser på varje hus egen bokningssida."
+      "description": "En privat samling av Lapplands finaste villor och sviter: stugor med glastak, designsviter under norrskenet, ett boende vid sjön. Priser på respektive hus egen bokningssida."
     }
   },
   "villas": {
@@ -70,7 +70,7 @@
       "description": "A short, curated list of private villas in Finnish Lapland: glass-roof aurora cabins, designer suites and a lakeside retreat. Eight rooms across five destinations."
     },
     "fi": {
-      "title": "Kokoelma, Lapin luksushuvilat ja lasikabiinit",
+      "title": "Kokoelma, Lapin luksushuvilat ja lasimökit",
       "description": "Tiivis, käsin valittu lista yksityishuviloita Suomen Lapissa: lasikattoiset revontulikabiinit, design-sviitit ja yksi rantakohde. Kahdeksan taloa viidessä kohteessa."
     },
     "de": {
@@ -324,7 +324,7 @@
       "description": "Tiivis, käsin valittu yksityiskokoelma Lapin hienoimpia huviloita ja sviittejä, jota LaPeso Oy hoitaa Suomen Lapista käsin, osa LaplandVibes-verkostoa."
     },
     "de": {
-      "title": "Über uns, Luxusvillen in Lappland, aus Finnland geführt",
+      "title": "Über uns, Luxusvillen in Lappland, kuratiert aus Finnland",
       "description": "Eine kuratierte Privatsammlung der eigenständigsten Villen und Suiten Lapplands, von LaPeso Oy aus Finnisch-Lappland geführt, Teil des LaplandVibes-Netzwerks."
     },
     "ja": {
@@ -398,7 +398,7 @@
       "description": "비공개 문의 하나만 보내세요: 인원, 날짜, 선호. 사람이 읽고 영업일 하루 안에 제안을 담아 답장합니다. 계정도, 공개 프로필도 없습니다."
     },
     "fr": {
-      "title": "Demande privée: villas et suites de Laponie",
+      "title": "Demande privée : villas et suites de Laponie",
       "description": "Envoyez une demande privée : personnes, dates, préférences. Une personne la lit et répond sous un jour ouvré avec des suggestions. Sans compte ni profil public."
     },
     "it": {

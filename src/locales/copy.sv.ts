@@ -158,7 +158,7 @@ const sv: SiteCopy = {
       h2: 'Vi kontrollerar och föreslår. Du bokar direkt hos stället.',
       items: [
         { title: 'Bara kontrollerade ställen.', body: 'Listan rymmer {n} villor och sviter, inte fler. Varje ställe är kontrollerat mot dess egna publicerade uppgifter och färska gästomdömen, och listan lever: ett ställe åker av om nivån inte längre håller.' },
-        { title: 'Förslag inom ett dygn, utan förpliktelser.', body: 'Berätta datum, sällskapets storlek och vad ni söker. Ni får ett förslag på de bästa alternativen inom ett dygn, och era kontaktuppgifter delas inte med något ställe förrän ni själva hör av er.' },
+        { title: 'Förslag inom ett dygn, utan förpliktelser.', body: 'Berätta datum, sällskapets storlek och vad du söker. Du får ett förslag på de bästa alternativen inom ett dygn, och era kontaktuppgifter delas inte med något ställe förrän ni själva hör av er.' },
         { title: 'Priset finns hos stället, inte hos oss.', body: 'När en villa har en offentlig bokningssida leder länken direkt dit och priset syns innan ni bestämmer er. När inget pris är publicerat ger stället er en offert direkt. Vi sätter inga priser och tar inga bokningar.' },
       ],
     },
@@ -183,7 +183,7 @@ const sv: SiteCopy = {
   },
   suitesPage: {
     intro: {
-      p1Pre: '"Svit" täcker i Lappland två skilda arkitektoniska val, båda värda att känna till. Det första är ',
+      p1Pre: '”Svit” täcker i Lappland två skilda arkitektoniska val, båda värda att känna till. Det första är ',
       designerSuite: 'designsviten',
       p1Mid: ', där en finsk arkitektstudio som Studio Puisto har byggt ett sovrum kring en enda utsikt. Det andra är ',
       glassRoof: 'stugan med glastak',
