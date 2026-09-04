@@ -1,3 +1,6 @@
+import ProductRail, { type RailLang } from '../shared/ads/ProductRail'
+import nordicnestRail from '../shared/ads/rails/nordicnest'
+import nordicnestPicks from '../shared/ads/data/nordicnestPicks'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, Star, ShieldCheck, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
@@ -141,6 +144,10 @@ export default function Home() {
       {/* Kumppaniosio ylhäällä (jaettu malli, Vesa 2026-07-11): kakkospääkumppani +
           6 premium-paikkaa — pääkumppanit eivät näy vierekkäin (banneri ↑) */}
       <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-[color:var(--color-deep-night)]" />
+      {/* Oikea tuoterivi tyhjän house-ad-kortin tilalle (Vesa 4.9.). */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+        <ProductRail partner={nordicnestRail} snapshot={nordicnestPicks} lang={lang as RailLang} sid="home_nordic_design" variant="dark" />
+      </div>
 
       <hr className="hair-rule mx-auto max-w-6xl" />
 
