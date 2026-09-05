@@ -34,6 +34,7 @@ mirror. To vendor a new one: `cp ../shared/<file> src/shared/<file>` and commit.
 - ads/data/partnerBrand.ts
 - ads/data/partnerTypes.ts
 - ads/rails/nordicnest.ts
+- appStats.ts
 - destinations/facts.ts
 - destinations/factsI18n.ts
 - destinations/labels.ts
