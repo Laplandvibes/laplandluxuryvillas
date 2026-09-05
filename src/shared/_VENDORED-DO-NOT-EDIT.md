@@ -28,7 +28,12 @@ mirror. To vendor a new one: `cp ../shared/<file> src/shared/<file>` and commit.
 - PremiumSpotGrid.tsx
 - adSlotsCopy.ts
 - ads/AdUnit.tsx
+- ads/ProductRail.tsx
 - ads/advertisers/lomarengas.ts
+- ads/data/nordicnestPicks.ts
+- ads/data/partnerBrand.ts
+- ads/data/partnerTypes.ts
+- ads/rails/nordicnest.ts
 - destinations/facts.ts
 - destinations/factsI18n.ts
 - destinations/labels.ts
