@@ -1,0 +1,87 @@
+{
+  "version": "20260905",
+  "domain": "laplandluxuryvillas.com",
+  "brand": "LUXURYVILLAS",
+  "tagline": "Private aurora villas and suites",
+  "generated": "2026-09-05T21:51:04.103Z",
+  "staticFallbackSeason": "summer",
+  "seasons": {
+    "summer": {
+      "heroUrl": "https://laplandluxuryvillas.com/images/summer-villa-lakeside.webp",
+      "heroAlt": "A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water unde",
+      "heroSha": "b3b4e2dd772f2f9d",
+      "bytes": 173982,
+      "sha256": "87b2d9a61c2fab4b9fda4ee06aab2bbd61573ee019fac6315f79488542a284c1",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 20220,
+      "inkBox": [
+        312,
+        493,
+        885,
+        597
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 48.6,
+      "centerSq": 45.4,
+      "photoRegion": 52.2,
+      "photoRegionRef": 52.2,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 423,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    },
+    "winter": {
+      "heroUrl": "https://laplandluxuryvillas.com/images/summer-villa-lakeside.webp",
+      "heroAlt": "A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water unde",
+      "heroSha": "b3b4e2dd772f2f9d",
+      "bytes": 173982,
+      "sha256": "87b2d9a61c2fab4b9fda4ee06aab2bbd61573ee019fac6315f79488542a284c1",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 20220,
+      "inkBox": [
+        312,
+        493,
+        885,
+        597
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 48.6,
+      "centerSq": 45.4,
+      "photoRegion": 52.2,
+      "photoRegionRef": 52.2,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 423,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": [],
+      "sameAsSummer": true
+    }
+  }
+}
