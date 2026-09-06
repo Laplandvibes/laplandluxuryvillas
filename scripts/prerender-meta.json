@@ -517,7 +517,7 @@
       "description": "laplandluxuryvillas.comのクッキー使用について。分析は初期状態で無効、フィンランド国旗のバナーから同意した場合のみ有効になります。運営はLaPeso Oy。"
     },
     "es": {
-      "title": "Política de cookies | LaplandLuxuryVillas",
+      "title": "Política de cookies y consentimiento | LaplandLuxuryVillas",
       "description": "Uso de cookies en laplandluxuryvillas.com. Analítica denegada por defecto hasta dar consentimiento en el banner de la bandera finlandesa. Operado por LaPeso Oy."
     },
     "pt-BR": {
@@ -551,401 +551,401 @@
   },
   "/villas/kakslauttanen-glass-igloo-suite": {
     "en": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – luxury stay",
       "description": "Heated thermal glass over a hand-crafted kelo-pine cabin, the original aurora bedroom."
     },
     "fi": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – luksusmajoitus",
       "description": "Lämmitettyä lämpölasia käsintehdyn kelohonkamökin päällä, alkuperäinen revontulimakuuhuone."
     },
     "de": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – Luxusunterkunft",
       "description": "Beheiztes Thermoglas über einer handgefertigten Kelo-Kiefernhütte, das ursprüngliche Polarlicht-Schlafzimmer."
     },
     "ja": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite：Saariselkäの高級宿泊施設",
       "description": "手作りのケロパイン・キャビンを覆う断熱サーマルガラス。オーロラを眺めるための、原点となった寝室。"
     },
     "es": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite – alojamiento de lujo",
       "description": "Cristal térmico calefactado sobre una cabaña de pino kelo tallada a mano: el dormitorio bajo la aurora original."
     },
     "pt-BR": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite – hospedagem de luxo",
       "description": "Vidro térmico aquecido sobre uma cabana de pinho kelo feita à mão, o quarto-aurora original."
     },
     "zh-CN": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite：Saariselkä豪华住宿",
       "description": "手工打造的 kelo 古松木屋之上，覆盖一层加热隔热玻璃、最初的极光卧室。"
     },
     "ko": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – 럭셔리 숙소",
       "description": "손으로 지은 켈로 소나무 통나무집 위에 얹은 발열 단열 유리 지붕, 오로라 침실의 원형."
     },
     "fr": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – séjour de luxe",
       "description": "Verre thermique chauffant au-dessus d'une cabane en pin kelo faite main, la chambre aurorale originelle."
     },
     "it": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite – soggiorno di lusso",
       "description": "Vetro termico riscaldato sopra una baita in pino kelo lavorata a mano: la camera aurora originale."
     },
     "nl": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – luxe verblijf",
       "description": "Verwarmd thermisch glas boven een handgebouwde kelo-dennenhut, de oorspronkelijke noorderlichtslaapkamer."
     },
     "sv": {
-      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Kakslauttanen Kelo-Glass Suite: Saariselkä – lyxboende",
       "description": "Uppvärmt termoglas ovanför en handbyggd stuga i kelotall, det ursprungliga norrskenssovrummet."
     }
   },
   "/villas/arctic-treehouse-suite": {
     "en": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – luxury stay",
       "description": "Studio Puisto-designed cantilevered suite with a full glass façade pointed at the auroras."
     },
     "fi": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – luksusmajoitus",
       "description": "Studio Puiston suunnittelema ulokkeinen sviitti, jonka koko lasiseinä avautuu kohti revontulia."
     },
     "de": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – Luxusunterkunft",
       "description": "Von Studio Puisto entworfene auskragende Suite mit voller Glasfassade in Richtung der Polarlichter."
     },
     "ja": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse：Rovaniemiの高級宿泊施設",
       "description": "Studio Puisto設計の片持ち構造スイート。オーロラへ向けたガラス張りのファサード。"
     },
     "es": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – alojamiento de lujo",
       "description": "Suite voladiza diseñada por Studio Puisto con una fachada de cristal íntegra orientada a las auroras."
     },
     "pt-BR": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – hospedagem de luxo",
       "description": "Suíte em balanço projetada por Studio Puisto, com fachada de vidro inteira voltada para as auroras."
     },
     "zh-CN": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse：Rovaniemi豪华住宿",
       "description": "Studio Puisto 设计的悬挑式套房，整面玻璃墙正对极光。"
     },
     "ko": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – 럭셔리 숙소",
       "description": "Studio Puisto가 설계한 캔틸레버 스위트, 오로라를 향해 펼쳐진 전면 유리 파사드."
     },
     "fr": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – séjour de luxe",
       "description": "Suite en porte-à-faux signée Studio Puisto, à la façade entièrement vitrée orientée vers les aurores."
     },
     "it": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – soggiorno di lusso",
       "description": "Suite a sbalzo firmata Studio Puisto, con facciata interamente vetrata rivolta verso l’aurora."
     },
     "nl": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – luxe verblijf",
       "description": "Door Studio Puisto ontworpen uitkragende suite met een volledig glazen gevel gericht op het noorderlicht."
     },
     "sv": {
-      "title": "Arctic TreeHouse Penthouse: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Arctic TreeHouse Penthouse: Rovaniemi – lyxboende",
       "description": "Utkragande svit ritad av Studio Puisto med helt glasad fasad riktad mot norrskenet."
     }
   },
   "/villas/aurora-village-glass-cabin": {
     "en": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – luxury stay",
       "description": "Twenty-four glass cabins facing nothing but forest and the aurora oval."
     },
     "fi": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – luksusmajoitus",
       "description": "Kaksikymmentäneljä lasimökkiä, joiden edessä ei muuta kuin metsää ja revontuliovaali."
     },
     "de": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – Luxusunterkunft",
       "description": "Vierundzwanzig Glashütten, die auf nichts als Wald und das Polarlichtoval blicken."
     },
     "ja": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin：Inariの高級宿泊施設",
       "description": "24棟のガラスキャビンが向き合うのは、森とオーロラオーバルだけ。"
     },
     "es": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – alojamiento de lujo",
       "description": "Veinticuatro cabañas de cristal frente a nada más que bosque y el óvalo auroral."
     },
     "pt-BR": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – hospedagem de luxo",
       "description": "Vinte e quatro cabanas de vidro voltadas para nada além de floresta e do oval da aurora."
     },
     "zh-CN": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin：Inari豪华住宿 | LaplandLuxuryVillas",
       "description": "二十四栋玻璃小屋，面向的只有森林与极光带。"
     },
     "ko": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – 럭셔리 숙소",
       "description": "숲과 오로라 오벌만을 마주한 스물네 채의 유리 캐빈."
     },
     "fr": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – séjour de luxe",
       "description": "Vingt-quatre cabanes de verre face à rien d'autre que la forêt et l'ovale auroral."
     },
     "it": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – soggiorno di lusso",
       "description": "Ventiquattro cabine di vetro affacciate solo sulla foresta e sull’ovale aurorale."
     },
     "nl": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – luxe verblijf",
       "description": "Vierentwintig glazen hutten met uitzicht op niets dan bos en de noorderlichtovaal."
     },
     "sv": {
-      "title": "Aurora Village Glass Cabin: Inari | LaplandLuxuryVillas",
+      "title": "Aurora Village Glass Cabin: Inari – lyxboende",
       "description": "Tjugofyra glasstugor med utsikt över inget annat än skog och norrskensovalen."
     }
   },
   "/villas/levin-iglut-golden-crown": {
     "en": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – luxury stay",
       "description": "Glass igloos perched above Levi fell, facing south over the valley rather than north into forest."
     },
     "fi": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – luksusmajoitus",
       "description": "Lasi-iglut Levitunturin rinteellä, etelään laaksoon eikä pohjoiseen metsään."
     },
     "de": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – Luxusunterkunft",
       "description": "Glasiglus hoch über dem Fjäll von Levi, nach Süden zum Tal ausgerichtet statt nach Norden in den Wald."
     },
     "ja": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown：Leviの高級宿泊施設 | LaplandLuxuryVillas",
       "description": "Levi山の上にせり出すグラスイグルー——北の森ではなく、谷へ向かって南を望むイグルー群。"
     },
     "es": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – alojamiento de lujo",
       "description": "Iglús de cristal asomados sobre el fell de Levi: el único conjunto de iglús de Laponia orientado al sur, hacia el valle."
     },
     "pt-BR": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – hospedagem de luxo",
       "description": "Iglus de vidro empoleirados acima do fell de Levi, o único conjunto de iglus da Lapônia voltado para o sul, para o vale."
     },
     "zh-CN": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown：Levi豪华住宿 | LaplandLuxuryVillas",
       "description": "高踞列维（Levi）山丘之上的玻璃冰屋、朝南面向山谷，而非朝北望向森林的冰屋群。"
     },
     "ko": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – 럭셔리 숙소",
       "description": "Levi 펠 위에 자리한 유리 이글루, 북쪽 숲이 아니라 계곡을 향해 남쪽을 바라보는 이글루 군락."
     },
     "fr": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – séjour de luxe",
       "description": "Igloos de verre perchés au-dessus du fjäll de Levi, le seul ensemble d'igloos de Laponie tourné au sud, vers la vallée."
     },
     "it": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – soggiorno di lusso",
       "description": "Igloo di vetro arroccati sopra la fell di Levi: l’unico gruppo di igloo della Lapponia rivolto a sud, verso la valle."
     },
     "nl": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – luxe verblijf",
       "description": "Glazen iglo's hoog boven de fjäll van Levi, op het zuiden naar het dal gericht in plaats van noordwaarts het bos in."
     },
     "sv": {
-      "title": "Levin Iglut Golden Crown: Levi | LaplandLuxuryVillas",
+      "title": "Levin Iglut Golden Crown: Levi – lyxboende",
       "description": "Glasigloor högt över Levifjället, vänd söderut mot dalen i stället för norrut in i skogen."
     }
   },
   "/villas/wilderness-hotel-nellim-aurora-bubble": {
     "en": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – luxury stay",
       "description": "A glass bubble suite at the edge of the boreal forest, twenty minutes from the Russian border."
     },
     "fi": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – luksusmajoitus",
       "description": "Lasikupolisviitti boreaalisen metsän laidalla, kahdenkymmenen minuutin päässä Venäjän rajasta."
     },
     "de": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – Luxusunterkunft",
       "description": "Eine Glaskuppel-Suite am Rand des borealen Waldes, zwanzig Minuten von der russischen Grenze entfernt."
     },
     "ja": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble：Inariの高級宿泊施設 | LaplandLuxuryVillas",
       "description": "北方林の縁に佇むガラスバブルスイート。ロシア国境までわずか20分。"
     },
     "es": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – alojamiento de lujo",
       "description": "Una suite burbuja de cristal al borde del bosque boreal, a veinte minutos de la frontera rusa."
     },
     "pt-BR": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – hospedagem de luxo",
       "description": "Uma suíte-bolha de vidro na borda da floresta boreal, a vinte minutos da fronteira russa."
     },
     "zh-CN": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble：Inari豪华住宿 | LaplandLuxuryVillas",
       "description": "一间立于北方针叶林边缘的玻璃泡泡套房，距俄罗斯边境二十分钟。"
     },
     "ko": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – 럭셔리 숙소 | LaplandLuxuryVillas",
       "description": "북방 침엽수림 가장자리, 러시아 국경에서 20분 거리에 자리한 유리 버블 스위트."
     },
     "fr": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – séjour de luxe",
       "description": "Une suite-bulle de verre à la lisière de la forêt boréale, à vingt minutes de la frontière russe."
     },
     "it": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – soggiorno di lusso",
       "description": "Una suite a bolla di vetro ai margini della foresta boreale, a venti minuti dal confine russo."
     },
     "nl": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – luxe verblijf",
       "description": "Een glazen bubbelsuite aan de rand van het boreale bos, twintig minuten van de Russische grens."
     },
     "sv": {
-      "title": "Nellim Aurora Bubble: Inari | LaplandLuxuryVillas",
+      "title": "Nellim Aurora Bubble: Inari – lyxboende",
       "description": "En glasbubbelsvit vid kanten av den boreala skogen, tjugo minuter från ryska gränsen."
     }
   },
   "/villas/star-arctic-suite": {
     "en": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – luxury stay",
       "description": "A glass-walled suite at the summit of Kaunispää fell, above the treeline and above the village lights."
     },
     "fi": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – luksusmajoitus",
       "description": "Lasiseinäinen sviitti Kaunispään laella, puurajan ja kylän valojen yläpuolella."
     },
     "de": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – Luxusunterkunft",
       "description": "Eine verglaste Suite auf dem Gipfel des Kaunispää-Fjälls, oberhalb der Baumgrenze und über den Lichtern des Dorfes."
     },
     "ja": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite：Saariselkäの高級宿泊施設",
       "description": "Kaunispää山の頂に立つガラス張りのスイート——樹木線と村の灯りの上に広がるオーロラの寝室。"
     },
     "es": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – alojamiento de lujo",
       "description": "Una suite con paredes de cristal en la cima del fell de Kaunispää: por encima de la línea de árboles y de las luces de la aldea."
     },
     "pt-BR": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – hospedagem de luxo",
       "description": "Uma suíte com paredes de vidro no cume do fell Kaunispää, acima da linha das árvores e das luzes da vila."
     },
     "zh-CN": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite：Saariselkä豪华住宿",
       "description": "一间立于考尼斯帕（Kaunispää）山丘之巅的玻璃墙套房、位于林线与村庄灯火之上的极光卧室。"
     },
     "ko": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – 럭셔리 숙소",
       "description": "Kaunispää 펠 정상에 자리한 유리벽 스위트, 수목한계선과 마을 불빛 위에 자리한 오로라 침실."
     },
     "fr": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – séjour de luxe",
       "description": "Une suite aux parois de verre au sommet du fjäll de Kaunispää, au-dessus de la limite des arbres et des lumières du village."
     },
     "it": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – soggiorno di lusso",
       "description": "Una suite con pareti di vetro sulla vetta della fell di Kaunispää, sopra il limite del bosco e sopra le luci del villaggio."
     },
     "nl": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – luxe verblijf",
       "description": "Een suite met glazen wanden op de top van de fjäll Kaunispää, boven de boomgrens en boven de lichten van het dorp."
     },
     "sv": {
-      "title": "Star Arctic Skyview Suite: Saariselkä | LaplandLuxuryVillas",
+      "title": "Star Arctic Skyview Suite: Saariselkä – lyxboende",
       "description": "En svit med glasväggar på toppen av fjället Kaunispää, ovanför trädgränsen och ovanför byns ljus."
     }
   },
   "/villas/apukka-resort-aurora-cabin": {
     "en": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – luxury stay",
       "description": "Heritage-style aurora wagons on the shore of a frozen lake, ten minutes from Rovaniemi airport."
     },
     "fi": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – luksusmajoitus",
       "description": "Perinnetyyliset revontulivaunut jäätyneen järven rannalla, kymmenen minuutin päässä Rovaniemen lentoasemalta."
     },
     "de": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – Luxusunterkunft",
       "description": "Polarlicht-Waggons im historischen Stil am Ufer eines zugefrorenen Sees, zehn Minuten vom Flughafen Rovaniemi."
     },
     "ja": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon：Rovaniemiの高級宿泊施設 | LaplandLuxuryVillas",
       "description": "凍った湖の岸辺に佇むヘリテージ調のオーロラワゴン。Rovaniemi空港から10分。"
     },
     "es": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – alojamiento de lujo",
       "description": "Vagones de aurora de estilo histórico a la orilla de un lago helado, a diez minutos del aeropuerto de Rovaniemi."
     },
     "pt-BR": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – hospedagem de luxo",
       "description": "Vagões-aurora de estilo histórico à beira de um lago congelado, a dez minutos do aeroporto de Rovaniemi."
     },
     "zh-CN": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon：Rovaniemi豪华住宿 | LaplandLuxuryVillas",
       "description": "冰封湖畔的复古风格极光车厢，距罗瓦涅米（Rovaniemi）机场十分钟。"
     },
     "ko": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – 럭셔리 숙소",
       "description": "얼어붙은 호숫가에 놓인 헤리티지풍 오로라 왜건, Rovaniemi 공항에서 10분 거리."
     },
     "fr": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – séjour de luxe",
       "description": "Wagons auroraux d'inspiration patrimoniale au bord d'un lac gelé, à dix minutes de l'aéroport de Rovaniemi."
     },
     "it": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – soggiorno di lusso",
       "description": "Vagoni aurora in stile storico sulla riva di un lago ghiacciato, a dieci minuti dall’aeroporto di Rovaniemi."
     },
     "nl": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – luxe verblijf",
       "description": "Noorderlichtwagons in heritage-stijl aan de oever van een bevroren meer, tien minuten van de luchthaven van Rovaniemi."
     },
     "sv": {
-      "title": "Apukka Aurora Wagon: Rovaniemi | LaplandLuxuryVillas",
+      "title": "Apukka Aurora Wagon: Rovaniemi – lyxboende",
       "description": "Norrskensvagnar i historisk stil vid stranden av en frusen sjö, tio minuter från Rovaniemi flygplats."
     }
   },
   "/villas/lapland-hotels-saaga-apartment": {
     "en": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – luxury stay",
       "description": "A self-contained apartment at the foot of Ylläs’ southern slopes, with the hotel’s spa attached."
     },
     "fi": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – luksusmajoitus",
       "description": "Oma huoneisto Ylläksen etelärinteiden juurella, hotellin kylpylä takanaan."
     },
     "de": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – Luxusunterkunft",
       "description": "Eine eigenständige Ferienwohnung am Fuß der Südhänge des Ylläs, mit dem Spa des Hotels dahinter."
     },
     "ja": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment：Ylläsの高級宿泊施設 | LaplandLuxuryVillas",
       "description": "ユッラスの南斜面のふもとに建つ独立型アパートメント。ホテルのスパがすぐ後ろに。"
     },
     "es": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – alojamiento de lujo",
       "description": "Un apartamento independiente al pie de las laderas sur de Ylläs, con el spa del hotel detrás."
     },
     "pt-BR": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – hospedagem de luxo",
       "description": "Um apartamento independente ao pé das encostas sul do Ylläs, com o spa do hotel logo atrás."
     },
     "zh-CN": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment：Ylläs豪华住宿 | LaplandLuxuryVillas",
       "description": "位于于拉斯南坡脚下的独立公寓，身后就是酒店的水疗中心。"
     },
     "ko": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – 럭셔리 숙소",
       "description": "윌래스 남사면 기슭에 자리한 독립형 아파트, 뒤에는 호텔의 스파가 있습니다."
     },
     "fr": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – séjour de luxe",
       "description": "Un appartement indépendant au pied des pentes sud du Ylläs, avec le spa de l’hôtel derrière."
     },
     "it": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – soggiorno di lusso",
       "description": "Un appartamento indipendente ai piedi dei pendii sud dello Ylläs, con la spa dell’hotel alle spalle."
     },
     "nl": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – luxe verblijf",
       "description": "Een zelfstandig appartement aan de voet van de zuidhellingen van Ylläs, met de spa van het hotel erachter."
     },
     "sv": {
-      "title": "Saaga Holiday Apartment: Ylläs | LaplandLuxuryVillas",
+      "title": "Saaga Holiday Apartment: Ylläs – lyxboende",
       "description": "En egen lägenhet vid foten av Ylläs sydsluttningar, med hotellets spa bakom sig."
     }
   },

@@ -11,6 +11,7 @@ import { villaBySlug, getVillas } from '../lib/villas'
 import { formatRate, ratePriceRange } from '../lib/rate'
 import { destinationBySlug } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
+import { villaTitle } from '../lib/villaTitle.mjs'
 import { COPY } from '../locales/copy'
 
 export default function VillaDetail() {
@@ -34,7 +35,7 @@ export default function VillaDetail() {
   return (
     <Page>
       <SEO
-        title={`${villa.name} · ${villa.destination} | LaplandLuxuryVillas`}
+        title={villaTitle(villa.name, villa.destination, lang)}
         description={villa.tagline}
         canonicalPath={`/villas/${villa.slug}`}
         keywords={[villa.name, villa.destination, 'lapland villa', c.category[villa.category]]}

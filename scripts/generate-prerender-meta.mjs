@@ -28,6 +28,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { villaTitle } from '../src/lib/villaTitle.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -184,8 +185,9 @@ for (const [lang, file] of Object.entries(CONTENT_FILE)) {
 for (const [slug, b] of Object.entries(villaBase)) {
   const path = `/villas/${slug}`;
   meta[path] = {};
-  const title = `${b.name}: ${b.destination} | ${SITE_NAME}`; // proper nouns; brand already present
   for (const lang of LANGS) {
+    // [LV-DUP 2026-09-06] localized descriptor after the two proper nouns — see src/lib/villaTitle.mjs
+    const title = villaTitle(b.name, b.destination, lang, SITE_NAME);
     const ovTag = lang === 'en' ? null : villaOverlays[lang]?.[slug]?.tagline;
     const description = trimDesc(ovTag || b.tagline);
     meta[path][lang] = { title, description };
