@@ -23,6 +23,7 @@ import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
 import { withCounts } from '../lib/copyCounts'
 import { AppPromoHero } from '../components/AppPromo';
+import { seasonal } from '../lib/season';
 
 export default function Home() {
   const lang = useLang()
@@ -93,9 +94,12 @@ export default function Home() {
         lede={withCounts(c.hero.home.lede)}
         primary={{ to: to('/villas'), label: c.hero.home.primary }}
         secondary={{ to: to('/private-inquiry'), label: c.hero.home.secondary }}
-        imageUrl="/images/summer-villa-lakeside.webp"
-        imageAlt="A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light"
-        imgObjectPosition="20% 50%"
+        imageUrl={seasonal('/images/winter-villa-aurora.webp', '/images/summer-villa-lakeside.webp')}
+        imageAlt={seasonal(
+          'A glass-walled luxury villa alone on a frozen Lapland lakeshore at night, warm light in every window under a green aurora',
+          'A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light',
+        )}
+        imgObjectPosition={seasonal('30% 50%', '20% 50%')}
       />
 
       {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
