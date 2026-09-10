@@ -139,7 +139,7 @@ export default function Hero({
         </h1>
 
         {lede && (
-          <p className="mt-7 mx-auto max-w-2xl text-base sm:text-lg text-[color:var(--color-bone)]/90 font-body leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+          <p className="mt-7 mx-auto max-w-2xl xl:max-w-4xl text-base sm:text-lg text-[color:var(--color-bone)]/90 font-body leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] xl:text-xl">
             {lede}
           </p>
         )}
