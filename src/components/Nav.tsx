@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
-import { useEffect, useRef, useState } from 'react'
-import { Menu, X, Globe, ChevronDown } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Menu, X} from 'lucide-react'
 import Logo from './Logo'
 import EcosystemMenu from '../shared/EcosystemMenu'
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang'
@@ -11,6 +11,7 @@ const LANG_PREFIX: Record<Lang, string> = {
   ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
 }
 import { COPY } from '../locales/copy'
+import LanguageSwitcher from '../i18n/LanguageSwitcher'
 
 const LANG_OPTIONS: { code: Lang; label: string; native: string }[] = [
   { code: 'en', label: 'EN', native: 'English' },
@@ -30,27 +31,12 @@ const LANG_OPTIONS: { code: Lang; label: string; native: string }[] = [
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [langOpen, setLangOpen] = useState(false)
-  const langRef = useRef<HTMLDivElement>(null)
   const lang = useLang()
   const to = useLocalePath()
   const location = useLocation()
   const navigate = useNavigate()
   const c = COPY[lang]
 
-  useEffect(() => {
-    if (!langOpen) return
-    const onClick = (e: MouseEvent) => {
-      if (!langRef.current?.contains(e.target as Node)) setLangOpen(false)
-    }
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setLangOpen(false) }
-    document.addEventListener('mousedown', onClick)
-    document.addEventListener('keydown', onKey)
-    return () => {
-      document.removeEventListener('mousedown', onClick)
-      document.removeEventListener('keydown', onKey)
-    }
-  }, [langOpen])
 
   const NAV_LINKS = [
     { to: to('/villas'), label: c.nav.villas },
@@ -166,46 +152,8 @@ export default function Nav() {
         </ul>
 
         <div className="hidden min-[1360px]:flex items-center gap-3">
-          <div className="relative border-l border-[color:var(--color-mist)]/60 pl-4" ref={langRef}>
-            <button
-              type="button"
-              onClick={() => setLangOpen((o) => !o)}
-              aria-haspopup="listbox"
-              aria-expanded={langOpen}
-              aria-label="Select language"
-              className="flex items-center gap-1.5 px-3 py-1.5 text-[11px] tracking-[0.22em] uppercase font-body border border-[color:var(--color-bone)]/30 text-[color:var(--color-bone)]/85 hover:border-[color:var(--color-brass)] hover:text-[color:var(--color-brass)] transition-colors"
-            >
-              <Globe className="w-3 h-3" />
-              {LANG_OPTIONS.find((l) => l.code === lang)?.label ?? 'EN'}
-              <ChevronDown className={`w-3 h-3 transition-transform ${langOpen ? 'rotate-180' : ''}`} />
-            </button>
-            {langOpen && (
-              <ul
-                role="listbox"
-                aria-label="Select language"
-                className="absolute right-0 top-full mt-2 min-w-[200px] py-1 bg-[color:var(--color-deep-night)] border border-[color:var(--color-mist)]/60 shadow-xl z-50 max-h-[80vh] overflow-y-auto"
-              >
-                {LANG_OPTIONS.map((l) => {
-                  const isActive = l.code === lang
-                  return (
-                    <li key={l.code} role="option" aria-selected={isActive}>
-                      <button
-                        type="button"
-                        onClick={() => { switchTo(l.code); setLangOpen(false) }}
-                        className={`w-full flex items-center gap-3 px-4 py-2.5 text-left text-[12px] tracking-[0.18em] uppercase font-body transition-colors ${
-                          isActive
-                            ? 'text-[color:var(--color-brass)] bg-[color:var(--color-brass)]/10'
-                            : 'text-[color:var(--color-bone)]/85 hover:bg-[color:var(--color-bone)]/5 hover:text-[color:var(--color-brass)]'
-                        }`}
-                      >
-                        <span className="w-8 font-body">{l.label}</span>
-                        <span className="normal-case tracking-normal">{l.native}</span>
-                      </button>
-                    </li>
-                  )
-                })}
-              </ul>
-            )}
+          <div className="relative border-l border-[color:var(--color-mist)]/60 pl-4">
+            <LanguageSwitcher tone={'dark'} />
           </div>
           <Link
             to={to('/private-inquiry')}
@@ -216,21 +164,7 @@ export default function Nav() {
         </div>
 
         <div className="min-[1360px]:hidden flex items-center gap-2 shrink-0">
-          <div className="relative inline-flex items-center">
-            <select
-              value={lang}
-              onChange={(e) => switchTo(e.target.value as Lang)}
-              aria-label="Language"
-              className="appearance-none bg-transparent border border-[color:var(--color-bone)]/40 rounded pl-2 pr-6 py-1 text-[11px] tracking-[0.18em] uppercase font-body text-[color:var(--color-bone)]"
-            >
-              {LANG_OPTIONS.map((l) => (
-                <option key={l.code} value={l.code} className="bg-[color:var(--color-deep-night)] text-[color:var(--color-bone)]">
-                  {l.label}
-                </option>
-              ))}
-            </select>
-            <ChevronDown aria-hidden="true" className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-[color:var(--color-bone)]" />
-          </div>
+          <LanguageSwitcher tone={'dark'} />
           <button
             type="button"
             aria-label={open ? c.nav.closeMenu : c.nav.openMenu}
