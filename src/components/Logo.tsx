@@ -27,7 +27,7 @@ export default function Logo({ hero = false, className = '' }: LogoProps) {
   const glow = hero ? 'drop-shadow-[0_0_36px_rgba(236,72,153,0.55)]' : ''
 
   return (
-    <span className={`font-heading inline-flex flex-wrap items-baseline gap-x-1.5 leading-none tracking-wide drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${className}`}>
+    <span className={`font-logo inline-flex flex-wrap items-baseline gap-x-1.5 leading-none tracking-wide drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${className}`}>
       <span className={`text-[color:var(--color-vibe-pink)] ${sizeBase} ${glow}`}>#</span>
       <span className={`text-[color:var(--color-snow)] ${sizeBase}`}>LAPLAND</span>
       <span className={`${hero ? '' : 'basis-full min-[420px]:basis-auto'} text-[color:var(--color-vibe-pink)] ${sizeBrand} ${glow}`}>LUXURY&nbsp;VILLAS</span>
