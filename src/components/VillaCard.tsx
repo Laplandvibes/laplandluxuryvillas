@@ -189,7 +189,7 @@ export default function VillaCard({
               href={villa.bookingUrl}
               target="_blank"
               rel="sponsored nofollow noopener"
-              className="inline-flex items-center gap-2 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass-bright)] transition-colors"
+              className="inline-flex min-h-10 items-center gap-2 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass-bright)] transition-colors"
             >
               {promisesProperty ? c.cta.viewRates : c.cta.viewOptions}
               <ArrowUpRight size={13} />
