@@ -129,7 +129,7 @@ export default function Hero({
         )}
 
         <h1
-          className={`font-heading text-[color:var(--color-snow)] leading-[1.05] drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)] ${
+          className={`font-heading text-[color:var(--color-snow)] xl:text-[clamp(84px,1.3125vw_+_67.2px,100.8px)] leading-[1.05] drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)] ${
             compact
               ? 'text-[2rem] sm:text-5xl md:text-6xl'
               : 'text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem]'
