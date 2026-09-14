@@ -237,7 +237,7 @@ export default function VillaDetail() {
               </p>
               <Link
                 to={to(`/destinations/${dest.slug}`)}
-                className="inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body"
+                className="lv-tap inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body"
               >
                 {c.villaDetailPage.readProfile(dest.name)}
               </Link>

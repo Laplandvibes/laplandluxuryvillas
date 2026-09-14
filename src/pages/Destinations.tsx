@@ -90,7 +90,7 @@ export default function Destinations() {
                 </ul>
                 <Link
                   to={to(`/destinations/${d.slug}`)}
-                  className="inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group"
+                  className="lv-tap inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group"
                 >
                   {c.destinationsPage.readTheProfile(d.name)}
                   <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

@@ -130,7 +130,7 @@ export default function VillaCard({
 
         <Link
           to={detailPath}
-          className="inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[11px] tracking-[0.2em] uppercase font-body no-underline mb-5 group/profile"
+          className="lv-tap inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[11px] tracking-[0.2em] uppercase font-body no-underline mb-5 group/profile"
         >
           {c.cta.readProfile}
           <ArrowUpRight size={12} className="transition-transform group-hover/profile:translate-x-0.5 group-hover/profile:-translate-y-0.5" />
@@ -189,7 +189,7 @@ export default function VillaCard({
               href={villa.bookingUrl}
               target="_blank"
               rel="sponsored nofollow noopener"
-              className="inline-flex min-h-10 items-center gap-2 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass-bright)] transition-colors"
+              className="inline-flex min-h-11 items-center gap-2 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass-bright)] transition-colors"
             >
               {promisesProperty ? c.cta.viewRates : c.cta.viewOptions}
               <ArrowUpRight size={13} />

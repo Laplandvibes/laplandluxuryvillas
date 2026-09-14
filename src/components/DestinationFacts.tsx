@@ -32,7 +32,7 @@ function Fact({ label, value, fact, lang }: { label: string; value: string; fact
           href={fact.source}
           target="_blank"
           rel="noopener"
-          className="mt-1.5 inline-flex items-center gap-1 text-[10px] tracking-[0.14em] uppercase font-body text-[color:var(--color-bone)]/45 hover:text-[color:var(--color-brass)] no-underline"
+          className="lv-tap mt-1.5 inline-flex items-center gap-1 text-[10px] tracking-[0.14em] uppercase font-body text-[color:var(--color-bone)]/45 hover:text-[color:var(--color-brass)] no-underline"
         >
           {t(FACT_LABELS.source, l)}
           <ExternalLink size={10} aria-hidden="true" />

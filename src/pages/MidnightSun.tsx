@@ -92,7 +92,7 @@ export default function MidnightSun() {
             </div>
             <Link
               to={to('/villas')}
-              className="hidden md:inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group"
+              className="lv-tap hidden md:inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group"
             >
               {c.cta.fullVillaCollection}
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

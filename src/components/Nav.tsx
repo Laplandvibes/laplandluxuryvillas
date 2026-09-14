@@ -126,7 +126,7 @@ export default function Nav() {
             evicting the button. (Measured with _navprobe.mjs at 375/390.) */}
         <div className="flex items-center gap-2 sm:gap-5 min-w-0">
           <EcosystemMenu lang={lang} currentDomain="laplandluxuryvillas.com" />
-          <Link to={to('/')} className="min-w-0 shrink overflow-hidden" aria-label="LaplandLuxuryVillas, home">
+          <Link to={to('/')} className="min-w-0 shrink overflow-hidden inline-flex items-center min-h-11" aria-label="LaplandLuxuryVillas, home">
             <Logo />
           </Link>
         </div>

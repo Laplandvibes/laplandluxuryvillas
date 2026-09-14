@@ -107,7 +107,7 @@ function ContactCard({ icon: Icon, eyebrow, title, body, href, cta, ctaTo }: Car
       {cta && ctaTo && (
         <Link
           to={lp(ctaTo)}
-          className="mt-5 inline-flex items-center gap-1.5 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)]"
+          className="lv-tap mt-5 inline-flex items-center gap-1.5 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)]"
         >
           {cta} →
         </Link>

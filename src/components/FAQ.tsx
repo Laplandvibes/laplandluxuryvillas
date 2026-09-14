@@ -424,14 +424,14 @@ export default function FAQ() {
           <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3">
             <Link
               to={to('/villas')}
-              className="inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.18em] uppercase font-body group"
+              className="lv-tap inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.18em] uppercase font-body group"
             >
               {links.collection}
               <ArrowUpRight size={13} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
             <Link
               to={to('/private-inquiry')}
-              className="inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.18em] uppercase font-body group"
+              className="lv-tap inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.18em] uppercase font-body group"
             >
               {links.inquiry}
               <ArrowUpRight size={13} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
