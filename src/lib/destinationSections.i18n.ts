@@ -53,7 +53,7 @@ export const SECTION_LABELS: {
   thisPlace: { en: 'This destination', fi: 'Tämä kohde', de: 'Dieses Ziel', ja: 'この目的地', es: 'Este destino', 'pt-BR': 'Este destino', 'zh-CN': '当前目的地', ko: '이 목적지', fr: 'Cette destination', it: 'Questa destinazione', nl: 'Deze bestemming', sv: 'Denna destination' },
   locNote: {
     en: 'Latitudes and airport road distances from the network fact registry, each with its own source on the panel above.',
-    fi: 'Leveysasteet ja lentoasemien tieetäisyydet verkoston faktarekisteristä, kunkin oma lähde yllä olevassa paneelissa.',
+    fi: 'Leveysasteet ja lentoasemien ajomatkat verkoston faktarekisteristä, kunkin oma lähde yllä olevassa paneelissa.',
     de: 'Breitengrade und Straßenentfernungen zum Flughafen aus dem Faktenregister des Netzwerks, jeweils mit eigener Quelle im Panel oben.',
     ja: '緯度と空港からの道路距離はネットワークの事実レジストリより。出典は上のパネルに記載しています。',
     es: 'Latitudes y distancias por carretera al aeropuerto del registro de datos de la red, cada una con su fuente en el panel superior.',
