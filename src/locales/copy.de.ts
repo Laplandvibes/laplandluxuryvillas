@@ -20,6 +20,7 @@ const de: SiteCopy = {
     inquire: 'Anfragen',
     viewRates: 'Preise ansehen',
     viewOptions: 'Optionen ansehen',
+    nearbyStays: "Alle Termine und weitere Unterkünfte in der Nähe",
     viewPublicRates: 'Öffentliche Preise ansehen',
     orSendPrivateInquiry: 'Oder senden Sie eine private Anfrage',
     seeTheCollection: 'Zu den Villen',

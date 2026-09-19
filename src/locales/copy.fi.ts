@@ -20,6 +20,7 @@ const fi: SiteCopy = {
     inquire: 'Tiedustele',
     viewRates: 'Katso hinnat',
     viewOptions: 'Katso vaihtoehdot',
+    nearbyStays: "Kaikki päivät ja muut majoitukset lähellä",
     viewPublicRates: 'Katso julkiset hinnat',
     orSendPrivateInquiry: 'Tai lähetä yksityinen tiedustelu',
     seeTheCollection: 'Katso huvilat',

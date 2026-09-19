@@ -31,6 +31,8 @@ export type SiteCopy = {
     inquire: string
     viewRates: string
     viewOptions: string
+    /** Escape hatch under the booking button: the area list with a date calendar (Vesa 19.9.2026, Sembo dead end). */
+    nearbyStays: string
     viewPublicRates: string
     orSendPrivateInquiry: string
     seeTheCollection: string

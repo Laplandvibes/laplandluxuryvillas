@@ -61,7 +61,16 @@ interface PackageDef {
 }
 
 const PACKAGES: PackageDef[] = [
-  { key: 'aurora', villa: 'star-arctic-suite', iata: 'IVL', night: { kind: 'search', q: 'private northern lights tour Lapland' } },
+  {
+    key: 'aurora',
+    villa: 'star-arctic-suite',
+    iata: 'IVL',
+    // A specific product, not a search: Vesa 19.9.2026 clicked the search link and
+    // landed on GetYourGuide's generic Lapland list ("ei tälläistä geneeristä paskaa").
+    // Saariselkä private photo northern-lights tour, 6 h, verified 2026-08-01 in
+    // shared/gyg/luxury.ts (LUXURY_PICKS).
+    night: { kind: 'product', path: 'saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345' },
+  },
   { key: 'christmas', villa: 'arctic-treehouse-suite', iata: 'RVN', night: { kind: 'inquiry' } },
   {
     key: 'summer',
@@ -80,6 +89,7 @@ function Row({
   href,
   cta,
   external,
+  nearby,
 }: {
   icon: LucideIcon
   label: string
@@ -88,6 +98,7 @@ function Row({
   href: string
   cta: string
   external: boolean
+  nearby?: { href: string; label: string }
 }) {
   const ctaClass =
     'lv-tap inline-flex min-h-11 items-center gap-1.5 whitespace-nowrap text-[11px] tracking-[0.2em] uppercase font-body text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] no-underline'
@@ -98,6 +109,12 @@ function Row({
         <div className="eyebrow text-[10px]">{label}</div>
         <div className="mt-1 text-[color:var(--color-snow)] font-body text-base leading-snug">{name}</div>
         {sub && <div className="text-[color:var(--color-bone)]/70 font-body text-sm">{sub}</div>}
+        {nearby && (
+          <a href={nearby.href} target="_blank" rel="sponsored nofollow noopener" className="lv-tap mt-1 inline-flex min-h-11 items-center gap-1 text-[11px] tracking-[0.12em] uppercase font-body text-[color:var(--color-bone)]/70 hover:text-[color:var(--color-brass)] no-underline">
+            {nearby.label}
+            <ArrowUpRight size={11} aria-hidden="true" />
+          </a>
+        )}
       </div>
       {external ? (
         <a href={href} target="_blank" rel="sponsored nofollow noopener" className={ctaClass}>
@@ -148,6 +165,9 @@ export default function StayPackages() {
                 })
               : villa.bookingUrl ?? to(`/villas/${villa.slug}`)
             const stayCta = ctaPromisesProperty(property, lang) ? c.cta.viewRates : c.cta.viewOptions
+            const nearbyHref = property
+              ? buildAffiliateUrl({ partner: 'hotels', sid: `package_${pk.key}_area`, destination: property.city, lang })
+              : null
             const carHref = buildAffiliateUrl({ partner: 'cars', sid: `package_${pk.key}_car`, query: { pickup_location: pk.iata }, lang })
             const night = pk.night
             const nightHref =
@@ -184,7 +204,7 @@ export default function StayPackages() {
                   <p className="mt-4 text-[color:var(--color-bone)]/85 text-base sm:text-lg font-body leading-relaxed">{t.story[1]}</p>
 
                   <ul className="mt-7 divide-y divide-[color:var(--color-mist)]/60 border-y border-[color:var(--color-mist)]/60">
-                    <Row icon={BedDouble} label={p.stay} name={villa.name} sub={villa.destination} href={stayHref} cta={stayCta} external />
+                    <Row icon={BedDouble} label={p.stay} name={villa.name} sub={villa.destination} href={stayHref} cta={stayCta} external nearby={nearbyHref ? { href: nearbyHref, label: c.cta.nearbyStays } : undefined} />
                     <Row icon={CarFront} label={p.car} name={p.carFrom.replace('{airport}', t.airport)} href={carHref} cta={p.ctaCar} external />
                     <Row icon={MoonStar} label={p.night} name={t.night} href={nightHref} cta={nightCta} external={night.kind !== 'inquiry'} />
                   </ul>

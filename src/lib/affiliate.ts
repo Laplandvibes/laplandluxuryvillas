@@ -285,8 +285,11 @@ export function lomarengasCabinUrl(slug: string, sid: string, lang: Lang = 'en')
 export const GYG_LINKS = (lang: Lang = 'en') => ({
   laplandPremium: gygSearch('experiences_premium', 'private tour Lapland Finland', lang),
   helicopter: gygSearch('experience_helicopter', 'helicopter tour Lapland Finland', lang),
-  privateAurora: gygSearch('experience_private_aurora', 'private northern lights tour Lapland', lang),
-  snowmobileVip: gygSearch('experience_snowmobile_vip', 'private snowmobile tour Lapland', lang),
+  // Specific products where a verified one exists (shared/gyg/luxury.ts, 2026-08-01):
+  // a search landing is GetYourGuide's generic Lapland list (Vesa 19.9.2026: "ei
+  // tälläistä geneeristä paskaa"). Search stays only where no product is verified.
+  privateAurora: gygProduct('saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345', 'experience_private_aurora', lang),
+  snowmobileVip: gygProduct('rovaniemi-l2653/lapland-exclusive-private-7h-snowmobile-tour-with-guide-t885747', 'experience_snowmobile_vip', lang),
   husky: gygSearch('experience_husky', 'private husky safari Lapland', lang),
   reindeer: gygSearch('experience_reindeer', 'private reindeer sleigh Lapland', lang),
 })

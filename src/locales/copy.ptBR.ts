@@ -20,6 +20,7 @@ const ptBR: SiteCopy = {
     inquire: 'Consultar',
     viewRates: 'Ver tarifas',
     viewOptions: 'Ver opções',
+    nearbyStays: "Todas as datas e mais hospedagens perto",
     viewPublicRates: 'Ver tarifas públicas',
     orSendPrivateInquiry: 'Ou envie uma consulta privada',
     seeTheCollection: 'Ver as vilas',

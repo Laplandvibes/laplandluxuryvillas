@@ -20,6 +20,7 @@ const zhCN: SiteCopy = {
     inquire: '咨询',
     viewRates: '查看价格',
     viewOptions: '查看选项',
+    nearbyStays: "所有日期及附近更多住宿",
     viewPublicRates: '查看公开价格',
     orSendPrivateInquiry: '或发送私人咨询',
     seeTheCollection: '查看别墅',

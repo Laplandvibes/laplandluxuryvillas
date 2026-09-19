@@ -20,6 +20,7 @@ const en: SiteCopy = {
     inquire: 'Inquire',
     viewRates: 'View rates',
     viewOptions: 'View options',
+    nearbyStays: "All dates and other stays nearby",
     viewPublicRates: 'View public rates',
     orSendPrivateInquiry: 'Or send a private inquiry',
     seeTheCollection: 'See the villas',

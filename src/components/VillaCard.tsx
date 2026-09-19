@@ -6,6 +6,7 @@ import { COPY } from '../locales/copy'
 import GoogleRatingRow from './GoogleRatingRow'
 import EditorsPickChip from './EditorsPickChip'
 import { propertyForVilla, ctaPromisesProperty, type RankableProperty } from '../data/properties'
+import { buildAffiliateUrl } from '../lib/affiliate'
 import { formatRate } from '../lib/rate'
 import PhotoCredit from './PhotoCredit'
 import { creditFor } from '../data/photoCredits'
@@ -50,6 +51,14 @@ export default function VillaCard({
   const promisesProperty = ctaPromisesProperty(property, lang)
   const detailPath = to(`/villas/${villa.slug}`)
   const credit = creditFor(villa.image)
+  // 🔴 Sembo dead end (Vesa 19.9.2026): the property deep link carries one fixed
+  // date, and when that night is sold out Sembo shows "not available" with no
+  // date picker on the property view. The AREA list has the calendar, so every
+  // card offers it as a second link: fi → Sembo polygon list, others → Trip.com
+  // city list, both through the Worker with their own placement tag.
+  const nearbyHref = property
+    ? buildAffiliateUrl({ partner: 'hotels', sid: `villa_${villa.slug.split('-')[0]}_area`, destination: property.city, lang })
+    : null
 
   return (
     <article className="card-onyx flex flex-col h-full overflow-hidden">
@@ -85,11 +94,12 @@ export default function VillaCard({
             its own height and nothing lined up across the row. On the image it
             costs zero layout height, and it still reads as editorial rather
             than paid: snow + brass ring, never the pink "Mainos" pill. */}
-        {/* 🔴 Alhaalla vasemmalla, EI ylhäällä oikealla. Ylänurkassa se törmäsi
-            tier-badgeen heti kun kortti kapenee (etusivun neljän kortin
-            ruudukko) — Vesa 2.8. Tämä nurkka on aina vapaa. */}
+        {/* Top RIGHT, always (Vesa 19.9.2026: "pitäisi olla aina oikea yläkulma").
+            It sat bottom-left since 2.8. to dodge the tier badge in the top-left;
+            the tier badge is gone from these cards and the card is twice as wide,
+            so the top-right corner is free. The photo credit keeps bottom-right. */}
         {isPick && (
-          <div className="absolute bottom-4 left-4">
+          <div className="absolute top-4 right-4">
             <EditorsPickChip label={c.editorial.pickLabel} reason={c.editorial.pickReason} />
           </div>
         )}
@@ -213,6 +223,17 @@ export default function VillaCard({
             </a>
           )}
         </div>
+        {nearbyHref && !inquiryOnly && showBooking && (
+          <a
+            href={nearbyHref}
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            className="lv-tap mt-3 inline-flex min-h-11 items-center gap-1.5 self-end text-[11px] tracking-[0.12em] uppercase font-body text-[color:var(--color-bone)]/70 hover:text-[color:var(--color-brass)] no-underline"
+          >
+            {c.cta.nearbyStays}
+            <ArrowUpRight size={12} />
+          </a>
+        )}
       </div>
     </article>
   )

@@ -20,6 +20,7 @@ const ja: SiteCopy = {
     inquire: 'お問い合わせ',
     viewRates: '料金を見る',
     viewOptions: 'オプションを見る',
+    nearbyStays: "すべての日程と近隣の宿泊施設",
     viewPublicRates: '公開料金を見る',
     orSendPrivateInquiry: 'またはプライベートお問い合わせを送信',
     seeTheCollection: 'ヴィラを見る',
