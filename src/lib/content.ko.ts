@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: '북부 핀란드의 럭셔리 오로라 거점, Kakslauttanen, Star Arctic, 그리고 Urho Kekkonen의 야생 가장자리.',
       copy: [
-        'Saariselkä는 핀란드에서 손꼽히게 넓은 야생 보호구역인 Urho Kekkonen 국립공원의 북쪽 끝자락에 자리하며, 유리 지붕 오로라 숙소를 정의한 마을입니다. 핀란드에서 가장 잘 알려진 유리 캐빈 대부분(Kakslauttanen, Star Arctic, Northern Lights Village)이 마을에서 10km 이내에 있습니다.',
-        '마을 자체는 작고 걸어 다닐 수 있으며, 중심 도로 하나, 몇몇 레스토랑, 그리고 국립공원으로의 직접 접근로를 갖추고 있습니다. Ivalo 공항까지는 27km, 전용 차량으로 약 30분이며 정기편과 전세기를 모두 처리합니다.',
+        'Saariselkä는 핀란드에서 두 번째로 큰 국립공원(2,550km²)인 Urho Kekkonen 국립공원의 북쪽 끝자락에 자리하며, 유리 지붕 오로라 숙소를 정의한 마을입니다. 핀란드에서 가장 잘 알려진 유리 캐빈 대부분(Kakslauttanen, Star Arctic, Northern Lights Village)이 마을에서 10km 이내에 있습니다.',
+        '마을 자체는 작고 걸어 다닐 수 있으며, 중심 도로 하나, 레스토랑 세 곳, 그리고 국립공원으로의 직접 접근로를 갖추고 있습니다. Ivalo 공항까지는 27km, 전용 차량으로 약 30분이며 정기편과 전세기를 모두 처리합니다.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, 유리 지붕 숙소의 원조',
@@ -149,7 +149,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: '저희 목적지 가운데 가장 북쪽에 있으며, 오로라가 네 밤 중 세 밤가량 관측됩니다. 사미족의 중심지, Inari 호수, 어두운 하늘.',
       copy: [
         'Inari는 핀란드에서 면적이 가장 넓은 지자체이자 핀란드 사미족의 문화 수도입니다. 마을은 핀란드에서 세 번째로 큰 호수인 Inari 호수에 자리하며, 약 3,000개의 섬이 있고 북극권에서 200km 넘게 북쪽에 있어 지평선에 도시 불빛이 없습니다.',
-        '럭셔리 여행에서 이는 두 가지를 의미합니다. 첫째, 이 위도에서는 핀란드 기상청이 네 밤 중 세 밤가량 오로라를 관측하며, 북쪽 낮은 하늘이 아니라 머리 위에 펼쳐집니다. 둘째, 호숫가 통나무 에스테이트(일부는 개인 소유)는 라플란드에서 가장 조용한 숙소에 속합니다. 통과 차량도, 보이는 지평선 위의 이웃 마을도 없습니다.',
+        '럭셔리 여행에서 이는 두 가지를 의미합니다. 첫째, 이 위도에서는 핀란드 기상청이 네 밤 중 세 밤가량 오로라를 관측하며, 북쪽 낮은 하늘이 아니라 머리 위에 펼쳐집니다. 둘째, 호숫가 통나무 에스테이트는 라플란드에서 가장 조용한 숙소에 속합니다. 통과 차량도, 보이는 지평선 위의 이웃 마을도 없습니다.',
       ],
       highlights: [
         'Aurora Village, 목적에 맞게 지은 30헥타르 유리 캐빈 단지',

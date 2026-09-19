@@ -42,7 +42,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Vinte e quatro cabanas de vidro voltadas para nada além de floresta e do oval da aurora.',
       copy: [
         'Inari fica exatamente sob o oval auroral, na latitude em que o Instituto Meteorológico Finlandês observa a aurora em cerca de três noites a cada quatro. A Aurora Village é uma propriedade de 24 cabanas, sem tráfego de passagem, sem vilarejos vizinhos no horizonte visível. As cabanas são espaçadas para garantir privacidade, com a cama sob o vidro e o sofá voltado para ele.',
-        'O restaurante no local, de gestão sámi, oferece um menu degustação em torno de rena, salmão-ártico e amora-branca. Os alarmes de aurora são transmitidos por rádio de cabana em cabana, para que ninguém acorde a vila ao lado.',
+        'O restaurante no local, de gestão sámi, oferece um menu degustação em torno de rena, salmão-ártico e amora-ártica. Os alarmes de aurora são transmitidos por rádio de cabana em cabana, para que ninguém acorde a vila ao lado.',
       ],
       signature: [
         'Cabana de teto de vidro com a cama sob o ápice',
@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'O polo de auroras de luxo do norte da Finlândia, Kakslauttanen, Star Arctic, a borda selvagem de Urho Kekkonen.',
       copy: [
-        'Saariselkä fica na orla norte do Parque Nacional Urho Kekkonen, uma das maiores áreas selvagens da Finlândia, e é a vila que definiu a hospedagem-aurora de teto de vidro. A maioria das cabanas de vidro mais conhecidas do país (Kakslauttanen, Star Arctic, Northern Lights Village) está a até 10 km da vila.',
-        'A vila em si é pequena e percorrível a pé: uma rua principal, alguns restaurantes e acesso direto ao parque nacional. O aeroporto de Ivalo fica a 27 km, cerca de meia hora por transfer privativo, e opera tanto voos regulares quanto fretados particulares.',
+        'Saariselkä fica na orla norte do Parque Nacional Urho Kekkonen, o segundo maior parque nacional da Finlândia com 2.550 km², e é a vila que definiu a hospedagem-aurora de teto de vidro. A maioria das cabanas de vidro mais conhecidas do país (Kakslauttanen, Star Arctic, Northern Lights Village) está a até 10 km da vila.',
+        'A vila em si é pequena e percorrível a pé: uma rua principal, três restaurantes de qualidade e acesso direto ao parque nacional. O aeroporto de Ivalo fica a 27 km, cerca de meia hora por transfer privativo, e opera tanto voos regulares quanto fretados particulares.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, a propriedade de teto de vidro original',
@@ -148,14 +148,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'Nosso destino mais ao norte, onde a aurora é observada em cerca de três noites a cada quatro. Coração sámi, Lago Inari, céus escuros.',
       copy: [
-        'Inari é o maior município da Finlândia em área e a capital cultural dos sámi finlandeses. A vila fica no Lago Inari, o terceiro maior lago da Finlândia, com cerca de 3.000 ilhas, a mais de 200 km ao norte do círculo polar e sem nenhuma luz de cidade no horizonte.',
+        'Inari é o maior município da Finlândia em área e a capital cultural dos sámi finlandeses. O povoado fica no Lago Inari, o terceiro maior lago da Finlândia, com cerca de 3.000 ilhas, a mais de 200 km ao norte do círculo polar e sem nenhuma luz de cidade no horizonte.',
         'Para o turismo de luxo, isso significa duas coisas. Primeiro: nesta latitude o Instituto Meteorológico Finlandês observa a aurora em cerca de três noites a cada quatro, e ela aparece no zênite em vez de baixa ao norte. Segundo: as propriedades de madeira à beira do lago estão entre as hospedagens mais tranquilas da Lapônia: sem tráfego de passagem, sem vilarejos vizinhos no horizonte visível.',
       ],
       highlights: [
         'Aurora Village, propriedade de cabanas de vidro de 30 hectares, construída para esse fim',
         'Wilderness Hotel Nellim, bolhas-aurora na margem leste do Lago Inari',
         'Museu Sámi Siida + programas culturais o ano todo',
-        'Lago Inari, o terceiro maior da Finlândia, cerca de 3 000 ilhas',
+        'Lago Inari, o terceiro maior da Finlândia, cerca de 3.000 ilhas',
       ],
       arrival: 'Ivalo (IVL), 40 km, cerca de 40 min por transfer privativo',
       auroraNote: 'Nosso destino mais ao norte e aquele em que a aurora aparece com mais frequência no zênite, em vez de baixa ao norte. O Lago Inari oferece um horizonte ininterrupto, sem luz de vilarejo sobre ele.',
@@ -193,7 +193,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'A alternativa tranquila a Levi. Parque nacional Pallas-Yllästunturi, menos multidões, floresta mais profunda.',
       copy: [
         'Ylläs tem 62 pistas, mais do que qualquer outra área esquiável da Finlândia, e as descidas mais longas do país: mais de três quilômetros do cume pelado de 719 metros até o vale. Ainda assim parece uma fração de Levi, porque a vila está dispersa por dois povoados (Äkäslompolo e Ylläsjärvi), separados por 15 km de fell e pelo Parque Nacional Pallas-Yllästunturi.',
-        'Para o turismo de luxo, o apelo é o espaço. Os chalés projetados por arquitetos aqui ficam sozinhos na encosta do fell, as trilhas do parque nacional partem da propriedade, e o silêncio é o que as pessoas de fato pagam para ter. A rede de esqui cross-country soma cerca de 300 quilômetros, mais de 30 deles iluminados.',
+        'Para o turismo de luxo, o apelo é o espaço. Os chalés projetados por arquitetos aqui ficam sozinhos na encosta do fell, as trilhas do parque nacional partem da propriedade, e o silêncio é o que as pessoas de fato pagam para ter. A visibilidade da aurora aqui é excelente, graças à baixíssima poluição luminosa local.',
       ],
       highlights: [
         'Parque Nacional Pallas-Yllästunturi, o 3º maior da Finlândia',
@@ -223,9 +223,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Rovaniemi, Ivalo, out.–mar. (depende do tempo)',
     },
     'private-chef-arctic-tasting': {
-      hook: 'Um menu degustação finlandês-Sami de nove tempos, preparado na cozinha da sua villa por um chef em atividade da Lapônia.',
+      hook: 'Um menu degustação finlandês-sámi de nove tempos, preparado na cozinha da sua villa por um chef em atividade da Lapônia.',
       copy: [
-        'Um chef em atividade de uma das cozinhas sérias da Lapônia vai até a sua villa por uma noite. O menu é construído em torno do que está de fato na estação naquela semana: salmão-ártico de água fria, amora-branca, rena defumada, cogumelos frescos da floresta, espinheiro-marítimo, zimbro.',
+        'Um chef em atividade de uma das cozinhas sérias da Lapônia vai até a sua villa por uma noite. O menu é construído em torno do que está de fato na estação naquela semana: salmão-ártico de água fria, amora-ártica, rena defumada, cogumelos frescos da floresta, espinheiro-marítimo, zimbro.',
         'Inclui uma harmonização de vinhos selecionada para o menu, os ingredientes, o preparo, o serviço e a limpeza. Máximo de dez convidados. Menus vegetariano, sem glúten e sem frutos do mar sob solicitação, com no mínimo 72 horas de antecedência.',
       ],
       available: 'Qualquer villa da coleção, o ano todo',
@@ -247,9 +247,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Saariselkä, Inari, Levi, dez.–abr.',
     },
     'private-reindeer-sami-evening': {
-      hook: 'Trenó puxado por renas em uma fazenda em atividade e, depois, uma noite em uma kota privativa com um anfitrião Sami.',
+      hook: 'Trenó puxado por renas em uma fazenda em atividade e, depois, uma noite em uma kota privativa com um anfitrião sámi.',
       copy: [
-        'Duas horas de trenó puxado por renas em uma fazenda de pastoreio em atividade, seguidas de uma noite privativa em uma kota aquecida (tenda cônica com fogo aberto). O anfitrião é um criador de renas Sami que toca a fazenda, a conversa, e não um roteiro, é a experiência.',
+        'Duas horas de trenó puxado por renas em uma fazenda de pastoreio em atividade, seguidas de uma noite privativa em uma kota aquecida (tenda cônica com fogo aberto). O anfitrião é um criador de renas sámi que toca a fazenda, a conversa, e não um roteiro, é a experiência.',
         'O jantar é rena salteada com purê de batata e oxicoco, preparada no fogo aberto. Histórias sobre o rebanho, o ano da migração e a tradição do canto joik. Máximo de doze convidados.',
       ],
       available: 'Inari, Saariselkä, o ano todo (trenó dez.–mar.)',

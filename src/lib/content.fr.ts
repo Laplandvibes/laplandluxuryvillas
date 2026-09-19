@@ -26,12 +26,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'arctic-treehouse-suite': {
       tagline: 'Suite en porte-à-faux signée Studio Puisto, à la façade entièrement vitrée orientée vers les aurores.',
       copy: [
-        'Une suite penthouse de 73 m² sur pilotis, dont le verre court du sol au plafond sur toute la largeur. Conçue par Studio Puisto. Terrasse privée avec bain à remous. Le bâtiment a été édifié autour d\'un seul pin, chaque détail intérieur a été choisi pour s\'effacer, afin que la forêt reste le seul objet de la pièce.',
+        'Une suite penthouse de 73 m² sur pilotis, dont le verre court du sol au plafond sur toute la largeur. Conçue par Studio Puisto. Terrasse privée avec bain nordique. Le bâtiment a été édifié autour d\'un seul pin, chaque détail intérieur a été choisi pour s\'effacer, afin que la forêt reste le seul objet de la pièce.',
         'À cinq minutes du Village du Père Noël, une base utile pour les familles voyageant en période de Noël, qui veulent une retraite paisible la nuit et un accès facile à Rovaniemi le jour.',
       ],
       signature: [
         'Suite de 73 m², façade entièrement vitrée orientée nord',
-        'Terrasse privée avec bain à remous + sauna extérieur',
+        'Terrasse privée avec bain nordique + sauna extérieur',
         'Intérieur Studio Puisto, icônes du design finlandais partout',
         'Plancher chauffant, rideaux occultants pour le sommeil diurne',
         'Restaurant Rakas sur place',
@@ -63,7 +63,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Panorama auroral orienté sud (rare en Laponie)',
         'À distance de marche de la télécabine et du village de Levi',
         'Restaurant Aurora sur place, rayon d\'approvisionnement de 100 km',
-        'Les suites premium disposent d\'un bain à remous privé sur la terrasse',
+        'Les suites premium disposent d\'un bain nordique privé sur la terrasse',
         'Accès ski-in / ski-out en saison hivernale',
         'Alerte aurores en chambre',
       ],
@@ -71,7 +71,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'wilderness-hotel-nellim-aurora-bubble': {
       tagline: 'Une suite-bulle de verre à la lisière de la forêt boréale, à vingt minutes de la frontière russe.',
       copy: [
-        'Nellim est un véritable village sauvage (220 habitants) sur la rive est du lac Inari. Les bulles aurorales sont à l\'écart du lodge principal, dans leur propre clairière, chacune coiffée d\'un dôme transparent panoramique au-dessus du lit et dotée d\'un bain à remous au feu de bois sur le porche.',
+        'Nellim est un véritable village sauvage (220 habitants) sur la rive est du lac Inari. Les bulles aurorales sont à l\'écart du lodge principal, dans leur propre clairière, chacune coiffée d\'un dôme transparent panoramique au-dessus du lit et dotée d\'un bain nordique au feu de bois sur le porche.',
         'Le lodge organise des soirées culturelles samies, la pêche sur glace sur le lac et l\'un des rares programmes guidés certifiés de photographie d\'aurores en Finlande. Les chambres se réservent un an à l\'avance pour le pic de février.',
       ],
       signature: [
@@ -125,7 +125,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Transfert de 10 minutes depuis l\'aéroport de Rovaniemi',
         'Huskies + rennes + pêche sur glace sur place',
         'Piste de motoneige au départ de la propriété',
-        'Alerte aurores + bain à remous attenant à la cabane',
+        'Alerte aurores + bain nordique attenant à la cabane',
       ],
     },
   },
@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Le pôle aurores de luxe du nord de la Finlande, Kakslauttanen, Star Arctic, la frange sauvage d\'Urho Kekkonen.',
       copy: [
-        'Saariselkä se trouve à la lisière nord du parc national d\'Urho Kekkonen, l\'une des plus vastes étendues sauvages de Finlande, et c\'est le village qui a défini l\'hébergement auroral au toit de verre. La plupart des cabanes de verre les plus connues du pays (Kakslauttanen, Star Arctic, Northern Lights Village) se situent à moins de 10 km du village.',
-        'Le village lui-même est petit et facile à parcourir à pied : une rue principale, quelques restaurants et un accès direct au parc national. L\'aéroport d\'Ivalo est à 27 km, soit environ une demi-heure en transfert privé, et il accueille aussi bien les vols réguliers que les charters privés.',
+        'Saariselkä se trouve à la lisière nord du parc national d\'Urho Kekkonen, le deuxième plus grand parc national de Finlande avec 2 550 km², et c\'est le village qui a défini l\'hébergement auroral au toit de verre. La plupart des cabanes de verre les plus connues du pays (Kakslauttanen, Star Arctic, Northern Lights Village) se situent à moins de 10 km du village.',
+        'Le village lui-même est petit et facile à parcourir à pied : une rue principale, trois bons restaurants et un accès direct au parc national. L\'aéroport d\'Ivalo est à 27 km, soit environ une demi-heure en transfert privé, et il accueille aussi bien les vols réguliers que les charters privés.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, la propriété au toit de verre originelle',
@@ -178,13 +178,13 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La première station de ski de Finlande. Chalets de luxe sur le versant sud, ski-in / ski-out depuis la télécabine de Levi.',
       copy: [
         'Levi est la station de fjäll la plus développée de Laponie, un véritable village de sports d\'hiver avec 44 pistes et 26 remontées, dont deux télécabines. Le marché de la location de chalets de designer y est devenu sérieux au cours de la dernière décennie. La télécabine relie le centre du village au sommet à 531 mètres ; c\'est sur le versant sud que se trouvent les chalets privés, et un nouveau télésiège y ouvre pour la saison 2026-2027.',
-        'La visibilité des aurores depuis Levi est orientée sud et spectaculaire, chose rare en Laponie, de sorte que la ligne d\'horizon illuminée du village fait partie de la photographie. À combiner idéalement avec une ou deux nuits plus au nord (Inari ou Saariselkä) pour de vraies aurores sauvages avant de revenir ici pour le ski.',
+        'La visibilité des aurores depuis Levi est orientée sud, chose rare en Laponie, de sorte que la ligne d\'horizon illuminée du village fait partie de la photographie. À combiner idéalement avec une ou deux nuits plus au nord (Inari ou Saariselkä) pour de vraies aurores sauvages avant de revenir ici pour le ski.',
       ],
       highlights: [
         'Levin Iglut, igloos de verre orientés sud au-dessus du village de fjäll',
         'Chalets d\'architecte de designer, versant sud, ski-in/out',
         '44 pistes, 26 remontées (deux télécabines), 38,5 km de piste damée',
-        'L\'aéroport de Kittilä (KTT) accueille des vols intl. directs saisonniers',
+        'L\'aéroport de Kittilä (KTT) accueille des vols internationaux directs saisonniers',
       ],
       arrival: 'Kittilä (KTT), 15 km, environ 20 min en transfert privé',
       auroraNote: 'Un panorama orienté sud, chose rare en Laponie : le village de fjäll illuminé devient le premier plan de la photo. La contrepartie est cette lumière même, et la vue la plus sombre se trouve donc à quelques minutes de voiture.',
@@ -193,12 +193,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'L\'alternative paisible à Levi. Parc national de Pallas-Yllästunturi, moins de foule, forêt plus profonde.',
       copy: [
         'Ylläs compte 62 pistes, plus que tout autre domaine skiable de Finlande, et les plus longues descentes du pays : plus de trois kilomètres depuis le sommet dénudé à 719 mètres jusqu\'à la vallée. La station paraît pourtant une fraction de Levi, car le village est réparti sur deux agglomérations (Äkäslompolo et Ylläsjärvi), séparées par 15 km de fjäll et par le parc national de Pallas-Yllästunturi.',
-        'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjäll, les sentiers du parc national partent de la propriété, et le silence est ce pour quoi les gens paient réellement. Le réseau de fond compte environ 300 kilomètres, dont plus de 30 éclairés.',
+        'Pour le voyage de luxe, l\'attrait tient à l\'espace. Les chalets d\'architecte y sont isolés à flanc de fjäll, les sentiers du parc national partent de la propriété, et le silence est ce pour quoi les gens paient réellement. La visibilité des aurores y est excellente grâce à la très faible pollution lumineuse locale.',
       ],
       highlights: [
         'Parc national de Pallas-Yllästunturi, le 3e plus grand de Finlande',
         'Deux villages de ski de part et d\'autre du fjäll d\'Ylläs',
-        'Pollution lumineuse plus faible que toute autre station de ski',
+        'À la lisière du parc national, sans lumière de station côté fjäll',
         'Environ 300 km de pistes de fond entretenues, plus de 30 km éclairés',
       ],
       arrival: 'Kittilä (KTT), 40 km, environ 45 min en transfert privé',

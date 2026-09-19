@@ -27,7 +27,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Utkragande svit ritad av Studio Puisto med helt glasad fasad riktad mot norrskenet.',
       copy: [
         'En penthouse-svit på 73 m² på pelare, med glas från golv till tak i full bredd. Ritad av Studio Puisto. Privat terrass med badtunna. Byggnaden är rest kring en enda tall, varje inredningsdetalj är vald för att försvinna, så att skogen förblir det enda objektet i rummet.',
-        'Fem minuter från Santa Claus Village, praktiskt som bas för familjer som reser under julsäsongen och vill ha en lugn tillflykt på kvällen med enkel tillgång till Rovaniemi på dagen.',
+        'Fem minuter från Jultomtens by, praktiskt som bas för familjer som reser under julsäsongen och vill ha en lugn tillflykt på kvällen med enkel tillgång till Rovaniemi på dagen.',
       ],
       signature: [
         'Svit på 73 m², helt glasad fasad mot norr',
@@ -35,7 +35,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Inredning av Studio Puisto, finska designikoner överallt',
         'Golvvärme, mörkläggningsgardiner för sömn på dagen',
         'Restaurang Rakas på området',
-        'Fem minuter till Santa Claus Village',
+        'Fem minuter till Jultomtens by',
       ],
     },
     'aurora-village-glass-cabin': {
@@ -133,7 +133,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Norra Finlands lyxiga norrskenshubb, Kakslauttanen, Star Arctic, den vilda kanten av Urho Kekkonen.',
       copy: [
-        'Saariselkä ligger vid den norra kanten av Urho Kekkonens nationalpark, ett av Finlands största vildmarksområden, och är byn som definierade norrskensboendet med glastak. De flesta av landets mest kända glasstugor (Kakslauttanen, Star Arctic, Northern Lights Village) ligger inom 10 km från byn.',
+        'Saariselkä ligger vid den norra kanten av Urho Kekkonens nationalpark, Finlands näst största nationalpark på 2 550 km², och är byn som definierade norrskensboendet med glastak. De flesta av landets mest kända glasstugor (Kakslauttanen, Star Arctic, Northern Lights Village) ligger inom 10 km från byn.',
         'Byn själv är liten och lättgången: en huvudgata, några restauranger och direkt tillgång till nationalparken. Till Ivalo flygplats är det 27 km, alltså ungefär en halvtimme med privat transfer, och den hanterar både reguljärflyg och privata charter.',
       ],
       highlights: [

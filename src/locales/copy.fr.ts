@@ -59,6 +59,13 @@ const fr: SiteCopy = {
     verifiedOn: 'Vérifié le {d}',
     ratingScope: 'La note concerne l\'ensemble de l\'établissement, {p}',
   },
+  photo: {
+    "credit": "Photo",
+    "inPicture": "Sur la photo : {what}",
+    "cropped": "recadrée",
+    "nellim": "Le village de Nellim au bord du lac Inari, et non l’hôtel lui-même",
+    "heroWinter": "Aurore boréale au-dessus d’un lodge éclairé à Saariselkä, février 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Collection privée',
@@ -110,7 +117,7 @@ const fr: SiteCopy = {
     home: {
       eyebrow: '{n} villas · {m} destinations',
       title: 'Une villa en Laponie, sans approximation.',
-      lede: 'Chaque maison est vérifiée à partir de ses propres informations publiées et d\'avis récents de voyageurs. Réservez directement auprès de la maison, ou indiquez vos dates et votre groupe et nous vous proposons les meilleures options sous 24 heures.',
+      lede: "{n} villas à toit de verre et suites design dans {m} destinations de Laponie, chacune avec sa propre page de réservation et sa note Google en évidence. Envoyez vos dates et recevez une présélection en un jour.",
       primary: 'Voir les villas',
       secondary: 'Demander des suggestions',
     },
@@ -152,6 +159,53 @@ const fr: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Semaines toutes prêtes",
+      "h2": "Trois semaines en Laponie, planifiées jusqu’à la dernière soirée.",
+      "lede": "Choisissez la villa, ajoutez la voiture prise à l’aéroport et réservez la seule soirée qui doit être réussie. Chaque lien ci-dessous mène à la page de réservation du partenaire, prix affiché.",
+      "season": "Saison",
+      "stay": "Où vous dormez",
+      "car": "Comment vous circulez",
+      "night": "La soirée à réserver à l’avance",
+      "home": "Ce qui rentre à la maison avec vous",
+      "homeLede": "La table à laquelle vous avez mangé pendant une semaine : Iittala, Marimekko et Kosta Boda dans une seule boutique nordique.",
+      "carFrom": "Voiture de location {airport}, retrait au terminal",
+      "ctaCar": "Voir les tarifs des voitures",
+      "ctaNight": "Voir l’excursion",
+      "ctaNightInquiry": "Envoyer une demande",
+      "items": [
+        {
+          "title": "Une semaine d’aurores au-dessus de Saariselkä",
+          "season": "De septembre à mars",
+          "airport": "depuis l’aéroport d’Ivalo",
+          "story": [
+            "Les prévisions annoncent un ciel dégagé. Vous êtes dans la Skyview Suite depuis l’après-midi, le sauna est encore chaud et le ciel au-dessus de Kaunispää a pris ce bleu dur et sombre qu’il prend avant l’arrivée des lumières. Le lit fait face à la paroi de verre : l’attente se passe allongé.",
+            "L’aéroport d’Ivalo est à une demi-heure de route environ, et c’est précisément pour cela que la voiture compte : les meilleurs endroits à aurores autour de Saariselkä sont hors des lignes de bus, et une voiture chauffée, moteur tournant, est le plus chaud des affûts. La soirée photo privée est la seule chose à réserver avant de prendre l’avion ; le guide choisit la direction l’après-midi même, d’après la carte des nuages."
+          ],
+          "night": "Soirée privée de photographie des aurores avec un guide"
+        },
+        {
+          "title": "Semaine de Noël à Rovaniemi, silencieuse une fois la nuit tombée",
+          "season": "De décembre à janvier",
+          "airport": "depuis l’aéroport de Rovaniemi",
+          "story": [
+            "À cinq minutes du Village du Père Noël, et dès que le dernier lutin est rentré chez lui, la forêt autour de l’Arctic TreeHouse se tait. La paroi de verre de la suite est orientée au nord ; le bain nordique se trouve sur la terrasse, juste devant. Les enfants endormis dans la chambre, les parents sur la terrasse : voilà la semaine de Rovaniemi qui fonctionne.",
+            "L’aéroport de Rovaniemi est à quelques minutes de voiture, et la voiture transforme la région en excursions à la journée : la piste de ski d’Ounasvaara, la rivière, le parc animalier de Ranua à une heure au sud. Pour la seule soirée qui doit être parfaite, un chef privé prépare un menu dégustation arctique dans la suite."
+          ],
+          "night": "Chef privé et menu dégustation arctique dans la suite"
+        },
+        {
+          "title": "Soleil de minuit : Kakslauttanen et le lac Inari",
+          "season": "Juin",
+          "airport": "depuis l’aéroport d’Ivalo",
+          "story": [
+            "En juin, le soleil ne se couche pas à Kakslauttanen, et la villa en pin kelo avec la chambre de verre devient une autre maison : le toit qui encadre les aurores en hiver encadre maintenant un ciel encore clair à deux heures du matin. Le parc national Urho Kekkonen est à une courte distance en voiture.",
+            "Le lac Inari est à une heure de route vers le nord, et la croisière privée en bateau avec feu de camp est la soirée à réserver : c’est le troisième lac de Finlande par la taille, et la plus grande partie de ses rives n’a pas de route. De retour à la villa, le sauna et le bain nordique fonctionnent exactement comme en février."
+          ],
+          "night": "Croisière privée en bateau sur le lac Inari avec feu de camp"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Comment ça marche',
       h2: 'Nous vérifions et proposons. Vous réservez directement auprès de la maison.',
@@ -162,7 +216,7 @@ const fr: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Villas signature',
+      eyebrow: "Nos quatre choix",
       h2: 'Les quatre que nous recommandons le plus souvent.',
       lede: 'Les propriétés que nous recommandons le plus souvent. Chaque détail ci-dessous est vérifié à partir des informations de l\'exploitant et d\'avis récents, jamais recopié d\'une brochure.',
     },
@@ -223,7 +277,7 @@ const fr: SiteCopy = {
       { value: '32', label: 'Jours sans coucher de soleil à Rovaniemi, davantage plus au nord' },
       { value: '24 h', label: 'Lumière au pic, 21 juin' },
       { value: '+18 °C', label: 'Température diurne moyenne fin juin' },
-      { value: '50 %', label: 'Demande inférieure à la saison des aurores' },
+      { value: '68,9°N', label: 'Inari, notre destination la plus au nord, où elle dure le plus longtemps' },
     ],
     fourReasons: 'Quatre raisons',
     h2: 'La Laponie en été est un autre lieu.',
@@ -248,7 +302,7 @@ const fr: SiteCopy = {
       h2: 'Une note sur la préparation d’un voyage au soleil de minuit.',
       p1: 'La fenêtre est courte et les villas appartiennent à des propriétaires individuels, le calendrier se remplit donc au gré des occasions, pas uniformément. Mieux vaut demander tôt.',
       p2: 'Le bon moment pour s’enquérir d’un juin donné se situe entre janvier et mars de la même année. Les demandes plus tardives valent tout de même la peine, des libérations surviennent, mais le haut de gamme part souvent plus tôt.',
-      quoting: 'Nous répondons actuellement aux demandes pour les étés 2026 et 2027',
+      quoting: 'Nous répondons actuellement aux demandes pour l\'été {year}',
     },
     inquiryTitle: 'Renseignez-vous sur un voyage au soleil de minuit.',
     inquiryBody: 'Envoyez vos dates, le nombre de personnes et toute préférence. Une réponse arrive sous un jour ouvré avec les disponibilités de toute la collection d’été.',
@@ -451,13 +505,14 @@ fr.hero.experiences = { eyebrow: 'Expériences sur mesure', title: 'La journée,
 fr.hero.inquiry = { eyebrow: 'Demande privée', title: 'Un message privé, une présélection sur mesure.', lede: 'Envoyez dates, effectif et le type de voyage envisagé. Nous répondons en un jour ouvré.' }
 fr.hero.about = { eyebrow: 'À propos', title: 'Une liste courte, gardée courte volontairement.', lede: 'Huit villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme intermédiaire.' }
 fr.home = {
+  ...fr.home,
   philosophy: { eyebrow: 'Notre façon de travailler', h2: 'L\'opposé d\'une plateforme de réservation.',
     items: [
       { title: 'Une liste courte, pas un annuaire.', body: 'Huit villas et suites dans les destinations qui justifient réellement le voyage. Les propriétés sont plus souvent refusées qu\'ajoutées, chaque entrée de cette page est une que le voyageur attentionné peut réserver sans hésitation.' },
       { title: 'Planification anonyme.', body: 'Une seule boîte de réception privée, aucun profil public, aucun calendrier partagé avec des tiers. Envoyez dates, effectif et préférences, recevez une présélection en un jour ouvré.' },
       { title: 'Tarifs directs, là où ils existent.', body: 'Les annonces publiques renvoient vers des tarifs vérifiés. Lorsqu’aucun tarif n’est publié, c’est la maison qui le donne. Nous ne fixons pas les prix et ne prenons pas de réservations.' },
     ] },
-  signature: { eyebrow: 'Villas signature', h2: 'Les quatre que nous recommandons le plus souvent.', lede: 'Les propriétés les plus souvent recommandées. Chaque détail ci-dessous est vérifié à partir des informations de l\'exploitant et d\'avis récents, jamais copié d\'une brochure.' },
+  signature: { eyebrow: "Nos quatre choix", h2: 'Les quatre que nous recommandons le plus souvent.', lede: 'Les propriétés les plus souvent recommandées. Chaque détail ci-dessous est vérifié à partir des informations de l\'exploitant et d\'avis récents, jamais copié d\'une brochure.' },
   destinations: { eyebrow: 'Destinations', h2: 'Cinq lieux, chacun avec une raison claire.' },
 }
 Object.assign(fr.villasPage, {

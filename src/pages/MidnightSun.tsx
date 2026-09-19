@@ -9,6 +9,13 @@ import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
 
+/** Year of the next midnight-sun window (Jun 6 to Jul 7): this year until the window
+ *  closes in July, next year from August on. */
+const nextSummerYear = (): number => {
+  const d = new Date()
+  return d.getMonth() + 1 >= 8 ? d.getFullYear() + 1 : d.getFullYear()
+}
+
 export default function MidnightSun() {
   const lang = useLang()
   const to = useLocalePath()
@@ -146,7 +153,11 @@ export default function MidnightSun() {
           </p>
           <div className="inline-flex items-center gap-3 text-[color:var(--color-brass)] font-body text-sm">
             <Calendar size={14} />
-            <span className="tracking-[0.18em] uppercase">{c.midnightSunPage.planning.quoting}</span>
+            {/* The next midnight-sun window, computed: the Jun 6 to Jul 7 window of the
+                current year is over after July, so from August the line names next
+                year. Until 19.9.2026 this was a hard-coded "summer 2026 and 2027" in 12
+                languages and read as stale the day the window closed. */}
+            <span className="tracking-[0.18em] uppercase">{c.midnightSunPage.planning.quoting.replace('{year}', String(nextSummerYear()))}</span>
           </div>
         </div>
       </section>

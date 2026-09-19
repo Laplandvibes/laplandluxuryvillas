@@ -7,6 +7,8 @@ import GoogleRatingRow from './GoogleRatingRow'
 import EditorsPickChip from './EditorsPickChip'
 import { propertyForVilla, ctaPromisesProperty, type RankableProperty } from '../data/properties'
 import { formatRate } from '../lib/rate'
+import PhotoCredit from './PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 
 interface VillaCardProps {
   villa: Villa
@@ -47,11 +49,12 @@ export default function VillaCard({
   // so those cards say "view options" and land on the town instead.
   const promisesProperty = ctaPromisesProperty(property, lang)
   const detailPath = to(`/villas/${villa.slug}`)
+  const credit = creditFor(villa.image)
 
   return (
     <article className="card-onyx flex flex-col h-full overflow-hidden">
       <div
-        className="aspect-[16/10] sm:aspect-[4/3] w-full relative overflow-hidden"
+        className="aspect-[16/10] sm:aspect-[3/2] w-full relative overflow-hidden"
         style={{ background: villa.imageGradient }}
       >
         {villa.image && (
@@ -64,11 +67,17 @@ export default function VillaCard({
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/70 via-transparent to-transparent" />
-        <div className="absolute top-4 left-4">
-          <span className="eyebrow inline-flex items-center px-2.5 py-1 bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm text-[color:var(--color-brass)] border border-[color:var(--color-brass)]/30">
-            {c.tier[villa.tier]}
-          </span>
-        </div>
+        <PhotoCredit credit={credit} />
+        {/* Tier label only where it tells the reader something: "by inquiry only".
+            "Signature" and "Private Collection" were internal tiers printed on
+            every card; Vesa 19.9.2026: "mikä ihmeen signature lukee täällä?" */}
+        {villa.tier === 'reserve' && (
+          <div className="absolute top-4 left-4">
+            <span className="eyebrow inline-flex items-center px-2.5 py-1 bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm text-[color:var(--color-brass)] border border-[color:var(--color-brass)]/30">
+              {c.tier[villa.tier]}
+            </span>
+          </div>
+        )}
         {/* The earned mark rides on the IMAGE, opposite the tier badge.
             🔴 It used to be a block above the h3 (Vesa 2026-08-01: "toimituksen
             valinta menee ihan oudosti"). Only one card in a row ever carries
@@ -86,6 +95,14 @@ export default function VillaCard({
         )}
       </div>
 
+      {/* The card names a business; when the photograph is of something else
+          (Nellim: the village, because the hotel has no partner page and no
+          own file), the card says so in the reader's language. */}
+      {credit?.inPictureKey && (
+        <p className="px-5 sm:px-7 pt-3 text-[11px] leading-snug font-body text-[color:var(--color-bone)]/70">
+          {c.photo.inPicture.replace('{what}', c.photo[credit.inPictureKey])}
+        </p>
+      )}
       <div className="flex-1 flex flex-col p-5 sm:p-7">
         <div className="flex items-center gap-2 text-[color:var(--color-bone)]/75 text-xs font-body mb-3">
           <MapPin size={13} className="text-[color:var(--color-brass)]" />

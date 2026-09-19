@@ -132,7 +132,7 @@ export default function Villas() {
           {list.length === 0 ? (
             <p className="text-center text-[color:var(--color-bone)]/65 font-body">{c.villasPage.noVillas}</p>
           ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
               {list.map((v) => (
                 <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
               ))}

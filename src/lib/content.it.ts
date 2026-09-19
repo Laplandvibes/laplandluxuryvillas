@@ -11,7 +11,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'kakslauttanen-glass-igloo-suite': {
       tagline: 'Vetro termico riscaldato sopra una baita in pino kelo lavorata a mano: la camera aurora originale.',
       copy: [
-        'Una villa di tronchi indipendente con la propria camera dal tetto in vetro, cucina privata, salotto con camino e sauna finlandese. Il vetro termico resta limpido a −30 °C, cosi osservate l’aurora da un letto king-size senza lasciare il piumino.',
+        'Una villa di tronchi indipendente con la propria camera dal tetto in vetro, cucina privata, salotto con camino e sauna finlandese. Il vetro termico resta limpido a −30 °C, così osserva l’aurora da un letto king-size senza lasciare il piumino.',
         'Situata all’interno della tenuta Kakslauttanen, vicino al Parco Nazionale di Urho Kekkonen: 35 minuti di transfer privato dall’aeroporto di Ivalo. Disponibile la mezza pensione con il ristorante del resort; chef privato su richiesta.',
       ],
       signature: [
@@ -26,7 +26,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'arctic-treehouse-suite': {
       tagline: 'Suite a sbalzo firmata Studio Puisto, con facciata interamente vetrata rivolta verso l’aurora.',
       copy: [
-        'Una suite penthouse di 73 m² su pilastri, con vetrate dal pavimento al soffitto per l’intera larghezza. Progettata da Studio Puisto. Terrazza privata con vasca idromassaggio. L’edificio e stato costruito attorno a un singolo pino: ogni dettaglio degli interni e pensato per sparire, lasciando la foresta come unico soggetto nella stanza.',
+        'Una suite penthouse di 73 m² su pilastri, con vetrate dal pavimento al soffitto per l’intera larghezza. Progettata da Studio Puisto. Terrazza privata con vasca idromassaggio. L’edificio è stato costruito attorno a un singolo pino: ogni dettaglio degli interni è pensato per sparire, lasciando la foresta come unico soggetto nella stanza.',
         'A cinque minuti dal Villaggio di Babbo Natale: una base utile per le famiglie in viaggio nel periodo natalizio, che cercano un rifugio tranquillo la notte e un facile accesso a Rovaniemi di giorno.',
       ],
       signature: [
@@ -41,23 +41,23 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: 'Ventiquattro cabine di vetro affacciate solo sulla foresta e sull’ovale aurorale.',
       copy: [
-        'Inari si trova esattamente sotto l’ovale aurorale: statisticamente la latitudine piu affidabile d’Europa per l’aurora boreale. Aurora Village e una tenuta di 24 cabine senza traffico di passaggio, senza villaggi vicini all’orizzonte visibile. Le cabine sono distanziate per garantire la privacy, con il letto sotto il vetro e il divano rivolto verso di esso.',
-        'Il ristorante interno guidato dai Sami propone un menu degustazione attorno a renna, salmerino artico e camemoro. Gli allarmi aurora vengono trasmessi via radio da cabina a cabina, cosi nessuno sveglia la villa accanto.',
+        'Inari si trova esattamente sotto l’ovale aurorale, alla latitudine in cui l’Istituto meteorologico finlandese osserva l’aurora circa tre notti su quattro. Aurora Village è una tenuta di 24 cabine senza traffico di passaggio, senza villaggi vicini all’orizzonte visibile. Le cabine sono distanziate per garantire la privacy, con il letto sotto il vetro e il divano rivolto verso di esso.',
+        'Il ristorante interno guidato dai Sami propone un menu degustazione attorno a renna, salmerino artico e camemoro. Gli allarmi aurora vengono trasmessi via radio da cabina a cabina, così nessuno sveglia la villa accanto.',
       ],
       signature: [
         'Cabina dal tetto in vetro con il letto sotto l’apice',
         '24 cabine su una tenuta di 30 ettari, ampiamente distanziate',
         'Ristorante guidato dai Sami nella struttura, menu degustazione ogni sera',
         'Allarme aurora tramite radio in cabina',
-        'Inari e la latitudine aurorale piu affidabile dell’UE',
+        'Aurora osservata circa 3 notti su 4 a questa latitudine (FMI)',
         'Sentiero privato per ciaspolate gratuito dalla struttura',
       ],
     },
     'levin-iglut-golden-crown': {
       tagline: 'Igloo di vetro arroccati sopra la fell di Levi: l’unico gruppo di igloo della Lapponia rivolto a sud, verso la valle.',
       copy: [
-        'Quarantadue igloo di vetro disposti sulla spalla meridionale della fell di Levi. La maggior parte delle cabine aurora e rivolta a nord, verso una foresta spoglia; Levin Iglut e uno dei pochissimi a incorniciare le luci sopra lo skyline illuminato del villaggio della fell sottostante: meglio per i fotografi, piu suggestivo al tramonto.',
-        'A distanza pedonale dal villaggio di Levi (gondola, ristoranti, ski-in/ski-out), ma gli igloo in se restano tranquilli. Ristorante Aurora nella struttura, con lo chef che si rifornisce entro 100 km.',
+        'Quarantadue igloo di vetro disposti sulla spalla meridionale della fell di Levi. La maggior parte delle cabine aurora è rivolta a nord, verso una foresta spoglia; Levin Iglut è uno dei pochissimi a incorniciare le luci sopra lo skyline illuminato del villaggio della fell sottostante: meglio per i fotografi, più suggestivo al tramonto.',
+        'A distanza pedonale dal villaggio di Levi (gondola, ristoranti, ski-in/ski-out), ma gli igloo in sé restano tranquilli. Ristorante Aurora nella struttura, con lo chef che si rifornisce entro 100 km.',
       ],
       signature: [
         'Panorama aurorale rivolto a sud (raro per la Lapponia)',
@@ -71,7 +71,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'wilderness-hotel-nellim-aurora-bubble': {
       tagline: 'Una suite a bolla di vetro ai margini della foresta boreale, a venti minuti dal confine russo.',
       copy: [
-        'Nellim e un villaggio di frontiera funzionante (220 abitanti) sulla sponda orientale del lago Inari. Le bolle aurora sono collocate a parte rispetto alla lodge principale, in una radura propria, ciascuna con una cupola panoramica trasparente sopra il letto e una vasca idromassaggio a legna sotto il portico.',
+        'Nellim è un villaggio di frontiera funzionante (220 abitanti) sulla sponda orientale del lago Inari. Le bolle aurora sono collocate a parte rispetto alla lodge principale, in una radura propria, ciascuna con una cupola panoramica trasparente sopra il letto e una vasca idromassaggio a legna sotto il portico.',
         'La lodge propone serate culturali Sami, pesca sul ghiaccio nel lago e uno dei pochi programmi guidati e certificati di fotografia dell’aurora in Finlandia. Le camere si esauriscono con un anno di anticipo per il picco di febbraio.',
       ],
       signature: [
@@ -87,7 +87,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Una suite con pareti di vetro sulla vetta della fell di Kaunispää, sopra il limite del bosco e sopra le luci del villaggio.',
       copy: [
         'Star Arctic si trova proprio in cima a Kaunispää, la fell che si erge direttamente dal villaggio di Saariselkä. Le suite Skyview hanno pareti di vetro a tutta altezza su tre lati, nessuna tenda e un’altitudine sufficiente a superare la linea degli alberi locale, offrendo un autentico panorama di 270° dal letto.',
-        'La strada per la vetta e privata e illuminata di notte, cosi gli ospiti possono guidare da soli. L’hotel dispone di un proprio osservatorio, un ristorante e una flotta di fat-bike per l’estate.',
+        'La strada per la vetta è privata e illuminata di notte, così gli ospiti possono guidare da soli. L’hotel dispone di un proprio osservatorio, un ristorante e una flotta di fat-bike per l’estate.',
       ],
       signature: [
         'Vetro a 270° sulla vetta, sopra il limite del bosco',
@@ -116,8 +116,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'apukka-resort-aurora-cabin': {
       tagline: 'Vagoni aurora in stile storico sulla riva di un lago ghiacciato, a dieci minuti dall’aeroporto di Rovaniemi.',
       copy: [
-        'Alcuni vagoni ferroviari d’epoca restaurati e ricostruiti come cabine aurora dal tetto in vetro, collocati proprio sul bordo del lago Apukkajärvi. Comodi se avete solo due notti e volete atterrare, fare il transfer ed essere a letto sotto il vetro nel giro di un’ora.',
-        'Fattoria di husky, renne, pesca sul ghiaccio e percorso in motoslitta verso la natura selvaggia nella struttura. I vagoni in se sono intimi (una camera, un bagno, salotto); il resort gestisce tutta la logistica delle attivita.',
+        'Alcuni vagoni ferroviari d’epoca restaurati e ricostruiti come cabine aurora dal tetto in vetro, collocati proprio sul bordo del lago Apukkajärvi. Comodo se ha solo due notti e vuole atterrare, fare il transfer ed essere a letto sotto il vetro nel giro di un’ora.',
+        'Fattoria di husky, renne, pesca sul ghiaccio e percorso in motoslitta verso la natura selvaggia nella struttura. I vagoni in sé sono intimi (una camera, un bagno, salotto); il resort gestisce tutta la logistica delle attività.',
       ],
       signature: [
         'Design a vagone ferroviario storico, camera dal tetto in vetro',
@@ -133,37 +133,37 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Il polo del lusso aurorale della Finlandia settentrionale: Kakslauttanen, Star Arctic, il margine selvaggio di Urho Kekkonen.',
       copy: [
-        'Saariselkä sorge sul margine settentrionale del Parco Nazionale di Urho Kekkonen, una delle piu vaste aree selvagge della Finlandia, ed e il villaggio che ha definito gli alloggi aurora dal tetto in vetro. La maggior parte delle cabine di vetro piu note del paese (Kakslauttanen, Star Arctic, Northern Lights Village) si trova entro 10 km dal villaggio.',
-        'Il villaggio in se e piccolo e percorribile a piedi: una strada principale, qualche ristorante e accesso diretto al parco nazionale. L’aeroporto di Ivalo dista 27 km, circa mezz’ora di transfer privato, e serve sia voli di linea sia charter privati.',
+        'Saariselkä sorge sul margine settentrionale del Parco Nazionale di Urho Kekkonen, il secondo parco nazionale più esteso della Finlandia con 2.550 km², ed è il villaggio che ha definito gli alloggi aurora dal tetto in vetro. La maggior parte delle cabine di vetro più note del paese (Kakslauttanen, Star Arctic, Northern Lights Village) si trova entro 10 km dal villaggio.',
+        'Il villaggio in sé è piccolo e percorribile a piedi: una strada principale, qualche ristorante e accesso diretto al parco nazionale. L’aeroporto di Ivalo dista 27 km, circa mezz’ora di transfer privato, e serve sia voli di linea sia charter privati.',
       ],
       highlights: [
-        'Kakslauttanen Arctic Resort, la proprieta dal tetto in vetro originale',
+        'Kakslauttanen Arctic Resort, la proprietà dal tetto in vetro originale',
         'Star Arctic Hotel, suite in vetta sulla fell di Kaunispää',
         'Accesso diretto al Parco Nazionale di Urho Kekkonen (di grado wilderness)',
         'Aeroporto di Ivalo, abilitato ai charter privati, transfer di 30 min',
       ],
       arrival: 'Ivalo (IVL), 27 km, circa 30 min con transfer privato',
-      auroraNote: 'Foresta boreale interna, senza luci di insediamenti per decine di chilometri in ogni direzione. Le fell offrono un orizzonte alto e aperto, cio che conta nelle notti in cui l’arco resta basso a nord.',
+      auroraNote: 'Foresta boreale interna, senza luci di insediamenti per decine di chilometri in ogni direzione. Le fell offrono un orizzonte alto e aperto, ciò che conta nelle notti in cui l’arco resta basso a nord.',
     },
     'inari': {
-      position: 'La nostra destinazione piu settentrionale, dove l’aurora si osserva circa tre notti su quattro. Cuore Sami, lago Inari, cieli bui.',
+      position: 'La nostra destinazione più settentrionale, dove l’aurora si osserva circa tre notti su quattro. Cuore Sami, lago Inari, cieli bui.',
       copy: [
-        'Inari e il comune piu esteso della Finlandia e la capitale culturale dei Sami finlandesi. Il villaggio sorge sul lago Inari, il terzo lago piu grande della Finlandia, con circa 3.000 isole, oltre 200 km a nord del circolo polare e senza alcuna luce di citta all’orizzonte.',
-        'Per il viaggio di lusso questo significa due cose. Primo: a questa latitudine l’Istituto meteorologico finlandese osserva l’aurora circa tre notti su quattro, e appare allo zenit anziche bassa a nord. Secondo: le tenute di tronchi in riva al lago sono tra gli alloggi piu tranquilli della Lapponia: nessun traffico di passaggio, nessun villaggio vicino all’orizzonte visibile.',
+        'Inari è il comune più esteso della Finlandia e la capitale culturale dei Sami finlandesi. Il villaggio sorge sul lago Inari, il terzo lago più grande della Finlandia, con circa 3.000 isole, oltre 200 km a nord del circolo polare e senza alcuna luce di città all’orizzonte.',
+        'Per il viaggio di lusso questo significa due cose. Primo: a questa latitudine l’Istituto meteorologico finlandese osserva l’aurora circa tre notti su quattro, e appare allo zenit anziché bassa a nord. Secondo: le tenute di tronchi in riva al lago sono tra gli alloggi più tranquilli della Lapponia: nessun traffico di passaggio, nessun villaggio vicino all’orizzonte visibile.',
       ],
       highlights: [
         'Aurora Village, tenuta di cabine di vetro di 30 ettari costruita su misura',
         'Wilderness Hotel Nellim, bolle aurora sulla sponda est del lago Inari',
         'Museo Sami SIIDA + programmi culturali tutto l’anno',
-        'Lago Inari, il terzo lago della Finlandia, circa 3 000 isole',
+        'Lago Inari, il terzo lago della Finlandia, circa 3.000 isole',
       ],
       arrival: 'Ivalo (IVL), 40 km, circa 40 min con transfer privato',
-      auroraNote: 'La nostra destinazione piu settentrionale e quella in cui l’aurora appare piu spesso allo zenit anziche bassa a nord. Il lago Inari offre un orizzonte ininterrotto, senza luci di villaggio sopra.',
+      auroraNote: 'La nostra destinazione più settentrionale è quella in cui l’aurora appare più spesso allo zenit anziché bassa a nord. Il lago Inari offre un orizzonte ininterrotto, senza luci di villaggio sopra.',
     },
     'rovaniemi': {
-      position: 'La citta d’arrivo. Suite firmate da architetti, voli diretti giornalieri dai principali hub.',
+      position: 'La città d’arrivo. Suite firmate da architetti, voli diretti giornalieri dai principali hub.',
       copy: [
-        'Rovaniemi e il capoluogo regionale della Lapponia e la destinazione aurorale piu facile da raggiungere, piu voli diretti giornalieri da Helsinki, oltre a voli diretti stagionali da Londra, Francoforte, Parigi, Vienna e dal Golfo. L’aeroporto e a circa 10 km a nord del centro citta, dieci o quindici minuti in auto.',
+        'Rovaniemi è il capoluogo regionale della Lapponia e la destinazione aurorale più facile da raggiungere, numerosi voli diretti giornalieri da Helsinki, oltre a voli diretti stagionali da Londra, Francoforte, Parigi, Vienna e dal Golfo. L’aeroporto è a circa 10 km a nord del centro città, dieci o quindici minuti in auto.',
         'L’offerta di lusso qui ruota attorno a suite di design firmate da architetti entro dieci minuti dall’aeroporto (Arctic TreeHouse, Apukka). I transfer in elicottero dall’aeroporto verso le riserve remote sono comuni.',
       ],
       highlights: [
@@ -171,14 +171,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Apukka Resort, vagoni aurora storici sul lago Apukkajärvi',
         'Voli diretti da Londra / Francoforte / Vienna / Doha (stagionali)',
       ],
-      arrival: 'Rovaniemi (RVN), 10 km, 10-15 min dal centro citta',
-      auroraNote: 'La nostra destinazione piu meridionale e l’unica con le luci di una citta all’orizzonte, quindi l’aurora qui e insieme meno frequente e piu difficile da vedere. Da abbinare ad almeno una notte in un villaggio di fell piu a nord.',
+      arrival: 'Rovaniemi (RVN), 10 km, 10-15 min dal centro città',
+      auroraNote: 'La nostra destinazione più meridionale è l’unica con le luci di una città all’orizzonte, quindi l’aurora qui è insieme meno frequente e più difficile da vedere. Da abbinare ad almeno una notte in un villaggio di fell più a nord.',
     },
     'levi': {
       position: 'La principale stazione sciistica della Finlandia. Chalet di lusso sul versante sud, ski-in / ski-out dalla gondola di Levi.',
       copy: [
-        'Levi e la stazione di fell piu sviluppata della Lapponia, un completo villaggio di sport invernali con 44 piste e 26 impianti, due dei quali gondole. Il mercato del noleggio di chalet di design e diventato serio nell’ultimo decennio. La gondola va dal centro del villaggio alla vetta a 531 metri; sul versante sud sorgono gli chalet privati, e li apre una nuova seggiovia per la stagione 2026-2027.',
-        'La visibilita dell’aurora da Levi e rivolta a sud e suggestiva, cosa rara per la Lapponia, e lo skyline illuminato del villaggio entra a far parte della fotografia. Da abbinare a una o due notti piu a nord (Inari o Saariselkä) per una vera aurora wilderness, prima di tornare qui per lo sci.',
+        'Levi è la stazione di fell più sviluppata della Lapponia, un completo villaggio di sport invernali con 44 piste e 26 impianti, due dei quali gondole. Il mercato del noleggio di chalet di design è diventato serio nell’ultimo decennio. La gondola va dal centro del villaggio alla vetta a 531 metri; sul versante sud sorgono gli chalet privati, e lì apre una nuova seggiovia per la stagione 2026-2027.',
+        'La visibilità dell’aurora da Levi è rivolta a sud e suggestiva, cosa rara per la Lapponia, e lo skyline illuminato del villaggio entra a far parte della fotografia. Da abbinare a una o due notti più a nord (Inari o Saariselkä) per una vera aurora wilderness, prima di tornare qui per lo sci.',
       ],
       highlights: [
         'Levin Iglut, igloo di vetro rivolti a sud sopra il villaggio di fell',
@@ -187,29 +187,29 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'L’aeroporto di Kittilä (KTT) serve voli internazionali diretti stagionali',
       ],
       arrival: 'Kittilä (KTT), 15 km, circa 20 min con transfer privato',
-      auroraNote: 'Un panorama rivolto a sud, cosa rara in Lapponia: il villaggio illuminato diventa il primo piano della fotografia. Il prezzo e proprio quella luce, quindi la vista piu buia e a pochi minuti di auto.',
+      auroraNote: 'Un panorama rivolto a sud, cosa rara in Lapponia: il villaggio illuminato diventa il primo piano della fotografia. Il prezzo è proprio quella luce, quindi la vista più buia e a pochi minuti di auto.',
     },
     'yllas': {
-      position: 'L’alternativa tranquilla a Levi. Parco nazionale Pallas-Yllästunturi, meno folla, foresta piu profonda.',
+      position: 'L’alternativa tranquilla a Levi. Parco nazionale Pallas-Yllästunturi, meno folla, foresta più profonda.',
       copy: [
-        'Ylläs conta 62 piste, piu di ogni altro comprensorio sciistico della Finlandia, e le discese piu lunghe del paese: oltre tre chilometri dalla vetta spoglia a 719 metri fino a valle. Sembra comunque una frazione di Levi, perche il villaggio e disperso su due insediamenti (Äkäslompolo e Ylläsjärvi), separati da 15 km di fell e dal Parco Nazionale Pallas-Yllästunturi.',
-        'Per il viaggio di lusso l’attrattiva e lo spazio. Gli chalet firmati da architetti qui sorgono isolati sul fianco della fell, i sentieri del parco nazionale partono dalla proprieta, e il silenzio e cio per cui la gente paga davvero. La rete di fondo misura circa 300 chilometri, di cui oltre 30 illuminati.',
+        'Ylläs conta 62 piste, più di ogni altro comprensorio sciistico della Finlandia, e le discese più lunghe del paese: oltre tre chilometri dalla vetta spoglia a 719 metri fino a valle. Sembra comunque una frazione di Levi, perché il villaggio è disperso su due insediamenti (Äkäslompolo e Ylläsjärvi), separati da 15 km di fell e dal Parco Nazionale Pallas-Yllästunturi.',
+        'Per il viaggio di lusso l’attrattiva è lo spazio. Gli chalet firmati da architetti qui sorgono isolati sul fianco della fell, i sentieri del parco nazionale partono dalla proprietà, e il silenzio è ciò per cui la gente paga davvero. La rete di fondo misura circa 300 chilometri, di cui oltre 30 illuminati.',
       ],
       highlights: [
-        'Parco Nazionale Pallas-Yllästunturi, il 3° piu grande della Finlandia',
+        'Parco Nazionale Pallas-Yllästunturi, il 3° più grande della Finlandia',
         'Due villaggi sciistici sui lati opposti della fell di Ylläs',
-        'Inquinamento luminoso piu basso di qualsiasi altra stazione sciistica',
+        'Inquinamento luminoso più basso di qualsiasi altra stazione sciistica',
         'Circa 300 km di piste da fondo battute, oltre 30 km illuminati',
       ],
       arrival: 'Kittilä (KTT), 40 km, circa 45 min con transfer privato',
-      auroraNote: 'Gli chalet sorgono addossati al parco nazionale anziche in mezzo a una stazione, quindi si esce dalla porta direttamente nel buio invece di doverlo cercare in auto.',
+      auroraNote: 'Gli chalet sorgono addossati al parco nazionale anziché in mezzo a una stazione, quindi si esce dalla porta direttamente nel buio invece di doverlo cercare in auto.',
     },
   },
   experiences: {
     'private-aurora-photography-night': {
-      hook: 'Una sola guida, il vostro gruppo e un veicolo fotografico riscaldato che segue le previsioni ovunque puntino.',
+      hook: 'Una sola guida, il Suo gruppo e un veicolo fotografico riscaldato che segue le previsioni ovunque puntino.',
       copy: [
-        'Una caccia all’aurora privata di sei ore con una guida finlandese certificata di fotografia naturalistica. Il veicolo e riscaldato e attrezzato; treppiedi, scatti flessibili e fotocamere adatte all’artico vengono prestati se non portate i vostri. Il percorso si decide nel pomeriggio stesso in base all’indice Kp e alle previsioni di nuvolosita.',
+        'Una caccia all’aurora privata di sei ore con una guida finlandese certificata di fotografia naturalistica. Il veicolo è riscaldato e attrezzato; treppiedi, scatti flessibili e fotocamere adatte all’artico vengono prestati se non porta i Suoi. Il percorso si decide nel pomeriggio stesso in base all’indice Kp e alle previsioni di nuvolosità.',
         'Cibo caldo e pelli di renna come isolante dal suolo sono di serie. L’istruzione copre l’esposizione per l’aurora stessa, la composizione del primo piano e la post-produzione la sera stessa.',
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, set–apr',
@@ -218,23 +218,23 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       hook: 'Un volo notturno in elicottero di 45 minuti sopra lo strato di nubi, fino alle aurore stesse.',
       copy: [
         'Operato da un operatore di elicotteri certificato per il volo notturno VFR, da Rovaniemi e Ivalo. Il volo supera lo strato di nubi locale e gira all’interno dell’ovale aurorale attivo: una prospettiva impossibile da terra.',
-        'La fotografia a terra e inclusa su entrambi i lati del volo; la parte in volo e dedicata all’esperienza in se, non alla fotocamera. Massimo quattro passeggeri per AS350. Soggetto a finestra meteo: l’operatore segue le previsioni e avvisa il giorno prima.',
+        'La fotografia a terra è inclusa su entrambi i lati del volo; la parte in volo è dedicata all’esperienza in sé, non alla fotocamera. Massimo quattro passeggeri per AS350. Soggetto a finestra meteo: l’operatore segue le previsioni e avvisa il giorno prima.',
       ],
       available: 'Rovaniemi, Ivalo, ott–mar (dipende dal meteo)',
     },
     'private-chef-arctic-tasting': {
-      hook: 'Un menu degustazione finlandese-sami di nove portate cucinato nella cucina della vostra villa da uno chef in attivita della Lapponia.',
+      hook: 'Un menu degustazione finlandese-sami di nove portate cucinato nella cucina della Sua villa da uno chef in attività della Lapponia.',
       copy: [
-        'Uno chef in attivita di una delle cucine serie della Lapponia viene nella vostra villa per una serata. Il menu si costruisce attorno a cio che e davvero di stagione quella settimana: salmerino artico d’acqua fredda, camemoro, renna affumicata, funghi di bosco freschi, olivello spinoso, ginepro.',
+        'Uno chef in attività di una delle cucine serie della Lapponia viene nella Sua villa per una serata. Il menu si costruisce attorno a ciò che è davvero di stagione quella settimana: salmerino artico d’acqua fredda, camemoro, renna affumicata, funghi di bosco freschi, olivello spinoso, ginepro.',
         'Comprende un abbinamento di vini curato per il menu, gli ingredienti, la preparazione, il servizio e la pulizia. Massimo dieci ospiti. Menu vegetariano, senza glutine e senza crostacei su richiesta, con almeno 72 ore di preavviso.',
       ],
       available: 'Qualsiasi villa della collezione, tutto l’anno',
     },
     'private-husky-safari': {
-      hook: 'Il vostro tiro di cani, la vostra guida del canile, nella foresta boreale alle prime luci.',
+      hook: 'Il Suo tiro di cani, la Sua guida del canile, nella foresta boreale alle prime luci.',
       copy: [
-        'Un tiro privato di sedici cani da slitta e una guida del canile. Il percorso si addentra nella rete di sentieri di lavoro di un serio canile di cani da slitta, di norma 35 km, con una sosta accanto al fuoco per succo caldo di mirtillo rosso e salsiccia alla griglia a meta strada.',
-        'Guidate la vostra slitta (prima un briefing di 20 minuti). Tute di lana, manopole e stivali artici sono forniti. Gruppo da due a sei: niente gruppi condivisi, mai abbinati a estranei.',
+        'Un tiro privato di sedici cani da slitta e una guida del canile. Il percorso si addentra nella rete di sentieri di lavoro di un serio canile di cani da slitta, di norma 35 km, con una sosta accanto al fuoco per succo caldo di mirtillo rosso e salsiccia alla griglia a metà strada.',
+        'Guidi la Sua slitta (prima un briefing di 20 minuti). Tute di lana, manopole e stivali artici sono forniti. Gruppo da due a sei: niente gruppi condivisi, mai abbinati a estranei.',
       ],
       available: 'Rovaniemi, Levi, Saariselkä, dic–apr',
     },
@@ -247,25 +247,25 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Saariselkä, Inari, Levi, dic–apr',
     },
     'private-reindeer-sami-evening': {
-      hook: 'Slitta trainata da renne in una fattoria in attivita, poi una serata in una kota privata con un ospite Sami.',
+      hook: 'Slitta trainata da renne in una fattoria in attività, poi una serata in una kota privata con un ospite Sami.',
       copy: [
-        'Due ore di slitta trainata da renne in una fattoria di pastorizia in attivita, seguite da una serata privata in una kota riscaldata (tenda conica con fuoco aperto). L’ospite e un allevatore di renne Sami che gestisce la fattoria: la conversazione, non un copione, e l’esperienza.',
-        'La cena e renna saltata con pure di patate e mirtillo rosso, preparata sul fuoco aperto. Racconti sulla mandria, sull’anno della transumanza e sulla tradizione del canto joik. Massimo dodici ospiti.',
+        'Due ore di slitta trainata da renne in una fattoria di pastorizia in attività, seguite da una serata privata in una kota riscaldata (tenda conica con fuoco aperto). L’ospite è un allevatore di renne Sami che gestisce la fattoria: la conversazione, non un copione, è l’esperienza.',
+        'La cena è renna saltata con purè di patate e mirtillo rosso, preparata sul fuoco aperto. Racconti sulla mandria, sull’anno della transumanza e sulla tradizione del canto joik. Massimo dodici ospiti.',
       ],
       available: 'Inari, Saariselkä, tutto l’anno (slitta dic–mar)',
     },
     'private-jet-arrival': {
       hook: 'Transfer diretto in jet privato verso Ivalo, Kittilä o Rovaniemi: niente check-in commerciale, niente hub di transito.',
       copy: [
-        'Coordinato tramite i nostri partner jet a Helsinki, Ginevra e Doha. Voli diretti verso Ivalo (il piu vicino alle ville di Saariselkä / Inari), Kittilä (il piu vicino alle ville di Levi / Ylläs) o Rovaniemi (ideale per l’Arctic TreeHouse).',
-        'Assistenza completa: transfer a terra fino alla vostra villa con un veicolo riscaldato di specifica artica, bagagli inoltrati, dogana sbrigata senza coda. L’operatore prenota lo slot e accorda l’arrivo all’orario di check-in della villa.',
+        'Coordinato tramite i nostri partner jet a Helsinki, Ginevra e Doha. Voli diretti verso Ivalo (il più vicino alle ville di Saariselkä / Inari), Kittilä (il più vicino alle ville di Levi / Ylläs) o Rovaniemi (ideale per l’Arctic TreeHouse).',
+        'Assistenza completa: transfer a terra fino alla Sua villa con un veicolo riscaldato di specifica artica, bagagli inoltrati, dogana sbrigata senza coda. L’operatore prenota lo slot e accorda l’arrivo all’orario di check-in della villa.',
       ],
       available: 'Tutte le destinazioni, tutto l’anno',
     },
     'helicopter-villa-transfer': {
-      hook: 'Sollevamento dall’aeroporto regionale direttamente alla piazzola della vostra villa: niente transfer su strada.',
+      hook: 'Sollevamento dall’aeroporto regionale direttamente alla piazzola della Sua villa: niente transfer su strada.',
       copy: [
-        'Usato piu spesso per gli arrivi alle tenute private di tronchi in riva al lago Inari. Il velivolo e lo stesso AS350 usato per i voli aurora; un singolo settore richiede dai 20 ai 45 minuti.',
+        'Usato più spesso per gli arrivi alle tenute private di tronchi in riva al lago Inari. Il velivolo è lo stesso AS350 usato per i voli aurora; un singolo settore richiede dai 20 ai 45 minuti.',
         'Massimo cinque passeggeri + bagagli. L’operatore accorda il sollevamento al check-in della villa e alla finestra di luce diurna, che nel cuore dell’inverno è solo qualche ora di crepuscolo attorno a mezzogiorno: alla latitudine di Inari il sole non sorge affatto.',
       ],
       available: 'Rovaniemi, Ivalo → tenute del lago Inari',

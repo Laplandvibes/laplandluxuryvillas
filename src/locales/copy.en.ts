@@ -65,6 +65,13 @@ const en: SiteCopy = {
     verifiedOn: 'Checked {d}',
     ratingScope: 'Rating is for the whole property, {p}',
   },
+  photo: {
+    "credit": "Photo",
+    "inPicture": "In the picture: {what}",
+    "cropped": "cropped",
+    "nellim": "Nellim village on the shore of Lake Inari, not the hotel itself",
+    "heroWinter": "Aurora over a lit lodge at Saariselkä, February 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
@@ -116,7 +123,7 @@ const en: SiteCopy = {
     home: {
       eyebrow: '{n} villas · {m} destinations',
       title: 'A Lapland villa, without the guesswork.',
-      lede: 'Every property here is checked against its own published information and recent guest reviews. Book directly with the property, or tell us your dates and party and we will suggest the best fits within a day.',
+      lede: "{n} glass-roof villas and designer suites in {m} Lapland destinations, each with its own booking page and its Google rating in view. Send your dates and get a shortlist within a day.",
       primary: 'See the villas',
       secondary: 'Ask for suggestions',
     },
@@ -159,6 +166,53 @@ const en: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Ready-made weeks",
+      "h2": "Three Lapland weeks, planned down to the last evening.",
+      "lede": "Pick the villa, add the car from the airport and book the one evening that has to be right. Every link below goes to the partner's own booking page, with the price in view.",
+      "season": "Season",
+      "stay": "Where you sleep",
+      "car": "How you get around",
+      "night": "The evening to book ahead",
+      "home": "What comes home with you",
+      "homeLede": "The table you ate at for a week: Iittala, Marimekko and Kosta Boda from one Nordic shop.",
+      "carFrom": "Rental car {airport}, picked up at the terminal",
+      "ctaCar": "See car prices",
+      "ctaNight": "See the tour",
+      "ctaNightInquiry": "Send an inquiry",
+      "items": [
+        {
+          "title": "A week of auroras above Saariselkä",
+          "season": "September to March",
+          "airport": "from Ivalo airport",
+          "story": [
+            "The forecast says clear. You have been in the Skyview Suite since the afternoon, the sauna is still warm, and the sky over Kaunispää has turned the hard, dark blue it takes on before the lights come. The bed faces the glass wall, so the waiting happens lying down.",
+            "Ivalo airport is about half an hour away by road, and that is the reason to have a car: the best aurora spots around Saariselkä are off the bus routes, and a heated car with the engine running is the warmest hide there is. The private photography night is the one thing to book before you fly; the guide picks the direction that afternoon from the cloud map."
+          ],
+          "night": "Private aurora photography night with a guide"
+        },
+        {
+          "title": "Christmas week in Rovaniemi, quiet after dark",
+          "season": "December to January",
+          "airport": "from Rovaniemi airport",
+          "story": [
+            "Five minutes from Santa Claus Village, and once the last elf has gone home the forest around the Arctic TreeHouse falls silent. The suite's glass wall faces north; the hot tub is on the terrace outside it. Children asleep in the room, parents on the terrace: this is the Rovaniemi week that works.",
+            "Rovaniemi airport is a few minutes' drive, so a car turns the region into day trips: the ski hill at Ounasvaara, the river, the zoo at Ranua an hour to the south. For the one evening that has to be perfect, a private chef cooks an Arctic tasting menu in the suite."
+          ],
+          "night": "Private chef and an Arctic tasting menu in the suite"
+        },
+        {
+          "title": "Midnight sun: Kakslauttanen and Lake Inari",
+          "season": "June",
+          "airport": "from Ivalo airport",
+          "story": [
+            "In June the sun does not set at Kakslauttanen, and the kelo-pine villa with the glass bedroom is a different house: the roof that frames auroras in winter now frames a sky that is still light at two in the morning. Urho Kekkonen National Park is a short drive away.",
+            "Lake Inari is an hour north by car, and the private boat cruise with a campfire is the evening to book: it is Finland's third-largest lake, and most of its shore has no road. Back at the villa, the sauna and the hot tub work exactly as they do in February."
+          ],
+          "night": "Private boat cruise on Lake Inari with a campfire"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'How this works',
       h2: 'We vet and suggest. You book directly with the property.',
@@ -169,7 +223,7 @@ const en: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Signature villas',
+      eyebrow: "Our four picks",
       h2: 'The four we recommend most often.',
       lede: 'Every detail below is checked against the operator\'s published information and recent guest reviews, not lifted from a brochure.',
     },
@@ -190,7 +244,7 @@ const en: SiteCopy = {
   suitesPage: {
     intro: {
       p1Pre: '“Suite” in Lapland means two quite different things, and both are worth knowing. The first is the ',
-      designerSuite: 'designer-suite',
+      designerSuite: 'designer suite',
       p1Mid: ', where a Finnish architecture studio such as Studio Puisto has built a single bedroom around a single view. The second is the ',
       glassRoof: 'glass-roof cabin',
       p1Post: ', where the ceiling is the headline detail. Both are listed below.',
@@ -255,7 +309,7 @@ const en: SiteCopy = {
       h2: 'A note on planning a midnight-sun trip.',
       p1: 'The window is short, and the villas are individually owned, so the calendar fills unevenly rather than neatly. It is worth asking early.',
       p2: 'For a given June, the time to ask is between January and March of that same year. Later is still worth a message, because dates do come free, but the very top of the list usually goes first.',
-      quoting: 'Now answering inquiries for summer 2026 and 2027',
+      quoting: 'Now answering inquiries for summer {year}',
     },
     inquiryTitle: 'Inquire about a midnight-sun trip.',
     inquiryBody: 'Send your dates, how many of you there are and any preferences. A reply lands within one working day with what is free across the summer collection.',

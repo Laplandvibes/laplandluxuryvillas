@@ -1,0 +1,52 @@
+{
+  "_ohje": "Nimetyn, varattavan yrityksen kuvan alkupera. Portti: node scripts/audit_kohdekuvat.mjs (monorepon juuressa, osa npm testia). Sallitut lajit: 'oma-valokuva' = LV:n itse ottama kuva oikeasta paikasta, 'kumppanin-tiedosto' = yrityksen itse toimittama tai julkaisema kuva, 'varalla' = kirjattu muttei kaytossa. AI ja stock EIVAT ole sallittuja nimetylle yritykselle: _jobs/01-kuvat.md SS0 ja SS6.5, CLAUDE.md Images 11.9.2026. Taysi kuitti (CDN-osoite, lukupaiva, rajaus) src/data/photoCredits.ts. Nellimin kortti nayttaa KYLAN Commons-kuvalla ja sanoo sen kuvatekstissa 12 kielella; se ei ole yrityksen kuva eika siksi tassa.",
+  "/images/villas/kakslauttanen-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Kakslauttanen Arctic Resort, Saariselka",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 1679682), haettu scripts/fetch-sembo-media.mjs 19.9.2026 samalta sivulta jonne kortin fi-varausnappi vie. Gallerian kuva 1/5 (ilmakuva lasi-igluista sinisella hetkella), taysikokoinen tiedosto hotellikuva-CDN:sta, rajattu 3:2, 1600x1066 webp q82.",
+    "lisatty": "2026-09-19",
+    "korvasi": "villa-kakslauttanen.webp/.avif — AI-piirros (gpt-image-1, 880fbf1). Talteen _reissu-2026-07/_ai-originals-backup/laplandluxuryvillas-new/."
+  },
+  "/images/villas/arcticTreeHouse-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Arctic TreeHouse Hotel, Rovaniemi",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 922953), 19.9.2026. Gallerian kuva 1/6 (sviitti pylvailla lumisessa metsassa), alkuperainen 2456x3072 CDN:sta, rajattu 3:2 keskelta, 1600x1066 webp q82. Eri ruutu kuin hoteldealsin ja wellnessin kortti (mitattu 19.9.).",
+    "lisatty": "2026-09-19",
+    "korvasi": "villa-arctic-treehouse.webp/.avif — AI-piirros."
+  },
+  "/images/villas/auroraVillage-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Aurora Village Ivalo, Inari",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 422560), 19.9.2026. Gallerian kuva 1/6 (revontulet lasimokkien ylla), rajattu 3:2, 1600x1066 webp q82.",
+    "lisatty": "2026-09-19",
+    "korvasi": "villa-aurora-village.webp/.avif — AI-piirros."
+  },
+  "/images/villas/levinIglut-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Levin Iglut (Golden Crown), Levi",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 2512109), 19.9.2026. Gallerian kuva 6/6 (Levin kyla ja valaistut rinteet yolla, igluista katsottuna), rajattu 3:2, webp q82. Eri ruutu kuin hoteldealsin kortti (#1).",
+    "lisatty": "2026-09-19",
+    "korvasi": "villa-levin-iglut.webp/.avif — AI-piirros."
+  },
+  "/images/villas/starArctic-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Star Arctic Hotel, Saariselka (Kaunispaa)",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 1595634), 19.9.2026. Gallerian kuva 1/6 (ilmakuva hotellista tunturin laella talvella), rajattu 3:2, webp q82.",
+    "lisatty": "2026-09-19",
+    "korvasi": "villa-star-arctic.webp/.avif — AI-piirros."
+  },
+  "/images/villas/apukka-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Apukka Resort, Rovaniemi",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 656849), 19.9.2026. Gallerian kuva 1/5 (ilmakuva resortista talvella), rajattu 3:2, webp q82.",
+    "lisatty": "2026-09-19",
+    "korvasi": "villa-apukka.webp/.avif — AI-piirros."
+  },
+  "/images/villas/laplandHotelsSaaga-sembo.webp": {
+    "laji": "kumppanin-tiedosto",
+    "kohde": "Lapland Hotels Saaga, Yllasjarvi",
+    "lahde": "Kohteen oma valokuva Sembon hotellisivulta (hotelli 1741117), 19.9.2026. Gallerian kuva 2/5 (hotellin julkisivu lumessa), rajattu 3:2, webp q82. Kortilla ei ollut ennen kuvaa lainkaan.",
+    "lisatty": "2026-09-19",
+    "korvasi": "ei mitaan (pelkka liukuvari)"
+  }
+}

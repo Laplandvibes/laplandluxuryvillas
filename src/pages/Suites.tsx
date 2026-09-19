@@ -57,7 +57,7 @@ export default function Suites() {
               mainosinventaaria vaikka se esittelee kuutta nimettyä kohdetta. */}
           <FeaturedPartnerSlot placement="suites" locale={lang} />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
             {SUITES.map((v) => (
               <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
             ))}

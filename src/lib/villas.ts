@@ -99,7 +99,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 2,
     sleeps: 4,
     bookingUrl: PS.kakslauttanen,
-    image: '/images/villa-kakslauttanen.webp',
+    image: '/images/villas/kakslauttanen-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #0F1F3A 0%, #1A2F4F 45%, #0A1628 100%)',
   },
   {
@@ -124,7 +124,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.arcticTreeHouse,
-    image: '/images/villa-arctic-treehouse.webp',
+    image: '/images/villas/arcticTreeHouse-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #2A1810 0%, #1A0F08 50%, #0F0805 100%)',
   },
   {
@@ -136,12 +136,12 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tagline: 'Twenty-four glass cabins facing nothing but forest and the aurora oval.',
     copy: [
       'Inari sits under the auroral oval, at the latitude where the Finnish Meteorological Institute observes the aurora on about three nights in four. Aurora Village is a 24-cabin estate with no through traffic and no neighbouring villages on the visible horizon. The cabins are spaced for privacy, with the bed under the glass and the sofa facing it.',
-      'The on-site Sami-led restaurant runs a tasting menu around reindeer, arctic char and cloudberry. Aurora alarms are radioed cabin-to-cabin so nobody wakes the villa next door.',
+      'The on-site Sámi-led restaurant runs a tasting menu around reindeer, arctic char and cloudberry. Aurora alarms are radioed cabin-to-cabin so nobody wakes the villa next door.',
     ],
     signature: [
       'Glass-roof cabin with the bed under the apex',
       '24 cabins on a 30-hectare estate, generously spaced',
-      'Sami-led restaurant on-site, tasting menu nightly',
+      'Sámi-led restaurant on-site, tasting menu nightly',
       'Aurora alarm via in-cabin radio',
       'Aurora observed on about 3 nights in 4 at this latitude (FMI)',
       'Free private snowshoeing trail from the property',
@@ -149,7 +149,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.auroraVillage,
-    image: '/images/villa-aurora-village.webp',
+    image: '/images/villas/auroraVillage-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #0E1B2E 0%, #1B2A45 50%, #0B1424 100%)',
   },
   {
@@ -161,7 +161,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tagline: 'Glass igloos perched above Levi fell, facing south over the valley rather than north into forest.',
     copy: [
       'Forty-two glass igloos arranged on the southern shoulder of Levi fell. Most aurora cabins point north into a blank forest; Levin Iglut is one of very few that frames the lights above the lit fell-village skyline below: better for photographers, more dramatic at dusk.',
-      'Walking distance to Levi village (gondola, restaurants, ski-in/ski-out) but the igloos themselves are quiet. Restaurant Aurora on-site, with the chef sourcing within 100 km.',
+      'Walking distance to Levi village (gondola, restaurants, ski-in / ski-out) but the igloos themselves are quiet. Restaurant Aurora on-site, with the chef sourcing within 100 km.',
     ],
     signature: [
       'South-facing aurora panorama (rare for Lapland)',
@@ -174,7 +174,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.levinIglut,
-    image: '/images/villa-levin-iglut.webp',
+    image: '/images/villas/levinIglut-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #1F1A2E 0%, #2A2240 50%, #14101F 100%)',
   },
   {
@@ -186,20 +186,20 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     tagline: 'A glass bubble suite at the edge of the boreal forest, twenty minutes from the Russian border.',
     copy: [
       'Nellim is a working wilderness village (population 220) on the eastern shore of Lake Inari. The aurora bubbles are set apart from the main lodge in their own clearing, each with a panoramic transparent dome over the bed and a wood-fired hot tub on the porch.',
-      'The lodge runs Sami cultural evenings, ice-fishing on the lake, and one of the few certified guided aurora-photography programmes in Finland. Rooms book out a year in advance for the February peak.',
+      'The lodge runs Sámi cultural evenings, ice-fishing on the lake, and one of the few certified guided aurora-photography programmes in Finland. Rooms book out a year in advance for the February peak.',
     ],
     signature: [
       'Transparent panoramic dome over the bed',
       'Private wood-fired hot tub on the porch',
       'Wilderness village location, 20 min from Russian border',
       'Certified aurora-photography guided programme',
-      'Sami cultural programme several nights weekly',
+      'Sámi cultural programme several nights weekly',
       'Lake Inari fishing + traditional smoke sauna',
     ],
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.nellim,
-    image: '/images/villa-nellim.webp',
+    image: '/images/villas/nellim-commons.webp',
     imageGradient: 'linear-gradient(135deg, #1A2438 0%, #243153 50%, #101830 100%)',
   },
   {
@@ -224,7 +224,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.starArctic,
-    image: '/images/villa-star-arctic.webp',
+    image: '/images/villas/starArctic-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #142235 0%, #1F3050 50%, #0C1626 100%)',
   },
   {
@@ -249,7 +249,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.apukka,
-    image: '/images/villa-apukka.webp',
+    image: '/images/villas/apukka-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #1A1828 0%, #251F38 50%, #110E1C 100%)',
   },
   {
@@ -264,7 +264,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     destination: 'Ylläs',
     category: 'alpine-chalet',
     tier: 'private',
-    tagline: 'A self-contained apartment at the foot of Ylläs’ southern slopes, with the hotel’s spa attached.',
+    tagline: 'A self-contained apartment at the foot of Ylläs\' southern slopes, with the hotel\'s spa attached.',
     copy: [
       'Lapland Hotels Saaga sits in Ylläsjärvi village, immediately below the southern slopes of the Ylläs ski resort. Alongside its hotel rooms it lets holiday apartments for one to eight guests, either inside the hotel grounds or about 300 metres from the main building, so a family or a small group gets its own space without leaving the resort.',
       'The apartments come with the hotel behind them: a spa with a pool area, whirlpools and steam saunas, a fitness room and treatments, and a private sauna for up to fifteen people with its own relaxation area. There are three restaurants on site, including the Biegga buffet, and breakfast is built on northern ingredients.',
@@ -281,6 +281,7 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     // and its apartments differ. `sleeps: 8` is the published upper bound.
     sleeps: 8,
     bookingUrl: PS.laplandHotelsSaaga,
+    image: '/images/villas/laplandHotelsSaaga-sembo.webp',
     imageGradient: 'linear-gradient(135deg, #12212E 0%, #1D3242 50%, #0C1720 100%)',
   },
   ]

@@ -90,8 +90,21 @@
     <meta name="twitter:description" content="Curated villas and suites across Finnish Lapland. Rates on each property's own booking page." />
     <!-- Google Fonts — Cormorant Garamond (display) + DM Sans (body) -->
 
-    <!-- Hero LCP preload — homepage hero background image -->
-    <link rel="preload" as="image" href="/images/summer-villa-lakeside.webp" fetchpriority="high" />
+    <!-- Hero LCP preload, seasonal: the home hero is chosen in the browser by month
+         (src/lib/season.ts: summer 1 May to 30 Sep, winter otherwise), so the preload
+         follows the same rule. A static preload of one season's file would fetch a
+         2 000 px image nobody sees for seven months of the year. Both paths are plain
+         strings, so scripts/version-images.mjs stamps the same ?v= on them as on the
+         <img> and the preload is the same URL the page then requests. -->
+    <script>
+      (function () {
+        var m = new Date().getMonth() + 1;
+        var href = m >= 5 && m <= 9 ? "/images/summer-villa-lakeside.webp" : "/images/commons/hero-winter-saariselka-aurora.webp";
+        var l = document.createElement("link");
+        l.rel = "preload"; l.as = "image"; l.href = href; l.setAttribute("fetchpriority", "high");
+        document.head.appendChild(l);
+      })();
+    </script>
 
     <!-- Affiliate redirect warm-up — TLS handshakes during idle time -->
     <link rel="preconnect" href="https://go.laplandvibes.com" crossorigin />

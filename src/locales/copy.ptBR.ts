@@ -65,6 +65,13 @@ const ptBR: SiteCopy = {
     verifiedOn: 'Verificado em {d}',
     ratingScope: 'A avaliação se refere a toda a propriedade, {p}',
   },
+  photo: {
+    "credit": "Foto",
+    "inPicture": "Na foto: {what}",
+    "cropped": "recortada",
+    "nellim": "A vila de Nellim à beira do Lago Inari, não o hotel em si",
+    "heroWinter": "Aurora boreal sobre um lodge iluminado em Saariselkä, fevereiro de 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Coleção privada',
@@ -116,7 +123,7 @@ const ptBR: SiteCopy = {
     home: {
       eyebrow: '{n} vilas · {m} destinos',
       title: 'Uma vila na Lapônia, sem achismo.',
-      lede: 'Cada propriedade é verificada com base nas informações publicadas por ela mesma e em avaliações recentes de hóspedes. Reserve direto com a propriedade, ou nos diga suas datas e seu grupo e sugerimos as melhores opções em um dia.',
+      lede: "{n} vilas com teto de vidro e suítes de design em {m} destinos da Lapônia, cada uma com a própria página de reserva e a nota do Google à vista. Envie suas datas e receba uma lista selecionada em um dia.",
       primary: 'Ver as vilas',
       secondary: 'Pedir sugestões',
     },
@@ -159,6 +166,53 @@ const ptBR: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Semanas prontas",
+      "h2": "Três semanas na Lapônia, planejadas até a última noite.",
+      "lede": "Cada link abaixo leva à página de reservas do próprio parceiro, com o preço visível antes de você decidir.",
+      "season": "Temporada",
+      "stay": "Onde você dorme",
+      "car": "Como você se desloca",
+      "night": "A noite que se reserva com antecedência",
+      "home": "O que volta para casa com você",
+      "homeLede": "A mesa em que você comeu por uma semana: Iittala, Marimekko e Kosta Boda em uma única loja nórdica.",
+      "carFrom": "Carro alugado {airport}, retirada no terminal",
+      "ctaCar": "Ver preços de carros",
+      "ctaNight": "Ver o passeio",
+      "ctaNightInquiry": "Enviar uma consulta",
+      "items": [
+        {
+          "title": "Uma semana de auroras sobre Saariselkä",
+          "season": "De setembro a março",
+          "airport": "do aeroporto de Ivalo",
+          "story": [
+            "A previsão diz céu limpo. Você está na Skyview Suite desde a tarde, a sauna ainda está quente e o céu sobre Kaunispää assumiu aquele azul duro e escuro que ele ganha antes de as luzes chegarem. A cama fica voltada para a parede de vidro, então a espera acontece deitado.",
+            "O aeroporto de Ivalo fica a cerca de meia hora de estrada, e é por isso que vale ter carro: os melhores pontos de aurora ao redor de Saariselkä ficam fora das linhas de ônibus, e um carro aquecido com o motor ligado é o esconderijo mais quente que existe. A noite privativa de fotografia é a única coisa que se reserva antes de voar; o guia escolhe a direção naquela mesma tarde, pelo mapa de nuvens."
+          ],
+          "night": "Noite privativa de fotografia de auroras com guia"
+        },
+        {
+          "title": "Semana de Natal em Rovaniemi, silenciosa depois do anoitecer",
+          "season": "De dezembro a janeiro",
+          "airport": "do aeroporto de Rovaniemi",
+          "story": [
+            "A cinco minutos da Vila do Papai Noel, e assim que o último duende vai para casa a floresta ao redor do Arctic TreeHouse fica em silêncio. A parede de vidro da suíte é voltada para o norte; o ofurô fica no terraço, logo à frente. As crianças dormindo no quarto, os pais no terraço: esta é a semana de Rovaniemi que funciona.",
+            "O aeroporto de Rovaniemi fica a poucos minutos de carro, então o carro transforma a região em passeios de um dia: a pista de esqui de Ounasvaara, o rio, o zoológico de Ranua a uma hora ao sul. Para a única noite que precisa sair perfeita, um chef particular prepara um menu-degustação ártico na suíte."
+          ],
+          "night": "Chef particular e menu-degustação ártico na suíte"
+        },
+        {
+          "title": "Sol da meia-noite: Kakslauttanen e o lago Inari",
+          "season": "Junho",
+          "airport": "do aeroporto de Ivalo",
+          "story": [
+            "Em junho o sol não se põe em Kakslauttanen, e a vila de pinho kelo com o quarto de vidro é outra casa: o teto que no inverno emoldura auroras agora emoldura um céu que ainda está claro às duas da manhã. O Parque Nacional Urho Kekkonen fica a uma curta distância de carro.",
+            "O Lago Inari fica a uma hora de carro para o norte, e o passeio privativo de barco com fogueira é a noite que se reserva: é o terceiro maior lago da Finlândia, e a maior parte da margem não tem estrada. De volta à vila, a sauna e o ofurô funcionam exatamente como em fevereiro."
+          ],
+          "night": "Passeio privativo de barco no Lago Inari com fogueira"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Como funciona',
       h2: 'Nós verificamos e sugerimos. Você reserva direto com a propriedade.',
@@ -169,7 +223,7 @@ const ptBR: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Vilas signature',
+      eyebrow: "Nossas quatro escolhas",
       h2: 'As quatro que mais recomendamos.',
       lede: 'As propriedades que mais recomendamos. Cada detalhe abaixo é verificado com as informações do operador e avaliações recentes, não copiado de um folheto.',
     },
@@ -255,7 +309,7 @@ const ptBR: SiteCopy = {
       h2: 'Uma nota sobre como planejar uma viagem de sol da meia-noite.',
       p1: 'A janela é curta e as vilas são de propriedade individual, por isso o calendário enche de forma oportunista, não uniforme. Vale perguntar com antecedência.',
       p2: 'O momento certo para consultar sobre um junho específico é entre janeiro e março daquele ano. Consultas posteriores também valem a pena, surgem liberações, mas o topo do inventário costuma ir mais cedo.',
-      quoting: 'Atendendo consultas para os verões de 2026 e 2027',
+      quoting: 'Atendendo consultas para o verão de {year}',
     },
     inquiryTitle: 'Consulte sobre uma viagem de sol da meia-noite.',
     inquiryBody: 'Envie datas, número de pessoas e quaisquer preferências. A resposta chega em um dia útil com disponibilidade em toda a coleção de verão.',

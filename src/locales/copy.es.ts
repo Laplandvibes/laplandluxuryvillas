@@ -65,6 +65,13 @@ const es: SiteCopy = {
     verifiedOn: 'Comprobado el {d}',
     ratingScope: 'La valoración corresponde a todo el establecimiento, {p}',
   },
+  photo: {
+    "credit": "Foto",
+    "inPicture": "En la foto: {what}",
+    "cropped": "recortada",
+    "nellim": "La aldea de Nellim a orillas del lago Inari, no el hotel en sí",
+    "heroWinter": "Aurora boreal sobre un lodge iluminado en Saariselkä, febrero de 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Colección privada',
@@ -116,7 +123,7 @@ const es: SiteCopy = {
     home: {
       eyebrow: '{n} villas · {m} destinos',
       title: 'Una villa en Laponia, sin conjeturas.',
-      lede: 'Cada alojamiento está verificado con su propia información publicada y reseñas recientes de huéspedes. Reserve directamente con el alojamiento, o díganos sus fechas y su grupo y le proponemos los que mejor encajan en un día.',
+      lede: "{n} villas con techo de cristal y suites de diseño en {m} destinos de Laponia, cada una con su propia página de reserva y su valoración de Google a la vista. Envíe sus fechas y reciba una preselección en un día.",
       primary: 'Ver las villas',
       secondary: 'Pedir sugerencias',
     },
@@ -159,6 +166,53 @@ const es: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Semanas ya preparadas",
+      "h2": "Tres semanas en Laponia, planificadas hasta la última noche.",
+      "lede": "Elija la villa, añada el coche desde el aeropuerto y reserve la única noche que tiene que salir bien. Todos los enlaces de abajo llevan a la página de reservas del propio socio, con el precio a la vista.",
+      "season": "Temporada",
+      "stay": "Dónde duerme",
+      "car": "Cómo se mueve",
+      "night": "La noche que se reserva con antelación",
+      "home": "Lo que usted se lleva a casa",
+      "homeLede": "La mesa en la que comió durante una semana: Iittala, Marimekko y Kosta Boda en una sola tienda nórdica.",
+      "carFrom": "Coche de alquiler {airport}, recogida en la terminal",
+      "ctaCar": "Ver precios de coches",
+      "ctaNight": "Ver la excursión",
+      "ctaNightInquiry": "Enviar una consulta",
+      "items": [
+        {
+          "title": "Una semana de auroras sobre Saariselkä",
+          "season": "De septiembre a marzo",
+          "airport": "desde el aeropuerto de Ivalo",
+          "story": [
+            "El pronóstico dice despejado. Lleva en la Skyview Suite desde la tarde, la sauna sigue caliente y el cielo sobre Kaunispää ha tomado ese azul duro y oscuro que adopta antes de que lleguen las luces. La cama mira a la pared de cristal, así que la espera se hace tumbado.",
+            "El aeropuerto de Ivalo queda a una media hora por carretera, y esa es la razón para tener coche: los mejores lugares para ver auroras alrededor de Saariselkä quedan fuera de las rutas de autobús, y un coche caliente con el motor en marcha es el escondite más cálido que existe. La noche privada de fotografía es lo único que se reserva antes de volar; el guía elige la dirección esa misma tarde a partir del mapa de nubes."
+          ],
+          "night": "Noche privada de fotografía de auroras con guía"
+        },
+        {
+          "title": "Semana de Navidad en Rovaniemi, en silencio al caer la noche",
+          "season": "De diciembre a enero",
+          "airport": "desde el aeropuerto de Rovaniemi",
+          "story": [
+            "A cinco minutos del Pueblo de Papá Noel, y cuando el último elfo se ha ido a casa el bosque alrededor del Arctic TreeHouse se queda en silencio. La pared de cristal de la suite da al norte; el jacuzzi está en la terraza, justo delante. Los niños dormidos en la habitación, los padres en la terraza: esta es la semana de Rovaniemi que funciona.",
+            "El aeropuerto de Rovaniemi queda a unos minutos en coche, así que el coche convierte la región en excursiones de un día: la pista de esquí de Ounasvaara, el río, el zoo de Ranua a una hora hacia el sur. Para esa única noche que tiene que ser perfecta, un chef privado prepara un menú degustación ártico en la suite."
+          ],
+          "night": "Chef privado y menú degustación ártico en la suite"
+        },
+        {
+          "title": "Sol de medianoche: Kakslauttanen y el lago Inari",
+          "season": "Junio",
+          "airport": "desde el aeropuerto de Ivalo",
+          "story": [
+            "En junio el sol no se pone en Kakslauttanen, y la villa de pino kelo con el dormitorio de cristal es otra casa: el techo que en invierno enmarca auroras enmarca ahora un cielo que sigue claro a las dos de la madrugada. El parque nacional Urho Kekkonen queda a un trayecto corto en coche.",
+            "El lago Inari queda a una hora en coche hacia el norte, y el crucero privado en barco con hoguera es la noche que se reserva: es el tercer lago más grande de Finlandia y la mayor parte de su orilla no tiene carretera. De vuelta en la villa, la sauna y el jacuzzi funcionan exactamente igual que en febrero."
+          ],
+          "night": "Crucero privado en barco por el lago Inari con hoguera"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Cómo funciona',
       h2: 'Nosotros verificamos y proponemos. Usted reserva directamente con el alojamiento.',
@@ -169,7 +223,7 @@ const es: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Villas signature',
+      eyebrow: "Nuestras cuatro favoritas",
       h2: 'Las cuatro que más recomendamos.',
       lede: 'Las propiedades que más recomendamos. Cada detalle que sigue está verificado con la información del operador y reseñas recientes de huéspedes, no copiado de un folleto.',
     },
@@ -181,7 +235,7 @@ const es: SiteCopy = {
   villasPage: {
     leadTitle: 'Qué contiene esta selección',
     leadP1: 'Ocho habitaciones, no ocho hoteles. Cada entrada de esta lista es un tipo de habitación concreto dentro de un establecimiento real: una cabaña de techo de cristal en Kakslauttanen, una suite en voladizo en Arctic TreeHouse, una burbuja de auroras en el lago Inari. Esa es la unidad que usted reserva de verdad, así que esa es la que listamos.',
-    leadP2: 'Las valoraciones de este sitio proceden de Google y se refieren al establecimiento entero, nunca a la habitación suelta, y cada ficha lo indica. La selección es corta a propósito: cinco destinos y cuatro tipos de construcción, del techo de cristal al chalet alpino, y ahí se detiene en lugar de rellenar la lista.',
+    leadP2: 'Las valoraciones de este sitio proceden de Google y se refieren al establecimiento entero, nunca a la habitación suelta, y cada ficha lo indica. La selección es corta a propósito: cinco destinos y cuatro tipos de construcción, del techo de cristal al chalé alpino, y ahí se detiene en lugar de rellenar la lista.',
     filters: { all: 'Todas', glassRoof: 'Techo de cristal', logEstate: 'Propiedad de troncos', designerSuite: 'Suite de autor', alpineChalet: 'Chalet alpino', lakeside: 'Junto al lago' },
     noVillas: 'Todavía no hay villas en esa categoría.',
     inquiryTitle: '¿No encuentra lo que busca?',
@@ -255,7 +309,7 @@ const es: SiteCopy = {
       h2: 'Una nota sobre cómo planificar un viaje de sol de medianoche.',
       p1: 'La ventana es corta y las villas son de propiedad individual, por eso el calendario se llena de forma oportunista, no uniforme. Conviene preguntar con antelación.',
       p2: 'El momento adecuado para consultar por un junio concreto es entre enero y marzo de ese año. Las consultas posteriores también merece la pena enviarlas, hay liberaciones, pero la gama alta del inventario suele irse antes.',
-      quoting: 'Atendiendo consultas para los veranos de 2026 y 2027',
+      quoting: 'Atendiendo consultas para el verano de {year}',
     },
     inquiryTitle: 'Consulte por un viaje de sol de medianoche.',
     inquiryBody: 'Envíe fechas, número de personas y cualquier preferencia. La respuesta llega en un día laborable con disponibilidad en toda la colección de verano.',

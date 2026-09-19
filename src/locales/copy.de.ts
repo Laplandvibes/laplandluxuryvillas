@@ -65,13 +65,20 @@ const de: SiteCopy = {
     verifiedOn: 'Geprüft am {d}',
     ratingScope: 'Die Bewertung gilt für die gesamte Anlage {p}',
   },
+  photo: {
+    "credit": "Foto",
+    "inPicture": "Im Bild: {what}",
+    "cropped": "beschnitten",
+    "nellim": "Das Dorf Nellim am Ufer des Inarisees, nicht das Hotel selbst",
+    "heroWinter": "Polarlicht über einer erleuchteten Lodge in Saariselkä, Februar 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
     reserve: 'Reserve · Nur auf Anfrage',
   },
   category: {
-    'glass-roof': 'Glasiglu-Villa',
+    'glass-roof': 'Glasdach-Villa',
     'log-estate': 'Privates Blockhausgut',
     'designer-suite': 'Designer-Suite',
     'alpine-chalet': 'Alpenchalet',
@@ -116,7 +123,7 @@ const de: SiteCopy = {
     home: {
       eyebrow: '{n} Villen · {m} Reiseziele',
       title: 'Eine Villa in Lappland, ohne Rätselraten.',
-      lede: 'Jedes Haus hier ist anhand seiner eigenen veröffentlichten Angaben und aktueller Gästebewertungen geprüft. Buchen Sie direkt beim Haus, oder nennen Sie uns Reisedaten und Gruppe und wir schlagen innerhalb eines Tages die passendsten vor.',
+      lede: "{n} Villen mit Glasdach und Designsuiten in {m} Reisezielen in Lappland, jede mit eigener Buchungsseite und sichtbarer Google-Bewertung. Senden Sie uns Ihre Wunschtermine, und Sie erhalten innerhalb eines Tages eine Vorauswahl.",
       primary: 'Zu den Villen',
       secondary: 'Vorschläge anfragen',
     },
@@ -159,6 +166,53 @@ const de: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Fertige Wochen",
+      "h2": "Drei Wochen in Lappland, geplant bis zum letzten Abend.",
+      "lede": "Wählen Sie die Villa, nehmen Sie den Mietwagen ab Flughafen dazu und buchen Sie den einen Abend, der sitzen muss. Jeder Link unten führt zur Buchungsseite des Partners, mit sichtbarem Preis.",
+      "season": "Saison",
+      "stay": "Wo Sie schlafen",
+      "car": "Wie Sie unterwegs sind",
+      "night": "Der Abend, den man vorab bucht",
+      "home": "Was mit nach Hause kommt",
+      "homeLede": "Der Tisch, an dem Sie eine Woche lang gegessen haben: Iittala, Marimekko und Kosta Boda aus einem nordischen Geschäft.",
+      "carFrom": "Mietwagen {airport}, Abholung am Terminal",
+      "ctaCar": "Autopreise ansehen",
+      "ctaNight": "Tour ansehen",
+      "ctaNightInquiry": "Anfrage senden",
+      "items": [
+        {
+          "title": "Eine Woche Polarlichter über Saariselkä",
+          "season": "September bis März",
+          "airport": "vom Flughafen Ivalo",
+          "story": [
+            "Die Vorhersage sagt klar. Sie sind seit dem Nachmittag in der Skyview Suite, die Sauna ist noch warm, und der Himmel über Kaunispää hat jenes harte, dunkle Blau angenommen, das er annimmt, bevor die Lichter kommen. Das Bett steht zur Glaswand, das Warten geschieht also im Liegen.",
+            "Zum Flughafen Ivalo ist es etwa eine halbe Stunde über die Straße, und genau deshalb lohnt das Auto: Die besten Polarlichtplätze rund um Saariselkä liegen abseits der Buslinien, und ein geheiztes Auto mit laufendem Motor ist das wärmste Versteck, das es gibt. Die private Fotonacht ist das Einzige, was vor dem Flug gebucht wird; die Richtung wählt der Guide am Nachmittag anhand der Wolkenkarte."
+          ],
+          "night": "Private Polarlicht-Fotonacht mit Guide"
+        },
+        {
+          "title": "Weihnachtswoche in Rovaniemi, nach Einbruch der Dunkelheit still",
+          "season": "Dezember bis Januar",
+          "airport": "vom Flughafen Rovaniemi",
+          "story": [
+            "Fünf Minuten vom Weihnachtsmanndorf entfernt, und sobald der letzte Wichtel nach Hause gegangen ist, wird der Wald rund um das Arctic TreeHouse still. Die Glaswand der Suite zeigt nach Norden; der Whirlpool steht auf der Terrasse davor. Die Kinder schlafen im Zimmer, die Eltern sitzen auf der Terrasse: Das ist die Rovaniemi-Woche, die funktioniert.",
+            "Zum Flughafen Rovaniemi sind es wenige Minuten mit dem Auto, und so macht der Wagen aus der Region Tagesausflüge: der Skihang am Ounasvaara, der Fluss, der Tierpark in Ranua eine Stunde südlich. Für den einen Abend, der perfekt sein muss, kocht ein Privatkoch ein arktisches Degustationsmenü in der Suite."
+          ],
+          "night": "Privatkoch und arktisches Degustationsmenü in der Suite"
+        },
+        {
+          "title": "Mitternachtssonne: Kakslauttanen und der Inarisee",
+          "season": "Juni",
+          "airport": "vom Flughafen Ivalo",
+          "story": [
+            "Im Juni geht die Sonne in Kakslauttanen nicht unter, und die Kelo-Kiefern-Villa mit dem gläsernen Schlafzimmer ist ein anderes Haus: Das Dach, das im Winter Polarlichter rahmt, rahmt nun einen Himmel, der um zwei Uhr nachts noch hell ist. Der Nationalpark Urho Kekkonen liegt eine kurze Fahrt entfernt.",
+            "Zum Inarisee fährt man eine Stunde nach Norden, und die private Bootsfahrt mit Lagerfeuer ist der Abend, den man bucht: Es ist Finnlands drittgrößter See, und der größte Teil seines Ufers hat keine Straße. Zurück in der Villa arbeiten Sauna und Whirlpool genau so wie im Februar."
+          ],
+          "night": "Private Bootsfahrt auf dem Inarisee mit Lagerfeuer"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'So funktioniert es',
       h2: 'Wir prüfen und schlagen vor. Sie buchen direkt beim Haus.',
@@ -169,7 +223,7 @@ const de: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Signature-Villen',
+      eyebrow: "Unsere vier Empfehlungen",
       h2: 'Die vier, die wir am häufigsten empfehlen.',
       lede: 'Die am häufigsten empfohlenen Anwesen. Jedes Detail unten ist anhand der Betreiberangaben und aktueller Gästebewertungen verifiziert, nicht aus einer Broschüre übernommen.',
     },
@@ -255,7 +309,7 @@ const de: SiteCopy = {
       h2: 'Eine Notiz zur Planung einer Mitternachtssonnen-Reise.',
       p1: 'Das Fenster ist kurz und die Villen sind im Einzelbesitz, der Kalender füllt sich daher opportunistisch, nicht gleichmäßig. Es lohnt sich, früh zu fragen.',
       p2: 'Der richtige Zeitpunkt, für einen bestimmten Juni anzufragen, liegt zwischen Januar und März desselben Jahres. Spätere Anfragen sind weiterhin sinnvoll, Freigaben kommen vor, aber das High-End des Inventars geht oft früher.',
-      quoting: 'Wir beantworten derzeit Anfragen für Sommer 2026 und 2027',
+      quoting: 'Wir beantworten derzeit Anfragen für Sommer {year}',
     },
     inquiryTitle: 'Eine Mitternachtssonnen-Reise anfragen.',
     inquiryBody: 'Senden Sie Termine, Gästezahl und Wünsche. Eine Antwort erreicht Sie innerhalb eines Werktags mit der Verfügbarkeit der Sommerkollektion.',

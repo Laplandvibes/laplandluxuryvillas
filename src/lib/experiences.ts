@@ -83,7 +83,7 @@ export const EXPERIENCES: Experience[] = [
     slug: 'private-chef-arctic-tasting',
     name: 'In-Villa Private Chef Tasting',
     category: 'culinary',
-    hook: 'A nine-course Finnish-Sami tasting menu cooked in your villa kitchen by a working Lapland chef.',
+    hook: 'A nine-course Finnish-Sámi tasting menu cooked in your villa kitchen by a working Lapland chef.',
     copy: [
       'A working chef from one of Lapland\'s serious kitchens comes to your villa for an evening. The menu is built around what\'s actually in season that week: cold-water arctic char, cloudberry, smoked reindeer, fresh forest mushrooms, sea-buckthorn, juniper.',
       'Includes a wine pairing curated to the menu, ingredients, prep, service and clean-up. Ten guests maximum. Vegetarian, gluten-free and shellfish-free menus on request, with at least 72 hours\' notice.',
@@ -120,11 +120,11 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     slug: 'private-reindeer-sami-evening',
-    name: 'Private Reindeer & Sami Evening',
+    name: 'Private Reindeer & Sámi Evening',
     category: 'wilderness',
-    hook: 'Reindeer sleighing on a working farm, then an evening in a private kota with a Sami host.',
+    hook: 'Reindeer sleighing on a working farm, then an evening in a private kota with a Sámi host.',
     copy: [
-      'Two hours of reindeer sledding on a working herding farm followed by a private evening in a heated kota (open-fire teepee). The host is a Sami reindeer herder who runs the farm, and the conversation, not a script, is the experience.',
+      'Two hours of reindeer sledding on a working herding farm followed by a private evening in a heated kota (open-fire teepee). The host is a Sámi reindeer herder who runs the farm, and the conversation, not a script, is the experience.',
       'Dinner is sautéed reindeer with mashed potatoes and lingonberry, prepared on the open fire. Stories about the herd, the migration year, the joik singing tradition. Maximum twelve guests.',
     ],
     available: 'Inari, Saariselkä, year-round (sledding Dec–Mar)',

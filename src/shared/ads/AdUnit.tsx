@@ -100,7 +100,7 @@ export interface AdSpec {
  * `inkOn()` vaalentaa tunnusvärin kohti valkoista vain sen verran, että se
  * ylittää annetun kontrastin: brändin sävy säilyy, teksti luetaan.
  * Vaaleaa varianttia EI kosketa — se on mitattu kunnossa (audit_partner_logos). */
-const DARK_CARD_RGB: [number, number, number] = [20, 28, 44]
+export const DARK_CARD_RGB: [number, number, number] = [20, 28, 44]
 
 function hexToRgb(hex: string): [number, number, number] {
   const h = hex.replace('#', '')
@@ -118,7 +118,7 @@ function contrast(a: [number, number, number], b: [number, number, number]) {
   return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)
 }
 /** Vaalentaa `hex`:iä kohti valkoista kunnes kontrasti `bg`:tä vasten ylittää `min`. */
-function inkOn(hex: string, bg: [number, number, number], min = 4.5): string {
+export function inkOn(hex: string, bg: [number, number, number], min = 4.5): string {
   const base = hexToRgb(hex)
   if (contrast(base, bg) >= min) return hex
   for (let t = 0.05; t <= 1; t += 0.05) {

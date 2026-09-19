@@ -11,13 +11,9 @@ https://laplandluxuryvillas-com.pages.dev/*
   X-Robots-Tag: noindex, nofollow
 # <<< LV-PAGESDEV-NOINDEX
 
-# >>> LV-LINK-PRELOAD (managed by apply_link_preload_headers.py)
-/
-  Link: </images/summer-villa-lakeside.webp>; rel=preload; as=image; fetchpriority=high
-
-/index.html
-  Link: </images/summer-villa-lakeside.webp>; rel=preload; as=image; fetchpriority=high
-# <<< LV-LINK-PRELOAD
+# LV-LINK-PRELOAD poistettu 19.9.2026: hero vaihtuu kaudella selaimessa (src/lib/season.ts),
+# joten staattinen Link-otsake olisi talvella 145 kt:n hukkalataus. Preload tulee index.html:n
+# kausiskriptistä samalla ?v=-leimalla kuin <img>. Älä aja apply_link_preload_headers.py:tä tälle sivustolle.
 
 # >>> LV-SECURITY (managed)
 /*

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import type { ReactNode } from 'react'
 import PageBreadcrumb from './PageBreadcrumb'
 
 interface HeroProps {
@@ -26,6 +27,8 @@ interface HeroProps {
    *  off-centre subject (e.g. a villa on the left) so it survives the mobile
    *  portrait crop instead of showing only background. */
   imgObjectPosition?: string
+  /** Source line for an open-licence or partner photograph (PhotoCredit). */
+  credit?: ReactNode
 }
 
 /**
@@ -45,6 +48,7 @@ export default function Hero({
   compact = false,
   imageAlt = '',
   imgObjectPosition,
+  credit,
 }: HeroProps) {
   const minH = compact
     ? 'min-h-[60svh] md:min-h-[68svh]'
@@ -165,6 +169,7 @@ export default function Hero({
           </div>
         )}
       </div>
+      {credit}
     </section>
     <PageBreadcrumb />
     </>

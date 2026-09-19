@@ -247,7 +247,7 @@ function gygLang(lang: Lang): string {
   return lang.toLowerCase()
 }
 
-function gygSearch(sid: string, q: string, lang: Lang): string {
+export function gygSearch(sid: string, q: string, lang: Lang): string {
   return `${REDIRECT_BASE}/go/activities?sid=${encodeURIComponent(sid)}&q=${encodeURIComponent(q)}&language=${gygLang(lang)}`
 }
 

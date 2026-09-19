@@ -41,7 +41,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: 'Kaksikymmentäneljä lasimökkiä, joiden edessä ei muuta kuin metsää ja revontuliovaali.',
       copy: [
-        'Inari sijaitsee suoraan revontuliovaalin alla, tilastollisesti Euroopan luotettavimmalla revontulileveysasteella. Aurora Village on 24 mökin alue, jonka läpi ei kulje liikennettä eikä näkyvällä horisontilla ole naapurikyliä. Mökit on sijoiteltu yksityisyyttä ajatellen, sänky lasin alla ja sohva sitä kohti.',
+        'Inari sijaitsee suoraan revontuliovaalin alla, leveysasteella, jolla Ilmatieteen laitos havaitsee revontulia noin kolmena yönä neljästä. Aurora Village on 24 mökin alue, jonka läpi ei kulje liikennettä eikä näkyvällä horisontilla ole naapurikyliä. Mökit on sijoiteltu yksityisyyttä ajatellen, sänky lasin alla ja sohva sitä kohti.',
         'Alueen saamelaisvetoinen ravintola tarjoaa maistelumenun poron, nieriän ja lakan ympärille. Revontulihälytykset välitetään radioteitse mökistä mökkiin, jottei kukaan herätä viereistä huvilaa.',
       ],
       signature: [
@@ -116,7 +116,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'apukka-resort-aurora-cabin': {
       tagline: 'Perinnetyyliset revontulivaunut jäätyneen järven rannalla, kymmenen minuutin päässä Rovaniemen lentoasemalta.',
       copy: [
-        'Kourallinen entisöityjä ajanmukaisia rautatievaunuja, jotka on rakennettu uudelleen lasikattoisiksi revontulimökeiksi aivan Apukkajärven reunalle. Kätevä, jos käytössä on vain kaksi yötä ja haluaa laskeutua, siirtyä ja olla sängyssä lasin alla tunnin sisällä.',
+        'Kourallinen entisöityjä aikakautisia rautatievaunuja, jotka on rakennettu uudelleen lasikattoisiksi revontulimökeiksi aivan Apukkajärven reunalle. Kätevä, jos käytössä on vain kaksi yötä ja haluaa laskeutua, siirtyä ja olla sängyssä lasin alla tunnin sisällä.',
         'Alueella oma huskytila, poroja, pilkkimistä ja moottorikelkkareitti erämaahan. Vaunut itsessään ovat intiimejä (yksi makuuhuone, yksi kylpyhuone, oleskelutila); resort hoitaa kaiken aktiviteettilogistiikan.',
       ],
       signature: [
@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Pohjois-Suomen luksusrevontulikeskus, Kakslauttanen, Star Arctic ja Urho Kekkosen villi reuna.',
       copy: [
-        'Saariselkä sijaitsee Urho Kekkosen kansallispuiston, yhden Suomen laajimmista erämaa-alueista, pohjoisreunalla, ja se on kylä, joka määritteli lasikattoisen revontulimajoituksen. Suurin osa maan tunnetuimmista lasimökeistä (Kakslauttanen, Star Arctic, Northern Lights Village) on 10 kilometrin säteellä kylästä.',
-        'Itse kylä on pieni ja kävellen kierrettävä: yksi pääraitti, muutama ravintola ja suora yhteys kansallispuistoon. Ivalon lentoasemalle on 27 kilometriä eli noin puoli tuntia yksityiskuljetuksella, ja se palvelee sekä reittiliikennettä että yksityiskoneita.',
+        'Saariselkä sijaitsee Urho Kekkosen kansallispuiston, Suomen toiseksi suurimman kansallispuiston (2 550 km²), pohjoisreunalla, ja se on kylä, joka määritteli lasikattoisen revontulimajoituksen. Suurin osa maan tunnetuimmista lasimökeistä (Kakslauttanen, Star Arctic, Northern Lights Village) on 10 kilometrin säteellä kylästä.',
+        'Itse kylä on pieni ja kävellen kierrettävä: yksi pääraitti, kolme vakavasti otettavaa ravintolaa ja suora yhteys kansallispuistoon. Ivalon lentoasemalle on 27 kilometriä eli noin puoli tuntia yksityiskuljetuksella, ja se palvelee sekä reittiliikennettä että yksityiskoneita.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, alkuperäinen lasikattokohde',

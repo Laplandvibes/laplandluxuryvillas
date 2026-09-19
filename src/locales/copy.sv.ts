@@ -59,6 +59,13 @@ const sv: SiteCopy = {
     verifiedOn: 'Kontrollerat {d}',
     ratingScope: 'Betyget gäller hela anläggningen {p}',
   },
+  photo: {
+    "credit": "Foto",
+    "inPicture": "På bilden: {what}",
+    "cropped": "beskuren",
+    "nellim": "Byn Nellim vid Enaresjöns strand, inte hotellet självt",
+    "heroWinter": "Norrsken över en upplyst lodge i Saariselkä, februari 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Privat kollektion',
@@ -110,7 +117,7 @@ const sv: SiteCopy = {
     home: {
       eyebrow: '{n} villor · {m} resmål',
       title: 'En villa i Lappland, utan gissningar.',
-      lede: 'Varje ställe är kontrollerat mot dess egna publicerade uppgifter och färska gästomdömen. Boka direkt hos stället, eller berätta era datum och ert sällskap så föreslår vi de bästa alternativen inom ett dygn.',
+      lede: "{n} villor med glastak och designsviter i {m} lappländska resmål, var och en med egen bokningssida och sitt Google-omdöme synligt. Skicka dina datum, så får du en kortlista inom ett dygn.",
       primary: 'Se villorna',
       secondary: 'Be om förslag',
     },
@@ -153,17 +160,64 @@ const sv: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Färdiga veckor",
+      "h2": "Tre veckor i Lappland, planerade in i sista kvällen.",
+      "lede": "Välj villan, lägg till bilen från flygplatsen och boka den enda kväll som måste bli rätt. Varje länk nedan går till partnerns egen bokningssida, med priset synligt.",
+      "season": "Säsong",
+      "stay": "Var du sover",
+      "car": "Hur du tar dig fram",
+      "night": "Kvällen som bokas i förväg",
+      "home": "Det som följer med hem",
+      "homeLede": "Bordet du åt vid i en vecka: Iittala, Marimekko och Kosta Boda från en enda nordisk butik.",
+      "carFrom": "Hyrbil {airport}, hämtas vid terminalen",
+      "ctaCar": "Se bilpriser",
+      "ctaNight": "Se turen",
+      "ctaNightInquiry": "Skicka en förfrågan",
+      "items": [
+        {
+          "title": "En vecka med norrsken över Saariselkä",
+          "season": "September till mars",
+          "airport": "från Ivalo flygplats",
+          "story": [
+            "Prognosen säger klart. Du har varit i Skyview Suite sedan eftermiddagen, bastun är fortfarande varm, och himlen över Kaunispää har fått den hårda, mörkblå ton den får innan ljusen kommer. Sängen står mot glasväggen, så väntandet sker liggande.",
+            "Till Ivalo flygplats är det ungefär en halvtimme på väg, och just därför behövs bilen: de bästa norrskensplatserna runt Saariselkä ligger utanför busslinjerna, och en varm bil med motorn igång är det varmaste gömstället som finns. Den privata fotokvällen är det enda som bokas före flyget; guiden väljer riktning samma eftermiddag utifrån molnkartan."
+          ],
+          "night": "Privat norrskensfotokväll med guide"
+        },
+        {
+          "title": "Julvecka i Rovaniemi, tyst efter mörkrets inbrott",
+          "season": "December till januari",
+          "airport": "från Rovaniemi flygplats",
+          "story": [
+            "Fem minuter från Jultomtens by, och när den sista tomtenissen har gått hem tystnar skogen runt Arctic TreeHouse. Svitens glasvägg vetter mot norr; badtunnan står på terrassen utanför. Barnen sover i rummet, föräldrarna sitter på terrassen: det här är den Rovaniemivecka som fungerar.",
+            "Till Rovaniemi flygplats är det några minuters bilväg, så bilen gör regionen till dagsutflykter: skidbacken i Ounasvaara, älven, djurparken i Ranua en timme söderut. För den enda kväll som måste bli perfekt lagar en privatkock en arktisk avsmakningsmeny i sviten."
+          ],
+          "night": "Privatkock och arktisk avsmakningsmeny i sviten"
+        },
+        {
+          "title": "Midnattssol: Kakslauttanen och Enaresjön",
+          "season": "Juni",
+          "airport": "från Ivalo flygplats",
+          "story": [
+            "I juni går solen inte ner vid Kakslauttanen, och kelotallsvillan med glassovrummet är ett annat hus: taket som ramar in norrsken på vintern ramar nu in en himmel som fortfarande är ljus klockan två på natten. Urho Kekkonens nationalpark ligger en kort bilresa bort.",
+            "Till Enaresjön är det en timmes bilfärd norrut, och den privata båtturen med lägereld är kvällen som bokas: det är Finlands tredje största sjö, och största delen av stranden saknar väg. Tillbaka i villan fungerar bastun och badtunnan precis som i februari."
+          ],
+          "night": "Privat båttur på Enaresjön med lägereld"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Så fungerar det',
       h2: 'Vi kontrollerar och föreslår. Du bokar direkt hos stället.',
       items: [
         { title: 'Bara kontrollerade ställen.', body: 'Listan rymmer {n} villor och sviter, inte fler. Varje ställe är kontrollerat mot dess egna publicerade uppgifter och färska gästomdömen, och listan lever: ett ställe åker av om nivån inte längre håller.' },
-        { title: 'Förslag inom ett dygn, utan förpliktelser.', body: 'Berätta datum, sällskapets storlek och vad du söker. Du får ett förslag på de bästa alternativen inom ett dygn, och era kontaktuppgifter delas inte med något ställe förrän ni själva hör av er.' },
-        { title: 'Priset finns hos stället, inte hos oss.', body: 'När en villa har en offentlig bokningssida leder länken direkt dit och priset syns innan ni bestämmer er. När inget pris är publicerat ger stället er en offert direkt. Vi sätter inga priser och tar inga bokningar.' },
+        { title: 'Förslag inom ett dygn, utan förpliktelser.', body: 'Berätta datum, sällskapets storlek och vad du söker. Du får ett förslag på de bästa alternativen inom ett dygn, och dina kontaktuppgifter delas inte med något ställe förrän du själv hör av dig.' },
+        { title: 'Priset finns hos stället, inte hos oss.', body: 'När en villa har en offentlig bokningssida leder länken direkt dit och priset syns innan du bestämmer dig. När inget pris är publicerat ger stället dig en offert direkt. Vi sätter inga priser och tar inga bokningar.' },
       ],
     },
     signature: {
-      eyebrow: 'Signature-villor',
+      eyebrow: "Våra fyra val",
       h2: 'De fyra vi rekommenderar oftast.',
       lede: 'De boenden vi rekommenderar oftast. Varje detalj nedan är verifierad mot operatörens information och färska recensioner, inte hämtad ur en broschyr.',
     },
@@ -224,7 +278,7 @@ const sv: SiteCopy = {
       { value: '32', label: 'Dagar utan solnedgång i Rovaniemi, längre norrut fler' },
       { value: '24 h', label: 'Dagsljus på toppen, 21 juni' },
       { value: '+18 °C', label: 'Snitt på dagen i slutet av juni' },
-      { value: '50 %', label: 'Lägre efterfrågan än norrskenssäsongen' },
+      { value: '68,9°N', label: 'Vårt nordligaste resmål, Enare, där perioden är längst' },
     ],
     fourReasons: 'Fyra skäl',
     h2: 'Lappland på sommaren är en annan plats.',
@@ -249,7 +303,7 @@ const sv: SiteCopy = {
       h2: 'En kommentar om att planera en midnattssolsresa.',
       p1: 'Perioden är kort och villorna är privatägda, kalendern fylls därför efter tillfälle snarare än jämnt. Det lönar sig att fråga tidigt.',
       p2: 'Rätt tidpunkt att fråga om en viss juni ligger mellan januari och mars samma år. Senare förfrågningar är fortfarande värda besväret, platser frigörs, men det översta skiktet av utbudet är ofta borta tidigare.',
-      quoting: 'Just nu besvarar vi förfrågningar för somrarna 2026 och 2027',
+      quoting: 'Just nu besvarar vi förfrågningar för sommaren {year}',
     },
     inquiryTitle: 'Fråga om en midnattssolsresa.',
     inquiryBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål. Ett svar kommer inom en arbetsdag med tillgängligheten i hela sommarkollektionen.',
@@ -276,7 +330,7 @@ const sv: SiteCopy = {
     options: {
       headcount: ['1–2 gäster', '3–4 gäster', '5–6 gäster', '7–10 gäster', 'Större grupp'],
       intent: ['Norrskenssäsong, första besöket', 'Norrskenssäsong, återkommande besök', 'Midnattssol (juni–juli)', 'Jul / nyår', 'Familjegrupp', 'Privat firande', 'Bröllopsresa / retreat för två', 'Annat, förklara i meddelandet'],
-      budget: ['Under 1 000 €/natt', '1 000 – 2 500 €/natt', '2 500 – 5 000 €/natt', '5 000+ €/natt', 'Reservboende, exklusiv användning', 'Säger hellre inte'],
+      budget: ['Under 1 000 €/natt', '1 000 – 2 500 €/natt', '2 500 – 5 000 €/natt', '5 000+ €/natt', 'Exklusiv användning av hela stället', 'Säger hellre inte'],
     },
     submit: 'Skicka privat förfrågan',
     sending: 'Skickar…',
@@ -338,7 +392,7 @@ const sv: SiteCopy = {
     nightlyHint: 'Ungefärligt lågsäsongspris. Det faktiska nattpriset beror på datum, vistelsens längd och de tjänster som ingår.',
     rate: 'Pris',
     onRequest: 'På begäran',
-    reserveHint: 'Reservboende, offereras under bordet på begäran, aldrig via ett offentligt erbjudande.',
+    reserveHint: 'Reservboende, offereras direkt på begäran, inte via ett offentligt erbjudande.',
     beginInquiry: 'Starta en privat förfrågan',
     viewRates: 'Se offentliga priser',
     orSendInquiry: 'Eller skicka en privat förfrågan',

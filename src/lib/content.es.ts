@@ -56,7 +56,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'levin-iglut-golden-crown': {
       tagline: 'Iglús de cristal asomados sobre el fell de Levi: el único conjunto de iglús de Laponia orientado al sur, hacia el valle.',
       copy: [
-        'Cuarenta y dos iglús de cristal dispuestos en la ladera meridional del fell de Levi. La mayoría de las cabañas de aurora apuntan al norte hacia un bosque vacío; Levin Iglut es uno de los muy pocos que enmarca las luces sobre el perfil iluminado de la aldea del fell que se extiende abajo: mejor para fotógrafos, más espectacular al anochecer.',
+        'Cuarenta y dos iglús de cristal dispuestos en la ladera meridional del fell de Levi. La mayoría de las cabañas de aurora apuntan al norte hacia un bosque vacío; Levin Iglut es uno de los muy pocos que enmarca las luces sobre el perfil iluminado de la aldea del fell que se extiende abajo: mejor para fotógrafos, más dramático al anochecer.',
         'A poca distancia a pie de la aldea de Levi (góndola, restaurantes, ski-in/ski-out), pero los iglús en sí son tranquilos. Restaurante Aurora en la propiedad, con el chef abasteciéndose dentro de un radio de 100 km.',
       ],
       signature: [
@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'El núcleo de auroras de lujo del norte de Finlandia: Kakslauttanen, Star Arctic, el límite salvaje de Urho Kekkonen.',
       copy: [
-        'Saariselkä se asienta en el extremo septentrional del Parque Nacional de Urho Kekkonen, uno de los mayores espacios naturales salvajes de Finlandia, y es la aldea que definió el alojamiento de aurora con techo de cristal. La mayoría de las cabañas de cristal más conocidas del país (Kakslauttanen, Star Arctic, Northern Lights Village) se encuentran a menos de 10 km de la aldea.',
-        'La aldea en sí es pequeña y transitable a pie: una calle principal, unos cuantos restaurantes y acceso directo al parque nacional. El aeropuerto de Ivalo está a 27 km, alrededor de media hora en traslado privado, y acoge tanto vuelos regulares como chárteres privados.',
+        'Saariselkä se asienta en el extremo septentrional del Parque Nacional de Urho Kekkonen, el segundo parque nacional más grande de Finlandia con 2.550 km², y es la aldea que definió el alojamiento de aurora con techo de cristal. La mayoría de las cabañas de cristal más conocidas del país (Kakslauttanen, Star Arctic, Northern Lights Village) se encuentran a menos de 10 km de la aldea.',
+        'La aldea en sí es pequeña y transitable a pie: una calle principal, tres restaurantes serios y acceso directo al parque nacional. El aeropuerto de Ivalo está a 27 km, alrededor de media hora en traslado privado, y acoge tanto vuelos regionales como chárteres privados.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort: la propiedad de techo de cristal original',
@@ -148,7 +148,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'inari': {
       position: 'Nuestro destino más septentrional, donde la aurora se observa unas tres noches de cada cuatro. Corazón sami, lago Inari, cielos oscuros.',
       copy: [
-        'Inari es el municipio más extenso de Finlandia y la capital cultural de los sami finlandeses. La aldea se sitúa en el lago Inari, el tercero más grande de Finlandia, con unas 3.000 islas, a más de 200 km al norte del círculo polar y sin ninguna luz urbana en el horizonte.',
+        'Inari es el municipio más extenso de Finlandia y la capital cultural de los sami finlandeses. Lago Inari, el tercero más grande de Finlandia, unas 3.000 islas, a más de 200 km al norte del círculo polar y sin ninguna luz urbana en el horizonte.',
         'Para el viaje de lujo esto significa dos cosas. Primero: a esta latitud el Instituto Meteorológico Finlandés observa la aurora unas tres noches de cada cuatro, y aparece en el cenit en lugar de baja al norte. Segundo: las fincas de troncos junto al lago están entre los alojamientos más tranquilos de Laponia: sin tráfico de paso ni aldeas vecinas en el horizonte visible.',
       ],
       highlights: [
@@ -178,7 +178,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La principal estación de esquí de Finlandia. Chalés de lujo en la ladera sur, ski-in / ski-out desde la góndola de Levi.',
       copy: [
         'Levi es la estación de fell más desarrollada de Laponia: una completa aldea de deportes de invierno con 44 pistas y 26 remontes, dos de ellos telecabinas. El mercado de alquiler de chalés de diseño se ha vuelto serio en la última década. La góndola sube del centro de la aldea a la cima, a 531 metros; en la ladera sur se asientan los chalés privados, y allí abre un telesilla nuevo para la temporada 2026-2027.',
-        'La visibilidad de auroras desde Levi está orientada al sur y es espectacular, algo poco habitual en Laponia, de modo que el perfil iluminado de la aldea pasa a formar parte de la fotografía. Mejor combinada con una o dos noches más al norte (Inari o Saariselkä) para una aurora de naturaleza salvaje genuina antes de regresar aquí a esquiar.',
+        'La visibilidad de auroras desde Levi suele estar orientada al sur, sobre la aldea, de modo que el perfil iluminado pasa a formar parte de la fotografía. Mejor combinada con una o dos noches más al norte (Inari o Saariselkä) para una aurora de naturaleza salvaje genuina antes de regresar aquí a esquiar.',
       ],
       highlights: [
         'Levin Iglut: iglús de cristal orientados al sur sobre la aldea del fell',
@@ -193,7 +193,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La alternativa tranquila a Levi. Parque nacional de Pallas-Yllästunturi, menos gente, bosque más profundo.',
       copy: [
         'Ylläs tiene 62 pistas, más que ninguna otra área esquiable de Finlandia, y los descensos más largos del país: más de tres kilómetros desde la cima pelada de 719 metros hasta el valle. Aun así parece una fracción de Levi, porque la aldea se reparte entre dos asentamientos (Äkäslompolo y Ylläsjärvi), separados por 15 km de fell y por el Parque Nacional de Pallas-Yllästunturi.',
-        'Para el viaje de lujo el atractivo es el espacio. Los chalés de autor se asientan aquí en solitario en la ladera del fell, los senderos del parque nacional parten desde la propiedad, y el silencio es lo que la gente realmente paga. La red de fondo suma unos 300 kilómetros, más de 30 de ellos iluminados.',
+        'Para el viaje de lujo el atractivo es el espacio. Los chalés de autor se asientan aquí en solitario en la ladera del fell, los senderos del parque nacional parten desde la propiedad, y el silencio es lo que la gente realmente paga. La visibilidad de auroras es excelente gracias a la escasísima contaminación lumínica local.',
       ],
       highlights: [
         'Parque Nacional de Pallas-Yllästunturi: el 3.º más grande de Finlandia',
@@ -207,9 +207,9 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
   },
   experiences: {
     'private-aurora-photography-night': {
-      hook: 'Un solo guía, tu grupo y un vehículo fotográfico calefactado que sigue la previsión allá donde apunte.',
+      hook: 'Un solo guía, su grupo y un vehículo fotográfico calefactado que sigue la previsión allá donde apunte.',
       copy: [
-        'Una caza de auroras privada de seis horas con un guía finlandés certificado de fotografía de naturaleza. El vehículo está calefactado y equipado; se prestan trípodes, disparadores de cable y cámaras preparadas para el ártico si no traes los tuyos. La ruta se decide esa misma tarde en función del índice Kp y de la previsión de nubosidad.',
+        'Una caza de auroras privada de seis horas con un guía finlandés certificado de fotografía de naturaleza. El vehículo está calefactado y equipado; se prestan trípodes, disparadores de cable y cámaras preparadas para el ártico si no trae los suyos. La ruta se decide esa misma tarde en función del índice Kp y de la previsión de nubosidad.',
         'La comida caliente y las pieles de reno como aislante del suelo van de serie. La instrucción cubre la exposición para la propia aurora, la composición del primer plano y el revelado esa misma noche.',
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi: sep.–abr.',
@@ -223,15 +223,15 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Rovaniemi, Ivalo: oct.–mar. (según meteorología)',
     },
     'private-chef-arctic-tasting': {
-      hook: 'Un menú degustación finlandés-sami de nueve platos cocinado en la cocina de tu villa por un chef en activo de Laponia.',
+      hook: 'Un menú degustación finlandés-sami de nueve platos cocinado en la cocina de su villa por un chef en activo de Laponia.',
       copy: [
-        'Un chef en activo de una de las cocinas serias de Laponia acude a tu villa por una velada. El menú se construye en torno a lo que de verdad está de temporada esa semana: trucha alpina de aguas frías, mora ártica, reno ahumado, setas frescas del bosque, espino amarillo, enebro.',
+        'Un chef en activo de una de las cocinas serias de Laponia acude a su villa por una velada. El menú se construye en torno a lo que de verdad está de temporada esa semana: trucha alpina de aguas frías, mora ártica, reno ahumado, setas frescas del bosque, espino amarillo, enebro.',
         'Incluye un maridaje de vinos seleccionado para el menú, los ingredientes, la preparación, el servicio y la limpieza. Máximo diez comensales. Menús vegetariano, sin gluten y sin marisco bajo petición, con al menos 72 horas de antelación.',
       ],
       available: 'Cualquier villa de la colección: todo el año',
     },
     'private-husky-safari': {
-      hook: 'Tu propio tiro de trineo, tu propio guía de la perrera, hacia el bosque boreal con la primera luz.',
+      hook: 'Su propio tiro de trineo, su propio guía de la perrera, hacia el bosque boreal con la primera luz.',
       copy: [
         'Un tiro privado de dieciséis perros de trineo y un guía de la perrera. La ruta se interna en la red de senderos de trabajo de una perrera de trineo seria,normalmente 35 km, con una parada junto al fuego para zumo caliente de arándano rojo y salchicha a la brasa a mitad de camino.',
         'Conduces tu propio trineo (primero una sesión informativa de 20 minutos). Se facilitan monos de lana, manoplas y botas árticas. Grupo de dos a seis: sin grupos compartidos, nunca combinado con desconocidos.',
@@ -263,7 +263,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Todos los destinos: todo el año',
     },
     'helicopter-villa-transfer': {
-      hook: 'Recogida desde el aeropuerto regional directamente al helipuerto de tu villa: sin traslado por carretera.',
+      hook: 'Recogida desde el aeropuerto regional directamente al helipuerto de su villa: sin traslado por carretera.',
       copy: [
         'Se usa con mayor frecuencia para las llegadas a las fincas privadas de troncos junto al lago Inari. La aeronave es el mismo AS350 de los vuelos de auroras; un solo trayecto dura entre 20 y 45 minutos.',
         'Máximo cinco pasajeros más equipaje. El operador ajusta la recogida a la entrada en la villa y a la ventana de luz diurna, que en pleno invierno son solo unas horas de penumbra en torno al mediodía: en la latitud de Inari el sol no llega a salir.',

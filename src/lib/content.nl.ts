@@ -42,7 +42,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Vierentwintig glazen hutten met uitzicht op niets dan bos en de noorderlichtovaal.',
       copy: [
         'Inari ligt pal onder de noorderlichtovaal, op de breedtegraad waar het Fins Meteorologisch Instituut het noorderlicht ongeveer drie op vier nachten waarneemt. Aurora Village is een landgoed met 24 hutten zonder doorgaand verkeer en zonder naburige dorpen aan de zichtbare horizon. De hutten staan op afstand voor privacy, met het bed onder het glas en de bank ernaar gericht.',
-        'Het Sami-geleide restaurant op het terrein serveert een proefmenu rond rendier, beekridder en kruipbraam. Noorderlichtwekkers worden van hut tot hut doorgegeven via de radio, zodat niemand de villa ernaast wakker maakt.',
+        'Het Sami-geleide restaurant op het terrein serveert een proefmenu rond rendier, poolforel en kruipbraam. Noorderlichtwekkers worden van hut tot hut doorgegeven via de radio, zodat niemand de villa ernaast wakker maakt.',
       ],
       signature: [
         'Hut met glazen dak en het bed onder de nok',
@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'De luxe noorderlichthub van Noord-Finland, Kakslauttanen, Star Arctic, de wilde rand van Urho Kekkonen.',
       copy: [
-        'Saariselkä ligt aan de noordelijke rand van het Nationaal Park Urho Kekkonen, een van de grootste wildernisgebieden van Finland, en is het dorp dat de noorderlichtaccommodatie met glazen dak heeft gedefinieerd. De meeste bekende glashutten van het land (Kakslauttanen, Star Arctic, Northern Lights Village) liggen binnen 10 km van het dorp.',
-        'Het dorp zelf is klein en goed te belopen: één hoofdweg, een paar restaurants en directe toegang tot het nationaal park. De luchthaven van Ivalo ligt op 27 km, ongeveer een half uur per privétransfer, en handelt zowel lijnvluchten als privécharters af.',
+        'Saariselkä ligt aan de noordelijke rand van het Nationaal Park Urho Kekkonen, met 2.550 km² het op één na grootste nationale park van Finland, en is het dorp dat de noorderlichtaccommodatie met glazen dak heeft gedefinieerd. De meeste bekende glashutten van het land (Kakslauttanen, Star Arctic, Northern Lights Village) liggen binnen 10 km van het dorp.',
+        'Het dorp zelf is klein en goed te belopen: één hoofdweg, drie serieuze restaurants en directe toegang tot het nationaal park. De luchthaven van Ivalo ligt op 27 km, ongeveer een half uur per privétransfer, en handelt zowel lijnvluchten als privécharters af.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, het oorspronkelijke pand met glazen dak',
@@ -193,12 +193,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Het rustige alternatief voor Levi. Nationaal Park Pallas-Yllästunturi, minder drukte, dieper bos.',
       copy: [
         'Ylläs heeft 62 pistes, meer dan welk ander skigebied van Finland ook, en de langste afdalingen van het land: ruim drie kilometer vanaf de kale top op 719 meter naar het dal. Toch voelt het als een fractie van Levi, want het dorp is verspreid over twee nederzettingen (Äkäslompolo en Ylläsjärvi), gescheiden door 15 km fjäll en het Nationaal Park Pallas-Yllästunturi.',
-        'Voor luxereizen zit de aantrekkingskracht in de ruimte. Door architecten gebouwde chalets staan hier alleen op de fjällflank, de paden van het nationaal park vertrekken vanaf het pand, en de stilte is waar mensen werkelijk voor betalen. Het loipenetwerk telt ongeveer 300 kilometer, waarvan ruim 30 kilometer verlicht.',
+        'Voor luxereizen zit de aantrekkingskracht in de ruimte. Door architecten gebouwde chalets staan hier alleen op de fjällflank, de paden van het nationaal park vertrekken vanaf het pand, en de stilte is waar mensen werkelijk voor betalen. De zichtbaarheid van het noorderlicht is uitstekend dankzij de zeer lage lichtvervuiling ter plaatse.',
       ],
       highlights: [
         'Nationaal Park Pallas-Yllästunturi, het op twee na grootste van Finland',
         'Twee skidorpen aan weerszijden van de fjäll van Ylläs',
-        'Lagere lichtvervuiling dan welk ander skiresort ook',
+        'Aan de rand van het nationaal park, dus geen resortverlichting aan de fjällkant',
         'Ongeveer 300 km geprepareerde loipes, ruim 30 km verlicht',
       ],
       arrival: 'Kittilä (KTT), 40 km, ongeveer 45 min per privétransfer',

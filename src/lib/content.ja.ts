@@ -32,7 +32,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       signature: [
         '73 m²のスイート、北向きの全面ガラスファサード',
         'ホットタブ付きプライベートテラス＋屋外サウナ',
-        'Studio Puistoの内装——フィンランドデザインの名品が随所に',
+        'Studio Puistoの内装：フィンランドデザインの名品が随所に',
         '床暖房、日中の睡眠のための遮光カーテン',
         '館内のRakasレストラン',
         'Santa Claus Villageまで5分',
@@ -54,7 +54,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
     },
     'levin-iglut-golden-crown': {
-      tagline: 'Levi山の上にせり出すグラスイグルー——北の森ではなく、谷へ向かって南を望むイグルー群。',
+      tagline: 'Levi山の上にせり出すグラスイグルー。北の森ではなく、谷へ向かって南を望むイグルー群。',
       copy: [
         'Levi山の南斜面に42棟のグラスイグルーが配されています。多くのオーロラキャビンが何もない森の北側を向くのに対し、Levin Iglutは眼下に灯る山の村の稜線の上にオーロラを切り取る、Laplandでも数少ない一軒。写真家には好都合で、夕暮れにはいっそう劇的です。',
         'Levi村（ゴンドラ、レストラン、スキーイン/スキーアウト）まで徒歩圏ながら、イグルー自体は静か。館内のRestaurant Auroraは半径100 km以内から食材を調達するシェフが腕を振るいます。',
@@ -77,14 +77,14 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       signature: [
         'ベッドの上を覆うパノラマ透明ドーム',
         'ポーチの専用薪焚きホットタブ',
-        '原生村のロケーション——ロシア国境まで20分',
+        '原生村のロケーション：ロシア国境まで20分',
         '認定ガイド付きオーロラ写真プログラム',
         '週に数晩のサーミ文化プログラム',
         'Inari湖でのフィッシング＋伝統的なスモークサウナ',
       ],
     },
     'star-arctic-suite': {
-      tagline: 'Kaunispää山の頂に立つガラス張りのスイート——樹木線と村の灯りの上に広がるオーロラの寝室。',
+      tagline: 'Kaunispää山の頂に立つガラス張りのスイート。樹木線と村の灯りの上に広がるオーロラの寝室。',
       copy: [
         'Star ArcticはSaariselkä村から直接そびえ立つKaunispääの最頂部に位置します。Skyviewスイートは三方が床から天井までのガラス壁で、カーテンはなく、地元の樹木線を越える標高にあるため、ベッドから真の270°パノラマが広がります。',
         '頂上へ続く道はプライベートで夜間も照明があり、ゲストは自ら運転できます。ホテルには独自の天文台、レストラン、そして夏向けのファットバイクの一群があります。',
@@ -94,7 +94,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'プライベートな頂上への道、夜間照明あり',
         '館内のダークスカイ天文台（望遠鏡の夜）',
         '床から天井まで山を望むサウナ',
-        'プレミアムスイート——コーナーガラス、独立ラウンジ',
+        'プレミアムスイート：コーナーガラス、独立ラウンジ',
         'Saariselkä村まで車で5分',
       ],
     },
@@ -131,16 +131,16 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
   },
   destinations: {
     'saariselka': {
-      position: '北フィンランドの高級オーロラ拠点——Kakslauttanen、Star Arctic、そしてUrho Kekkonenの荒々しい縁。',
+      position: '北フィンランドの高級オーロラ拠点。Kakslauttanen、Star Arctic、そしてUrho Kekkonenの荒々しい縁。',
       copy: [
-        'Saariselkäはフィンランド有数の広大な原野であるUrho Kekkonen国立公園の北の縁に位置し、ガラス天井のオーロラ宿泊を定義した村です。この国でもっともよく知られたガラスキャビンの大半（Kakslauttanen、Star Arctic、Northern Lights Village）が村から10 km圏内にあります。',
+        'Saariselkäはフィンランド第2位の広さ（2,550 km²）を誇るUrho Kekkonen国立公園の北の縁に位置し、ガラス天井のオーロラ宿泊を定義した村です。この国でもっともよく知られたガラスキャビンの大半（Kakslauttanen、Star Arctic、Northern Lights Village）が村から10 km圏内にあります。',
         '村そのものは小さく歩いて回れる規模で、一本のメインストリート、いくつかのレストラン、そして国立公園への直接のアクセスがあります。Ivalo空港までは27 km、プライベート送迎で約30分。定期便とプライベートチャーターの両方に対応しています。',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, ガラス天井宿泊の原点',
         'Star Arctic Hotel, Kaunispää山の頂上スイート',
         'Urho Kekkonen国立公園への直接アクセス（原生レベル）',
-        'Ivalo空港——プライベートチャーター対応、送迎30分',
+        'Ivalo空港：プライベートチャーター対応、送迎30分',
       ],
       arrival: 'Ivalo (IVL)、27 km、プライベート送迎で約30分',
       auroraNote: '内陸の北方林で、どの方角にも数十キロにわたって集落の灯りがありません。フェルが高く開けた地平線をつくるため、アークが北の低い位置にとどまる夜ほど効いてきます。',
@@ -149,7 +149,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: '当社の目的地でもっとも北にあり、オーロラはおよそ4夜に3夜観測されます。サーミの中心地、Inari湖、暗い空。',
       copy: [
         'Inariはフィンランドで面積最大の自治体であり、フィンランド系サーミの文化的な首府です。村は、フィンランド第三の大きさで約3,000の島々を擁するInari湖のほとりにあります。北極圏から200 km以上北に位置し、地平線に街の灯りはありません。',
-        '高級旅行にとって、これは二つのことを意味します。第一に、この緯度ではフィンランド気象庁がおよそ4夜に3夜オーロラを観測しており、北の低い位置ではなく頭上に広がること。第二に、湖畔のログエステート（その一部は当社が専用に確保しています）はLaplandでもっとも静かな宿泊のひとつで、通過交通も、見渡せる地平線上の隣村もありません。',
+        '高級旅行にとって、これは二つのことを意味します。第一に、この緯度ではフィンランド気象庁がおよそ4夜に3夜オーロラを観測しており、北の低い位置ではなく頭上に広がること。第二に、湖畔のログエステートはLaplandでもっとも静かな宿泊のひとつで、通過交通も、見渡せる地平線上の隣村もありません。',
       ],
       highlights: [
         'Aurora Village, 専用に造られた30ヘクタールのガラスキャビン敷地',
@@ -163,7 +163,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'rovaniemi': {
       position: '玄関口となる街。建築家設計のスイート、主要ハブからの毎日の直行便。',
       copy: [
-        'RovaniemiはLaplandの地方都市であり、もっとも到達しやすいオーロラ目的地です。Helsinkiから毎日複数の直行便があり、加えて季節運航でLondon、Frankfurt、Paris、Vienna、湾岸諸国からの直行便もあります。空港は市の中心部から北へ約10 km、車で10〜15分です。',
+        'Rovaniemiはラップランドの州都であり、もっとも到達しやすいオーロラ目的地です。Helsinkiから毎日複数の直行便があり、加えて季節運航でLondon、Frankfurt、Paris、Vienna、湾岸諸国からの直行便もあります。空港は市の中心部から北へ約10 km、車で10〜15分です。',
         'ここの高級在庫は、空港から10分圏内の建築家設計デザイナースイート（Arctic TreeHouse、Apukka）を中心に構成されています。空港から人里離れた保護区へのヘリコプター送迎は一般的です。',
       ],
       highlights: [
@@ -182,7 +182,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       highlights: [
         'Levin Iglut, 山の村の上に広がる南向きグラスイグルー',
-        'デザイナー建築家設計のシャレー——南斜面、スキーイン/アウト',
+        'デザイナー建築家設計のシャレー：南斜面、スキーイン/アウト',
         '44本のコース、26基のリフト（うちゴンドラ2基）、整備斜面38.5 km',
         'Kittilä空港 (KTT) は季節運航の直行国際便に対応',
       ],
@@ -196,7 +196,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '高級旅行にとっての魅力は、空間です。ここの建築家設計シャレーは山腹に一軒で佇み、国立公園のトレイルは敷地から始まり、人々が実際に対価を払うのはその静けさです。クロスカントリーコースは約300 km、うち30 km以上が照明付きです。',
       ],
       highlights: [
-        'Pallas-Yllästunturi国立公園——フィンランド第3の規模',
+        'Pallas-Yllästunturi国立公園：フィンランド第3の規模',
         'Ylläs山の両側に位置する二つのスキー村',
         '他のどのスキーリゾートよりも少ない光害',
         '整備されたクロスカントリーコース約300 km、うち30 km以上が照明付き',
@@ -217,7 +217,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'helicopter-aurora-flight': {
       hook: '雲の層の上、オーロラそのものへと向かう45分の夜間ヘリコプター飛行。',
       copy: [
-        'RovaniemiとIvaloを拠点に、夜間VFR認定のヘリコプター運航者が運航します。飛行は地元の雲の層を抜け、活動中のオーロラオーバルの内側を周回します——地上からは不可能な視点です。',
+        'RovaniemiとIvaloを拠点に、夜間VFR認定のヘリコプター運航者が運航します。飛行は地元の雲の層を抜け、活動中のオーロラオーバルの内側を周回します。地上からは不可能な視点です。',
         '地上撮影は飛行の前後に含まれます。飛行中の時間は撮影ではなく体験そのもののためのものです。AS350一機あたり最大4名。天候の窓に左右され、運航会社が予報を追い、前日に知らせます。',
       ],
       available: 'Rovaniemi、Ivalo, 10月〜3月（天候次第）',
@@ -233,15 +233,15 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'private-husky-safari': {
       hook: 'あなただけの犬ぞりチームと専属の犬舎ガイドとともに、夜明けの光のなか北方林へ。',
       copy: [
-        '16頭のそり犬からなるプライベートチームと、犬舎ガイド一名。ルートは本格的なそり犬犬舎の現役トレイル網へと入ります——通常35 km、中間地点で焚き火を囲み、温かいリンゴンベリージュースと焼きソーセージの休憩を取ります。',
-        'あなた自身がそりを操ります（はじめに20分のブリーフィング）。ウールのつなぎ、ミトン、寒冷地用ブーツを貸与します。2〜6名の少人数——相乗りはなく、見知らぬ方と一緒になることは決してありません。',
+        '16頭のそり犬からなるプライベートチームと、犬舎ガイド一名。ルートは本格的なそり犬犬舎の現役トレイル網へと入り、通常35 kmです。中間地点では焚き火を囲み、温かいリンゴンベリージュースと焼きソーセージの休憩を取ります。',
+        'あなた自身がそりを操ります（はじめに20分のブリーフィング）。ウールのつなぎ、ミトン、寒冷地用ブーツを貸与します。2〜6名の少人数で、相乗りはなく、見知らぬ方と一緒になることは決してありません。',
       ],
       available: 'Rovaniemi、Levi、Saariselkä, 12月〜4月',
     },
     'private-snowmobile-wilderness': {
       hook: '凍った湖と手つかずの森を抜ける80 kmのガイド付きスノーモービルルート、薪火で仕上げる昼食付き。',
       copy: [
-        '上部のフェルのトレイルを行く、一日かけたガイド付きスノーモービルルート——観光客向けの周回路ではなく、地元ガイドが使う網です。昼食はガイドがトレイル上の焚き火で調理します（トナカイのシチュー、焚き火で焼くパン、温かいジュース）。',
+        '上部のフェルのトレイルを行く、一日かけたガイド付きスノーモービルルート。観光客向けの周回路ではなく、地元ガイドが使う網です。昼食はガイドがトレイル上の焚き火で調理します（トナカイのシチュー、焚き火で焼くパン、温かいジュース）。',
         'BRP車、ヘルメット、バラクラバ、ウールのつなぎを含みます。二人乗りのそりもご用意できます。運転者には運転免許が必要ですが、同乗席には不要です。1グループ最大4台。',
       ],
       available: 'Saariselkä、Inari、Levi, 12月〜4月',
@@ -255,7 +255,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'Inari、Saariselkä, 通年（そりは12月〜3月）',
     },
     'private-jet-arrival': {
-      hook: 'Ivalo、Kittilä、Rovaniemiへの直行プライベートジェット送迎——商用チェックインも乗り継ぎハブもなし。',
+      hook: 'Ivalo、Kittilä、Rovaniemiへの直行プライベートジェット送迎。商用チェックインも乗り継ぎハブもなし。',
       copy: [
         'Helsinki、Geneva、Dohaのジェットパートナーを通じて手配します。Ivalo（Saariselkä / Inariのヴィラに最寄り）、Kittilä（Levi / Ylläsのヴィラに最寄り）、またはRovaniemi（Arctic TreeHouseに最適）への直行便。',
         'すべての手配を一括で：寒冷地仕様の暖房付き車両でヴィラまでの陸上送迎、手荷物の転送、列に並ばない通関。運航会社がスロットを申請し、到着をヴィラのチェックイン時刻に合わせます。',
@@ -263,7 +263,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       available: 'すべての目的地、通年',
     },
     'helicopter-villa-transfer': {
-      hook: '地域空港からヴィラの着陸地点へと直接ピックアップ——陸路の送迎なし。',
+      hook: '地域空港からヴィラの着陸地点へと直接ピックアップ。陸路の送迎なし。',
       copy: [
         'Inari湖の湖畔にあるプライベートなログエステートへの到着に最も多く用いられます。機体はオーロラ飛行と同じAS350で、片道は20〜45分です。',
         '最大5名＋手荷物。運航会社がピックアップをヴィラのチェックインと明るい時間帯に合わせます。真冬のその時間帯は正午前後の薄明が数時間だけで、イナリの緯度では太陽はまったく昇りません。',

@@ -58,15 +58,15 @@ export const DESTINATIONS: Destination[] = [
   {
     slug: 'inari',
     name: 'Inari',
-    position: 'Our northernmost destination, where the aurora is observed on about three nights in four. Sami heartland, Lake Inari, dark skies.',
+    position: 'Our northernmost destination, where the aurora is observed on about three nights in four. Sámi heartland, Lake Inari, dark skies.',
     copy: [
-      'Inari is Finland\'s largest municipality by area and the cultural capital of the Finnish Sami. The village sits on Lake Inari, the third-largest lake in Finland, with some 3,000 islands, more than 200 km north of the Arctic Circle and with no city light anywhere on the horizon.',
+      'Inari is Finland\'s largest municipality by area and the cultural capital of the Finnish Sámi. The village sits on Lake Inari, the third-largest lake in Finland, with some 3,000 islands, more than 200 km north of the Arctic Circle and with no city light anywhere on the horizon.',
       'For luxury travel this means two things. First: at this latitude the Finnish Meteorological Institute observes the aurora on roughly three nights in four, and it stands overhead rather than low in the north. Second: the lakeside log estates are among the quietest accommodation in Lapland, with no through traffic and no neighbouring villages on the visible horizon.',
     ],
     highlights: [
       'Aurora Village, purpose-built 30-hectare glass-cabin estate',
       'Wilderness Hotel Nellim, aurora bubbles on Lake Inari\'s east shore',
-      'Sami museum SIIDA + cultural programmes year-round',
+      'Sámi museum SIIDA + cultural programmes year-round',
       'Lake Inari, Finland\'s third-largest lake, around 3,000 islands',
     ],
     arrival: 'Ivalo (IVL), 40 km, about 40 min by private transfer',

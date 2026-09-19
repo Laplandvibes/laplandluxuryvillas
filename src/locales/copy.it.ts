@@ -59,6 +59,13 @@ const it: SiteCopy = {
     verifiedOn: 'Verificato il {d}',
     ratingScope: 'La valutazione riguarda l\'intera struttura, {p}',
   },
+  photo: {
+    "credit": "Foto",
+    "inPicture": "Nella foto: {what}",
+    "cropped": "ritagliata",
+    "nellim": "Il villaggio di Nellim sulla riva del lago Inari, non l’hotel in sé",
+    "heroWinter": "Aurora sopra un lodge illuminato a Saariselkä, febbraio 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Collezione privata',
@@ -97,20 +104,20 @@ const it: SiteCopy = {
     emailPlaceholder: 'sua@email.com',
     footnote: 'Disiscrizione con un clic.',
     welcome: 'Benvenuto a bordo. Il primo avviso arriva entro una settimana.',
-    already: 'Sei già nella lista, ci vediamo al prossimo avviso.',
+    already: 'È già nella lista, ci vediamo al prossimo avviso.',
     invalidEmail: 'Questo indirizzo email non sembra valido.',
     networkError: 'Errore di rete. Riprova.',
     genericError: 'Qualcosa è andato storto. Riprova tra un momento.',
   },
   affiliateDisclosure: {
-    compact: 'Link di affiliazione, riceviamo una piccola commissione senza costi aggiuntivi quando prenoti.',
+    compact: 'Link di affiliazione, riceviamo una piccola commissione senza costi aggiuntivi quando prenota.',
     full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi per Lei.',
   },
   hero: {
     home: {
       eyebrow: '{n} ville · {m} destinazioni',
       title: 'Una villa in Lapponia, senza tirare a indovinare.',
-      lede: 'Ogni struttura è verificata sulle informazioni che pubblica lei stessa e sulle recensioni recenti degli ospiti. Prenoti direttamente con la struttura, oppure ci dica date e gruppo e le proponiamo le più adatte entro un giorno.',
+      lede: "{n} ville con tetto in vetro e suite di design in {m} destinazioni della Lapponia, ognuna con la propria pagina di prenotazione e la sua valutazione Google in vista. Ci mandi le sue date e riceverà una rosa di proposte entro un giorno.",
       primary: 'Vedi le ville',
       secondary: 'Chiedi una proposta',
     },
@@ -152,6 +159,53 @@ const it: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Settimane già pronte",
+      "h2": "Tre settimane in Lapponia, pianificate fino all’ultima sera.",
+      "lede": "Scelga la villa, aggiunga l’auto dall’aeroporto e prenoti l’unica sera che deve riuscire. Ogni link qui sotto porta alla pagina di prenotazione del partner, con il prezzo in vista.",
+      "season": "Stagione",
+      "stay": "Dove dorme",
+      "car": "Come si sposta",
+      "night": "La sera da prenotare in anticipo",
+      "home": "Che cosa torna a casa con Lei",
+      "homeLede": "La tavola a cui ha mangiato per una settimana: Iittala, Marimekko e Kosta Boda in un unico negozio nordico.",
+      "carFrom": "Auto a noleggio {airport}, ritiro al terminal",
+      "ctaCar": "Scopra i prezzi delle auto",
+      "ctaNight": "Scopra l’escursione",
+      "ctaNightInquiry": "Invii una richiesta",
+      "items": [
+        {
+          "title": "Una settimana di aurore sopra Saariselkä",
+          "season": "Da settembre a marzo",
+          "airport": "dall’aeroporto di Ivalo",
+          "story": [
+            "Le previsioni danno cielo sereno. È nella Skyview Suite dal pomeriggio, la sauna è ancora calda e il cielo sopra Kaunispää ha preso quel blu duro e scuro che assume prima che arrivino le luci. Il letto è rivolto alla parete di vetro, così l’attesa si fa sdraiati.",
+            "L’aeroporto di Ivalo dista circa mezz’ora di strada, ed è proprio per questo che serve l’auto: i punti migliori per le aurore intorno a Saariselkä sono fuori dalle linee degli autobus, e un’auto calda con il motore acceso è il capanno più caldo che esista. La serata fotografica privata è l’unica cosa da prenotare prima di volare; la direzione la sceglie la guida quello stesso pomeriggio, dalla mappa delle nuvole."
+          ],
+          "night": "Serata privata di fotografia delle aurore con guida"
+        },
+        {
+          "title": "Settimana di Natale a Rovaniemi, silenziosa dopo il calare del buio",
+          "season": "Da dicembre a gennaio",
+          "airport": "dall’aeroporto di Rovaniemi",
+          "story": [
+            "A cinque minuti dal Villaggio di Babbo Natale, e appena l’ultimo elfo è tornato a casa il bosco intorno all’Arctic TreeHouse si zittisce. La parete di vetro della suite guarda a nord; la vasca idromassaggio è sulla terrazza, subito fuori. I bambini che dormono in camera, i genitori in terrazza: è questa la settimana di Rovaniemi che funziona.",
+            "L’aeroporto di Rovaniemi è a pochi minuti di auto, e l’auto trasforma la regione in gite in giornata: la pista da sci di Ounasvaara, il fiume, lo zoo di Ranua un’ora più a sud. Per l’unica sera che deve essere perfetta, uno chef privato prepara un menu degustazione artico nella suite."
+          ],
+          "night": "Chef privato e menu degustazione artico nella suite"
+        },
+        {
+          "title": "Sole di mezzanotte: Kakslauttanen e il lago Inari",
+          "season": "Giugno",
+          "airport": "dall’aeroporto di Ivalo",
+          "story": [
+            "A giugno il sole non tramonta a Kakslauttanen, e la villa in pino kelo con la camera da letto di vetro è un’altra casa: il tetto che d’inverno incornicia le aurore ora incornicia un cielo ancora chiaro alle due del mattino. Il parco nazionale Urho Kekkonen è a breve distanza in auto.",
+            "Il lago Inari è a un’ora di auto verso nord, e la crociera privata in barca con il fuoco da campo è la sera da prenotare: è il terzo lago della Finlandia per grandezza, e gran parte delle sue rive non ha strada. Tornati alla villa, la sauna e la vasca idromassaggio funzionano esattamente come a febbraio."
+          ],
+          "night": "Crociera privata in barca sul lago Inari con fuoco da campo"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Come funziona',
       h2: 'Noi verifichiamo e proponiamo. Lei prenota direttamente con la struttura.',
@@ -162,7 +216,7 @@ const it: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Ville signature',
+      eyebrow: "Le nostre quattro scelte",
       h2: 'Le quattro che consigliamo più spesso.',
       lede: 'Gli immobili che consigliamo più spesso. Ogni dettaglio qui sotto è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.',
     },
@@ -173,11 +227,11 @@ const it: SiteCopy = {
   },
   villasPage: {
     leadTitle: 'Che cosa contiene questa selezione',
-    leadP1: 'Otto camere, non otto hotel. Ogni voce di questo elenco è un tipo di camera preciso all\'interno di una struttura reale: una capanna con tetto in vetro a Kakslauttanen, una suite a sbalzo all\'Arctic TreeHouse, una bolla per l\'aurora sul lago Inari. È l\'unità che si prenota davvero, quindi è quella che elenchiamo.',
+    leadP1: 'Otto camere, non otto hotel. Ogni voce di questo elenco è un tipo di camera preciso all’interno di una struttura reale: una capanna con tetto in vetro a Kakslauttanen, una suite a sbalzo all’Arctic TreeHouse, una bolla per l’aurora sul lago Inari. È l\'unità che si prenota davvero, quindi è quella che elenchiamo.',
     leadP2: 'I giudizi su questo sito vengono da Google e riguardano l\'intera struttura, mai la singola camera, e ogni scheda lo dichiara. La selezione è breve di proposito: cinque destinazioni e quattro tipi costruttivi, dal tetto in vetro allo chalet alpino, e si ferma lì invece di allungare l\'elenco.',
     filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d’autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
     noVillas: 'Ancora nessuna villa in questa categoria.',
-    inquiryTitle: 'Non trovi la soluzione giusta?',
+    inquiryTitle: 'Non trova la soluzione giusta?',
     inquiryBody: 'Qui sopra c’è l’intera collezione pubblicata. Se nulla è adatto, ci dica che cosa cerca e Le suggeriremo quello che guarderemmo noi, anche fuori da questo elenco.',
   },
   suitesPage: {
@@ -194,7 +248,7 @@ const it: SiteCopy = {
   destinationsPage: {
     leadTitle: 'Cinque luoghi, cinque cieli diversi',
     leadP1: 'Queste cinque destinazioni non sono intercambiabili. Inari è la più settentrionale, su un lago il cui orizzonte visibile non porta alcuna luce di città. Saariselkä sta sul margine nord del parco nazionale di Urho Kekkonen, ed è lì che è nato l\'alloggio con tetto in vetro. Rovaniemi ha i voli, Levi i servizi della stazione, Ylläs il silenzio.',
-    leadP2: 'Ogni profilo qui sotto indica l\'aeroporto di arrivo e il tempo di transfer, com\'è davvero il cielo lì ( l\'orizzonte, la luce degli abitati, quanto in alto tende a stare l\'arco ) e quali ville si trovano in quella zona. Non pubblichiamo alcun dato di frequenza dell\'aurora per villaggio, perché nessuno lo misura per villaggio.',
+    leadP2: 'Ogni profilo qui sotto indica l’aeroporto di arrivo e il tempo di transfer, com’è davvero il cielo lì (l’orizzonte, la luce degli abitati, quanto in alto tende a stare l’arco) e quali ville si trovano in quella zona. Non pubblichiamo alcun dato di frequenza dell\'aurora per villaggio, perché nessuno lo misura per villaggio.',
     destinationLabel: (i) => `Destinazione 0${i + 1}`,
     readTheProfile: (name) => `Leggi il profilo di ${name}`,
   },
@@ -220,10 +274,10 @@ const it: SiteCopy = {
   },
   midnightSunPage: {
     facts: [
-      { value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' },
+      { value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più a nord' },
       { value: '24 h', label: 'Luce al culmine, 21 giu' },
       { value: '+18 °C', label: 'Temperatura diurna media a fine giugno' },
-      { value: '50 %', label: 'Domanda inferiore alla stagione delle aurore' },
+      { value: '68,9°N', label: 'La nostra destinazione più a nord, Inari, dove dura più a lungo' },
     ],
     fourReasons: 'Quattro motivi',
     h2: 'La Lapponia d’estate è un luogo a sé.',
@@ -248,9 +302,9 @@ const it: SiteCopy = {
       h2: 'Una nota sull’organizzazione di un viaggio nel sole di mezzanotte.',
       p1: 'La finestra è breve e le ville sono di proprietà individuale, perciò il calendario si riempie in modo opportunistico, non uniforme. Conviene chiedere per tempo.',
       p2: 'Il momento giusto per informarsi su un determinato giugno è tra gennaio e marzo dello stesso anno. Anche le richieste successive vale la pena inviarle, capitano dei rilasci, ma la fascia alta dell’offerta va spesso via prima.',
-      quoting: 'Attualmente rispondiamo alle richieste per le estati 2026 e 2027',
+      quoting: 'Attualmente rispondiamo alle richieste per l\'estate {year}',
     },
-    inquiryTitle: 'Informati su un viaggio nel sole di mezzanotte.',
+    inquiryTitle: 'S’informi su un viaggio nel sole di mezzanotte.',
     inquiryBody: 'Invia date, numero di persone e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con le disponibilità di tutta la collezione estiva.',
   },
   inquiryPage: {
@@ -280,9 +334,9 @@ const it: SiteCopy = {
     submit: 'Invia richiesta privata',
     sending: 'Invio…',
     successH2: 'Richiesta ricevuta.',
-    successBody: 'Riceverai una risposta entro un giorno lavorativo. Se desideri contattarci direttamente, puoi anche scriverci a',
+    successBody: 'Riceverà una risposta entro un giorno lavorativo. Se desidera contattarci direttamente, può anche scriverci a',
     successFollowUp: '.',
-    errorFallback: 'Puoi anche scriverci direttamente a',
+    errorFallback: 'Può anche scriverci direttamente a',
     fallbackNotice: 'Apertura del Suo client di posta per inviare la richiesta direttamente.',
     fineprint: 'Gli invii vengono inoltrati tramite una connessione cifrata a un’unica casella di posta privata in Finlandia. Nessun CRM di terzi, nessuna attribuzione pubblicitaria nel corpo del messaggio.',
     trustStrip: [
@@ -296,7 +350,7 @@ const it: SiteCopy = {
       {
         title: 'Perché esiste questa collezione',
         paragraphs: [
-          'L’offerta di lusso della Lapponia è un piccolo mondo. La stessa manciata di ville e qualche decina di suite ricorrono su ogni piattaforma di prenotazione, spesso con le stesse foto d’archivio e la stessa vaga fascia di prezzo. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoteresti davvero, dove sistemi una famiglia di nove persone, qual è il posto di cui nessuno scrive?',
+          'L’offerta di lusso della Lapponia è un piccolo mondo. La stessa manciata di ville e qualche decina di suite ricorrono su ogni piattaforma di prenotazione, spesso con le stesse foto d’archivio e la stessa vaga fascia di prezzo. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoterebbe davvero, dove sistemerebbe una famiglia di nove persone, qual è il posto di cui nessuno scrive?',
           'Questo sito è una risposta breve e ponderata a queste domande, una selezione curata a mano delle ville e suite che riteniamo valgano il viaggio.',
         ],
       },
@@ -372,7 +426,7 @@ const it: SiteCopy = {
       },
       deals: {
         eyebrow: 'Accordi diretti (strutture)',
-        body: 'Proprietari e gestori di ville interessati a entrare nella collezione. Rifiutiamo la maggior parte delle proposte, la preghiamo di leggere prima la pagina Chi siamo.',
+        body: 'Proprietari e gestori di ville interessati a entrare nella collezione. Rifiutiamo la maggior parte delle proposte, La preghiamo di leggere prima la pagina Chi siamo.',
       },
       general: {
         eyebrow: 'Editoriale generale',
@@ -451,13 +505,14 @@ it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Il giorno, prim
 it.hero.inquiry = { eyebrow: 'Richiesta privata', title: 'Un messaggio privato, una shortlist curata.', lede: 'Invii date, numero di ospiti e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo, incluse, dove appropriato, le ville di riserva che non appaiono mai pubblicamente.' }
 it.hero.about = { eyebrow: 'Chi siamo', title: 'Un elenco breve, tenuto breve di proposito.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
 it.home = {
+  ...it.home,
   philosophy: { eyebrow: 'Come lavoriamo', h2: 'L\'opposto di una piattaforma di prenotazione.',
     items: [
       { title: 'Un elenco breve, non una directory.', body: 'Otto ville e suite nelle destinazioni che davvero giustificano il viaggio. Le proprietà vengono respinte più spesso che aggiunte, ogni voce in questa pagina è quella che un viaggiatore attento può prenotare senza esitazione.' },
       { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
       { title: 'Tariffe dirette, dove esistono.', body: 'Le inserzioni pubbliche rimandano a tariffe verificate. Le proprietà tenute privatamente, incluse le ville di riserva senza disponibilità pubblica, sono quotate direttamente. La risposta Le dice quale è quale.' },
     ] },
-  signature: { eyebrow: 'Ville signature', h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
+  signature: { eyebrow: "Le nostre quattro scelte", h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
   destinations: { eyebrow: 'Destinazioni', h2: 'Cinque luoghi, ognuno con una ragione precisa.' },
 }
 Object.assign(it.villasPage, {
@@ -490,7 +545,7 @@ Object.assign(it.experiencesPage, {
   },
 })
 Object.assign(it.midnightSunPage, {
-  facts: [{ value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '68,9°N', label: 'Inari, la nostra meta più a nord, dove dura di più' }],
+  facts: [{ value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '68,9°N', label: 'Inari, la nostra meta più a nord, dove dura di più' }],
   fourReasons: 'Quattro ragioni', h2: 'La Lapponia in estate è un altro luogo.',
   reasons: [
     { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },

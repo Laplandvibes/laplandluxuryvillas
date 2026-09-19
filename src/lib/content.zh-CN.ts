@@ -16,7 +16,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       signature: [
         '卧室上方加热玻璃顶（−30 °C 下保持透亮）',
-        '私人柴烧桑拿 + 户外柴火热浴桶',
+        '私人柴烧桑拿 + 户外柴火热水浴池',
         '两间卧室、全套厨房、壁炉客厅',
         '含伊瓦洛（Ivalo）机场私人接送',
         '客房内极光唤醒服务，由前台发出',
@@ -26,12 +26,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'arctic-treehouse-suite': {
       tagline: 'Studio Puisto 设计的悬挑式套房，整面玻璃墙正对极光。',
       copy: [
-        '一间 73 m² 的高脚屋顶层套房，整面落地玻璃横贯全幅，由 Studio Puisto 设计。私人露台配有热浴桶。建筑围绕一棵松树而建、每一处室内细节都刻意隐去自身，让森林成为房中唯一的主角。',
+        '一间 73 m² 的高脚屋顶层套房，整面落地玻璃横贯全幅，由 Studio Puisto 设计。私人露台配有热水浴池。建筑围绕一棵松树而建、每一处室内细节都刻意隐去自身，让森林成为房中唯一的主角。',
         '距圣诞老人村（Santa Claus Village）五分钟车程、对于圣诞季携家出行、希望夜晚静谧退隐、白天又能便捷往返罗瓦涅米（Rovaniemi）的旅人而言，这是一处理想的落脚点。',
       ],
       signature: [
         '73 m² 套房，朝北整面落地玻璃墙',
-        '私人露台配热浴桶 + 户外桑拿',
+        '私人露台配热水浴池 + 户外桑拿',
         'Studio Puisto 室内设计、通篇芬兰设计经典',
         '地暖、遮光窗帘以利白昼安睡',
         '物业内 Rakas 餐厅',
@@ -41,7 +41,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'aurora-village-glass-cabin': {
       tagline: '二十四栋玻璃小屋，面向的只有森林与极光带。',
       copy: [
-        '伊纳里（Inari）正好处在极光卵形带的正下方、在统计上是欧洲极光最为可靠的纬度。Aurora Village 是一座 24 栋小屋的庄园，没有过境车流，可见的地平线上也没有邻近村落。小屋之间间距宽裕以保私密，床位于玻璃之下，沙发正对其上。',
+        '伊纳里（Inari）正好处在极光卵形带的正下方，在这个纬度，芬兰气象研究所观测到的极光频率约为每四夜三夜。Aurora Village 是一座 24 栋小屋的庄园，没有过境车流，可见的地平线上也没有邻近村落。小屋之间间距宽裕以保私密，床位于玻璃之下，沙发正对其上。',
         '驻地由萨米人（Sámi）主理的餐厅，围绕驯鹿、北极红点鲑与云莓推出品鉴菜单。极光警报以无线电在小屋之间逐栋传递，谁也不会吵醒隔壁的别墅。',
       ],
       signature: [
@@ -63,7 +63,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '朝南的极光全景（在拉普兰实属罕见）',
         '步行可达列维（Levi）缆车与村落',
         '驻地 Restaurant Aurora，100 公里采购半径',
-        '高级套房露台上配有私人热浴桶',
+        '高级套房露台上配有私人热水浴池',
         '冬季雪场门口直接出入',
         '客房内极光警报',
       ],
@@ -71,12 +71,12 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'wilderness-hotel-nellim-aurora-bubble': {
       tagline: '一间立于北方针叶林边缘的玻璃泡泡套房，距俄罗斯边境二十分钟。',
       copy: [
-        '内利姆（Nellim）是伊纳里湖（Lake Inari）东岸一座仍在运作的荒野村庄（人口 220）。极光泡泡屋自成一片空地，与主山居分隔，每一间都在床上方覆盖一整片全景透明穹顶，门廊上则有柴烧热浴桶。',
+        '内利姆（Nellim）是伊纳里湖（Lake Inari）东岸一座仍在运作的荒野村庄（人口 220）。极光泡泡屋自成一片空地，与主山居分隔，每一间都在床上方覆盖一整片全景透明穹顶，门廊上则有柴烧热水浴池。',
         '山居举办萨米（Sámi）文化之夜、湖上冰钓，以及芬兰为数不多的认证极光摄影向导项目之一。客房在二月旺季提前一年就订满。',
       ],
       signature: [
         '床上方全景透明穹顶',
-        '门廊上私人柴烧热浴桶',
+        '门廊上私人柴烧热水浴池',
         '荒野村庄之地、距俄罗斯边境 20 分钟',
         '认证极光摄影向导项目',
         '每周数晚的萨米（Sámi）文化项目',
@@ -101,7 +101,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'lapland-hotels-saaga-apartment': {
       tagline: '位于于拉斯南坡脚下的独立公寓，身后就是酒店的水疗中心。',
       copy: [
-        '拉普兰酒店萨加坐落在于拉斯耶尔维村，正好在于拉斯滑雪场南坡之下。除酒店客房外，它还出租可住 1 至 8 人的度假公寓，位于酒店场地内或距主楼约 300 米处，让一家人或小团体不必离开度假区就能拥有自己的空间。',
+        'Lapland Hotels Saaga 坐落在于拉斯耶尔维（Ylläsjärvi）村，正好在于拉斯滑雪场南坡之下。除酒店客房外，它还出租可住 1 至 8 人的度假公寓，位于酒店场地内或距主楼约 300 米处，让一家人或小团体不必离开度假区就能拥有自己的空间。',
         '公寓背后是整座酒店：设有泳池区、按摩池与蒸汽桑拿的水疗中心、健身房与理疗项目，以及一间可容纳 15 人、配有独立休息区的私人桑拿。场地内共有三家餐厅，其中包括 Biegga 自助餐厅，早餐以北方食材为基础。',
       ],
       signature: [
@@ -125,7 +125,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '距罗瓦涅米（Rovaniemi）机场 10 分钟接送',
         '驻地哈士奇 + 驯鹿 + 冰钓',
         '从物业出发的雪地摩托道',
-        '极光警报 + 屋侧热浴桶',
+        '极光警报 + 屋侧热水浴池',
       ],
     },
   },
@@ -133,7 +133,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: '芬兰北部的奢华极光枢纽、Kakslauttanen、Star Arctic，以及乌尔禾·凯科宁的荒野边缘。',
       copy: [
-        '萨利色尔卡（Saariselkä）位于乌尔禾·凯科宁国家公园（Urho Kekkonen National Park）北缘，那是芬兰最大的荒野保护地之一，这里也是定义了玻璃顶极光住宿的村庄。全国最知名的玻璃小屋大多（Kakslauttanen、Star Arctic、Northern Lights Village）都在村庄 10 公里范围之内。',
+        '萨利色尔卡（Saariselkä）位于乌尔禾·凯科宁国家公园（Urho Kekkonen National Park）北缘，那是芬兰第二大的国家公园，占地 2,550 平方公里，这里也是定义了玻璃顶极光住宿的村庄。全国最知名的玻璃小屋大多（Kakslauttanen、Star Arctic、Northern Lights Village）都在村庄 10 公里范围之内。',
         '村庄本身小巧宜步行，一条主路、几家餐厅，并可直达国家公园。伊瓦洛（Ivalo）机场距此 27 公里，私人接送约 30 分钟，可起降定期航班与私人包机。',
       ],
       highlights: [
@@ -155,7 +155,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Aurora Village、专门打造的 30 公顷玻璃小屋庄园',
         'Wilderness Hotel Nellim、伊纳里湖（Lake Inari）东岸的极光泡泡屋',
         '萨米博物馆 SIIDA + 全年文化项目',
-        '伊纳里湖，芬兰第三大湖，约有 3 000 座岛屿',
+        '伊纳里湖，芬兰第三大湖，约有 3,000 座岛屿',
       ],
       arrival: '伊瓦洛（Ivalo, IVL），40 公里，私人接送约 40 分钟',
       auroraNote: '我们最北的目的地，也是极光最常悬于头顶而非低垂北方的地方。伊纳里湖提供一道毫无遮挡的地平线，上面没有村庄灯火。',

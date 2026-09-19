@@ -59,6 +59,13 @@ const nl: SiteCopy = {
     verifiedOn: 'Gecontroleerd op {d}',
     ratingScope: 'De beoordeling geldt voor de hele accommodatie, {p}',
   },
+  photo: {
+    "credit": "Foto",
+    "inPicture": "Op de foto: {what}",
+    "cropped": "bijgesneden",
+    "nellim": "Het dorp Nellim aan de oever van het Inarimeer, niet het hotel zelf",
+    "heroWinter": "Noorderlicht boven een verlichte lodge in Saariselkä, februari 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Privécollectie',
@@ -110,7 +117,7 @@ const nl: SiteCopy = {
     home: {
       eyebrow: '{n} villa\'s · {m} bestemmingen',
       title: 'Een villa in Lapland, zonder giswerk.',
-      lede: 'Elk huis is gecontroleerd aan de hand van zijn eigen gepubliceerde informatie en recente gastbeoordelingen. Boek rechtstreeks bij het huis, of geef uw data en gezelschap door en wij stellen binnen een dag de beste opties voor.',
+      lede: "{n} villa’s met glazen dak en designsuites in {m} bestemmingen in Lapland, elk met een eigen boekingspagina en de Google-beoordeling in beeld. Stuur uw data en u krijgt binnen een dag een selectie.",
       primary: 'Bekijk de villa\'s',
       secondary: 'Vraag om suggesties',
     },
@@ -153,6 +160,53 @@ const nl: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Kant-en-klare weken",
+      "h2": "Drie weken Lapland, tot de laatste avond uitgewerkt.",
+      "lede": "Kies de villa, voeg de auto vanaf de luchthaven toe en boek die ene avond die goed moet gaan. Elke link hieronder gaat naar de eigen boekingspagina van de partner, met de prijs in beeld.",
+      "season": "Seizoen",
+      "stay": "Waar u slaapt",
+      "car": "Hoe u zich verplaatst",
+      "night": "De avond die u vooraf boekt",
+      "home": "Wat er met u mee naar huis gaat",
+      "homeLede": "De tafel waaraan u een week lang at: Iittala, Marimekko en Kosta Boda uit één Scandinavische winkel.",
+      "carFrom": "Huurauto {airport}, ophalen bij de terminal",
+      "ctaCar": "Autoprijzen bekijken",
+      "ctaNight": "De excursie bekijken",
+      "ctaNightInquiry": "Een aanvraag sturen",
+      "items": [
+        {
+          "title": "Een week noorderlicht boven Saariselkä",
+          "season": "September tot maart",
+          "airport": "vanaf de luchthaven van Ivalo",
+          "story": [
+            "De verwachting zegt helder. U bent sinds de middag in de Skyview Suite, de sauna is nog warm en de hemel boven Kaunispää heeft dat harde, donkere blauw gekregen dat hij aanneemt voordat de lichten komen. Het bed staat naar de glazen wand, dus het wachten gebeurt liggend.",
+            "De luchthaven van Ivalo ligt ongeveer een halfuur rijden verderop, en juist daarom is een auto nodig: de beste noorderlichtplekken rond Saariselkä liggen buiten de buslijnen, en een warme auto met draaiende motor is de warmste schuilplaats die er is. De privéfotonacht is het enige dat u vóór de vlucht boekt; de gids kiest die middag de richting aan de hand van de wolkenkaart."
+          ],
+          "night": "Privéfotonacht noorderlicht met een gids"
+        },
+        {
+          "title": "Kerstweek in Rovaniemi, stil na het donker",
+          "season": "December tot januari",
+          "airport": "vanaf de luchthaven van Rovaniemi",
+          "story": [
+            "Vijf minuten van Santa Claus Village, en zodra de laatste elf naar huis is valt het bos rond de Arctic TreeHouse stil. De glazen wand van de suite kijkt naar het noorden; de hot tub staat op het terras ervoor. De kinderen slapen op de kamer, de ouders zitten op het terras: dit is de week Rovaniemi die werkt.",
+            "De luchthaven van Rovaniemi is een paar minuten rijden, en met een auto wordt de regio een reeks dagtochten: de skihelling van Ounasvaara, de rivier, de dierentuin van Ranua een uur naar het zuiden. Voor die ene avond die perfect moet zijn kookt een privékok een Arctisch proefmenu in de suite."
+          ],
+          "night": "Privékok en een Arctisch proefmenu in de suite"
+        },
+        {
+          "title": "Middernachtzon: Kakslauttanen en het Inarimeer",
+          "season": "Juni",
+          "airport": "vanaf de luchthaven van Ivalo",
+          "story": [
+            "In juni gaat de zon bij Kakslauttanen niet onder, en de villa van kelo-dennenhout met de glazen slaapkamer is een ander huis: het dak dat in de winter het noorderlicht omlijst, omlijst nu een hemel die om twee uur ’s nachts nog licht is. Nationaal Park Urho Kekkonen ligt op korte rijafstand.",
+            "Het Inarimeer ligt een uur rijden naar het noorden, en de privéboottocht met kampvuur is de avond die u boekt: het is het derde grootste meer van Finland, en het grootste deel van de oever heeft geen weg. Terug in de villa werken de sauna en de hot tub precies zoals in februari."
+          ],
+          "night": "Privéboottocht op het Inarimeer met kampvuur"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Zo werkt het',
       h2: 'Wij controleren en stellen voor. U boekt rechtstreeks bij het huis.',
@@ -163,7 +217,7 @@ const nl: SiteCopy = {
       ],
     },
     signature: {
-      eyebrow: 'Signature-villa\'s',
+      eyebrow: "Onze vier keuzes",
       h2: 'De vier die wij het vaakst aanbevelen.',
       lede: 'De panden die wij het vaakst aanbevelen. Elk detail hieronder is geverifieerd met de informatie van de exploitant en recente beoordelingen, niet overgenomen uit een brochure.',
     },
@@ -224,7 +278,7 @@ const nl: SiteCopy = {
       { value: '32', label: 'Dagen zonder zonsondergang in Rovaniemi, noordelijker meer' },
       { value: '24 u', label: 'Daglicht op de piek, 21 juni' },
       { value: '+18 °C', label: 'Gemiddeld overdag eind juni' },
-      { value: '50 %', label: 'Lagere vraag dan in het noorderlichtseizoen' },
+      { value: '68,9°N', label: 'Onze noordelijkste bestemming, Inari, waar het het langst duurt' },
     ],
     fourReasons: 'Vier redenen',
     h2: 'Lapland in de zomer is een andere plek.',
@@ -249,7 +303,7 @@ const nl: SiteCopy = {
       h2: 'Een opmerking over het plannen van een middernachtzonreis.',
       p1: 'Het venster is kort en de villa\'s zijn in individueel bezit, de kalender vult zich daardoor naar gelegenheid in plaats van gelijkmatig. Het loont om vroeg te vragen.',
       p2: 'Het juiste moment om naar een bepaalde juni te informeren ligt tussen januari en maart van dat jaar. Latere aanvragen zijn nog steeds de moeite waard, er komen plekken vrij, maar het topsegment van de voorraad is vaak eerder weg.',
-      quoting: 'Wij behandelen momenteel aanvragen voor zomer 2026 en 2027',
+      quoting: 'Wij behandelen momenteel aanvragen voor zomer {year}',
     },
     inquiryTitle: 'Informeer naar een middernachtzonreis.',
     inquiryBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren. Een antwoord arriveert binnen één werkdag met de beschikbaarheid in de hele zomercollectie.',

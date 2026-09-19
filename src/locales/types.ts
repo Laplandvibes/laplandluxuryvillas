@@ -4,6 +4,14 @@ type SectionItem = { title: string; intro: string }
 type SummerCard = { title: string; copy: string }
 
 export type SiteCopy = {
+  /** Photo source lines and captions (PhotoCredit, VillaCard). */
+  photo: {
+    credit: string
+    inPicture: string
+    cropped: string
+    nellim: string
+    heroWinter: string
+  }
   nav: {
     villas: string
     suites: string
@@ -164,6 +172,23 @@ export type SiteCopy = {
     about: { eyebrow: string; title: string; lede: string }
   }
   home: {
+    /** Three story-first weeks (villa + car + one evening), Vesa 19.9.2026. */
+    packages: {
+      eyebrow: string
+      h2: string
+      lede: string
+      season: string
+      stay: string
+      car: string
+      night: string
+      home: string
+      homeLede: string
+      carFrom: string
+      ctaCar: string
+      ctaNight: string
+      ctaNightInquiry: string
+      items: { title: string; season: string; airport: string; story: [string, string]; night: string }[]
+    }
     philosophy: {
       eyebrow: string
       h2: string

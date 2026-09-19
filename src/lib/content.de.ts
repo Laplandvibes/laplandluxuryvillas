@@ -27,7 +27,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       tagline: 'Von Studio Puisto entworfene auskragende Suite mit voller Glasfassade in Richtung der Polarlichter.',
       copy: [
         'Eine 73 m² große Penthouse-Suite auf Stelzen, mit raumhohem Glas über die gesamte Breite. Entworfen von Studio Puisto. Private Terrasse mit Whirlpool. Das Gebäude wurde um eine einzelne Kiefer herum errichtet, jedes Detail der Innenausstattung wurde so gewählt, dass es verschwindet und der Wald das einzige Objekt im Raum bleibt.',
-        'Fünf Minuten vom Santa Claus Village entfernt, ein nützlicher Stützpunkt für Familien in der Weihnachtssaison, die nachts ein ruhiges Refugium und tagsüber einen einfachen Zugang nach Rovaniemi wünschen.',
+        'Fünf Minuten vom Weihnachtsmanndorf entfernt, ein nützlicher Stützpunkt für Familien in der Weihnachtssaison, die nachts ein ruhiges Refugium und tagsüber einen einfachen Zugang nach Rovaniemi wünschen.',
       ],
       signature: [
         '73 m² Suite, raumhohe Glasfassade nach Norden ausgerichtet',
@@ -35,7 +35,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Innenausstattung von Studio Puisto, finnische Designikonen durchgängig',
         'Fußbodenheizung, Verdunkelungsvorhänge für den Tagschlaf',
         'Hauseigenes Restaurant Rakas',
-        'Fünf Minuten bis zum Santa Claus Village',
+        'Fünf Minuten bis zum Weihnachtsmanndorf',
       ],
     },
     'aurora-village-glass-cabin': {
@@ -133,8 +133,8 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     'saariselka': {
       position: 'Das Luxus-Polarlichtzentrum Nordfinnlands, Kakslauttanen, Star Arctic, der wilde Rand des Urho-Kekkonen-Nationalparks.',
       copy: [
-        'Saariselkä liegt am nördlichen Rand des Urho-Kekkonen-Nationalparks, eines der größten Wildnisgebiete Finnlands, und ist das Dorf, das die Polarlicht-Unterkunft unter dem Glasdach geprägt hat. Die meisten der bekanntesten Glashütten des Landes (Kakslauttanen, Star Arctic, Northern Lights Village) liegen innerhalb von 10 km vom Dorf entfernt.',
-        'Das Dorf selbst ist klein und zu Fuß zu erkunden: eine Hauptstraße, einige Restaurants und direkter Zugang zum Nationalpark. Zum Flughafen Ivalo sind es 27 km, also rund eine halbe Stunde per privatem Transfer; er bedient Linienflüge ebenso wie Privatcharter.',
+        'Saariselkä liegt am nördlichen Rand des Urho-Kekkonen-Nationalparks, Finnlands zweitgrößtem Nationalpark mit 2.550 km², und ist das Dorf, das die Polarlicht-Unterkunft unter dem Glasdach geprägt hat. Die meisten der bekanntesten Glashütten des Landes (Kakslauttanen, Star Arctic, Northern Lights Village) liegen innerhalb von 10 km vom Dorf entfernt.',
+        'Das Dorf selbst ist klein und zu Fuß zu erkunden: eine Hauptstraße, drei ernstzunehmende Restaurants und direkter Zugang zum Nationalpark. Zum Flughafen Ivalo sind es 27 km, also rund eine halbe Stunde per privatem Transfer; er bedient Linienflüge ebenso wie Privatcharter.',
       ],
       highlights: [
         'Kakslauttanen Arctic Resort, die ursprüngliche Unterkunft mit Glasdach',
@@ -193,7 +193,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Die ruhige Alternative zu Levi. Pallas-Yllästunturi-Nationalpark, weniger Menschenmengen, tieferer Wald.',
       copy: [
         'Ylläs hat 62 Pisten, mehr als jedes andere Skigebiet Finnlands, und die längsten Abfahrten des Landes: über drei Kilometer vom baumlosen 719-Meter-Gipfel hinunter. Trotzdem wirkt es wie ein Bruchteil von Levi, denn der Ort ist auf zwei Siedlungen verteilt (Äkäslompolo und Ylläsjärvi), getrennt durch 15 km Fjäll und den Pallas-Yllästunturi-Nationalpark.',
-        'Für Luxusreisen liegt der Reiz im Raum. Architektengeplante Chalets stehen hier allein am Fjällhang, die Wege des Nationalparks führen direkt vom Anwesen weg, und die Stille ist es, wofür die Menschen tatsächlich zahlen. Das Loipennetz umfasst rund 300 Kilometer, davon über 30 Kilometer beleuchtet.',
+        'Für Luxusreisen liegt der Reiz im Raum. Architektengeplante Chalets stehen hier allein am Fjällhang, die Wege des Nationalparks führen direkt vom Anwesen weg, und die Stille ist es, wofür die Menschen tatsächlich zahlen. Die Polarlichtsicht ist dank der sehr geringen örtlichen Lichtverschmutzung ausgezeichnet.',
       ],
       highlights: [
         'Pallas-Yllästunturi-Nationalpark, Finnlands drittgrößter',

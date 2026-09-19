@@ -141,7 +141,7 @@ export default function Nav() {
                   `whitespace-nowrap text-[12px] tracking-[0.12em] uppercase font-body transition-colors ${
                     isActive
                       ? 'text-[color:var(--color-brass)]'
-                      : 'text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)]'
+                      : 'text-[color:var(--color-bone)] drop-shadow-[0_1px_6px_rgba(0,0,0,0.65)] hover:text-[color:var(--color-brass)]'
                   }`
                 }
               >

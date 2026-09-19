@@ -65,6 +65,13 @@ const fi: SiteCopy = {
     verifiedOn: 'Tarkistettu {d}',
     ratingScope: 'Arvio koskee koko kohdetta {p}',
   },
+  photo: {
+    "credit": "Kuva",
+    "inPicture": "Kuvassa: {what}",
+    "cropped": "rajattu",
+    "nellim": "Nellimin kylä Inarijärven rannalla, ei itse hotelli",
+    "heroWinter": "Revontulet valaistun majan yllä Saariselällä helmikuussa 2019"
+  },
   tier: {
     signature: 'Signature',
     private: 'Private Collection',
@@ -116,7 +123,7 @@ const fi: SiteCopy = {
     home: {
       eyebrow: '{n} huvilaa · {m} kohdetta',
       title: 'Huvila Lapista, ilman arvailua.',
-      lede: 'Jokainen kohde on tarkastettu sen omista julkaisuista ja tuoreista vieraspalautteista. Varaa suoraan kohteesta, tai kerro päivämäärät ja seurue, niin ehdotamme sopivimmat vuorokaudessa.',
+      lede: "{n} lasikattoista huvilaa ja designsviittiä {m} Lapin kohteessa, jokaisella oma varaussivu ja Google-arvio näkyvissä. Lähetä päivämäärät, niin saat lyhytlistan vuorokaudessa.",
       primary: 'Katso huvilat',
       secondary: 'Pyydä ehdotus',
     },
@@ -159,19 +166,66 @@ const fi: SiteCopy = {
     },
   },
   home: {
+    packages: {
+      "eyebrow": "Valmiit viikot",
+      "h2": "Kolme Lapin viikkoa, suunniteltu viimeistä iltaa myöten.",
+      "lede": "Valitse huvila, lisää auto lentokentältä ja varaa se yksi ilta, jonka pitää onnistua. Jokainen linkki vie kumppanin omalle varaussivulle, hinta näkyvissä.",
+      "season": "Kausi",
+      "stay": "Missä nukut",
+      "car": "Miten liikut",
+      "night": "Ilta, joka varataan etukäteen",
+      "home": "Mikä lähtee kotiin mukaan",
+      "homeLede": "Pöytä, jonka ääressä söit viikon: Iittalaa, Marimekkoa ja Kosta Bodaa yhdestä pohjoismaisesta kaupasta.",
+      "carFrom": "Vuokra-auto {airport}, nouto terminaalista",
+      "ctaCar": "Katso autojen hinnat",
+      "ctaNight": "Katso retki",
+      "ctaNightInquiry": "Lähetä tiedustelu",
+      "items": [
+        {
+          "title": "Revontuliviikko Saariselän yllä",
+          "season": "Syyskuusta maaliskuuhun",
+          "airport": "Ivalon lentoasemalta",
+          "story": [
+            "Ennuste lupaa selkeää. Olet ollut Skyview-sviitissä iltapäivästä asti, sauna on vielä lämmin, ja taivas Kaunispään yllä on saanut sen kovan, tumman sinisen, jonka se saa ennen kuin valot tulevat. Sänky on lasiseinää vasten, joten odottaa voi makuullaan.",
+            "Ivalon lentoasemalle on noin puoli tuntia ajoa, ja juuri siksi auto kannattaa: Saariselän parhaat revontulipaikat ovat bussireittien ulkopuolella, ja lämmin auto, moottori käynnissä, on lämpimin piilo mitä on. Yksityinen kuvausilta on se ainoa asia, joka varataan ennen lentoa; opas valitsee suunnan samana iltapäivänä pilvikartasta."
+          ],
+          "night": "Yksityinen revontulikuvausilta oppaan kanssa"
+        },
+        {
+          "title": "Jouluviikko Rovaniemellä, pimeän tultua hiljainen",
+          "season": "Joulukuusta tammikuuhun",
+          "airport": "Rovaniemen lentoasemalta",
+          "story": [
+            "Viisi minuuttia Joulupukin pajakylästä, ja kun viimeinen tonttu on lähtenyt kotiin, metsä Arctic TreeHousen ympärillä hiljenee. Sviitin lasiseinä avautuu pohjoiseen, palju on terassilla sen takana. Lapset nukkumassa huoneessa, vanhemmat terassilla: tämä on se Rovaniemen viikko, joka toimii.",
+            "Rovaniemen lentoasemalle on muutaman minuutin ajo, joten auto tekee seudusta päiväretkiä: Ounasvaaran rinne, joki, Ranuan eläinpuisto tunnin päässä etelässä. Sitä yhtä iltaa varten, jonka pitää onnistua, yksityinen kokki tekee arktisen maistelumenun sviitissä."
+          ],
+          "night": "Yksityinen kokki ja arktinen maistelumenu sviitissä"
+        },
+        {
+          "title": "Yötön yö: Kakslauttanen ja Inarijärvi",
+          "season": "Kesäkuu",
+          "airport": "Ivalon lentoasemalta",
+          "story": [
+            "Kesäkuussa aurinko ei laske Kakslauttasessa, ja lasimakuuhuoneinen kelohuvila on eri talo: katto, joka talvella kehystää revontulet, kehystää nyt taivaan, joka on valoisa kahdelta yöllä. Urho Kekkosen kansallispuisto on lyhyen ajomatkan päässä.",
+            "Inarijärvelle on tunnin ajo pohjoiseen, ja yksityinen veneretki nuotioineen on se ilta, joka varataan: järvi on Suomen kolmanneksi suurin, ja suurin osa sen rannoista on tiettömiä. Huvilalla sauna ja palju toimivat aivan kuten helmikuussa."
+          ],
+          "night": "Yksityinen veneretki Inarijärvellä nuotioineen"
+        }
+      ]
+    },
     philosophy: {
       eyebrow: 'Näin tämä toimii',
       h2: 'Me tarkastamme ja ehdotamme. Sinä varaat suoraan kohteesta.',
       items: [
         { title: 'Vain tarkastetut kohteet.', body: 'Listalla on {n} huvilaa ja sviittiä, ei enempää. Jokaisen tiedot on käyty läpi kohteen omista julkaisuista ja tuoreista vieraspalautteista, ja lista elää: kohde lähtee pois, jos taso ei enää kestä tarkistusta.' },
-        { title: 'Ehdotus vuorokaudessa, sitoumuksetta.', body: 'Kerro päivämäärät, seurueen koko ja mitä haette. Saat ehdotuksen sopivimmista vuorokauden sisällä, eikä yhteystietojasi jaeta kohteille ennen kuin itse otat yhteyttä.' },
+        { title: 'Ehdotus vuorokaudessa, sitoumuksetta.', body: 'Kerro päivämäärät, seurueen koko ja mitä haet. Saat ehdotuksen sopivimmista vuorokauden sisällä, eikä yhteystietojasi jaeta kohteille ennen kuin itse otat yhteyttä.' },
         { title: 'Hinta on kohteella, ei meillä.', body: 'Kun kohteella on julkinen varaussivu, linkki vie suoraan sinne ja hinta näkyy ennen sitoutumista. Kun julkista hintaa ei ole, kohde tarjoaa sen sinulle suoraan. Me emme aseta hintoja emmekä ota vastaan varauksia.' },
       ],
     },
     signature: {
-      eyebrow: 'Signature-huvilat',
+      eyebrow: "Neljä valintaamme",
       h2: 'Neljä, joita suosittelemme useimmin.',
-      lede: 'Ne neljä, joita suosittelemme useimmin. Jokainen yksityiskohta on tarkistettu kohteen omista julkaistuista tiedoista ja tuoreista vieraspalautteista, ei napattu esitteestä.',
+      lede: 'Jokainen yksityiskohta on tarkistettu kohteen omista julkaistuista tiedoista ja tuoreista vieraspalautteista, ei napattu esitteestä.',
     },
     destinations: {
       eyebrow: 'Kohteet',
@@ -221,7 +275,7 @@ const fi: SiteCopy = {
     sections: {
       aurora: { title: 'Revontulet', intro: 'Revontulet ovat itsessään ilmaisia. Maksat pääsystä: oikeasta kyydistä, oikeasta oppaasta ja oikeasta yöstä kirkkaan taivaan alla.' },
       wilderness: { title: 'Erämaa', intro: 'Yksityiset versiot niistä, joiden takia kaikki Lappiin tulevat: husky, moottorikelkka ja poro, ilman jaettua bussia ja samaa lenkkiä kuin kaikki muutkin.' },
-      culinary: { title: 'Ruoka', intro: 'Oikea kokki yhdestä Lapin vakavasti otettavasta keittiöstä, sinun huvilallasi, illan ajan. Tai talon tasting-menu silloin kun keittiö on se syy tulla.' },
+      culinary: { title: 'Ruoka', intro: 'Oikea kokki yhdestä Lapin vakavasti otettavasta keittiöstä, sinun huvilallasi, illan ajan. Tai talon maistelumenu silloin kun keittiö on se syy tulla.' },
       arrival: { title: 'Saapuminen', intro: 'Yksityinen suihkukone, helikopterikuljetus, arktinen ajoneuvokalusto. Varataan slot-ikkunan, päivänvalon ja huvilan sisäänkirjautumisen mukaan.' },
     },
   },
@@ -248,14 +302,14 @@ const fi: SiteCopy = {
         { title: 'Lasikattomökki vihreässä', copy: 'Revontulten arkkitehtuuri kello 23 kultaisessa valossa, ympärillä rehevä metsä lumen sijaan.' },
         { title: 'Järvenrantainen hirsihuvila', copy: 'Yksityinen poukama Inarijärvellä, taas sulana: kanootti laiturilla ja savua nousemassa puulämmitteisestä saunasta.' },
         { title: 'Designer-chalet tunturilla', copy: 'Tupasvilla ja niittykukat laskettelurinteen tilalla, saman panoraamalasin takana.' },
-        { title: 'Moderni metsähuvila', copy: 'Konsolimainen puurakennus syvällä vihreässä boreaalisessa männikössä, kultainen yöttömän yön lämpö julkisivulla.' },
+        { title: 'Moderni metsähuvila', copy: 'Ulokkeinen puurakennus syvällä vihreässä boreaalisessa männikössä, kultainen yöttömän yön lämpö julkisivulla.' },
       ],
     },
     planning: {
       h2: 'Huomio yöttömän yön matkan suunnittelusta.',
       p1: 'Jakso on lyhyt, ja huvilat ovat yksittäisten omistajien hallinnassa, joten kalenteri täyttyy epätasaisesti eikä siististi. Kannattaa kysyä hyvissä ajoin.',
       p2: 'Tiettyä kesäkuuta kannattaa tiedustella saman vuoden tammi–maaliskuussa. Myöhemminkin kannattaa laittaa viestiä, koska päiviä vapautuu, mutta listan kärki menee yleensä ensin.',
-      quoting: 'Vastaamme parhaillaan kesien 2026 ja 2027 kyselyihin',
+      quoting: 'Vastaamme parhaillaan kesän {year} kyselyihin',
     },
     inquiryTitle: 'Tiedustele yöttömän yön matkaa.',
     inquiryBody: 'Kerro päivämäärät, montako teitä on ja toiveet. Vastaus tulee yhden työpäivän sisällä, ja siinä näkyy, mitä kesän kokoelmasta on vapaana.',
