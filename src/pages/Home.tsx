@@ -137,7 +137,7 @@ export default function Home() {
             </div>
             <Link
               to={to('/villas')}
-              className="lv-tap inline-flex items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group whitespace-nowrap"
+              className="lv-tap inline-flex min-h-11 items-center gap-2 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[12px] tracking-[0.22em] uppercase font-body group whitespace-nowrap"
             >
               {c.cta.fullCollection}
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -232,7 +232,9 @@ export default function Home() {
               {c.home.philosophy.h2}
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+          {/* Three columns only from lg: the live layout gate measured 205–249 px cards at
+              768–900 px with every title wrapping (asettelu-portti 19.9.2026). */}
+          <div className="grid lg:grid-cols-3 gap-10 lg:gap-12">
             {c.home.philosophy.items.map((p, i) => {
               const Icon = PHILOSOPHY_ICONS[i]
               return (
