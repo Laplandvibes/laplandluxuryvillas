@@ -181,7 +181,7 @@ export default function Home() {
                 className="group card-onyx p-4 sm:p-6 flex flex-col"
               >
                 <div
-                  className="aspect-[3/2] sm:aspect-[4/5] -mx-4 sm:-mx-6 -mt-4 sm:-mt-6 mb-4 sm:mb-5 overflow-hidden"
+                  className="relative aspect-[3/2] sm:aspect-[4/5] -mx-4 sm:-mx-6 -mt-4 sm:-mt-6 mb-4 sm:mb-5 overflow-hidden"
                   style={{ background: d.imageGradient }}
                 >
                   {d.image && (
@@ -193,6 +193,7 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                   )}
+                  <PhotoCredit credit={creditFor(d.image)} />
                 </div>
                 <h3 className="font-heading text-xl sm:text-2xl text-[color:var(--color-snow)] mb-2 group-hover:text-[color:var(--color-brass)] transition-colors">
                   {d.name}

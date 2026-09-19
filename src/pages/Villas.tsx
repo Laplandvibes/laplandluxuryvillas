@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import InquiryBand from '../components/InquiryBand'
@@ -84,8 +86,10 @@ export default function Villas() {
         eyebrow={withCounts(c.hero.villas.eyebrow)}
         title={withCounts(c.hero.villas.title)}
         lede={withCounts(c.hero.villas.lede)}
-        imageUrl="/images/summer-villa-forest.webp"
-        imageAlt="A luxury Lapland villa set among tall green summer forest, floor-to-ceiling glass framing the sunlit trees"
+        imageUrl="/images/hero-villas-ruka.webp"
+        imageAlt="Dark timber cabin under tall pines at Ruka on a July evening, the forest and lakes of Kuusamo behind"
+        imgObjectPosition="50% 45%"
+        credit={<PhotoCredit credit={creditFor('/images/hero-villas-ruka.webp')} />}
       />
 
       {/* EDITORIAL LEAD — same COPY block the prerenderer harvests through

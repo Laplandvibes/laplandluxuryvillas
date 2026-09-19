@@ -29,6 +29,16 @@ interface HeroProps {
   imgObjectPosition?: string
   /** Source line for an open-licence or partner photograph (PhotoCredit). */
   credit?: ReactNode
+  /**
+   * Autoplaying, muted, looping background clip (Vesa 19.9.2026: real Pexels
+   * aurora footage instead of an AI still). `imageUrl` is the poster and the
+   * whole story for readers who prefer reduced motion or whose browser blocks
+   * autoplay; the clip never carries text and never blocks the LCP image.
+   */
+  videoUrl?: string
+  /** 'light' for real footage: the default wash was measured for dark AI stills
+   *  and Vesa read it as "liikaa overlayta" on the experiences hero. */
+  scrim?: 'default' | 'light'
 }
 
 /**
@@ -49,6 +59,8 @@ export default function Hero({
   imageAlt = '',
   imgObjectPosition,
   credit,
+  videoUrl,
+  scrim = 'default',
 }: HeroProps) {
   const minH = compact
     ? 'min-h-[60svh] md:min-h-[68svh]'
@@ -75,7 +87,23 @@ export default function Hero({
             decoding="async"
             fetchPriority="high"
           />
-        ) : (
+        ) : null}
+        {videoUrl && (
+          <video
+            className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
+            style={imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined}
+            src={videoUrl}
+            poster={imageUrl}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+            tabIndex={-1}
+          />
+        )}
+        {!imageUrl && !videoUrl ? (
           <div
             className="w-full h-full"
             style={{
@@ -84,7 +112,7 @@ export default function Hero({
                 'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(16, 185, 129, 0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 20% 100%, rgba(99, 102, 241, 0.08) 0%, transparent 60%), linear-gradient(180deg, #0A0F1C 0%, #0F172A 100%)',
             }}
           />
-        )}
+        ) : null}
         {/* Editorial wash — bottom-anchored fade keeps the photo visible up top,
             text readable low.
 
@@ -100,7 +128,9 @@ export default function Hero({
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to top, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.26) 45%, rgba(15,23,42,0.10) 100%)',
+              scrim === 'light'
+                ? 'linear-gradient(to top, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.16) 45%, rgba(15,23,42,0.04) 100%)'
+                : 'linear-gradient(to top, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.26) 45%, rgba(15,23,42,0.10) 100%)',
           }}
         />
         {/* Localised reading scrim only behind the headline block — preserves photo elsewhere */}

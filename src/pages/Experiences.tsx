@@ -3,6 +3,9 @@ import LuxuryExperiences from '../components/LuxuryExperiences'
 import { ArrowUpRight, MapPin } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import { EXPERIENCE_CLIPS, HERO_CLIPS } from '../data/clips'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 import Page from '../components/Page'
 import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
@@ -35,13 +38,19 @@ export default function Experiences() {
         keywords={['private aurora tour lapland', 'helicopter aurora flight', 'lapland private chef', 'private husky safari', 'lapland luxury experiences', 'private snowmobile lapland']}
       />
 
+      {/* Real aurora footage over the hero when a clip is registered (Vesa
+          19.9.2026: the AI sauna still under a heavy wash was "liikaa overlayta …
+          aivan fake"); the poster is the clip's own frame. */}
       <Hero
         compact
         eyebrow={c.hero.experiences.eyebrow}
         title={c.hero.experiences.title}
         lede={c.hero.experiences.lede}
-        imageUrl="/images/hero-experiences.webp"
-        imageAlt="A wood-fired sauna interior with low warm light"
+        imageUrl={HERO_CLIPS.experiences ? '/images/hero-experiences-poster.webp' : '/images/hero-experiences.webp'}
+        videoUrl={HERO_CLIPS.experiences}
+        scrim={HERO_CLIPS.experiences ? 'light' : 'default'}
+        imageAlt={HERO_CLIPS.experiences ? 'Green aurora over a snowy Lapland landscape at night' : 'A wood-fired sauna interior with low warm light'}
+        credit={<PhotoCredit credit={creditFor(HERO_CLIPS.experiences ?? '')} />}
       />
 
       {SECTIONS.map((s, sectionIdx) => {
@@ -71,7 +80,7 @@ export default function Experiences() {
               <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                 {items.map((e) => (
                   <article key={e.slug} className="card-onyx flex flex-col h-full overflow-hidden">
-                    <div className="aspect-[16/9] w-full overflow-hidden" style={{ background: e.imageGradient }}>
+                    <div className="relative aspect-[16/9] w-full overflow-hidden" style={{ background: e.imageGradient }}>
                       {/* Real Picsart photo (gpt-image-2 16:9, 2026-07-08); the
                           gradient stays as the fallback if the file is missing. */}
                       <img
@@ -84,6 +93,25 @@ export default function Experiences() {
                         height={864}
                         onError={(ev) => { ev.currentTarget.style.display = 'none' }}
                       />
+                      {/* Real footage where a Pexels clip exists (EXPERIENCE_CLIPS):
+                          plays over the still, muted and looping; reduced-motion
+                          readers and failed loads keep the still. */}
+                      {EXPERIENCE_CLIPS[e.slug] && (
+                        <video
+                          className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
+                          src={EXPERIENCE_CLIPS[e.slug]}
+                          poster={`/images/experiences/${e.slug}.webp`}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          preload="none"
+                          aria-hidden="true"
+                          tabIndex={-1}
+                          onError={(ev) => { ev.currentTarget.style.display = 'none' }}
+                        />
+                      )}
+                      <PhotoCredit credit={creditFor(EXPERIENCE_CLIPS[e.slug] ?? `/images/experiences/${e.slug}.webp`)} />
                     </div>
                     <div className="flex-1 flex flex-col p-7">
                       <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-tight mb-3">{e.name}</h3>

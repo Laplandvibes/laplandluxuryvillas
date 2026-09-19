@@ -1,5 +1,6 @@
 import type { Lang } from './affiliate'
 import { overlayDestination } from './villaI18n'
+import { seasonal } from './season'
 
 export interface Destination {
   slug: string
@@ -32,7 +33,16 @@ export interface Destination {
   /** Image placeholder gradient (fallback when image unavailable). */
   imageGradient: string
   /** Local 4:5 portrait WebP. */
+  /** Resolved for the visitor's season at call time (see `seasonal`). */
   image?: string
+  /**
+   * Real photographs per season (Vesa 19.9.2026: "niihin varmaan löytyisi aidot
+   * tunnelmalliset kuvat?"). Winter 1 Oct to 30 Apr, summer 1 May to 30 Sep.
+   * Receipts in src/data/photoCredits.ts; the AI renders they replace are
+   * archived under _reissu-2026-07/_ai-originals-backup/.
+   */
+  imageWinter?: string
+  imageSummer?: string
 }
 
 export const DESTINATIONS: Destination[] = [
@@ -53,7 +63,8 @@ export const DESTINATIONS: Destination[] = [
     arrival: 'Ivalo (IVL), 27 km, about 30 min by private transfer',
     auroraNote: 'Inland boreal forest with almost no settlement light for tens of kilometres in any direction. The fells give you a high, open horizon, which matters on nights when the arc sits low in the north.',
     imageGradient: 'linear-gradient(135deg, #0F1F3A 0%, #1A2F4F 50%, #0A1628 100%)',
-    image: '/images/dest-saariselka.webp',
+    imageWinter: '/images/destinations/saariselka-winter.webp',
+    imageSummer: '/images/destinations/saariselka-summer.webp',
   },
   {
     slug: 'inari',
@@ -72,7 +83,8 @@ export const DESTINATIONS: Destination[] = [
     arrival: 'Ivalo (IVL), 40 km, about 40 min by private transfer',
     auroraNote: 'The northernmost of our destinations, and the one where the aurora most often stands directly overhead rather than low in the north. Lake Inari gives an unbroken horizon and there is no town light on it.',
     imageGradient: 'linear-gradient(135deg, #0E1B2E 0%, #1B2A45 50%, #0B1424 100%)',
-    image: '/images/dest-inari.webp',
+    imageWinter: '/images/destinations/inari-winter.webp',
+    imageSummer: '/images/destinations/inari-summer.webp',
   },
   {
     slug: 'rovaniemi',
@@ -90,7 +102,8 @@ export const DESTINATIONS: Destination[] = [
     arrival: 'Rovaniemi (RVN), 10 km, 10 to 15 min from the city centre',
     auroraNote: 'The southernmost of our destinations and the only one with a city\'s light on the horizon, so the aurora is both less frequent here and harder to see when it comes. Best paired with at least one fell-village night further north.',
     imageGradient: 'linear-gradient(135deg, #1A1A28 0%, #25243C 50%, #10101C 100%)',
-    image: '/images/dest-rovaniemi.webp',
+    imageWinter: '/images/destinations/rovaniemi-winter.webp',
+    imageSummer: '/images/destinations/rovaniemi-summer.webp',
   },
   {
     slug: 'levi',
@@ -109,7 +122,8 @@ export const DESTINATIONS: Destination[] = [
     arrival: 'Kittilä (KTT), 15 km, about 20 min by private transfer',
     auroraNote: 'A south-facing panorama, which is rare in Lapland: the lit fell-village becomes the foreground of the photograph. The trade is the village light itself, so the darkest viewing is a short drive out.',
     imageGradient: 'linear-gradient(135deg, #1F1A2E 0%, #2A2240 50%, #14101F 100%)',
-    image: '/images/dest-levi.webp',
+    imageWinter: '/images/destinations/levi-winter.webp',
+    imageSummer: '/images/destinations/levi-summer.webp',
   },
   {
     slug: 'yllas',
@@ -128,9 +142,11 @@ export const DESTINATIONS: Destination[] = [
     arrival: 'Kittilä (KTT), 40 km, about 45 min by private transfer',
     auroraNote: 'The chalets sit against the national park rather than in a resort centre, so you step out of the door into the dark instead of driving to find it.',
     imageGradient: 'linear-gradient(135deg, #1A2A1F 0%, #243A2E 50%, #0F1A14 100%)',
-    image: '/images/dest-yllas.webp',
+    imageWinter: '/images/destinations/yllas-winter.webp',
+    imageSummer: '/images/destinations/yllas-summer.webp',
   },
 ]
 
-export const getDestinations = (lang: Lang = 'en'): Destination[] => DESTINATIONS.map((d) => overlayDestination(d, lang))
+export const getDestinations = (lang: Lang = 'en'): Destination[] =>
+  DESTINATIONS.map((d) => overlayDestination({ ...d, image: seasonal(d.imageWinter, d.imageSummer) }, lang))
 export const destinationBySlug = (slug: string, lang: Lang = 'en') => getDestinations(lang).find((d) => d.slug === slug)

@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { ArrowUpRight, Plane, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 import Page from '../components/Page'
 import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
@@ -53,7 +55,7 @@ export default function Destinations() {
               }`}
             >
               <div
-                className="aspect-[5/4] w-full overflow-hidden"
+                className="relative aspect-[5/4] w-full overflow-hidden"
                 style={{ background: d.imageGradient }}
               >
                 {d.image && (
@@ -65,6 +67,7 @@ export default function Destinations() {
                     className="w-full h-full object-cover"
                   />
                 )}
+                <PhotoCredit credit={creditFor(d.image)} />
               </div>
               <div>
                 <span className="eyebrow">{c.destinationsPage.destinationLabel(i)}</span>

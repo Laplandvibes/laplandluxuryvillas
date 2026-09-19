@@ -12,6 +12,8 @@ import { DestinationLocator, DestinationSeason, DestinationExperiences } from '.
 import { SECTION_LABELS, s } from '../lib/destinationSections.i18n'
 import RelatedSites from '../components/RelatedSites'
 import NewsletterSection from '../components/NewsletterSection'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { destinationBySlug } from '../lib/destinations'
@@ -172,15 +174,16 @@ export default function DestinationPage() {
           <div className="grid gap-3 sm:grid-cols-2 sm:gap-5">
             {([['winter', s(SECTION_LABELS.capWinter, lang)], ['summer', s(SECTION_LABELS.capSummer, lang)]] as const).map(([season, caption]) => (
               <figure key={season} className="m-0">
-                <div className="aspect-[16/10] overflow-hidden bg-[color:var(--color-onyx)]">
+                <div className="relative aspect-[16/10] overflow-hidden bg-[color:var(--color-onyx)]">
                   <img
-                    src={`/images/dest-${dest.slug}-${season}.webp`}
+                    src={season === 'winter' ? dest.imageWinter : dest.imageSummer}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
                   />
+                  <PhotoCredit credit={creditFor(season === 'winter' ? dest.imageWinter : dest.imageSummer)} />
                 </div>
                 {caption && (
                   <figcaption className="mt-2 text-[11px] tracking-[0.14em] uppercase font-body text-[color:var(--color-bone)]/60">

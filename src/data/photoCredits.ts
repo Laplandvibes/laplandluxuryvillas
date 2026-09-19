@@ -38,14 +38,30 @@
  *            crop is declared in `changes` and shown as "cropped" next to
  *            the licence, which is what CC BY-SA asks of an adaptation.
  *
+ *  `pexels`  Pexels video, Pexels licence (free for commercial use, no
+ *            attribution required, irrevocable, ToS 15.11.2024 §5). Stock on
+ *            every surface since 17.9.2026 with three per-clip checks the
+ *            licence does not make: no identifiable person, real not AI
+ *            (upload date or frame inspection), subject Lapland or placeless.
+ *            Credited anyway, with a link to the clip page. Used on
+ *            /experiences (Vesa 19.9.2026: "molemmat aivan fake. eikö täällä
+ *            olisi ehkä Pexelsistä jotain aitoja revontulivideoita jotka
+ *            alkaisi itsestään pyöriin?"). Files self-hosted in public/videos.
+ *
+ *  `own`     LaplandVibes' own photograph, July 2026 road trip (master pool
+ *            D:\_puhelin_staging\kuvat, 4000x3000, registered in
+ *            _reissu-2026-07/KUVA-INVENTAARIO.md §6b). No licence line is
+ *            needed; the card prints "Photo: LaplandVibes" so the reader can
+ *            tell it from the partner and Commons material.
+ *
  * Receipt fields (CLAUDE.md): source, asset id, licence, date, price (0 €).
  */
 
 export type PhotoCredit = {
-  kind: 'sembo' | 'commons'
+  kind: 'sembo' | 'commons' | 'pexels' | 'own'
   /** Displayed author. For hotel-supplied photos this is the source, "Sembo". */
   author: string
-  license?: 'CC BY 2.0' | 'CC BY-SA 2.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0'
+  license?: 'CC BY 2.0' | 'CC BY-SA 2.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0' | 'Pexels'
   licenseUrl?: string
   /** Commons file page, or the property's Sembo hotel page. */
   sourceUrl: string
@@ -77,6 +93,45 @@ const sembo = (code: string, id: string, orig: string): PhotoCredit => ({
   changes: `Read at ${orig}, cropped to 3:2 from the centre, resized to 1600x1066, WebP q82.`,
   cropped: true,
 })
+
+const PHOTO_CREDIT_OF: Record<string, PhotoCredit> = {
+  '/videos/aurora-forest-honkamies.mp4': {
+    kind: 'pexels',
+    author: 'T Honkamies',
+    license: 'Pexels',
+    licenseUrl: 'https://www.pexels.com/license/',
+    sourceUrl: 'https://www.pexels.com/video/northern-lights-timelapse-28492331/',
+    sourceId: 'pexels-video-28492331',
+    taken: '2024-09-18',
+    retrieved: RETRIEVED,
+    changes: 'Pexels 1920x1080 24 fps file, trimmed to 16 s, re-encoded H.264 CRF 29 without audio (3.9 MB); poster = frame at 6 s, WebP.',
+    cropped: false,
+  },
+  '/videos/aurora-cabins-malviya.mp4': {
+    kind: 'pexels',
+    author: 'Utkarsh Malviya',
+    license: 'Pexels',
+    licenseUrl: 'https://www.pexels.com/license/',
+    sourceUrl: 'https://www.pexels.com/video/aurora-borealis-over-snowy-cabins-at-night-31401354/',
+    sourceId: 'pexels-video-31401354',
+    taken: '2025-03-30',
+    retrieved: RETRIEVED,
+    changes: 'Pexels 1920x1080 15 fps file, 11.9 s, re-encoded 1280x720 H.264 CRF 29 without audio (0.7 MB); poster = frame at 5 s, WebP.',
+    cropped: false,
+  },
+  '/videos/aurora-arc-distill.mp4': {
+    kind: 'pexels',
+    author: 'Distill',
+    license: 'Pexels',
+    licenseUrl: 'https://www.pexels.com/license/',
+    sourceUrl: 'https://www.pexels.com/video/time-lapse-video-of-aurora-borealis-852435/',
+    sourceId: 'pexels-video-852435',
+    taken: '2016-07-04',
+    retrieved: RETRIEVED,
+    changes: 'Pexels 1920x1080 30 fps file, 4.1 s, re-encoded 1280x720 H.264 CRF 29 without audio (0.4 MB); poster = frame at 2 s, WebP.',
+    cropped: false,
+  },
+}
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   '/images/villas/kakslauttanen-sembo.webp': sembo('1679682', '13000000/12320000/12318200/12318138/e2076748.jpg', '3008x2000'),
@@ -113,6 +168,195 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     cropped: true,
     inPictureKey: 'heroWinter',
   },
+
+  // ── Destination cards (Home 4:5, Destinations 5:4, detail 16:10): square 1400 files ──
+  // Vesa 19.9.2026: "niihin varmaan löytyisi aidot tunnelmalliset kuvat?" The ten
+  // AI renders (dest-<slug>-<season>.webp/avif) are archived under
+  // _reissu-2026-07/_ai-originals-backup/laplandluxuryvillas-new/public/images/.
+  '/images/destinations/saariselka-winter.webp': {
+    kind: 'commons',
+    author: 'Ninara from Helsinki, Finland',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Y1A9713_Lapland_(15620906338).jpg',
+    sourceId: 'File:Y1A9713 Lapland (15620906338).jpg',
+    taken: '2014-11-13',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (5129x3121, box 1004,0 to 4125,3121), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/saariselka-summer.webp': {
+    kind: 'commons',
+    author: 'Ximonic (Simo Räsänen)',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Young_reindeer_on_Kaunisp%C3%A4%C3%A4_fell_in_Saariselk%C3%A4,_Inari,_Lapland,_Finland,_2021_September.jpg',
+    sourceId: 'File:Young reindeer on Kaunispää fell in Saariselkä, Inari, Lapland, Finland, 2021 September.jpg',
+    taken: '2021-09-18',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (5000x3333, box 1433,0 to 4766,3333), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/inari-winter.webp': {
+    kind: 'commons',
+    author: 'Ababamov',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Aurora_Borealis_and_the_stars_2.jpg',
+    sourceId: 'File:Aurora Borealis and the stars 2.jpg',
+    taken: '2013-02-07',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (5184x3456, box 864,0 to 4320,3456), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/inari-summer.webp': {
+    kind: 'commons',
+    author: 'Ximonic (Simo Räsänen)',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:J%C3%A4niskoski_rapids_of_Juutuanjoki_in_Inari,_Lapland,_Finland,_2022_August_-_4.jpg',
+    sourceId: 'File:Jäniskoski rapids of Juutuanjoki in Inari, Lapland, Finland, 2022 August - 4.jpg',
+    taken: '2022-08-13',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (5000x3477, box 761,0 to 4238,3477), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/rovaniemi-winter.webp': {
+    kind: 'commons',
+    author: 'flightlog',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Santa_Claus_Village_in_Rovaniemi_20120209_01.jpg',
+    sourceId: 'File:Santa Claus Village in Rovaniemi 20120209 01.jpg',
+    taken: '2012-02-09',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (3648x2432, box 826,0 to 3258,2432), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/levi-winter.webp': {
+    kind: 'commons',
+    author: 'DanielMichaelPerry',
+    license: 'CC0 1.0',
+    licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Sirkka_from_Levi,_Finland.jpg',
+    sourceId: 'File:Sirkka from Levi, Finland.jpg',
+    taken: '2023-01-13',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (4032x3024, box 504,0 to 3528,3024), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/yllas-winter.webp': {
+    kind: 'commons',
+    author: 'Yllasjarvi',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yll%C3%A4stunturi_Yll%C3%A4sj%C3%A4rven_j%C3%A4%C3%A4lt%C3%A4.jpg',
+    sourceId: 'File:Yllästunturi Ylläsjärven jäältä.jpg',
+    taken: '2018-10-06',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 1:1 (4272x2848, box 712,0 to 3560,2848), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+
+  // ── LaplandVibes' own photographs, July 2026 road trip (masters 4000x3000) ──
+  '/images/destinations/rovaniemi-summer.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260720_115907.jpg',
+    taken: '2026-07-20',
+    retrieved: RETRIEVED,
+    changes: 'Santa Claus Village main building, Rovaniemi, 11:59. Cropped (4000x3000, box 1150,90 to 3250,2190), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/levi-summer.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260720_161332.jpg',
+    taken: '2026-07-20',
+    retrieved: RETRIEVED,
+    changes: 'Levi village and the lowland from the fell, 16:13. Cropped (4000x3000, box 500,0 to 3500,3000), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/destinations/yllas-summer.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260721_140157.jpg',
+    taken: '2026-07-21',
+    retrieved: RETRIEVED,
+    changes: 'Reindeer at Äkäslompolo (Jänkä), 14:01. Cropped (4000x3000, box 980,0 to 3980,3000), resized to 1400x1400, WebP.',
+    cropped: true,
+  },
+  '/images/midnight-sun/glass.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260720_122414.jpg',
+    taken: '2026-07-20',
+    retrieved: RETRIEVED,
+    changes: 'Glass-fronted cabins in pine forest, Rovaniemi, 12:24; sun loungers cropped out. Cropped (4000x3000, box 1000,375 to 4000,2625), resized to 1200x900, WebP.',
+    cropped: true,
+  },
+  '/images/midnight-sun/lakeside.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260719_222938.jpg',
+    taken: '2026-07-19',
+    retrieved: RETRIEVED,
+    changes: 'Sun over Kemijärvi from a lakeside terrace, 22:29; railing cropped out. Cropped (4000x3000, box 400,0 to 3600,2400), resized to 1200x900, WebP.',
+    cropped: true,
+  },
+  '/images/midnight-sun/fell.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260720_183723.jpg',
+    taken: '2026-07-20',
+    retrieved: RETRIEVED,
+    changes: 'Gondola pylon, fireweed and the Levi road from the fell, 18:37. Cropped (4000x3000, box 0,0 to 4000,3000), resized to 1200x900, WebP.',
+    cropped: true,
+  },
+  '/images/midnight-sun/forest.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260717_221203.jpg',
+    taken: '2026-07-17',
+    retrieved: RETRIEVED,
+    changes: 'Dark timber cabin under pines at Ruka, 22:12. Cropped (4000x3000, box 800,450 to 4000,2850), resized to 1200x900, WebP.',
+    cropped: true,
+  },
+  '/images/hero-villas-ruka.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260717_221203.jpg',
+    taken: '2026-07-17',
+    retrieved: RETRIEVED,
+    changes: 'Dark timber cabin under pines at Ruka, 22:12; different crop from midnight-sun/forest, parked cars cropped out. Cropped (4000x3000, box 100,191 to 3900,2328), resized to 2000x1125, WebP.',
+    cropped: true,
+  },
+  '/images/hero-midnight-sun-kemijarvi.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20260718_221602.jpg',
+    taken: '2026-07-18',
+    retrieved: RETRIEVED,
+    changes: 'Mirror-calm Kemijärvi at 22:16. Cropped (4000x3000, box 0,525 to 4000,2775), resized to 2000x1125, WebP.',
+    cropped: true,
+  },
+
+  // ── Pexels aurora clips on /experiences (hero + two cards) and their poster frames ──
+  '/videos/aurora-forest-honkamies.mp4': PHOTO_CREDIT_OF['/videos/aurora-forest-honkamies.mp4'],
+  '/videos/aurora-cabins-malviya.mp4': PHOTO_CREDIT_OF['/videos/aurora-cabins-malviya.mp4'],
+  '/videos/aurora-arc-distill.mp4': PHOTO_CREDIT_OF['/videos/aurora-arc-distill.mp4'],
+  '/images/hero-experiences-poster.webp': PHOTO_CREDIT_OF['/videos/aurora-forest-honkamies.mp4'],
+  '/images/experiences/private-aurora-photography-night.webp': PHOTO_CREDIT_OF['/videos/aurora-cabins-malviya.mp4'],
+  '/images/experiences/helicopter-aurora-flight.webp': PHOTO_CREDIT_OF['/videos/aurora-arc-distill.mp4'],
 }
 
 /**

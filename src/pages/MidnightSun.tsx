@@ -3,6 +3,8 @@ import { Sun, Calendar, ArrowUpRight } from 'lucide-react'
 import SEO from '../components/SEO'
 import Page from '../components/Page'
 import Hero from '../components/Hero'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -22,11 +24,14 @@ export default function MidnightSun() {
   const c = COPY[lang]
   const seo = getPageSeo('midnight-sun', lang)
 
+  // Own July 2026 photographs (Vesa 19.9.2026: "täällä ei ole aitoja kuvia?"); the
+  // four AI renders are archived under _reissu-2026-07/_ai-originals-backup/.
+  // Receipts: src/data/photoCredits.ts (kind 'own').
   const summerImgs = [
-    '/images/summer-villa-glass.webp',
-    '/images/summer-villa-lakeside.webp',
-    '/images/summer-villa-fell.webp',
-    '/images/summer-villa-forest.webp',
+    '/images/midnight-sun/glass.webp',
+    '/images/midnight-sun/lakeside.webp',
+    '/images/midnight-sun/fell.webp',
+    '/images/midnight-sun/forest.webp',
   ]
 
   return (
@@ -45,8 +50,10 @@ export default function MidnightSun() {
         lede={c.hero.midnightSun.lede}
         primary={{ to: to('/private-inquiry'), label: c.hero.midnightSun.primary }}
         secondary={{ to: to('/villas'), label: c.hero.midnightSun.secondary }}
-        imageUrl="/images/hero-midnight-sun.webp"
-        imageAlt="A glass-roof Lapland villa in late-June midnight-sun light, lush green forest, lake unfrozen"
+        imageUrl="/images/hero-midnight-sun-kemijarvi.webp"
+        imageAlt="Mirror-calm lake at Kemijärvi at 22:16 on a July night, the sun still above the far shore"
+        imgObjectPosition="50% 60%"
+        credit={<PhotoCredit credit={creditFor('/images/hero-midnight-sun-kemijarvi.webp')} />}
       />
 
       {/* FACTS BAND */}
@@ -108,7 +115,7 @@ export default function MidnightSun() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {c.midnightSunPage.summerCollection.cards.map((card, idx) => (
               <article key={card.title} className="card-onyx flex flex-col h-full overflow-hidden">
-                <div className="aspect-[4/3] w-full overflow-hidden bg-[color:var(--color-deep-night)]">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[color:var(--color-deep-night)]">
                   <img
                     src={summerImgs[idx]}
                     alt={card.title}
@@ -116,6 +123,7 @@ export default function MidnightSun() {
                     decoding="async"
                     className="w-full h-full object-cover"
                   />
+                  <PhotoCredit credit={creditFor(summerImgs[idx])} />
                 </div>
                 <div className="flex-1 flex flex-col p-7">
                   <h3 className="font-heading text-xl text-[color:var(--color-snow)] leading-tight mb-3">
