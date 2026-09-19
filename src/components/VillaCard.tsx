@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Bed, Users, MapPin, ArrowUpRight } from 'lucide-react'
+import { Bed, Users, MapPin, ArrowUpRight, ArrowRight } from 'lucide-react'
 import type { Villa } from '../lib/villas'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -30,6 +30,30 @@ interface VillaCardProps {
   pickNote?: string
 }
 
+/**
+ * VillaCard — one property of the collection.
+ *
+ * Layout since 2026-09-19 evening (Vesa, on the front-page cards: *"eikö tässä
+ * mainoksissa google arviot voisi olla kuvan alla oikealla, näiden tekstien
+ * ja juttujen sijainti pitää oikeasti katsoa, ja millä fontilla tekstit"*).
+ * Before, ten elements in ten styles stacked under the photo: eyebrow, serif
+ * title, rating pill, scope line, body, a tracked-caps "read profile" link,
+ * spec row, a serif price, the button and the escape link. Now the card has
+ * five rows, each with one job, and two typefaces only:
+ *
+ *   1. under the photo: where it is (left) · Google's verdict (RIGHT), with
+ *      its scope line and, on the winning card, the pick's justification,
+ *      right-aligned under the pill so the number and its caveats stay together
+ *   2. the name, Cormorant Garamond (the site's documented heading face) — the
+ *      only serif on the card, and the link to the profile
+ *   3. one sentence, DM Sans
+ *   4. bedrooms · sleeps · "Read profile →", one line of DM Sans 13 px
+ *   5. price (DM Sans, never serif) and the booking button; the Sembo escape
+ *      link right-aligned beneath the button it belongs to
+ *
+ * Tracked capitals survive only where the network uses them everywhere: the
+ * button and the place name. Everything else is sentence case.
+ */
 export default function VillaCard({
   villa,
   showBooking = true,
@@ -87,17 +111,11 @@ export default function VillaCard({
             </span>
           </div>
         )}
-        {/* The earned mark rides on the IMAGE, opposite the tier badge.
-            🔴 It used to be a block above the h3 (Vesa 2026-08-01: "toimituksen
-            valinta menee ihan oudosti"). Only one card in a row ever carries
-            it, so it pushed that card's title, rating, body and button down by
-            its own height and nothing lined up across the row. On the image it
-            costs zero layout height, and it still reads as editorial rather
-            than paid: snow + brass ring, never the pink "Mainos" pill. */}
-        {/* Top RIGHT, always (Vesa 19.9.2026: "pitäisi olla aina oikea yläkulma").
-            It sat bottom-left since 2.8. to dodge the tier badge in the top-left;
-            the tier badge is gone from these cards and the card is twice as wide,
-            so the top-right corner is free. The photo credit keeps bottom-right. */}
+        {/* The earned mark rides on the IMAGE, top RIGHT, always (Vesa 19.9.2026:
+            "pitäisi olla aina oikea yläkulma"). On the image it costs zero layout
+            height, so the one card in a row that carries it does not push its
+            text down (Vesa 2026-08-01: "toimituksen valinta menee ihan oudosti").
+            Snow + brass ring, never the pink "Mainos" pill: editorial, not paid. */}
         {isPick && (
           <div className="absolute top-4 right-4">
             <EditorsPickChip label={c.editorial.pickLabel} reason={c.editorial.pickReason} />
@@ -113,19 +131,39 @@ export default function VillaCard({
           {c.photo.inPicture.replace('{what}', c.photo[credit.inPictureKey])}
         </p>
       )}
+
       <div className="flex-1 flex flex-col p-5 sm:p-7">
-        <div className="flex items-center gap-2 text-[color:var(--color-bone)]/75 text-xs font-body mb-3">
-          <MapPin size={13} className="text-[color:var(--color-brass)]" />
-          <span className="tracking-[0.18em] uppercase">{villa.destination}</span>
-          <span className="text-[color:var(--color-mist)]">·</span>
-          <span>{c.category[villa.category]}</span>
+        {/* Row 1 — place on the left, Google's verdict on the right, both
+            directly under the photo. The rating is a citation about the WHOLE
+            property (GoogleRatingRow keeps the scope line with the number), so
+            it sits in the corner as a label, not in the story column. */}
+        <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2 mb-4">
+          <div className="flex items-center gap-2 text-[color:var(--color-bone)]/75 text-xs font-body pt-1">
+            <MapPin size={13} className="text-[color:var(--color-brass)] shrink-0" aria-hidden="true" />
+            <span className="tracking-[0.18em] uppercase">{villa.destination}</span>
+            <span className="text-[color:var(--color-mist)]">·</span>
+            <span>{c.category[villa.category]}</span>
+          </div>
+          {property && (
+            <div className="ml-auto flex flex-col items-end text-right gap-1">
+              <GoogleRatingRow property={property} align="end" />
+              {/* The mark's VISIBLE justification: "highest Google rating on this
+                  page, checked <date>" belongs beside the number it is a claim
+                  about. Mandatory — the mark is only checkable if the reader can
+                  see what it is derived from and how old the snapshot is. */}
+              {isPick && pickNote && (
+                <p className="max-w-[16rem] text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/70">
+                  {pickNote}
+                </p>
+              )}
+            </div>
+          )}
         </div>
 
-        {/* The card title is the way into /villas/:slug. Until 2026-08-01 no
+        {/* Row 2 — the name is the way into /villas/:slug. Until 2026-08-01 no
             card linked there at all: 108 detail URLs sat in the sitemap with
-            zero internal links, so the richest pages on the site were orphans
-            for a crawler and a dead end for a reader. */}
-        <h3 className="font-heading text-2xl leading-tight mb-3">
+            zero internal links. The only serif on the card. */}
+        <h3 className="font-heading text-[1.75rem] leading-tight mb-2">
           <Link
             to={detailPath}
             className="text-[color:var(--color-snow)] no-underline hover:text-[color:var(--color-brass)] transition-colors"
@@ -134,71 +172,50 @@ export default function VillaCard({
           </Link>
         </h3>
 
-        {/* Google's verdict on the PROPERTY that contains this room type, with
-            its scope stated in the row itself. Rendered on every rated card,
-            not only the winner: "highest rated on this page" is checkable only
-            against the numbers it beat. */}
-        <GoogleRatingRow property={property} className={isPick && pickNote ? 'mb-1.5' : 'mb-4'} />
-
-        {/* The mark's VISIBLE justification. It moved down here with the chip:
-            "highest Google rating on this page, checked <date>" belongs beside
-            the number it is a claim about, not above the villa's name. Still
-            mandatory — the mark is only checkable if the reader can see what it
-            is derived from and how old the snapshot is. */}
-        {isPick && pickNote && (
-          <p className="text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/70 mb-4">
-            {pickNote}
-          </p>
-        )}
-
-        <p className="text-[color:var(--color-bone)]/85 text-sm leading-relaxed font-body mb-4">
+        {/* Row 3 — one sentence. */}
+        <p className="text-[color:var(--color-bone)]/85 text-[15px] leading-relaxed font-body mb-5">
           {villa.tagline}
         </p>
 
-        <Link
-          to={detailPath}
-          className="lv-tap inline-flex items-center gap-1.5 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] text-[11px] tracking-[0.2em] uppercase font-body no-underline mb-5 group/profile"
-        >
-          {c.cta.readProfile}
-          <ArrowUpRight size={12} className="transition-transform group-hover/profile:translate-x-0.5 group-hover/profile:-translate-y-0.5" />
-        </Link>
-
-        {/* `mt-auto` pins the spec row and the price/CTA block to the bottom of
-            the card. The grid already stretches every card to the row's height,
-            but the CONTENT was top-aligned, so a card with no Google rating
-            ended its button a hundred pixels above its neighbour's. Now every
-            row's buttons sit on one line. (Every villa has a rating again
-            since the two unnamed entries went in 2026-08-02, but keep this —
-            a new villa can land before its rating is synced.) */}
-        <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-[color:var(--color-bone)]/75 pb-5 border-b border-[color:var(--color-mist)]/40">
+        {/* Row 4 — specs and the profile link on one line, pinned above the
+            price row so every card in a row ends its button on the same line
+            (`mt-auto`; the grid stretches cards, the content was top-aligned). */}
+        <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[13px] font-body text-[color:var(--color-bone)]/80 pb-4 border-b border-[color:var(--color-mist)]/40">
           {/* Omitted where the property publishes no bedroom count. See the
               `bedrooms` note in lib/villas.ts — an empty chip is better than
               an invented number. */}
           {villa.bedrooms !== undefined && (
             <span className="inline-flex items-center gap-1.5">
-              <Bed size={13} className="text-[color:var(--color-brass)]" />
+              <Bed size={14} className="text-[color:var(--color-brass)]" aria-hidden="true" />
               {villa.bedrooms} {villa.bedrooms === 1 ? c.badges.bedroom : c.badges.bedrooms}
             </span>
           )}
           <span className="inline-flex items-center gap-1.5">
-            <Users size={13} className="text-[color:var(--color-brass)]" />
+            <Users size={14} className="text-[color:var(--color-brass)]" aria-hidden="true" />
             {c.badges.sleeps} {villa.sleeps}
           </span>
+          <Link
+            to={detailPath}
+            className="lv-tap ml-auto inline-flex items-center gap-1 text-[color:var(--color-brass)] hover:text-[color:var(--color-brass-bright)] no-underline group/profile"
+          >
+            {c.cta.readProfile}
+            <ArrowRight size={13} className="transition-transform group-hover/profile:translate-x-0.5" aria-hidden="true" />
+          </Link>
         </div>
 
-        <div className="mt-5 flex items-end justify-between gap-4">
-          <div>
+        {/* Row 5 — price and the booking button. The price is DM Sans like
+            every other number on the site; the serif is for names only. */}
+        <div className="mt-4 flex items-center justify-between gap-4">
+          <div className="font-body leading-tight">
             {villa.fromPerNight ? (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.fromPerNight}</div>
-                <div className="font-heading text-2xl text-[color:var(--color-brass)]">
-                  {formatRate(villa.fromPerNight, lang)}
-                </div>
+                <div className="text-[11px] tracking-[0.14em] uppercase text-[color:var(--color-bone)]/60 mb-1">{c.badges.fromPerNight}</div>
+                <div className="text-lg font-medium text-[color:var(--color-brass)]">{formatRate(villa.fromPerNight, lang)}</div>
               </>
             ) : (
               <>
-                <div className="eyebrow text-[color:var(--color-bone)]/75 mb-0.5">{c.badges.rate}</div>
-                <div className="font-heading text-lg text-[color:var(--color-brass)]">{c.badges.onRequest}</div>
+                <div className="text-[11px] tracking-[0.14em] uppercase text-[color:var(--color-bone)]/60 mb-1">{c.badges.rate}</div>
+                <div className="text-[15px] text-[color:var(--color-snow)]">{c.badges.onRequest}</div>
               </>
             )}
           </div>
@@ -206,10 +223,10 @@ export default function VillaCard({
           {inquiryOnly || !showBooking ? (
             <Link
               to={to('/private-inquiry')}
-              className="inline-flex items-center gap-2 border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
+              className="inline-flex min-h-11 items-center gap-2 border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-colors"
             >
               {c.cta.inquire}
-              <ArrowUpRight size={13} />
+              <ArrowUpRight size={13} aria-hidden="true" />
             </Link>
           ) : (
             <a
@@ -219,7 +236,7 @@ export default function VillaCard({
               className="inline-flex min-h-11 items-center gap-2 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-4 py-2.5 text-[11px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass-bright)] transition-colors"
             >
               {promisesProperty ? c.cta.viewRates : c.cta.viewOptions}
-              <ArrowUpRight size={13} />
+              <ArrowUpRight size={13} aria-hidden="true" />
             </a>
           )}
         </div>
@@ -228,10 +245,10 @@ export default function VillaCard({
             href={nearbyHref}
             target="_blank"
             rel="sponsored nofollow noopener"
-            className="lv-tap mt-3 inline-flex min-h-11 items-center gap-1.5 self-end text-[11px] tracking-[0.12em] uppercase font-body text-[color:var(--color-bone)]/70 hover:text-[color:var(--color-brass)] no-underline"
+            className="lv-tap mt-2 inline-flex items-center gap-1 self-end text-[12px] font-body text-[color:var(--color-bone)]/65 hover:text-[color:var(--color-brass)] no-underline"
           >
             {c.cta.nearbyStays}
-            <ArrowUpRight size={12} />
+            <ArrowUpRight size={12} aria-hidden="true" />
           </a>
         )}
       </div>

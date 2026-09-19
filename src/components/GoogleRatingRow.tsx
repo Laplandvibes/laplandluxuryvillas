@@ -52,9 +52,12 @@ export const RATING_MIN_REVIEWS = 10
 export default function GoogleRatingRow({
   property,
   className,
+  align = 'start',
 }: {
   property: (Property & GoogleReview) | null | undefined
   className?: string
+  /** 'end' right-aligns the pill and its scope line (villa card corner, 19.9.2026). */
+  align?: 'start' | 'end'
 }) {
   const lang = useLang()
 
@@ -82,7 +85,7 @@ export default function GoogleRatingRow({
     : null
 
   return (
-    <div className={['flex flex-col items-start gap-1', className].filter(Boolean).join(' ')}>
+    <div className={['flex flex-col gap-1', align === 'end' ? 'items-end text-right' : 'items-start', className].filter(Boolean).join(' ')}>
       <a
         href={googleReviewsUrl(googlePlaceId)}
         target="_blank"
@@ -92,9 +95,10 @@ export default function GoogleRatingRow({
         className={[
           // `relative` anchors the sr-only absolute to this pill instead of a
           // higher positioned ancestor (Lomarengas lesson, 2026-07-25).
-          'relative inline-flex items-center gap-1.5 self-start rounded-full no-underline',
+          'lv-tap relative inline-flex items-center gap-1.5 rounded-full no-underline',
+          align === 'end' ? 'self-end' : 'self-start',
           'border border-[color:var(--color-brass)]/30 bg-[color:var(--color-brass)]/10',
-          'px-3 py-2 min-h-11 text-[11px] font-body text-[color:var(--color-bone)]/85',
+          'px-3 py-1.5 text-[11px] font-body text-[color:var(--color-bone)]/85',
           'hover:text-[color:var(--color-snow)] hover:border-[color:var(--color-brass)]/60 transition-colors',
         ].join(' ')}
       >
