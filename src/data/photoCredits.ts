@@ -115,5 +115,18 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   },
 }
 
+/**
+ * Lookup by image path, ignoring any `?v=` cache-bust on either side.
+ *
+ * 🔴 Measured live 19.9.2026 right after the first deploy: zero credits rendered in
+ * production while the dev server showed all of them. `scripts/version-images.mjs`
+ * stamps `?v=<hash>` on EVERY `/images/...webp` string in the bundle, including the
+ * KEYS of the map above, so a lookup that stripped the query from the image but not
+ * from the key never matched. The keys are normalised here at module load.
+ */
+const CREDITS_BY_PATH: Record<string, PhotoCredit> = Object.fromEntries(
+  Object.entries(PHOTO_CREDITS).map(([k, v]) => [k.split('?')[0], v]),
+)
+
 export const creditFor = (image: string | undefined): PhotoCredit | undefined =>
-  image ? PHOTO_CREDITS[image.split('?')[0]] : undefined
+  image ? CREDITS_BY_PATH[image.split('?')[0]] : undefined
