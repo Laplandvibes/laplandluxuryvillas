@@ -115,6 +115,9 @@ export default function Home() {
           'A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light',
         )}
         imgObjectPosition={seasonal('50% 60%', '20% 50%')}
+        // The summer frame is a bright sky over open water and the winter one is
+        // a night aurora, so they need different washes to carry the same words.
+        scrim={seasonal('default', 'strong')}
         credit={<PhotoCredit credit={heroCredit} />}
       />
 

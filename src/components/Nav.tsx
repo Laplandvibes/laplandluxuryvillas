@@ -97,7 +97,7 @@ export default function Nav() {
       key={target}
       type="button"
       onClick={() => switchTo(target)}
-      className={`text-[11px] tracking-[0.22em] uppercase font-body transition-colors px-1.5 ${
+      className={`inline-flex items-center text-[11px] tracking-[0.22em] uppercase font-body transition-colors px-1.5 py-2.5 ${
         lang === target
           ? 'text-[color:var(--color-brass)]'
           : 'text-[color:var(--color-bone)]/85 hover:text-[color:var(--color-brass)]'
@@ -138,7 +138,13 @@ export default function Nav() {
                 to={l.to}
                 end
                 className={({ isActive }) =>
-                  `whitespace-nowrap text-[12px] tracking-[0.12em] uppercase font-body transition-colors ${
+                  // 🔴 The link's CLICK TARGET is its box, not its letters. The
+                  // `navi` gate measured 16 px tall links here on 20.9.2026 —
+                  // the height of 12 px capitals with no vertical padding — in
+                  // all twelve languages at 1440 and 2000 px. 12 px of padding
+                  // makes the target 40 px without moving a single pixel of
+                  // type: the bar is a flex row and the letters stay centred.
+                  `inline-flex items-center whitespace-nowrap py-3 text-[12px] tracking-[0.12em] uppercase font-body transition-colors ${
                     isActive
                       ? 'text-[color:var(--color-brass)]'
                       : 'text-[color:var(--color-bone)] drop-shadow-[0_1px_6px_rgba(0,0,0,0.65)] hover:text-[color:var(--color-brass)]'

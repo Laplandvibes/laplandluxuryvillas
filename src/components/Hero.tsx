@@ -36,9 +36,13 @@ interface HeroProps {
    * autoplay; the clip never carries text and never blocks the LCP image.
    */
   videoUrl?: string
-  /** 'light' for real footage: the default wash was measured for dark AI stills
-   *  and Vesa read it as "liikaa overlayta" on the experiences hero. */
-  scrim?: 'default' | 'light'
+  /**
+   * 'light' for real footage: the default wash was measured for dark AI stills
+   * and Vesa read it as "liikaa overlayta" on the experiences hero.
+   * 'strong' for a PALE photograph, where the default cannot reach 3:1 for the
+   * heading — see the measurement in the gradient below.
+   */
+  scrim?: 'default' | 'light' | 'strong'
 }
 
 /**
@@ -130,7 +134,16 @@ export default function Hero({
             background:
               scrim === 'light'
                 ? 'linear-gradient(to top, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.16) 45%, rgba(15,23,42,0.04) 100%)'
-                : 'linear-gradient(to top, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.26) 45%, rgba(15,23,42,0.10) 100%)',
+                : scrim === 'strong'
+                  // For a PALE photograph. Measured 20.9.2026 by the `heroteksti`
+                  // gate on the summer home hero (a bright sky over open water):
+                  // h1 1.89:1 against a 3:1 floor, lede 1.55:1 against 4.5:1, and
+                  // 80 % of the text pixels below the floor at 375 px. The default
+                  // wash was calibrated for dark winter frames and cannot carry
+                  // white type over a light sky. Not a brand choice: unreadable
+                  // text is unreadable.
+                  ? 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.68) 45%, rgba(15,23,42,0.38) 100%)'
+                  : 'linear-gradient(to top, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.26) 45%, rgba(15,23,42,0.10) 100%)',
           }}
         />
         {/* Localised reading scrim only behind the headline block — preserves photo elsewhere */}
