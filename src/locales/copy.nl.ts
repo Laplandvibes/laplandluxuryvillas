@@ -118,7 +118,7 @@ const nl: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} villa\'s · {m} bestemmingen',
+      eyebrow: '{nFig} villa\'s · {m} bestemmingen',
       title: 'Een villa in Lapland, zonder giswerk.',
       lede: "{n} villa’s met glazen dak en designsuites in {m} bestemmingen in Lapland, elk met een eigen boekingspagina en de Google-beoordeling in beeld. Stuur uw data en u krijgt binnen een dag een selectie.",
       primary: 'Bekijk de villa\'s',
@@ -142,7 +142,7 @@ const nl: SiteCopy = {
     experiences: {
       eyebrow: 'Ervaringen op maat',
       title: 'De dag, vóór de nacht onder het glas.',
-      lede: 'Acht privé-ervaringen die wij koppelen aan de villa\'s, elk geboekt op het weervenster, het daglicht en het tijdstip van inchecken.',
+      lede: '{e} privé-ervaringen die wij koppelen aan de villa\'s, elk geboekt op het weervenster, het daglicht en het tijdstip van inchecken.',
     },
     midnightSun: {
       eyebrow: '6 juni – 7 juli',

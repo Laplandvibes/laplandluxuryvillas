@@ -89,9 +89,9 @@ export default function Villas() {
           source as the cards, and a frame no card uses. */}
       <Hero
         compact
-        eyebrow={withCounts(c.hero.villas.eyebrow)}
-        title={withCounts(c.hero.villas.title)}
-        lede={withCounts(c.hero.villas.lede)}
+        eyebrow={withCounts(c.hero.villas.eyebrow, lang)}
+        title={withCounts(c.hero.villas.title, lang)}
+        lede={withCounts(c.hero.villas.lede, lang)}
         imageUrl="/images/villas/auroraVillage-sembo-5.webp"
         imageAlt="Aurora over the glass roof of a suite in the collection, seen from the bed"
         imgObjectPosition="50% 50%"

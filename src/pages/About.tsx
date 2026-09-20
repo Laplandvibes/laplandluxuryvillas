@@ -28,7 +28,7 @@ export default function About() {
         compact
         eyebrow={c.hero.about.eyebrow}
         title={c.hero.about.title}
-        lede={withCounts(c.hero.about.lede)}
+        lede={withCounts(c.hero.about.lede, lang)}
         imageUrl="/images/hero-about.webp"
         imageAlt="Hand-stacked kelo-pine wall corner of a luxury Lapland villa at blue hour"
       />

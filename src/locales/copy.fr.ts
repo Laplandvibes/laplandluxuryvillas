@@ -118,7 +118,7 @@ const fr: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} villas · {m} destinations',
+      eyebrow: '{nFig} villas · {mFig} destinations',
       title: 'Une villa en Laponie, sans approximation.',
       lede: "{n} villas à toit de verre et suites design dans {m} destinations de Laponie, chacune avec sa propre page de réservation et sa note Google en évidence. Envoyez vos dates et recevez une présélection en un jour.",
       primary: 'Voir les villas',
@@ -142,7 +142,7 @@ const fr: SiteCopy = {
     experiences: {
       eyebrow: 'Expériences sur mesure',
       title: 'La journée, avant la nuit sous le verre.',
-      lede: 'Huit expériences privées que nous associons aux villas, chacune réservée en fonction de la fenêtre météo, des heures de lumière et de l’heure d’arrivée à la villa.',
+      lede: '{e} expériences privées que nous associons aux villas, chacune réservée en fonction de la fenêtre météo, des heures de lumière et de l’heure d’arrivée à la villa.',
     },
     midnightSun: {
       eyebrow: '6 juin – 7 juillet',

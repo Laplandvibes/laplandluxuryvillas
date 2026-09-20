@@ -124,7 +124,7 @@ const es: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} villas · {m} destinos',
+      eyebrow: '{nFig} villas · {mFig} destinos',
       title: 'Una villa en Laponia, sin conjeturas.',
       lede: "{n} villas con techo de cristal y suites de diseño en {m} destinos de Laponia, cada una con su propia página de reserva y su valoración de Google a la vista. Envíe sus fechas y reciba una preselección en un día.",
       primary: 'Ver las villas',
@@ -148,7 +148,7 @@ const es: SiteCopy = {
     experiences: {
       eyebrow: 'Experiencias a medida',
       title: 'El día, antes de la noche bajo el cristal.',
-      lede: 'Ocho experiencias privadas que combinamos con las villas, cada una reservada según la ventana meteorológica, las horas de luz y la hora de entrada a la villa.',
+      lede: '{e} experiencias privadas que combinamos con las villas, cada una reservada según la ventana meteorológica, las horas de luz y la hora de entrada a la villa.',
     },
     midnightSun: {
       eyebrow: '6 jun – 7 jul',

@@ -124,7 +124,7 @@ const de: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} Villen · {m} Reiseziele',
+      eyebrow: '{nFig} Villen · {mFig} Reiseziele',
       title: 'Eine Villa in Lappland, ohne Rätselraten.',
       lede: "{n} Villen mit Glasdach und Designsuiten in {m} Reisezielen in Lappland, jede mit eigener Buchungsseite und sichtbarer Google-Bewertung. Senden Sie uns Ihre Wunschtermine, und Sie erhalten innerhalb eines Tages eine Vorauswahl.",
       primary: 'Zu den Villen',
@@ -148,7 +148,7 @@ const de: SiteCopy = {
     experiences: {
       eyebrow: 'Maßgeschneiderte Erlebnisse',
       title: 'Der Tag, vor der Nacht unter dem Glas.',
-      lede: 'Acht private Erlebnisse, die wir mit den Villen kombinieren, jedes gebucht im Hinblick auf Wetterfenster, Tageslicht und Villa-Check-in-Zeit.',
+      lede: '{e} private Erlebnisse, die wir mit den Villen kombinieren, jedes gebucht im Hinblick auf Wetterfenster, Tageslicht und Villa-Check-in-Zeit.',
     },
     midnightSun: {
       eyebrow: '6. Juni – 7. Juli',

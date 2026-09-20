@@ -124,9 +124,9 @@ const fi: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} huvilaa · {m} kohdetta',
+      eyebrow: '{nFig} huvilaa · {mFig} kohdetta',
       title: 'Huvila Lapista, ilman arvailua.',
-      lede: "{n} lasikattoista huvilaa ja designsviittiä {m} Lapin kohteessa, jokaisella oma varaussivu ja Google-arvio näkyvissä. Lähetä päivämäärät, niin saat lyhytlistan vuorokaudessa.",
+      lede: "{n} lasikattoista huvilaa ja designsviittiä {mIness} Lapin kohteessa, jokaisella oma varaussivu ja Google-arvio näkyvissä. Lähetä päivämäärät, niin saat lyhytlistan vuorokaudessa.",
       primary: 'Katso huvilat',
       secondary: 'Pyydä ehdotus',
     },
@@ -148,7 +148,7 @@ const fi: SiteCopy = {
     experiences: {
       eyebrow: 'Räätälöidyt elämykset',
       title: 'Päivä, ennen yötä lasin alla.',
-      lede: 'Kahdeksan yksityistä elämystä, jotka sovitamme huviloiden rinnalle. Jokainen varataan sään, päivänvalon ja huvilan sisäänkirjautumisen mukaan, jotta ajoitus oikeasti toimii.',
+      lede: '{e} yksityistä elämystä, jotka sovitamme huviloiden rinnalle. Jokainen varataan sään, päivänvalon ja huvilan sisäänkirjautumisen mukaan, jotta ajoitus oikeasti toimii.',
     },
     midnightSun: {
       eyebrow: '6.6.–7.7.',

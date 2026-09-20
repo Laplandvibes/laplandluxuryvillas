@@ -118,7 +118,7 @@ const sv: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} villor · {m} resmål',
+      eyebrow: '{nFig} villor · {mFig} resmål',
       title: 'En villa i Lappland, utan gissningar.',
       lede: "{n} villor med glastak och designsviter i {m} lappländska resmål, var och en med egen bokningssida och sitt Google-omdöme synligt. Skicka dina datum, så får du en kortlista inom ett dygn.",
       primary: 'Se villorna',
@@ -142,7 +142,7 @@ const sv: SiteCopy = {
     experiences: {
       eyebrow: 'Skräddarsydda upplevelser',
       title: 'Dagen, före natten under glaset.',
-      lede: 'Åtta privata upplevelser som vi kopplar till villorna, var och en bokad efter väderfönstret, dagsljuset och incheckningstiden.',
+      lede: '{e} privata upplevelser som vi kopplar till villorna, var och en bokad efter väderfönstret, dagsljuset och incheckningstiden.',
     },
     midnightSun: {
       eyebrow: '6 juni – 7 juli',

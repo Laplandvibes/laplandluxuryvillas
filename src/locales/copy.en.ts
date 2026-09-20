@@ -124,7 +124,7 @@ const en: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} villas · {m} destinations',
+      eyebrow: '{nFig} villas · {mFig} destinations',
       title: 'A Lapland villa, without the guesswork.',
       lede: "{n} glass-roof villas and designer suites in {m} Lapland destinations, each with its own booking page and its Google rating in view. Send your dates and get a shortlist within a day.",
       primary: 'See the villas',
@@ -148,7 +148,7 @@ const en: SiteCopy = {
     experiences: {
       eyebrow: 'Bespoke Experiences',
       title: 'The day, before the night under the glass.',
-      lede: 'Eight private experiences we pair with the villas. Each one is booked around the weather, the daylight and your villa check-in, so the timing actually works.',
+      lede: '{e} private experiences we pair with the villas. Each one is booked around the weather, the daylight and your villa check-in, so the timing actually works.',
     },
     midnightSun: {
       eyebrow: 'Jun 6 – Jul 7',

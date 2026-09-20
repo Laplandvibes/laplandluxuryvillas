@@ -124,7 +124,7 @@ const ptBR: SiteCopy = {
   },
   hero: {
     home: {
-      eyebrow: '{n} vilas · {m} destinos',
+      eyebrow: '{nFig} vilas · {mFig} destinos',
       title: 'Uma vila na Lapônia, sem achismo.',
       lede: "{n} vilas com teto de vidro e suítes de design em {m} destinos da Lapônia, cada uma com a própria página de reserva e a nota do Google à vista. Envie suas datas e receba uma lista selecionada em um dia.",
       primary: 'Ver as vilas',
@@ -148,7 +148,7 @@ const ptBR: SiteCopy = {
     experiences: {
       eyebrow: 'Experiências sob medida',
       title: 'O dia, antes da noite sob o vidro.',
-      lede: 'Oito experiências privadas que combinamos com as vilas, cada uma reservada conforme a janela do tempo, as horas de luz e o horário de check-in da vila.',
+      lede: '{e} experiências privadas que combinamos com as vilas, cada uma reservada conforme a janela do tempo, as horas de luz e o horário de check-in da vila.',
     },
     midnightSun: {
       eyebrow: '6 jun – 7 jul',

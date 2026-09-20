@@ -106,9 +106,9 @@ export default function Home() {
       />
 
       <Hero
-        eyebrow={withCounts(c.hero.home.eyebrow)}
-        title={withCounts(c.hero.home.title)}
-        lede={withCounts(c.hero.home.lede)}
+        eyebrow={withCounts(c.hero.home.eyebrow, lang)}
+        title={withCounts(c.hero.home.title, lang)}
+        lede={withCounts(c.hero.home.lede, lang)}
         primary={{ to: to('/villas'), label: c.hero.home.primary }}
         secondary={{ to: to('/private-inquiry'), label: c.hero.home.secondary }}
         imageUrl={heroImage}
@@ -263,7 +263,7 @@ export default function Home() {
                     {p.title}
                   </h3>
                   <p className="mt-4 text-[color:var(--color-bone)]/75 text-sm sm:text-base font-body leading-relaxed">
-                    {withCounts(p.body)}
+                    {withCounts(p.body, lang)}
                   </p>
                 </div>
               )
