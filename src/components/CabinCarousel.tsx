@@ -38,15 +38,24 @@ import { useLang, type Lang } from '../i18n/useLang'
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * Hand-picked cabin ids. Chosen 2026-08-01 from the live feed on criteria that
- * are in the feed and therefore checkable: 5-star operator rating, the largest
- * floor areas in administrative Lapland, and enough bedrooms for the parties
- * this site's villas are booked by.
+ * Hand-picked cabin ids, re-chosen 2026-09-20 from the live feed.
+ *
+ * Vesa: *"nyt haetaan niitä kalliita hyviltä arvioilta ja mökkejä mitä löytyy
+ * ja ne tarjolle"* — the selection leads with the expensive end, because this
+ * site's reader is comparing against a glass-roof suite, not against a budget
+ * cabin. The previous three (Saajomaja 1 870 €, Villa Lumo 2 034 €, Pyhän kivi
+ * 2 215 € a week) were the LARGEST in the feed, not the dearest.
+ *
+ * Criteria, all of them in the feed and therefore checkable: operator rating
+ * 5 stars, the highest weekly from-price in administrative Lapland, and three
+ * different destinations so the row is a choice rather than one village.
+ * Prices as the feed carried them on 2026-09-20; the cards read them live, so
+ * a change at Lomarengas shows here without a deploy.
  */
 const CURATED: readonly string[] = [
-  '17899',  // Saajomaja, Saariselkä — 254 m², 6 bedrooms, sleeps 12
-  '830347', // Villa Lumo, Ylläsjärvi — 210 m², 4 bedrooms, sleeps 8
-  '16065',  // Pyhän kivi, Pyhätunturi — 300 m², 6 bedrooms, sleeps 12
+  '15142',  // Tunturinlaita penthouse, Levi — 5★, 117 m², 10 484 €/wk
+  '15429',  // Kairapolanne B, Saariselkä — 5★, 205 m², 5 766 €/wk
+  '830469', // Arctic Chalet, Ylläsjärvi — 5★, 120 m², 3 542 €/wk
 ]
 
 interface Cabin {
@@ -84,7 +93,7 @@ const COPY: Record<Lang, { eyebrow: string; h3: string; cta: string; sqm: string
   sv: { eyebrow: 'Annons · handplockade', h3: 'Tre rymliga stugor i Lappland', cta: 'Se stugan', sqm: 'm²', bedrooms: 'sovrum', sleeps: 'sover', from: 'från', perWeek: '/ vecka', sourceNote: (d) => `Uppgifter och priser från Lomarengas egen produktfeed, uppdaterad ${d}.` },
 }
 
-export default function CabinCarousel({ sid }: { sid: string }) {
+export default function CabinCarousel({ sid, attached = false }: { sid: string; attached?: boolean }) {
   const lang = useLang()
   const c = COPY[lang] ?? COPY.en
   const [cabins, setCabins] = useState<Cabin[] | null>(null)
@@ -113,11 +122,15 @@ export default function CabinCarousel({ sid }: { sid: string }) {
   const fmt = (n: number) => new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang, { maximumFractionDigits: 0 }).format(n)
 
   return (
-    <section className="mt-8" aria-label={c.h3}>
+    <section className={attached ? 'mt-6' : 'mt-8'} aria-label={c.h3}>
       <div className="flex items-baseline justify-between gap-4 mb-5">
         <div>
-          <span className="eyebrow text-[color:var(--color-brass)]">{c.eyebrow}</span>
-          <h3 className="mt-2 font-heading text-2xl sm:text-3xl text-[color:var(--color-snow)] leading-tight">{c.h3}</h3>
+          {/* 🔴 When this row sits under the partner's own ad box it is that
+              ad's content, not a second ad: the AdUnit already carries the
+              MAINOS label and the frame. Printing "Mainos · käsin valitut"
+              again is what Vesa saw as two ads stacked (20.9.2026). */}
+          {!attached && <span className="eyebrow text-[color:var(--color-brass)]">{c.eyebrow}</span>}
+          <h3 className={`font-heading text-[color:var(--color-snow)] leading-tight ${attached ? 'text-xl sm:text-2xl' : 'mt-2 text-2xl sm:text-3xl'}`}>{c.h3}</h3>
         </div>
       </div>
 

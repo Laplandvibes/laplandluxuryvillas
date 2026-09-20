@@ -5,6 +5,8 @@ import Hero from '../components/Hero'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import StayPackages from '../components/StayPackages'
+import PartnerStayAd from '../components/PartnerStayAd'
+import CabinCarousel from '../components/CabinCarousel'
 import InquiryBand from '../components/InquiryBand'
 import MidnightSunBand from '../components/MidnightSunBand'
 import NewsletterSection from '../components/NewsletterSection'
@@ -218,6 +220,19 @@ export default function Home() {
           story; the Nordic Nest rail closes it as "what comes home with you".
           This is where the page's partner links live now, inside content. */}
       <StayPackages />
+
+      {/* Whole-cabin alternative, hand-picked (Vesa 2026-09-20: "etusivulla
+          pitää olla lomarengas karuselli käsin valituista kohteista, ja nyt
+          haetaan niitä kalliita hyviltä arvioilta"). One partner block: the
+          ad box makes the case, the three cabins are the evidence, one MAINOS
+          label and one disclosure between them. The cabins are the priciest
+          5-star properties in the live Lomarengas feed, three destinations. */}
+      <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
+        <div className="mx-auto max-w-4xl px-5 sm:px-7">
+          <PartnerStayAd sid="home_whole_cabin" attached />
+          <CabinCarousel sid="home_whole_cabin" attached />
+        </div>
+      </section>
 
       <InquiryBand />
 

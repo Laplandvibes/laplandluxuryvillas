@@ -10,15 +10,23 @@ import { useLang, type Lang } from '../i18n/useLang'
 // when I had built the page on the wrong site: "minä kyllä puhuin luxurista
 // niin laplandluxuryvillas.com".
 //
-// 🔴 The three picks are chosen for THIS audience, not for the highest price.
-// Someone who has just booked a glass-roof villa is looking at what belongs in
-// it: a woven blanket, a wool throw, a puukko. The 1 490 € gold panning day
-// sits on laplandgifts' own luxury page; here the objects do the work.
+// 🔴🔴 TWO OF THE THREE CARDS LINKED TO A 404 (measured 20.9.2026, after Vesa
+// clicked one: *"nämä menee 404 sivulle ja eihän me näistä tuotteista edes
+// saada provisiota? nämä tuotteet pitää löytyä jostain ja kalleimmat
+// mahdolliset myyntiin."*). `lapuan-kankurit-kaamos-blanket` and
+// `moomin-mystical-forest-wool-throw` had left the gifts catalogue, so the
+// cards sold nothing and earned nothing. A product slug on another site is a
+// FOREIGN KEY: it must be checked against that site's live sitemap, not
+// remembered. All three below returned HTTP 200 on 20.9.2026.
 //
-// 🔴 Every one of these ships beyond Finland. Measured 12.8.: of the 24
-// products over 80 € in the gifts catalogue only 14 leave the country, and the
-// most expensive objects (Halti, Finlayson, Iittala) are Finland-only. A card
-// on this site that a foreign guest cannot order is worse than no card.
+// 🔴 The picks are now the most expensive objects the shop will send abroad,
+// which is what Vesa asked for. Measured from `laplandgifts/src/data/`:
+// Halti's two shell jackets (280 € / 250 €) are more expensive still, but the
+// Halti affiliate programme is the FI shop, which ships inside Finland only
+// (partners.ts: `shipsTo: 'fi'`, delivery policy read 4.8.2026), and a card a
+// foreign guest cannot order is worse than no card. Iittala and Makia are
+// Finland-only for the same reason. Experiences are excluded on purpose: this
+// section is about objects that go home in the luggage.
 //
 // 🔴 The link goes to the laplandgifts product page, not straight to the
 // partner. The affiliate wiring, the price date and the shipping badge all
@@ -35,33 +43,33 @@ interface Obj {
 }
 
 /** Hinta on kumppanikaupan oma ja luettu tällä päivämäärällä. */
-const PRICE_AS_OF = '2026-08-12'
+const PRICE_AS_OF = '2026-09-20'
 
 const OBJECTS: Obj[] = [
   {
-    slug: 'lapuan-kankurit-kaamos-blanket',
-    image: 'prod-lapuan-kankurit-kaamos-blanket',
-    price: '99,90 €',
+    slug: 'north-outdoor-sointu-cardigan',
+    image: 'prod-north-outdoor-sointu-cardigan',
+    price: '199,95 €',
     name: {
-      fi: 'Lapuan Kankurit Kaamos-villahuopa',
-      en: 'Lapuan Kankurit Kaamos wool blanket',
+      fi: 'North Outdoor Sointu -merinoneuletakki',
+      en: 'North Outdoor Sointu merino cardigan',
     },
     note: {
-      fi: 'Kudottu Lapualla. Se huopa, joka jää sohvan selkänojalle koko talveksi.',
-      en: 'Woven in Lapua. The blanket that stays on the back of the sofa all winter.',
+      fi: 'Suomessa neulottua merinovillaa. Se takki, jonka vetää päälle terassille, kun lämpömittari näyttää miinus kahtakymmentä.',
+      en: 'Merino knitted in Finland. The cardigan you pull on to step onto the terrace at minus twenty.',
     },
   },
   {
-    slug: 'moomin-mystical-forest-wool-throw',
-    image: 'prod-moomin-mystical-forest-wool-throw',
-    price: '139,90 €',
+    slug: 'fl-lino-linen-duvet-set',
+    image: 'prod-fl-lino-linen-duvet-set',
+    price: '199,95 €',
     name: {
-      fi: 'Muumi Mystical Forest -villahuopa',
-      en: 'Moomin Mystical Forest wool throw',
+      fi: 'Finlayson Lino-pellavapussilakanasetti',
+      en: 'Finlayson Lino linen duvet set',
     },
     note: {
-      fi: 'Virallinen Muumi-huopa, joka ei näytä lastenhuoneelta.',
-      en: 'An official Moomin throw that does not read as a nursery.',
+      fi: 'Pesty pellava, joka pehmenee joka pesussa. Sama materiaali, joka on lasikattosviitin sängyssä.',
+      en: 'Washed linen that softens with every wash. The same cloth that is on the bed under the glass roof.',
     },
   },
   {

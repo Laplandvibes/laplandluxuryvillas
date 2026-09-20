@@ -140,12 +140,19 @@ const VILLA_ANGLE: Record<Lang, AdCopy> = {
 const SPEC: AdSpec = { ...lomarengas, copy: VILLA_ANGLE }
 
 interface PartnerStayAdProps {
+  /**
+   * True when a CabinCarousel for the SAME partner follows immediately. The ad
+   * then drops its bottom padding and its disclosure line, because the carousel
+   * carries both for the pair (Vesa 2026-09-20: "miksi meillä on tavallaan
+   * kaksi mainosta päällekkäin, ei hyvä").
+   */
+  attached?: boolean
   /** snake_case placement id. Reaches the Worker, D1 and GA4 — make it specific. */
   sid: string
   className?: string
 }
 
-export default function PartnerStayAd({ sid, className = '' }: PartnerStayAdProps) {
+export default function PartnerStayAd({ sid, className = '', attached = false }: PartnerStayAdProps) {
   const lang = useLang()
   return (
     <AdUnit
@@ -154,7 +161,7 @@ export default function PartnerStayAd({ sid, className = '' }: PartnerStayAdProp
       lang={lang}
       variant="dark"
       onCtaClick={(key, s, url) => trackAffiliateClick(key, `ad_unit:${s}`, url)}
-      disclosure={<AffiliateDisclosure variant="compact" className="!justify-start text-left" />}
+      disclosure={attached ? undefined : <AffiliateDisclosure variant="compact" className="!justify-start text-left" />}
       className={className}
     />
   )

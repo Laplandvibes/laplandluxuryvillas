@@ -81,15 +81,22 @@ export default function Villas() {
         }}
       />
 
+      {/* 🔴 The hero of the COLLECTION page has to show a villa (Vesa
+          2026-09-20: "tämä kuva ei ole hyvä, ei kuvasta huvilaa"). It was an
+          own photograph of an ordinary dark timber cabin at Ruka — a real
+          photograph, and the wrong subject for a page headed "8 villas". Now
+          it is one of the collection's own properties, from the same Sembo
+          source as the cards, and a frame no card uses. */}
       <Hero
         compact
         eyebrow={withCounts(c.hero.villas.eyebrow)}
         title={withCounts(c.hero.villas.title)}
         lede={withCounts(c.hero.villas.lede)}
-        imageUrl="/images/hero-villas-ruka.webp"
-        imageAlt="Dark timber cabin under tall pines at Ruka on a July evening, the forest and lakes of Kuusamo behind"
-        imgObjectPosition="50% 45%"
-        credit={<PhotoCredit credit={creditFor('/images/hero-villas-ruka.webp')} />}
+        imageUrl="/images/villas/auroraVillage-sembo-2.webp"
+        imageAlt="Aurora over the glass roof of a suite in the collection, seen from the bed"
+        imgObjectPosition="50% 50%"
+        scrim="strong"
+        credit={<PhotoCredit credit={creditFor('/images/villas/auroraVillage-sembo-2.webp')} />}
       />
 
       {/* EDITORIAL LEAD — same COPY block the prerenderer harvests through
@@ -148,8 +155,15 @@ export default function Villas() {
       {/* Partner stay — Lomarengas whole-cabin alternative (brand-skinned ad). */}
       <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-4xl px-5 sm:px-7">
-          <PartnerStayAd sid="villas_collection" />
-          <CabinCarousel sid={"villas_collection"} />
+          {/* 🔴 ONE partner block, not two (Vesa 2026-09-20: *"miksi meillä on
+              tavallaan kaksi mainosta päällekkäin, ei hyvä"*). The Lomarengas
+              ad and the Lomarengas cabin row were separate sections stacked on
+              top of each other, each with its own MAINOS label and its own
+              disclosure line — the same partner sold twice in a row. The
+              carousel is now the ad's own content: the box makes the case and
+              the three cabins are the evidence, under one label. */}
+          <PartnerStayAd sid="villas_collection" attached />
+          <CabinCarousel sid={"villas_collection"} attached />
         </div>
       </section>
 

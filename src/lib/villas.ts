@@ -199,7 +199,13 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.nellim,
-    image: '/images/villas/nellim-commons.webp',
+    // 🔴 NO PHOTOGRAPH (Vesa 2026-09-20: "eikö se ole outoa ettei ole itse
+    // hotellia kuvassa kun puhutaan sviiteistä vaan joku kylä?"). He is right.
+    // Wilderness Hotel Nellim has no page on either booking partner, so there
+    // is no hotel-supplied frame; the card used a Commons photograph of the
+    // VILLAGE with a caption saying so. On a page of suites that reads as a
+    // mistake, and the caption cannot fix it. The card now shows its gradient
+    // until a picture of the property itself is available.
     imageGradient: 'linear-gradient(135deg, #1A2438 0%, #243153 50%, #101830 100%)',
   },
   {

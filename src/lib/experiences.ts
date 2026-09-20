@@ -52,6 +52,14 @@ export interface Experience {
   imageGradient: string
 }
 
+// 🔴🔴 NO HELICOPTER CARDS (Vesa 2026-09-20: *"ei meillä ole sopimusta
+// helikopterilentäjien kanssa joten miksi mainostetaan tuota?"*). Two cards
+// described a 45-minute night aurora flight and an airport-to-villa lift on a
+// named aircraft type. We have no operator agreement for either, and
+// GetYourGuide sells no helicopter flight in Lapland at all — its whole "air
+// and helicopter tours" category for Lapland returns one result, a road tour
+// (measured in a browser 20.9.2026). A service we can neither sell nor deliver
+// is not a card, whatever the button says. Removed rather than reworded.
 export const EXPERIENCES: Experience[] = [
   {
     slug: 'private-aurora-photography-night',
@@ -65,28 +73,6 @@ export const EXPERIENCES: Experience[] = [
     available: 'Inari, Saariselkä, Levi, Rovaniemi, Sep–Apr',
     bookingKey: 'privateAurora',
     imageGradient: 'linear-gradient(135deg, #0A1A2E 0%, #14304A 50%, #061020 100%)',
-  },
-  {
-    slug: 'helicopter-aurora-flight',
-    name: 'Helicopter Aurora Flight',
-    category: 'aurora',
-    hook: 'A 45-minute night helicopter flight above the cloud layer to the auroras themselves.',
-    copy: [
-      'Operated by a night-VFR-certified helicopter operator flying out of Rovaniemi and Ivalo. The flight clears the local cloud layer and circles inside the active aurora oval, a perspective impossible from the ground.',
-      'Ground photography is included on either side of the flight; the in-flight portion is for the experience itself, not the camera. Maximum four passengers per AS350. Weather-window dependent: the operator tracks the forecast and notifies the day before.',
-    ],
-    available: 'Rovaniemi, Ivalo, Oct–Mar (weather-dependent)',
-    // 🔴 NO GETYOURGUIDE PRODUCT EXISTS (measured 2026-09-20). Vesa, on this
-    // card: *"miksi me puhutaan edelleen jostain helikopteriajelusta vaikka
-    // linkki menee ihan muualle getyourguidesta?"* He was right. The whole
-    // "Air and helicopter tours" category for Lapland returns ONE result and
-    // it is a 7-hour road aurora tour, not a flight. The card's button used to
-    // be `gygSearch('helicopter', …)`, and GetYourGuide's /s?q= endpoint has
-    // been dead since 2026-08-23, so the Worker resolved it to the generic
-    // Lapland list: the reader was told about a 45-minute night flight and
-    // landed on husky sleds and Santa. An inquiry is the only honest route.
-    inquiryOnly: true,
-    imageGradient: 'linear-gradient(135deg, #1A0F2E 0%, #2A1A4A 50%, #100820 100%)',
   },
   {
     slug: 'private-chef-arctic-tasting',
@@ -162,19 +148,6 @@ export const EXPERIENCES: Experience[] = [
     available: 'All destinations, year-round',
     inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #1A1F2A 0%, #283246 50%, #0F141C 100%)',
-  },
-  {
-    slug: 'helicopter-villa-transfer',
-    name: 'Helicopter Villa Transfer',
-    category: 'arrival',
-    hook: 'Lift from the regional airport directly to your villa landing pad, no road transfer.',
-    copy: [
-      'Used most often for arrivals to the private lakeside log estates on Lake Inari. The aircraft is the same AS350 used for the aurora flights; a single sector takes 20–45 minutes.',
-      'Maximum five passengers + luggage. The operator times the lift to the villa check-in and the daylight window, which in midwinter is only a few hours of twilight around midday; at Inari’s latitude the sun does not rise at all.',
-    ],
-    available: 'Rovaniemi, Ivalo → Lake Inari estates',
-    inquiryOnly: true,
-    imageGradient: 'linear-gradient(135deg, #1F1820 0%, #2D2230 50%, #100C12 100%)',
   },
 ]
 
