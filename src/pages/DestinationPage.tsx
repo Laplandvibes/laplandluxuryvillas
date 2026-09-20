@@ -162,17 +162,29 @@ export default function DestinationPage() {
       </section>
 
       {/* 🔴 Vesa 2026-08-02, asked what these pages still lacked, put images
-          first: "vain hero on kuva". Two frames of the same country in its two
+          first: "vain hero on kuva". The page shows this country in its two
           opposite lights — which is also what the seasonal band below is
           about, so the picture and the data argue the same point.
+
+          🔴🔴 ONE PHOTOGRAPH, ONE PLACE ON THE PAGE (Vesa 2026-09-20: "sama
+          kuva hero ja sivulla alempana, yksi kuva vain yhden kerran"). The
+          hero renders `dest.image`, which is `seasonal(winter, summer)`, so
+          printing BOTH seasons here repeated whichever one was already the
+          hero — in September the Saariselkä reindeer filled the hero and then
+          appeared again below as "light season". This figure now shows the
+          season the hero is NOT showing, so each photograph appears exactly
+          once and both lights are still on the page.
 
           Decorative (alt=""): the caption states the season, the section under
           it states the light in hours, and neither needs a screen reader to
           hear a description of a photograph. */}
       <section className="bg-[color:var(--color-deep-night)] pb-4 md:pb-8">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <div className="grid gap-3 sm:grid-cols-2 sm:gap-5">
-            {([['winter', s(SECTION_LABELS.capWinter, lang)], ['summer', s(SECTION_LABELS.capSummer, lang)]] as const).map(([season, caption]) => (
+          {/* One figure after the filter below, so no 2-up grid. */}
+          <div className="grid gap-3 sm:gap-5">
+            {([['winter', s(SECTION_LABELS.capWinter, lang)], ['summer', s(SECTION_LABELS.capSummer, lang)]] as const)
+              .filter(([season]) => (season === 'winter' ? dest.imageWinter : dest.imageSummer) !== dest.image)
+              .map(([season, caption]) => (
               <figure key={season} className="m-0">
                 <div className="relative aspect-[16/10] overflow-hidden bg-[color:var(--color-onyx)]">
                   <img

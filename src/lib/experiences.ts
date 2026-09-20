@@ -76,7 +76,16 @@ export const EXPERIENCES: Experience[] = [
       'Ground photography is included on either side of the flight; the in-flight portion is for the experience itself, not the camera. Maximum four passengers per AS350. Weather-window dependent: the operator tracks the forecast and notifies the day before.',
     ],
     available: 'Rovaniemi, Ivalo, Oct–Mar (weather-dependent)',
-    bookingKey: 'helicopter',
+    // 🔴 NO GETYOURGUIDE PRODUCT EXISTS (measured 2026-09-20). Vesa, on this
+    // card: *"miksi me puhutaan edelleen jostain helikopteriajelusta vaikka
+    // linkki menee ihan muualle getyourguidesta?"* He was right. The whole
+    // "Air and helicopter tours" category for Lapland returns ONE result and
+    // it is a 7-hour road aurora tour, not a flight. The card's button used to
+    // be `gygSearch('helicopter', …)`, and GetYourGuide's /s?q= endpoint has
+    // been dead since 2026-08-23, so the Worker resolved it to the generic
+    // Lapland list: the reader was told about a 45-minute night flight and
+    // landed on husky sleds and Santa. An inquiry is the only honest route.
+    inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #1A0F2E 0%, #2A1A4A 50%, #100820 100%)',
   },
   {
@@ -102,7 +111,12 @@ export const EXPERIENCES: Experience[] = [
       'You drive your own sled (a 20-minute briefing first). Wool overalls, mittens, and arctic boots are provided. Group of two to six, no shared groups, never combined with strangers.',
     ],
     available: 'Rovaniemi, Levi, Saariselkä, Dec–Apr',
-    bookingKey: 'husky',
+    // 🔴 Measured 2026-09-20: GetYourGuide's Lapland husky products are SHARED
+    // departures — "Levi: 7 km self-drive" (199 €), "Saariselkä: 10 km safari
+    // and kennel visit" (249 €). This card promises a private team of sixteen
+    // dogs, one kennel guide, 35 km, "never combined with strangers". Nothing
+    // on the platform matches that, so the button is an inquiry, not a search.
+    inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #1A2515 0%, #243321 50%, #0F1810 100%)',
   },
   {
@@ -128,7 +142,12 @@ export const EXPERIENCES: Experience[] = [
       'Dinner is sautéed reindeer with mashed potatoes and lingonberry, prepared on the open fire. Stories about the herd, the migration year, the joik singing tradition. Maximum twelve guests.',
     ],
     available: 'Inari, Saariselkä, year-round (sledding Dec–Mar)',
-    bookingKey: 'reindeer',
+    // 🔴 Measured 2026-09-20: the platform's reindeer products are farm visits
+    // and combination packages ("Levi: three-in-one", "Rovaniemi: reindeer
+    // experience and sleigh ride"). This card promises two hours on a working
+    // herding farm and a private kota evening with the Sámi herder who runs it.
+    // Not the same product, so it may not be sold as one.
+    inquiryOnly: true,
     imageGradient: 'linear-gradient(135deg, #2A1B12 0%, #3A2818 50%, #1A100A 100%)',
   },
   {

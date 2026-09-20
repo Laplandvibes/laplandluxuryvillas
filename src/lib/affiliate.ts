@@ -282,16 +282,32 @@ export function lomarengasCabinUrl(slug: string, sid: string, lang: Lang = 'en')
 // regardless (verified: `/ja-jp/s?q=helicopter tour Lapland Finland` returns a
 // Japanese UI with 500+ results), and a translated term would quietly change
 // which products come back.
+/**
+ * Every GetYourGuide destination this site links to, and NOTHING that only
+ * pretends to be one.
+ *
+ * 🔴 A SEARCH IS NOT A DESTINATION (Vesa 2026-09-19 and again 2026-09-20:
+ * *"ei tälläistä geneeristä paskaa"*, *"miksi me puhutaan edelleen jostain
+ * helikopteriajelusta vaikka linkki menee ihan muualle getyourguidesta?"*).
+ * GetYourGuide's `/s?q=` endpoint has been dead since 2026-08-23 — it ignores
+ * the query and serves a cached page — so the Worker resolves every q-only
+ * link to the generic Lapland list. A card that describes one specific
+ * experience and links to that list is a broken promise, and three cards were
+ * doing exactly that (helicopter, husky, reindeer). They are inquiries now.
+ *
+ * The rule this file enforces: a key exists here only when a VERIFIED product
+ * path backs it (shared/gyg/luxury.ts, opened in a real browser), or when the
+ * surface is honestly presented as browsing rather than as a product.
+ */
 export const GYG_LINKS = (lang: Lang = 'en') => ({
-  laplandPremium: gygSearch('experiences_premium', 'private tour Lapland Finland', lang),
-  helicopter: gygSearch('experience_helicopter', 'helicopter tour Lapland Finland', lang),
-  // Specific products where a verified one exists (shared/gyg/luxury.ts, 2026-08-01):
-  // a search landing is GetYourGuide's generic Lapland list (Vesa 19.9.2026: "ei
-  // tälläistä geneeristä paskaa"). Search stays only where no product is verified.
+  // Browsing, not a product: the destination planner uses this only where the
+  // destination has no verified departure, and says so in the copy beside it.
+  // A path, not a query — see the search note above.
+  laplandPremium: gygProduct('lappi-suomi-l2652', 'experiences_premium', lang),
+  // Verified products (shared/gyg/luxury.ts, opened in a browser 2026-08-01;
+  // the aurora path re-verified end to end through the Worker 2026-09-20).
   privateAurora: gygProduct('saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345', 'experience_private_aurora', lang),
   snowmobileVip: gygProduct('rovaniemi-l2653/lapland-exclusive-private-7h-snowmobile-tour-with-guide-t885747', 'experience_snowmobile_vip', lang),
-  husky: gygSearch('experience_husky', 'private husky safari Lapland', lang),
-  reindeer: gygSearch('experience_reindeer', 'private reindeer sleigh Lapland', lang),
 })
 
 export type GygLinkKey = keyof ReturnType<typeof GYG_LINKS>

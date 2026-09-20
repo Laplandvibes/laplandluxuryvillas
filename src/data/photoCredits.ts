@@ -141,6 +141,11 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   '/images/villas/starArctic-sembo.webp': sembo('1595634', '20000000/19370000/19362400/19362341/38382b00.jpg', '3840x2560'),
   '/images/villas/apukka-sembo.webp': sembo('656849', '21000000/20060000/20059200/20059117/04f8e245.jpg', '2000x1125'),
   '/images/villas/laplandHotelsSaaga-sembo.webp': sembo('1741117', '8000000/7770000/7760900/7760823/6e2ab2d8.jpg', '3840x2105'),
+  // A second frame of the same three hotels, for the "ready weeks" section:
+  // one photograph may appear only once on a page (Vesa 2026-09-20).
+  '/images/villas/starArctic-sembo-2.webp': sembo('1595634', '20000000/19370000/19362400/19362341/669d3c25.jpg', '2880x2254'),
+  '/images/villas/arcticTreeHouse-sembo-2.webp': sembo('922953', '30000000/29970000/29968600/29968502/20db3d48.jpg', '2048x1366'),
+  '/images/villas/kakslauttanen-sembo-2.webp': sembo('1679682', '13000000/12320000/12318200/12318138/edac6273.jpg', '3840x2559'),
 
   '/images/villas/nellim-commons.webp': {
     kind: 'commons',

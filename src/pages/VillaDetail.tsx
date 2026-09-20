@@ -13,6 +13,8 @@ import { destinationBySlug } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { villaTitle } from '../lib/villaTitle.mjs'
 import { COPY } from '../locales/copy'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 
 export default function VillaDetail() {
   const { slug } = useParams<{ slug: string }>()
@@ -79,6 +81,11 @@ export default function VillaDetail() {
         )}
         {/* Same lightening as Hero.tsx / DestinationPage.tsx, 2026-08-01. */}
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/35 to-transparent" />
+        {/* 🔴 The source line belongs to the PHOTOGRAPH, not to the surface it
+            happens to sit on (laplandwellness precedent 17.9.2026). This hero
+            is the property's own Sembo frame and ran without it until a
+            site-wide credit count on 2026-09-20 found this page at zero. */}
+        <PhotoCredit credit={creditFor(villa.image)} />
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
           <Link
             to={to('/villas')}
@@ -242,10 +249,11 @@ export default function VillaDetail() {
                 {c.villaDetailPage.readProfile(dest.name)}
               </Link>
             </div>
-            <div className="aspect-[4/3] w-full overflow-hidden" style={{ background: dest.imageGradient }}>
+            <div className="relative aspect-[4/3] w-full overflow-hidden" style={{ background: dest.imageGradient }}>
               {dest.image && (
                 <img src={dest.image} alt={dest.name} loading="lazy" decoding="async" className="w-full h-full object-cover" />
               )}
+              <PhotoCredit credit={creditFor(dest.image)} />
             </div>
           </div>
         </section>

@@ -58,6 +58,16 @@ interface PackageDef {
   villa: string
   iata: string
   night: Night
+  /**
+   * A SECOND photograph of the same property, never the one the villa card
+   * shows (Vesa 2026-09-20: *"sama kuva hero ja sivulla alempana, yksi kuva
+   * vain yhden kerran"*). Measured on the live front page that day: three
+   * Sembo frames each rendered twice, once in the collection grid and once
+   * here. Same source and same licence line, a different frame of the hotel,
+   * picked to carry this week's story: aurora through the glass roof, the
+   * sauna for the Christmas week, the fireplace room for summer.
+   */
+  image: string
 }
 
 const PACKAGES: PackageDef[] = [
@@ -70,14 +80,16 @@ const PACKAGES: PackageDef[] = [
     // Saariselkä private photo northern-lights tour, 6 h, verified 2026-08-01 in
     // shared/gyg/luxury.ts (LUXURY_PICKS).
     night: { kind: 'product', path: 'saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345' },
+    image: '/images/villas/starArctic-sembo-2.webp',
   },
-  { key: 'christmas', villa: 'arctic-treehouse-suite', iata: 'RVN', night: { kind: 'inquiry' } },
+  { key: 'christmas', villa: 'arctic-treehouse-suite', iata: 'RVN', night: { kind: 'inquiry' }, image: '/images/villas/arcticTreeHouse-sembo-2.webp' },
   {
     key: 'summer',
     villa: 'kakslauttanen-glass-igloo-suite',
     iata: 'IVL',
     // GetYourGuide product, verified 2026-08-01 in shared/gyg/luxury.ts.
     night: { kind: 'product', path: 'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872' },
+    image: '/images/villas/kakslauttanen-sembo-2.webp',
   },
 ]
 
@@ -177,15 +189,15 @@ export default function StayPackages() {
                   ? gygProduct(night.path, `package_${pk.key}_night`, lang)
                   : to('/private-inquiry')
             const nightCta = night.kind === 'inquiry' ? p.ctaNightInquiry : p.ctaNight
-            const credit = creditFor(villa.image)
+            const credit = creditFor(pk.image)
             const flip = i % 2 === 1
 
             return (
               <article key={pk.key} className="grid lg:grid-cols-2 gap-7 lg:gap-14 items-start">
                 <div className={`relative aspect-[3/2] overflow-hidden ${flip ? 'lg:order-2' : ''}`} style={{ background: villa.imageGradient }}>
-                  {villa.image && (
+                  {pk.image && (
                     <img
-                      src={villa.image}
+                      src={pk.image}
                       alt={`${villa.name}, ${villa.destination}`}
                       loading="lazy"
                       decoding="async"
