@@ -134,20 +134,57 @@ const PHOTO_CREDIT_OF: Record<string, PhotoCredit> = {
 }
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
-  '/images/villas/kakslauttanen-sembo.webp': sembo('1679682', '13000000/12320000/12318200/12318138/e2076748.jpg', '3008x2000'),
-  '/images/villas/arcticTreeHouse-sembo.webp': sembo('922953', '30000000/29970000/29968600/29968502/d0e31fd7.jpg', '2456x3072'),
-  '/images/villas/auroraVillage-sembo.webp': sembo('422560', '18000000/17460000/17452700/17452695/75aadb0f.jpg', '3840x2559'),
-  '/images/villas/levinIglut-sembo.webp': sembo('2512109', '3000000/2310000/2303900/2303825/c21e9696.jpg', '3840x2160'),
-  '/images/villas/starArctic-sembo.webp': sembo('1595634', '20000000/19370000/19362400/19362341/38382b00.jpg', '3840x2560'),
-  '/images/villas/apukka-sembo.webp': sembo('656849', '21000000/20060000/20059200/20059117/04f8e245.jpg', '2000x1125'),
-  '/images/villas/laplandHotelsSaaga-sembo.webp': sembo('1741117', '8000000/7770000/7760900/7760823/6e2ab2d8.jpg', '3840x2105'),
   // A second frame of the same three hotels, for the "ready weeks" section:
   // one photograph may appear only once on a page (Vesa 2026-09-20).
-  '/images/villas/starArctic-sembo-2.webp': sembo('1595634', '20000000/19370000/19362400/19362341/669d3c25.jpg', '2880x2254'),
-  '/images/villas/arcticTreeHouse-sembo-2.webp': sembo('922953', '30000000/29970000/29968600/29968502/20db3d48.jpg', '2048x1366'),
-  '/images/villas/kakslauttanen-sembo-2.webp': sembo('1679682', '13000000/12320000/12318200/12318138/edac6273.jpg', '3840x2559'),
   // /villas hero: aurora through the glass roof, seen from the bed.
-  '/images/villas/auroraVillage-sembo-2.webp': sembo('422560', '18000000/17460000/17452700/17452695/1440678b.jpg', '3840x2305'),
+
+  // ── Every partner photograph we hold, per property (VILLA_IMAGES) ──
+  // Same source and licence as the single card frame they replace: the
+  // property's own photo from its Sembo.fi page. Generated 2026-09-20.
+  '/images/villas/apukka-sembo-1.webp': sembo('656849', '21000000/20060000/20059200/20059117/04f8e245.jpg', '2000x1125'),
+  '/images/villas/apukka-sembo-2.webp': sembo('656849', '21000000/20060000/20059200/20059117/6d3f9877.jpg', '3840x2561'),
+  '/images/villas/apukka-sembo-3.webp': sembo('656849', '21000000/20060000/20059200/20059117/62e82d55.jpg', '3840x2560'),
+  '/images/villas/apukka-sembo-4.webp': sembo('656849', '21000000/20060000/20059200/20059117/47c27e27.jpg', '3840x2560'),
+  '/images/villas/apukka-sembo-5.webp': sembo('656849', '21000000/20060000/20059200/20059117/93072e31.jpg', '3840x2520'),
+  '/images/villas/arcticTreeHouse-sembo-1.webp': sembo('922953', '30000000/29970000/29968600/29968502/d0e31fd7.jpg', '2456x3072'),
+  '/images/villas/arcticTreeHouse-sembo-2.webp': sembo('922953', '30000000/29970000/29968600/29968502/9bbd26a3.jpg', '2048x1366'),
+  '/images/villas/arcticTreeHouse-sembo-3.webp': sembo('922953', '30000000/29970000/29968600/29968502/20db3d48.jpg', '2048x1366'),
+  '/images/villas/arcticTreeHouse-sembo-5.webp': sembo('922953', '30000000/29970000/29968600/29968502/831b79fb.jpg', '2048x3072'),
+  '/images/villas/arcticTreeHouse-sembo-6.webp': sembo('922953', '4000000/3500000/3498200/3498121/6e025d26.jpg', '3840x2558'),
+  '/images/villas/auroraVillage-sembo-1.webp': sembo('422560', '18000000/17460000/17452700/17452695/75aadb0f.jpg', '3840x2559'),
+  '/images/villas/auroraVillage-sembo-2.webp': sembo('422560', '18000000/17460000/17452700/17452695/325ab999.jpg', '3772x3603'),
+  '/images/villas/auroraVillage-sembo-3.webp': sembo('422560', '18000000/17460000/17452700/17452695/484104b0.jpg', '3840x1980'),
+  '/images/villas/auroraVillage-sembo-4.webp': sembo('422560', '18000000/17460000/17452700/17452695/75962ad5.jpg', '3840x2560'),
+  '/images/villas/auroraVillage-sembo-5.webp': sembo('422560', '18000000/17460000/17452700/17452695/1440678b.jpg', '3840x2305'),
+  '/images/villas/kakslauttanen-sembo-1.webp': sembo('1679682', '13000000/12320000/12318200/12318138/e2076748.jpg', '3008x2000'),
+  '/images/villas/kakslauttanen-sembo-2.webp': sembo('1679682', '13000000/12320000/12318200/12318138/edac6273.jpg', '3840x2559'),
+  '/images/villas/kakslauttanen-sembo-3.webp': sembo('1679682', '13000000/12320000/12318200/12318138/3dcec4b1.jpg', '3840x2559'),
+  '/images/villas/kakslauttanen-sembo-4.webp': sembo('1679682', '13000000/12320000/12318200/12318138/8b7e9f97.jpg', '3840x2096'),
+  '/images/villas/kakslauttanen-sembo-5.webp': sembo('1679682', '13000000/12320000/12318200/12318138/7cb4236f.jpg', '3240x2160'),
+  '/images/villas/laplandHotelsSaaga-sembo-1.webp': sembo('1741117', '8000000/7770000/7760900/7760823/02099752.jpg', '3840x2394'),
+  '/images/villas/laplandHotelsSaaga-sembo-2.webp': sembo('1741117', '8000000/7770000/7760900/7760823/6e2ab2d8.jpg', '3840x2105'),
+  '/images/villas/laplandHotelsSaaga-sembo-3.webp': sembo('1741117', '8000000/7770000/7760900/7760823/dc0a420a.jpg', '3840x2560'),
+  '/images/villas/laplandHotelsSaaga-sembo-4.webp': sembo('1741117', '8000000/7770000/7760900/7760823/dc29dc66.jpg', '3840x2559'),
+  '/images/villas/laplandHotelsSaaga-sembo-5.webp': sembo('1741117', '8000000/7770000/7760900/7760823/641d75bb.jpg', '3840x2560'),
+  '/images/villas/levinIglut-sembo-4.webp': sembo('2512109', '3000000/2280000/2271100/2271082/22c208e4.jpg', '3000x2000'),
+  '/images/villas/levinIglut-sembo-5.webp': sembo('2512109', '3000000/2280000/2271100/2271082/4d10f764.jpg', '2980x1572'),
+  '/images/villas/levinIglut-sembo-6.webp': sembo('2512109', '3000000/2310000/2303900/2303825/c21e9696.jpg', '3840x2160'),
+  '/images/villas/starArctic-sembo-1.webp': sembo('1595634', '20000000/19370000/19362400/19362341/38382b00.jpg', '3840x2560'),
+  '/images/villas/starArctic-sembo-2.webp': sembo('1595634', '20000000/19370000/19362400/19362341/4bce6f28.jpg', '2560x3840'),
+  '/images/villas/starArctic-sembo-3.webp': sembo('1595634', '20000000/19370000/19362400/19362341/d46d27fd.jpg', '2560x3840'),
+  '/images/villas/starArctic-sembo-4.webp': sembo('1595634', '20000000/19370000/19362400/19362341/669d3c25.jpg', '2880x2254'),
+  '/images/villas/starArctic-sembo-5.webp': sembo('1595634', '1000000/530000/523600/523572/f91e6e4e.jpg', '1920x700'),
+  '/images/villas/starArctic-sembo-6.webp': sembo('1595634', '1000000/530000/523600/523572/b7bdc03d.jpg', '3840x1589'),
+  '/images/villas/villaHellita-sembo-1.webp': sembo('28767044', '133000000/132770000/132769100/132769065/b9be05c2.jpg', '3840x2699'),
+  '/images/villas/villaHellita-sembo-2.webp': sembo('28767044', '133000000/132770000/132769100/132769065/94de2ba4.jpg', '3840x2561'),
+  '/images/villas/villaHellita-sembo-3.webp': sembo('28767044', '133000000/132770000/132769100/132769065/7cb285b1.jpg', '3840x2561'),
+  '/images/villas/villaHellita-sembo-4.webp': sembo('28767044', '133000000/132770000/132769100/132769065/46ac2ca2.jpg', '3840x2561'),
+  '/images/villas/villaHellita-sembo-5.webp': sembo('28767044', '133000000/132770000/132769100/132769065/0e866412.jpg', '3840x2828'),
+  '/images/villas/villaNoelB-sembo-1.webp': sembo('28744396', '133000000/132540000/132539900/132539810/fc351e0d.jpg', '3840x2561'),
+  '/images/villas/villaNoelB-sembo-2.webp': sembo('28744396', '133000000/132540000/132539900/132539810/98fa1d4a.jpg', '3840x2561'),
+  '/images/villas/villaNoelB-sembo-3.webp': sembo('28744396', '133000000/132540000/132539900/132539810/1002dead.jpg', '3840x2939'),
+  '/images/villas/villaNoelB-sembo-4.webp': sembo('28744396', '133000000/132540000/132539900/132539810/170a740c.jpg', '3840x2561'),
+  '/images/villas/villaNoelB-sembo-5.webp': sembo('28744396', '133000000/132540000/132539900/132539810/9d325566.jpg', '3840x2561'),
 
   '/images/villas/nellim-commons.webp': {
     kind: 'commons',

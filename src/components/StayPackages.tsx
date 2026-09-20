@@ -80,9 +80,9 @@ const PACKAGES: PackageDef[] = [
     // Saariselkä private photo northern-lights tour, 6 h, verified 2026-08-01 in
     // shared/gyg/luxury.ts (LUXURY_PICKS).
     night: { kind: 'product', path: 'saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345' },
-    image: '/images/villas/starArctic-sembo-2.webp',
+    image: '/images/villas/starArctic-sembo-4.webp',
   },
-  { key: 'christmas', villa: 'arctic-treehouse-suite', iata: 'RVN', night: { kind: 'inquiry' }, image: '/images/villas/arcticTreeHouse-sembo-2.webp' },
+  { key: 'christmas', villa: 'arctic-treehouse-suite', iata: 'RVN', night: { kind: 'inquiry' }, image: '/images/villas/arcticTreeHouse-sembo-3.webp' },
   {
     key: 'summer',
     villa: 'kakslauttanen-glass-igloo-suite',

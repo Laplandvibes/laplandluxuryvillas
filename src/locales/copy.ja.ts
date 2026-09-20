@@ -21,6 +21,8 @@ const ja: SiteCopy = {
     viewRates: '料金を見る',
     viewOptions: 'オプションを見る',
     nearbyStays: "すべての日程と近隣の宿泊施設",
+    prevPhoto: "前の写真",
+    nextPhoto: "次の写真",
     viewPublicRates: '公開料金を見る',
     orSendPrivateInquiry: 'またはプライベートお問い合わせを送信',
     seeTheCollection: 'ヴィラを見る',

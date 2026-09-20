@@ -15,6 +15,8 @@ const ko: SiteCopy = {
     viewRates: '요금 보기',
     viewOptions: '옵션 보기',
     nearbyStays: "전체 날짜와 주변 다른 숙소",
+    prevPhoto: "이전 사진",
+    nextPhoto: "다음 사진",
     viewPublicRates: '공개 요금 보기',
     orSendPrivateInquiry: '또는 비공개 문의를 보내세요',
     seeTheCollection: '빌라 보기',

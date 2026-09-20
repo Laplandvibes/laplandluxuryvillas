@@ -92,11 +92,11 @@ export default function Villas() {
         eyebrow={withCounts(c.hero.villas.eyebrow)}
         title={withCounts(c.hero.villas.title)}
         lede={withCounts(c.hero.villas.lede)}
-        imageUrl="/images/villas/auroraVillage-sembo-2.webp"
+        imageUrl="/images/villas/auroraVillage-sembo-5.webp"
         imageAlt="Aurora over the glass roof of a suite in the collection, seen from the bed"
         imgObjectPosition="50% 50%"
         scrim="strong"
-        credit={<PhotoCredit credit={creditFor('/images/villas/auroraVillage-sembo-2.webp')} />}
+        credit={<PhotoCredit credit={creditFor('/images/villas/auroraVillage-sembo-5.webp')} />}
       />
 
       {/* EDITORIAL LEAD — same COPY block the prerenderer harvests through

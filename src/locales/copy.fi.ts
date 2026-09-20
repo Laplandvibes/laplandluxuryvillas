@@ -21,6 +21,8 @@ const fi: SiteCopy = {
     viewRates: 'Katso hinnat',
     viewOptions: 'Katso vaihtoehdot',
     nearbyStays: "Kaikki päivät ja muut majoitukset lähellä",
+    prevPhoto: "Edellinen kuva",
+    nextPhoto: "Seuraava kuva",
     viewPublicRates: 'Katso julkiset hinnat',
     orSendPrivateInquiry: 'Tai lähetä yksityinen tiedustelu',
     seeTheCollection: 'Katso huvilat',

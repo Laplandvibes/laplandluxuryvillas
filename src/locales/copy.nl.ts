@@ -15,6 +15,8 @@ const nl: SiteCopy = {
     viewRates: 'Tarieven bekijken',
     viewOptions: 'Opties bekijken',
     nearbyStays: "Alle data en meer accommodaties in de buurt",
+    prevPhoto: "Vorige foto",
+    nextPhoto: "Volgende foto",
     viewPublicRates: 'Publieke tarieven bekijken',
     orSendPrivateInquiry: 'Of stuur een privé-aanvraag',
     seeTheCollection: 'Bekijk de villa\'s',

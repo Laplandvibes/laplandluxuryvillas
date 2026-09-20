@@ -15,6 +15,8 @@ const sv: SiteCopy = {
     viewRates: 'Se priser',
     viewOptions: 'Se alternativ',
     nearbyStays: "Alla datum och fler boenden i närheten",
+    prevPhoto: "Föregående bild",
+    nextPhoto: "Nästa bild",
     viewPublicRates: 'Se offentliga priser',
     orSendPrivateInquiry: 'Eller skicka en privat förfrågan',
     seeTheCollection: 'Se villorna',

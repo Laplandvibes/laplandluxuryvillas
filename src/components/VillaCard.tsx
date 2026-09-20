@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Bed, Users, MapPin, ArrowUpRight, ArrowRight } from 'lucide-react'
+import { Bed, Users, MapPin, ArrowUpRight, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import type { Villa } from '../lib/villas'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -10,6 +11,7 @@ import { buildAffiliateUrl } from '../lib/affiliate'
 import { formatRate } from '../lib/rate'
 import PhotoCredit from './PhotoCredit'
 import { creditFor } from '../data/photoCredits'
+import { villaGallery } from '../data/villaImages'
 
 interface VillaCardProps {
   villa: Villa
@@ -28,6 +30,13 @@ interface VillaCardProps {
   pickProperty?: RankableProperty | null
   /** Visible justification under the mark ("… · Checked 26 Jul 2026"). */
   pickNote?: string
+  /**
+   * Which of the property's photographs the card opens on. `/suites` passes 1
+   * so it does not look like `/villas` twice — Vesa 2026-09-20: *"tämä on huono
+   * kun sviiteissä on melkein samat kohteet kuin huviloissa. edes kuvat voisi
+   * olla erit."* Clamped to the gallery, so a property with one frame is safe.
+   */
+  startImage?: number
 }
 
 /**
@@ -59,6 +68,7 @@ export default function VillaCard({
   showBooking = true,
   pickProperty = null,
   pickNote,
+  startImage = 0,
 }: VillaCardProps) {
   const lang = useLang()
   const to = useLocalePath()
@@ -74,7 +84,14 @@ export default function VillaCard({
   // so those cards say "view options" and land on the town instead.
   const promisesProperty = ctaPromisesProperty(property, lang)
   const detailPath = to(`/villas/${villa.slug}`)
-  const credit = creditFor(villa.image)
+  // The property's whole set of partner photographs (Vesa 2026-09-20:
+  // "saadaanko per kohde useampi kuva että niitä voisi selata?"). One frame,
+  // or none, falls back to the single `villa.image` and renders no controls.
+  const gallery = villaGallery(villa.imageKey)
+  const frames = gallery.length > 0 ? gallery : villa.image ? [villa.image] : []
+  const [frame, setFrame] = useState(frames.length ? startImage % frames.length : 0)
+  const current = frames[frame]
+  const credit = creditFor(current)
   // 🔴 Sembo dead end (Vesa 19.9.2026): the property deep link carries one fixed
   // date, and when that night is sold out Sembo shows "not available" with no
   // date picker on the property view. The AREA list has the calendar, so every
@@ -90,16 +107,53 @@ export default function VillaCard({
         className="aspect-[16/10] sm:aspect-[3/2] w-full relative overflow-hidden"
         style={{ background: villa.imageGradient }}
       >
-        {villa.image && (
+        {current && (
           <img
-            src={villa.image}
+            key={current}
+            src={current}
             alt={`${villa.name}, ${villa.destination}`}
             className="w-full h-full object-cover"
             loading="lazy"
             decoding="async"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/70 via-transparent to-transparent" />
+        {/* Gallery controls. Buttons rather than a scroll rail: the card is a
+            link target, and a horizontal scroll inside it fights the page on a
+            phone. 44 px hit area, labelled for screen readers, and the dots
+            say how many frames there are without counting clicks. */}
+        {frames.length > 1 && (
+          <>
+            <button
+              type="button"
+              onClick={() => setFrame((i) => (i - 1 + frames.length) % frames.length)}
+              aria-label={c.cta.prevPhoto}
+              className="absolute left-2 top-1/2 z-10 -translate-y-1/2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[color:var(--color-deep-night)]/55 text-[color:var(--color-snow)] backdrop-blur-sm transition-colors hover:bg-[color:var(--color-deep-night)]/80"
+            >
+              <ChevronLeft size={18} aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setFrame((i) => (i + 1) % frames.length)}
+              aria-label={c.cta.nextPhoto}
+              className="absolute right-2 top-1/2 z-10 -translate-y-1/2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[color:var(--color-deep-night)]/55 text-[color:var(--color-snow)] backdrop-blur-sm transition-colors hover:bg-[color:var(--color-deep-night)]/80"
+            >
+              <ChevronRight size={18} aria-hidden="true" />
+            </button>
+            <div className="pointer-events-none absolute bottom-3 left-1/2 z-10 -translate-x-1/2 flex items-center gap-1.5">
+              {frames.map((src, i) => (
+                <span
+                  key={src}
+                  className={`block h-1.5 rounded-full transition-all ${i === frame ? 'w-4 bg-[color:var(--color-snow)]' : 'w-1.5 bg-[color:var(--color-snow)]/45'}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+        {/* 🔴 `pointer-events-none`: this wash sits above the photo and, before
+            20.9.2026, above the gallery arrows too — it swallowed every click
+            on them. Found by Playwright ("intercepts pointer events"), not by
+            eye: the buttons looked and measured fine and simply did nothing. */}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/70 via-transparent to-transparent" />
         <PhotoCredit credit={credit} />
         {/* Tier label only where it tells the reader something: "by inquiry only".
             "Signature" and "Private Collection" were internal tiers printed on

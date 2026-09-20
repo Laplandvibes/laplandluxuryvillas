@@ -33,6 +33,9 @@ export type SiteCopy = {
     viewOptions: string
     /** Escape hatch under the booking button: the area list with a date calendar (Vesa 19.9.2026, Sembo dead end). */
     nearbyStays: string
+    /** Gallery controls on a villa card (Vesa 20.9.2026: useampi kuva per kohde). */
+    prevPhoto: string
+    nextPhoto: string
     viewPublicRates: string
     orSendPrivateInquiry: string
     seeTheCollection: string

@@ -126,7 +126,25 @@ export default function Nav() {
             evicting the button. (Measured with _navprobe.mjs at 375/390.) */}
         <div className="flex items-center gap-2 sm:gap-5 min-w-0">
           <EcosystemMenu lang={lang} currentDomain="laplandluxuryvillas.com" />
-          <Link to={to('/')} className="min-w-0 shrink overflow-hidden inline-flex items-center min-h-11" aria-label="LaplandLuxuryVillas, home">
+          {/* 🔴 A logo click must ALWAYS land at the top of the front page
+              (Vesa 2026-09-20: "kun painan sivun logoa se ei vie etusivulle ja
+              scrollaa etusivun yläosaan, se puuttuu"). `ScrollToTop` in App.tsx
+              listens to `pathname`, so it never fires when you are already ON
+              the front page — measured live that day: from /fi/villas/ the
+              click scrolled to 0, from /fi/ at scrollY 3000 it did nothing at
+              all. React Router renders the same route and no effect runs.
+              🔴 He also reports the same on a sibling site, so check every
+              site's Nav for this pattern, not just this one. */}
+          <Link
+            to={to('/')}
+            onClick={() => {
+              if (window.location.pathname.replace(/\/$/, '') === to('/').replace(/\/$/, '')) {
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }
+            }}
+            className="min-w-0 shrink overflow-hidden inline-flex items-center min-h-11"
+            aria-label="LaplandLuxuryVillas, home"
+          >
             <Logo />
           </Link>
         </div>

@@ -34,6 +34,12 @@ export type VillaCategory = 'glass-roof' | 'log-estate' | 'designer-suite' | 'al
 export type VillaTier = 'signature' | 'private' | 'reserve'
 
 export interface Villa {
+  /**
+   * Key into `VILLA_IMAGES` — the property's whole set of partner photographs,
+   * so a card can offer a gallery and two surfaces can open on different
+   * frames (Vesa 2026-09-20). Absent for a property with no partner page.
+   */
+  imageKey?: string
   slug: string
   name: string
   destination: string
@@ -99,7 +105,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 2,
     sleeps: 4,
     bookingUrl: PS.kakslauttanen,
-    image: '/images/villas/kakslauttanen-sembo.webp',
+    imageKey: 'kakslauttanen',
+    image: '/images/villas/kakslauttanen-sembo-1.webp',
     imageGradient: 'linear-gradient(135deg, #0F1F3A 0%, #1A2F4F 45%, #0A1628 100%)',
   },
   {
@@ -124,7 +131,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.arcticTreeHouse,
-    image: '/images/villas/arcticTreeHouse-sembo.webp',
+    imageKey: 'arcticTreeHouse',
+    image: '/images/villas/arcticTreeHouse-sembo-1.webp',
     imageGradient: 'linear-gradient(135deg, #2A1810 0%, #1A0F08 50%, #0F0805 100%)',
   },
   {
@@ -149,7 +157,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.auroraVillage,
-    image: '/images/villas/auroraVillage-sembo.webp',
+    imageKey: 'auroraVillage',
+    image: '/images/villas/auroraVillage-sembo-1.webp',
     imageGradient: 'linear-gradient(135deg, #0E1B2E 0%, #1B2A45 50%, #0B1424 100%)',
   },
   {
@@ -174,7 +183,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.levinIglut,
-    image: '/images/villas/levinIglut-sembo.webp',
+    imageKey: 'levinIglut',
+    image: '/images/villas/levinIglut-sembo-4.webp',
     imageGradient: 'linear-gradient(135deg, #1F1A2E 0%, #2A2240 50%, #14101F 100%)',
   },
   {
@@ -230,7 +240,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.starArctic,
-    image: '/images/villas/starArctic-sembo.webp',
+    imageKey: 'starArctic',
+    image: '/images/villas/starArctic-sembo-1.webp',
     imageGradient: 'linear-gradient(135deg, #142235 0%, #1F3050 50%, #0C1626 100%)',
   },
   {
@@ -255,7 +266,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.apukka,
-    image: '/images/villas/apukka-sembo.webp',
+    imageKey: 'apukka',
+    image: '/images/villas/apukka-sembo-1.webp',
     imageGradient: 'linear-gradient(135deg, #1A1828 0%, #251F38 50%, #110E1C 100%)',
   },
   {
@@ -287,7 +299,8 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     // and its apartments differ. `sleeps: 8` is the published upper bound.
     sleeps: 8,
     bookingUrl: PS.laplandHotelsSaaga,
-    image: '/images/villas/laplandHotelsSaaga-sembo.webp',
+    imageKey: 'laplandHotelsSaaga',
+    image: '/images/villas/laplandHotelsSaaga-sembo-1.webp',
     imageGradient: 'linear-gradient(135deg, #12212E 0%, #1D3242 50%, #0C1720 100%)',
   },
   ]

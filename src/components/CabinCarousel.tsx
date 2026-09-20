@@ -195,8 +195,14 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
                   {cab.weeklyFrom ? (
                     <div>
                       <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">{c.from}</div>
-                      <div className="font-heading text-lg text-[color:var(--color-brass)]">
-                        {fmt(cab.weeklyFrom)} € <span className="text-xs font-body text-[color:var(--color-bone)]/70">{c.perWeek}</span>
+                      {/* 🔴 One line (Vesa 2026-09-20: "miksi tuo viikko menee
+                          eri puolelle, tai itse asiassa alapuolelle?"). The
+                          price and its unit were one text node, so "/ viikko"
+                          wrapped under the figure whenever the card narrowed.
+                          `whitespace-nowrap` keeps them together and the unit
+                          is a touch larger so it reads as part of the price. */}
+                      <div className="font-heading text-lg text-[color:var(--color-brass)] whitespace-nowrap">
+                        {fmt(cab.weeklyFrom)} €<span className="ml-1 text-[13px] font-body text-[color:var(--color-bone)]/75">{c.perWeek}</span>
                       </div>
                     </div>
                   ) : <span />}

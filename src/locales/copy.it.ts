@@ -15,6 +15,8 @@ const it: SiteCopy = {
     viewRates: 'Vedi le tariffe',
     viewOptions: 'Vedi le opzioni',
     nearbyStays: "Tutte le date e altri alloggi nelle vicinanze",
+    prevPhoto: "Foto precedente",
+    nextPhoto: "Foto successiva",
     viewPublicRates: 'Vedi le tariffe pubbliche',
     orSendPrivateInquiry: 'Oppure invia una richiesta privata',
     seeTheCollection: 'Vedi le ville',

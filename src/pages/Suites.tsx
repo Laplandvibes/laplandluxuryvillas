@@ -59,7 +59,7 @@ export default function Suites() {
 
           <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
             {SUITES.map((v) => (
-              <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} />
+              <VillaCard key={v.slug} villa={v} pickProperty={villaPick} pickNote={villaPickNote} startImage={1} />
             ))}
           </div>
         </div>
