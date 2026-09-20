@@ -120,7 +120,7 @@ const fr: SiteCopy = {
     home: {
       eyebrow: '{nFig} villas · {mFig} destinations',
       title: 'Une villa en Laponie, sans approximation.',
-      lede: "{n} villas à toit de verre et suites design dans {m} destinations de Laponie, chacune avec sa propre page de réservation et sa note Google en évidence. Envoyez vos dates et recevez une présélection en un jour.",
+      lede: "{n} villas à toit de verre et suites design dans {m} destinations de Laponie. L’aurore derrière le verre, vue depuis le lit. Donnez vos dates, la sélection suit sous un jour.",
       primary: 'Voir les villas',
       secondary: 'Demander des suggestions',
     },

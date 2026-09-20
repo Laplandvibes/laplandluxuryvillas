@@ -126,7 +126,7 @@ const en: SiteCopy = {
     home: {
       eyebrow: '{nFig} villas · {mFig} destinations',
       title: 'A Lapland villa, without the guesswork.',
-      lede: "{n} glass-roof villas and designer suites in {m} Lapland destinations, each with its own booking page and its Google rating in view. Send your dates and get a shortlist within a day.",
+      lede: "{n} glass-roof villas and designer suites in {m} Lapland destinations. The aurora behind the glass, seen from the bed. Send your dates and the shortlist follows within a day.",
       primary: 'See the villas',
       secondary: 'Ask for suggestions',
     },

@@ -120,7 +120,7 @@ const it: SiteCopy = {
     home: {
       eyebrow: '{nFig} ville · {mFig} destinazioni',
       title: 'Una villa in Lapponia, senza tirare a indovinare.',
-      lede: "{n} ville con tetto in vetro e suite di design in {m} destinazioni della Lapponia, ognuna con la propria pagina di prenotazione e la sua valutazione Google in vista. Ci mandi le sue date e riceverà una rosa di proposte entro un giorno.",
+      lede: "{n} ville con tetto in vetro e suite di design in {m} destinazioni della Lapponia. L’aurora dietro il vetro, vista dal letto. Inviate le date, la selezione arriva entro un giorno.",
       primary: 'Vedi le ville',
       secondary: 'Chiedi una proposta',
     },

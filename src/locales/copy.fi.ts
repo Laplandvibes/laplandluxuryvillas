@@ -126,7 +126,7 @@ const fi: SiteCopy = {
     home: {
       eyebrow: '{nFig} huvilaa · {mFig} kohdetta',
       title: 'Huvila Lapista, ilman arvailua.',
-      lede: "{n} lasikattoista huvilaa ja designsviittiä {mIness} Lapin kohteessa, jokaisella oma varaussivu ja Google-arvio näkyvissä. Lähetä päivämäärät, niin saat lyhytlistan vuorokaudessa.",
+      lede: "{n} lasikattoista huvilaa ja designsviittiä {mIness} Lapin kohteessa. Revontulet lasin takana, sängystä katsottuna. Kerro päivämäärät, niin lyhytlista tulee vuorokaudessa.",
       primary: 'Katso huvilat',
       secondary: 'Pyydä ehdotus',
     },

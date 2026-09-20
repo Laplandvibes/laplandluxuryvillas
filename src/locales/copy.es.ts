@@ -126,7 +126,7 @@ const es: SiteCopy = {
     home: {
       eyebrow: '{nFig} villas · {mFig} destinos',
       title: 'Una villa en Laponia, sin conjeturas.',
-      lede: "{n} villas con techo de cristal y suites de diseño en {m} destinos de Laponia, cada una con su propia página de reserva y su valoración de Google a la vista. Envíe sus fechas y reciba una preselección en un día.",
+      lede: "{n} villas con techo de cristal y suites de diseño en {m} destinos de Laponia. La aurora tras el cristal, vista desde la cama. Envíe sus fechas y la selección llega en un día.",
       primary: 'Ver las villas',
       secondary: 'Pedir sugerencias',
     },

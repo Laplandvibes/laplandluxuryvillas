@@ -120,7 +120,7 @@ const nl: SiteCopy = {
     home: {
       eyebrow: '{nFig} villa\'s · {m} bestemmingen',
       title: 'Een villa in Lapland, zonder giswerk.',
-      lede: "{n} villa’s met glazen dak en designsuites in {m} bestemmingen in Lapland, elk met een eigen boekingspagina en de Google-beoordeling in beeld. Stuur uw data en u krijgt binnen een dag een selectie.",
+      lede: "{n} villa’s met glazen dak en designsuites in {m} bestemmingen in Lapland. Het noorderlicht achter het glas, vanuit bed. Stuur uw data, de selectie volgt binnen een dag.",
       primary: 'Bekijk de villa\'s',
       secondary: 'Vraag om suggesties',
     },

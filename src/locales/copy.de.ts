@@ -126,7 +126,7 @@ const de: SiteCopy = {
     home: {
       eyebrow: '{nFig} Villen · {mFig} Reiseziele',
       title: 'Eine Villa in Lappland, ohne Rätselraten.',
-      lede: "{n} Villen mit Glasdach und Designsuiten in {m} Reisezielen in Lappland, jede mit eigener Buchungsseite und sichtbarer Google-Bewertung. Senden Sie uns Ihre Wunschtermine, und Sie erhalten innerhalb eines Tages eine Vorauswahl.",
+      lede: "{n} Villen mit Glasdach und Designsuiten in {m} Reisezielen in Lappland. Das Nordlicht hinter dem Glas, vom Bett aus. Nennen Sie Ihre Daten, die Auswahl folgt binnen eines Tages.",
       primary: 'Zu den Villen',
       secondary: 'Vorschläge anfragen',
     },

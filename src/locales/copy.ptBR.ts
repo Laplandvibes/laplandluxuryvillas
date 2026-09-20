@@ -126,7 +126,7 @@ const ptBR: SiteCopy = {
     home: {
       eyebrow: '{nFig} vilas · {mFig} destinos',
       title: 'Uma vila na Lapônia, sem achismo.',
-      lede: "{n} vilas com teto de vidro e suítes de design em {m} destinos da Lapônia, cada uma com a própria página de reserva e a nota do Google à vista. Envie suas datas e receba uma lista selecionada em um dia.",
+      lede: "{n} vilas com teto de vidro e suítes de design em {m} destinos da Lapônia. A aurora atrás do vidro, vista da cama. Envie suas datas e a seleção chega em um dia.",
       primary: 'Ver as vilas',
       secondary: 'Pedir sugestões',
     },

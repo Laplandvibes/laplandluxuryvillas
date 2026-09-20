@@ -120,7 +120,7 @@ const sv: SiteCopy = {
     home: {
       eyebrow: '{nFig} villor · {mFig} resmål',
       title: 'En villa i Lappland, utan gissningar.',
-      lede: "{n} villor med glastak och designsviter i {m} lappländska resmål, var och en med egen bokningssida och sitt Google-omdöme synligt. Skicka dina datum, så får du en kortlista inom ett dygn.",
+      lede: "{n} villor med glastak och designsviter i {m} lappländska resmål. Norrskenet bakom glaset, sett från sängen. Skicka dina datum, så kommer listan inom ett dygn.",
       primary: 'Se villorna',
       secondary: 'Be om förslag',
     },
