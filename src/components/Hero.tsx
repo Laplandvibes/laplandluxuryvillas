@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useLang } from '../i18n/useLang'
+import { withCounts } from '../lib/copyCounts'
 import type { ReactNode } from 'react'
 import PageBreadcrumb from './PageBreadcrumb'
 
@@ -51,9 +53,9 @@ interface HeroProps {
  * `min-h-[…svh]` per `lv_apple_safari_mobile_audit.md`.
  */
 export default function Hero({
-  eyebrow,
-  title,
-  lede,
+  eyebrow: eyebrowRaw,
+  title: titleRaw,
+  lede: ledeRaw,
   imageUrl,
   imageOverlay,
   align = 'centered',
@@ -66,6 +68,16 @@ export default function Hero({
   videoUrl,
   scrim = 'default',
 }: HeroProps) {
+  // 🔴 The hero fills its own count placeholders. Measured live 20.9.2026:
+  // /experiences rendered the literal "{e} yksityistä elämystä", because that
+  // page — and five others — passed the copy straight through while only Home,
+  // Villas and About remembered `withCounts`. A filler every call site has to
+  // remember is a filler that will be forgotten; doing it here makes it
+  // impossible to get wrong.
+  const lang = useLang()
+  const eyebrow = eyebrowRaw ? withCounts(eyebrowRaw, lang) : eyebrowRaw
+  const title = withCounts(titleRaw, lang)
+  const lede = ledeRaw ? withCounts(ledeRaw, lang) : ledeRaw
   const minH = compact
     ? 'min-h-[60svh] md:min-h-[68svh]'
     : 'min-h-[88svh] md:min-h-[92svh]'
