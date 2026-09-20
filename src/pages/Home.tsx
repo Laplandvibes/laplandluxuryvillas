@@ -105,6 +105,11 @@ export default function Home() {
         ]}
       />
 
+      {/* 🔴 Puhelimessa rajaus on ERI kuin työpöydällä: hero-laatikko on pysty
+          (375x686) ja `object-cover` rajaa leveydestä. Kesäkuvassa mökki on
+          oikeassa reunassa, joten 20 % vasemmalta jätti näkyviin vain etualan
+          kaislikon (Vesa 20.9.2026: "mobiilissa näkyy etusivun hero vain viljan
+          kuva, ei se mökki ollenkaan"). Talvikuvassa aihe on keskellä. */}
       <Hero
         eyebrow={withCounts(c.hero.home.eyebrow, lang)}
         title={withCounts(c.hero.home.title, lang)}
@@ -116,7 +121,7 @@ export default function Home() {
           c.photo.heroWinter,
           'A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light',
         )}
-        imgObjectPosition={seasonal('50% 60%', '20% 50%')}
+        imgPositionClass={seasonal('object-[50%_62%] md:object-[50%_60%]', 'object-[78%_50%] md:object-[20%_50%]')}
         // The summer frame is a bright sky over open water and the winter one is
         // a night aurora, so they need different washes to carry the same words.
         scrim={seasonal('default', 'strong')}

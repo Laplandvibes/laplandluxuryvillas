@@ -29,6 +29,16 @@ interface HeroProps {
    *  off-centre subject (e.g. a villa on the left) so it survives the mobile
    *  portrait crop instead of showing only background. */
   imgObjectPosition?: string
+  /**
+   * Tailwind-luokat kuvan rajauskohdalle, kun se on eri kapealla ja leveällä
+   * ruudulla. 🔴 Vesa 20.9.2026: *"mobiilissa näkyy etusivun hero vain viljan
+   * kuva, ei se mökki ollenkaan"* — työpöydällä 16:9-kuva näkyy melkein
+   * kokonaan, mutta puhelimessa laatikko on PYSTY (375x686) ja `object-cover`
+   * rajaa leveydestä: rajauskohta 20 % vasemmalta jätti näkyviin vain
+   * etualan kaislikon, ja mökki on kuvan oikeassa reunassa. Annetaan luokkina
+   * eikä inline-tyylinä, koska yksi arvo ei voi olla kaksi arvoa.
+   */
+  imgPositionClass?: string
   /** Source line for an open-licence or partner photograph (PhotoCredit). */
   credit?: ReactNode
   /**
@@ -64,6 +74,7 @@ export default function Hero({
   compact = false,
   imageAlt = '',
   imgObjectPosition,
+  imgPositionClass,
   credit,
   videoUrl,
   scrim = 'default',
@@ -97,8 +108,8 @@ export default function Hero({
           <img
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full object-cover"
-            style={imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined}
+            className={`w-full h-full object-cover ${imgPositionClass ?? ''}`}
+            style={imgPositionClass ? undefined : imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined}
             loading="eager"
             decoding="async"
             fetchPriority="high"
