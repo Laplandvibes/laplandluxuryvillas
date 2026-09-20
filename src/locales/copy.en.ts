@@ -73,6 +73,7 @@ const en: SiteCopy = {
     "inPicture": "In the picture: {what}",
     "cropped": "cropped",
     "nellim": "Nellim village on the shore of Lake Inari, not the hotel itself",
+    "nellimLake": "The aurora over Lake Inari, not the hotel itself",
     "heroWinter": "Aurora over a lit lodge at Saariselkä, February 2019"
   },
   tier: {

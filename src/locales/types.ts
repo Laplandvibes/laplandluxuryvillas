@@ -10,6 +10,8 @@ export type SiteCopy = {
     inPicture: string
     cropped: string
     nellim: string
+    /** Nellim-kortin kuva on Inarijärvi, ei hotelli (Vesa 20.9.2026). */
+    nellimLake: string
     heroWinter: string
   }
   nav: {

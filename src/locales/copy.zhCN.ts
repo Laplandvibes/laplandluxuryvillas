@@ -73,6 +73,7 @@ const zhCN: SiteCopy = {
     "inPicture": "图中：{what}",
     "cropped": "已裁剪",
     "nellim": "伊纳里湖畔的 Nellim 村，而非酒店本身",
+    "nellimLake": "伊纳里湖上空的极光，并非酒店本身",
     "heroWinter": "萨利色尔卡（Saariselkä）一间亮着灯的木屋上方的极光，2019年2月"
   },
   tier: {

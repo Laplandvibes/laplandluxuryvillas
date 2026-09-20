@@ -78,7 +78,7 @@ export type PhotoCredit = {
    * prints "In the picture: …" from `copy.photo.<key>` in the reader's
    * language. A card that names a hotel and shows something else must say so.
    */
-  inPictureKey?: 'nellim' | 'heroWinter'
+  inPictureKey?: 'nellim' | 'heroWinter' | 'nellimLake'
 }
 
 const SEMBO_PAGE = (code: string) => `https://www.sembo.fi/travel/plan/hotel-selection/h0/hotel-details/${code}`
@@ -186,6 +186,25 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   '/images/villas/villaNoelB-sembo-4.webp': sembo('28744396', '133000000/132540000/132539900/132539810/170a740c.jpg', '3840x2561'),
   '/images/villas/villaNoelB-sembo-5.webp': sembo('28744396', '133000000/132540000/132539900/132539810/9d325566.jpg', '3840x2561'),
 
+  // Nellim: the hotel has no partner page and no photograph of its own anywhere
+  // free (Commons holds 30 Nellim files and not one is of the property — church,
+  // cemetery, bridge, war memorial; checked 20.9.2026). Vesa asked for a better
+  // picture of Inari rather than an empty card: the aurora over Lake Inari, the
+  // thing the Aurora Bubble is built to look at. Captioned as the lake, not the
+  // hotel, in all twelve languages.
+  '/images/villas/nellim-inari-aurora.webp': {
+    kind: 'commons',
+    author: 'Manfred Werner - Tsui',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Aurora_borealis_-_Inarij%C3%A4rvi_Finland_2013.03.10-11_031.jpg',
+    sourceId: 'File:Aurora borealis - Inarijärvi Finland 2013.03.10-11 031.jpg',
+    taken: '2013-03-10',
+    retrieved: RETRIEVED,
+    changes: 'Cropped to 3:2 (3500x2333), resized to 1600x1066, WebP q80.',
+    cropped: true,
+    inPictureKey: 'nellimLake',
+  },
   '/images/villas/nellim-commons.webp': {
     kind: 'commons',
     author: 'BishkekRocks',

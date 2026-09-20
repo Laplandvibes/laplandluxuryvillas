@@ -73,6 +73,7 @@ const ja: SiteCopy = {
     "inPicture": "写っているもの：{what}",
     "cropped": "トリミング",
     "nellim": "Inari湖畔のNellim村、ホテルそのものではありません",
+    "nellimLake": "イナリ湖の上のオーロラ。ホテルそのものではありません",
     "heroWinter": "Saariselkäの灯りのともる宿の上に広がるオーロラ、2019年2月"
   },
   tier: {

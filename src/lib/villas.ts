@@ -209,13 +209,15 @@ export const getVillas = (lang: Lang = 'en'): Villa[] => {
     bedrooms: 1,
     sleeps: 2,
     bookingUrl: PS.nellim,
-    // 🔴 NO PHOTOGRAPH (Vesa 2026-09-20: "eikö se ole outoa ettei ole itse
-    // hotellia kuvassa kun puhutaan sviiteistä vaan joku kylä?"). He is right.
-    // Wilderness Hotel Nellim has no page on either booking partner, so there
-    // is no hotel-supplied frame; the card used a Commons photograph of the
-    // VILLAGE with a caption saying so. On a page of suites that reads as a
-    // mistake, and the caption cannot fix it. The card now shows its gradient
-    // until a picture of the property itself is available.
+    // 🔴 No photograph of the property exists in any free source: Wilderness
+    // Hotel Nellim has no page on either booking partner, and of the 30 Nellim
+    // files on Commons not one shows the hotel (church, cemetery, bridge, war
+    // memorial — checked 20.9.2026). The card first showed the VILLAGE, which
+    // Vesa rightly read as odd on a page of suites, then nothing at all. He
+    // then asked for "jokin parempi kuva Inarista sitten": the aurora over
+    // Lake Inari, which is the thing an Aurora Bubble is built to look at, and
+    // captioned as the lake rather than the hotel.
+    image: '/images/villas/nellim-inari-aurora.webp',
     imageGradient: 'linear-gradient(135deg, #1A2438 0%, #243153 50%, #101830 100%)',
   },
   {

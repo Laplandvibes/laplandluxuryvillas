@@ -11,7 +11,7 @@ import { villaBySlug, getVillas } from '../lib/villas'
 import { formatRate, ratePriceRange } from '../lib/rate'
 import { destinationBySlug } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
-import { villaTitle } from '../lib/villaTitle.mjs'
+import { villaBrandTitle } from '../lib/villaTitle.mjs'
 import { COPY } from '../locales/copy'
 import PhotoCredit from '../components/PhotoCredit'
 import { creditFor } from '../data/photoCredits'
@@ -34,11 +34,17 @@ export default function VillaDetail() {
   // is omitted from the LodgingBusiness node entirely. See lib/rate.ts.
   const priceRange = ratePriceRange(villa.fromPerNight)
 
+  const hotel = propertyForVilla(villa.slug)
+
   return (
     <Page>
+      {/* 🔴 The hotel's own registered name leads the title, because that is
+          what people search (LV-BRAND-TITLE, measured 20.9.2026 across all
+          twelve markets). The description opens with the property and the
+          place, then the room. Resolved once, above the markup. */}
       <SEO
-        title={villaTitle(villa.name, villa.destination, lang)}
-        description={villa.tagline}
+        title={villaBrandTitle(villa.name, hotel?.name, villa.destination, lang)}
+        description={hotel ? `${hotel.name}, ${villa.destination}. ${villa.tagline}` : villa.tagline}
         canonicalPath={`/villas/${villa.slug}`}
         keywords={[villa.name, villa.destination, 'lapland villa', c.category[villa.category]]}
         jsonLd={[

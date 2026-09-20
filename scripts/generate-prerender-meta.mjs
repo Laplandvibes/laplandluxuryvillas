@@ -28,12 +28,13 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { villaTitle } from '../src/lib/villaTitle.mjs';
+import { villaTitle, villaBrandTitle } from '../src/lib/villaTitle.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const LIB = join(ROOT, 'src', 'lib');
 const LOCALES = join(ROOT, 'src', 'locales');
+const DATA = join(ROOT, 'src', 'data');
 const OUT = join(ROOT, 'scripts', 'prerender-meta.json');
 
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
@@ -178,6 +179,15 @@ for (const [key, route] of Object.entries(STATIC_ROUTE_OF_KEY)) {
 
 // ---- dynamic: villas ----
 const villaBase = parseBase('villas.ts', ['name', 'destination', 'tagline']); // slug → {name,destination,tagline(EN)}
+
+// 🔴 [LV-BRAND-TITLE 2026-09-20] The prerendered <title> is the one a crawler
+// reads, so it has to agree with VillaDetail.tsx: the hotel's registered name
+// first, because that is the search. Read straight out of properties.ts —
+// slug → key → name — rather than duplicated here.
+const propsSrc = readFileSync(join(DATA, 'properties.ts'), 'utf8');
+const propNames = Object.fromEntries([...propsSrc.matchAll(/(\w+):\s*\{\s*name:\s*"([^"]+)"/g)].map((m) => [m[1], m[2]]));
+const slugToProp = Object.fromEntries([...propsSrc.matchAll(/'([a-z0-9-]+)':\s*'(\w+)',/g)].map((m) => [m[1], m[2]]));
+const hotelFor = (slug) => propNames[slugToProp[slug]] || null;
 const villaOverlays = {};
 for (const [lang, file] of Object.entries(CONTENT_FILE)) {
   villaOverlays[lang] = parseOverlay(file, 'villas', ['tagline']);
@@ -186,10 +196,12 @@ for (const [slug, b] of Object.entries(villaBase)) {
   const path = `/villas/${slug}`;
   meta[path] = {};
   for (const lang of LANGS) {
-    // [LV-DUP 2026-09-06] localized descriptor after the two proper nouns — see src/lib/villaTitle.mjs
-    const title = villaTitle(b.name, b.destination, lang, SITE_NAME);
+    // [LV-DUP 2026-09-06] localized descriptor after the two proper nouns;
+    // [LV-BRAND-TITLE 2026-09-20] hotel name first where there is one.
+    const hotel = hotelFor(slug);
+    const title = hotel ? villaBrandTitle(b.name, hotel, b.destination, lang) : villaTitle(b.name, b.destination, lang, SITE_NAME);
     const ovTag = lang === 'en' ? null : villaOverlays[lang]?.[slug]?.tagline;
-    const description = trimDesc(ovTag || b.tagline);
+    const description = trimDesc(hotel ? `${hotel}, ${b.destination}. ${ovTag || b.tagline}` : (ovTag || b.tagline));
     meta[path][lang] = { title, description };
   }
 }

@@ -67,6 +67,7 @@ const ko: SiteCopy = {
     "inPicture": "사진 속: {what}",
     "cropped": "잘라냄",
     "nellim": "Inari 호수 기슭의 Nellim 마을, 호텔 자체가 아닙니다",
+    "nellimLake": "이나리 호수 위의 오로라, 호텔 자체는 아닙니다",
     "heroWinter": "Saariselkä의 불 켜진 로지 위로 펼쳐진 오로라, 2019년 2월"
   },
   tier: {
