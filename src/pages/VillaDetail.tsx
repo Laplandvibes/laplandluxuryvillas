@@ -277,7 +277,7 @@ export default function VillaDetail() {
               .map((v) => (
                 <article key={v.slug} className="card-onyx overflow-hidden">
                   <Link to={to(`/villas/${v.slug}`)} className="group block">
-                    <div className="aspect-[4/3] w-full overflow-hidden" style={{ background: v.imageGradient }}>
+                    <div className="relative aspect-[4/3] w-full overflow-hidden" style={{ background: v.imageGradient }}>
                       {v.image && (
                         <img
                           src={v.image}
@@ -287,6 +287,11 @@ export default function VillaDetail() {
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       )}
+                      {/* These are the same hotel-supplied photographs as the
+                          collection grid, so they carry the same source line.
+                          Measured live 20.9.2026: this page rendered four Sembo
+                          frames and one credit. */}
+                      <PhotoCredit credit={creditFor(v.image)} />
                     </div>
                     <div className="p-6">
                       <span className="eyebrow text-[color:var(--color-brass)]">{v.destination}</span>
