@@ -49,12 +49,12 @@ export interface LuxuryPick {
   /** Duration as the catalogue states it. Omitted when the source was unclear. */
   duration?: string;
   /**
-   * Mihin sivun osioon tuote kuuluu. 🔴 Lisatty 21.9.2026, kun elamyssivu
-   * rakennettiin naiden OIKEIDEN tuotteiden varaan: sita ennen sivulla oli
-   * kuusi kasin kirjoitettua "elamysta", joista yksikaan ei ollut varattava
-   * (nelja vei sahkopostiin, kaksi GetYourGuiden hakuun) ja joiden
-   * yksityiskohdat oli keksitty. Vesa 21.9.: "onhan namakin tekstit ihan puuta
-   * heinaa, eika aitoa kirjoittamista?"
+   * Mihin sivun osioon tuote kuuluu. 🔴 Lisatty 21.9.2026, kun
+   * laplandluxuryvillasin elamyssivu rakennettiin naiden OIKEIDEN tuotteiden
+   * varaan: sita ennen sivulla oli kuusi kasin kirjoitettua "elamysta", joista
+   * yksikaan ei ollut varattava (nelja vei sahkopostiin, kaksi GetYourGuiden
+   * hakuun) ja joiden yksityiskohdat oli keksitty. Vesa 21.9.: "onhan namakin
+   * tekstit ihan puuta heinaa, eika aitoa kirjoittamista?"
    * Huom: 'culinary' ja 'arrival' EIVAT ole vaihtoehtoja, koska niihin ei ole
    * yhtaan varattavaa tuotetta. Niista kerrotaan sivulla suoraan.
    */
