@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi: sep.–abr.',
     },
-    'helicopter-aurora-flight': {
-      hook: 'Un vuelo nocturno en helicóptero de 45 minutos por encima de la capa de nubes, hasta las propias auroras.',
-      copy: [
-        'Operado por un operador de helicópteros certificado para vuelo nocturno VFR, desde Rovaniemi e Ivalo. El vuelo supera la capa de nubes local y traza círculos dentro del óvalo auroral activo: una perspectiva imposible desde el suelo.',
-        'La fotografía en tierra se incluye a ambos lados del vuelo; la parte en el aire es para la experiencia en sí, no para la cámara. Máximo cuatro pasajeros por AS350. Sujeto a ventana meteorológica: el operador sigue la previsión y avisa el día anterior.',
-      ],
-      available: 'Rovaniemi, Ivalo: oct.–mar. (según meteorología)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'Un menú degustación finlandés-sami de nueve platos cocinado en la cocina de su villa por un chef en activo de Laponia.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Asistencia completa: traslado terrestre a tu villa en un vehículo calefactado de especificación ártica, equipaje reenviado, aduana sin cola. El operador tramita el slot y ajusta la llegada a la hora de entrada en la villa.',
       ],
       available: 'Todos los destinos: todo el año',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Recogida desde el aeropuerto regional directamente al helipuerto de su villa: sin traslado por carretera.',
-      copy: [
-        'Se usa con mayor frecuencia para las llegadas a las fincas privadas de troncos junto al lago Inari. La aeronave es el mismo AS350 de los vuelos de auroras; un solo trayecto dura entre 20 y 45 minutos.',
-        'Máximo cinco pasajeros más equipaje. El operador ajusta la recogida a la entrada en la villa y a la ventana de luz diurna, que en pleno invierno son solo unas horas de penumbra en torno al mediodía: en la latitud de Inari el sol no llega a salir.',
-      ],
-      available: 'Rovaniemi, Ivalo → fincas del lago Inari',
     },
   },
 };

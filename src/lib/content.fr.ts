@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, sept.–avr.',
     },
-    'helicopter-aurora-flight': {
-      hook: 'Un vol de nuit en hélicoptère de 45 minutes au-dessus de la couche nuageuse, jusqu\'aux aurores elles-mêmes.',
-      copy: [
-        'Opéré par un exploitant d\'hélicoptères certifié pour le vol de nuit VFR, au départ de Rovaniemi et d\'Ivalo. Le vol franchit la couche nuageuse locale et tourne à l\'intérieur de l\'ovale auroral actif, une perspective impossible depuis le sol.',
-        'La photographie au sol est incluse de part et d\'autre du vol ; la partie en vol est consacrée à l\'expérience elle-même, pas à l\'appareil photo. Maximum quatre passagers par AS350. Tributaire d\'une fenêtre météo : l\'opérateur suit la prévision et prévient la veille.',
-      ],
-      available: 'Rovaniemi, Ivalo, oct.–mars (selon météo)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'Un menu dégustation finno-sami de neuf services, cuisiné dans la cuisine de votre villa par un chef lapon en activité.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Prise en charge complète : transfert terrestre vers votre villa dans un véhicule chauffé de spécification arctique, bagages acheminés, douane franchie sans file d\'attente. L\'opérateur dépose le créneau et accorde l\'arrivée à l\'heure d\'enregistrement de la villa.',
       ],
       available: 'Toutes les destinations, toute l\'année',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Prise en charge depuis l\'aéroport régional directement vers l\'hélisurface de votre villa, sans transfert routier.',
-      copy: [
-        'Utilisé le plus souvent pour les arrivées vers les domaines en rondins privés au bord du lac Inari. L\'appareil est le même AS350 que celui des vols auroraux ; un seul secteur prend 20 à 45 minutes.',
-        'Maximum cinq passagers + bagages. L\'opérateur accorde la prise en charge à l\'enregistrement de la villa et à la fenêtre de lumière du jour, qui au cœur de l\'hiver se réduit à quelques heures de crépuscule autour de midi : à la latitude d\'Inari, le soleil ne se lève pas du tout.',
-      ],
-      available: 'Rovaniemi, Ivalo → domaines du lac Inari',
     },
   },
 };

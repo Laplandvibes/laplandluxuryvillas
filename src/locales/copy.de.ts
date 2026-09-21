@@ -143,12 +143,12 @@ const de: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Reiseziele',
-      title: 'Fünf Orte, jeder mit einem klaren Grund, dort zu sein.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi und Ylläs.',
       lede: 'Lappland ist nicht austauschbar. Polarlichtfrequenz, Anreiselogistik und Unterkunftsdichte ändern sich alle 50 km nördlich des Polarkreises deutlich.',
     },
     experiences: {
       eyebrow: 'Maßgeschneiderte Erlebnisse',
-      title: 'Der Tag, vor der Nacht unter dem Glas.',
+      title: 'Polarlichter, Wildnis, Kulinarik und Anreise.',
       lede: '{e} private Erlebnisse, die wir mit den Villen kombinieren, jedes gebucht im Hinblick auf Wetterfenster, Tageslicht und Villa-Check-in-Zeit.',
     },
     midnightSun: {
@@ -165,7 +165,7 @@ const de: SiteCopy = {
     },
     about: {
       eyebrow: 'Über uns',
-      title: 'Eine kurze Liste, absichtlich kurz gehalten.',
+      title: 'Wer dahintersteht und was wir nicht tun.',
       lede: '{n} handverlesene Villen und Suiten in Finnisch-Lappland. Direkter Link zur eigenen Buchung des Hauses, keine Plattform dazwischen, und Ihre Daten gehen nirgendwohin, bevor Sie sich nicht selbst melden.',
     },
   },
@@ -273,14 +273,14 @@ const de: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'Eine Villa, hier verankert.' : `${n} Villen, hier verankert.`),
     fullCollection: 'Gesamte Kollektion',
     inquiryTitle: (name) => `Planen Sie eine private ${name}-Reise.`,
-    inquiryBody: 'Senden Sie Termine, Gästezahl und etwaige Wünsche (privater Koch, Hubschrauberanreise, exklusive Nutzung). Eine Antwort mit Auswahl erreicht Sie innerhalb eines Werktags.',
+    inquiryBody: 'Senden Sie Termine, Gästezahl und etwaige Wünsche (privater Koch, exklusive Nutzung). Eine Antwort mit Auswahl erreicht Sie innerhalb eines Werktags.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Polarlichter', intro: 'Die Polarlichter selbst sind kostenlos. Was hier verkauft wird, ist der Zugang, das richtige Fahrzeug, der richtige Guide und die richtige Nacht unter dem richtigen Wolkenfenster.' },
       wilderness: { title: 'Wildnis', intro: 'Private Versionen der Erlebnisse, für die alle nach Lappland kommen, Husky, Schneemobil, Rentier, ohne den geteilten Bus und den Rundweg.' },
       culinary: { title: 'Kulinarik', intro: 'Ein aktiver Koch aus einer der ernsthaften Küchen Lapplands, in Ihrer Villa, für einen Abend, oder das hauseigene Tasting-Menü, wenn die Küche der Grund Ihrer Reise ist.' },
-      arrival: { title: 'Anreise', intro: 'Privatjet, Hubschraubertransfer, arktisch ausgerüstete Bodenfahrzeuge. Gebucht im Hinblick auf Slot, Tageslichtfenster und Villa-Check-in.' },
+      arrival: { title: 'Anreise', intro: 'Privatjet, arktisch ausgerüstete Bodenfahrzeuge. Gebucht im Hinblick auf Slot, Tageslichtfenster und Villa-Check-in.' },
     },
   },
   midnightSunPage: {
@@ -330,7 +330,7 @@ const de: SiteCopy = {
       datesHint: 'z. B. „14.–21. Februar“ oder „erste Hälfte März, 5 Nächte“',
       datesPlaceholder: 'Optional',
       messageLabel: 'Etwas Spezifisches',
-      messageHint: 'Privater Koch, Hubschrauberanreise, exklusive Nutzung, Barrierefreiheit, Ernährung, Fotografiefokus, was auch immer die Auswahl prägt.',
+      messageHint: 'Privater Koch, exklusive Nutzung, Barrierefreiheit, Ernährung, Fotografiefokus, was auch immer die Auswahl prägt.',
       nameLabel: 'Name (optional)',
       namePlaceholder: 'Anonym, falls leer',
       emailLabel: 'Antwort-E-Mail',

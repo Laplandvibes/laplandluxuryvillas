@@ -143,12 +143,12 @@ const fi: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Kohteet',
-      title: 'Viisi paikkaa, jokaisella selkeä syy olla siellä.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi ja Ylläs.',
       lede: 'Lappi ei ole yksi ja sama paikka kaikkialla. Se, miten usein revontulet näkyvät, miten sinne käytännössä pääsee ja kuinka monesta huvilasta voi valita, muuttuu selvästi joka 50 kilometrillä napapiiriltä pohjoiseen.',
     },
     experiences: {
       eyebrow: 'Räätälöidyt elämykset',
-      title: 'Päivä, ennen yötä lasin alla.',
+      title: 'Revontulet, erämaa, ruoka ja saapuminen.',
       lede: '{e} yksityistä elämystä, jotka sovitamme huviloiden rinnalle. Jokainen varataan sään, päivänvalon ja huvilan sisäänkirjautumisen mukaan, jotta ajoitus oikeasti toimii.',
     },
     midnightSun: {
@@ -165,7 +165,7 @@ const fi: SiteCopy = {
     },
     about: {
       eyebrow: 'Tietoa',
-      title: 'Lyhyt lista, joka pidetään lyhyenä tarkoituksella.',
+      title: 'Kuka tämän takana on, ja mitä emme tee.',
       lede: '{n} käsin valittua huvilaa ja sviittiä Suomen Lapissa. Suora linkki kohteen omaan varaukseen, ei alustaa välissä, ja tietosi eivät liiku minnekään ennen kuin itse otat yhteyttä.',
     },
   },
@@ -273,14 +273,14 @@ const fi: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'Yksi huvila tässä kohteessa.' : `${n} huvilaa tässä kohteessa.`),
     fullCollection: 'Koko kokoelma',
     inquiryTitle: (name) => `Suunnittele yksityinen ${name}-matka.`,
-    inquiryBody: 'Lähetä päivämäärät, vieraat ja toiveet (yksityinen kokki, helikopterisaapuminen, eksklusiivinen käyttö). Saat lyhytlistan yhden työpäivän kuluessa.',
+    inquiryBody: 'Lähetä päivämäärät, vieraat ja toiveet (yksityinen kokki, eksklusiivinen käyttö). Saat lyhytlistan yhden työpäivän kuluessa.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Revontulet', intro: 'Revontulet ovat itsessään ilmaisia. Maksat pääsystä: oikeasta kyydistä, oikeasta oppaasta ja oikeasta yöstä kirkkaan taivaan alla.' },
       wilderness: { title: 'Erämaa', intro: 'Yksityiset versiot niistä, joiden takia kaikki Lappiin tulevat: husky, moottorikelkka ja poro, ilman jaettua bussia ja samaa lenkkiä kuin kaikki muutkin.' },
       culinary: { title: 'Ruoka', intro: 'Oikea kokki yhdestä Lapin vakavasti otettavasta keittiöstä, sinun huvilallasi, illan ajan. Tai talon maistelumenu silloin kun keittiö on se syy tulla.' },
-      arrival: { title: 'Saapuminen', intro: 'Yksityinen suihkukone, helikopterikuljetus, arktinen ajoneuvokalusto. Varataan slot-ikkunan, päivänvalon ja huvilan sisäänkirjautumisen mukaan.' },
+      arrival: { title: 'Saapuminen', intro: 'Yksityinen suihkukone, arktinen ajoneuvokalusto. Varataan slot-ikkunan, päivänvalon ja huvilan sisäänkirjautumisen mukaan.' },
     },
   },
   midnightSunPage: {
@@ -330,7 +330,7 @@ const fi: SiteCopy = {
       datesHint: 'esim. \'14.–21.2.\' tai \'maaliskuun alkupuoli, 5 yötä\'',
       datesPlaceholder: 'Vapaaehtoinen',
       messageLabel: 'Mitä erityistä',
-      messageHint: 'Yksityinen kokki, helikopterisaapuminen, koko paikka omaan käyttöön, esteettömyys, ruokavalio, painotus valokuvaukseen. Ihan mikä tahansa, joka muokkaa lyhytlistaa.',
+      messageHint: 'Yksityinen kokki, koko paikka omaan käyttöön, esteettömyys, ruokavalio, painotus valokuvaukseen. Ihan mikä tahansa, joka muokkaa lyhytlistaa.',
       nameLabel: 'Nimi (vapaaehtoinen)',
       namePlaceholder: 'Anonyymi jos tyhjä',
       emailLabel: 'Vastausosoite',

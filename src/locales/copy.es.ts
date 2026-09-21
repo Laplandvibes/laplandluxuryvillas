@@ -143,12 +143,12 @@ const es: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Destinos',
-      title: 'Cinco lugares, cada uno con una razón clara para estar allí.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi y Ylläs.',
       lede: 'Laponia no es intercambiable. La frecuencia de las auroras, la logística de llegada y la densidad de alojamiento cambian de forma notable cada 50 km al norte del Círculo Polar Ártico.',
     },
     experiences: {
       eyebrow: 'Experiencias a medida',
-      title: 'El día, antes de la noche bajo el cristal.',
+      title: 'Auroras, naturaleza salvaje, gastronomía y llegada.',
       lede: '{e} experiencias privadas que combinamos con las villas, cada una reservada según la ventana meteorológica, las horas de luz y la hora de entrada a la villa.',
     },
     midnightSun: {
@@ -165,7 +165,7 @@ const es: SiteCopy = {
     },
     about: {
       eyebrow: 'Quiénes somos',
-      title: 'Una lista corta, breve a propósito.',
+      title: 'Quién está detrás y qué no hacemos.',
       lede: '{n} villas y suites escogidas a mano en la Laponia finlandesa. Enlace directo a la reserva propia de cada alojamiento, sin plataforma de por medio, y sus datos no van a ninguna parte hasta que usted mismo contacte.',
     },
   },
@@ -273,14 +273,14 @@ const es: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'Una villa en este destino.' : `${n} villas en este destino.`),
     fullCollection: 'Colección completa',
     inquiryTitle: (name) => `Planifique un viaje privado a ${name}.`,
-    inquiryBody: 'Envíe fechas, número de personas y cualquier preferencia (chef privado, llegada en helicóptero, uso exclusivo). Respondemos con una preselección en un día laborable.',
+    inquiryBody: 'Envíe fechas, número de personas y cualquier preferencia (chef privado, uso exclusivo). Respondemos con una preselección en un día laborable.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Las auroras en sí son gratuitas. Lo que se ofrece aquí es el acceso, el vehículo adecuado, el guía adecuado y la noche adecuada bajo la ventana de cielo despejado adecuada.' },
       wilderness: { title: 'Naturaleza salvaje', intro: 'Versiones privadas de las experiencias por las que todos vienen a Laponia, huskies, motonieve, renos, sin el autobús compartido ni la ruta circular.' },
       culinary: { title: 'Gastronomía', intro: 'Un chef en activo de una de las cocinas serias de Laponia, en su villa, durante una velada, o el menú degustación en la propiedad cuando la cocina es la razón por la que vino.' },
-      arrival: { title: 'Llegada', intro: 'Jet privado, traslado en helicóptero, vehículos terrestres preparados para el Ártico. Reservados según la franja, la ventana de luz y la entrada a la villa.' },
+      arrival: { title: 'Llegada', intro: 'Jet privado, vehículos terrestres preparados para el Ártico. Reservados según la franja, la ventana de luz y la entrada a la villa.' },
     },
   },
   midnightSunPage: {
@@ -330,7 +330,7 @@ const es: SiteCopy = {
       datesHint: 'p. ej. «14–21 feb» o «primera mitad de marzo, 5 noches»',
       datesPlaceholder: 'Opcional',
       messageLabel: 'Algo concreto',
-      messageHint: 'Chef privado, llegada en helicóptero, uso exclusivo, accesibilidad, dieta, enfoque fotográfico, lo que sea que dé forma a la preselección.',
+      messageHint: 'Chef privado, uso exclusivo, accesibilidad, dieta, enfoque fotográfico, lo que sea que dé forma a la preselección.',
       nameLabel: 'Nombre (opcional)',
       namePlaceholder: 'Anónimo si se deja en blanco',
       emailLabel: 'Correo de respuesta',

@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, sep–apr',
     },
-    'helicopter-aurora-flight': {
-      hook: 'Een nachtelijke helikoptervlucht van 45 minuten boven het wolkendek, tot aan het noorderlicht zelf.',
-      copy: [
-        'Uitgevoerd door een voor nacht-VFR gecertificeerde helikopteroperator, vanuit Rovaniemi en Ivalo. De vlucht doorbreekt het plaatselijke wolkendek en cirkelt binnen de actieve noorderlichtovaal, een perspectief dat vanaf de grond onmogelijk is.',
-        'Fotografie op de grond is aan weerszijden van de vlucht inbegrepen; het deel in de lucht is voor de beleving zelf, niet voor de camera. Maximaal vier passagiers per AS350. Afhankelijk van het weervenster: de exploitant volgt de voorspelling en meldt het de dag ervoor.',
-      ],
-      available: 'Rovaniemi, Ivalo, okt–mrt (weersafhankelijk)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'Een Fins-Samisch proefmenu van negen gangen, in uw villakeuken bereid door een werkende Laplandse chef-kok.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Volledige afhandeling: grondtransfer naar uw villa met een verwarmd voertuig van arctische specificatie, bagage doorgestuurd, douane zonder rij. De exploitant dient de slot in en stemt de aankomst af op de incheck­tijd van de villa.',
       ],
       available: 'Alle bestemmingen, het hele jaar door',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Oppikken vanaf de regionale luchthaven rechtstreeks naar het landingsplatform van uw villa, geen wegtransfer.',
-      copy: [
-        'Het vaakst gebruikt voor aankomsten bij de private blokhuislandgoederen aan het Inarimeer. Het toestel is dezelfde AS350 die voor de noorderlichtvluchten wordt gebruikt; één sector duurt 20 tot 45 minuten.',
-        'Maximaal vijf passagiers + bagage. De exploitant stemt het oppikken af op de incheck van de villa en het daglichtvenster, dat midden in de winter maar een paar schemeruren rond het middaguur is, op de breedte van Inari komt de zon helemaal niet op.',
-      ],
-      available: 'Rovaniemi, Ivalo → landgoederen aan het Inarimeer',
     },
   },
 };

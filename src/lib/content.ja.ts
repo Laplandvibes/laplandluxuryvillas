@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari、Saariselkä、Levi、Rovaniemi, 9月〜4月',
     },
-    'helicopter-aurora-flight': {
-      hook: '雲の層の上、オーロラそのものへと向かう45分の夜間ヘリコプター飛行。',
-      copy: [
-        'RovaniemiとIvaloを拠点に、夜間VFR認定のヘリコプター運航者が運航します。飛行は地元の雲の層を抜け、活動中のオーロラオーバルの内側を周回します。地上からは不可能な視点です。',
-        '地上撮影は飛行の前後に含まれます。飛行中の時間は撮影ではなく体験そのもののためのものです。AS350一機あたり最大4名。天候の窓に左右され、運航会社が予報を追い、前日に知らせます。',
-      ],
-      available: 'Rovaniemi、Ivalo, 10月〜3月（天候次第）',
-    },
     'private-chef-arctic-tasting': {
       hook: '現役のLaplandのシェフがヴィラのキッチンで仕上げる、9品のフィンランド・サーミのテイスティングメニュー。',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'すべての手配を一括で：寒冷地仕様の暖房付き車両でヴィラまでの陸上送迎、手荷物の転送、列に並ばない通関。運航会社がスロットを申請し、到着をヴィラのチェックイン時刻に合わせます。',
       ],
       available: 'すべての目的地、通年',
-    },
-    'helicopter-villa-transfer': {
-      hook: '地域空港からヴィラの着陸地点へと直接ピックアップ。陸路の送迎なし。',
-      copy: [
-        'Inari湖の湖畔にあるプライベートなログエステートへの到着に最も多く用いられます。機体はオーロラ飛行と同じAS350で、片道は20〜45分です。',
-        '最大5名＋手荷物。運航会社がピックアップをヴィラのチェックインと明るい時間帯に合わせます。真冬のその時間帯は正午前後の薄明が数時間だけで、イナリの緯度では太陽はまったく昇りません。',
-      ],
-      available: 'Rovaniemi、Ivalo → Inari湖のエステート',
     },
   },
 };

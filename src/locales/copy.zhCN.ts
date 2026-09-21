@@ -143,12 +143,12 @@ const zhCN: SiteCopy = {
     },
     destinations: {
       eyebrow: '目的地',
-      title: '五处地方，各有前往的明确理由。',
+      title: 'Saariselkä、Inari、Rovaniemi、Levi、Ylläs。',
       lede: '拉普兰并非处处相同。每向北极圈以北推进 50 公里，极光出现的频率、抵达的方式与住宿的密度都会明显改变。',
     },
     experiences: {
       eyebrow: '定制体验',
-      title: '玻璃下的夜晚之前，先过好这一天。',
+      title: '极光、荒野、美食与抵达。',
       lede: '我们为别墅搭配{eFig}项私人体验，每一项都视天气情况、日照时长与别墅入住时间而定。',
     },
     midnightSun: {
@@ -165,7 +165,7 @@ const zhCN: SiteCopy = {
     },
     about: {
       eyebrow: '关于我们',
-      title: '一份刻意保持简短的名单。',
+      title: '谁在做这件事，以及我们不做什么。',
       lede: '在芬兰拉普兰精选的{nFig}栋别墅和套房。链接直达各房源自己的预订页面，中间没有平台，在你主动联系之前，你的信息不会流向任何地方。',
     },
   },
@@ -273,14 +273,14 @@ const zhCN: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? '此目的地有一座别墅。' : `此目的地有 ${n} 座别墅。`),
     fullCollection: '完整精选',
     inquiryTitle: (name) => `规划一次私人的${name}之旅。`,
-    inquiryBody: '发送日期、人数与任何偏好（私人主厨、直升机抵达、独享使用）。我们将在一个工作日内回复一份推荐名单。',
+    inquiryBody: '发送日期、人数与任何偏好（私人主厨、独享使用）。我们将在一个工作日内回复一份推荐名单。',
   },
   experiencesPage: {
     sections: {
       aurora: { title: '极光', intro: '极光本身是免费的。这里提供的是「门径」，合适的车辆、合适的向导，以及合适云隙下的合适夜晚。' },
       wilderness: { title: '荒野', intro: '众人专程来拉普兰追寻的体验，哈士奇、雪地摩托、驯鹿，的私人版本，没有拼团巴士，也没有环线套路。' },
       culinary: { title: '美食', intro: '一位活跃于拉普兰认真厨房的主厨，在您的别墅里为您操办一晚，或当厨房本身就是您前来的理由时，在物业内品味套餐。' },
-      arrival: { title: '抵达', intro: '私人飞机、直升机接送、北极规格的地面车辆。依时段、日照窗口与别墅入住时间安排。' },
+      arrival: { title: '抵达', intro: '私人飞机、北极规格的地面车辆。依时段、日照窗口与别墅入住时间安排。' },
     },
   },
   midnightSunPage: {
@@ -330,7 +330,7 @@ const zhCN: SiteCopy = {
       datesHint: '例如「2月14–21日」或「三月上半月，5晚」',
       datesPlaceholder: '可选填',
       messageLabel: '任何特别需求',
-      messageHint: '私人主厨、直升机抵达、独享使用、无障碍设施、饮食、摄影侧重，凡是会影响名单的，都请写下。',
+      messageHint: '私人主厨、独享使用、无障碍设施、饮食、摄影侧重，凡是会影响名单的，都请写下。',
       nameLabel: '姓名（选填）',
       namePlaceholder: '留空即匿名',
       emailLabel: '回复邮箱',

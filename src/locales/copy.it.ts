@@ -137,12 +137,12 @@ const it: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Destinazioni',
-      title: 'Cinque luoghi, ciascuno con un motivo chiaro per esserci.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi e Ylläs.',
       lede: 'La Lapponia non è intercambiabile. La frequenza delle aurore, la logistica di arrivo e la densità delle strutture cambiano in modo sensibile ogni 50 km a nord del Circolo Polare Artico.',
     },
     experiences: {
       eyebrow: 'Esperienze su misura',
-      title: 'Il giorno, prima della notte sotto il vetro.',
+      title: 'Aurora, natura selvaggia, cucina e arrivo.',
       lede: '{e} esperienze private che abbiniamo alle ville, ciascuna prenotata in base alla finestra meteo, alle ore di luce e all’orario di check-in della villa.',
     },
     midnightSun: {
@@ -158,7 +158,7 @@ const it: SiteCopy = {
     },
     about: {
       eyebrow: 'Chi siamo',
-      title: 'Un elenco breve, tenuto breve di proposito.',
+      title: 'Chi c\'è dietro e che cosa non facciamo.',
       lede: '{n} ville e suite scelte a mano nella Lapponia finlandese. Link diretto alla prenotazione della struttura, nessuna piattaforma in mezzo, e i suoi dati non vanno da nessuna parte finché non si fa avanti lei.',
     },
   },
@@ -266,14 +266,14 @@ const it: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'Una villa in questa destinazione.' : `${n} ville in questa destinazione.`),
     fullCollection: 'Collezione completa',
     inquiryTitle: (name) => `Organizza un viaggio privato a ${name}.`,
-    inquiryBody: 'Invia date, numero di persone e qualsiasi preferenza (chef privato, arrivo in elicottero, uso esclusivo). Rispondiamo con una short list entro un giorno lavorativo.',
+    inquiryBody: 'Invia date, numero di persone e qualsiasi preferenza (chef privato, uso esclusivo). Rispondiamo con una short list entro un giorno lavorativo.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
       wilderness: { title: 'Natura selvaggia', intro: 'Le versioni private delle esperienze per cui tutti vengono in Lapponia, husky, motoslitta, renna, senza il bus condiviso e il percorso ad anello.' },
       culinary: { title: 'Cucina', intro: 'Uno chef in attività di una delle cucine serie della Lapponia, nella Sua villa, per una sera, oppure il menù degustazione in loco quando è la cucina la ragione della Sua venuta.' },
-      arrival: { title: 'Arrivo', intro: 'Jet privato, transfer in elicottero, veicoli terrestri in versione artica. Prenotati in base allo slot, alla finestra di luce e al check-in della villa.' },
+      arrival: { title: 'Arrivo', intro: 'Jet privato, veicoli terrestri in versione artica. Prenotati in base allo slot, alla finestra di luce e al check-in della villa.' },
     },
   },
   midnightSunPage: {
@@ -323,7 +323,7 @@ const it: SiteCopy = {
       datesHint: 'es. «14–21 feb» oppure «prima metà di marzo, 5 notti»',
       datesPlaceholder: 'Facoltativo',
       messageLabel: 'Qualcosa di specifico',
-      messageHint: 'Chef privato, arrivo in elicottero, uso esclusivo, accessibilità, dieta, attenzione alla fotografia, tutto ciò che dà forma alla short list.',
+      messageHint: 'Chef privato, uso esclusivo, accessibilità, dieta, attenzione alla fotografia, tutto ciò che dà forma alla short list.',
       nameLabel: 'Nome (facoltativo)',
       namePlaceholder: 'Anonimo se vuoto',
       emailLabel: 'Email di risposta',
@@ -485,7 +485,7 @@ Object.assign(it.inquiry, {
 Object.assign(it.midnightSunBand, {
   eyebrow: '6 giu – 7 lug',
   h2: 'Le stesse ville, in un’estate di luce ininterrotta.',
-  body: 'Stessa architettura, stagione diversa. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, la foresta si riempie di lamponi artici. Metà domanda dell\'inverno, e l\'unica finestra dell\'anno in cui chef privati, charter di elicotteri e ville di riserva aprono il resto del calendario.',
+  body: 'Stessa architettura, stagione diversa. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, la foresta si riempie di lamponi artici. Metà domanda dell\'inverno, e l\'unica finestra dell\'anno in cui chef privati e ville di riserva aprono il resto del calendario.',
   primary: 'Vedi la collezione estiva', secondary: 'Richiedere date di giugno',
 })
 Object.assign(it.newsletter, {
@@ -504,10 +504,10 @@ Object.assign(it.affiliateDisclosure, {
   full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi.',
 })
 it.hero.suites = { eyebrow: 'Suite d\'autore', title: 'Quando non Le serve una villa, ma il tetto in vetro sì.', lede: 'Un breve elenco di suite a una camera e cabine aurorali dove l\'architettura stessa è l\'esperienza. Capienza minore, stesso soffitto panoramico.' }
-it.hero.destinations = { eyebrow: 'Destinazioni', title: 'Cinque luoghi, ognuno con una ragione precisa per esserci.', lede: 'La Lapponia non è intercambiabile. Frequenza dell\'aurora, logistica d\'arrivo e densità ricettiva cambiano in modo significativo ogni 50 km a nord del Circolo Polare.' }
-it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Il giorno, prima della notte sotto il vetro.', lede: 'Otto esperienze private abbinate alle ville, ciascuna prenotata in funzione della finestra meteo, della luce diurna e dell\'orario di check-in.' }
+it.hero.destinations = { eyebrow: 'Destinazioni', title: 'Saariselkä, Inari, Rovaniemi, Levi e Ylläs.', lede: 'La Lapponia non è intercambiabile. Frequenza dell\'aurora, logistica d\'arrivo e densità ricettiva cambiano in modo significativo ogni 50 km a nord del Circolo Polare.' }
+it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Aurora, natura selvaggia, cucina e arrivo.', lede: 'Otto esperienze private abbinate alle ville, ciascuna prenotata in funzione della finestra meteo, della luce diurna e dell\'orario di check-in.' }
 it.hero.inquiry = { eyebrow: 'Richiesta privata', title: 'Un messaggio privato, una shortlist curata.', lede: 'Invii date, numero di ospiti e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo, incluse, dove appropriato, le ville di riserva che non appaiono mai pubblicamente.' }
-it.hero.about = { eyebrow: 'Chi siamo', title: 'Un elenco breve, tenuto breve di proposito.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
+it.hero.about = { eyebrow: 'Chi siamo', title: 'Chi c\'è dietro e che cosa non facciamo.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
 it.home = {
   ...it.home,
   philosophy: { eyebrow: 'Come lavoriamo', h2: 'L\'opposto di una piattaforma di prenotazione.',
@@ -538,14 +538,14 @@ Object.assign(it.destinationPage, {
   villasHereH2: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
   fullCollection: 'Collezione completa',
   inquiryTitle: (name: string) => `Pianifichi un viaggio privato a ${name}.`,
-  inquiryBody: 'Invii date, numero di ospiti e preferenze (chef privato, arrivo in elicottero, uso esclusivo). Rispondiamo con una shortlist entro un giorno lavorativo.',
+  inquiryBody: 'Invii date, numero di ospiti e preferenze (chef privato, uso esclusivo). Rispondiamo con una shortlist entro un giorno lavorativo.',
 })
 Object.assign(it.experiencesPage, {
   sections: {
     aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si vende qui è l\'accesso, il veicolo giusto, la guida giusta, la notte giusta sotto la giusta finestra di nuvole.' },
     wilderness: { title: 'Natura selvaggia', intro: 'Versioni private delle esperienze per cui tutti vengono in Lapponia, husky, motoslitta, renne, senza bus condiviso né percorso ad anello.' },
     culinary: { title: 'Cucina', intro: 'Uno chef attivo proveniente da una delle cucine serie della Lapponia, nella Sua villa, per una serata, o il menù degustazione in loco quando la cucina è il motivo del viaggio.' },
-    arrival: { title: 'Arrivo', intro: 'Jet privato, transfer in elicottero, mezzi di terra in spec artica. Prenotati in funzione dello slot, della finestra di luce e del check-in.' },
+    arrival: { title: 'Arrivo', intro: 'Jet privato, mezzi di terra in spec artica. Prenotati in funzione dello slot, della finestra di luce e del check-in.' },
   },
 })
 Object.assign(it.midnightSunPage, {
@@ -554,7 +554,7 @@ Object.assign(it.midnightSunPage, {
   reasons: [
     { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },
     { title: 'La natura diventa accessibile.', body: 'I laghi si sciolgono, la foresta boreale si apre, le rotte in canoa appaiono. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
-    { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati e charter di elicotteri quotano tariffe di spalla.' },
+    { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati quotano tariffe di spalla.' },
     { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjäll, sono essenzialmente Suoi.' },
   ],
   summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, mostrate nella luce del sole di mezzanotte di fine giugno.',
@@ -572,7 +572,7 @@ Object.assign(it.inquiryPage, {
   intro: 'Cinque brevi campi. Più sono specifiche le preferenze e i vincoli, più utile è la shortlist. Nome ed email restano opzionali, le risposte vanno all\'indirizzo da cui arriva il messaggio.',
   fields: { headcount: 'Numero di ospiti', tripIntent: 'Intento del viaggio', budget: 'Budget indicativo per notte',
     datesLabel: 'Date (o finestra)', datesHint: 'es. "14–21 feb" o "prima metà di marzo, 5 notti"', datesPlaceholder: 'Opzionale',
-    messageLabel: 'Qualcosa di specifico', messageHint: 'Chef privato, arrivo in elicottero, uso esclusivo, accessibilità, dieta, focus fotografia, qualsiasi cosa modelli la shortlist.',
+    messageLabel: 'Qualcosa di specifico', messageHint: 'Chef privato, uso esclusivo, accessibilità, dieta, focus fotografia, qualsiasi cosa modelli la shortlist.',
     nameLabel: 'Nome (opzionale)', namePlaceholder: 'Anonimo se vuoto', emailLabel: 'Email di risposta', emailHint: 'Se vuoto, le risposte vanno all\'indirizzo di invio.', emailPlaceholder: 'opzionale' },
   options: {
     headcount: ['1–2 ospiti', '3–4 ospiti', '5–6 ospiti', '7–10 ospiti', 'Gruppo più ampio'],

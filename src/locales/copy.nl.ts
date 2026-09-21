@@ -137,12 +137,12 @@ const nl: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Bestemmingen',
-      title: 'Vijf plekken, elk met een duidelijke reden om er te zijn.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi en Ylläs.',
       lede: 'Lapland is niet uitwisselbaar. De noorderlichtfrequentie, de aankomstlogistiek en de accommodatiedichtheid veranderen merkbaar om de 50 km ten noorden van de poolcirkel.',
     },
     experiences: {
       eyebrow: 'Ervaringen op maat',
-      title: 'De dag, vóór de nacht onder het glas.',
+      title: 'Noorderlicht, wildernis, culinair en aankomst.',
       lede: '{e} privé-ervaringen die wij koppelen aan de villa\'s, elk geboekt op het weervenster, het daglicht en het tijdstip van inchecken.',
     },
     midnightSun: {
@@ -159,7 +159,7 @@ const nl: SiteCopy = {
     },
     about: {
       eyebrow: 'Over ons',
-      title: 'Een korte lijst, met opzet kort gehouden.',
+      title: 'Wie hierachter zit en wat wij niet doen.',
       lede: '{n} met zorg gekozen villa\'s en suites in Fins Lapland. Directe link naar de eigen boeking van het huis, geen platform ertussen, en uw gegevens gaan nergens heen totdat u zelf contact opneemt.',
     },
   },
@@ -267,14 +267,14 @@ const nl: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'Eén villa is hier verankerd.' : `${n} villa's zijn hier verankerd.`),
     fullCollection: 'Volledige collectie',
     inquiryTitle: (name) => `Plan een privéreis naar ${name}.`,
-    inquiryBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren (privékok, aankomst per helikopter, exclusief gebruik). Wij antwoorden binnen één werkdag met een shortlist.',
+    inquiryBody: 'Stuurt u uw data, gezelschap en eventuele voorkeuren (privékok, exclusief gebruik). Wij antwoorden binnen één werkdag met een shortlist.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Noorderlicht', intro: 'Het noorderlicht zelf is gratis. Wat hier wordt verkocht is de toegang, het juiste voertuig, de juiste gids en de juiste nacht onder het juiste wolkenvenster.' },
       wilderness: { title: 'Wildernis', intro: 'Privéversies van de ervaringen waarvoor iedereen naar Lapland komt, husky, sneeuwscooter, rendier, zonder de gedeelde bus en het rondje langs de gebaande paden.' },
       culinary: { title: 'Culinair', intro: 'Een werkende chef uit een van de serieuze keukens van Lapland, bij u in de villa, voor één avond, of het proefmenu ter plaatse wanneer de keuken de reden van uw komst is.' },
-      arrival: { title: 'Aankomst', intro: 'Privéjet, helikoptertransfer, voertuigen met arctische specificatie. Geboekt op het tijdslot, het daglichtvenster en het tijdstip van inchecken.' },
+      arrival: { title: 'Aankomst', intro: 'Privéjet, voertuigen met arctische specificatie. Geboekt op het tijdslot, het daglichtvenster en het tijdstip van inchecken.' },
     },
   },
   midnightSunPage: {
@@ -324,7 +324,7 @@ const nl: SiteCopy = {
       datesHint: 'bijv. "14–21 feb." of "eerste helft maart, 5 nachten"',
       datesPlaceholder: 'Optioneel',
       messageLabel: 'Iets specifieks',
-      messageHint: 'Privékok, aankomst per helikopter, exclusief gebruik, toegankelijkheid, dieet, focus op fotografie, alles wat de shortlist vormgeeft.',
+      messageHint: 'Privékok, exclusief gebruik, toegankelijkheid, dieet, focus op fotografie, alles wat de shortlist vormgeeft.',
       nameLabel: 'Naam (optioneel)',
       namePlaceholder: 'Anoniem indien leeg',
       emailLabel: 'Antwoord-e-mail',

@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, set.–abr.',
     },
-    'helicopter-aurora-flight': {
-      hook: 'Um voo noturno de helicóptero de 45 minutos acima da camada de nuvens, até as próprias auroras.',
-      copy: [
-        'Operado por um operador de helicópteros certificado para voo noturno VFR, a partir de Rovaniemi e Ivalo. O voo ultrapassa a camada de nuvens local e circula dentro do oval auroral ativo, uma perspectiva impossível a partir do solo.',
-        'A fotografia em terra está incluída antes e depois do voo; a parte no ar é para a experiência em si, não para a câmera. Máximo de quatro passageiros por AS350. Sujeito à janela meteorológica: o operador acompanha a previsão e avisa na véspera.',
-      ],
-      available: 'Rovaniemi, Ivalo, out.–mar. (depende do tempo)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'Um menu degustação finlandês-sámi de nove tempos, preparado na cozinha da sua villa por um chef em atividade da Lapônia.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Atendimento completo: transfer terrestre até a sua villa em um veículo aquecido de especificação ártica, bagagem encaminhada, alfândega liberada sem fila. O operador solicita o slot e ajusta a chegada ao horário de check-in da villa.',
       ],
       available: 'Todos os destinos, o ano todo',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Embarque a partir do aeroporto regional direto para o heliponto da sua villa, sem transfer rodoviário.',
-      copy: [
-        'Usado com mais frequência para chegadas às propriedades de madeira privativas à beira do Lago Inari. A aeronave é o mesmo AS350 usado nos voos de aurora; um único trecho leva de 20 a 45 minutos.',
-        'Máximo de cinco passageiros + bagagem. O operador ajusta o embarque ao check-in da villa e à janela de luz do dia, que no auge do inverno é apenas algumas horas de penumbra em torno do meio-dia, na latitude de Inari o sol não chega a nascer.',
-      ],
-      available: 'Rovaniemi, Ivalo → propriedades do Lago Inari',
     },
   },
 };

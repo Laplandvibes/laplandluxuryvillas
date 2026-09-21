@@ -143,12 +143,12 @@ const en: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Destinations',
-      title: 'Five places, each with a clear reason to be there.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi and Ylläs.',
       lede: 'Lapland is not one interchangeable place. How often the aurora shows, how you actually get there, and how many villas you can choose from all shift noticeably every 50 km north of the Arctic Circle.',
     },
     experiences: {
       eyebrow: 'Bespoke Experiences',
-      title: 'The day, before the night under the glass.',
+      title: 'Aurora, wilderness, dining and arrival.',
       lede: '{e} private experiences we pair with the villas. Each one is booked around the weather, the daylight and your villa check-in, so the timing actually works.',
     },
     midnightSun: {
@@ -165,7 +165,7 @@ const en: SiteCopy = {
     },
     about: {
       eyebrow: 'About',
-      title: 'A short list, kept short on purpose.',
+      title: 'Who is behind this, and what we do not do.',
       lede: '{n} hand-picked villas and suites in Finnish Lapland. A direct link to each property\'s own booking, no platform in between, and your details go nowhere until you make contact yourself.',
     },
   },
@@ -273,14 +273,14 @@ const en: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'One villa anchored here.' : `${n} villas anchored here.`),
     fullCollection: 'Full collection',
     inquiryTitle: (name) => `Plan a private ${name} trip.`,
-    inquiryBody: 'Send dates, headcount and any preferences (private chef, helicopter arrival, exclusive use). We reply with a shortlist within one working day.',
+    inquiryBody: 'Send dates, headcount and any preferences (private chef, exclusive use). We reply with a shortlist within one working day.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'The auroras themselves are free. What you are paying for is the access: the right vehicle, the right guide, and the right night under a clear sky.' },
       wilderness: { title: 'Wilderness', intro: 'Private versions of the things everyone comes to Lapland for, husky and snowmobile and reindeer, without the shared bus and the same loop everyone else does.' },
       culinary: { title: 'Culinary', intro: 'A working chef from one of Lapland\'s serious kitchens, in your villa, for the evening. Or the tasting menu on-site when the kitchen is the reason you came.' },
-      arrival: { title: 'Arrival', intro: 'Private jet, helicopter transfer, arctic-spec ground vehicles. Booked around your slot, the daylight, and the villa check-in.' },
+      arrival: { title: 'Arrival', intro: 'Private jet, arctic-spec ground vehicles. Booked around your slot, the daylight, and the villa check-in.' },
     },
   },
   midnightSunPage: {
@@ -330,7 +330,7 @@ const en: SiteCopy = {
       datesHint: 'e.g. \'Feb 14–21\' or \'first half of March, 5 nights\'',
       datesPlaceholder: 'Optional',
       messageLabel: 'Anything specific',
-      messageHint: 'Private chef, helicopter arrival, exclusive use, accessibility, dietary needs, a focus on photography. Anything that shapes the shortlist.',
+      messageHint: 'Private chef, exclusive use, accessibility, dietary needs, a focus on photography. Anything that shapes the shortlist.',
       nameLabel: 'Name (optional)',
       namePlaceholder: 'Anonymous if blank',
       emailLabel: 'Reply-to email',

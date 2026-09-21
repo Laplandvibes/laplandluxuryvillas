@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: '伊纳里（Inari）、萨利色尔卡（Saariselkä）、列维（Levi）、罗瓦涅米（Rovaniemi），9 月至 4 月',
     },
-    'helicopter-aurora-flight': {
-      hook: '一段 45 分钟的夜间直升机飞行，越过云层，直抵极光本身。',
-      copy: [
-        '由获得夜间目视飞行（VFR）认证的直升机运营商执飞，自罗瓦涅米（Rovaniemi）与伊瓦洛（Ivalo）起飞。飞行越过当地云层，在活跃的极光卵形带内盘旋、这是地面上无从获得的视角。',
-        '地面摄影在飞行前后两段均含其中；空中那段则专为体验本身而设，而非为相机。每架 AS350 至多搭载四名乘客。受天气窗口制约：由运营方追踪预报，并于前一日告知。',
-      ],
-      available: '罗瓦涅米（Rovaniemi）、伊瓦洛（Ivalo），10 月至 3 月（视天气而定）',
-    },
     'private-chef-arctic-tasting': {
       hook: '一份九道菜的芬兰-萨米品鉴菜单，由一位仍在掌勺的拉普兰主厨在你的别墅厨房中烹制。',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '全程操办：以极地规格的暖气车辆将你接送至别墅、行李转运、免排队清关。由运营方申报时刻，并将抵达时间与别墅入住时间相协调。',
       ],
       available: '所有目的地、全年',
-    },
-    'helicopter-villa-transfer': {
-      hook: '自支线机场直接接载至你别墅的停机坪、免去陆路接送。',
-      copy: [
-        '最常用于抵达伊纳里湖（Lake Inari）畔的私人原木宅邸。所用机型与极光飞行相同，皆为 AS350；单程一段需时 20 至 45 分钟。',
-        '至多五名乘客 + 行李。由运营方将接载与别墅入住及有光时段相协调；隆冬时节这个时段只有正午前后几小时的微光——在伊纳里的纬度，太阳根本不会升起。',
-      ],
-      available: '罗瓦涅米（Rovaniemi）、伊瓦洛（Ivalo）→ 伊纳里湖（Lake Inari）宅邸',
     },
   },
 };

@@ -137,12 +137,12 @@ const fr: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Destinations',
-      title: 'Cinq lieux, chacun avec une raison claire d’y être.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi et Ylläs.',
       lede: 'La Laponie n’est pas interchangeable. La fréquence des aurores, la logistique d’arrivée et la densité d’hébergement changent sensiblement tous les 50 km au nord du cercle polaire.',
     },
     experiences: {
       eyebrow: 'Expériences sur mesure',
-      title: 'La journée, avant la nuit sous le verre.',
+      title: 'Aurores, nature sauvage, gastronomie et arrivée.',
       lede: '{e} expériences privées que nous associons aux villas, chacune réservée en fonction de la fenêtre météo, des heures de lumière et de l’heure d’arrivée à la villa.',
     },
     midnightSun: {
@@ -158,7 +158,7 @@ const fr: SiteCopy = {
     },
     about: {
       eyebrow: 'À propos',
-      title: 'Une liste courte, gardée courte à dessein.',
+      title: 'Qui est derrière ce site, et ce que nous ne faisons pas.',
       lede: '{n} villas et suites triées sur le volet en Laponie finlandaise. Un lien direct vers la réservation propre à chaque maison, aucune plateforme entre les deux, et vos coordonnées ne vont nulle part avant que vous ne preniez contact vous-même.',
     },
   },
@@ -266,14 +266,14 @@ const fr: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'Une villa dans cette destination.' : `${n} villas dans cette destination.`),
     fullCollection: 'Collection complète',
     inquiryTitle: (name) => `Préparez un voyage privé à ${name}.`,
-    inquiryBody: 'Envoyez vos dates, le nombre de personnes et toute préférence (chef privé, arrivée en hélicoptère, usage exclusif). Nous répondons avec une présélection sous un jour ouvré.',
+    inquiryBody: 'Envoyez vos dates, le nombre de personnes et toute préférence (chef privé, usage exclusif). Nous répondons avec une présélection sous un jour ouvré.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurore', intro: 'Les aurores en elles-mêmes sont gratuites. Ce qui se vend ici, c’est l’accès, le bon véhicule, le bon guide et la bonne nuit sous la bonne éclaircie.' },
       wilderness: { title: 'Nature sauvage', intro: 'Les versions privées des expériences pour lesquelles tout le monde vient en Laponie, husky, motoneige, renne, sans le bus partagé ni le circuit en boucle.' },
       culinary: { title: 'Gastronomie', intro: 'Un chef en activité issu de l’une des cuisines sérieuses de Laponie, dans votre villa, le temps d’une soirée, ou le menu dégustation sur place quand la cuisine est la raison de votre venue.' },
-      arrival: { title: 'Arrivée', intro: 'Jet privé, transfert en hélicoptère, véhicules terrestres équipés pour l’Arctique. Réservés selon le créneau, la fenêtre de lumière et l’arrivée à la villa.' },
+      arrival: { title: 'Arrivée', intro: 'Jet privé, véhicules terrestres équipés pour l’Arctique. Réservés selon le créneau, la fenêtre de lumière et l’arrivée à la villa.' },
     },
   },
   midnightSunPage: {
@@ -323,7 +323,7 @@ const fr: SiteCopy = {
       datesHint: 'ex. « 14–21 fév. » ou « première moitié de mars, 5 nuits »',
       datesPlaceholder: 'Facultatif',
       messageLabel: 'Quelque chose de précis',
-      messageHint: 'Chef privé, arrivée en hélicoptère, usage exclusif, accessibilité, régime, intérêt pour la photographie, tout ce qui façonne la présélection.',
+      messageHint: 'Chef privé, usage exclusif, accessibilité, régime, intérêt pour la photographie, tout ce qui façonne la présélection.',
       nameLabel: 'Nom (facultatif)',
       namePlaceholder: 'Anonyme si vide',
       emailLabel: 'E-mail de réponse',
@@ -504,10 +504,10 @@ Object.assign(fr.affiliateDisclosure, {
   full: 'Cette page contient des liens d\'affiliation. Si vous réservez via ces liens, LaplandLuxuryVillas peut percevoir une commission sans coût supplémentaire pour vous.',
 })
 fr.hero.suites = { eyebrow: 'Suites design', title: 'Quand vous n\'avez pas besoin d\'une villa, mais bien du toit de verre.', lede: 'Une courte liste de suites une-chambre et de cabines à aurore où l\'architecture est l\'expérience. Effectif réduit, même plafond panoramique.' }
-fr.hero.destinations = { eyebrow: 'Destinations', title: 'Cinq lieux, chacun avec une raison claire d\'y être.', lede: 'La Laponie n\'est pas interchangeable. La fréquence d\'aurore, la logistique d\'arrivée et la densité d\'hébergement changent de façon significative tous les 50 km au nord du cercle polaire.' }
-fr.hero.experiences = { eyebrow: 'Expériences sur mesure', title: 'La journée, avant la nuit sous le verre.', lede: 'Huit expériences privées que nous associons aux villas, chacune réservée selon la fenêtre météo, la lumière du jour et l\'horaire d\'enregistrement.' }
+fr.hero.destinations = { eyebrow: 'Destinations', title: 'Saariselkä, Inari, Rovaniemi, Levi et Ylläs.', lede: 'La Laponie n\'est pas interchangeable. La fréquence d\'aurore, la logistique d\'arrivée et la densité d\'hébergement changent de façon significative tous les 50 km au nord du cercle polaire.' }
+fr.hero.experiences = { eyebrow: 'Expériences sur mesure', title: 'Aurores, nature sauvage, gastronomie et arrivée.', lede: 'Huit expériences privées que nous associons aux villas, chacune réservée selon la fenêtre météo, la lumière du jour et l\'horaire d\'enregistrement.' }
 fr.hero.inquiry = { eyebrow: 'Demande privée', title: 'Un message privé, une présélection sur mesure.', lede: 'Envoyez dates, effectif et le type de voyage envisagé. Nous répondons en un jour ouvré.' }
-fr.hero.about = { eyebrow: 'À propos', title: 'Une liste courte, gardée courte volontairement.', lede: 'Huit villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme intermédiaire.' }
+fr.hero.about = { eyebrow: 'À propos', title: 'Qui est derrière ce site, et ce que nous ne faisons pas.', lede: 'Huit villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme intermédiaire.' }
 fr.home = {
   ...fr.home,
   philosophy: { eyebrow: 'Notre façon de travailler', h2: 'L\'opposé d\'une plateforme de réservation.',
@@ -538,14 +538,14 @@ Object.assign(fr.destinationPage, {
   villasHereH2: (n: number) => (n === 1 ? 'Une villa ancrée ici.' : `${n} villas ancrées ici.`),
   fullCollection: 'Collection complète',
   inquiryTitle: (name: string) => `Planifier un séjour privé à ${name}.`,
-  inquiryBody: 'Envoyez dates, effectif et préférences (chef privé, arrivée en hélicoptère, usage exclusif). Nous répondons par une présélection en un jour ouvré.',
+  inquiryBody: 'Envoyez dates, effectif et préférences (chef privé, usage exclusif). Nous répondons par une présélection en un jour ouvré.',
 })
 Object.assign(fr.experiencesPage, {
   sections: {
     aurora: { title: 'Aurore', intro: 'Les aurores elles-mêmes sont gratuites. Ce qui se vend ici est l\'accès, le bon véhicule, le bon guide et la bonne nuit sous la bonne fenêtre nuageuse.' },
     wilderness: { title: 'Nature sauvage', intro: 'Versions privées des expériences pour lesquelles tout le monde vient en Laponie, husky, motoneige, renne, sans le bus partagé ni le sentier en boucle.' },
     culinary: { title: 'Gastronomie', intro: 'Un chef en activité issu d\'une des cuisines sérieuses de la Laponie, dans votre villa, pour une soirée, ou la dégustation sur place quand la cuisine est la raison de la venue.' },
-    arrival: { title: 'Arrivée', intro: 'Jet privé, transfert hélicoptère, véhicules au sol arctiques. Réservés selon le créneau, la fenêtre de lumière et l\'enregistrement.' },
+    arrival: { title: 'Arrivée', intro: 'Jet privé, véhicules au sol arctiques. Réservés selon le créneau, la fenêtre de lumière et l\'enregistrement.' },
   },
 })
 Object.assign(fr.midnightSunPage, {
@@ -572,7 +572,7 @@ Object.assign(fr.inquiryPage, {
   intro: 'Cinq champs courts. Plus les préférences et contraintes sont précises, plus la présélection est utile. Nom et e-mail restent facultatifs, les réponses partent vers l\'adresse d\'origine du message.',
   fields: { headcount: 'Effectif', tripIntent: 'Intention de voyage', budget: 'Budget indicatif par nuit',
     datesLabel: 'Dates (ou fenêtre)', datesHint: 'p. ex. « 14–21 février » ou « première moitié de mars, 5 nuits »', datesPlaceholder: 'Facultatif',
-    messageLabel: 'Quelque chose de spécifique', messageHint: 'Chef privé, arrivée en hélicoptère, usage exclusif, accessibilité, régime, photographie, tout ce qui façonne la présélection.',
+    messageLabel: 'Quelque chose de spécifique', messageHint: 'Chef privé, usage exclusif, accessibilité, régime, photographie, tout ce qui façonne la présélection.',
     nameLabel: 'Nom (facultatif)', namePlaceholder: 'Anonyme si vide', emailLabel: 'E-mail de réponse', emailHint: 'Si vide, les réponses partent vers votre adresse d\'envoi.', emailPlaceholder: 'facultatif' },
   options: {
     headcount: ['1–2 voyageurs', '3–4 voyageurs', '5–6 voyageurs', '7–10 voyageurs', 'Groupe plus important'],

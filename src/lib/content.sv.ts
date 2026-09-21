@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, sep–apr',
     },
-    'helicopter-aurora-flight': {
-      hook: 'En 45 minuter lång helikopterflygning på natten ovanför molntäcket, ända upp till norrskenet självt.',
-      copy: [
-        'Utförs av en helikopteroperatör certifierad för natt-VFR, från Rovaniemi och Ivalo. Flygningen bryter igenom det lokala molntäcket och cirklar inom den aktiva norrskensovalen, ett perspektiv som är omöjligt från marken.',
-        'Fotografering på marken ingår på ömse sidor om flygningen; delen i luften är för själva upplevelsen, inte för kameran. Högst fyra passagerare per AS350. Beroende av väderfönstret: operatören följer prognosen och meddelar dagen innan.',
-      ],
-      available: 'Rovaniemi, Ivalo, okt–mars (väderberoende)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'En finsk-samisk avsmakningsmeny i nio rätter, tillagad i ditt villakök av en yrkesverksam Lapplandskock.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Fullständig hantering: marktransfer till din villa med ett uppvärmt fordon av arktisk specifikation, bagage vidarebefordrat, tull utan kö. Operatören lämnar in slottiden och stämmer av ankomsten mot villans incheckningstid.',
       ],
       available: 'Alla resmål, året runt',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Upphämtning från den regionala flygplatsen direkt till din villas landningsplats, ingen vägtransfer.',
-      copy: [
-        'Används oftast för ankomster till de privata strandnära timmergårdarna vid Enaresjön. Farkosten är samma AS350 som används för norrskensflygningarna; en sträcka tar 20 till 45 minuter.',
-        'Högst fem passagerare + bagage. Operatören stämmer av upphämtningen mot villans incheckning och dagsljusfönstret, som mitt i vintern bara är några skymningstimmar kring middagstid, på Inaris breddgrad går solen inte upp alls.',
-      ],
-      available: 'Rovaniemi, Ivalo → gårdarna vid Enaresjön',
     },
   },
 };

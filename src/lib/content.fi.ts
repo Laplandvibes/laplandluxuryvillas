@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, syys–huhtikuu',
     },
-    'helicopter-aurora-flight': {
-      hook: '45 minuutin yölentohelikopterilla pilvikerroksen yläpuolelle, suoraan revontulien luo.',
-      copy: [
-        'Lentoa operoi yö-VFR-sertifioitu helikopterioperaattori Rovaniemeltä ja Ivalosta. Lento nousee paikallisen pilvikerroksen yli ja kiertää aktiivisen revontuliovaalin sisällä, näkökulma, joka on maasta mahdoton.',
-        'Maakuvaus sisältyy lennon kummallekin puolelle; itse lento-osuus on elämystä, ei kameraa varten. Enintään neljä matkustajaa AS350-konetta kohti. Säärajoitteinen: operaattori seuraa ennustetta ja ilmoittaa edellisenä päivänä.',
-      ],
-      available: 'Rovaniemi, Ivalo, loka–maaliskuu (sääriippuvainen)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'Yhdeksän ruokalajin suomalais-saamelainen maistelumenu, jonka työssä käyvä Lapin kokki valmistaa huvilasi keittiössä.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Täysi käsittely: maakuljetus huvilallesi lämmitetyllä arktisen tason autolla, matkatavarat eteenpäin, tulli ohi ilman jonoa. Operaattori varaa lähtöslotin ja sovittaa saapumisen huvilan sisäänkirjautumisaikaan.',
       ],
       available: 'Kaikki kohteet, ympäri vuoden',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Nosto alueen lentoasemalta suoraan huvilasi laskeutumispaikalle, ei maakuljetusta.',
-      copy: [
-        'Käytetään useimmiten saavuttaessa Inarijärven yksityisille rantojen hirsitiloille. Kone on sama AS350, jota revontulilennoilla käytetään; yksi sektori kestää 20–45 minuuttia.',
-        'Enintään viisi matkustajaa + matkatavarat. Operaattori ajoittaa noston huvilan sisäänkirjautumiseen ja valoisaan aikaan, joka on keskitalvella vain muutama hämärän tunti keskipäivän molemmin puolin, Inarin leveysasteella aurinko ei nouse lainkaan.',
-      ],
-      available: 'Rovaniemi, Ivalo → Inarijärven tilat',
     },
   },
 };

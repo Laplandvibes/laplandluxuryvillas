@@ -137,12 +137,12 @@ const ko: SiteCopy = {
     },
     destinations: {
       eyebrow: '여행지',
-      title: '다섯 곳, 저마다 그곳이어야 할 분명한 이유가 있습니다.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi, Ylläs.',
       lede: '라플란드는 어디나 같지 않습니다. 북극권에서 북쪽으로 50km씩 올라갈 때마다 오로라 빈도, 도착 동선, 숙소 밀도가 뚜렷이 달라집니다.',
     },
     experiences: {
       eyebrow: '맞춤 체험',
-      title: '유리 아래의 밤, 그 전에 보내는 하루.',
+      title: '오로라, 야생, 미식 그리고 도착.',
       lede: '빌라와 함께 엮는 {eFig}가지 프라이빗 체험, 각각 날씨 창, 일조 시간, 빌라 체크인 시각에 맞춰 예약합니다.',
     },
     midnightSun: {
@@ -158,7 +158,7 @@ const ko: SiteCopy = {
     },
     about: {
       eyebrow: '소개',
-      title: '일부러 짧게 유지하는 짧은 목록.',
+      title: '누가 만드는지, 그리고 무엇을 하지 않는지.',
       lede: '핀란드 라플란드에서 엄선한 빌라와 스위트 {nFig}곳. 각 숙소의 예약 페이지로 바로 연결되며 중간 플랫폼이 없습니다. 직접 연락하기 전에는 정보가 어디에도 전달되지 않습니다.',
     },
   },
@@ -266,14 +266,14 @@ const ko: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? '이 여행지에 빌라 1채가 있습니다.' : `이 여행지에 빌라 ${n}채가 있습니다.`),
     fullCollection: '전체 컬렉션',
     inquiryTitle: (name) => `프라이빗 ${name} 여행을 설계해 보세요.`,
-    inquiryBody: '날짜, 인원, 그리고 모든 선호 사항(프라이빗 셰프, 헬리콥터 도착, 단독 사용)을 보내 주세요. 영업일 기준 하루 안에 추천 목록과 함께 답장해 드립니다.',
+    inquiryBody: '날짜, 인원, 그리고 모든 선호 사항(프라이빗 셰프, 단독 사용)을 보내 주세요. 영업일 기준 하루 안에 추천 목록과 함께 답장해 드립니다.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: '오로라', intro: '오로라 자체는 무료입니다. 여기서 제공하는 것은 접근입니다. 알맞은 차량, 알맞은 가이드, 그리고 알맞은 구름 사이로 맞이하는 알맞은 밤.' },
       wilderness: { title: '야생', intro: '모두가 라플란드를 찾는 이유인 체험, 허스키, 스노모빌, 순록의 프라이빗 버전. 합승 버스도, 순환 코스도 없습니다.' },
       culinary: { title: '미식', intro: '라플란드의 진지한 주방에서 활동하는 현역 셰프를 빌라로 모셔 보내는 하룻저녁, 또는 주방 그 자체가 방문의 이유가 되는 곳에서의 온프로퍼티 테이스팅 메뉴.' },
-      arrival: { title: '도착', intro: '프라이빗 제트기, 헬리콥터 이동, 북극 사양 지상 차량. 시간대, 일조 창, 빌라 체크인에 맞춰 예약합니다.' },
+      arrival: { title: '도착', intro: '프라이빗 제트기, 북극 사양 지상 차량. 시간대, 일조 창, 빌라 체크인에 맞춰 예약합니다.' },
     },
   },
   midnightSunPage: {
@@ -323,7 +323,7 @@ const ko: SiteCopy = {
       datesHint: "예: '2월 14–21일' 또는 '3월 전반, 5박'",
       datesPlaceholder: '선택',
       messageLabel: '특별히 원하시는 점',
-      messageHint: '프라이빗 셰프, 헬리콥터 도착, 단독 사용, 접근성, 식이, 사진 촬영 중심, 추천 목록에 반영할 점이라면 무엇이든.',
+      messageHint: '프라이빗 셰프, 단독 사용, 접근성, 식이, 사진 촬영 중심, 추천 목록에 반영할 점이라면 무엇이든.',
       nameLabel: '이름(선택)',
       namePlaceholder: '비워 두시면 익명',
       emailLabel: '회신 이메일',
@@ -505,10 +505,10 @@ Object.assign(ko.affiliateDisclosure, {
   full: '이 페이지는 제휴 링크를 포함합니다. 이 링크를 통해 예약하시면 귀하에게 추가 비용이 발생하지 않으며, LaplandLuxuryVillas가 수수료를 받습니다.',
 })
 ko.hero.suites = { eyebrow: '디자이너 스위트', title: '빌라가 필요하지 않을 때, 그러나 글래스 루프는 필요할 때.', lede: '건축 자체가 경험인, 침실 하나 스위트와 오로라 캐빈의 짧은 목록. 더 적은 인원, 같은 파노라마 천장.' }
-ko.hero.destinations = { eyebrow: '여행지', title: '다섯 곳, 각각 그곳에 있을 분명한 이유.', lede: '라플란드는 균질하지 않습니다. 오로라 빈도, 도착 동선, 숙박 밀도는 북극권 이북 50km마다 의미 있게 달라집니다.' }
-ko.hero.experiences = { eyebrow: '비스포크 체험', title: '글래스 아래의 밤, 그 전의 낮.', lede: '빌라와 함께 매치하는 여덟 가지 프라이빗 체험, 각각 날씨 창, 일조 시간, 빌라 체크인에 맞춰 예약됩니다.' }
+ko.hero.destinations = { eyebrow: '여행지', title: 'Saariselkä, Inari, Rovaniemi, Levi, Ylläs.', lede: '라플란드는 균질하지 않습니다. 오로라 빈도, 도착 동선, 숙박 밀도는 북극권 이북 50km마다 의미 있게 달라집니다.' }
+ko.hero.experiences = { eyebrow: '비스포크 체험', title: '오로라, 야생, 미식 그리고 도착.', lede: '빌라와 함께 매치하는 여덟 가지 프라이빗 체험, 각각 날씨 창, 일조 시간, 빌라 체크인에 맞춰 예약됩니다.' }
 ko.hero.inquiry = { eyebrow: '비공개 문의', title: '하나의 비공개 메시지, 하나의 큐레이션된 셔틀리스트.', lede: '일정, 인원, 원하시는 여행의 성격을 보내주세요. 영업일 1일 이내에 답변 드립니다.' }
-ko.hero.about = { eyebrow: '소개', title: '의도적으로 짧게 유지된 짧은 목록.', lede: '핀란드 라플란드에서 손수 고른 빌라와 스위트 여덟 채. 익명 문의, 각 숙소의 예약 페이지로 바로 연결, 중간 플랫폼 없음.' }
+ko.hero.about = { eyebrow: '소개', title: '누가 만드는지, 그리고 무엇을 하지 않는지.', lede: '핀란드 라플란드에서 손수 고른 빌라와 스위트 여덟 채. 익명 문의, 각 숙소의 예약 페이지로 바로 연결, 중간 플랫폼 없음.' }
 ko.home = {
   ...ko.home,
   philosophy: {

@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, Sep.–Apr.',
     },
-    'helicopter-aurora-flight': {
-      hook: 'Ein 45-minütiger Nachthubschrauberflug über die Wolkendecke zu den Polarlichtern selbst.',
-      copy: [
-        'Betrieben von einem nach Nacht-VFR zertifizierten Hubschrauberbetreiber ab Rovaniemi und Ivalo. Der Flug durchstößt die lokale Wolkendecke und kreist innerhalb des aktiven Polarlichtovals, eine vom Boden aus unmögliche Perspektive.',
-        'Bodenfotografie ist auf beiden Seiten des Fluges inbegriffen; der Flugteil selbst ist dem Erlebnis gewidmet, nicht der Kamera. Maximal vier Passagiere pro AS350. Wetterfensterabhängig: der Betreiber verfolgt die Prognose und benachrichtigt am Vortag.',
-      ],
-      available: 'Rovaniemi, Ivalo, Okt.–März (wetterabhängig)',
-    },
     'private-chef-arctic-tasting': {
       hook: 'Ein neungängiges finnisch-samisches Degustationsmenü, in Ihrer Villenküche von einem tätigen Lappland-Küchenchef zubereitet.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         'Vollständige Abfertigung: Bodentransfer zu Ihrer Villa mit einem beheizten Fahrzeug in arktischer Ausführung, Gepäckweiterleitung, Zollabfertigung ohne Warteschlange. Der Betreiber meldet den Slot an und stimmt die Ankunft auf die Check-in-Zeit der Villa ab.',
       ],
       available: 'Alle Reiseziele, ganzjährig',
-    },
-    'helicopter-villa-transfer': {
-      hook: 'Aufnahme vom Regionalflughafen direkt zum Landeplatz Ihrer Villa, kein Straßentransfer.',
-      copy: [
-        'Am häufigsten genutzt für Ankünfte zu den privaten Blockhaus-Anwesen am Ufer des Inarisees. Das Fluggerät ist derselbe AS350, der für die Polarlichtflüge eingesetzt wird; ein einzelner Abschnitt dauert 20–45 Minuten.',
-        'Maximal fünf Passagiere + Gepäck. Der Betreiber stimmt die Aufnahme auf das Check-in der Villa und das Tageslichtfenster ab, das im Hochwinter nur wenige Dämmerstunden um die Mittagszeit umfasst, auf der Breite von Inari geht die Sonne gar nicht auf.',
-      ],
-      available: 'Rovaniemi, Ivalo → Anwesen am Inarisee',
     },
   },
 };

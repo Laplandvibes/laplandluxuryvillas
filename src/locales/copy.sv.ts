@@ -137,12 +137,12 @@ const sv: SiteCopy = {
     },
     destinations: {
       eyebrow: 'Resmål',
-      title: 'Fem platser, var och en med ett tydligt skäl att vara där.',
+      title: 'Saariselkä, Inari, Rovaniemi, Levi och Ylläs.',
       lede: 'Lappland är inte utbytbart. Norrskensfrekvensen, ankomstlogistiken och boendetätheten ändras märkbart var 50:e km norr om polcirkeln.',
     },
     experiences: {
       eyebrow: 'Skräddarsydda upplevelser',
-      title: 'Dagen, före natten under glaset.',
+      title: 'Norrsken, vildmark, kulinariskt och ankomst.',
       lede: '{e} privata upplevelser som vi kopplar till villorna, var och en bokad efter väderfönstret, dagsljuset och incheckningstiden.',
     },
     midnightSun: {
@@ -159,7 +159,7 @@ const sv: SiteCopy = {
     },
     about: {
       eyebrow: 'Om oss',
-      title: 'En kort lista, medvetet hållen kort.',
+      title: 'Vilka vi är och vad vi inte gör.',
       lede: '{n} handplockade villor och sviter i finska Lappland. Direktlänk till ställets egen bokning, ingen plattform emellan, och era uppgifter går ingenstans förrän ni själva hör av er.',
     },
   },
@@ -267,14 +267,14 @@ const sv: SiteCopy = {
     villasHereH2: (n) => (n === 1 ? 'En villa är förankrad här.' : `${n} villor är förankrade här.`),
     fullCollection: 'Hela kollektionen',
     inquiryTitle: (name) => `Planera en privat resa till ${name}.`,
-    inquiryBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål (privatkock, ankomst med helikopter, exklusiv användning). Vi svarar inom en arbetsdag med en kortlista.',
+    inquiryBody: 'Du skickar dina datum, ditt sällskap och eventuella önskemål (privatkock, exklusiv användning). Vi svarar inom en arbetsdag med en kortlista.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Norrsken', intro: 'Norrskenet självt är gratis. Det som säljs här är tillgången, rätt fordon, rätt guide och rätt natt under rätt molnfönster.' },
       wilderness: { title: 'Vildmark', intro: 'Privata versioner av upplevelserna alla kommer till Lappland för, hundspann, snöskoter, ren, utan den delade bussen och rundan längs upptrampade stigar.' },
       culinary: { title: 'Kulinariskt', intro: 'En yrkesverksam kock från ett av Lapplands seriösa kök, hemma i din villa, för en kväll, eller avsmakningsmenyn på plats när köket är skälet till att du kommit.' },
-      arrival: { title: 'Ankomst', intro: 'Privatjet, helikoptertransfer, fordon med arktisk specifikation. Bokat efter tidsluckan, dagsljusfönstret och incheckningstiden.' },
+      arrival: { title: 'Ankomst', intro: 'Privatjet, fordon med arktisk specifikation. Bokat efter tidsluckan, dagsljusfönstret och incheckningstiden.' },
     },
   },
   midnightSunPage: {
@@ -324,7 +324,7 @@ const sv: SiteCopy = {
       datesHint: 't.ex. "14–21 feb." eller "första halvan av mars, 5 nätter"',
       datesPlaceholder: 'Valfritt',
       messageLabel: 'Något särskilt',
-      messageHint: 'Privatkock, ankomst med helikopter, exklusiv användning, tillgänglighet, kost, fokus på fotografi, allt som formar kortlistan.',
+      messageHint: 'Privatkock, exklusiv användning, tillgänglighet, kost, fokus på fotografi, allt som formar kortlistan.',
       nameLabel: 'Namn (valfritt)',
       namePlaceholder: 'Anonymt om tomt',
       emailLabel: 'Svars-e-post',

@@ -214,14 +214,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       ],
       available: 'Inari, Saariselkä, Levi, Rovaniemi, 9월~4월',
     },
-    'helicopter-aurora-flight': {
-      hook: '구름층 위로, 오로라 그 자체를 향하는 45분간의 야간 헬리콥터 비행.',
-      copy: [
-        'Rovaniemi와 Ivalo를 거점으로, 야간 VFR 공인 헬리콥터 운항사가 운항합니다. 비행은 현지 구름층을 뚫고 활성 오로라 오벌 안쪽을 선회합니다. 지상에서는 불가능한 시점입니다.',
-        '지상 촬영은 비행 전후에 포함됩니다. 비행 시간 자체는 카메라가 아니라 경험을 위한 것입니다. AS350 한 대당 최대 4명. 기상 창에 좌우되며, 운항사가 예보를 추적해 전날 안내합니다.',
-      ],
-      available: 'Rovaniemi, Ivalo, 10월~3월 (날씨에 따라)',
-    },
     'private-chef-arctic-tasting': {
       hook: '현역 라플란드 셰프가 당신의 빌라 주방에서 요리하는 9코스 핀란드-사미 테이스팅 메뉴.',
       copy: [
@@ -261,14 +253,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
         '전 과정 처리: 극지 사양 난방 차량으로 빌라까지 육상 이동, 수하물 전달, 줄 없는 세관 통과. 운항사가 슬롯을 신청하고 도착을 빌라 체크인 시간에 맞춥니다.',
       ],
       available: '모든 목적지, 연중',
-    },
-    'helicopter-villa-transfer': {
-      hook: '지역 공항에서 당신의 빌라 착륙장으로 곧장 픽업, 도로 이동 없음.',
-      copy: [
-        'Inari 호숫가의 전용 통나무 에스테이트로 가는 도착에 가장 자주 쓰입니다. 기체는 오로라 비행에 쓰이는 것과 같은 AS350이며, 편도 한 구간은 20~45분이 걸립니다.',
-        '최대 5명 + 수하물. 운항사가 픽업을 빌라 체크인과 밝은 시간대에 맞춥니다. 한겨울의 그 시간대는 정오 무렵의 박명 몇 시간뿐이며, 이나리 위도에서는 해가 아예 뜨지 않습니다.',
-      ],
-      available: 'Rovaniemi, Ivalo → Inari 호수 에스테이트',
     },
   },
 };
