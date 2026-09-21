@@ -148,8 +148,8 @@ const ptBR: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Experiências sob medida',
-      title: 'Aurora, natureza selvagem, gastronomia e chegada.',
-      lede: '{e} experiências privadas que combinamos com as vilas, cada uma reservada conforme a janela do tempo, as horas de luz e o horário de check-in da vila.',
+      title: 'Aurora, natureza selvagem e outros passeios privativos.',
+      lede: 'Cada passeio aqui é privativo e reservado na página do próprio operador. O preço e as datas livres estão lá antes de qualquer compromisso.',
     },
     midnightSun: {
       eyebrow: '6 jun – 7 jul',
@@ -278,9 +278,9 @@ const ptBR: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'As auroras em si são gratuitas. O que se oferece aqui é o acesso, o veículo certo, o guia certo e a noite certa sob a janela de céu limpo certa.' },
-      wilderness: { title: 'Natureza selvagem', intro: 'Versões privadas das experiências pelas quais todos vêm à Lapônia, husky, snowmobile, rena, sem o ônibus compartilhado e o trajeto circular.' },
-      culinary: { title: 'Gastronomia', intro: 'Um chef em atividade de uma das cozinhas sérias da Lapônia, na sua vila, por uma noite, ou o menu-degustação na propriedade quando a cozinha é o motivo da sua vinda.' },
-      arrival: { title: 'Chegada', intro: 'Jato particular, veículos terrestres preparados para o Ártico. Reservados conforme o horário, a janela de luz e o check-in da vila.' },
+      wilderness: { title: 'Natureza selvagem', intro: 'Snowmobile, renas, um quebra-gelo e o lago Inari. Versões privativas daquilo que leva as pessoas à Lapônia, sem ônibus compartilhado nem o mesmo trajeto de todo mundo.' },
+      other: { title: 'Outros passeios privativos', intro: 'Papai Noel na vila, um fotógrafo para o noivado e uma expedição de quatro dias ao oceano Ártico. Tudo privativo, tudo reservável.' },
+      onRequest: { eyebrow: 'Sob consulta', title: 'Chef e traslados: perguntamos por você.', intro: 'Não temos um produto reservável para chef particular nem para traslado do aeroporto, por isso não há cartão aqui. Conte o que deseja na consulta: perguntamos à propriedade e voltamos com a resposta.', cta: 'Enviar consulta' },
     },
   },
   midnightSunPage: {

@@ -142,8 +142,8 @@ const nl: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Ervaringen op maat',
-      title: 'Noorderlicht, wildernis, culinair en aankomst.',
-      lede: '{e} privé-ervaringen die wij koppelen aan de villa\'s, elk geboekt op het weervenster, het daglicht en het tijdstip van inchecken.',
+      title: 'Noorderlicht, wildernis en andere privétochten.',
+      lede: 'Elke tocht hier is privé en wordt geboekt op de pagina van de aanbieder zelf. Prijs en vrije data staan daar voordat u zich vastlegt.',
     },
     midnightSun: {
       eyebrow: '6 juni – 7 juli',
@@ -272,9 +272,9 @@ const nl: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Noorderlicht', intro: 'Het noorderlicht zelf is gratis. Wat hier wordt verkocht is de toegang, het juiste voertuig, de juiste gids en de juiste nacht onder het juiste wolkenvenster.' },
-      wilderness: { title: 'Wildernis', intro: 'Privéversies van de ervaringen waarvoor iedereen naar Lapland komt, husky, sneeuwscooter, rendier, zonder de gedeelde bus en het rondje langs de gebaande paden.' },
-      culinary: { title: 'Culinair', intro: 'Een werkende chef uit een van de serieuze keukens van Lapland, bij u in de villa, voor één avond, of het proefmenu ter plaatse wanneer de keuken de reden van uw komst is.' },
-      arrival: { title: 'Aankomst', intro: 'Privéjet, voertuigen met arctische specificatie. Geboekt op het tijdslot, het daglichtvenster en het tijdstip van inchecken.' },
+      wilderness: { title: 'Wildernis', intro: 'Sneeuwscooter, rendier, een ijsbreker en het Inarimeer. Privéversies van waarvoor men naar Lapland komt, zonder gedeelde bus en zonder hetzelfde rondje als iedereen.' },
+      other: { title: 'Overige privétochten', intro: 'De Kerstman in de villa, een fotograaf voor een verloving en een vierdaagse expeditie naar de Noordelijke IJszee. Alles privé, alles te boeken.' },
+      onRequest: { eyebrow: 'Op aanvraag', title: 'Kok en transfers: wij vragen het voor u.', intro: 'Voor een privékok of een luchthaventransfer hebben wij geen boekbaar product, daarom staat er hier geen kaart. Zet uw wens in de aanvraag, dan vragen wij het bij het huis en komen we terug met het antwoord.', cta: 'Aanvraag versturen' },
     },
   },
   midnightSunPage: {

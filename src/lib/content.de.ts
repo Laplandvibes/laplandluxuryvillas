@@ -164,7 +164,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Die Ankunftsstadt. Architektengeplante Suiten, tägliche Direktflüge von großen Drehkreuzen.',
       copy: [
         'Rovaniemi ist die Regionalhauptstadt Lapplands und das am einfachsten erreichbare Polarlichtziel: mehrere tägliche Direktflüge ab Helsinki sowie saisonale Direktflüge aus London, Frankfurt, Paris, Wien und der Golfregion. Der Flughafen liegt rund 10 km nördlich des Stadtzentrums, zehn bis fünfzehn Minuten mit dem Auto.',
-        'Das Luxusangebot baut hier auf architektengeplante Designersuiten innerhalb von zehn Minuten zum Flughafen (Arctic TreeHouse, Apukka). Helikoptertransfers vom Flughafen zu abgelegenen Wildnisreservaten sind üblich.',
+        'Das Luxusangebot baut hier auf architektengeplante Designersuiten innerhalb von zehn Minuten zum Flughafen (Arctic TreeHouse, Apukka).',
       ],
       highlights: [
         'Arctic TreeHouse Hotel, von Studio Puisto entworfene auskragende Suiten',
@@ -206,54 +206,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     },
   },
   experiences: {
-    'private-aurora-photography-night': {
-      hook: 'Ein einziger Guide, Ihre Gruppe und ein beheiztes Fotofahrzeug, das der Prognose folgt, wohin sie auch zeigt.',
-      copy: [
-        'Eine sechsstündige private Polarlichtjagd mit einem zertifizierten finnischen Naturfotografie-Guide. Das Fahrzeug ist beheizt und ausgestattet; Stative, Kabelauslöser und arktistaugliche Kameras werden geliehen, wenn Sie keine eigenen mitbringen. Die Route wird am selben Nachmittag anhand des Kp-Index und der Bewölkungsprognose festgelegt.',
-        'Warme Speisen und Rentierfelle als Bodenunterlage sind Standard. Das Coaching umfasst die Belichtung der Polarlichter selbst, die Vordergrundkomposition und die Nachbearbeitung noch am selben Abend.',
-      ],
-      available: 'Inari, Saariselkä, Levi, Rovaniemi, Sep.–Apr.',
-    },
-    'private-chef-arctic-tasting': {
-      hook: 'Ein neungängiges finnisch-samisches Degustationsmenü, in Ihrer Villenküche von einem tätigen Lappland-Küchenchef zubereitet.',
-      copy: [
-        'Ein tätiger Küchenchef aus einer der ernstzunehmenden Küchen Lapplands kommt für einen Abend in Ihre Villa. Das Menü wird um das aufgebaut, was in jener Woche tatsächlich Saison hat: Kaltwasser-Saibling, Moltebeere, geräuchertes Rentier, frische Waldpilze, Sanddorn, Wacholder.',
-        'Inklusive einer auf das Menü abgestimmten Weinbegleitung, Zutaten, Vorbereitung, Service und Aufräumen. Maximal zehn Gäste. Vegetarische, glutenfreie und schalentierfreie Menüs auf Anfrage, mit mindestens 72 Stunden Vorlauf.',
-      ],
-      available: 'Jede Villa der Kollektion, ganzjährig',
-    },
-    'private-husky-safari': {
-      hook: 'Ihr eigenes Schlittengespann, Ihr eigener Musher, hinein in den borealen Wald im ersten Licht.',
-      copy: [
-        'Ein privates Gespann aus sechzehn Schlittenhunden und ein Musher. Die Route führt in das Wegenetz einer ernstzunehmenden Huskyfarm, typischerweise 35 km, mit einer Feuerpause für heißen Preiselbeersaft und gegrillte Wurst auf halber Strecke.',
-        'Sie lenken Ihren eigenen Schlitten (zuvor eine 20-minütige Einweisung). Wolloveralls, Fäustlinge und arktische Stiefel werden gestellt. Gruppe von zwei bis sechs Personen, keine geteilten Gruppen, nie mit Fremden zusammengelegt.',
-      ],
-      available: 'Rovaniemi, Levi, Saariselkä, Dez.–Apr.',
-    },
-    'private-snowmobile-wilderness': {
-      hook: 'Eine geführte 80-km-Schneemobilroute durch zugefrorene Seen und unberührten Wald, mit einem über Holzfeuer zubereiteten Mittagessen.',
-      copy: [
-        'Eine ganztägige geführte Schneemobilroute auf den oberen Fjälltrails, das Netz, das die einheimischen Guides nutzen, nicht die Touristenschleife. Das Mittagessen wird vom Guide über einem Feuer am Trail gekocht (Rentiereintopf, im Feuer gebackenes Brot, heißer Saft).',
-        'BRP-Maschinen, Helme, Sturmhauben und Wolloveralls inbegriffen. Zweisitzer-Schlitten verfügbar. Führerschein für den Fahrer erforderlich; der Beifahrersitz benötigt keinen. Maximal vier Schlitten pro Gruppe.',
-      ],
-      available: 'Saariselkä, Inari, Levi, Dez.–Apr.',
-    },
-    'private-reindeer-sami-evening': {
-      hook: 'Rentierschlittenfahrt auf einem bewirtschafteten Rentierhof, danach ein Abend in einer privaten Kota mit einem samischen Gastgeber.',
-      copy: [
-        'Zwei Stunden Rentierschlittenfahrt auf einem bewirtschafteten Rentierhof, gefolgt von einem privaten Abend in einer beheizten Kota (Tipi mit offenem Feuer). Der Gastgeber ist ein samischer Rentierzüchter, der die Farm führt, das Gespräch, kein Skript, ist das Erlebnis.',
-        'Zum Abendessen sautiertes Rentier mit Kartoffelpüree und Preiselbeeren, über offenem Feuer zubereitet. Geschichten über die Herde, das Wanderjahr und die Joik-Gesangstradition. Maximal zwölf Gäste.',
-      ],
-      available: 'Inari, Saariselkä, ganzjährig (Schlittenfahrt Dez.–März)',
-    },
-    'private-jet-arrival': {
-      hook: 'Direkter Privatjet-Transfer nach Ivalo, Kittilä oder Rovaniemi, kein kommerzielles Check-in, kein Umsteigedrehkreuz.',
-      copy: [
-        'Koordiniert über unsere Jet-Partner in Helsinki, Genf und Doha. Direktflüge nach Ivalo (am nächsten zu den Villen in Saariselkä / Inari), Kittilä (am nächsten zu den Villen in Levi / Ylläs) oder Rovaniemi (am besten für das Arctic TreeHouse).',
-        'Vollständige Abfertigung: Bodentransfer zu Ihrer Villa mit einem beheizten Fahrzeug in arktischer Ausführung, Gepäckweiterleitung, Zollabfertigung ohne Warteschlange. Der Betreiber meldet den Slot an und stimmt die Ankunft auf die Check-in-Zeit der Villa ab.',
-      ],
-      available: 'Alle Reiseziele, ganzjährig',
-    },
   },
 };
 

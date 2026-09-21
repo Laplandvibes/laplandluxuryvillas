@@ -48,6 +48,17 @@ export interface LuxuryPick {
   price: number;
   /** Duration as the catalogue states it. Omitted when the source was unclear. */
   duration?: string;
+  /**
+   * Mihin sivun osioon tuote kuuluu. 🔴 Lisatty 21.9.2026, kun elamyssivu
+   * rakennettiin naiden OIKEIDEN tuotteiden varaan: sita ennen sivulla oli
+   * kuusi kasin kirjoitettua "elamysta", joista yksikaan ei ollut varattava
+   * (nelja vei sahkopostiin, kaksi GetYourGuiden hakuun) ja joiden
+   * yksityiskohdat oli keksitty. Vesa 21.9.: "onhan namakin tekstit ihan puuta
+   * heinaa, eika aitoa kirjoittamista?"
+   * Huom: 'culinary' ja 'arrival' EIVAT ole vaihtoehtoja, koska niihin ei ole
+   * yhtaan varattavaa tuotetta. Niista kerrotaan sivulla suoraan.
+   */
+  category: 'aurora' | 'wilderness' | 'other';
 }
 
 export const PRICE_AS_OF = '2026-07-29';
@@ -55,19 +66,19 @@ export const VERIFIED_ON = '2026-08-01';
 
 /** Ascending by price: the rail reads as a ladder, not a random shelf. */
 export const LUXURY_PICKS: readonly LuxuryPick[] = [
-  { path: 'sirkka-l139331/vip-northern-lights-aurora-chase-levi-finnish-lapland-t1202632', title: 'VIP Private Northern Lights Hunt', place: 'Levi', price: 360, duration: '4 h' },
-  { path: 'rovaniemi-l2653/lapland-exclusive-private-7h-snowmobile-tour-with-guide-t885747', title: 'Exclusive Private Snowmobile Tour with Guide', place: 'Rovaniemi', price: 399, duration: '7 h' },
-  { path: 'kittila-l165074/levi-private-santa-claus-visit-at-your-accommodation-t889294', title: 'Private Santa Claus Visit at Your Accommodation', place: 'Levi', price: 399, duration: '45 min' },
-  { path: 'kemi-l98127/kemi-afternoon-icebreaker-sampo-cruise-and-ice-floating-t504004', title: 'Icebreaker Sampo Cruise with Ice Floating', place: 'Kemi', price: 402, duration: '6.5 h' },
-  { path: 'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872', title: 'Private Lake Inari Scenic Boat Cruise', place: 'Inari', price: 595, duration: '4 h' },
-  { path: 'sirkka-l139331/levi-professional-engagement-or-after-wedding-shoot-t1176621', title: 'Professional Engagement or After-Wedding Shoot', place: 'Levi', price: 600, duration: '1 h' },
-  { path: 'sirkka-l139331/levi-private-northern-lights-hunt-t864972', title: 'Private Northern Lights Hunt in a 4x4 SUV', place: 'Levi', price: 684, duration: '5 h' },
-  { path: 'sirkka-l139331/levi-private-snow-village-tour-northern-lights-possibility-t1176434', title: 'Private Snow Village Tour', place: 'Levi', price: 777, duration: '3 h' },
-  { path: 'kirkenes-l97740/saariselka-king-crab-safari-to-kirkenes-with-lunch-t1158887', title: 'King Crab Safari to Kirkenes with Lunch', place: 'Saariselkä', price: 780, duration: '11 h' },
-  { path: 'ivalo-l187030/ivalo-private-snowmobile-safari-meetfeed-reindeers-lunch-t805097', title: 'Private Snowmobile Safari, Reindeer and Lunch', place: 'Ivalo', price: 950, duration: '3.5 h' },
-  { path: 'saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345', title: 'Private Photo Northern Lights Tour', place: 'Saariselkä', price: 1789, duration: '6 h' },
-  { path: 'posio-l253041/posio-private-northern-lights-tour-with-campfire-t1123969', title: 'Private Northern Lights Tour with Campfire', place: 'Posio', price: 1850, duration: '7 h' },
-  { path: 'saariselka-l181615/rovaniemi-private-aurora-tour-t1117488', title: 'Private Aurora Tour', place: 'Saariselkä', price: 2190, duration: '7 h' },
-  { path: 'kittila-l165074/levi-private-aurora-hunt-in-the-wilderness-t1116971', title: 'Private Northern Lights Hunt in the Wilderness', place: 'Levi', price: 2240, duration: '6 h' },
-  { path: 'rovaniemi-l2653/rovaniemi-to-sommaroy-private-arctic-tesla-expedition-t1283318', title: 'Private Arctic Tesla Expedition to Sommarøy', place: 'Rovaniemi', price: 5000, duration: '4 days' },
+  { path: 'sirkka-l139331/vip-northern-lights-aurora-chase-levi-finnish-lapland-t1202632', title: 'VIP Private Northern Lights Hunt', place: 'Levi', price: 360, duration: '4 h' , category: 'aurora' },
+  { path: 'rovaniemi-l2653/lapland-exclusive-private-7h-snowmobile-tour-with-guide-t885747', title: 'Exclusive Private Snowmobile Tour with Guide', place: 'Rovaniemi', price: 399, duration: '7 h' , category: 'wilderness' },
+  { path: 'kittila-l165074/levi-private-santa-claus-visit-at-your-accommodation-t889294', title: 'Private Santa Claus Visit at Your Accommodation', place: 'Levi', price: 399, duration: '45 min' , category: 'other' },
+  { path: 'kemi-l98127/kemi-afternoon-icebreaker-sampo-cruise-and-ice-floating-t504004', title: 'Icebreaker Sampo Cruise with Ice Floating', place: 'Kemi', price: 402, duration: '6.5 h' , category: 'wilderness' },
+  { path: 'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872', title: 'Private Lake Inari Scenic Boat Cruise', place: 'Inari', price: 595, duration: '4 h' , category: 'wilderness' },
+  { path: 'sirkka-l139331/levi-professional-engagement-or-after-wedding-shoot-t1176621', title: 'Professional Engagement or After-Wedding Shoot', place: 'Levi', price: 600, duration: '1 h' , category: 'other' },
+  { path: 'sirkka-l139331/levi-private-northern-lights-hunt-t864972', title: 'Private Northern Lights Hunt in a 4x4 SUV', place: 'Levi', price: 684, duration: '5 h' , category: 'aurora' },
+  { path: 'sirkka-l139331/levi-private-snow-village-tour-northern-lights-possibility-t1176434', title: 'Private Snow Village Tour', place: 'Levi', price: 777, duration: '3 h' , category: 'wilderness' },
+  { path: 'kirkenes-l97740/saariselka-king-crab-safari-to-kirkenes-with-lunch-t1158887', title: 'King Crab Safari to Kirkenes with Lunch', place: 'Saariselkä', price: 780, duration: '11 h' , category: 'wilderness' },
+  { path: 'ivalo-l187030/ivalo-private-snowmobile-safari-meetfeed-reindeers-lunch-t805097', title: 'Private Snowmobile Safari, Reindeer and Lunch', place: 'Ivalo', price: 950, duration: '3.5 h' , category: 'wilderness' },
+  { path: 'saariselka-l181615/saariselka-private-photo-northern-lights-tour-t1120345', title: 'Private Photo Northern Lights Tour', place: 'Saariselkä', price: 1789, duration: '6 h' , category: 'aurora' },
+  { path: 'posio-l253041/posio-private-northern-lights-tour-with-campfire-t1123969', title: 'Private Northern Lights Tour with Campfire', place: 'Posio', price: 1850, duration: '7 h' , category: 'aurora' },
+  { path: 'saariselka-l181615/rovaniemi-private-aurora-tour-t1117488', title: 'Private Aurora Tour', place: 'Saariselkä', price: 2190, duration: '7 h' , category: 'aurora' },
+  { path: 'kittila-l165074/levi-private-aurora-hunt-in-the-wilderness-t1116971', title: 'Private Northern Lights Hunt in the Wilderness', place: 'Levi', price: 2240, duration: '6 h' , category: 'aurora' },
+  { path: 'rovaniemi-l2653/rovaniemi-to-sommaroy-private-arctic-tesla-expedition-t1283318', title: 'Private Arctic Tesla Expedition to Sommarøy', place: 'Rovaniemi', price: 5000, duration: '4 days' , category: 'other' },
 ];

@@ -164,7 +164,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'La ciudad de llegada. Suites de autor, vuelos directos diarios desde grandes hubs.',
       copy: [
         'Rovaniemi es la capital regional de Laponia y el destino de auroras más fácil de alcanzar: múltiples vuelos directos diarios desde Helsinki, además de vuelos directos de temporada desde Londres, Frankfurt, París, Viena y el Golfo. El aeropuerto está a unos 10 km al norte del centro de la ciudad, diez o quince minutos en coche.',
-        'El inventario de lujo aquí se centra en suites de diseño de autor a menos de diez minutos del aeropuerto (Arctic TreeHouse, Apukka). Los traslados en helicóptero del aeropuerto a reservas remotas son habituales.',
+        'El inventario de lujo aquí se centra en suites de diseño de autor a menos de diez minutos del aeropuerto (Arctic TreeHouse, Apukka).',
       ],
       highlights: [
         'Arctic TreeHouse Hotel: suites voladizas diseñadas por Studio Puisto',
@@ -206,54 +206,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     },
   },
   experiences: {
-    'private-aurora-photography-night': {
-      hook: 'Un solo guía, su grupo y un vehículo fotográfico calefactado que sigue la previsión allá donde apunte.',
-      copy: [
-        'Una caza de auroras privada de seis horas con un guía finlandés certificado de fotografía de naturaleza. El vehículo está calefactado y equipado; se prestan trípodes, disparadores de cable y cámaras preparadas para el ártico si no trae los suyos. La ruta se decide esa misma tarde en función del índice Kp y de la previsión de nubosidad.',
-        'La comida caliente y las pieles de reno como aislante del suelo van de serie. La instrucción cubre la exposición para la propia aurora, la composición del primer plano y el revelado esa misma noche.',
-      ],
-      available: 'Inari, Saariselkä, Levi, Rovaniemi: sep.–abr.',
-    },
-    'private-chef-arctic-tasting': {
-      hook: 'Un menú degustación finlandés-sami de nueve platos cocinado en la cocina de su villa por un chef en activo de Laponia.',
-      copy: [
-        'Un chef en activo de una de las cocinas serias de Laponia acude a su villa por una velada. El menú se construye en torno a lo que de verdad está de temporada esa semana: trucha alpina de aguas frías, mora ártica, reno ahumado, setas frescas del bosque, espino amarillo, enebro.',
-        'Incluye un maridaje de vinos seleccionado para el menú, los ingredientes, la preparación, el servicio y la limpieza. Máximo diez comensales. Menús vegetariano, sin gluten y sin marisco bajo petición, con al menos 72 horas de antelación.',
-      ],
-      available: 'Cualquier villa de la colección: todo el año',
-    },
-    'private-husky-safari': {
-      hook: 'Su propio tiro de trineo, su propio guía de la perrera, hacia el bosque boreal con la primera luz.',
-      copy: [
-        'Un tiro privado de dieciséis perros de trineo y un guía de la perrera. La ruta se interna en la red de senderos de trabajo de una perrera de trineo seria,normalmente 35 km, con una parada junto al fuego para zumo caliente de arándano rojo y salchicha a la brasa a mitad de camino.',
-        'Conduces tu propio trineo (primero una sesión informativa de 20 minutos). Se facilitan monos de lana, manoplas y botas árticas. Grupo de dos a seis: sin grupos compartidos, nunca combinado con desconocidos.',
-      ],
-      available: 'Rovaniemi, Levi, Saariselkä: dic.–abr.',
-    },
-    'private-snowmobile-wilderness': {
-      hook: 'Una ruta guiada en motonieve de 80 km a través de lagos helados y bosque virgen, con un almuerzo cocinado al fuego de leña.',
-      copy: [
-        'Una ruta guiada en motonieve de día completo por los senderos del fell alto: la red que usan los guías locales, no el circuito turístico. El guía cocina el almuerzo al fuego en la ruta (estofado de reno, pan horneado al fuego, zumo caliente).',
-        'Máquinas BRP, cascos, pasamontañas y monos de lana incluidos. Motonieves de dos plazas disponibles. Se requiere permiso de conducir para el conductor; el asiento del pasajero no necesita permiso. Máximo cuatro motonieves por grupo.',
-      ],
-      available: 'Saariselkä, Inari, Levi: dic.–abr.',
-    },
-    'private-reindeer-sami-evening': {
-      hook: 'Paseo en trineo de renos en una granja en activo y, después, una velada en una kota privada con un anfitrión sami.',
-      copy: [
-        'Dos horas de trineo de renos en una granja de pastoreo en activo, seguidas de una velada privada en una kota calefactada (tipi con fuego abierto). El anfitrión es un pastor de renos sami que lleva la granja: la conversación, no un guion, es la experiencia.',
-        'La cena es reno salteado con puré de patata y arándano rojo, preparado al fuego abierto. Historias sobre el rebaño, el año de la migración y la tradición del canto joik. Máximo doce comensales.',
-      ],
-      available: 'Inari, Saariselkä: todo el año (trineo dic.–mar.)',
-    },
-    'private-jet-arrival': {
-      hook: 'Traslado directo en jet privado a Ivalo, Kittilä o Rovaniemi: sin facturación comercial, sin escala.',
-      copy: [
-        'Coordinado a través de nuestros socios de aviación privada en Helsinki, Ginebra y Doha. Vuelos directos a Ivalo (el más cercano a las villas de Saariselkä / Inari), Kittilä (el más cercano a las villas de Levi / Ylläs) o Rovaniemi (el mejor para Arctic TreeHouse).',
-        'Asistencia completa: traslado terrestre a tu villa en un vehículo calefactado de especificación ártica, equipaje reenviado, aduana sin cola. El operador tramita el slot y ajusta la llegada a la hora de entrada en la villa.',
-      ],
-      available: 'Todos los destinos: todo el año',
-    },
   },
 };
 

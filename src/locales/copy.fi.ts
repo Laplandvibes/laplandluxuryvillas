@@ -148,8 +148,8 @@ const fi: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Räätälöidyt elämykset',
-      title: 'Revontulet, erämaa, ruoka ja saapuminen.',
-      lede: '{e} yksityistä elämystä, jotka sovitamme huviloiden rinnalle. Jokainen varataan sään, päivänvalon ja huvilan sisäänkirjautumisen mukaan, jotta ajoitus oikeasti toimii.',
+      title: 'Revontulet, erämaa ja muut yksityiset retket.',
+      lede: 'Jokainen retki on yksityinen ja varattavissa suoraan järjestäjän omalta sivulta. Hinta ja vapaat päivät näkyvät siellä ennen kuin sitoudut mihinkään.',
     },
     midnightSun: {
       eyebrow: '6.6.–7.7.',
@@ -278,9 +278,9 @@ const fi: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Revontulet', intro: 'Revontulet ovat itsessään ilmaisia. Maksat pääsystä: oikeasta kyydistä, oikeasta oppaasta ja oikeasta yöstä kirkkaan taivaan alla.' },
-      wilderness: { title: 'Erämaa', intro: 'Yksityiset versiot niistä, joiden takia kaikki Lappiin tulevat: husky, moottorikelkka ja poro, ilman jaettua bussia ja samaa lenkkiä kuin kaikki muutkin.' },
-      culinary: { title: 'Ruoka', intro: 'Oikea kokki yhdestä Lapin vakavasti otettavasta keittiöstä, sinun huvilallasi, illan ajan. Tai talon maistelumenu silloin kun keittiö on se syy tulla.' },
-      arrival: { title: 'Saapuminen', intro: 'Yksityinen suihkukone, arktinen ajoneuvokalusto. Varataan slot-ikkunan, päivänvalon ja huvilan sisäänkirjautumisen mukaan.' },
+      wilderness: { title: 'Erämaa', intro: 'Moottorikelkka, poro, jäänmurtaja ja Inarijärvi. Yksityisiä versioita niistä, joiden takia Lappiin tullaan, ilman jaettua bussia ja samaa lenkkiä kuin kaikilla muilla.' },
+      other: { title: 'Muut yksityiset', intro: 'Joulupukki huvilalle, valokuvaaja kihlaukseen ja neljän päivän retki Jäämerelle. Kaikki yksityisiä, kaikki varattavissa.' },
+      onRequest: { eyebrow: 'Pyynnöstä', title: 'Kokki ja kuljetukset: kysymme puolestasi.', intro: 'Yksityiskokkia tai lentokenttäkuljetusta meillä ei ole varattavana tuotteena, eikä niistä siksi ole korttia tällä sivulla. Kerro toive tiedustelussa, niin kysymme kohteelta ja palaamme vastauksen kanssa.', cta: 'Tee tiedustelu' },
     },
   },
   midnightSunPage: {

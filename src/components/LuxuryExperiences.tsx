@@ -1,8 +1,13 @@
 import { ArrowUpRight } from 'lucide-react'
 import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON } from '../shared/gyg/luxury'
+import GYG_MEDIA_RAW from '../data/gygMedia.json'
 import { gygProduct } from '../lib/affiliate'
 import { trackAffiliateClick } from '../lib/analytics'
 import { useLang, type Lang } from '../i18n/useLang'
+
+/** Retken järjestäjän oma tuotekuva, haettu tuotteen omalta sivulta.
+ *  Kuitti per kuva (lähde-URL, CDN-osoite, hakupäivä) on gygMedia.json:issa. */
+const GYG_MEDIA = GYG_MEDIA_RAW as Record<string, { image: string; title: string; source: string }>
 
 // ─────────────────────────────────────────────────────────────────────────────
 // LuxuryExperiences — the fifteen bookable private experiences.
@@ -42,20 +47,49 @@ const COPY: Record<Lang, { eyebrow: string; h2: string; lede: string; cta: strin
   sv: { eyebrow: 'Bokningsbart', h2: 'Privata upplevelser', lede: 'Varje kort öppnar arrangörens egen bokningssida. Du väljer datum och lägger i varukorgen, du behöver inte leta.', cta: 'Se tillgänglighet', from: 'från', priceNote: (p, v) => `Priser från GetYourGuide, avlästa ${p}. Produktsidor kontrollerade ${v}.` },
 }
 
-export default function LuxuryExperiences() {
+type Props = {
+  /** Rajaa yhteen osioon. Ilman tata rendataan kaikki viisitoista. */
+  category?: 'aurora' | 'wilderness' | 'other'
+  /** Osion oma silmaotsikko, otsikko ja ingressi. Ilman naita kaytetaan komponentin omaa copya. */
+  eyebrow?: string
+  title?: string
+  intro?: string
+  /** Vuorottelee taustan, jotta osiot erottuvat toisistaan. */
+  tone?: 'onyx' | 'night'
+  /** Osion ankkuri sivun sisaiseen linkitykseen. */
+  id?: string
+}
+
+/**
+ * 🔴 YKSI kortti koko sivulle (21.9.2026). Aiemmin elamyssivulla oli kaksi eri
+ * korttityylia: kasin kirjoitetut "elamykset" isolla kuvalla ja nama viisitoista
+ * pelkkana tekstina. Vesa: "nyt tama on vahan kuin tilkkutakki, kaikki vahan
+ * hajallaan." Nyt koko sivu kayttaa tata yhta korttia, ja kuva tulee retken
+ * omalta tuotesivulta.
+ */
+export default function LuxuryExperiences({ category, eyebrow, title, intro, tone = 'onyx', id }: Props = {}) {
   const lang = useLang()
   const c = COPY[lang] ?? COPY.en
   const fmt = (n: number) => new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang, { maximumFractionDigits: 0 }).format(n)
+  const picks = category ? LUXURY_PICKS.filter((p) => p.category === category) : LUXURY_PICKS
+  if (picks.length === 0) return null
 
   return (
-    <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
+    <section
+      id={id}
+      className={
+        tone === 'night'
+          ? 'bg-[color:var(--color-deep-night)] py-16 md:py-24'
+          : 'bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60'
+      }
+    >
       <div className="mx-auto max-w-7xl px-5 sm:px-7">
-        <span className="eyebrow">{c.eyebrow}</span>
-        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">{c.h2}</h2>
-        <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">{c.lede}</p>
+        <span className="eyebrow">{eyebrow ?? c.eyebrow}</span>
+        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">{title ?? c.h2}</h2>
+        <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">{intro ?? c.lede}</p>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {LUXURY_PICKS.map((p) => {
+          {picks.map((p) => {
             const id = p.path.slice(p.path.lastIndexOf('-t') + 2)
             const href = gygProduct(p.path, `experience_${id}`, lang)
             return (
@@ -65,9 +99,27 @@ export default function LuxuryExperiences() {
                 target="_blank"
                 rel="sponsored nofollow noopener"
                 onClick={() => trackAffiliateClick('gyg', `luxury_experience:${id}`, href)}
-                className="group flex flex-col justify-between gap-5 rounded-xl border border-[color:var(--color-mist)]/60 bg-[color:var(--color-deep-night)] p-6 no-underline transition-colors hover:border-[color:var(--color-brass)]/60"
+                className="group flex flex-col justify-between overflow-hidden rounded-xl border border-[color:var(--color-mist)]/60 bg-[color:var(--color-deep-night)] no-underline transition-colors hover:border-[color:var(--color-brass)]/60"
               >
-                <div>
+                {/* 🔴 Retken JÄRJESTÄJÄN oma valokuva, haettu tuotteen omalta
+                    sivulta jonne tämä nappi vie (scripts/fetch-gyg-media.mjs,
+                    kuitit src/data/gygMedia.json). Vesa 21.9.2026: "miksi näissä
+                    ei ole kuvia getyourguiden syötteestä". Ei tekoälyä eikä
+                    kuvapankkia: tämä on kuva juuri tästä retkestä. */}
+                {GYG_MEDIA[id]?.image && (
+                  <div className="aspect-[3/2] w-full overflow-hidden bg-[color:var(--color-onyx)]">
+                    <img
+                      src={GYG_MEDIA[id].image}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      width={1200}
+                      height={800}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                )}
+                <div className="p-6 pb-4">
                   <div className="mb-2 flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] font-body text-[color:var(--color-bone)]/75">
                     <span>{p.place}</span>
                     {p.duration && (
@@ -80,7 +132,7 @@ export default function LuxuryExperiences() {
                   <h3 className="font-heading text-xl text-[color:var(--color-snow)] leading-tight">{p.title}</h3>
                 </div>
 
-                <div className="flex items-end justify-between gap-3">
+                <div className="flex items-end justify-between gap-3 px-6 pb-6">
                   <div>
                     <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">{c.from}</div>
                     <div className="font-heading text-xl text-[color:var(--color-brass)]">{fmt(p.price)} €</div>

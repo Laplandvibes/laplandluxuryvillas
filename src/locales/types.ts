@@ -249,7 +249,18 @@ export type SiteCopy = {
     inquiryBody: string
   }
   experiencesPage: {
-    sections: { aurora: SectionItem; wilderness: SectionItem; culinary: SectionItem; arrival: SectionItem }
+    /**
+     * 🔴 'culinary' ja 'arrival' poistettu 21.9.2026. Niihin ei ole yhtaan
+     * varattavaa tuotetta, ja niiden tilalla oli keksittya tuotetekstia
+     * tekoalykuvalla. Tilalla 'other' (oikeat tuotteet: joulupukki, kihlauskuvaus,
+     * Jaameren retki) ja 'onRequest', joka sanoo suoraan mita emme myy.
+     */
+    sections: {
+      aurora: SectionItem
+      wilderness: SectionItem
+      other: SectionItem
+      onRequest: { eyebrow: string; title: string; intro: string; cta: string }
+    }
   }
   midnightSunPage: {
     facts: { value: string; label: string }[]

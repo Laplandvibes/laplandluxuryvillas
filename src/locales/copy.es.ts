@@ -148,8 +148,8 @@ const es: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Experiencias a medida',
-      title: 'Auroras, naturaleza salvaje, gastronomía y llegada.',
-      lede: '{e} experiencias privadas que combinamos con las villas, cada una reservada según la ventana meteorológica, las horas de luz y la hora de entrada a la villa.',
+      title: 'Auroras, naturaleza salvaje y otras salidas privadas.',
+      lede: 'Cada salida aquí es privada y se reserva en la página del propio operador. El precio y las fechas libres están allí antes de comprometerse.',
     },
     midnightSun: {
       eyebrow: '6 jun – 7 jul',
@@ -278,9 +278,9 @@ const es: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Las auroras en sí son gratuitas. Lo que se ofrece aquí es el acceso, el vehículo adecuado, el guía adecuado y la noche adecuada bajo la ventana de cielo despejado adecuada.' },
-      wilderness: { title: 'Naturaleza salvaje', intro: 'Versiones privadas de las experiencias por las que todos vienen a Laponia, huskies, motonieve, renos, sin el autobús compartido ni la ruta circular.' },
-      culinary: { title: 'Gastronomía', intro: 'Un chef en activo de una de las cocinas serias de Laponia, en su villa, durante una velada, o el menú degustación en la propiedad cuando la cocina es la razón por la que vino.' },
-      arrival: { title: 'Llegada', intro: 'Jet privado, vehículos terrestres preparados para el Ártico. Reservados según la franja, la ventana de luz y la entrada a la villa.' },
+      wilderness: { title: 'Naturaleza salvaje', intro: 'Motonieve, renos, un rompehielos y el lago Inari. Versiones privadas de aquello por lo que se viene a Laponia, sin autobús compartido ni la misma vuelta que todos.' },
+      other: { title: 'Otras salidas privadas', intro: 'Papá Noel en la villa, un fotógrafo para una pedida y una expedición de cuatro días al océano Ártico. Todo privado, todo reservable.' },
+      onRequest: { eyebrow: 'Bajo petición', title: 'Chef y traslados: preguntamos por usted.', intro: 'No tenemos un producto reservable para un chef privado ni para un traslado desde el aeropuerto, por eso aquí no hay tarjeta. Cuéntenos su deseo en la consulta: lo preguntamos al alojamiento y volvemos con la respuesta.', cta: 'Enviar consulta' },
     },
   },
   midnightSunPage: {

@@ -142,8 +142,8 @@ const sv: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Skräddarsydda upplevelser',
-      title: 'Norrsken, vildmark, kulinariskt och ankomst.',
-      lede: '{e} privata upplevelser som vi kopplar till villorna, var och en bokad efter väderfönstret, dagsljuset och incheckningstiden.',
+      title: 'Norrsken, vildmark och andra privata turer.',
+      lede: 'Varje tur här är privat och bokas på arrangörens egen sida. Pris och lediga datum står där innan du binder dig.',
     },
     midnightSun: {
       eyebrow: '6 juni – 7 juli',
@@ -272,9 +272,9 @@ const sv: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Norrsken', intro: 'Norrskenet självt är gratis. Det som säljs här är tillgången, rätt fordon, rätt guide och rätt natt under rätt molnfönster.' },
-      wilderness: { title: 'Vildmark', intro: 'Privata versioner av upplevelserna alla kommer till Lappland för, hundspann, snöskoter, ren, utan den delade bussen och rundan längs upptrampade stigar.' },
-      culinary: { title: 'Kulinariskt', intro: 'En yrkesverksam kock från ett av Lapplands seriösa kök, hemma i din villa, för en kväll, eller avsmakningsmenyn på plats när köket är skälet till att du kommit.' },
-      arrival: { title: 'Ankomst', intro: 'Privatjet, fordon med arktisk specifikation. Bokat efter tidsluckan, dagsljusfönstret och incheckningstiden.' },
+      wilderness: { title: 'Vildmark', intro: 'Skoter, ren, isbrytare och Enare träsk. Privata versioner av det man åker till Lappland för, utan delad buss och samma slinga som alla andra.' },
+      other: { title: 'Övriga privata turer', intro: 'Jultomten till villan, en fotograf till förlovningen och en fyra dagars expedition till Ishavet. Allt privat, allt bokningsbart.' },
+      onRequest: { eyebrow: 'På begäran', title: 'Kock och transfer: vi frågar åt dig.', intro: 'Vi har ingen bokningsbar produkt för privatkock eller flygplatstransfer, därför finns inget kort för dem här. Skriv önskemålet i förfrågan, så frågar vi boendet och återkommer med svaret.', cta: 'Skicka förfrågan' },
     },
   },
   midnightSunPage: {

@@ -142,8 +142,8 @@ const fr: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Expériences sur mesure',
-      title: 'Aurores, nature sauvage, gastronomie et arrivée.',
-      lede: '{e} expériences privées que nous associons aux villas, chacune réservée en fonction de la fenêtre météo, des heures de lumière et de l’heure d’arrivée à la villa.',
+      title: 'Aurores, nature sauvage et autres sorties privées.',
+      lede: 'Chaque sortie ici est privée et se réserve sur la page de l\'organisateur. Le prix et les dates libres y figurent avant tout engagement.',
     },
     midnightSun: {
       eyebrow: '6 juin – 7 juillet',
@@ -271,9 +271,9 @@ const fr: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurore', intro: 'Les aurores en elles-mêmes sont gratuites. Ce qui se vend ici, c’est l’accès, le bon véhicule, le bon guide et la bonne nuit sous la bonne éclaircie.' },
-      wilderness: { title: 'Nature sauvage', intro: 'Les versions privées des expériences pour lesquelles tout le monde vient en Laponie, husky, motoneige, renne, sans le bus partagé ni le circuit en boucle.' },
-      culinary: { title: 'Gastronomie', intro: 'Un chef en activité issu de l’une des cuisines sérieuses de Laponie, dans votre villa, le temps d’une soirée, ou le menu dégustation sur place quand la cuisine est la raison de votre venue.' },
-      arrival: { title: 'Arrivée', intro: 'Jet privé, véhicules terrestres équipés pour l’Arctique. Réservés selon le créneau, la fenêtre de lumière et l’arrivée à la villa.' },
+      wilderness: { title: 'Nature sauvage', intro: 'Motoneige, renne, brise-glace et lac Inari. Les versions privées de ce pour quoi on vient en Laponie, sans bus partagé ni la même boucle que tout le monde.' },
+      other: { title: 'Autres sorties privées', intro: 'Le Père Noël à la villa, un photographe pour des fiançailles et une expédition de quatre jours vers l\'océan Arctique. Tout est privé, tout se réserve.' },
+      onRequest: { eyebrow: 'Sur demande', title: 'Chef et transferts : nous demandons pour vous.', intro: 'Nous n\'avons pas de produit réservable pour un chef privé ou un transfert depuis l\'aéroport, il n\'y a donc pas de carte ici. Indiquez votre souhait dans la demande, nous interrogeons l\'établissement et revenons avec la réponse.', cta: 'Envoyer une demande' },
     },
   },
   midnightSunPage: {
@@ -505,7 +505,7 @@ Object.assign(fr.affiliateDisclosure, {
 })
 fr.hero.suites = { eyebrow: 'Suites design', title: 'Quand vous n\'avez pas besoin d\'une villa, mais bien du toit de verre.', lede: 'Une courte liste de suites une-chambre et de cabines à aurore où l\'architecture est l\'expérience. Effectif réduit, même plafond panoramique.' }
 fr.hero.destinations = { eyebrow: 'Destinations', title: 'Saariselkä, Inari, Rovaniemi, Levi et Ylläs.', lede: 'La Laponie n\'est pas interchangeable. La fréquence d\'aurore, la logistique d\'arrivée et la densité d\'hébergement changent de façon significative tous les 50 km au nord du cercle polaire.' }
-fr.hero.experiences = { eyebrow: 'Expériences sur mesure', title: 'Aurores, nature sauvage, gastronomie et arrivée.', lede: 'Huit expériences privées que nous associons aux villas, chacune réservée selon la fenêtre météo, la lumière du jour et l\'horaire d\'enregistrement.' }
+fr.hero.experiences = { eyebrow: 'Expériences sur mesure', title: 'Aurores, nature sauvage et autres sorties privées.', lede: 'Chaque sortie ici est privée et se réserve sur la page de l\'organisateur. Le prix et les dates libres y figurent avant tout engagement.' }
 fr.hero.inquiry = { eyebrow: 'Demande privée', title: 'Un message privé, une présélection sur mesure.', lede: 'Envoyez dates, effectif et le type de voyage envisagé. Nous répondons en un jour ouvré.' }
 fr.hero.about = { eyebrow: 'À propos', title: 'Qui est derrière ce site, et ce que nous ne faisons pas.', lede: 'Huit villas et suites choisies à la main en Laponie finlandaise, demande anonyme, un lien direct vers la réservation de chaque maison, aucune plateforme intermédiaire.' }
 fr.home = {
@@ -542,10 +542,10 @@ Object.assign(fr.destinationPage, {
 })
 Object.assign(fr.experiencesPage, {
   sections: {
-    aurora: { title: 'Aurore', intro: 'Les aurores elles-mêmes sont gratuites. Ce qui se vend ici est l\'accès, le bon véhicule, le bon guide et la bonne nuit sous la bonne fenêtre nuageuse.' },
-    wilderness: { title: 'Nature sauvage', intro: 'Versions privées des expériences pour lesquelles tout le monde vient en Laponie, husky, motoneige, renne, sans le bus partagé ni le sentier en boucle.' },
-    culinary: { title: 'Gastronomie', intro: 'Un chef en activité issu d\'une des cuisines sérieuses de la Laponie, dans votre villa, pour une soirée, ou la dégustation sur place quand la cuisine est la raison de la venue.' },
-    arrival: { title: 'Arrivée', intro: 'Jet privé, véhicules au sol arctiques. Réservés selon le créneau, la fenêtre de lumière et l\'enregistrement.' },
+      aurora: { title: 'Aurore', intro: 'Les aurores en elles-mêmes sont gratuites. Ce qui se vend ici, c’est l’accès, le bon véhicule, le bon guide et la bonne nuit sous la bonne éclaircie.' },
+    wilderness: { title: 'Nature sauvage', intro: 'Motoneige, renne, brise-glace et lac Inari. Les versions privées de ce pour quoi on vient en Laponie, sans bus partagé ni la même boucle que tout le monde.' },
+    other: { title: 'Autres sorties privées', intro: 'Le Père Noël à la villa, un photographe pour des fiançailles et une expédition de quatre jours vers l\'océan Arctique. Tout est privé, tout se réserve.' },
+    onRequest: { eyebrow: 'Sur demande', title: 'Chef et transferts : nous demandons pour vous.', intro: 'Nous n\'avons pas de produit réservable pour un chef privé ou un transfert depuis l\'aéroport, il n\'y a donc pas de carte ici. Indiquez votre souhait dans la demande, nous interrogeons l\'établissement et revenons avec la réponse.', cta: 'Envoyer une demande' },
   },
 })
 Object.assign(fr.midnightSunPage, {

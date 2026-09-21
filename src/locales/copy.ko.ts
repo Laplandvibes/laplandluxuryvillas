@@ -142,8 +142,8 @@ const ko: SiteCopy = {
     },
     experiences: {
       eyebrow: '맞춤 체험',
-      title: '오로라, 야생, 미식 그리고 도착.',
-      lede: '빌라와 함께 엮는 {eFig}가지 프라이빗 체험, 각각 날씨 창, 일조 시간, 빌라 체크인 시각에 맞춰 예약합니다.',
+      title: '오로라, 야생 그리고 그 밖의 프라이빗 투어.',
+      lede: '여기 있는 투어는 모두 프라이빗이며 예약은 운영사의 페이지에서 이루어집니다. 요금과 예약 가능한 날짜는 결정하기 전에 그곳에서 확인할 수 있습니다.',
     },
     midnightSun: {
       eyebrow: '6월 6일 – 7월 7일',
@@ -271,9 +271,9 @@ const ko: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: '오로라', intro: '오로라 자체는 무료입니다. 여기서 제공하는 것은 접근입니다. 알맞은 차량, 알맞은 가이드, 그리고 알맞은 구름 사이로 맞이하는 알맞은 밤.' },
-      wilderness: { title: '야생', intro: '모두가 라플란드를 찾는 이유인 체험, 허스키, 스노모빌, 순록의 프라이빗 버전. 합승 버스도, 순환 코스도 없습니다.' },
-      culinary: { title: '미식', intro: '라플란드의 진지한 주방에서 활동하는 현역 셰프를 빌라로 모셔 보내는 하룻저녁, 또는 주방 그 자체가 방문의 이유가 되는 곳에서의 온프로퍼티 테이스팅 메뉴.' },
-      arrival: { title: '도착', intro: '프라이빗 제트기, 북극 사양 지상 차량. 시간대, 일조 창, 빌라 체크인에 맞춰 예약합니다.' },
+      wilderness: { title: '야생', intro: '스노모빌, 순록, 쇄빙선 그리고 이나리 호수. 사람들이 라플란드를 찾는 이유를, 합승 버스도 모두와 같은 코스도 없이 프라이빗으로.' },
+      other: { title: '그 밖의 프라이빗 투어', intro: '빌라로 오는 산타클로스, 약혼 촬영, 그리고 북극해까지 가는 나흘간의 여정. 모두 프라이빗이며 모두 예약할 수 있습니다.' },
+      onRequest: { eyebrow: '요청 시', title: '셰프와 이동은 저희가 대신 문의합니다.', intro: '프라이빗 셰프나 공항 이동은 예약 가능한 상품으로 가지고 있지 않아 이 페이지에 카드가 없습니다. 문의에 원하시는 내용을 적어 주시면 숙소에 확인한 뒤 답을 드립니다.', cta: '문의 보내기' },
     },
   },
   midnightSunPage: {
@@ -506,7 +506,7 @@ Object.assign(ko.affiliateDisclosure, {
 })
 ko.hero.suites = { eyebrow: '디자이너 스위트', title: '빌라가 필요하지 않을 때, 그러나 글래스 루프는 필요할 때.', lede: '건축 자체가 경험인, 침실 하나 스위트와 오로라 캐빈의 짧은 목록. 더 적은 인원, 같은 파노라마 천장.' }
 ko.hero.destinations = { eyebrow: '여행지', title: 'Saariselkä, Inari, Rovaniemi, Levi, Ylläs.', lede: '라플란드는 균질하지 않습니다. 오로라 빈도, 도착 동선, 숙박 밀도는 북극권 이북 50km마다 의미 있게 달라집니다.' }
-ko.hero.experiences = { eyebrow: '비스포크 체험', title: '오로라, 야생, 미식 그리고 도착.', lede: '빌라와 함께 매치하는 여덟 가지 프라이빗 체험, 각각 날씨 창, 일조 시간, 빌라 체크인에 맞춰 예약됩니다.' }
+ko.hero.experiences = { eyebrow: '비스포크 체험', title: '오로라, 야생 그리고 그 밖의 프라이빗 투어.', lede: '여기 있는 투어는 모두 프라이빗이며 예약은 운영사의 페이지에서 이루어집니다. 요금과 예약 가능한 날짜는 결정하기 전에 그곳에서 확인할 수 있습니다.' }
 ko.hero.inquiry = { eyebrow: '비공개 문의', title: '하나의 비공개 메시지, 하나의 큐레이션된 셔틀리스트.', lede: '일정, 인원, 원하시는 여행의 성격을 보내주세요. 영업일 1일 이내에 답변 드립니다.' }
 ko.hero.about = { eyebrow: '소개', title: '누가 만드는지, 그리고 무엇을 하지 않는지.', lede: '핀란드 라플란드에서 손수 고른 빌라와 스위트 여덟 채. 익명 문의, 각 숙소의 예약 페이지로 바로 연결, 중간 플랫폼 없음.' }
 ko.home = {
@@ -546,14 +546,14 @@ Object.assign(ko.destinationPage, {
   villasHereH2: (n: number) => (n === 1 ? '1개 빌라가 이곳에 있습니다.' : `${n}개 빌라가 이곳에 있습니다.`),
   fullCollection: '전체 컬렉션',
   inquiryTitle: (name: string) => `프라이빗 ${name} 여행 계획하기.`,
-  inquiryBody: '일정, 인원, 선호 사항(프라이빗 셰프, 헬기 도착, 독점 사용)을 보내주세요. 영업일 1일 이내에 셔틀리스트로 답변드립니다.',
+  inquiryBody: '일정, 인원, 선호 사항(프라이빗 셰프, 독점 사용)을 보내주세요. 영업일 1일 이내에 셔틀리스트로 답변드립니다.',
 })
 Object.assign(ko.experiencesPage, {
   sections: {
-    aurora: { title: '오로라', intro: '오로라 자체는 무료입니다. 여기서 판매하는 것은 접근, 적합한 차량, 적합한 가이드, 적합한 구름 창 아래의 적합한 밤입니다.' },
-    wilderness: { title: '야생', intro: '모두가 라플란드에 오는 이유의 프라이빗 버전, 허스키, 스노모빌, 순록, 단체 버스와 루프 코스 없이.' },
-    culinary: { title: '식문화', intro: '라플란드 진지한 주방 출신의 현역 셰프가 저녁 시간에 빌라로, 또는 그 주방이 방문 이유 자체일 때의 온프로퍼티 테이스팅 메뉴.' },
-    arrival: { title: '도착', intro: '프라이빗 제트, 헬기 이동, 북극 사양 지상 차량. 도착 슬롯, 일조 창, 빌라 체크인에 맞춰 예약됩니다.' },
+      aurora: { title: '오로라', intro: '오로라 자체는 무료입니다. 여기서 제공하는 것은 접근입니다. 알맞은 차량, 알맞은 가이드, 그리고 알맞은 구름 사이로 맞이하는 알맞은 밤.' },
+    wilderness: { title: '야생', intro: '스노모빌, 순록, 쇄빙선 그리고 이나리 호수. 사람들이 라플란드를 찾는 이유를, 합승 버스도 모두와 같은 코스도 없이 프라이빗으로.' },
+    other: { title: '그 밖의 프라이빗 투어', intro: '빌라로 오는 산타클로스, 약혼 촬영, 그리고 북극해까지 가는 나흘간의 여정. 모두 프라이빗이며 모두 예약할 수 있습니다.' },
+    onRequest: { eyebrow: '요청 시', title: '셰프와 이동은 저희가 대신 문의합니다.', intro: '프라이빗 셰프나 공항 이동은 예약 가능한 상품으로 가지고 있지 않아 이 페이지에 카드가 없습니다. 문의에 원하시는 내용을 적어 주시면 숙소에 확인한 뒤 답을 드립니다.', cta: '문의 보내기' },
   },
 })
 Object.assign(ko.midnightSunPage, {
@@ -584,7 +584,7 @@ Object.assign(ko.inquiryPage, {
   fields: {
     headcount: '인원 수', tripIntent: '여행 의도', budget: '예상 1박 예산',
     datesLabel: '날짜 (또는 기간)', datesHint: '예: "2월 14–21일" 또는 "3월 전반, 5박"', datesPlaceholder: '선택 사항',
-    messageLabel: '구체적인 사항', messageHint: '프라이빗 셰프, 헬기 도착, 독점 사용, 접근성, 식이, 사진 촬영 중심, 셔틀리스트를 형성하는 무엇이든.',
+    messageLabel: '구체적인 사항', messageHint: '프라이빗 셰프, 독점 사용, 접근성, 식이, 사진 촬영 중심, 셔틀리스트를 형성하는 무엇이든.',
     nameLabel: '이름 (선택)', namePlaceholder: '비워두시면 익명', emailLabel: '회신 이메일', emailHint: '비워두시면 발신 주소로 회신됩니다.', emailPlaceholder: '선택 사항',
   },
   options: {

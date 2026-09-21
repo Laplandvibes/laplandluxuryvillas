@@ -142,8 +142,8 @@ const it: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Esperienze su misura',
-      title: 'Aurora, natura selvaggia, cucina e arrivo.',
-      lede: '{e} esperienze private che abbiniamo alle ville, ciascuna prenotata in base alla finestra meteo, alle ore di luce e all’orario di check-in della villa.',
+      title: 'Aurora, natura selvaggia e altre uscite private.',
+      lede: 'Ogni uscita qui è privata e si prenota sulla pagina dell\'operatore. Prezzo e date libere sono lì prima di qualsiasi impegno.',
     },
     midnightSun: {
       eyebrow: '6 giu – 7 lug',
@@ -271,9 +271,9 @@ const it: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
-      wilderness: { title: 'Natura selvaggia', intro: 'Le versioni private delle esperienze per cui tutti vengono in Lapponia, husky, motoslitta, renna, senza il bus condiviso e il percorso ad anello.' },
-      culinary: { title: 'Cucina', intro: 'Uno chef in attività di una delle cucine serie della Lapponia, nella Sua villa, per una sera, oppure il menù degustazione in loco quando è la cucina la ragione della Sua venuta.' },
-      arrival: { title: 'Arrivo', intro: 'Jet privato, veicoli terrestri in versione artica. Prenotati in base allo slot, alla finestra di luce e al check-in della villa.' },
+      wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, rompighiaccio e lago Inari. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
+      other: { title: 'Altre uscite private', intro: 'Babbo Natale in villa, un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
+      onRequest: { eyebrow: 'Su richiesta', title: 'Chef e transfer: chiediamo noi per voi.', intro: 'Non abbiamo un prodotto prenotabile per uno chef privato o un transfer dall\'aeroporto, quindi qui non c\'è una scheda. Scrivete il desiderio nella richiesta: lo chiediamo alla struttura e torniamo con la risposta.', cta: 'Invia una richiesta' },
     },
   },
   midnightSunPage: {
@@ -505,7 +505,7 @@ Object.assign(it.affiliateDisclosure, {
 })
 it.hero.suites = { eyebrow: 'Suite d\'autore', title: 'Quando non Le serve una villa, ma il tetto in vetro sì.', lede: 'Un breve elenco di suite a una camera e cabine aurorali dove l\'architettura stessa è l\'esperienza. Capienza minore, stesso soffitto panoramico.' }
 it.hero.destinations = { eyebrow: 'Destinazioni', title: 'Saariselkä, Inari, Rovaniemi, Levi e Ylläs.', lede: 'La Lapponia non è intercambiabile. Frequenza dell\'aurora, logistica d\'arrivo e densità ricettiva cambiano in modo significativo ogni 50 km a nord del Circolo Polare.' }
-it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Aurora, natura selvaggia, cucina e arrivo.', lede: 'Otto esperienze private abbinate alle ville, ciascuna prenotata in funzione della finestra meteo, della luce diurna e dell\'orario di check-in.' }
+it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Aurora, natura selvaggia e altre uscite private.', lede: 'Ogni uscita qui è privata e si prenota sulla pagina dell\'operatore. Prezzo e date libere sono lì prima di qualsiasi impegno.' }
 it.hero.inquiry = { eyebrow: 'Richiesta privata', title: 'Un messaggio privato, una shortlist curata.', lede: 'Invii date, numero di ospiti e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo, incluse, dove appropriato, le ville di riserva che non appaiono mai pubblicamente.' }
 it.hero.about = { eyebrow: 'Chi siamo', title: 'Chi c\'è dietro e che cosa non facciamo.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
 it.home = {
@@ -542,10 +542,10 @@ Object.assign(it.destinationPage, {
 })
 Object.assign(it.experiencesPage, {
   sections: {
-    aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si vende qui è l\'accesso, il veicolo giusto, la guida giusta, la notte giusta sotto la giusta finestra di nuvole.' },
-    wilderness: { title: 'Natura selvaggia', intro: 'Versioni private delle esperienze per cui tutti vengono in Lapponia, husky, motoslitta, renne, senza bus condiviso né percorso ad anello.' },
-    culinary: { title: 'Cucina', intro: 'Uno chef attivo proveniente da una delle cucine serie della Lapponia, nella Sua villa, per una serata, o il menù degustazione in loco quando la cucina è il motivo del viaggio.' },
-    arrival: { title: 'Arrivo', intro: 'Jet privato, mezzi di terra in spec artica. Prenotati in funzione dello slot, della finestra di luce e del check-in.' },
+      aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
+    wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, rompighiaccio e lago Inari. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
+    other: { title: 'Altre uscite private', intro: 'Babbo Natale in villa, un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
+    onRequest: { eyebrow: 'Su richiesta', title: 'Chef e transfer: chiediamo noi per voi.', intro: 'Non abbiamo un prodotto prenotabile per uno chef privato o un transfer dall\'aeroporto, quindi qui non c\'è una scheda. Scrivete il desiderio nella richiesta: lo chiediamo alla struttura e torniamo con la risposta.', cta: 'Invia una richiesta' },
   },
 })
 Object.assign(it.midnightSunPage, {

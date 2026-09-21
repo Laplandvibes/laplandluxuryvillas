@@ -148,8 +148,8 @@ const en: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Bespoke Experiences',
-      title: 'Aurora, wilderness, dining and arrival.',
-      lede: '{e} private experiences we pair with the villas. Each one is booked around the weather, the daylight and your villa check-in, so the timing actually works.',
+      title: 'Aurora, wilderness and other private trips.',
+      lede: 'Every trip here is private and booked on the operator\'s own page. The price and the free dates are there before you commit to anything.',
     },
     midnightSun: {
       eyebrow: 'Jun 6 – Jul 7',
@@ -278,9 +278,9 @@ const en: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'The auroras themselves are free. What you are paying for is the access: the right vehicle, the right guide, and the right night under a clear sky.' },
-      wilderness: { title: 'Wilderness', intro: 'Private versions of the things everyone comes to Lapland for, husky and snowmobile and reindeer, without the shared bus and the same loop everyone else does.' },
-      culinary: { title: 'Culinary', intro: 'A working chef from one of Lapland\'s serious kitchens, in your villa, for the evening. Or the tasting menu on-site when the kitchen is the reason you came.' },
-      arrival: { title: 'Arrival', intro: 'Private jet, arctic-spec ground vehicles. Booked around your slot, the daylight, and the villa check-in.' },
+      wilderness: { title: 'Wilderness', intro: 'Snowmobile, reindeer, an icebreaker and Lake Inari. Private versions of the reasons people come to Lapland, without the shared bus and the same loop as everyone else.' },
+      other: { title: 'Other private trips', intro: 'Santa at the villa, a photographer for an engagement, and a four-day expedition to the Arctic Ocean. All private, all bookable.' },
+      onRequest: { eyebrow: 'On request', title: 'A chef and transfers: we ask on your behalf.', intro: 'We have no bookable product for a private chef or an airport transfer, so there is no card for them here. Tell us what you want in the enquiry and we will ask the property and come back with the answer.', cta: 'Send an enquiry' },
     },
   },
   midnightSunPage: {

@@ -148,8 +148,8 @@ const de: SiteCopy = {
     },
     experiences: {
       eyebrow: 'Maßgeschneiderte Erlebnisse',
-      title: 'Polarlichter, Wildnis, Kulinarik und Anreise.',
-      lede: '{e} private Erlebnisse, die wir mit den Villen kombinieren, jedes gebucht im Hinblick auf Wetterfenster, Tageslicht und Villa-Check-in-Zeit.',
+      title: 'Polarlichter, Wildnis und weitere private Touren.',
+      lede: 'Jede Tour hier ist privat und wird auf der Seite des Anbieters gebucht. Preis und freie Termine stehen dort, bevor Sie sich festlegen.',
     },
     midnightSun: {
       eyebrow: '6. Juni – 7. Juli',
@@ -278,9 +278,9 @@ const de: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Polarlichter', intro: 'Die Polarlichter selbst sind kostenlos. Was hier verkauft wird, ist der Zugang, das richtige Fahrzeug, der richtige Guide und die richtige Nacht unter dem richtigen Wolkenfenster.' },
-      wilderness: { title: 'Wildnis', intro: 'Private Versionen der Erlebnisse, für die alle nach Lappland kommen, Husky, Schneemobil, Rentier, ohne den geteilten Bus und den Rundweg.' },
-      culinary: { title: 'Kulinarik', intro: 'Ein aktiver Koch aus einer der ernsthaften Küchen Lapplands, in Ihrer Villa, für einen Abend, oder das hauseigene Tasting-Menü, wenn die Küche der Grund Ihrer Reise ist.' },
-      arrival: { title: 'Anreise', intro: 'Privatjet, arktisch ausgerüstete Bodenfahrzeuge. Gebucht im Hinblick auf Slot, Tageslichtfenster und Villa-Check-in.' },
+      wilderness: { title: 'Wildnis', intro: 'Schneemobil, Rentier, Eisbrecher und der Inarisee. Private Fassungen dessen, weswegen man nach Lappland kommt, ohne Sammelbus und ohne dieselbe Runde wie alle.' },
+      other: { title: 'Weitere private Touren', intro: 'Der Weihnachtsmann in der Villa, ein Fotograf für die Verlobung und eine viertägige Expedition ans Nordmeer. Alles privat, alles buchbar.' },
+      onRequest: { eyebrow: 'Auf Anfrage', title: 'Koch und Transfers: wir fragen für Sie.', intro: 'Für einen Privatkoch oder einen Flughafentransfer haben wir kein buchbares Produkt, deshalb gibt es hier keine Karte dafür. Schreiben Sie Ihren Wunsch in die Anfrage, wir fragen beim Haus nach und melden uns mit der Antwort.', cta: 'Anfrage senden' },
     },
   },
   midnightSunPage: {

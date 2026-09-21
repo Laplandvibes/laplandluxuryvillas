@@ -60,95 +60,21 @@ export interface Experience {
 // and helicopter tours" category for Lapland returns one result, a road tour
 // (measured in a browser 20.9.2026). A service we can neither sell nor deliver
 // is not a card, whatever the button says. Removed rather than reworded.
+// 🔴🔴 TYHJA 21.9.2026, ja se on tarkoitus.
+//
+// Tassa oli kuusi kasin kirjoitettua "elamysta", joissa oli tarkkoja
+// tuotetietoja: kuudentoista vetokoiran valjakko, 35 km:n reitti, yhdeksan
+// ruokalajin menu, 80 km:n kelkkareitti, konetyyppi nimelta. Yksikaan ei
+// ollut varattava tuote: nelja oli inquiryOnly eli nappi vei sahkopostiin,
+// kaksi vei GetYourGuiden HAKUUN. Tiedot olivat siis keksittyja, ja
+// viidella kuudesta oli tekoalykuva. Vesa 21.9.2026: "onhan namakin tekstit
+// ihan puuta heinaa, eika aitoa kirjoittamista?"
+//
+// Elamyssivu rendataan nyt shared/gyg/luxury.ts:n viidestatoista OIKEASTA
+// tuotteesta, joilla on varmistettu tuotesivu, hinta ja jarjestajan oma
+// valokuva. Tyyppi ja hakijat jaavat talle, jos joskus tulee oikeita
+// omia tuotteita: silloin jokaisella on oltava varattava sivu.
 export const EXPERIENCES: Experience[] = [
-  {
-    slug: 'private-aurora-photography-night',
-    name: 'Private Aurora Photography Night',
-    category: 'aurora',
-    hook: 'A single guide, your group, and a heated photography vehicle that follows the forecast wherever it points.',
-    copy: [
-      'A six-hour private aurora chase with a certified Finnish nature photography guide. The vehicle is heated and stocked; tripods, cable releases and arctic-rated cameras are loaned if you don\'t bring your own. The route is decided that afternoon based on the Kp index and the cloud-cover forecast.',
-      'Hot food and reindeer-fur ground covers come standard. Coaching covers exposure for the aurora itself, foreground composition, and post-processing for the same evening.',
-    ],
-    available: 'Inari, Saariselkä, Levi, Rovaniemi, Sep–Apr',
-    bookingKey: 'privateAurora',
-    imageGradient: 'linear-gradient(135deg, #0A1A2E 0%, #14304A 50%, #061020 100%)',
-  },
-  {
-    slug: 'private-chef-arctic-tasting',
-    name: 'In-Villa Private Chef Tasting',
-    category: 'culinary',
-    hook: 'A nine-course Finnish-Sámi tasting menu cooked in your villa kitchen by a working Lapland chef.',
-    copy: [
-      'A working chef from one of Lapland\'s serious kitchens comes to your villa for an evening. The menu is built around what\'s actually in season that week: cold-water arctic char, cloudberry, smoked reindeer, fresh forest mushrooms, sea-buckthorn, juniper.',
-      'Includes a wine pairing curated to the menu, ingredients, prep, service and clean-up. Ten guests maximum. Vegetarian, gluten-free and shellfish-free menus on request, with at least 72 hours\' notice.',
-    ],
-    available: 'Any villa in the collection, year-round',
-    inquiryOnly: true,
-    imageGradient: 'linear-gradient(135deg, #1F1813 0%, #2E2218 50%, #14100B 100%)',
-  },
-  {
-    slug: 'private-husky-safari',
-    name: 'Private Husky Safari',
-    category: 'wilderness',
-    hook: 'Your own sled team, your own kennel guide, into the boreal forest at first light.',
-    copy: [
-      'A private team of sixteen sled dogs and one kennel guide. The route runs into the working trail network of a serious sled-dog kennel, typically 35 km, with a fire-side break for hot lingonberry juice and grilled sausage at the halfway point.',
-      'You drive your own sled (a 20-minute briefing first). Wool overalls, mittens, and arctic boots are provided. Group of two to six, no shared groups, never combined with strangers.',
-    ],
-    available: 'Rovaniemi, Levi, Saariselkä, Dec–Apr',
-    // 🔴 Measured 2026-09-20: GetYourGuide's Lapland husky products are SHARED
-    // departures — "Levi: 7 km self-drive" (199 €), "Saariselkä: 10 km safari
-    // and kennel visit" (249 €). This card promises a private team of sixteen
-    // dogs, one kennel guide, 35 km, "never combined with strangers". Nothing
-    // on the platform matches that, so the button is an inquiry, not a search.
-    inquiryOnly: true,
-    imageGradient: 'linear-gradient(135deg, #1A2515 0%, #243321 50%, #0F1810 100%)',
-  },
-  {
-    slug: 'private-snowmobile-wilderness',
-    name: 'Private Snowmobile Wilderness Crossing',
-    category: 'wilderness',
-    hook: 'A guided 80-km snowmobile route through frozen lakes and untouched forest, with a wood-fired lunch.',
-    copy: [
-      'A full-day guided snowmobile route on the upper-fell trails, the network the local guides use, not the tourist loop. Lunch is cooked over a fire on the trail by the guide: reindeer stew, fire-baked bread, hot juice.',
-      'BRP machines, helmets, balaclavas and wool overalls included. Two-person sleds available. A driving licence is required for the driver; the passenger seat needs none. Maximum four sleds per group.',
-    ],
-    available: 'Saariselkä, Inari, Levi, Dec–Apr',
-    bookingKey: 'snowmobileVip',
-    imageGradient: 'linear-gradient(135deg, #1A1F2A 0%, #232A3A 50%, #0F121A 100%)',
-  },
-  {
-    slug: 'private-reindeer-sami-evening',
-    name: 'Private Reindeer & Sámi Evening',
-    category: 'wilderness',
-    hook: 'Reindeer sleighing on a working farm, then an evening in a private kota with a Sámi host.',
-    copy: [
-      'Two hours of reindeer sledding on a working herding farm followed by a private evening in a heated kota (open-fire teepee). The host is a Sámi reindeer herder who runs the farm, and the conversation, not a script, is the experience.',
-      'Dinner is sautéed reindeer with mashed potatoes and lingonberry, prepared on the open fire. Stories about the herd, the migration year, the joik singing tradition. Maximum twelve guests.',
-    ],
-    available: 'Inari, Saariselkä, year-round (sledding Dec–Mar)',
-    // 🔴 Measured 2026-09-20: the platform's reindeer products are farm visits
-    // and combination packages ("Levi: three-in-one", "Rovaniemi: reindeer
-    // experience and sleigh ride"). This card promises two hours on a working
-    // herding farm and a private kota evening with the Sámi herder who runs it.
-    // Not the same product, so it may not be sold as one.
-    inquiryOnly: true,
-    imageGradient: 'linear-gradient(135deg, #2A1B12 0%, #3A2818 50%, #1A100A 100%)',
-  },
-  {
-    slug: 'private-jet-arrival',
-    name: 'Private Jet Arrival',
-    category: 'arrival',
-    hook: 'Direct private-jet transfer to Ivalo, Kittilä or Rovaniemi, no commercial check-in, no transit hub.',
-    copy: [
-      'Coordinated through our jet partners in Helsinki, Geneva and Doha. Direct flights into Ivalo (closest to Saariselkä / Inari villas), Kittilä (closest to Levi / Ylläs), or Rovaniemi (best for Arctic TreeHouse).',
-      'Full handling: ground transfer to your villa with a heated arctic-spec vehicle, luggage forwarded, customs cleared without queue. The operator files the slot and pairs the arrival with the villa check-in time.',
-    ],
-    available: 'All destinations, year-round',
-    inquiryOnly: true,
-    imageGradient: 'linear-gradient(135deg, #1A1F2A 0%, #283246 50%, #0F141C 100%)',
-  },
 ]
 
 /**

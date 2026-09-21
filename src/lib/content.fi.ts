@@ -164,7 +164,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Saapumiskaupunki. Arkkitehdin suunnittelemia sviittejä, päivittäisiä suoria lentoja suurilta lentokentiltä.',
       copy: [
         'Rovaniemi on Lapin maakuntakeskus ja helpoimmin saavutettava revontulikohde: useita päivittäisiä suoria lentoja Helsingistä sekä kausittaisia suoria lentoja Lontoosta, Frankfurtista, Pariisista, Wienistä ja Persianlahdelta. Lentoasema on noin 10 kilometriä keskustasta pohjoiseen, kymmenen tai viisitoista minuuttia autolla.',
-        'Luksustarjonta rakentuu täällä arkkitehdin suunnittelemien designsviittien ympärille kymmenen minuutin päässä lentoasemalta (Arctic TreeHouse, Apukka). Helikopterikuljetukset lentoasemalta syrjäisille erämaa-alueille ovat yleisiä.',
+        'Luksustarjonta rakentuu täällä arkkitehdin suunnittelemien designsviittien ympärille kymmenen minuutin päässä lentoasemalta (Arctic TreeHouse, Apukka).',
       ],
       highlights: [
         'Arctic TreeHouse Hotel, Studio Puiston suunnittelemat ulokkeiset sviitit',
@@ -206,54 +206,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     },
   },
   experiences: {
-    'private-aurora-photography-night': {
-      hook: 'Yksi opas, oma seurueesi ja lämmitetty kuvausauto, joka seuraa ennustetta minne se ikinä osoittaakin.',
-      copy: [
-        'Kuusituntinen yksityinen revontulijahti sertifioidun suomalaisen luontokuvausoppaan kanssa. Auto on lämmitetty ja varusteltu; jalustat, lankalaukaisimet ja arktisiin oloihin sertifioidut kamerat lainataan, jos et tuo omiasi. Reitti päätetään samana iltapäivänä kp-indeksin ja pilvisyysennusteen perusteella.',
-        'Lämmin ruoka ja porontaljat maahan kuuluvat vakiona. Opastus kattaa valotuksen itse revontulille, etualan sommittelun ja saman illan jälkikäsittelyn.',
-      ],
-      available: 'Inari, Saariselkä, Levi, Rovaniemi, syys–huhtikuu',
-    },
-    'private-chef-arctic-tasting': {
-      hook: 'Yhdeksän ruokalajin suomalais-saamelainen maistelumenu, jonka työssä käyvä Lapin kokki valmistaa huvilasi keittiössä.',
-      copy: [
-        'Työssä käyvä kokki yhdestä Lapin vakavasti otettavasta keittiöstä saapuu huvilaasi illaksi. Menu rakennetaan sen ympärille, mitä on kyseisellä viikolla aidosti sesongissa: kylmän veden nieriää, lakkaa, savustettua poroa, tuoreita metsäsieniä, tyrniä, katajaa.',
-        'Sisältää menuun kuratoidun viinisovituksen, raaka-aineet, valmistelun, tarjoilun ja siivouksen. Enintään kymmenen vierasta. Kasvis-, gluteeniton- ja äyriäisvapaa menu pyynnöstä, vähintään 72 tunnin varoitusajalla.',
-      ],
-      available: 'Mikä tahansa kokoelman huvila, ympäri vuoden',
-    },
-    'private-husky-safari': {
-      hook: 'Oma valjakkosi, oma tarhaoppaasi, sisään boreaaliseen metsään ensi valossa.',
-      copy: [
-        'Yksityinen kuudentoista vetokoiran valjakko ja yksi tarhaopas. Reitti kulkee vakavasti otettavan rekikoiratarhan työreittiverkostoon, tyypillisesti 35 km, puolimatkassa nuotiotauko kuuman puolukkamehun ja grillimakkaran kera.',
-        'Ajat omaa rekeäsi (ensin 20 minuutin perehdytys). Villahaalarit, lapaset ja arktiset saappaat annetaan käyttöösi. Seurue kahdesta kuuteen, ei jaettuja ryhmiä, ei koskaan vieraiden kanssa yhdistettyä.',
-      ],
-      available: 'Rovaniemi, Levi, Saariselkä, joulu–huhtikuu',
-    },
-    'private-snowmobile-wilderness': {
-      hook: 'Opastettu 80 km:n moottorikelkkareitti jäätyneiden järvien ja koskemattoman metsän halki, puulla valmistettu lounas mukana.',
-      copy: [
-        'Koko päivän opastettu moottorikelkkareitti ylätuntureiden reiteillä, se verkosto, jota paikallisoppaat käyttävät, ei turistilenkki. Lounaan valmistaa opas nuotiolla reitin varrella (poromuhennos, nuotiolla paistettu leipä, kuuma mehu).',
-        'BRP-koneet, kypärät, kommandopipot ja villahaalarit sisältyvät. Kahden hengen kelkkoja saatavilla. Kuljettajalta vaaditaan ajokortti; matkustajan paikalle korttia ei tarvita. Enintään neljä kelkkaa ryhmää kohti.',
-      ],
-      available: 'Saariselkä, Inari, Levi, joulu–huhtikuu',
-    },
-    'private-reindeer-sami-evening': {
-      hook: 'Poroajelua toimivalla tilalla, sitten ilta yksityisessä kodassa saamelaisisännän seurassa.',
-      copy: [
-        'Kaksi tuntia poroajelua toimivalla paliskuntatilalla, jonka jälkeen yksityinen ilta lämmitetyssä kodassa (avotulikota). Isäntä on saamelainen poronhoitaja, joka pyörittää tilaa, keskustelu, ei käsikirjoitus, on itse elämys.',
-        'Illallisena poronkäristystä perunamuusin ja puolukan kera, avotulella valmistettuna. Tarinoita porotokasta, vuotuiskierrosta ja joikuperinteestä. Enintään kaksitoista vierasta.',
-      ],
-      available: 'Inari, Saariselkä, ympäri vuoden (ajelu joulu–maaliskuu)',
-    },
-    'private-jet-arrival': {
-      hook: 'Suora yksityiskonekuljetus Ivaloon, Kittilään tai Rovaniemelle, ei kaupallista lähtöselvitystä, ei vaihtoasemaa.',
-      copy: [
-        'Koordinoidaan suihkukonekumppaniemme kautta Helsingissä, Genevessä ja Dohassa. Suorat lennot Ivaloon (lähimpänä Saariselän / Inarin huviloita), Kittilään (lähimpänä Levin / Ylläksen huviloita) tai Rovaniemelle (paras Arctic TreeHousea varten).',
-        'Täysi käsittely: maakuljetus huvilallesi lämmitetyllä arktisen tason autolla, matkatavarat eteenpäin, tulli ohi ilman jonoa. Operaattori varaa lähtöslotin ja sovittaa saapumisen huvilan sisäänkirjautumisaikaan.',
-      ],
-      available: 'Kaikki kohteet, ympäri vuoden',
-    },
   },
 };
 

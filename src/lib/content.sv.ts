@@ -164,7 +164,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'Ankomststaden. Arkitektbyggda sviter, dagliga direktflyg från stora hubbar.',
       copy: [
         'Rovaniemi är Lapplands regionala huvudstad och det lättast nåbara norrskensresmålet, flera direktflyg per dag från Helsingfors, plus säsongsbetonade direktflyg från London, Frankfurt, Paris, Wien och Gulfregionen. Flygplatsen ligger cirka 10 km norr om stadskärnan, tio till femton minuter med bil.',
-        'Lyxutbudet här kretsar kring arkitektbyggda designsviter inom tio minuter från flygplatsen (Arctic TreeHouse, Apukka). Helikoptertransfer från flygplatsen till avlägsna reservat är vanliga.',
+        'Lyxutbudet här kretsar kring arkitektbyggda designsviter inom tio minuter från flygplatsen (Arctic TreeHouse, Apukka).',
       ],
       highlights: [
         'Arctic TreeHouse Hotel, utkragande sviter ritade av Studio Puisto',
@@ -206,54 +206,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     },
   },
   experiences: {
-    'private-aurora-photography-night': {
-      hook: 'En guide, ditt sällskap och ett uppvärmt fotofordon som följer prognosen vart den än pekar.',
-      copy: [
-        'En privat norrskensjakt på sex timmar med en certifierad finsk naturfotograferingsguide. Fordonet är uppvärmt och utrustat; stativ, kabelutlösare och arktiskt anpassade kameror lånas ut om du inte tar med egen. Rutten bestäms samma eftermiddag utifrån Kp-index och molnprognosen.',
-        'Varm mat och renfällar att sitta på ingår som standard. Guidningen tar upp exponering för norrskenet självt, komposition av förgrunden och efterbearbetning samma kväll.',
-      ],
-      available: 'Inari, Saariselkä, Levi, Rovaniemi, sep–apr',
-    },
-    'private-chef-arctic-tasting': {
-      hook: 'En finsk-samisk avsmakningsmeny i nio rätter, tillagad i ditt villakök av en yrkesverksam Lapplandskock.',
-      copy: [
-        'En yrkesverksam kock från ett av Lapplands seriösa kök kommer till din villa för en kväll. Menyn byggs kring det som verkligen är i säsong den veckan: kallvattenröding, hjortron, rökt ren, färsk skogssvamp, havtorn, en.',
-        'Ingår gör en vinmatchning avstämd mot menyn, ingredienser, förberedelse, servering och diskning. Högst tio gäster. Vegetariska, glutenfria och skaldjursfria menyer på begäran, med minst 72 timmars framförhållning.',
-      ],
-      available: 'Alla villor i kollektionen, året runt',
-    },
-    'private-husky-safari': {
-      hook: 'Ditt eget slädspann, din egen kennelguide, ut i den boreala skogen i första dagsljuset.',
-      copy: [
-        'Ett privat spann på sexton slädhundar och en kennelguide. Rutten går in i en seriös slädhundskennels arbetande ledsystem, vanligtvis 35 km, med en paus vid elden halvvägs för varm lingondricka och grillad korv.',
-        'Du kör din egen släde (först en genomgång på 20 minuter). Ylleoveraller, vantar och arktiska stövlar tillhandahålls. Sällskap på två till sex, inga delade grupper, aldrig kombinerat med främlingar.',
-      ],
-      available: 'Rovaniemi, Levi, Saariselkä, dec–apr',
-    },
-    'private-snowmobile-wilderness': {
-      hook: 'En guidad snöskoterrutt på 80 km över frusna sjöar och orörd skog, med en lunch tillagad över öppen eld.',
-      copy: [
-        'En guidad snöskoterrutt på en hel dag över de höga fjällederna, nätverket de lokala guiderna använder, inte turistslingan. Lunchen tillagas av guiden över en eld längs rutten (rengryta, eldbakat bröd, varm dricka).',
-        'BRP-maskiner, hjälmar, balaklavor och ylleoveraller ingår. Tvåmansslädar finns. Körkort krävs för föraren; passagerarplatsen kräver inget. Högst fyra slädar per grupp.',
-      ],
-      available: 'Saariselkä, Inari, Levi, dec–apr',
-    },
-    'private-reindeer-sami-evening': {
-      hook: 'Åka rensläde på en levande gård, sedan en kväll i en privat kåta med en samisk värd.',
-      copy: [
-        'Två timmars renslädeåkning på en levande renskötargård, följt av en privat kväll i en uppvärmd kåta (tält med öppen eld). Värden är en samisk renskötare som driver gården, samtalet, inget manus, är upplevelsen.',
-        'Middagen är sauterad ren med potatismos och lingon, tillagad över öppen eld. Berättelser om hjorden, flyttningsåret och jojktraditionen. Högst tolv gäster.',
-      ],
-      available: 'Inari, Saariselkä, året runt (släde dec–mars)',
-    },
-    'private-jet-arrival': {
-      hook: 'Direkt privatjettransfer till Ivalo, Kittilä eller Rovaniemi, ingen kommersiell incheckning, ingen bytenhubb.',
-      copy: [
-        'Koordineras via våra jetpartner i Helsingfors, Genève och Doha. Direktflyg till Ivalo (närmast villorna i Saariselkä / Inari), Kittilä (närmast villorna i Levi / Ylläs) eller Rovaniemi (bäst för Arctic TreeHouse).',
-        'Fullständig hantering: marktransfer till din villa med ett uppvärmt fordon av arktisk specifikation, bagage vidarebefordrat, tull utan kö. Operatören lämnar in slottiden och stämmer av ankomsten mot villans incheckningstid.',
-      ],
-      available: 'Alla resmål, året runt',
-    },
   },
 };
 

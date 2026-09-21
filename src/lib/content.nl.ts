@@ -164,7 +164,7 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
       position: 'De aankomststad. Door architecten gebouwde suites, dagelijkse directe vluchten vanaf grote hubs.',
       copy: [
         'Rovaniemi is de regionale hoofdstad van Lapland en de gemakkelijkst bereikbare noorderlichtbestemming, meerdere directe vluchten per dag vanuit Helsinki, plus seizoensgebonden directe vluchten vanuit Londen, Frankfurt, Parijs, Wenen en de Golf. De luchthaven ligt ongeveer 10 km ten noorden van het stadscentrum, tien tot vijftien minuten met de auto.',
-        'Het luxeaanbod hier draait om door architecten gebouwde designersuites binnen tien minuten van de luchthaven (Arctic TreeHouse, Apukka). Helikoptertransfers van de luchthaven naar afgelegen reservaten zijn gebruikelijk.',
+        'Het luxeaanbod hier draait om door architecten gebouwde designersuites binnen tien minuten van de luchthaven (Arctic TreeHouse, Apukka).',
       ],
       highlights: [
         'Arctic TreeHouse Hotel, door Studio Puisto ontworpen uitkragende suites',
@@ -206,54 +206,6 @@ const overlay: { villas: Record<string, VillaOv>; destinations: Record<string, D
     },
   },
   experiences: {
-    'private-aurora-photography-night': {
-      hook: 'Eén gids, uw gezelschap en een verwarmd fotovoertuig dat de voorspelling volgt waar die ook heen wijst.',
-      copy: [
-        'Een privé noorderlichtjacht van zes uur met een gecertificeerde Finse natuurfotografiegids. Het voertuig is verwarmd en uitgerust; statieven, kabelontspanners en arctisch geschikte camera\'s worden uitgeleend als u uw eigen niet meeneemt. De route wordt diezelfde middag bepaald op basis van de Kp-index en de bewolkingsvoorspelling.',
-        'Warm eten en rendierhuiden als ondergrond horen er standaard bij. De begeleiding behandelt de belichting voor het noorderlicht zelf, de compositie van de voorgrond en de nabewerking diezelfde avond.',
-      ],
-      available: 'Inari, Saariselkä, Levi, Rovaniemi, sep–apr',
-    },
-    'private-chef-arctic-tasting': {
-      hook: 'Een Fins-Samisch proefmenu van negen gangen, in uw villakeuken bereid door een werkende Laplandse chef-kok.',
-      copy: [
-        'Een werkende chef-kok uit een van de serieuze keukens van Lapland komt voor een avond naar uw villa. Het menu wordt opgebouwd rond wat die week echt in het seizoen is: koudwater-saibling, kruipbraam, gerookt rendier, verse bospaddenstoelen, duindoorn, jeneverbes.',
-        'Inclusief een op het menu afgestemde wijnbegeleiding, ingrediënten, voorbereiding, bediening en opruimen. Maximaal tien gasten. Vegetarische, glutenvrije en schaaldiervrije menu\'s op aanvraag, met minstens 72 uur vooraf.',
-      ],
-      available: 'Elke villa uit de collectie, het hele jaar door',
-    },
-    'private-husky-safari': {
-      hook: 'Uw eigen sledespan, uw eigen kennelgids, het boreale bos in bij het eerste licht.',
-      copy: [
-        'Een privéspan van zestien sledehonden en één kennelgids. De route gaat het werkende trailnetwerk van een serieuze sledehondenkennel in, doorgaans 35 km, met halverwege een pauze bij het vuur voor warm vossenbessensap en geroosterde worst.',
-        'U bestuurt uw eigen slee (eerst een briefing van 20 minuten). Wollen overalls, wanten en arctische laarzen worden verstrekt. Gezelschap van twee tot zes, geen gedeelde groepen, nooit gecombineerd met vreemden.',
-      ],
-      available: 'Rovaniemi, Levi, Saariselkä, dec–apr',
-    },
-    'private-snowmobile-wilderness': {
-      hook: 'Een begeleide sneeuwscooterroute van 80 km door bevroren meren en ongerept bos, met een op houtvuur bereide lunch.',
-      copy: [
-        'Een begeleide sneeuwscooterroute van een hele dag over de hoge fjälltrails, het netwerk dat de plaatselijke gidsen gebruiken, niet de toeristenlus. De lunch wordt door de gids op een vuur langs de route bereid (rendierstoofpot, op vuur gebakken brood, warm sap).',
-        'BRP-machines, helmen, bivakmutsen en wollen overalls inbegrepen. Tweepersoonssleeën beschikbaar. Rijbewijs vereist voor de bestuurder; de passagiersstoel heeft er geen nodig. Maximaal vier sleeën per groep.',
-      ],
-      available: 'Saariselkä, Inari, Levi, dec–apr',
-    },
-    'private-reindeer-sami-evening': {
-      hook: 'Rendierslee rijden op een werkende boerderij, daarna een avond in een privé-kota met een Samische gastheer.',
-      copy: [
-        'Twee uur rendiersleeën op een werkende herdersboerderij, gevolgd door een privéavond in een verwarmde kota (tipi met open vuur). De gastheer is een Samische rendierherder die de boerderij runt, het gesprek, geen script, is de beleving.',
-        'Het diner is gesauteerd rendier met aardappelpuree en vossenbessen, bereid op open vuur. Verhalen over de kudde, het trekjaar en de joik-zangtraditie. Maximaal twaalf gasten.',
-      ],
-      available: 'Inari, Saariselkä, het hele jaar (slee dec–mrt)',
-    },
-    'private-jet-arrival': {
-      hook: 'Directe privéjettransfer naar Ivalo, Kittilä of Rovaniemi, geen commerciële check-in, geen overstaphub.',
-      copy: [
-        'Gecoördineerd via onze jetpartners in Helsinki, Genève en Doha. Directe vluchten naar Ivalo (het dichtst bij de villa\'s van Saariselkä / Inari), Kittilä (het dichtst bij de villa\'s van Levi / Ylläs) of Rovaniemi (het beste voor het Arctic TreeHouse).',
-        'Volledige afhandeling: grondtransfer naar uw villa met een verwarmd voertuig van arctische specificatie, bagage doorgestuurd, douane zonder rij. De exploitant dient de slot in en stemt de aankomst af op de incheck­tijd van de villa.',
-      ],
-      available: 'Alle bestemmingen, het hele jaar door',
-    },
   },
 };
 
