@@ -201,52 +201,52 @@
   },
   "/experiences": {
     "en": {
-      "title": "Bespoke Lapland Experiences · Aurora, Helicopter, Chef",
-      "description": "Private Lapland experiences: aurora photography, helicopter flights, in-villa chef tastings, husky safaris and private-jet arrival. Run by each operator."
+      "title": "Bespoke Lapland Experiences · Aurora, Husky, Chef",
+      "description": "Private Lapland experiences: aurora photography, snowmobile crossings, in-villa chef tastings, husky safaris and private-jet arrival. Run by each operator."
     },
     "fi": {
-      "title": "Räätälöidyt Lappi-elämykset · revontulet, helikopteri",
-      "description": "Yksityisiä Lappi-elämyksiä: revontulikuvaus, helikopterilennot, yksityiskokin maistelut huvilalla, eksklusiiviset huskysafarit ja saapuminen yksityiskoneella."
+      "title": "Räätälöidyt Lappi-elämykset · revontulet, husky",
+      "description": "Yksityisiä Lappi-elämyksiä: revontulikuvaus, moottorikelkkaretket, yksityiskokin maistelut huvilalla, eksklusiiviset huskysafarit ja saapuminen yksityiskoneella."
     },
     "de": {
       "title": "Maßgeschneiderte Lappland-Erlebnisse · Polarlicht & mehr",
-      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Helikopterflüge, Privatkoch in der Villa, Husky-Safaris, Privatjet-Anreise. Vom Anbieter durchgeführt."
+      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Schneemobiltouren, Privatkoch in der Villa, Husky-Safaris, Privatjet-Anreise. Vom Anbieter durchgeführt."
     },
     "ja": {
-      "title": "オーダーメイドのラップランド体験｜オーロラ・ヘリ・シェフ",
-      "description": "ラップランドのプライベート体験の短いリスト：オーロラ撮影、ヘリコプター遊覧、ヴィラ内シェフの饗宴、限定ハスキーサファリ、プライベートジェットでの到着。運営は各社。"
+      "title": "オーダーメイドのラップランド体験｜オーロラ・ハスキー・シェフ",
+      "description": "ラップランドのプライベート体験の短いリスト：オーロラ撮影、スノーモービルツアー、ヴィラ内シェフの饗宴、限定ハスキーサファリ、プライベートジェットでの到着。運営は各社。"
     },
     "es": {
-      "title": "Experiencias a medida en Laponia · aurora, helicóptero",
-      "description": "Experiencias privadas en Laponia: fotografía de auroras, vuelos en helicóptero, cenas con chef en la villa, safaris con huskies y llegada en jet privado."
+      "title": "Experiencias a medida en Laponia · aurora, husky",
+      "description": "Experiencias privadas en Laponia: fotografía de auroras, rutas en motonieve, cenas con chef en la villa, safaris con huskies y llegada en jet privado."
     },
     "pt-BR": {
-      "title": "Experiências sob medida na Lapônia · aurora, helicóptero",
-      "description": "Experiências privadas na Lapônia: fotografia de auroras, voos de helicóptero, jantares com chef na vila, safáris com huskies e chegada de jato privado."
+      "title": "Experiências sob medida na Lapônia · aurora, husky",
+      "description": "Experiências privadas na Lapônia: fotografia de auroras, passeios de snowmobile, jantares com chef na vila, safáris com huskies e chegada de jato privado."
     },
     "zh-CN": {
-      "title": "定制拉普兰体验，极光、直升机、私厨",
-      "description": "拉普兰私人体验精选：极光摄影、直升机飞行、别墅内私厨品鉴、专属哈士奇雪橇之旅与私人飞机抵达。均由各自的运营方提供。"
+      "title": "定制拉普兰体验，极光、哈士奇、私厨",
+      "description": "拉普兰私人体验精选：极光摄影、雪地摩托穿越、别墅内私厨品鉴、专属哈士奇雪橇之旅与私人飞机抵达。均由各自的运营方提供。"
     },
     "ko": {
-      "title": "맞춤형 라플란드 경험 · 오로라, 헬리콥터, 셰프",
-      "description": "프라이빗 라플란드 경험을 엄선: 오로라 촬영, 헬리콥터 비행, 빌라 내 셰프 시식, 독점 허스키 사파리, 프라이빗 제트 도착. 각 운영사가 진행합니다."
+      "title": "맞춤형 라플란드 경험 · 오로라, 허스키, 셰프",
+      "description": "프라이빗 라플란드 경험을 엄선: 오로라 촬영, 스노모빌 투어, 빌라 내 셰프 시식, 독점 허스키 사파리, 프라이빗 제트 도착. 각 운영사가 진행합니다."
     },
     "fr": {
-      "title": "Expériences sur mesure, aurore, hélicoptère, chef",
-      "description": "Expériences privées en Laponie : photographie d'aurores, vols en hélicoptère, dégustations d'un chef en villa, safaris husky exclusifs, arrivée en jet privé."
+      "title": "Expériences sur mesure, aurore, husky, chef",
+      "description": "Expériences privées en Laponie : photographie d'aurores, randonnées en motoneige, dégustations d'un chef en villa, safaris husky exclusifs, arrivée en jet privé."
     },
     "it": {
-      "title": "Esperienze su misura, aurora, elicottero, chef",
-      "description": "Esperienze private in Lapponia: fotografia delle aurore, voli in elicottero, degustazioni con chef in villa, safari husky esclusivi e arrivo in jet privato."
+      "title": "Esperienze su misura, aurora, husky, chef",
+      "description": "Esperienze private in Lapponia: fotografia delle aurore, escursioni in motoslitta, degustazioni con chef in villa, safari husky esclusivi e arrivo in jet privato."
     },
     "nl": {
-      "title": "Lapland-ervaringen op maat · noorderlicht, heli, chef",
-      "description": "Privé-ervaringen in Lapland: noorderlichtfotografie, helikoptervluchten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+      "title": "Lapland-ervaringen op maat · noorderlicht, husky, chef",
+      "description": "Privé-ervaringen in Lapland: noorderlichtfotografie, sneeuwscootertochten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
     },
     "sv": {
       "title": "Skräddarsydda Lapplandsupplevelser · norrsken, chef",
-      "description": "Privata Lapplandsupplevelser: norrskensfotografering, helikopterflyg, privatkock i villan, exklusiva hundspannssafarier och ankomst med privatjet."
+      "description": "Privata Lapplandsupplevelser: norrskensfotografering, skotersafarier, privatkock i villan, exklusiva hundspannssafarier och ankomst med privatjet."
     }
   },
   "/midnight-sun": {
