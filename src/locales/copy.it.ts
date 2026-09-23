@@ -1,5 +1,12 @@
 import type { SiteCopy } from './types'
 
+// 🔴 Yksi kerros (23.9.2026). Tassa tiedostossa oli literaalin JALKEEN toinen
+// kerros (25 Object.assign- ja it.x = ... -lausetta), joka voitti ajossa aina:
+// ylemman kerroksen muokkaus ei nakynyt sivulla (ansa osui kolmesti), ja
+// prerenderoija, joka poimii merkkijonot TIEDOSTOSTA, tulosti samasta kappaleesta
+// kaksi eri kaannosta hakukoneversioon. Kerrokset yhdistettiin koneellisesti ja
+// lopullinen objekti todettiin identtiseksi. Muokkaa vain alla olevaa literaalia.
+
 const it: SiteCopy = {
   nav: {
     villas: 'Ville', suites: 'Suite', destinations: 'Destinazioni', experiences: 'Esperienze',
@@ -20,14 +27,14 @@ const it: SiteCopy = {
     viewPublicRates: 'Vedi le tariffe pubbliche',
     orSendPrivateInquiry: 'Oppure invia una richiesta privata',
     seeTheCollection: 'Vedi le ville',
-    inquireAboutJune: 'Richiedi le date di giugno',
-    inquireAboutJuneShort: 'Richiedi per giugno',
-    seeSummerCollection: 'Vedi le ville d\'estate',
-    fullVillaCollection: 'Tutte le ville',
+    inquireAboutJune: 'Richiedere date di giugno',
+    inquireAboutJuneShort: 'Date di giugno',
+    seeSummerCollection: 'Vedi collezione estiva',
+    fullVillaCollection: 'Collezione completa di ville',
     sendPrivateInquiry: 'Invia richiesta privata',
-    sendAnother: 'Invia un’altra richiesta',
+    sendAnother: 'Invia un\'altra richiesta',
     home: 'Home',
-    theCollection: 'Le ville',
+    theCollection: 'La collezione',
     sending: 'Invio…',
     subscribe: 'Iscriviti',
     subscribed: 'Iscritto',
@@ -40,19 +47,19 @@ const it: SiteCopy = {
     rate: 'Tariffa',
     bedroom: 'camera',
     bedrooms: 'camere',
-    sleeps: 'Posti letto',
+    sleeps: 'Capienza',
     arrival: 'Arrivo',
     aurora: 'Aurora',
     highlights: 'Punti salienti',
-    villas: (n) => (n === 1 ? 'Una villa in questa destinazione.' : `${n} ville in questa destinazione.`),
-    villasIn: (name) => `Ville a ${name}`,
-    villasInH2: (n, _name) => (n === 1 ? 'Una villa in questa destinazione.' : `${n} ville in questa destinazione.`),
-    alsoInCollection: 'Anche in lista',
-    threeOthers: 'Altre tre ville che vale la pena considerare.',
-    signatureDetails: 'Dettagli che fanno la differenza',
-    sixVerifyOnArrival: 'Sei dettagli che potrai verificare all’arrivo.',
+    villas: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
+    villasIn: (name: string) => `Ville a ${name}`,
+    villasInH2: (n: number, _name: string) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
+    alsoInCollection: 'Anche nella collezione',
+    threeOthers: 'Tre altre ville da considerare.',
+    signatureDetails: 'Dettagli firma',
+    sixVerifyOnArrival: 'Sei cose da verificare all\'arrivo.',
     theDestination: 'La destinazione',
-    fullCollectionShort: 'Tutte le ville',
+    fullCollectionShort: 'Collezione completa',
   },
   editorial: {
     pickLabel: 'Scelta della redazione',
@@ -73,49 +80,45 @@ const it: SiteCopy = {
   tier: {
     signature: 'Signature',
     private: 'Collezione privata',
-    reserve: 'Reserve · Solo su richiesta',
+    reserve: 'Riserva · Solo su richiesta',
   },
   category: {
     'glass-roof': 'Villa con tetto in vetro',
     'log-estate': 'Dimora privata in tronchi',
-    'designer-suite': 'Suite d’autore',
+    'designer-suite': 'Suite d\'autore',
     'alpine-chalet': 'Chalet alpino',
     'lakeside-retreat': 'Rifugio sul lago',
   },
   inquiry: {
     eyebrow: 'Richiesta privata',
-    defaultTitle: 'Un modo più sereno di organizzare un viaggio in Lapponia.',
-    defaultBody: 'Invia un solo messaggio, preferenze, date, numero di persone, e ricevi una short list privata entro un giorno lavorativo. Nessun profilo pubblico, nessun calendario condiviso.',
+    defaultTitle: 'Un modo più discreto di pianificare un viaggio in Lapponia.',
+    defaultBody: 'Invii un solo messaggio, preferenze, date, numero di ospiti, e riceve una shortlist privata entro un giorno lavorativo. Nessun profilo pubblico, nessun calendario condiviso.',
     inquireBtn: 'Richiesta privata',
     emailLabel: 'private@laplandvibes.com',
-    badges: {
-      anonymous: 'Richiesta anonima',
-      reply: 'Risposta entro un giorno lavorativo',
-      rates: 'Link alla prenotazione della casa',
-    },
+    badges: { anonymous: 'Pianificazione anonima', reply: 'Risposta entro un giorno lavorativo', rates: 'Link alla prenotazione della casa' },
   },
   midnightSunBand: {
     eyebrow: '6 giu – 7 lug',
     h2: 'Le stesse ville, in un’estate di luce ininterrotta.',
-    body: 'Stessa architettura, altra stagione. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, il bosco si riempie di camemori. L’estate è la stagione tranquilla della Lapponia, e le case sono le stesse. La tariffa è indicata sulla pagina di prenotazione di ogni casa.',
-    primary: 'Vedi le ville d\'estate',
-    secondary: 'Richiedi le date di giugno',
+    body: 'Stessa architettura, stagione diversa. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, la foresta si riempie di lamponi artici. Metà domanda dell\'inverno, e l\'unica finestra dell\'anno in cui chef privati e ville di riserva aprono il resto del calendario.',
+    primary: 'Vedi la collezione estiva',
+    secondary: 'Richiedere date di giugno',
   },
   newsletter: {
     eyebrow: 'La newsletter #LaplandVibes',
-    h2: 'Date libere delle ville e le settimane tranquille.',
-    lede: 'Date liberate, indirizzi degni di nota e come leggere le previsioni delle aurore. Niente spam. Scriviamo dalla Finlandia e inviamo solo quando abbiamo davvero qualcosa da dire.',
+    h2: 'Un dispaccio discreto quando le ville aprono nuove date e veniamo a sapere di un rilascio privato.',
+    lede: 'Date che si liberano. Case che meritano uno sguardo. Previsioni della finestra aurorale nella settimana precedente ogni novilunio. Niente spam, scritto in Finlandia, inviato solo quando c\'è qualcosa di specifico da raccontare.',
     emailPlaceholder: 'sua@email.com',
     footnote: 'Disiscrizione con un clic.',
-    welcome: 'Benvenuto a bordo. Il primo avviso arriva entro una settimana.',
-    already: 'È già nella lista, ci vediamo al prossimo avviso.',
-    invalidEmail: 'Questo indirizzo email non sembra valido.',
-    networkError: 'Errore di rete. Riprova.',
-    genericError: 'Qualcosa è andato storto. Riprova tra un momento.',
+    welcome: 'Benvenuto a bordo. Il primo dispaccio arriva entro una settimana.',
+    already: 'È già in lista, ci vediamo nel prossimo dispaccio.',
+    invalidEmail: 'Questo indirizzo email sembra non valido.',
+    networkError: 'Errore di rete. Riprovi.',
+    genericError: 'Qualcosa è andato storto. Riprovi tra un momento.',
   },
   affiliateDisclosure: {
-    compact: 'Link di affiliazione, riceviamo una piccola commissione senza costi aggiuntivi quando prenota.',
-    full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi per Lei.',
+    compact: 'Link di affiliazione, riceviamo una piccola commissione senza costi aggiuntivi.',
+    full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi.',
   },
   hero: {
     home: {
@@ -130,37 +133,17 @@ const it: SiteCopy = {
       title: '{n} ville. {m} destinazioni. Basta un messaggio.',
       lede: 'Ogni immobile elencato sotto è verificato sulla base delle informazioni pubblicate dal gestore e delle recensioni recenti degli ospiti. Filtri per la tipologia di edificio che ha in mente, oppure invii una richiesta privata e costruiremo una short list intorno alle Sue date.',
     },
-    suites: {
-      eyebrow: 'Suite d’autore',
-      title: 'Quando non Le serve una villa, ma Le serve quel tetto in vetro.',
-      lede: 'Un breve elenco di suite con una camera e cabine per l’aurora dove l’architettura stessa è l’esperienza. Meno persone, lo stesso soffitto panoramico.',
-    },
-    destinations: {
-      eyebrow: 'Destinazioni',
-      title: 'Saariselkä, Inari, Rovaniemi, Levi e Ylläs.',
-      lede: 'La Lapponia non è intercambiabile. La frequenza delle aurore, la logistica di arrivo e la densità delle strutture cambiano in modo sensibile ogni 50 km a nord del Circolo Polare Artico.',
-    },
-    experiences: {
-      eyebrow: 'Esperienze su misura',
-      title: 'Aurora, natura selvaggia e altre uscite private.',
-      lede: 'Ogni uscita qui è privata e si prenota sulla pagina dell\'operatore. Prezzo e date libere sono lì prima di qualsiasi impegno.',
-    },
+    suites: { eyebrow: 'Suite d\'autore', title: 'Quando non Le serve una villa, ma il tetto in vetro sì.', lede: 'Un breve elenco di suite a una camera e cabine aurorali dove l\'architettura stessa è l\'esperienza. Capienza minore, stesso soffitto panoramico.' },
+    destinations: { eyebrow: 'Destinazioni', title: 'Saariselkä, Inari, Rovaniemi, Levi e Ylläs.', lede: 'La Lapponia non è intercambiabile. Frequenza dell\'aurora, logistica d\'arrivo e densità ricettiva cambiano in modo significativo ogni 50 km a nord del Circolo Polare.' },
+    experiences: { eyebrow: 'Esperienze su misura', title: 'Aurora, natura selvaggia e altre uscite private.', lede: 'Ogni uscita qui è privata e si prenota sulla pagina dell\'operatore. Prezzo e date libere sono lì prima di qualsiasi impegno.' },
     midnightSun: {
       eyebrow: '6 giu – 7 lug',
       title: 'La finestra in cui il sole non tramonta.',
       lede: 'Le stesse ville, nella stagione del sole di mezzanotte, meno ospiti, una luce infinita e morbida.',
       primary: 'Richiedi le date di giugno', secondary: 'Vedi le ville',
     },
-    inquiry: {
-      eyebrow: 'Richiesta privata',
-      title: 'Un messaggio privato, una short list curata.',
-      lede: 'Invii date, numero di persone e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo.',
-    },
-    about: {
-      eyebrow: 'Chi siamo',
-      title: 'Chi c\'è dietro e che cosa non facciamo.',
-      lede: '{n} ville e suite scelte a mano nella Lapponia finlandese. Link diretto alla prenotazione della struttura, nessuna piattaforma in mezzo, e i suoi dati non vanno da nessuna parte finché non si fa avanti lei.',
-    },
+    inquiry: { eyebrow: 'Richiesta privata', title: 'Un messaggio privato, una shortlist curata.', lede: 'Invii date, numero di ospiti e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo, incluse, dove appropriato, le ville di riserva che non appaiono mai pubblicamente.' },
+    about: { eyebrow: 'Chi siamo', title: 'Chi c\'è dietro e che cosa non facciamo.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' },
   },
   home: {
     packages: {
@@ -210,51 +193,35 @@ const it: SiteCopy = {
         }
       ]
     },
-    philosophy: {
-      eyebrow: 'Come funziona',
-      h2: 'Noi verifichiamo e proponiamo. Lei prenota direttamente con la struttura.',
-      items: [
-        { title: 'Solo strutture verificate.', body: 'La lista conta {n} ville e suite, non di più. Ognuna è verificata sulle informazioni pubblicate dalla struttura stessa e sulle recensioni recenti degli ospiti, e la lista è viva: una struttura esce se il livello non regge più.' },
-        { title: 'Una proposta entro un giorno, senza impegno.', body: 'Ci dica le date, la dimensione del gruppo e cosa cerca. Riceve una proposta con le opzioni più adatte entro un giorno, e i Suoi contatti non vengono condivisi con nessuna struttura finché non è lei a farsi avanti.' },
-        { title: 'Il prezzo sta alla struttura, non a noi.', body: 'Quando una villa ha una pagina di prenotazione pubblica, il link porta direttamente lì e la tariffa si vede prima di decidere. Quando non c\'è una tariffa pubblicata, la struttura la propone direttamente a lei. Non fissiamo prezzi e non accettiamo prenotazioni.' },
-      ],
-    },
-    signature: {
-      eyebrow: "Le nostre quattro scelte",
-      h2: 'Le quattro che consigliamo più spesso.',
-      lede: 'Gli immobili che consigliamo più spesso. Ogni dettaglio qui sotto è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.',
-    },
-    destinations: {
-      eyebrow: 'Destinazioni',
-      h2: 'Cinque luoghi, ciascuno con un motivo chiaro.',
-    },
+    philosophy: { eyebrow: 'Come lavoriamo', h2: 'L\'opposto di una piattaforma di prenotazione.',
+    items: [
+      { title: 'Un elenco breve, non una directory.', body: 'Otto ville e suite nelle destinazioni che davvero giustificano il viaggio. Le proprietà vengono respinte più spesso che aggiunte, ogni voce in questa pagina è quella che un viaggiatore attento può prenotare senza esitazione.' },
+      { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
+      { title: 'Tariffe dirette, dove esistono.', body: 'Le inserzioni pubbliche rimandano a tariffe verificate. Le proprietà tenute privatamente, incluse le ville di riserva senza disponibilità pubblica, sono quotate direttamente. La risposta Le dice quale è quale.' },
+    ] },
+    signature: { eyebrow: "Le nostre quattro scelte", h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
+    destinations: { eyebrow: 'Destinazioni', h2: 'Cinque luoghi, ognuno con una ragione precisa.' },
   },
   villasPage: {
     leadTitle: 'Che cosa contiene questa selezione',
     leadP1: 'Otto camere, non otto hotel. Ogni voce di questo elenco è un tipo di camera preciso all’interno di una struttura reale: una capanna con tetto in vetro a Kakslauttanen, una suite a sbalzo all’Arctic TreeHouse, una bolla per l’aurora sul lago Inari. È l\'unità che si prenota davvero, quindi è quella che elenchiamo.',
     leadP2: 'I giudizi su questo sito vengono da Google e riguardano l\'intera struttura, mai la singola camera, e ogni scheda lo dichiara. La selezione è breve di proposito: cinque destinazioni e quattro tipi costruttivi, dal tetto in vetro allo chalet alpino, e si ferma lì invece di allungare l\'elenco.',
-    filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d’autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
-    noVillas: 'Ancora nessuna villa in questa categoria.',
-    inquiryTitle: 'Non trova la soluzione giusta?',
-    inquiryBody: 'Qui sopra c’è l’intera collezione pubblicata. Se nulla è adatto, ci dica che cosa cerca e Le suggeriremo quello che guarderemmo noi, anche fuori da questo elenco.',
+    filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d\'autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
+    noVillas: 'Nessuna villa in questa categoria al momento.',
+    inquiryTitle: 'Non trova ciò che cerca?',
+    inquiryBody: 'La collezione sopra è quella attualmente pubblicata. Altre ville sono tenute privatamente, incluse proprietà di riserva senza inserzione pubblica, e quotate direttamente su richiesta.',
   },
   suitesPage: {
-    intro: {
-      p1Pre: '«Suite» in Lapponia comprende due gesti architettonici distinti, entrambi da conoscere. Il primo è la ',
-      designerSuite: 'suite d’autore',
-      p1Mid: ', dove uno studio di architettura finlandese come Studio Puisto ha costruito un’unica camera attorno a un’unica vista. Il secondo è la ',
-      glassRoof: 'cabina con tetto in vetro',
-      p1Post: ', dove il soffitto è il dettaglio protagonista. Entrambe sono elencate qui sotto.',
-    },
-    inquiryTitle: 'Una prenotazione di due suite, o un piano privato?',
-    inquiryBody: 'Diversi di questi immobili liberano un piano con più suite a uso esclusivo nelle settimane di bassa stagione. Ci indichi le Sue date e il numero di persone.',
+    intro: { p1Pre: '"Suite" in Lapponia copre due gesti architettonici distinti, entrambi da conoscere. Il primo è la ', designerSuite: 'suite d\'autore', p1Mid: ', dove uno studio di architettura finlandese come Studio Puisto ha costruito una camera intorno a una sola vista. Il secondo è la ', glassRoof: 'cabina con tetto in vetro', p1Post: ', dove il soffitto è il dettaglio principale. Entrambe sono elencate sotto.' },
+    inquiryTitle: 'Prenotare due suite, o un piano privato?',
+    inquiryBody: 'Diverse di queste proprietà liberano un piano multi-suite a uso esclusivo nelle settimane di spalla. Condivida date e numero di ospiti.',
   },
   destinationsPage: {
     leadTitle: 'Cinque luoghi, cinque cieli diversi',
     leadP1: 'Queste cinque destinazioni non sono intercambiabili. Inari è la più settentrionale, su un lago il cui orizzonte visibile non porta alcuna luce di città. Saariselkä sta sul margine nord del parco nazionale di Urho Kekkonen, ed è lì che è nato l\'alloggio con tetto in vetro. Rovaniemi ha i voli, Levi i servizi della stazione, Ylläs il silenzio.',
     leadP2: 'Ogni profilo qui sotto indica l’aeroporto di arrivo e il tempo di transfer, com’è davvero il cielo lì (l’orizzonte, la luce degli abitati, quanto in alto tende a stare l’arco) e quali ville si trovano in quella zona. Non pubblichiamo alcun dato di frequenza dell\'aurora per villaggio, perché nessuno lo misura per villaggio.',
-    destinationLabel: (i) => `Destinazione 0${i + 1}`,
-    readTheProfile: (name) => `Leggi il profilo di ${name}`,
+    destinationLabel: (i: number) => `Destinazione 0${i + 1}`,
+    readTheProfile: (name: string) => `Leggi il profilo di ${name}`,
   },
   destinationPage: {
     backLink: 'Destinazioni',
@@ -262,157 +229,114 @@ const it: SiteCopy = {
     arrival: 'Arrivo',
     aurora: 'Aurora',
     highlights: 'Punti salienti',
-    villasHere: (n) => (n === 1 ? 'Una villa in questa destinazione.' : `${n} ville in questa destinazione.`),
-    villasHereH2: (n) => (n === 1 ? 'Una villa in questa destinazione.' : `${n} ville in questa destinazione.`),
+    villasHere: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
+    villasHereH2: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
     fullCollection: 'Collezione completa',
-    inquiryTitle: (name) => `Organizza un viaggio privato a ${name}.`,
-    inquiryBody: 'Invia date, numero di persone e qualsiasi preferenza (chef privato, uso esclusivo). Rispondiamo con una short list entro un giorno lavorativo.',
+    inquiryTitle: (name: string) => `Pianifichi un viaggio privato a ${name}.`,
+    inquiryBody: 'Invii date, numero di ospiti e preferenze (chef privato, uso esclusivo). Rispondiamo con una shortlist entro un giorno lavorativo.',
   },
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
-      wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, rompighiaccio e lago Inari. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
-      other: { title: 'Altre uscite private', intro: 'Babbo Natale in villa, un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
-      onRequest: { eyebrow: 'Su richiesta', title: 'Chef e transfer: chiediamo noi per voi.', intro: 'Non abbiamo un prodotto prenotabile per uno chef privato o un transfer dall\'aeroporto, quindi qui non c\'è una scheda. Scrivete il desiderio nella richiesta: lo chiediamo alla struttura e torniamo con la risposta.', cta: 'Invia una richiesta' },
-    },
+    wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, rompighiaccio e lago Inari. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
+    other: { title: 'Altre uscite private', intro: 'Babbo Natale in villa, un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
+    onRequest: { eyebrow: 'Su richiesta', title: 'Chef e transfer: chiediamo noi per voi.', intro: 'Non abbiamo un prodotto prenotabile per uno chef privato o un transfer dall\'aeroporto, quindi qui non c\'è una scheda. Scrivete il desiderio nella richiesta: lo chiediamo alla struttura e torniamo con la risposta.', cta: 'Invia una richiesta' },
+  },
   },
   midnightSunPage: {
-    facts: [
-      { value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più a nord' },
-      { value: '24 h', label: 'Luce al culmine, 21 giu' },
-      { value: '+18 °C', label: 'Temperatura diurna media a fine giugno' },
-      { value: '68,9°N', label: 'La nostra destinazione più a nord, Inari, dove dura più a lungo' },
-    ],
-    fourReasons: 'Quattro motivi',
-    h2: 'La Lapponia d’estate è un luogo a sé.',
+    facts: [{ value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '68,9°N', label: 'Inari, la nostra meta più a nord, dove dura di più' }],
+    fourReasons: 'Quattro ragioni',
+    h2: 'La Lapponia in estate è un altro luogo.',
     reasons: [
-      { title: 'L’architettura cambia carattere.', body: 'I tetti in vetro pensati per le aurore ora incorniciano un sole ininterrotto. Lucernario sopra il letto, sole sul lago, nessun bisogno di tirare una tenda, non c’è notte da nascondere.' },
-      { title: 'La natura selvaggia diventa accessibile.', body: 'I laghi si sciolgono, il bosco boreale si apre, compaiono i percorsi in canoa. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
-      { title: 'La stessa casa, un’altra stagione.', body: 'La collezione in estate è la stessa dell’inverno. Sotto lo stesso tetto di vetro c’è un sole che non tramonta al posto dell’aurora, i laghi sono liberi e il bosco è percorribile. La tariffa è sulla pagina di prenotazione di ogni casa, così la differenza di stagione si legge direttamente.' },
-      { title: 'Niente code, niente vicini.', body: 'La Lapponia d’estate vede una frazione della densità di visitatori dell’inverno. Il sentiero nel bosco, il belvedere sul fjäll, sono praticamente solo Suoi.' },
-    ],
-    summerCollection: {
-      eyebrow: 'La collezione estiva',
-      h2: 'Quattro caratteri di villa, nella luce dell’estate.',
-      lede: 'Le stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville nel bosco, mostrate nella luce del sole di mezzanotte di fine giugno per mostrare la seconda metà della storia.',
-      cards: [
-        { title: 'Cabina con tetto in vetro nel verde', copy: 'L’architettura dell’aurora nella luce dorata delle 23:00, circondata da una foresta rigogliosa anziché dalla neve.' },
-        { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari libera dal ghiaccio, canoa al pontile, fumo dalla sauna a legna.' },
-        { title: 'Chalet d’autore sul fjäll', copy: 'Eriofori e fiori selvatici al posto della pista da sci, la stessa facciata panoramica in vetro.' },
-        { title: 'Villa moderna nel bosco', copy: 'Edificio in legno a sbalzo nel folto del pino boreale verde, calore dorato del sole di mezzanotte sulla facciata.' },
-      ],
-    },
-    planning: {
-      h2: 'Una nota sull’organizzazione di un viaggio nel sole di mezzanotte.',
-      p1: 'La finestra è breve e le ville sono di proprietà individuale, perciò il calendario si riempie in modo opportunistico, non uniforme. Conviene chiedere per tempo.',
-      p2: 'Il momento giusto per informarsi su un determinato giugno è tra gennaio e marzo dello stesso anno. Anche le richieste successive vale la pena inviarle, capitano dei rilasci, ma la fascia alta dell’offerta va spesso via prima.',
-      quoting: 'Attualmente rispondiamo alle richieste per l\'estate {year}',
-    },
-    inquiryTitle: 'S’informi su un viaggio nel sole di mezzanotte.',
-    inquiryBody: 'Invia date, numero di persone e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con le disponibilità di tutta la collezione estiva.',
+    { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },
+    { title: 'La natura diventa accessibile.', body: 'I laghi si sciolgono, la foresta boreale si apre, le rotte in canoa appaiono. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
+    { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati quotano tariffe di spalla.' },
+    { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjäll, sono essenzialmente Suoi.' },
+  ],
+    summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, mostrate nella luce del sole di mezzanotte di fine giugno.',
+    cards: [
+      { title: 'Cabina con tetto in vetro nel verde', copy: 'L\'architettura aurorale in luce dorata delle 23, circondata da foresta lussureggiante invece di neve.' },
+      { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari disgelata, canoa al pontile, fumo dalla sauna a legna.' },
+      { title: 'Chalet d\'autore sul fjäll', copy: 'Eriofori e fiori selvatici sostituiscono la pista da sci, stessa facciata panoramica in vetro.' },
+      { title: 'Villa moderna in foresta', copy: 'Edificio in legno a sbalzo nel verde dei pini boreali, calore dorato del sole di mezzanotte sulla facciata.' },
+    ] },
+    planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Conviene chiedere per tempo.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Richieste in corso: estate 2026 + 2027' },
+    inquiryTitle: 'Richiedere un viaggio al sole di mezzanotte.',
+    inquiryBody: 'Invii date, numero di ospiti e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con la disponibilità sulla collezione estiva, incluse le ville di riserva non elencate pubblicamente.',
   },
   inquiryPage: {
     eyebrow: 'Il modulo di richiesta',
-    h2: 'Raccontaci cosa stai immaginando.',
-    intro: 'Cinque campi brevi. Più le preferenze e i vincoli sono precisi, più utile è la short list. Nome ed email restano facoltativi, le risposte vanno all’indirizzo da cui arriva il messaggio.',
-    fields: {
-      headcount: 'Numero di persone',
-      tripIntent: 'Tipo di viaggio',
-      budget: 'Budget indicativo a notte',
-      datesLabel: 'Date (o periodo)',
-      datesHint: 'es. «14–21 feb» oppure «prima metà di marzo, 5 notti»',
-      datesPlaceholder: 'Facoltativo',
-      messageLabel: 'Qualcosa di specifico',
-      messageHint: 'Chef privato, uso esclusivo, accessibilità, dieta, attenzione alla fotografia, tutto ciò che dà forma alla short list.',
-      nameLabel: 'Nome (facoltativo)',
-      namePlaceholder: 'Anonimo se vuoto',
-      emailLabel: 'Email di risposta',
-      emailHint: 'Se vuoto, le risposte vanno al Suo indirizzo di invio.',
-      emailPlaceholder: 'facoltativo',
-    },
+    h2: 'Ci dica cosa sta immaginando.',
+    intro: 'Cinque brevi campi. Più sono specifiche le preferenze e i vincoli, più utile è la shortlist. Nome ed email restano opzionali, le risposte vanno all\'indirizzo da cui arriva il messaggio.',
+    fields: { headcount: 'Numero di ospiti', tripIntent: 'Intento del viaggio', budget: 'Budget indicativo per notte',
+    datesLabel: 'Date (o finestra)', datesHint: 'es. "14–21 feb" o "prima metà di marzo, 5 notti"', datesPlaceholder: 'Opzionale',
+    messageLabel: 'Qualcosa di specifico', messageHint: 'Chef privato, uso esclusivo, accessibilità, dieta, focus fotografia, qualsiasi cosa modelli la shortlist.',
+    nameLabel: 'Nome (opzionale)', namePlaceholder: 'Anonimo se vuoto', emailLabel: 'Email di risposta', emailHint: 'Se vuoto, le risposte vanno all\'indirizzo di invio.', emailPlaceholder: 'opzionale' },
     options: {
-      headcount: ['1–2 ospiti', '3–4 ospiti', '5–6 ospiti', '7–10 ospiti', 'Gruppo più grande'],
-      intent: ['Stagione delle aurore, prima visita', 'Stagione delle aurore, visita ripetuta', 'Sole di mezzanotte (giu–lug)', 'Natale / Capodanno', 'Gruppo famiglia', 'Celebrazione privata', 'Luna di miele / ritiro per due', 'Altro, spiega nel messaggio'],
-      budget: ['Meno di 1.000 € / notte', '1.000 – 2.500 € / notte', '2.500 – 5.000 € / notte', 'Oltre 5.000 € / notte', 'Proprietà reserve, uso esclusivo', 'Preferisco non dirlo'],
-    },
+    headcount: ['1–2 ospiti', '3–4 ospiti', '5–6 ospiti', '7–10 ospiti', 'Gruppo più ampio'],
+    intent: ['Stagione aurora, prima visita', 'Stagione aurora, ritorno', 'Sole di mezzanotte (giu–lug)', 'Natale / Capodanno', 'Gruppo familiare', 'Celebrazione privata', 'Luna di miele / ritiro per due', 'Altro, spiegare nel messaggio'],
+    budget: ['Sotto i 1.000 € / notte', '1.000 – 2.500 € / notte', '2.500 – 5.000 € / notte', '5.000+ € / notte', 'Riserva, uso esclusivo', 'Preferisco non dire'],
+  },
     submit: 'Invia richiesta privata',
     sending: 'Invio…',
     successH2: 'Richiesta ricevuta.',
-    successBody: 'Riceverà una risposta entro un giorno lavorativo. Se desidera contattarci direttamente, può anche scriverci a',
+    successBody: 'Una risposta arriverà entro un giorno lavorativo. Per un seguito diretto, può scriverci a',
     successFollowUp: '.',
     errorFallback: 'Può anche scriverci direttamente a',
-    fallbackNotice: 'Apertura del Suo client di posta per inviare la richiesta direttamente.',
-    fineprint: 'Gli invii vengono inoltrati tramite una connessione cifrata a un’unica casella di posta privata in Finlandia. Nessun CRM di terzi, nessuna attribuzione pubblicitaria nel corpo del messaggio.',
+    fallbackNotice: 'Apertura del client di posta per inviare la richiesta direttamente.',
+    fineprint: 'Le richieste vengono inoltrate tramite connessione cifrata a una sola casella privata in Finlandia. Nessun CRM di terzi, nessuna tracciatura pubblicitaria sul corpo.',
     trustStrip: [
-      { title: 'Anonimo', body: 'Nome ed email sono facoltativi. La richiesta viene inviata tramite un modulo cifrato a un’unica casella di posta.' },
-      { title: 'private@laplandvibes.com', body: 'Monitorata da lun a ven. Risposte entro un giorno lavorativo, scritte da una persona in Finlandia.' },
-      { title: 'Discreto per impostazione', body: 'Nessun CRM di terzi, nessun calendario condiviso. La short list viene costruita in privato per ogni richiesta.' },
-    ],
+    { title: 'Anonimo', body: 'Nome ed email opzionali. Richiesta inviata tramite modulo cifrato a una sola casella.' },
+    { title: 'private@laplandvibes.com', body: 'Monitorata lun–ven. Risposte entro un giorno lavorativo, scritte da una persona in Finlandia.' },
+    { title: 'Discreta per natura', body: 'Nessun CRM di terzi, nessun calendario condiviso. La shortlist è costruita privatamente per ogni richiesta.' },
+  ],
   },
   aboutPage: {
     sections: [
-      {
-        title: 'Perché esiste questa collezione',
-        paragraphs: [
-          'L’offerta di lusso della Lapponia è un piccolo mondo. La stessa manciata di ville e qualche decina di suite ricorrono su ogni piattaforma di prenotazione, spesso con le stesse foto d’archivio e la stessa vaga fascia di prezzo. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoterebbe davvero, dove sistemerebbe una famiglia di nove persone, qual è il posto di cui nessuno scrive?',
-          'Questo sito è una risposta breve e ponderata a queste domande, una selezione curata a mano delle ville e suite che riteniamo valgano il viaggio.',
-        ],
-      },
-      {
-        title: 'Cosa non fa questo sito',
-        paragraphs: [
-          'Non gestiamo le ville e non siamo un’agenzia di prenotazioni. Qui non c’è una directory, né l’intenzione di crearne una, la collezione è tenuta volutamente piccola.',
-          'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Trip.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
-        ],
-      },
-      {
-        title: 'Chi lo gestisce',
-        paragraphs: [
-          {
-            type: 'link',
-            pre: 'Una piccola squadra con base in Finlandia che gestisce anche l’ecosistema ',
-            label: 'LaplandVibes',
-            href: 'https://laplandvibes.com',
-            post: ', un hub editoriale e una rete di siti di viaggio sulla Lapponia. Questo sito è la parte di quel lavoro dedicata alle ville e suite più caratteristiche della Lapponia.',
-          },
-          'Le richieste arrivano in un’unica casella di posta e ricevono una risposta personale, niente chatbot, niente call center in outsourcing. Se una richiesta non è adatta a questa collezione (un gruppo troppo numeroso, una destinazione che non copriamo), lo diciamo con onestà e, dove possibile, La indirizziamo verso una scelta migliore.',
-        ],
-      },
-      {
-        title: 'Due tipi di viaggio che non accettiamo',
-        paragraphs: [
-          'I matrimoni con più di trenta invitati e l’affitto esclusivo di un’intera dimora per eventi di marca esulano da ciò per cui queste proprietà sono state costruite. Saremo lieti di indirizzarLa verso operatori che gestiscono questo tipo di evento come si deve.',
-        ],
-      },
-    ],
+    { title: 'Perché esiste questa collezione', paragraphs: [
+      'L\'offerta di lusso della Lapponia è un piccolo mondo. La stessa manciata di ville e qualche decina di suite ricorrono su ogni piattaforma di prenotazione, spesso con le stesse foto d\'archivio e la stessa vaga fascia di prezzo. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoterebbe davvero, dove sistema una famiglia di nove persone, qual è il posto di cui nessuno scrive?',
+      'Questo sito è una risposta breve e ponderata a queste domande, una selezione curata a mano delle ville e suite che riteniamo valgano il viaggio.',
+    ] },
+    { title: 'Cosa non fa questo sito', paragraphs: [
+      'Non gestiamo le ville e non siamo un\'agenzia di prenotazioni. Qui non c\'è una directory, né l\'intenzione di crearne una, la collezione è tenuta volutamente piccola.',
+      'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Trip.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
+    ] },
+    { title: 'Chi lo gestisce', paragraphs: [
+      { type: 'link', pre: 'Una piccola squadra con base in Finlandia che gestisce anche l\'ecosistema ', label: 'LaplandVibes', href: 'https://laplandvibes.com', post: ', un hub editoriale e una rete di siti di viaggio sulla Lapponia. Questo sito è la parte di quel lavoro dedicata alle ville e suite più caratteristiche della Lapponia.' },
+      'Le richieste arrivano in un\'unica casella di posta e ricevono una risposta personale, niente chatbot, niente call center in outsourcing. Se una richiesta non è adatta a questa collezione (un gruppo troppo numeroso, una destinazione che non copriamo), lo diciamo con onestà e, dove possibile, La indirizziamo verso una scelta migliore.',
+    ] },
+    { title: 'Due tipi di viaggio che non accettiamo', paragraphs: [
+      'I matrimoni con più di trenta invitati e l\'affitto esclusivo di un\'intera dimora per eventi di marca esulano da ciò per cui queste proprietà sono state costruite. Saremo lieti di indirizzarLa verso operatori che gestiscono questo tipo di evento come si deve.',
+    ] },
+  ],
   },
   villaDetailPage: {
-    backLink: 'Ville',
+    backLink: 'La collezione',
     bedroom: 'camera',
     bedrooms: 'camere',
-    sleeps: 'Posti letto',
+    sleeps: 'Capienza',
     fromPerNight: 'Da / notte',
-    nightlyHint: 'Tariffa indicativa di bassa stagione. La tariffa reale a notte dipende dalle date, dalla durata del soggiorno e da ciò che è incluso.',
+    nightlyHint: 'Tariffa indicativa di bassa stagione. La tariffa effettiva dipende dalle date, durata del soggiorno e inclusioni.',
     rate: 'Tariffa',
     onRequest: 'Su richiesta',
-    reserveHint: 'Proprietà reserve, quotata in privato su richiesta, mai su un annuncio pubblico.',
-    beginInquiry: 'Inizia una richiesta privata',
-    viewRates: 'Vedi le tariffe pubbliche',
-    orSendInquiry: 'Oppure invia una richiesta privata',
-    signatureEyebrow: 'Dettagli che fanno la differenza',
-    signatureH2: 'Sei dettagli che potrai verificare all’arrivo.',
+    reserveHint: 'Proprietà di riserva, quotata privatamente su richiesta, mai in un\'inserzione pubblica.',
+    beginInquiry: 'Inizia richiesta privata',
+    viewRates: 'Vedi tariffe pubbliche',
+    orSendInquiry: 'O invia una richiesta privata',
+    signatureEyebrow: 'Dettagli firma',
+    signatureH2: 'Sei cose da verificare all\'arrivo.',
     destinationEyebrow: 'La destinazione',
-    readProfile: (name) => `Leggi il profilo di ${name} →`,
-    inquiryTitle: (dest) => `Inizia una richiesta per ${dest}.`,
-    inquiryBody: 'Invia date, numero di persone, preferenze. Una risposta arriva entro un giorno lavorativo con le disponibilità, la tariffa reale a notte e qualsiasi villa reserve che valga la pena abbinare a questa.',
+    readProfile: (name: string) => `Leggi il profilo di ${name} →`,
+    inquiryTitle: (dest: string) => `Avvia una richiesta per ${dest}.`,
+    inquiryBody: 'Invii date, numero di ospiti e preferenze. Una risposta arriva entro un giorno lavorativo con disponibilità, tariffa reale per notte e ville di riserva da abbinare.',
     alsoEyebrow: 'Anche nella collezione',
-    alsoH2: 'Altre tre ville che vale la pena considerare.',
+    alsoH2: 'Tre altre ville da considerare.',
   },
   notFound: {
     eyebrow: 'Errore',
-    body: 'Questa pagina non fa parte della collezione. Ville, suite e destinazioni sono elencate qui sotto.',
+    body: 'Questa pagina non fa parte della collezione. Le ville, suite e destinazioni sono elencate sotto.',
     home: 'Home',
-    collection: 'Ville',
+    collection: 'La collezione',
   },
   contactPage: {
     seoTitle: 'Contatti',
@@ -445,7 +369,7 @@ const it: SiteCopy = {
     aboutPost: ' per il contesto più ampio dell’ecosistema LaplandVibes.',
   },
   footerNote:
-    'Una lista di ville scelte a mano, curata nella Lapponia finlandese e rivista l\'ultima volta a maggio 2026. Alcune prenotazioni generano una commissione di affiliazione, che non influenza mai quali ville raccomandiamo. Le strutture non possono pagare per entrare in lista.',
+    'Una collezione privata curata nella Lapponia finlandese, ultima revisione maggio 2026. Alcune prenotazioni generano una commissione di affiliazione, che non influisce mai sulla scelta delle ville raccomandate. Le case non possono pagare per entrare nella collezione.',
   footerPillars: [
     { name: 'Ville', href: '/villas' },
     { name: 'Suite d’autore', href: '/suites' },
@@ -455,171 +379,5 @@ const it: SiteCopy = {
     { name: 'Richiesta privata', href: '/private-inquiry' },
   ],
 }
-
-Object.assign(it.cta, {
-  inquireAboutJune: 'Richiedere date di giugno', inquireAboutJuneShort: 'Date di giugno',
-  seeSummerCollection: 'Vedi collezione estiva', fullVillaCollection: 'Collezione completa di ville',
-  sendPrivateInquiry: 'Invia richiesta privata', sendAnother: 'Invia un\'altra richiesta',
-  home: 'Home', theCollection: 'La collezione', sending: 'Invio…', subscribe: 'Iscriviti', subscribed: 'Iscritto',
-})
-Object.assign(it.badges, {
-  onRequest: 'Su richiesta', fromPerNight: 'Da / notte', fromPerPerson: 'Da / persona', fromPerGroup: 'Da / gruppo',
-  rate: 'Tariffa', bedroom: 'camera', bedrooms: 'camere', sleeps: 'Capienza',
-  arrival: 'Arrivo', aurora: 'Aurora', highlights: 'Punti salienti',
-  villas: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
-  villasIn: (name: string) => `Ville a ${name}`,
-  villasInH2: (n: number, _name: string) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
-  alsoInCollection: 'Anche nella collezione', threeOthers: 'Tre altre ville da considerare.',
-  signatureDetails: 'Dettagli firma', sixVerifyOnArrival: 'Sei cose da verificare all\'arrivo.',
-  theDestination: 'La destinazione', fullCollectionShort: 'Collezione completa',
-})
-Object.assign(it.tier, { signature: 'Signature', private: 'Collezione privata', reserve: 'Riserva · Solo su richiesta' })
-Object.assign(it.category, { 'glass-roof': 'Villa con tetto in vetro', 'log-estate': 'Dimora privata in tronchi', 'designer-suite': 'Suite d\'autore', 'alpine-chalet': 'Chalet alpino', 'lakeside-retreat': 'Rifugio sul lago' })
-Object.assign(it.inquiry, {
-  eyebrow: 'Richiesta privata',
-  defaultTitle: 'Un modo più discreto di pianificare un viaggio in Lapponia.',
-  defaultBody: 'Invii un solo messaggio, preferenze, date, numero di ospiti, e riceve una shortlist privata entro un giorno lavorativo. Nessun profilo pubblico, nessun calendario condiviso.',
-  inquireBtn: 'Richiesta privata',
-  badges: { anonymous: 'Pianificazione anonima', reply: 'Risposta entro un giorno lavorativo', rates: 'Link alla prenotazione della casa' },
-})
-Object.assign(it.midnightSunBand, {
-  eyebrow: '6 giu – 7 lug',
-  h2: 'Le stesse ville, in un’estate di luce ininterrotta.',
-  body: 'Stessa architettura, stagione diversa. Il tetto in vetro diventa un lucernario su un sole che non tramonta mai, il lago si scioglie, la foresta si riempie di lamponi artici. Metà domanda dell\'inverno, e l\'unica finestra dell\'anno in cui chef privati e ville di riserva aprono il resto del calendario.',
-  primary: 'Vedi la collezione estiva', secondary: 'Richiedere date di giugno',
-})
-Object.assign(it.newsletter, {
-  eyebrow: 'La newsletter #LaplandVibes',
-  h2: 'Un dispaccio discreto quando le ville aprono nuove date e veniamo a sapere di un rilascio privato.',
-  lede: 'Date che si liberano. Case che meritano uno sguardo. Previsioni della finestra aurorale nella settimana precedente ogni novilunio. Niente spam, scritto in Finlandia, inviato solo quando c\'è qualcosa di specifico da raccontare.',
-  emailPlaceholder: 'sua@email.com', footnote: 'Disiscrizione con un clic.',
-  welcome: 'Benvenuto a bordo. Il primo dispaccio arriva entro una settimana.',
-  already: 'È già in lista, ci vediamo nel prossimo dispaccio.',
-  invalidEmail: 'Questo indirizzo email sembra non valido.',
-  networkError: 'Errore di rete. Riprovi.',
-  genericError: 'Qualcosa è andato storto. Riprovi tra un momento.',
-})
-Object.assign(it.affiliateDisclosure, {
-  compact: 'Link di affiliazione, riceviamo una piccola commissione senza costi aggiuntivi.',
-  full: 'Questa pagina contiene link di affiliazione. Se prenota tramite questi link, LaplandLuxuryVillas può ricevere una commissione senza costi aggiuntivi.',
-})
-it.hero.suites = { eyebrow: 'Suite d\'autore', title: 'Quando non Le serve una villa, ma il tetto in vetro sì.', lede: 'Un breve elenco di suite a una camera e cabine aurorali dove l\'architettura stessa è l\'esperienza. Capienza minore, stesso soffitto panoramico.' }
-it.hero.destinations = { eyebrow: 'Destinazioni', title: 'Saariselkä, Inari, Rovaniemi, Levi e Ylläs.', lede: 'La Lapponia non è intercambiabile. Frequenza dell\'aurora, logistica d\'arrivo e densità ricettiva cambiano in modo significativo ogni 50 km a nord del Circolo Polare.' }
-it.hero.experiences = { eyebrow: 'Esperienze su misura', title: 'Aurora, natura selvaggia e altre uscite private.', lede: 'Ogni uscita qui è privata e si prenota sulla pagina dell\'operatore. Prezzo e date libere sono lì prima di qualsiasi impegno.' }
-it.hero.inquiry = { eyebrow: 'Richiesta privata', title: 'Un messaggio privato, una shortlist curata.', lede: 'Invii date, numero di ospiti e il tipo di viaggio che ha in mente. Rispondiamo entro un giorno lavorativo, incluse, dove appropriato, le ville di riserva che non appaiono mai pubblicamente.' }
-it.hero.about = { eyebrow: 'Chi siamo', title: 'Chi c\'è dietro e che cosa non facciamo.', lede: 'Otto ville e suite scelte a mano nella Lapponia finlandese, richiesta anonima, un link diretto alla prenotazione di ogni casa, nessuna piattaforma di mezzo.' }
-it.home = {
-  ...it.home,
-  philosophy: { eyebrow: 'Come lavoriamo', h2: 'L\'opposto di una piattaforma di prenotazione.',
-    items: [
-      { title: 'Un elenco breve, non una directory.', body: 'Otto ville e suite nelle destinazioni che davvero giustificano il viaggio. Le proprietà vengono respinte più spesso che aggiunte, ogni voce in questa pagina è quella che un viaggiatore attento può prenotare senza esitazione.' },
-      { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
-      { title: 'Tariffe dirette, dove esistono.', body: 'Le inserzioni pubbliche rimandano a tariffe verificate. Le proprietà tenute privatamente, incluse le ville di riserva senza disponibilità pubblica, sono quotate direttamente. La risposta Le dice quale è quale.' },
-    ] },
-  signature: { eyebrow: "Le nostre quattro scelte", h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
-  destinations: { eyebrow: 'Destinazioni', h2: 'Cinque luoghi, ognuno con una ragione precisa.' },
-}
-Object.assign(it.villasPage, {
-  filters: { all: 'Tutte', glassRoof: 'Tetto in vetro', logEstate: 'Dimora in tronchi', designerSuite: 'Suite d\'autore', alpineChalet: 'Chalet alpino', lakeside: 'Sul lago' },
-  noVillas: 'Nessuna villa in questa categoria al momento.',
-  inquiryTitle: 'Non trova ciò che cerca?',
-  inquiryBody: 'La collezione sopra è quella attualmente pubblicata. Altre ville sono tenute privatamente, incluse proprietà di riserva senza inserzione pubblica, e quotate direttamente su richiesta.',
-})
-Object.assign(it.suitesPage, {
-  intro: { p1Pre: '"Suite" in Lapponia copre due gesti architettonici distinti, entrambi da conoscere. Il primo è la ', designerSuite: 'suite d\'autore', p1Mid: ', dove uno studio di architettura finlandese come Studio Puisto ha costruito una camera intorno a una sola vista. Il secondo è la ', glassRoof: 'cabina con tetto in vetro', p1Post: ', dove il soffitto è il dettaglio principale. Entrambe sono elencate sotto.' },
-  inquiryTitle: 'Prenotare due suite, o un piano privato?',
-  inquiryBody: 'Diverse di queste proprietà liberano un piano multi-suite a uso esclusivo nelle settimane di spalla. Condivida date e numero di ospiti.',
-})
-Object.assign(it.destinationsPage, { destinationLabel: (i: number) => `Destinazione 0${i + 1}`, readTheProfile: (name: string) => `Leggi il profilo di ${name}` })
-Object.assign(it.destinationPage, {
-  backLink: 'Destinazioni', eyebrow: 'Destinazione · Lapponia finlandese',
-  arrival: 'Arrivo', aurora: 'Aurora', highlights: 'Punti salienti',
-  villasHere: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
-  villasHereH2: (n: number) => (n === 1 ? 'Una villa ancorata qui.' : `${n} ville ancorate qui.`),
-  fullCollection: 'Collezione completa',
-  inquiryTitle: (name: string) => `Pianifichi un viaggio privato a ${name}.`,
-  inquiryBody: 'Invii date, numero di ospiti e preferenze (chef privato, uso esclusivo). Rispondiamo con una shortlist entro un giorno lavorativo.',
-})
-Object.assign(it.experiencesPage, {
-  sections: {
-      aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
-    wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, rompighiaccio e lago Inari. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
-    other: { title: 'Altre uscite private', intro: 'Babbo Natale in villa, un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
-    onRequest: { eyebrow: 'Su richiesta', title: 'Chef e transfer: chiediamo noi per voi.', intro: 'Non abbiamo un prodotto prenotabile per uno chef privato o un transfer dall\'aeroporto, quindi qui non c\'è una scheda. Scrivete il desiderio nella richiesta: lo chiediamo alla struttura e torniamo con la risposta.', cta: 'Invia una richiesta' },
-  },
-})
-Object.assign(it.midnightSunPage, {
-  facts: [{ value: '32', label: 'Giorni senza tramonto a Rovaniemi, di più a nord' }, { value: '24h', label: 'Luce al picco, 21 giugno' }, { value: '+18°C', label: 'Media diurna fine giugno' }, { value: '68,9°N', label: 'Inari, la nostra meta più a nord, dove dura di più' }],
-  fourReasons: 'Quattro ragioni', h2: 'La Lapponia in estate è un altro luogo.',
-  reasons: [
-    { title: 'L\'architettura cambia carattere.', body: 'I tetti in vetro che esistono per le aurore ora incorniciano un sole ininterrotto. Lucernario sul letto, sole sul lago, nessun motivo di tirare una tenda, non c\'è notte in cui nascondersi.' },
-    { title: 'La natura diventa accessibile.', body: 'I laghi si sciolgono, la foresta boreale si apre, le rotte in canoa appaiono. La stessa villa raggiunta in motoslitta a febbraio è ora a cinque minuti di barca dal pontile.' },
-    { title: 'Le ville di riserva aprono.', body: 'Le dimore private sul lago e gli chalet d\'autore liberano il resto del calendario. La finestra è l\'unico momento dell\'anno in cui chef privati quotano tariffe di spalla.' },
-    { title: 'Niente code, niente vicini.', body: 'La Lapponia in estate vede una frazione della densità invernale. Il sentiero selvaggio nel bosco, il punto panoramico sul fjäll, sono essenzialmente Suoi.' },
-  ],
-  summerCollection: { eyebrow: 'La collezione estiva', h2: 'Quattro caratteri di villa, in luce estiva.', lede: 'Stesse categorie architettoniche della collezione invernale, cabine con tetto in vetro, dimore in tronchi sul lago, chalet alpini, ville in foresta, mostrate nella luce del sole di mezzanotte di fine giugno.',
-    cards: [
-      { title: 'Cabina con tetto in vetro nel verde', copy: 'L\'architettura aurorale in luce dorata delle 23, circondata da foresta lussureggiante invece di neve.' },
-      { title: 'Dimora in tronchi sul lago', copy: 'Baia privata sul lago Inari disgelata, canoa al pontile, fumo dalla sauna a legna.' },
-      { title: 'Chalet d\'autore sul fjäll', copy: 'Eriofori e fiori selvatici sostituiscono la pista da sci, stessa facciata panoramica in vetro.' },
-      { title: 'Villa moderna in foresta', copy: 'Edificio in legno a sbalzo nel verde dei pini boreali, calore dorato del sole di mezzanotte sulla facciata.' },
-    ] },
-  planning: { h2: 'Una nota sulla pianificazione di un viaggio al sole di mezzanotte.', p1: 'La finestra è breve e le ville sono di proprietà individuale, il calendario si riempie quindi in modo opportunistico più che uniforme. Conviene chiedere per tempo.', p2: 'Il momento giusto per chiedere informazioni su un certo giugno è tra gennaio e marzo dello stesso anno. Le richieste successive valgono comunque l\'invio, succedono rilasci, ma la fascia alta dell\'inventario va spesso prima.', quoting: 'Richieste in corso: estate 2026 + 2027' },
-  inquiryTitle: 'Richiedere un viaggio al sole di mezzanotte.', inquiryBody: 'Invii date, numero di ospiti e qualsiasi preferenza. Una risposta arriva entro un giorno lavorativo con la disponibilità sulla collezione estiva, incluse le ville di riserva non elencate pubblicamente.',
-})
-Object.assign(it.inquiryPage, {
-  eyebrow: 'Il modulo di richiesta', h2: 'Ci dica cosa sta immaginando.',
-  intro: 'Cinque brevi campi. Più sono specifiche le preferenze e i vincoli, più utile è la shortlist. Nome ed email restano opzionali, le risposte vanno all\'indirizzo da cui arriva il messaggio.',
-  fields: { headcount: 'Numero di ospiti', tripIntent: 'Intento del viaggio', budget: 'Budget indicativo per notte',
-    datesLabel: 'Date (o finestra)', datesHint: 'es. "14–21 feb" o "prima metà di marzo, 5 notti"', datesPlaceholder: 'Opzionale',
-    messageLabel: 'Qualcosa di specifico', messageHint: 'Chef privato, uso esclusivo, accessibilità, dieta, focus fotografia, qualsiasi cosa modelli la shortlist.',
-    nameLabel: 'Nome (opzionale)', namePlaceholder: 'Anonimo se vuoto', emailLabel: 'Email di risposta', emailHint: 'Se vuoto, le risposte vanno all\'indirizzo di invio.', emailPlaceholder: 'opzionale' },
-  options: {
-    headcount: ['1–2 ospiti', '3–4 ospiti', '5–6 ospiti', '7–10 ospiti', 'Gruppo più ampio'],
-    intent: ['Stagione aurora, prima visita', 'Stagione aurora, ritorno', 'Sole di mezzanotte (giu–lug)', 'Natale / Capodanno', 'Gruppo familiare', 'Celebrazione privata', 'Luna di miele / ritiro per due', 'Altro, spiegare nel messaggio'],
-    budget: ['Sotto i 1.000 € / notte', '1.000 – 2.500 € / notte', '2.500 – 5.000 € / notte', '5.000+ € / notte', 'Riserva, uso esclusivo', 'Preferisco non dire'],
-  },
-  submit: 'Invia richiesta privata', sending: 'Invio…',
-  successH2: 'Richiesta ricevuta.', successBody: 'Una risposta arriverà entro un giorno lavorativo. Per un seguito diretto, può scriverci a',
-  successFollowUp: '.', errorFallback: 'Può anche scriverci direttamente a', fallbackNotice: 'Apertura del client di posta per inviare la richiesta direttamente.',
-  fineprint: 'Le richieste vengono inoltrate tramite connessione cifrata a una sola casella privata in Finlandia. Nessun CRM di terzi, nessuna tracciatura pubblicitaria sul corpo.',
-  trustStrip: [
-    { title: 'Anonimo', body: 'Nome ed email opzionali. Richiesta inviata tramite modulo cifrato a una sola casella.' },
-    { title: 'private@laplandvibes.com', body: 'Monitorata lun–ven. Risposte entro un giorno lavorativo, scritte da una persona in Finlandia.' },
-    { title: 'Discreta per natura', body: 'Nessun CRM di terzi, nessun calendario condiviso. La shortlist è costruita privatamente per ogni richiesta.' },
-  ],
-})
-Object.assign(it.aboutPage, {
-  sections: [
-    { title: 'Perché esiste questa collezione', paragraphs: [
-      'L\'offerta di lusso della Lapponia è un piccolo mondo. La stessa manciata di ville e qualche decina di suite ricorrono su ogni piattaforma di prenotazione, spesso con le stesse foto d\'archivio e la stessa vaga fascia di prezzo. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoterebbe davvero, dove sistema una famiglia di nove persone, qual è il posto di cui nessuno scrive?',
-      'Questo sito è una risposta breve e ponderata a queste domande, una selezione curata a mano delle ville e suite che riteniamo valgano il viaggio.',
-    ] },
-    { title: 'Cosa non fa questo sito', paragraphs: [
-      'Non gestiamo le ville e non siamo un\'agenzia di prenotazioni. Qui non c\'è una directory, né l\'intenzione di crearne una, la collezione è tenuta volutamente piccola.',
-      'Siamo indipendenti. Quando una proprietà può essere prenotata online, rimandiamo al suo annuncio pubblico, ad esempio tramite Trip.com; questi link possono farci guadagnare una piccola commissione senza alcun costo aggiuntivo per Lei, e non influenzano mai quali ville consigliamo. Le proprietà non possono pagare per essere messe in evidenza.',
-    ] },
-    { title: 'Chi lo gestisce', paragraphs: [
-      { type: 'link', pre: 'Una piccola squadra con base in Finlandia che gestisce anche l\'ecosistema ', label: 'LaplandVibes', href: 'https://laplandvibes.com', post: ', un hub editoriale e una rete di siti di viaggio sulla Lapponia. Questo sito è la parte di quel lavoro dedicata alle ville e suite più caratteristiche della Lapponia.' },
-      'Le richieste arrivano in un\'unica casella di posta e ricevono una risposta personale, niente chatbot, niente call center in outsourcing. Se una richiesta non è adatta a questa collezione (un gruppo troppo numeroso, una destinazione che non copriamo), lo diciamo con onestà e, dove possibile, La indirizziamo verso una scelta migliore.',
-    ] },
-    { title: 'Due tipi di viaggio che non accettiamo', paragraphs: [
-      'I matrimoni con più di trenta invitati e l\'affitto esclusivo di un\'intera dimora per eventi di marca esulano da ciò per cui queste proprietà sono state costruite. Saremo lieti di indirizzarLa verso operatori che gestiscono questo tipo di evento come si deve.',
-    ] },
-  ],
-})
-Object.assign(it.villaDetailPage, {
-  backLink: 'La collezione', bedroom: 'camera', bedrooms: 'camere', sleeps: 'Capienza',
-  fromPerNight: 'Da / notte', nightlyHint: 'Tariffa indicativa di bassa stagione. La tariffa effettiva dipende dalle date, durata del soggiorno e inclusioni.',
-  rate: 'Tariffa', onRequest: 'Su richiesta', reserveHint: 'Proprietà di riserva, quotata privatamente su richiesta, mai in un\'inserzione pubblica.',
-  beginInquiry: 'Inizia richiesta privata', viewRates: 'Vedi tariffe pubbliche', orSendInquiry: 'O invia una richiesta privata',
-  signatureEyebrow: 'Dettagli firma', signatureH2: 'Sei cose da verificare all\'arrivo.',
-  destinationEyebrow: 'La destinazione', readProfile: (name: string) => `Leggi il profilo di ${name} →`,
-  inquiryTitle: (dest: string) => `Avvia una richiesta per ${dest}.`,
-  inquiryBody: 'Invii date, numero di ospiti e preferenze. Una risposta arriva entro un giorno lavorativo con disponibilità, tariffa reale per notte e ville di riserva da abbinare.',
-  alsoEyebrow: 'Anche nella collezione', alsoH2: 'Tre altre ville da considerare.',
-})
-Object.assign(it.notFound, { eyebrow: 'Errore', body: 'Questa pagina non fa parte della collezione. Le ville, suite e destinazioni sono elencate sotto.', home: 'Home', collection: 'La collezione' })
-it.footerNote = 'Una collezione privata curata nella Lapponia finlandese, ultima revisione maggio 2026. Alcune prenotazioni generano una commissione di affiliazione, che non influisce mai sulla scelta delle ville raccomandate. Le case non possono pagare per entrare nella collezione.'
 
 export default it
