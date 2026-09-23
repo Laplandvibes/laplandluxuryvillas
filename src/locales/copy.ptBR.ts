@@ -108,7 +108,7 @@ const ptBR: SiteCopy = {
     secondary: 'Consultar datas de junho',
   },
   newsletter: {
-    eyebrow: 'O boletim da #LaplandVibes',
+    eyebrow: 'O boletim do #LaplandVibes',
     h2: 'Datas livres nas vilas e as semanas tranquilas.',
     lede: 'Datas liberadas, casas que merecem atenção e como ler a previsão de auroras. Sem spam. Escrevemos da Finlândia e enviamos só quando temos algo de verdade para você.',
     emailPlaceholder: 'seu@email.com',
