@@ -416,7 +416,7 @@ const sv: SiteCopy = {
     collection: 'Villor',
   },
   contactPage: {
-    seoTitle: 'Kontakta oss · LaplandLuxuryVillas',
+    seoTitle: 'Kontakta oss',
     seoDescription: 'En privat inkorg: private@laplandvibes.com. Drivs av LaPeso Oy från finska Lappland. Kontakt för press, samarbeten och direkta erbjudanden nedan.',
     eyebrow: 'Kontakt',
     h1: 'En inkorg, en operatör.',

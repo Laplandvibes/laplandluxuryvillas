@@ -422,7 +422,7 @@ const ja: SiteCopy = {
     collection: 'ヴィラ',
   },
   contactPage: {
-    seoTitle: 'お問い合わせ · LaplandLuxuryVillas',
+    seoTitle: 'お問い合わせ',
     seoDescription: 'プライベート専用窓口：private@laplandvibes.com。フィンランド・ラップランドのLaPeso Oyが運営。報道・提携・直接取引の連絡先は以下のとおりです。',
     eyebrow: 'お問い合わせ',
     h1: '窓口はひとつ、運営者もひとり。',

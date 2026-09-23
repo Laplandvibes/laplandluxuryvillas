@@ -58,7 +58,10 @@ export default function SEO({
 }: SEOProps): ReactNode {
   const lang = useLang();
   const bcp47 = BCP47[lang];
-  const fullTitle = title.includes('|') ? title : `${title} | ${SITE_NAME}`;
+  // No brand suffix in the title (Vesa 2026-09-22): Google prints the site name and
+  // domain above every result, so " | LaplandLuxuryVillas" only repeated them and spent
+  // characters of the ~60 the result shows. Static HTML and hydration agree.
+  const fullTitle = title;
   const p = path ?? canonical ?? canonicalPath ?? '/';
   const localePrefix = URL_PREFIX_OF[lang];
   // Trailing-slash form matches the prerendered static HTML (Cloudflare Pages

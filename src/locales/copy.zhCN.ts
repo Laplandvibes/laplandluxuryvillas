@@ -422,7 +422,7 @@ const zhCN: SiteCopy = {
     collection: '别墅',
   },
   contactPage: {
-    seoTitle: '联系我们 · LaplandLuxuryVillas',
+    seoTitle: '联系我们',
     seoDescription: '唯一的私人邮箱：private@laplandvibes.com。由芬兰拉普兰的 LaPeso Oy 运营。媒体、合作与直接洽谈联系方式见下方。',
     eyebrow: '联系我们',
     h1: '一个邮箱，一家运营方。',

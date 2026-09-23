@@ -422,7 +422,7 @@ const de: SiteCopy = {
     collection: 'Villen',
   },
   contactPage: {
-    seoTitle: 'Kontakt · LaplandLuxuryVillas',
+    seoTitle: 'Kontakt',
     seoDescription: 'Ein privates Postfach: private@laplandvibes.com. Betrieben von LaPeso Oy aus Finnisch-Lappland. Presse-, Partnerschafts- und Direktkontakt unten.',
     eyebrow: 'Kontakt',
     h1: 'Ein Postfach, ein Betreiber.',

@@ -422,7 +422,7 @@ const ptBR: SiteCopy = {
     collection: 'Vilas',
   },
   contactPage: {
-    seoTitle: 'Contato · LaplandLuxuryVillas',
+    seoTitle: 'Contato',
     seoDescription: 'Uma única caixa de entrada privada: private@laplandvibes.com. Operada pela LaPeso Oy, na Lapônia finlandesa. Contatos de imprensa, parcerias e negócios diretos abaixo.',
     eyebrow: 'Contato',
     h1: 'Uma caixa de entrada, um operador.',

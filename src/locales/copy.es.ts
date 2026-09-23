@@ -422,7 +422,7 @@ const es: SiteCopy = {
     collection: 'Villas',
   },
   contactPage: {
-    seoTitle: 'Contacto · LaplandLuxuryVillas',
+    seoTitle: 'Contacto',
     seoDescription: 'Una única bandeja privada: private@laplandvibes.com. Gestionada por LaPeso Oy desde la Laponia finlandesa. Contactos de prensa, colaboraciones y trato directo más abajo.',
     eyebrow: 'Contacto',
     h1: 'Una bandeja, un operador.',

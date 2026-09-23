@@ -12,12 +12,12 @@
   },
   {
     "path": "/villas",
-    "fallbackTitle": "Villas | LaplandLuxuryVillas",
+    "fallbackTitle": "Villas",
     "copyKey": "villasPage"
   },
   {
     "path": "/suites",
-    "fallbackTitle": "Suites | LaplandLuxuryVillas",
+    "fallbackTitle": "Suites",
     "copyKey": "suitesPage",
     "ogImage": "/og/suites.jpg",
     "ogCard": {
@@ -28,7 +28,7 @@
   },
   {
     "path": "/destinations",
-    "fallbackTitle": "Destinations | LaplandLuxuryVillas",
+    "fallbackTitle": "Destinations",
     "copyKey": "destinationsPage",
     "ogImage": "/og/destinations.jpg",
     "ogCard": {
@@ -39,7 +39,7 @@
   },
   {
     "path": "/experiences",
-    "fallbackTitle": "Experiences | LaplandLuxuryVillas",
+    "fallbackTitle": "Experiences",
     "copyKey": "experiencesPage",
     "ogImage": "/og/experiences.jpg",
     "ogCard": {
@@ -49,7 +49,7 @@
   },
   {
     "path": "/midnight-sun",
-    "fallbackTitle": "Midnight Sun | LaplandLuxuryVillas",
+    "fallbackTitle": "Midnight Sun",
     "copyKey": "midnightSunPage",
     "ogImage": "/og/midnight-sun.jpg",
     "ogCard": {
@@ -59,7 +59,7 @@
   },
   {
     "path": "/private-inquiry",
-    "fallbackTitle": "Private Inquiry | LaplandLuxuryVillas",
+    "fallbackTitle": "Private Inquiry",
     "copyKey": "inquiryPage",
     "ogImage": "/og/private-inquiry.jpg",
     "ogCard": {
@@ -70,7 +70,7 @@
   },
   {
     "path": "/about",
-    "fallbackTitle": "About | LaplandLuxuryVillas",
+    "fallbackTitle": "About",
     "copyKey": "aboutPage",
     "ogImage": "/og/about.jpg",
     "ogCard": {
@@ -82,25 +82,25 @@
   {
     "path": "/contact",
     "copyKey": "contactPage",
-    "fallbackTitle": "Contact | LaplandLuxuryVillas"
+    "fallbackTitle": "Contact"
   },
   {
     "path": "/privacy",
-    "fallbackTitle": "Privacy | LaplandLuxuryVillas",
+    "fallbackTitle": "Privacy",
     "harvestFiles": [
       "src/shared/Legal/PrivacyContent.tsx"
     ]
   },
   {
     "path": "/terms",
-    "fallbackTitle": "Terms | LaplandLuxuryVillas",
+    "fallbackTitle": "Terms",
     "harvestFiles": [
       "src/shared/Legal/TermsContent.tsx"
     ]
   },
   {
     "path": "/cookie-policy",
-    "fallbackTitle": "Cookie Policy | LaplandLuxuryVillas",
+    "fallbackTitle": "Cookie Policy",
     "harvestFiles": [
       "src/shared/Legal/CookieContent.tsx"
     ]

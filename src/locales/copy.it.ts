@@ -415,7 +415,7 @@ const it: SiteCopy = {
     collection: 'Ville',
   },
   contactPage: {
-    seoTitle: 'Contatti · LaplandLuxuryVillas',
+    seoTitle: 'Contatti',
     seoDescription: 'Un’unica casella privata: private@laplandvibes.com. Gestita da LaPeso Oy dalla Lapponia finlandese. Contatti per stampa, partnership e accordi diretti qui sotto.',
     eyebrow: 'Contatti',
     h1: 'Una casella, un operatore.',

@@ -58,11 +58,12 @@ export function villaTitleBase(name, destination, lang) {
   return lang === 'ja' || lang === 'zh-CN' ? `${name}｜${tail}` : `${name} – ${tail}`;
 }
 
-/** Full title with the brand, which is dropped when the whole line would exceed 60 chars. */
-export function villaTitle(name, destination, lang, brand = 'LaplandLuxuryVillas') {
-  const base = villaTitleBase(name, destination, lang);
-  const full = `${base} | ${brand}`;
-  return full.length <= 60 ? full : base;
+/**
+ * Villa page title. It carried " | LaplandLuxuryVillas" until 2026-09-22, when the
+ * suffix went network-wide (Vesa: the domain already shows it, above every result).
+ */
+export function villaTitle(name, destination, lang) {
+  return villaTitleBase(name, destination, lang);
 }
 
 /**

@@ -199,7 +199,7 @@ for (const [slug, b] of Object.entries(villaBase)) {
     // [LV-DUP 2026-09-06] localized descriptor after the two proper nouns;
     // [LV-BRAND-TITLE 2026-09-20] hotel name first where there is one.
     const hotel = hotelFor(slug);
-    const title = hotel ? villaBrandTitle(b.name, hotel, b.destination, lang) : villaTitle(b.name, b.destination, lang, SITE_NAME);
+    const title = hotel ? villaBrandTitle(b.name, hotel, b.destination, lang) : villaTitle(b.name, b.destination, lang);
     const ovTag = lang === 'en' ? null : villaOverlays[lang]?.[slug]?.tagline;
     const description = trimDesc(hotel ? `${hotel}, ${b.destination}. ${ovTag || b.tagline}` : (ovTag || b.tagline));
     meta[path][lang] = { title, description };

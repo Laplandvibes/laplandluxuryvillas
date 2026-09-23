@@ -422,7 +422,7 @@ const fi: SiteCopy = {
     collection: 'Huvilat',
   },
   contactPage: {
-    seoTitle: 'Yhteystiedot · LaplandLuxuryVillas',
+    seoTitle: 'Yhteystiedot',
     seoDescription: 'Yksi yksityinen sähköposti: private@laplandvibes.com. Toiminnasta vastaa LaPeso Oy Suomen Lapista. Media-, kumppanuus- ja suorakauppayhteydet alla.',
     eyebrow: 'Yhteystiedot',
     h1: 'Yksi osoite, yksi toimija.',

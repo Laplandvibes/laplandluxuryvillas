@@ -416,7 +416,7 @@ const nl: SiteCopy = {
     collection: 'Villa\'s',
   },
   contactPage: {
-    seoTitle: 'Neem contact op · LaplandLuxuryVillas',
+    seoTitle: 'Neem contact op',
     seoDescription: 'Eén privépostvak: private@laplandvibes.com. Beheerd door LaPeso Oy vanuit Fins Lapland. Contact voor pers, partnerschappen en directe deals hieronder.',
     eyebrow: 'Contact',
     h1: 'Eén postvak, één exploitant.',
