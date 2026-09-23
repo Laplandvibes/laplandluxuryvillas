@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowUpRight, Plane, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import { seasonal } from '../lib/season'
 import PhotoCredit from '../components/PhotoCredit'
 import { creditFor } from '../data/photoCredits'
 import Page from '../components/Page'
@@ -11,6 +12,12 @@ import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+
+// Real photographs since 23.9.2026 (were launch-commit AI renders): the season
+// decides, same switch as the front page and the share card. Receipts in
+// src/data/photoCredits.ts.
+const HERO_WINTER = '/images/commons/hero-destinations-winter.webp'
+const HERO_SUMMER = '/images/commons/hero-destinations-summer.webp'
 
 export default function Destinations() {
   const lang = useLang()
@@ -31,8 +38,13 @@ export default function Destinations() {
         eyebrow={c.hero.destinations.eyebrow}
         title={c.hero.destinations.title}
         lede={c.hero.destinations.lede}
-        imageUrl="/images/hero-destinations.webp"
-        imageAlt="Wide cinematic Lapland twilight landscape with low fells and a frozen lake"
+        imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
+        imageAlt={seasonal(
+          'Pallastunturi fell in pink February morning light, framed by frosted spruce',
+          'Lake Kilpisjärvi at midsummer, the fells of Norway on the far shore',
+        )}
+        scrim={seasonal('default', 'strong')}
+        credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />
 
       {/* EDITORIAL LEAD — same COPY block the prerenderer harvests through

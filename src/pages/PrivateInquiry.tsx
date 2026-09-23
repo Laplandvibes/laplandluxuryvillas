@@ -2,6 +2,9 @@ import { useMemo, useRef, useState } from 'react'
 import { Mail, Lock, ShieldCheck, Send, Check, Loader2, AlertCircle } from 'lucide-react'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
+import { seasonal } from '../lib/season'
 import Page from '../components/Page'
 import { trackPrivateInquiry } from '../lib/analytics'
 import { useLang } from '../i18n/useLang'
@@ -20,6 +23,12 @@ function track(event: string, data?: Record<string, unknown>) {
 }
 
 type Status = 'idle' | 'sending' | 'sent' | 'error' | 'fallback'
+
+// Real photographs since 23.9.2026 (were launch-commit AI renders): the season
+// decides, same switch as the front page and the share card. Receipts in
+// src/data/photoCredits.ts.
+const HERO_WINTER = '/images/commons/hero-inquiry-winter.webp'
+const HERO_SUMMER = '/images/commons/hero-inquiry-summer.webp'
 
 export default function PrivateInquiry() {
   const lang = useLang()
@@ -119,8 +128,13 @@ export default function PrivateInquiry() {
         eyebrow={c.hero.inquiry.eyebrow}
         title={c.hero.inquiry.title}
         lede={c.hero.inquiry.lede}
-        imageUrl="/images/hero-inquiry.webp"
-        imageAlt="An open leather travel journal on a dark walnut desk with a vintage brass lamp"
+        imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
+        imageAlt={seasonal(
+          'Frozen Lake Jerisjärvi below the forested fells of Pallas in March',
+          'Midnight-sun evening on the bank of the Teno river at Nuorgam',
+        )}
+        scrim={seasonal('default', 'strong')}
+        credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />
 
       {/* TRUST STRIP */}

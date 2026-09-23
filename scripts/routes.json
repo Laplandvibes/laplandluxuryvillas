@@ -18,32 +18,66 @@
   {
     "path": "/suites",
     "fallbackTitle": "Suites | LaplandLuxuryVillas",
-    "copyKey": "suitesPage"
+    "copyKey": "suitesPage",
+    "ogImage": "/og/suites.jpg",
+    "ogCard": {
+      "heroKesa": "/images/commons/hero-suites-summer.webp",
+      "heroTalvi": "/images/commons/hero-suites-winter.webp",
+      "line": "Glass-roof and designer suites"
+    }
   },
   {
     "path": "/destinations",
     "fallbackTitle": "Destinations | LaplandLuxuryVillas",
-    "copyKey": "destinationsPage"
+    "copyKey": "destinationsPage",
+    "ogImage": "/og/destinations.jpg",
+    "ogCard": {
+      "heroKesa": "/images/commons/hero-destinations-summer.webp",
+      "heroTalvi": "/images/commons/hero-destinations-winter.webp",
+      "line": "Five Lapland bases, and who each suits"
+    }
   },
   {
     "path": "/experiences",
     "fallbackTitle": "Experiences | LaplandLuxuryVillas",
-    "copyKey": "experiencesPage"
+    "copyKey": "experiencesPage",
+    "ogImage": "/og/experiences.jpg",
+    "ogCard": {
+      "hero": "/images/hero-experiences-poster.webp",
+      "line": "Aurora and wilderness tours you can book"
+    }
   },
   {
     "path": "/midnight-sun",
     "fallbackTitle": "Midnight Sun | LaplandLuxuryVillas",
-    "copyKey": "midnightSunPage"
+    "copyKey": "midnightSunPage",
+    "ogImage": "/og/midnight-sun.jpg",
+    "ogCard": {
+      "hero": "/images/hero-midnight-sun-kemijarvi.webp",
+      "line": "Summer villas under the midnight sun"
+    }
   },
   {
     "path": "/private-inquiry",
     "fallbackTitle": "Private Inquiry | LaplandLuxuryVillas",
-    "copyKey": "inquiryPage"
+    "copyKey": "inquiryPage",
+    "ogImage": "/og/private-inquiry.jpg",
+    "ogCard": {
+      "heroKesa": "/images/commons/hero-inquiry-summer.webp",
+      "heroTalvi": "/images/commons/hero-inquiry-winter.webp",
+      "line": "Send a private villa request"
+    }
   },
   {
     "path": "/about",
     "fallbackTitle": "About | LaplandLuxuryVillas",
-    "copyKey": "aboutPage"
+    "copyKey": "aboutPage",
+    "ogImage": "/og/about.jpg",
+    "ogCard": {
+      "heroKesa": "/images/commons/hero-about-summer.webp",
+      "heroTalvi": "/images/commons/hero-about-winter.webp",
+      "line": "Who picks these villas, and how we earn"
+    }
   },
   {
     "path": "/contact",

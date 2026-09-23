@@ -1,0 +1,484 @@
+{
+  "suites": {
+    "route": "/suites",
+    "line": "Glass-roof and designer suites",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/commons/hero-suites-summer.webp",
+        "bytes": 222430,
+        "sha256": "f67e59d74af1b5dac02252e076d9f5570e58dcf6d9fcccde20d491d1c39a38ce",
+        "heroSha": "05ad58268710f346",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 20378,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 94.1,
+        "centerSq": 96.5,
+        "photoRegion": 114.2,
+        "photoRegionRef": 114.2,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 431,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/commons/hero-suites-winter.webp",
+        "bytes": 61445,
+        "sha256": "6552f130c65d1a83c35bc88b072112780a0c136db97b80ebb468e49effb83133",
+        "heroSha": "7355425fdf330dbb",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 20378,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 55.2,
+        "centerSq": 58.1,
+        "photoRegion": 61.2,
+        "photoRegionRef": 61.2,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 431,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      }
+    }
+  },
+  "destinations": {
+    "route": "/destinations",
+    "line": "Five Lapland bases, and who each suits",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/commons/hero-destinations-summer.webp",
+        "bytes": 116077,
+        "sha256": "fbf02c1144eab6b2bbc014507ca4d87529cd912a691129d2761037b76aea5474",
+        "heroSha": "cdd8b9caee588091",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21339,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 125.2,
+        "centerSq": 136.9,
+        "photoRegion": 156.4,
+        "photoRegionRef": 156.4,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 549,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/commons/hero-destinations-winter.webp",
+        "bytes": 171677,
+        "sha256": "1d1a2ebda2bbf2196b13ed50a4fd3344cce7b2210a51fb5455ec33059988f23b",
+        "heroSha": "9c8f74d0a78034b2",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21339,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 101.5,
+        "centerSq": 112.8,
+        "photoRegion": 124.1,
+        "photoRegionRef": 124.1,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 549,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      }
+    }
+  },
+  "experiences": {
+    "route": "/experiences",
+    "line": "Aurora and wilderness tours you can book",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/hero-experiences-poster.webp",
+        "bytes": 68234,
+        "sha256": "0d745c131999b62d22e430022ac113e78f9a20bc38c84b5abcce0b3270b9d303",
+        "heroSha": "273a244b3e87e09e",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21568,
+        "inkBox": [
+          306,
+          493,
+          893,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 32.6,
+        "centerSq": 44.1,
+        "photoRegion": 30,
+        "photoRegionRef": 30,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 588,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/hero-experiences-poster.webp",
+        "bytes": 68234,
+        "sha256": "0d745c131999b62d22e430022ac113e78f9a20bc38c84b5abcce0b3270b9d303",
+        "heroSha": "273a244b3e87e09e",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21568,
+        "inkBox": [
+          306,
+          493,
+          893,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 32.6,
+        "centerSq": 44.1,
+        "photoRegion": 30,
+        "photoRegionRef": 30,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 588,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "midnight-sun": {
+    "route": "/midnight-sun",
+    "line": "Summer villas under the midnight sun",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/hero-midnight-sun-kemijarvi.webp",
+        "bytes": 101147,
+        "sha256": "fb07a1716215221c29b81792d9b2876ae30601779302ebe47f7a2804317222e2",
+        "heroSha": "3f9af21c91a40511",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21310,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 130,
+        "centerSq": 132.6,
+        "photoRegion": 163,
+        "photoRegionRef": 163,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 528,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/hero-midnight-sun-kemijarvi.webp",
+        "bytes": 101147,
+        "sha256": "fb07a1716215221c29b81792d9b2876ae30601779302ebe47f7a2804317222e2",
+        "heroSha": "3f9af21c91a40511",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21310,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 130,
+        "centerSq": 132.6,
+        "photoRegion": 163,
+        "photoRegionRef": 163,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 528,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "private-inquiry": {
+    "route": "/private-inquiry",
+    "line": "Send a private villa request",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/commons/hero-inquiry-summer.webp",
+        "bytes": 153715,
+        "sha256": "45020d2ab14ffb519eca11daad4ff9473193c262ce2600022a7feb7d1e3a31ec",
+        "heroSha": "7e74d25dffb132ca",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 19839,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 108.5,
+        "centerSq": 114.1,
+        "photoRegion": 134,
+        "photoRegionRef": 134,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 378,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/commons/hero-inquiry-winter.webp",
+        "bytes": 124801,
+        "sha256": "df171fd1224b75ce1ab0574a3240feec0b5cb7c25944507f84229e92e379aa8f",
+        "heroSha": "df95dafe07f9e1d4",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 19839,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 103.4,
+        "centerSq": 105.7,
+        "photoRegion": 127,
+        "photoRegionRef": 127,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 378,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      }
+    }
+  },
+  "about": {
+    "route": "/about",
+    "line": "Who picks these villas, and how we earn",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/commons/hero-about-summer.webp",
+        "bytes": 224392,
+        "sha256": "cb072229916877513e1c75af1117848589df987e885062ef1efd27cf9d6fd4d2",
+        "heroSha": "8882c38fad503ddd",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21468,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 80.3,
+        "centerSq": 83.9,
+        "photoRegion": 95.2,
+        "photoRegionRef": 95.2,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 559,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/commons/hero-about-winter.webp",
+        "bytes": 96569,
+        "sha256": "44ff0cba8e1b3762dcde78164ce5d11a804221d586e030c3a2b1a76aff111323",
+        "heroSha": "91d4c3bf4c00740e",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 21468,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 84.2,
+        "centerSq": 84.5,
+        "photoRegion": 100.4,
+        "photoRegionRef": 100.4,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 559,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      }
+    }
+  }
+}

@@ -1,5 +1,8 @@
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
+import { seasonal } from '../lib/season'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import InquiryBand from '../components/InquiryBand'
@@ -11,6 +14,12 @@ import { getVillas } from '../lib/villas'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+
+// Real photographs since 23.9.2026 (were launch-commit AI renders): the season
+// decides, same switch as the front page and the share card. Receipts in
+// src/data/photoCredits.ts.
+const HERO_WINTER = '/images/commons/hero-suites-winter.webp'
+const HERO_SUMMER = '/images/commons/hero-suites-summer.webp'
 
 export default function Suites() {
   const lang = useLang()
@@ -37,8 +46,13 @@ export default function Suites() {
         eyebrow={c.hero.suites.eyebrow}
         title={c.hero.suites.title}
         lede={c.hero.suites.lede}
-        imageUrl="/images/hero-suites.webp"
-        imageAlt="A single glass-walled designer suite at twilight, low king bed under a panoramic ceiling"
+        imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
+        imageAlt={seasonal(
+          'Green aurora arching over frozen Lake Inari on a March evening',
+          'Sunlit birch slope of Saana fell above Kilpisjärvi at midsummer',
+        )}
+        scrim={seasonal('default', 'strong')}
+        credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />
 
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">

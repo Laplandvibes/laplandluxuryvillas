@@ -1,5 +1,8 @@
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
+import PhotoCredit from '../components/PhotoCredit'
+import { creditFor } from '../data/photoCredits'
+import { seasonal } from '../lib/season'
 import Page from '../components/Page'
 import InquiryBand from '../components/InquiryBand'
 import NewsletterSection from '../components/NewsletterSection'
@@ -11,6 +14,12 @@ import { withCounts } from '../lib/copyCounts'
 type ParaItem =
   | string
   | { type: 'link'; pre: string; label: string; href: string; post: string }
+
+// Real photographs since 23.9.2026 (were launch-commit AI renders): the season
+// decides, same switch as the front page and the share card. Receipts in
+// src/data/photoCredits.ts.
+const HERO_WINTER = '/images/commons/hero-about-winter.webp'
+const HERO_SUMMER = '/images/commons/hero-about-summer.webp'
 
 export default function About() {
   const lang = useLang()
@@ -29,8 +38,13 @@ export default function About() {
         eyebrow={c.hero.about.eyebrow}
         title={c.hero.about.title}
         lede={withCounts(c.hero.about.lede, lang)}
-        imageUrl="/images/hero-about.webp"
-        imageAlt="Hand-stacked kelo-pine wall corner of a luxury Lapland villa at blue hour"
+        imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
+        imageAlt={seasonal(
+          'A snow-loaded spruce on a fell top at dusk, village lights in the valley below',
+          'Birches in leaf above Lake Kilpisjärvi, snow patches still on the fells across the water',
+        )}
+        scrim={seasonal('default', 'strong')}
+        credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />
 
       <article className="bg-[color:var(--color-deep-night)] py-20 md:py-28">

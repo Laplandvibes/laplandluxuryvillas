@@ -61,7 +61,7 @@ export type PhotoCredit = {
   kind: 'sembo' | 'commons' | 'pexels' | 'own'
   /** Displayed author. For hotel-supplied photos this is the source, "Sembo". */
   author: string
-  license?: 'CC BY 2.0' | 'CC BY-SA 2.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0' | 'Pexels'
+  license?: 'CC BY 2.0' | 'CC BY 2.5' | 'CC BY 3.0' | 'CC BY 4.0' | 'CC BY-SA 2.0' | 'CC BY-SA 3.0' | 'CC BY-SA 4.0' | 'CC0 1.0' | 'Pexels'
   licenseUrl?: string
   /** Commons file page, or the property's Sembo hotel page. */
   sourceUrl: string
@@ -230,6 +230,109 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     changes: 'Cropped to 16:9 from the centre (2643x1762 -> 2643x1487), resized to 2000x1125, WebP q80.',
     cropped: true,
     inPictureKey: 'heroWinter',
+  },
+
+  // ── Page heroes of /suites, /about, /destinations, /private-inquiry, winter + summer ──
+  // Vesa 2026-09-21: "tekoälykuvat". The four launch-commit AI renders
+  // (hero-suites/about/destinations/inquiry.webp, 4.5.2026) are archived under
+  // _reissu-2026-07/_ai-originals-backup/laplandluxuryvillas-new/public/images/.
+  // Every partner frame of the suite properties already sits in a /suites card
+  // carousel, so the /suites hero is the sky those suites are built for, not a
+  // property. Only CC BY (no SA), only resized: the file is the whole photograph,
+  // object-cover crops it on screen and the file itself is not an adaptation.
+  // Checked 23.9.2026 against every */src in the network: none of these eight
+  // files is used on another LV site.
+  '/images/commons/hero-suites-winter.webp': {
+    kind: 'commons',
+    author: 'Daniele57C',
+    license: 'CC BY 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Aurora_ad_Inari_-_2.jpg',
+    sourceId: 'File:Aurora ad Inari - 2.jpg',
+    taken: '2025-03-19',
+    retrieved: '2026-09-23',
+    changes: 'Resized 6048x4024 -> 2000x1331, WebP q80. Not cropped.',
+    cropped: false,
+  },
+  '/images/commons/hero-suites-summer.webp': {
+    kind: 'commons',
+    author: 'Ninara',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Midsummer_in_Kilpisj%C3%A4rvi,_Lapland_(52221834387).jpg',
+    sourceId: 'File:Midsummer in Kilpisjärvi, Lapland (52221834387).jpg',
+    taken: '2022-06-26',
+    retrieved: '2026-09-23',
+    changes: 'Resized 5989x3979 -> 1600x1063, WebP q64. Not cropped.',
+    cropped: false,
+  },
+  '/images/commons/hero-about-winter.webp': {
+    kind: 'commons',
+    author: 'Tatiana Bashinskaya',
+    license: 'CC BY 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lapland,_Finland_-_panoramio_(2).jpg',
+    sourceId: 'File:Lapland, Finland - panoramio (2).jpg',
+    retrieved: '2026-09-23',
+    changes: 'Resized 3872x2592 -> 2000x1339, WebP q80. Not cropped.',
+    cropped: false,
+  },
+  '/images/commons/hero-about-summer.webp': {
+    kind: 'commons',
+    author: 'Ninara',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Midsummer_in_Kilpisj%C3%A4rvi,_Lapland_(52221808762).jpg',
+    sourceId: 'File:Midsummer in Kilpisjärvi, Lapland (52221808762).jpg',
+    taken: '2022-06-26',
+    retrieved: '2026-09-23',
+    changes: 'Resized 6131x4076 -> 1600x1064, WebP q64. Not cropped.',
+    cropped: false,
+  },
+  '/images/commons/hero-destinations-winter.webp': {
+    kind: 'commons',
+    author: 'Ximonic (Simo Räsänen)',
+    license: 'CC BY 2.5',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.5/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pallastunturi,_February_morning.JPG',
+    sourceId: 'File:Pallastunturi, February morning.JPG',
+    retrieved: '2026-09-23',
+    changes: 'Resized 3264x1840 -> 2000x1127, WebP q80. Not cropped. (The file description says a February 2009 morning; its EXIF date 2009-12-25 contradicts it, so no date is stated.)',
+    cropped: false,
+  },
+  '/images/commons/hero-destinations-summer.webp': {
+    kind: 'commons',
+    author: 'Heikki Immonen',
+    license: 'CC BY 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kilpisj%C3%A4rvi,_Fells_of_Norway_-_panoramio.jpg',
+    sourceId: 'File:Kilpisjärvi, Fells of Norway - panoramio.jpg',
+    retrieved: '2026-09-23',
+    changes: 'Resized 3000x2250 -> 2000x1500, WebP q80. Not cropped.',
+    cropped: false,
+  },
+  '/images/commons/hero-inquiry-winter.webp': {
+    kind: 'commons',
+    author: 'Htm',
+    license: 'CC BY 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Haltioletto_in_winter.jpg',
+    sourceId: 'File:Haltioletto in winter.jpg',
+    taken: '2021-03-28',
+    retrieved: '2026-09-23',
+    changes: 'Resized 4751x2672 -> 2000x1125, WebP q80. Not cropped.',
+    cropped: false,
+  },
+  '/images/commons/hero-inquiry-summer.webp': {
+    kind: 'commons',
+    author: 'Ninara',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nuorgam,_Lapland_-_50215129291.jpg',
+    sourceId: 'File:Nuorgam, Lapland - 50215129291.jpg',
+    retrieved: '2026-09-23',
+    changes: 'Resized 4893x3065 -> 2000x1253, WebP q80. Not cropped. People on the far bank are small and seen from behind; no one is identifiable.',
+    cropped: false,
   },
 
   // ── Destination cards (Home 4:5, Destinations 5:4, detail 16:10): square 1400 files ──
