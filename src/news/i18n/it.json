@@ -1,0 +1,27 @@
+{
+  "section": "Notizie dalla Lapponia",
+  "nav": "Notizie",
+  "index": {
+    "seoTitle": "Notizie sul viaggio di lusso in Lapponia: Rovaniemi",
+    "description": "Notizie sul viaggio di lusso nella Lapponia finlandese: nuove strutture, capacità, voli e le società dietro. Ogni articolo cita e collega le proprie fonti.",
+    "h1": "Notizie dalla Lapponia",
+    "lead": "Che cosa si costruisce, si compra e si prenota nella fascia alta del viaggio in Lapponia finlandese, scritto a partire dai comunicati originali, con le fonti citate e collegate.",
+    "aboutTitle": "Come lavoriamo",
+    "aboutText": "Apriamo ogni fonte prima di scrivere e riportiamo soltanto ciò che dice. Non siamo pagati dalle società di cui scriviamo e, se una è nostra partner, lo diciamo nell'articolo.",
+    "allRoutes": "Le ville"
+  },
+  "ui": {
+    "home": "Home",
+    "readMore": "Leggi l'articolo",
+    "published": "Pubblicato",
+    "updated": "Aggiornato",
+    "byline": "Redazione di LaplandLuxuryVillas",
+    "sources": "Fonti",
+    "source": "Fonte",
+    "read": "consultato",
+    "photo": "Foto",
+    "latest": "Ultime notizie dalla Lapponia",
+    "allNews": "Tutte le notizie",
+    "moreNews": "Altre notizie"
+  }
+}

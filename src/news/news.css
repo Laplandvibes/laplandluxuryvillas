@@ -1,0 +1,176 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   Uutisosio (/news) — laplandluxuryvillas.com, 24.9.2026.
+
+   Rakenne on kopioitu laplandflights.fi:n uutisosiosta (18.9.2026, laplandnaturen
+   kautta), värit ovat tämän sivuston omat. Tämä on verkoston DOKUMENTOITU VARIANTTI:
+   Cormorant Garamond -otsikot, DM Sans leipäteksti, onyx/deep-night pohja ja
+   champagne-messinki #C9A46B pääaksenttina.
+
+   🔴 TÄSSÄ OSIOSSA EI OLE PINKKIÄ. Verkoston vibe-pink elää tällä sivustolla vain
+   logon #-merkissä ja jaetussa evästebannerissa/alatunnisteessa. Agentti vaihtoi
+   kerran tämän sivuston messingin pinkiksi ja se peruttiin 16.8.2026 — älä tuo sitä
+   takaisin linkkeihin, korostuksiin tai kuvien aksentteihin.
+
+   Runko ei ole vaalealla arkilla: hubin blogin arkki (#F1F4F9) ei istu tähän ilmeeseen,
+   joten tekstipalsta on sivuston oma tumma paneeli (charcoal onyxin päällä), jolla
+   leipätekstin muste on bone #E8E2D6 — mitattu 13,9:1.
+
+   Otsikot serifillä; CJK-kielissä varafontti, koska Cormorantissa ei ole CJK-merkkejä.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.nw{
+  --onyx:#0A0F1C;
+  --night:#0F172A;
+  --card:#111827;
+  --line:#1E293B;
+  --line-soft:#26324a;
+  --brass:#C9A46B;
+  --brass-bright:#D8B584;
+  --bone:#E8E2D6;
+  --ink:#F3F1EC;
+  --ink2:#CFCABE;
+  --muted:#A7A093;
+  background:var(--onyx);
+  color:var(--ink);
+}
+.nw .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.nw .nw-narrow{max-width:960px}
+.nw .serif{font-family:var(--font-heading),'Cormorant Garamond',serif;font-weight:400;letter-spacing:.005em}
+.nw .eyebrow{font:500 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.nw .crumbs{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:13.5px;line-height:1.5;margin-bottom:14px;color:var(--ink2)}
+.nw .crumbs a{color:var(--brass);text-decoration:none;border-bottom:1px solid rgba(201,164,107,.4)}
+.nw .crumbs a:hover{border-color:var(--brass)}
+.nw .crumbs .sep{margin:0 6px;opacity:.6}
+.nw .sechead{margin-bottom:20px}
+
+/* ── Osion etusivun yläpalkki ────────────────────────────────────────────── */
+.nw .nw-head{position:relative;padding:72px 0 58px;overflow:hidden;
+  background:radial-gradient(60% 80% at 85% -10%,rgba(201,164,107,.16) 0%,rgba(201,164,107,0) 62%),
+             linear-gradient(180deg,var(--night) 0%,var(--onyx) 100%);
+  border-bottom:1px solid var(--line)}
+.nw .nw-head .wrap{position:relative}
+.nw .nw-head .eyebrow{color:var(--brass);display:block}
+.nw .nw-h1{font-size:clamp(42px,6.2vw,78px);line-height:1.02;margin-top:12px;max-width:17ch;color:var(--ink);text-wrap:balance}
+.nw .nw-lead{color:var(--ink2);font-size:clamp(16px,2vw,19px);line-height:1.6;max-width:60ch;margin-top:18px}
+
+/* CJK: Cormorantissa ei ole CJK-merkkejä ⇒ varafontti ja pienempi mitoitus. */
+.nw .nw-h1:lang(ja),.nw .nw-h1:lang(zh),.nw .nw-h1:lang(ko){font-family:var(--font-body),system-ui,sans-serif;font-weight:600;line-height:1.3;font-size:clamp(27px,4.2vw,46px);max-width:none;letter-spacing:0}
+.nw .nw-h1:lang(ko){word-break:keep-all}
+.nw .nw-h1:lang(ja){word-break:auto-phrase}
+
+/* ── Juttusivun hero: kuva koko leveydelle, otsikko kuvan päällä ─────────── */
+.nw .nw-art{position:relative;min-height:min(78vh,700px);display:flex;align-items:flex-end;overflow:hidden;background:var(--onyx);padding:76px 0 52px}
+.nw .nw-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nw .nw-art-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,28,.95) 0%,rgba(10,15,28,.82) 32%,rgba(10,15,28,.34) 66%,rgba(10,15,28,.5) 100%)}
+.nw .nw-art-body{position:relative}
+.nw .nw-art .nw-h1{font-size:clamp(35px,4.6vw,62px);line-height:1.04;max-width:20ch;margin-top:12px;text-shadow:0 2px 26px rgba(0,0,0,.5)}
+.nw .nw-art .nw-dek{color:var(--bone);max-width:56ch}
+.nw .nw-kicker{font:500 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0}
+.nw .nw-dek{font-size:clamp(17px,2.1vw,21px);line-height:1.55;max-width:58ch;margin-top:16px;color:var(--ink2)}
+.nw .nw-art-meta{padding-top:20px;padding-bottom:4px}
+.nw .nw-byline{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
+.nw .nw-art-cap{font-size:14px;line-height:1.55;color:var(--muted);margin-top:6px}
+.nw .nw-credit a{color:var(--ink2);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.nw .nw-art{min-height:520px;padding:64px 0 32px}}
+
+/* ── Tekstipaneeli: sivuston oma tumma palsta, ei vaaleaa arkkia ─────────── */
+.nw .nw-sheet{max-width:820px;margin:32px auto 0;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:clamp(24px,4.6vw,56px)}
+/* Lapsiyhdistin (>): vain jutun omat kappaleet, ei upotuksen sisältöä. */
+.nw .nw-prose > p{font-size:18px;line-height:1.78;color:var(--bone);margin:0 0 20px}
+.nw .nw-prose > h2{font-family:var(--font-heading),'Cormorant Garamond',serif;font-weight:400;font-size:clamp(30px,3.8vw,40px);line-height:1.14;color:var(--ink);margin:40px 0 14px;text-wrap:balance}
+.nw .nw-prose > h2:lang(ja),.nw .nw-prose > h2:lang(zh),.nw .nw-prose > h2:lang(ko){font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:24px;line-height:1.4}
+.nw .nw-prose > ul{margin:0 0 20px;padding-left:1.25em;font-size:18px;line-height:1.7;color:var(--bone)}
+.nw .nw-prose > ul > li{margin:7px 0}
+.nw .nw-prose > .nw-note{font-size:15px;line-height:1.65;color:var(--ink2);border-left:2px solid var(--brass);padding-left:14px;margin:0 0 20px}
+.nw .nw-prose > .nw-linkp{font-size:17px}
+.nw .nw-inlink{color:var(--brass);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,164,107,.45);padding-bottom:1px}
+.nw .nw-inlink:hover{color:var(--brass-bright);border-color:var(--brass-bright)}
+@media(max-width:640px){.nw .nw-prose > p,.nw .nw-prose > ul{font-size:17px}}
+
+/* ── Mitta-asteikko (jutun oma grafiikka) ────────────────────────────────── */
+.nw .nw-scale{margin:30px 0 26px;padding:24px 22px 20px;background:rgba(255,255,255,.03);border:1px solid var(--line-soft);border-radius:4px}
+.nw .nw-scale-h{font:600 16px var(--font-body),'DM Sans',system-ui,sans-serif;color:var(--ink);margin:0 0 18px;line-height:1.4}
+.nw .nw-scale-row + .nw-scale-row{margin-top:18px}
+.nw .nw-scale-label{font-size:15px;line-height:1.45;color:rgba(243,241,236,.85);margin:0 0 7px}
+.nw .nw-scale-track{display:flex;align-items:center;gap:10px;min-height:26px}
+/* 🔴 Palkit omassa kutistuvassa säiliössään (mitattu 375 px, 24.9.2026): kun palkkien
+   prosenttileveydet laskettiin suoraan .nw-scale-trackista, tavoiterivin luku työntyi
+   3 px ruudun ulkopuolelle. Nyt prosentit ovat tästä säiliöstä, joka jakaa jäljelle
+   jäävän tilan luvun kanssa — mittakaava rivien välillä säilyy, koska säiliö on
+   molemmilla riveillä yhtä leveä. */
+.nw .nw-scale-bars{display:flex;flex:1 1 auto;min-width:0}
+.nw .nw-scale-bar{display:block;height:20px;flex:0 0 auto;border-radius:2px}
+.nw .nw-scale-now{background:var(--brass)}
+/* Tavoite merkitään MUODOLLA, ei toisella värillä: ääriviiva ja katkoviivainen haarukka. */
+.nw .nw-scale-target{background:rgba(201,164,107,.28);border:1px solid var(--brass);border-right:0;border-radius:2px 0 0 2px}
+.nw .nw-scale-range{background:repeating-linear-gradient(135deg,rgba(201,164,107,.30) 0 6px,rgba(201,164,107,.10) 6px 12px);border:1px dashed var(--brass);border-left:0;border-radius:0 2px 2px 0}
+.nw .nw-scale-num{font:600 17px var(--font-body),'DM Sans',system-ui,sans-serif;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.nw .nw-scale-cap{display:block;margin-top:18px;font-size:15px;line-height:1.6;color:rgba(243,241,236,.85)}
+.nw .nw-scale-unit{display:block;font-weight:600}
+.nw .nw-scale-note{display:block;margin-top:5px;color:var(--muted)}
+
+/* ── Lähteet ─────────────────────────────────────────────────────────────── */
+.nw .nw-sources{margin-top:36px;padding-top:24px;border-top:1px solid var(--line-soft)}
+.nw .nw-sources-h{font:600 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0}
+.nw .nw-sources ol{margin:14px 0 0;padding-left:20px;display:grid;gap:14px;font-size:15px;line-height:1.55;color:var(--ink2)}
+.nw .nw-src-pub{font-weight:600;color:var(--ink)}
+.nw .nw-src-date{color:var(--muted)}
+.nw .nw-sources a{color:var(--brass);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* ── Kortit ja listaus ───────────────────────────────────────────────────── */
+.nw .nw-listing{padding:48px 0 14px}
+.nw .nw-listing > .wrap > .nw-card-wide{margin-bottom:26px}
+.nw .nw-grid{display:grid;gap:26px}
+.nw .nw-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.nw .nw-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:860px){.nw .nw-grid-2,.nw .nw-grid-3{grid-template-columns:1fr}}
+.nw .nw-card{background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;
+  transition:border-color .2s ease,transform .2s cubic-bezier(.2,.8,.2,1)}
+.nw .nw-card:hover{border-color:rgba(201,164,107,.5);transform:translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.nw .nw-card,.nw .nw-card:hover{transition:none;transform:none}}
+.nw .nw-card-img{display:block;aspect-ratio:16/9;background:var(--night);overflow:hidden}
+.nw .nw-card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.nw .nw-card-body{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
+.nw .nw-card-meta{font:500 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);line-height:1.5;margin:0}
+.nw .nw-card-title{font-family:var(--font-heading),'Cormorant Garamond',serif;font-weight:400;font-size:clamp(28px,2.5vw,36px);line-height:1.12;color:var(--ink);margin:12px 0 0;text-wrap:balance}
+.nw .nw-card-title a{color:inherit;text-decoration:none}
+.nw .nw-card-title a:hover{color:var(--brass-bright)}
+.nw .nw-card-title:lang(ja),.nw .nw-card-title:lang(zh),.nw .nw-card-title:lang(ko){font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:21px;line-height:1.45}
+.nw .nw-card-dek{color:var(--ink2);font-size:16px;line-height:1.6;margin:12px 0 0;flex:1}
+.nw .nw-card-more{align-self:flex-start;margin-top:18px;color:var(--brass);font-weight:600;font-size:14px;letter-spacing:.06em;text-decoration:none;border-bottom:1px solid rgba(201,164,107,.45);padding-bottom:2px}
+.nw .nw-card-wide{flex-direction:row}
+.nw .nw-card-wide .nw-card-img{flex:0 0 56%;aspect-ratio:auto;min-height:340px}
+.nw .nw-card-wide .nw-card-body{padding:36px 38px;justify-content:center}
+.nw .nw-card-wide .nw-card-title{font-size:clamp(32px,3.2vw,46px)}
+.nw .nw-card-wide .nw-card-dek{flex:0}
+@media(max-width:860px){
+  .nw .nw-card-wide{flex-direction:column}
+  .nw .nw-card-wide .nw-card-img{flex:none;aspect-ratio:16/9;min-height:0}
+  .nw .nw-card-wide .nw-card-body{padding:24px 24px 26px}
+}
+
+/* ── Osion etusivun "näin raportoimme" ───────────────────────────────────── */
+.nw .nw-about{padding:28px 0 60px}
+.nw .nw-about-in{max-width:820px;border-top:1px solid var(--line-soft);padding-top:28px}
+.nw .nw-about-h{font:600 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0}
+.nw .nw-about p{color:var(--ink2);font-size:16px;line-height:1.65;margin:10px 0 8px;max-width:64ch}
+
+/* ── Juttusivun "muita uutisia", etusivun nosto, sivulinkit ──────────────── */
+.nw .nw-related{padding:56px 0 12px}
+.nw .nw-related-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;margin-bottom:20px}
+.nw .nw-related-head h2{font-family:var(--font-heading),'Cormorant Garamond',serif;font-weight:400;font-size:clamp(30px,4vw,46px);color:var(--ink);margin:0}
+.nw .nw-teaser{padding:68px 0 22px}
+.nw .nw-teaser .sechead .eyebrow{display:block;color:var(--brass)}
+.nw .nw-teaser .sechead h2{font-family:var(--font-heading),'Cormorant Garamond',serif;font-weight:400;font-size:clamp(30px,4vw,46px);line-height:1.1;color:var(--ink);margin:10px 0 0}
+.nw .nw-more{text-align:center;margin-top:26px}
+.nw .nw-morepages{padding:38px 0 58px}
+.nw .nw-morepages ul{display:flex;flex-wrap:wrap;gap:10px 12px;list-style:none;margin:0;padding:26px 0 0;border-top:1px solid var(--line-soft)}
+.nw .nw-morepages a{display:inline-block;padding:10px 18px;border:1px solid var(--line-soft);border-radius:999px;background:rgba(255,255,255,.02);
+  color:var(--ink2);font-size:14px;font-weight:500;letter-spacing:.04em;text-decoration:none;line-height:1.3}
+.nw .nw-morepages a:hover{border-color:rgba(201,164,107,.55);color:var(--brass-bright)}
+@media(max-width:640px){
+  .nw .nw-head{padding:52px 0 46px}
+  .nw .nw-sheet{margin-top:24px;margin-left:12px;margin-right:12px}
+  .nw .nw-card-body{padding:22px 20px 24px}
+  .nw .nw-scale{padding:20px 16px 16px}
+}

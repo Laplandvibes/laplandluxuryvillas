@@ -1,0 +1,27 @@
+{
+  "section": "Lapland news",
+  "nav": "News",
+  "index": {
+    "seoTitle": "Lapland luxury travel news: Rovaniemi and beyond",
+    "description": "News on luxury travel in Finnish Lapland: new properties, capacity, flights and the companies behind them. Every story names and links its sources.",
+    "h1": "Lapland luxury travel news",
+    "lead": "What is being built, bought and booked at the top end of Finnish Lapland travel, written from the original releases and filings, with every source named and linked.",
+    "aboutTitle": "How we report",
+    "aboutText": "We open every source before writing and report only what it says. We are not paid by the companies we write about, and we say so in the story when a company is one of our partners.",
+    "allRoutes": "The villa collection"
+  },
+  "ui": {
+    "home": "Home",
+    "readMore": "Read the story",
+    "published": "Published",
+    "updated": "Updated",
+    "byline": "LaplandLuxuryVillas newsroom",
+    "sources": "Sources",
+    "source": "Source",
+    "read": "read",
+    "photo": "Photo",
+    "latest": "Latest Lapland news",
+    "allNews": "All news",
+    "moreNews": "More news"
+  }
+}

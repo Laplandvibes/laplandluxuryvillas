@@ -1,0 +1,27 @@
+{
+  "section": "Notícias da Lapônia",
+  "nav": "Notícias",
+  "index": {
+    "seoTitle": "Notícias do turismo de luxo na Lapônia: Rovaniemi",
+    "description": "Notícias sobre o turismo de luxo na Lapônia finlandesa: novos empreendimentos, capacidade, voos e as empresas por trás. Cada texto cita e linka suas fontes.",
+    "h1": "Notícias da Lapônia",
+    "lead": "O que está sendo construído, comprado e reservado no topo do turismo na Lapônia finlandesa, escrito a partir dos comunicados originais, com todas as fontes citadas e linkadas.",
+    "aboutTitle": "Como apuramos",
+    "aboutText": "Abrimos cada fonte antes de escrever e contamos apenas o que ela diz. Não recebemos pagamento das empresas sobre as quais escrevemos e, se uma delas é nossa parceira, dizemos isso no texto.",
+    "allRoutes": "As villas"
+  },
+  "ui": {
+    "home": "Início",
+    "readMore": "Ler a matéria",
+    "published": "Publicado",
+    "updated": "Atualizado",
+    "byline": "Redação do LaplandLuxuryVillas",
+    "sources": "Fontes",
+    "source": "Fonte",
+    "read": "consultado",
+    "photo": "Foto",
+    "latest": "Últimas notícias da Lapônia",
+    "allNews": "Todas as notícias",
+    "moreNews": "Mais notícias"
+  }
+}

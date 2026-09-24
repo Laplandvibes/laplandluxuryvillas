@@ -1,0 +1,27 @@
+{
+  "section": "Lapin uutiset",
+  "nav": "Uutiset",
+  "index": {
+    "seoTitle": "Lapin luksusmatkailun uutiset: Rovaniemi ja Lappi",
+    "description": "Uutisia Suomen Lapin luksusmatkailusta: uudet kohteet, kapasiteetti, lennot ja yhtiöt niiden takana. Jokainen juttu nimeää ja linkittää lähteensä.",
+    "h1": "Lapin luksusmatkailun uutiset",
+    "lead": "Mitä Lapin matkailun yläpäässä rakennetaan, ostetaan ja varataan. Jutut kirjoitetaan alkuperäisistä tiedotteista, ja jokainen lähde on nimetty ja linkitetty.",
+    "aboutTitle": "Näin teemme uutiset",
+    "aboutText": "Avaamme jokaisen lähteen ennen kirjoittamista ja kerromme vain sen, mitä lähde sanoo. Emme saa maksua yhtiöiltä joista kirjoitamme, ja jos yhtiö on kumppanimme, se sanotaan jutussa.",
+    "allRoutes": "Huvilat"
+  },
+  "ui": {
+    "home": "Etusivu",
+    "readMore": "Lue juttu",
+    "published": "Julkaistu",
+    "updated": "Päivitetty",
+    "byline": "LaplandLuxuryVillas-toimitus",
+    "sources": "Lähteet",
+    "source": "Lähde",
+    "read": "luettu",
+    "photo": "Kuva",
+    "latest": "Uusimmat Lapin uutiset",
+    "allNews": "Kaikki uutiset",
+    "moreNews": "Lisää uutisia"
+  }
+}

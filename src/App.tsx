@@ -20,6 +20,8 @@ const DestinationPage = lazy(() => import('./pages/DestinationPage'))
 const Experiences = lazy(() => import('./pages/Experiences'))
 const MidnightSun = lazy(() => import('./pages/MidnightSun'))
 const PrivateInquiry = lazy(() => import('./pages/PrivateInquiry'))
+const NewsIndex = lazy(() => import('./news/NewsIndex'))
+const NewsArticle = lazy(() => import('./news/NewsArticle'))
 const About = lazy(() => import('./pages/About'))
 const Contact = lazy(() => import('./pages/Contact'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
@@ -111,6 +113,8 @@ function LocalizedRoutes() {
           it on with a real 301 at the edge; this client route only catches a
           stale in-app link that never hits the network. */}
       {localized('/concierge', <LegacyConciergeRedirect />)}
+      {localized('/news', <NewsIndex />)}
+      {localized('/news/:slug', <NewsArticle />)}
       {localized('/about', <About />)}
       {localized('/contact', <Contact />)}
       {localized('/privacy', <PrivacyPolicy />)}

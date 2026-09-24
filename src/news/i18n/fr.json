@@ -1,0 +1,27 @@
+{
+  "section": "Actualités de Laponie",
+  "nav": "Actualités",
+  "index": {
+    "seoTitle": "Voyage de luxe en Laponie : les actualités",
+    "description": "L'actualité du voyage de luxe en Laponie finlandaise : nouvelles adresses, capacité, vols et sociétés. Chaque article cite et relie ses sources.",
+    "h1": "Actualités de Laponie",
+    "lead": "Ce qui se construit, s'achète et se réserve dans le haut de gamme du voyage en Laponie finlandaise, écrit à partir des communiqués d'origine, sources nommées et reliées.",
+    "aboutTitle": "Notre méthode",
+    "aboutText": "Nous ouvrons chaque source avant d'écrire et ne rapportons que ce qu'elle dit. Nous ne sommes pas rémunérés par les sociétés dont nous parlons, et si l'une est notre partenaire, nous le disons dans l'article.",
+    "allRoutes": "Les villas"
+  },
+  "ui": {
+    "home": "Accueil",
+    "readMore": "Lire l'article",
+    "published": "Publié",
+    "updated": "Mis à jour",
+    "byline": "Rédaction de LaplandLuxuryVillas",
+    "sources": "Sources",
+    "source": "Source",
+    "read": "consulté",
+    "photo": "Photo",
+    "latest": "Dernières actualités de Laponie",
+    "allNews": "Toutes les actualités",
+    "moreNews": "Plus d'actualités"
+  }
+}

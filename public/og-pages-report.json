@@ -480,5 +480,167 @@
         "errors": []
       }
     }
+  },
+  "news": {
+    "route": "/news",
+    "line": "Who is building the next Lapland",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/news/riisitunturi-winter-1600.webp",
+        "bytes": 113620,
+        "sha256": "afe51fb81997d720f19d1861d73658f44009ee4c6f43d97b8b855e49be481c2d",
+        "heroSha": "cd8668fb7fe724d8",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 20681,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 107.1,
+        "centerSq": 107.6,
+        "photoRegion": 131.9,
+        "photoRegionRef": 131.9,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 456,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/news/riisitunturi-winter-1600.webp",
+        "bytes": 113620,
+        "sha256": "afe51fb81997d720f19d1861d73658f44009ee4c6f43d97b8b855e49be481c2d",
+        "heroSha": "cd8668fb7fe724d8",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 20681,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 107.1,
+        "centerSq": 107.6,
+        "photoRegion": 131.9,
+        "photoRegionRef": 131.9,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 456,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "news-venture-lapland-arctra-majority": {
+    "route": "/news/venture-lapland-arctra-majority",
+    "line": "Who is building the next Lapland",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/news/riisitunturi-winter-1600.webp",
+        "bytes": 113620,
+        "sha256": "afe51fb81997d720f19d1861d73658f44009ee4c6f43d97b8b855e49be481c2d",
+        "heroSha": "cd8668fb7fe724d8",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 20681,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 107.1,
+        "centerSq": 107.6,
+        "photoRegion": 131.9,
+        "photoRegionRef": 131.9,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 456,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/news/riisitunturi-winter-1600.webp",
+        "bytes": 113620,
+        "sha256": "afe51fb81997d720f19d1861d73658f44009ee4c6f43d97b8b855e49be481c2d",
+        "heroSha": "cd8668fb7fe724d8",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 20681,
+        "inkBox": [
+          312,
+          493,
+          885,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 107.1,
+        "centerSq": 107.6,
+        "photoRegion": 131.9,
+        "photoRegionRef": 131.9,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 456,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "slug": "venture-lapland-arctra-majority",
+  "date": "2026-09-24",
+  "hero": {
+    "src": "/images/news/riisitunturi-winter-1600.webp",
+    "srcSmall": "/images/news/riisitunturi-winter-800.webp",
+    "width": 1600,
+    "height": 1095,
+    "position": "50% 45%",
+    "credit": {
+      "author": "Ninara",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Riisitunturi,_Finland.jpg",
+      "assetId": "File:View from Riisitunturi, Finland.jpg",
+      "sourceName": "Wikimedia Commons",
+      "taken": "2020-02-20",
+      "retrieved": "2026-09-24"
+    }
+  },
+  "ogCard": {
+    "line": "Who is building the next Lapland"
+  },
+  "sources": [
+    {
+      "publisher": "Venture Lapland",
+      "title": "Venture Lapland pääomistajaksi luksusmatkailukonserni Arctraan",
+      "url": "https://www.sttinfo.fi/tiedote/72325629/venture-lapland-paaomistajaksi-luksusmatkailukonserni-arctraan?publisherId=69817306&lang=fi",
+      "date": "2026-09-16"
+    }
+  ],
+  "embeds": {
+    "scale": {
+      "type": "scale",
+      "now": 2.8,
+      "targetLow": 25,
+      "targetHigh": 30,
+      "max": 32
+    }
+  }
+}

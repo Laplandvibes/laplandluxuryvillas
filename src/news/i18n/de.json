@@ -1,0 +1,27 @@
+{
+  "section": "Lappland-Nachrichten",
+  "nav": "Nachrichten",
+  "index": {
+    "seoTitle": "Luxusreise-Nachrichten aus Lappland: Rovaniemi",
+    "description": "Nachrichten zum Luxusreisen im finnischen Lappland: neue Häuser, Kapazität, Flüge und die Unternehmen dahinter. Jeder Beitrag nennt und verlinkt seine Quellen.",
+    "h1": "Lappland-Nachrichten",
+    "lead": "Was am oberen Ende des lappländischen Reisemarkts gebaut, gekauft und gebucht wird, geschrieben aus den Originalmitteilungen, mit benannten und verlinkten Quellen.",
+    "aboutTitle": "So arbeiten wir",
+    "aboutText": "Wir öffnen jede Quelle vor dem Schreiben und geben nur wieder, was dort steht. Wir werden von den Unternehmen, über die wir schreiben, nicht bezahlt; ist eines unser Partner, steht das im Beitrag.",
+    "allRoutes": "Die Villen"
+  },
+  "ui": {
+    "home": "Startseite",
+    "readMore": "Beitrag lesen",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "byline": "LaplandLuxuryVillas-Redaktion",
+    "sources": "Quellen",
+    "source": "Quelle",
+    "read": "gelesen",
+    "photo": "Foto",
+    "latest": "Neueste Lappland-Nachrichten",
+    "allNews": "Alle Nachrichten",
+    "moreNews": "Weitere Nachrichten"
+  }
+}

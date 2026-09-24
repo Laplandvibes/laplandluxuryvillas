@@ -28,6 +28,15 @@ const LANG_OPTIONS: { code: Lang; label: string; native: string }[] = [
   { code: 'sv', label: 'SV', native: 'Svenska' },
 ]
 
+/**
+ * Uutisosion nimi navissa. Osion omat käännökset (src/news/i18n/*.json) ladataan laiskasti
+ * vasta osiossa, joten yhden sanan taulukko on tässä.
+ */
+const NEWS_LABEL: Record<string, string> = {
+  en: 'News', fi: 'Uutiset', de: 'Nachrichten', ja: 'ニュース', es: 'Noticias', 'pt-BR': 'Notícias',
+  'zh-CN': '新闻', ko: '뉴스', fr: 'Actualités', it: 'Notizie', nl: 'Nieuws', sv: 'Nyheter',
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -45,6 +54,7 @@ export default function Nav() {
     { to: to('/experiences'), label: c.nav.experiences },
     { to: to('/midnight-sun'), label: c.nav.midnightSun },
     { to: to('/about'), label: c.nav.about },
+    { to: to('/news'), label: NEWS_LABEL[lang] ?? NEWS_LABEL.en },
   ]
 
   useEffect(() => {

@@ -1,0 +1,27 @@
+{
+  "section": "Lapland-nieuws",
+  "nav": "Nieuws",
+  "index": {
+    "seoTitle": "Luxe reizen in Lapland: het nieuws uit Rovaniemi",
+    "description": "Nieuws over luxe reizen in Fins Lapland: nieuwe accommodaties, capaciteit, vluchten en de bedrijven erachter. Elk artikel noemt zijn bronnen en linkt ernaar.",
+    "h1": "Lapland-nieuws",
+    "lead": "Wat er in het hoogste segment van het reizen naar Fins Lapland wordt gebouwd, gekocht en geboekt, geschreven vanuit de originele persberichten, met alle bronnen genoemd en gelinkt.",
+    "aboutTitle": "Zo werken wij",
+    "aboutText": "Wij openen elke bron voordat wij schrijven en geven alleen weer wat erin staat. Wij worden niet betaald door de bedrijven waarover wij schrijven, en is een bedrijf onze partner, dan zeggen wij dat in het artikel.",
+    "allRoutes": "De villa's"
+  },
+  "ui": {
+    "home": "Home",
+    "readMore": "Lees het artikel",
+    "published": "Gepubliceerd",
+    "updated": "Bijgewerkt",
+    "byline": "Redactie van LaplandLuxuryVillas",
+    "sources": "Bronnen",
+    "source": "Bron",
+    "read": "geraadpleegd",
+    "photo": "Foto",
+    "latest": "Laatste Lapland-nieuws",
+    "allNews": "Al het nieuws",
+    "moreNews": "Meer nieuws"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "section": "Lapplandsnyheter",
+  "nav": "Nyheter",
+  "index": {
+    "seoTitle": "Lyxresenyheter från Lappland: Rovaniemi och Lappland",
+    "description": "Nyheter om lyxresor i finska Lappland: nya anläggningar, kapacitet, flyg och bolagen bakom. Varje artikel namnger och länkar sina källor.",
+    "h1": "Lapplandsnyheter",
+    "lead": "Vad som byggs, köps och bokas i toppen av det finska Lapplands resemarknad, skrivet utifrån originalpressmeddelandena, med alla källor namngivna och länkade.",
+    "aboutTitle": "Så gör vi nyheterna",
+    "aboutText": "Vi öppnar varje källa innan vi skriver och återger bara det som står där. Vi får inte betalt av bolagen vi skriver om, och är ett bolag vår partner säger vi det i artikeln.",
+    "allRoutes": "Villorna"
+  },
+  "ui": {
+    "home": "Startsida",
+    "readMore": "Läs artikeln",
+    "published": "Publicerad",
+    "updated": "Uppdaterad",
+    "byline": "LaplandLuxuryVillas-redaktionen",
+    "sources": "Källor",
+    "source": "Källa",
+    "read": "läst",
+    "photo": "Foto",
+    "latest": "Senaste Lapplandsnyheterna",
+    "allNews": "Alla nyheter",
+    "moreNews": "Fler nyheter"
+  }
+}

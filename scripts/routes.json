@@ -208,5 +208,35 @@
       "baseFile": "src/lib/destinations.ts",
       "key": "yllas"
     }
+  },
+  {
+    "path": "/news",
+    "fallbackTitle": "Lapland luxury travel news: Rovaniemi and beyond",
+    "fallbackDescription": "News on luxury travel in Finnish Lapland: new properties, capacity, flights and the companies behind them. Every story names and links its sources.",
+    "ogImage": "/og/news.jpg",
+    "ogCard": {
+      "hero": "/images/news/riisitunturi-winter-1600.webp",
+      "line": "Who is building the next Lapland"
+    },
+    "harvestRecord": {
+      "file": "node_modules/.cache/lv-news/_index/{lang}.json",
+      "key": "news",
+      "mode": "jsonFile"
+    }
+  },
+  {
+    "path": "/news/venture-lapland-arctra-majority",
+    "fallbackTitle": "Arctra: Venture Lapland buys into Rovaniemi luxury",
+    "fallbackDescription": "The investment company Venture Lapland has bought a majority holding in the Rovaniemi luxury travel group Arctra and plans to build more capacity near the city.",
+    "ogImage": "/og/news-venture-lapland-arctra-majority.jpg",
+    "ogCard": {
+      "hero": "/images/news/riisitunturi-winter-1600.webp",
+      "line": "Who is building the next Lapland"
+    },
+    "harvestRecord": {
+      "file": "node_modules/.cache/lv-news/venture-lapland-arctra-majority/{lang}.json",
+      "key": "venture-lapland-arctra-majority",
+      "mode": "jsonFile"
+    }
   }
 ]

@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, Star, ShieldCheck, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
@@ -18,6 +19,13 @@ import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { AD_SLOTS } from '../data/adSlots'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
 import { creditFor } from '../data/photoCredits'
+
+/**
+ * Uutisosion nosto etusivulle (24.9.2026). Laiskasti ladattu ja oma .nw-juuri, jotta
+ * etusivun nippu ei kanna uutisosion koodia eikä 12 kielen tekstejä; varattu korkeus
+ * pitää CLS:n nollassa myös silloin kun kortit tulevat verkosta.
+ */
+const LatestNews = lazy(() => import('../news/LatestNews'))
 import { signatureVillas } from '../lib/villas'
 import { getDestinations } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -283,6 +291,12 @@ export default function Home() {
         <AppPromoHero />
       </div>
       <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-[color:var(--color-deep-night)]" />
+
+      <div className="nw">
+        <Suspense fallback={<div style={{ minHeight: 420 }} />}>
+          <LatestNews />
+        </Suspense>
+      </div>
 
       <RelatedSites />
 
