@@ -17,6 +17,13 @@
  *   --locales=en,fi,de                      (optional) override locale list,
  *                                           comma-separated — for single-locale
  *                                           or 3-locale sites (ski, default 11)
+ *   --localeOverrides=zh-CN:bcp47=zh-Hant,og=zh_TW,hreflang=zh-Hant+zh
+ *                                           (optional) per-locale OUTPUT codes.
+ *                                           Blocks split by '/', fields by ',',
+ *                                           the hreflang list by '+'. Only
+ *                                           bcp47 / og / hreflang; a locale not
+ *                                           named keeps its defaults.
+ *                                           See [LV-LOCALE-OVERRIDES] below.
  *   --source=auto|meta|per-lang|nested|json|page-inline
  *                                           (optional) force a specific reader.
  *                                           Default "auto" tries readers in
@@ -171,6 +178,64 @@ if (args.addLocales) {
   for (const key of args.addLocales.split(',').map((s) => s.trim())) {
     if (EXTRA_LOCALES[key] && !FULL_LOCALE_LIST.some((l) => l.lang === key)) {
       FULL_LOCALE_LIST.push(EXTRA_LOCALES[key]);
+    }
+  }
+}
+
+// [LV-LOCALE-OVERRIDES 2026-09-24] Opt-in per-locale output codes:
+//   --localeOverrides=zh-CN:bcp47=zh-Hant,og=zh_TW,hreflang=zh-Hant+zh
+// Locale blocks are separated by '/', fields by ',', and the hreflang list by
+// '+' — characters that need no quoting in sh or cmd, because the flag is
+// written on a site's package.json build line.
+//
+// Only the three OUTPUT fields can be overridden: bcp47 (<html lang>, JSON-LD
+// inLanguage), og (og:locale) and hreflang (rel=alternate codes; a locale may
+// publish SEVERAL). prefix/file/ident/jsonDir are deliberately NOT overridable:
+// they decide which files are read and which URLs are written, so overriding
+// them from the command line would move pages silently.
+//
+// 🔴🔴 Why this lives here: laplandstays translated its /cn/ copy into Taiwan
+// Traditional Chinese on 2026-09-17 (scripts/zh-hant.mjs) and had to patch its
+// VENDORED copy of this file (b6fd594) because the canonical had no such
+// concept. The next re-vendor would have dropped it — the same defect class as
+// the harvest limits on 2026-09-13, where routes.json keys went dead without a
+// single error (see [LV-HARVEST-LIMITS]). A locale that is not named here keeps
+// exactly its FULL_LOCALE_LIST codes; scripts/prerender_locale_overrides.test.mjs
+// runs this file against a fixture site and measures both halves.
+const LOCALE_OVERRIDE_FIELDS = new Set(['bcp47', 'og', 'hreflang']);
+if (args.localeOverrides && typeof args.localeOverrides === 'string') {
+  const warn = (msg) => console.warn(`[prerender] WARN: --localeOverrides ${msg}`);
+  for (const block of args.localeOverrides.split('/').map((s) => s.trim()).filter(Boolean)) {
+    const at = block.indexOf(':');
+    const lang = at < 0 ? '' : block.slice(0, at).trim();
+    const loc = FULL_LOCALE_LIST.find((l) => l.lang === lang);
+    if (!loc) {
+      warn(`unknown locale ${JSON.stringify(lang || block)} — block ignored`);
+      continue;
+    }
+    for (const pair of block.slice(at + 1).split(',').map((s) => s.trim()).filter(Boolean)) {
+      const eq = pair.indexOf('=');
+      const field = (eq < 0 ? pair : pair.slice(0, eq)).trim();
+      const value = eq < 0 ? '' : pair.slice(eq + 1).trim();
+      if (!LOCALE_OVERRIDE_FIELDS.has(field)) {
+        warn(`${lang}: unknown field ${JSON.stringify(field)} — ignored`);
+        continue;
+      }
+      // A silently-dropped value is how the harvest keys died on 2026-09-13.
+      if (!value) {
+        warn(`${lang}: empty value for ${field} — keeping the default ${JSON.stringify(loc[field] ?? loc.lang)}`);
+        continue;
+      }
+      if (field === 'hreflang') {
+        const codes = value.split('+').map((s) => s.trim()).filter(Boolean);
+        if (!codes.length) {
+          warn(`${lang}: empty value for hreflang — keeping the default ${JSON.stringify(loc.lang)}`);
+          continue;
+        }
+        loc.hreflang = codes;
+      } else {
+        loc[field] = value;
+      }
     }
   }
 }
@@ -1694,12 +1759,17 @@ for (const route of routes) {
     const hreflangLocales = nativeSet
       ? routeLocales.filter((l) => nativeSet.has(l.lang))
       : routeLocales
+    // hreflang codes per locale: the default is the locale's own lang, but a
+    // locale may publish SEVERAL (zh-CN → zh-Hant + zh, see LV-LOCALE-OVERRIDES).
+    const hreflangCodes = (l) => (Array.isArray(l.hreflang) ? l.hreflang : [l.lang])
     const hreflangs = consolidateTo
-      ? [{ hreflang: canonicalLoc.lang === 'en' ? 'en' : canonicalLoc.lang, url: canonical }]
-      : hreflangLocales.map((l) => ({
-          hreflang: l.lang === 'en' ? 'en' : l.lang,
-          url: `${SITE}${l.prefix}${cleanPath}`.replace(SLASH_END, '/'),
-        }))
+      ? hreflangCodes(canonicalLoc).map((code) => ({ hreflang: code, url: canonical }))
+      : hreflangLocales.flatMap((l) =>
+          hreflangCodes(l).map((code) => ({
+            hreflang: code,
+            url: `${SITE}${l.prefix}${cleanPath}`.replace(SLASH_END, '/'),
+          })),
+        )
 
     const outPath =
       loc.prefix === '' && cleanPath === ''
