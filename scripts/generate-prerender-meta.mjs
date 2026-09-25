@@ -221,7 +221,11 @@ for (const [slug, b] of Object.entries(destBase)) {
     const auroraNote = (ov && ov.auroraNote) || b.auroraNote;
     const suffix = destSuffix[lang] || destSuffix.en || 'Lapland: Private Villas, Suites & Aurora';
     const title = `${b.name}: ${suffix}`;
-    const description = trimDesc(`${position} ${auroraNote}`);
+    // [LV-CJK-JOIN 2026-09-25] ja/zh eivat valista virkkeita: taysleveän 。！？
+    // jalkeen ei valilyontia (live /cn/destinations/inari: "…暗夜星空。 我们最北…").
+    // Korea ja latinalaiset kielet valistavat, joten ne pitavat valilyonnin.
+    const liitos = /^(ja|zh)/.test(lang) && /[。！？]$/.test(String(position).trim()) ? '' : ' ';
+    const description = trimDesc(`${position}${liitos}${auroraNote}`);
     meta[path][lang] = { title, description };
   }
 }
