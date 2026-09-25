@@ -1,6 +1,7 @@
 // 2026-05-21: locale-aware — hreflang × 11 + og:locale + JSON-LD inLanguage.
 import type { ReactNode } from 'react';
 import { useEffect } from 'react';
+import { dedupeHeadLinks } from '../shared/seo/dedupeHeadLinks';
 import { useLang, type Lang } from '../i18n/useLang';
 
 interface SEOProps {
@@ -73,6 +74,14 @@ export default function SEO({
   useEffect(() => {
     document.documentElement.lang = bcp47;
   }, [bcp47]);
+
+  // React 19 nostaa alla renderöidyt <link>-tagit headiin mutta ei korvaa esirenderöijän
+  // kirjoittamia samanlaisia ⇒ 26 hreflangia ja 2 kanonista (mitattu 25.9.2026). Arvot ovat
+  // identtiset, joten ei hakukonevirhe, mutta se peitti alleen oikean vian (sama kieli kahteen
+  // ERI osoitteeseen). Apuri poistaa vain tarkat kaksoiskappaleet.
+  useEffect(() => {
+    dedupeHeadLinks();
+  }, [url, bcp47]);
 
   const breadcrumbSchema =
     breadcrumbs && breadcrumbs.length > 0
