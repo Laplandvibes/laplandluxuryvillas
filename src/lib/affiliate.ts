@@ -7,6 +7,7 @@
 // domain prefix (Worker injects the domain from Referer for CJ attribution).
 
 import { PROPERTIES, type Property, type PropertyKey } from '../data/properties'
+import { GYG_LOCALE_PREFIX, gygProductPath } from '../shared/gyg/picks'
 
 // The Worker injects partner_id and the `lv_<domain>_<sid>` campaign tag from
 // the Referer, so neither belongs in this file any more.
@@ -251,10 +252,21 @@ export function gygSearch(sid: string, q: string, lang: Lang): string {
   return `${REDIRECT_BASE}/go/activities?sid=${encodeURIComponent(sid)}&q=${encodeURIComponent(q)}&language=${gygLang(lang)}`
 }
 
-/** Product-path deep link through the Worker. Path = `<place-lNNN>/<slug-tNNN>`. */
+/**
+ * Product-path deep link through the Worker. Path = `<place-lNNN>/<slug-tNNN>`.
+ *
+ * 🔴 Since 2026-09-20 the Worker adds no locale prefix to a PRODUCT path
+ * (LV-GYG-PRODUCT-NOPREFIX), so `…-tNNN?language=ja` opened the product in the
+ * visitor's GYG market language — English for most readers. A non-English
+ * product link now carries its own prefix, `<lang>-<cc>/-t<id>/`
+ * (gygProductPath, shared/gyg/picks.ts), and no `language`. English keeps the
+ * slug; location paths (`lappi-suomi-l2652`) keep `language` for the Worker.
+ */
 export function gygProduct(path: string, sid: string, lang: Lang = 'en'): string {
   const clean = path.replace(/^\/+/, '').replace(/\/+$/, '')
-  return `${REDIRECT_BASE}/go/activities/${clean}?sid=${encodeURIComponent(sid)}&language=${gygLang(lang)}`
+  const p = GYG_LOCALE_PREFIX[lang] ? gygProductPath(clean, lang) : clean
+  const language = p.includes('/-t') ? '' : `&language=${gygLang(lang)}`
+  return `${REDIRECT_BASE}/go/activities/${p}?sid=${encodeURIComponent(sid)}${language}`
 }
 
 // ─── Lomarengas cabin showcase ───────────────────────────────────────────────
