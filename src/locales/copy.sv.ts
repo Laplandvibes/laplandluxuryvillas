@@ -68,7 +68,7 @@ const sv: SiteCopy = {
     "cropped": "beskuren",
     "nellim": "Byn Nellim vid Enaresjöns strand, inte hotellet självt",
     "nellimLake": "Norrskenet över Enare träsk, inte hotellet självt",
-    "heroWinter": "Norrsken över en upplyst lodge i Saariselkä, februari 2019"
+    "heroWinter": "Norrsken över en snöig skog och upplysta stugor"
   },
   tier: {
     signature: 'Signature',

@@ -75,7 +75,7 @@ const fr: SiteCopy = {
     "cropped": "recadrée",
     "nellim": "Le village de Nellim au bord du lac Inari, et non l’hôtel lui-même",
     "nellimLake": "L’aurore au-dessus du lac Inari, pas l’hôtel lui-même",
-    "heroWinter": "Aurore boréale au-dessus d’un lodge éclairé à Saariselkä, février 2019"
+    "heroWinter": "Aurore boréale au-dessus d’une forêt enneigée et de chalets éclairés"
   },
   tier: {
     signature: 'Signature',

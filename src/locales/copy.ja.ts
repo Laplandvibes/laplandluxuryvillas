@@ -74,7 +74,7 @@ const ja: SiteCopy = {
     "cropped": "トリミング",
     "nellim": "Inari湖畔のNellim村、ホテルそのものではありません",
     "nellimLake": "イナリ湖の上のオーロラ。ホテルそのものではありません",
-    "heroWinter": "Saariselkäの灯りのともる宿の上に広がるオーロラ、2019年2月"
+    "heroWinter": "雪の森と明かりのともる小屋の上に広がるオーロラ"
   },
   tier: {
     signature: 'シグネチャー',

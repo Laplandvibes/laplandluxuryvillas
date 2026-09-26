@@ -68,7 +68,7 @@ const nl: SiteCopy = {
     "cropped": "bijgesneden",
     "nellim": "Het dorp Nellim aan de oever van het Inarimeer, niet het hotel zelf",
     "nellimLake": "Het noorderlicht boven het Inarimeer, niet het hotel zelf",
-    "heroWinter": "Noorderlicht boven een verlichte lodge in Saariselkä, februari 2019"
+    "heroWinter": "Noorderlicht boven een besneeuwd bos en verlichte huisjes"
   },
   tier: {
     signature: 'Signature',

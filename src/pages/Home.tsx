@@ -43,7 +43,8 @@ import { seasonal } from '../lib/season'
  * hero → philosophy → app promo → Nordic Nest rail → villas, so the first
  * villa card sat 2 635 px down a 1280 px screen (measured live 19.9.).
  */
-const WINTER_HERO = '/images/commons/hero-winter-saariselka-aurora.webp'
+// Also the source of the winter share card, so never CC BY-SA (photoCredits.ts).
+const WINTER_HERO = '/images/hero-winter-aurora-cabins.webp'
 // The summer hero is the render Vesa approved on 2026-09-12; there is no own
 // summer frame of a lakeside villa in the July pool (KUVA-INVENTAARIO).
 const SUMMER_HERO = '/images/summer-villa-lakeside.webp'

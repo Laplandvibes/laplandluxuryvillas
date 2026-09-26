@@ -74,7 +74,7 @@ const de: SiteCopy = {
     "cropped": "beschnitten",
     "nellim": "Das Dorf Nellim am Ufer des Inarisees, nicht das Hotel selbst",
     "nellimLake": "Das Nordlicht über dem Inarisee, nicht das Hotel selbst",
-    "heroWinter": "Polarlicht über einer erleuchteten Lodge in Saariselkä, Februar 2019"
+    "heroWinter": "Polarlicht über verschneitem Wald und beleuchteten Hütten"
   },
   tier: {
     signature: 'Signature',

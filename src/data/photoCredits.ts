@@ -33,7 +33,8 @@
  *            the image by `PhotoCredit`. Used where no partner file exists:
  *            the Nellim card (Wilderness Hotel Nellim has no Sembo or
  *            Trip.com page) shows Lake Inari, captioned as such, never the
- *            hotel; and the winter home hero, which names no business.
+ *            hotel; plus the page heroes and destination cards. The winter
+ *            home hero is Pexels since 26.9.2026: it is the share-card source.
  *            🔴 CC BY-SA files are RESIZED ONLY, never cropped (26.9.2026): a
  *            crop is an adapted work and would carry the ShareAlike duty. The
  *            file is the whole photograph and object-cover frames it on screen
@@ -215,17 +216,23 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   // /images/villas/nellim-commons.webp (File:Nellim.JPG, BishkekRocks, CC BY-SA 3.0) was
   // deleted 26.9.2026: no page had used it since aeba35a, and the file was a 3:2 crop of a
   // BY-SA photograph that was still publicly downloadable.
-  '/images/commons/hero-winter-saariselka-aurora.webp': {
-    kind: 'commons',
-    author: 'Nicolas Buffler',
-    license: 'CC BY-SA 2.0',
-    licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Aurore_bor%C3%A9ale_%C3%A0_Saariselk%C3%A4,_Laponie_2019_(46344165225).jpg',
-    sourceId: 'File:Aurore boréale à Saariselkä, Laponie 2019 (46344165225).jpg',
-    taken: '2019-02-20',
-    retrieved: RETRIEVED,
-    // 26.9.2026: was a 16:9 centre crop (2000x1125); re-derived whole from the original.
-    changes: 'Resized 2643x1762 -> 2000x1333, WebP q82. Not cropped.',
+  // Winter home hero. It is also the source of the site share card og-winter.jpg
+  // (scripts/og/harvest_heroes.mjs takes the live home hero), and a card is an
+  // adaptation, so the source may not be CC BY-SA (lv_permanent_rules §34.2).
+  // Until 26.9.2026 this was Nicolas Buffler's Saariselkä aurora (CC BY-SA 2.0);
+  // that file was deleted with the swap. Pexels tags this clip Finland, Sweden
+  // and Norway at once, so the caption names no place. Checked against every
+  // image in the network (64x36 grey, nearest 31.5 > 12). Real photograph:
+  // sensor noise and motion blur, no generated detail at 100 %.
+  '/images/hero-winter-aurora-cabins.webp': {
+    kind: 'pexels',
+    author: 'Lucien Schreiber',
+    license: 'Pexels',
+    licenseUrl: 'https://www.pexels.com/license/',
+    sourceUrl: 'https://www.pexels.com/photo/northern-lights-over-snowy-lapland-forest-31430640/',
+    sourceId: 'pexels-photo-31430640',
+    retrieved: '2026-09-26',
+    changes: 'Pexels 6000x4000 file resized to 2000x1333, WebP q80. Not cropped.',
     cropped: false,
     inPictureKey: 'heroWinter',
   },

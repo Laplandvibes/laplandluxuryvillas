@@ -74,7 +74,7 @@ const fi: SiteCopy = {
     "cropped": "rajattu",
     "nellim": "Nellimin kylä Inarijärven rannalla, ei itse hotelli",
     "nellimLake": "Revontulet Inarijärven yllä, ei itse hotelli",
-    "heroWinter": "Revontulet valaistun majan yllä Saariselällä helmikuussa 2019"
+    "heroWinter": "Revontulet lumisen metsän ja valaistujen mökkien yllä"
   },
   tier: {
     signature: 'Signature',
