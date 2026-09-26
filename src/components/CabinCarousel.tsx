@@ -51,6 +51,12 @@ import { useLang, type Lang } from '../i18n/useLang'
  * different destinations so the row is a choice rather than one village.
  * Prices as the feed carried them on 2026-09-20; the cards read them live, so
  * a change at Lomarengas shows here without a deploy.
+ *
+ * Since 2026-09-26 the feed carries neither the star rating nor m², so the
+ * cards show capacity, bedrooms and the weekly price. The three are fetched by
+ * id (`/_cabins?ids=`): the showcase groups held them only while the groups led
+ * with 5★ cabins, and when the stars vanished the groups turned cheapest-first
+ * and this row disappeared from every page.
  */
 const CURATED: readonly string[] = [
   '15142',  // Tunturinlaita penthouse, Levi — 5★, 117 m², 10 484 €/wk
@@ -75,7 +81,10 @@ interface Cabin {
 
 interface CabinsPayload {
   updatedAt: string
-  groups: Record<string, Cabin[]>
+  /** `?ids=` answer. */
+  cabins?: Cabin[]
+  /** Showcase answer: a Worker without `?ids=` ignores the parameter and sends this. */
+  groups?: Record<string, Cabin[]>
 }
 
 const COPY: Record<Lang, { eyebrow: string; h3: string; cta: string; sqm: string; bedrooms: string; sleeps: string; from: string; perWeek: string; sourceNote: (d: string) => string }> = {
@@ -101,11 +110,11 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
 
   useEffect(() => {
     let live = true
-    fetch(CABINS_API)
+    fetch(`${CABINS_API}?ids=${CURATED.join(',')}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((j: CabinsPayload) => {
         if (!live) return
-        const all = ([] as Cabin[]).concat(...Object.values(j.groups ?? {}))
+        const all = j.cabins ?? ([] as Cabin[]).concat(...Object.values(j.groups ?? {}))
         const byId = new Map(all.map((x) => [String(x.id), x]))
         // Keep OUR order, drop anything the feed no longer carries.
         setCabins(CURATED.map((id) => byId.get(id)).filter((x): x is Cabin => Boolean(x)))
@@ -191,7 +200,12 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
                   ) : null}
                 </ul>
 
-                <div className="mt-auto flex items-end justify-between gap-3">
+                {/* Price above the button, never beside it: side by side the button ran
+                    past the card edge and was cut off in all 6 languages measured, at
+                    most widths (fr 80 px at 768 px, fi 13 px at 375 px; 26.9.2026). A
+                    five-figure price and a three-word CTA do not share a 190–230 px card.
+                    Stacked, every card in the row puts its button at the same place. */}
+                <div className="mt-auto flex flex-col items-start gap-3">
                   {cab.weeklyFrom ? (
                     <div>
                       <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">{c.from}</div>
@@ -205,7 +219,7 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
                         {fmt(cab.weeklyFrom)} €<span className="ml-1 text-[13px] font-body text-[color:var(--color-bone)]/75">{c.perWeek}</span>
                       </div>
                     </div>
-                  ) : <span />}
+                  ) : null}
 
                   <a
                     href={href}
