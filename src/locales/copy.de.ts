@@ -361,7 +361,7 @@ const de: SiteCopy = {
       {
         title: 'Warum diese Kollektion existiert',
         paragraphs: [
-          'Luxusunterkünfte in Lappland sind eine kleine Welt. Dieselbe Handvoll Villen und ein paar Dutzend Suiten tauchen auf jeder Buchungsplattform auf, oft mit denselben Stockfotos und derselben vagen Preisspanne. Reisende, die die naheliegenden Reisen bereits hinter sich haben, fragen genauer nach Lappland: Welche Villa würden Sie wirklich buchen? Wo bringen Sie eine neunköpfige Familie unter? Wo ist der Ort, über den niemand schreibt?',
+          'Luxusunterkünfte in Lappland sind eine kleine Welt: eine Handvoll Villen und ein paar Dutzend Suiten. Reisende, die die naheliegenden Reisen bereits hinter sich haben, fragen genauer nach Lappland: Welche Villa würden Sie wirklich buchen? Wo bringen Sie eine neunköpfige Familie unter?',
           'Diese Seite ist eine kurze, durchdachte Antwort auf diese Fragen, eine handverlesene Auswahl der Villen und Suiten, die unserer Überzeugung nach die Reise wert sind.',
         ],
       },

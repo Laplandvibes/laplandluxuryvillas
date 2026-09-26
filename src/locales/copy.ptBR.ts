@@ -361,7 +361,7 @@ const ptBR: SiteCopy = {
       {
         title: 'Por que esta coleção existe',
         paragraphs: [
-          'A hospedagem de luxo na Lapônia é um mundo pequeno. O mesmo punhado de vilas e algumas dezenas de suítes aparecem em toda plataforma de reservas, muitas vezes com as mesmas fotos de banco de imagens e a mesma faixa de preço vaga. Quem já fez as viagens óbvias começa a perguntar sobre a Lapônia com mais precisão: que vila você de fato reservaria, onde acomoda uma família de nove pessoas, qual é o lugar sobre o qual ninguém escreve.',
+          'A hospedagem de luxo na Lapônia é um mundo pequeno: um punhado de vilas e algumas dezenas de suítes. Quem já fez as viagens óbvias começa a perguntar sobre a Lapônia com mais precisão: que vila você de fato reservaria e onde acomoda uma família de nove pessoas.',
           'Este site é uma resposta curta e ponderada a essas perguntas, uma seleção feita à mão das vilas e suítes que acreditamos valerem a viagem.',
         ],
       },

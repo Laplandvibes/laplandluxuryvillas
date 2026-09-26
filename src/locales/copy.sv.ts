@@ -355,7 +355,7 @@ const sv: SiteCopy = {
       {
         title: 'Varför den här kollektionen finns',
         paragraphs: [
-          'Lyxboende i Lappland är en liten värld. Samma handfull villor och ett par dussin sviter dyker upp på varje bokningsplattform, ofta med samma stockbilder och samma vaga prisklass. Resenärer som redan gjort de självklara resorna börjar fråga mer specifikt om Lappland: vilken villa skulle du faktiskt boka, var placerar du en familj på nio, vad är stället ingen skriver om?',
+          'Lyxboende i Lappland är en liten värld: en handfull villor och ett par dussin sviter. Resenärer som redan gjort de självklara resorna börjar fråga mer specifikt om Lappland: vilken villa skulle du faktiskt boka och var placerar du en familj på nio?',
           'Den här sidan är ett kort, genomtänkt svar på de frågorna, ett handplockat urval av de villor och sviter vi tycker är värda resan.',
         ],
       },

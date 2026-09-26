@@ -361,7 +361,7 @@ const fi: SiteCopy = {
       {
         title: 'Miksi tämä kokoelma on olemassa',
         paragraphs: [
-          'Lapin luksusmajoitus on pieni maailma. Samat muutamat huvilat ja parikymmentä sviittiä toistuvat jokaisella varausalustalla, usein samoilla kuvapankkikuvilla ja samalla epämääräisellä hintahaarukalla. Kun ne ilmeisimmät reissut on jo tehty, kysymykset tarkentuvat: minkä huvilan itse oikeasti varaisit, mihin majoitat yhdeksänhenkisen perheen, mikä on se paikka, josta kukaan ei kirjoita?',
+          'Lapin luksusmajoitus on pieni maailma: muutama huvila ja parikymmentä sviittiä. Kun ne ilmeisimmät reissut on jo tehty, kysymykset tarkentuvat: minkä huvilan itse oikeasti varaisit ja mihin majoitat yhdeksänhenkisen perheen?',
           'Tämä sivusto on lyhyt, harkittu vastaus noihin kysymyksiin. Käsin valittu lista huviloista ja sviiteistä, jotka mielestämme ovat aidosti matkan arvoisia.',
         ],
       },

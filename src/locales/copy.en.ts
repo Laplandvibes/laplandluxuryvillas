@@ -361,7 +361,7 @@ const en: SiteCopy = {
       {
         title: 'Why this collection exists',
         paragraphs: [
-          'Lapland\'s luxury accommodation is a small world. The same handful of villas and a few dozen suites turn up on every booking platform, often with the same stock photos and the same vague price range. Once you have done the obvious trips, the questions get sharper: which villa would you actually book, where do you put a family of nine, what is the place nobody writes about?',
+          'Lapland\'s luxury accommodation is a small world: a handful of villas and a few dozen suites. Once you have done the obvious trips, the questions get sharper: which villa would you actually book and where do you put a family of nine?',
           'This site is a short, considered answer to those questions. A hand-picked shortlist of the villas and suites we think are genuinely worth the journey.',
         ],
       },

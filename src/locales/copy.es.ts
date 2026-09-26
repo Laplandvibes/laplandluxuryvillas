@@ -361,7 +361,7 @@ const es: SiteCopy = {
       {
         title: 'Por qué existe esta colección',
         paragraphs: [
-          'El alojamiento de lujo en Laponia es un mundo pequeño. El mismo puñado de villas y unas pocas docenas de suites aparecen en todas las plataformas de reservas, a menudo con las mismas fotos de stock y el mismo rango de precios impreciso. Quienes ya han hecho los viajes obvios empiezan a preguntar por Laponia con más precisión: qué villa reservaría usted de verdad, dónde aloja a una familia de nueve, cuál es el lugar del que nadie escribe.',
+          'El alojamiento de lujo en Laponia es un mundo pequeño: un puñado de villas y unas pocas docenas de suites. Quienes ya han hecho los viajes obvios empiezan a preguntar por Laponia con más precisión: qué villa reservaría usted de verdad y dónde aloja a una familia de nueve.',
           'Este sitio es una respuesta breve y meditada a esas preguntas, una selección hecha a mano de las villas y suites que creemos que merecen el viaje.',
         ],
       },

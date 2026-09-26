@@ -355,7 +355,7 @@ const nl: SiteCopy = {
       {
         title: 'Waarom deze collectie bestaat',
         paragraphs: [
-          'Luxe accommodatie in Lapland is een kleine wereld. Dezelfde handvol villa\'s en een paar dozijn suites duiken op elk boekingsplatform op, vaak met dezelfde stockfoto\'s en dezelfde vage prijsklasse. Reizigers die de voor de hand liggende reizen al hebben gemaakt, beginnen specifieker naar Lapland te vragen: welke villa zou u werkelijk boeken, waar plaatst u een gezin van negen, wat is de plek waar niemand over schrijft?',
+          'Luxe accommodatie in Lapland is een kleine wereld: een handvol villa\'s en een paar dozijn suites. Reizigers die de voor de hand liggende reizen al hebben gemaakt, beginnen specifieker naar Lapland te vragen: welke villa zou u werkelijk boeken en waar plaatst u een gezin van negen?',
           'Deze site is een kort, doordacht antwoord op die vragen, een met de hand samengestelde selectie van de villa\'s en suites die volgens ons de reis waard zijn.',
         ],
       },

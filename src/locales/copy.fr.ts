@@ -193,7 +193,7 @@ const fr: SiteCopy = {
         }
       ]
     },
-    philosophy: { eyebrow: 'Notre façon de travailler', h2: 'L\'opposé d\'une plateforme de réservation.',
+    philosophy: { eyebrow: 'Notre façon de travailler', h2: 'Nous vérifions et proposons. Vous réservez directement auprès de la maison.',
     items: [
       { title: 'Une liste courte, pas un annuaire.', body: 'Huit villas et suites dans les destinations qui justifient réellement le voyage. Les propriétés sont plus souvent refusées qu\'ajoutées, chaque entrée de cette page est une que le voyageur attentionné peut réserver sans hésitation.' },
       { title: 'Planification anonyme.', body: 'Une seule boîte de réception privée, aucun profil public, aucun calendrier partagé avec des tiers. Envoyez dates, effectif et préférences, recevez une présélection en un jour ouvré.' },
@@ -294,7 +294,7 @@ const fr: SiteCopy = {
   aboutPage: {
     sections: [
     { title: 'Pourquoi cette collection existe', paragraphs: [
-      'L\'hébergement de luxe en Laponie est un petit monde. La même poignée de villas et quelques dizaines de suites se retrouvent sur chaque plateforme de réservation, souvent avec les mêmes photos de banque d\'images et la même fourchette de prix vague. Les voyageurs qui ont déjà fait les voyages évidents commencent à interroger la Laponie plus précisément : quelle villa réserveriez-vous vraiment, où logez-vous une famille de neuf personnes, quel est l\'endroit dont personne ne parle ?',
+      'L\'hébergement de luxe en Laponie est un petit monde : une poignée de villas et quelques dizaines de suites. Les voyageurs qui ont déjà fait les voyages évidents commencent à interroger la Laponie plus précisément : quelle villa réserveriez-vous vraiment et où logez-vous une famille de neuf personnes ?',
       'Ce site est une réponse brève et réfléchie à ces questions, une sélection faite main des villas et suites qui, selon nous, valent le voyage.',
     ] },
     { title: 'Ce que ce site ne fait pas', paragraphs: [

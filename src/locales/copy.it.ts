@@ -193,7 +193,7 @@ const it: SiteCopy = {
         }
       ]
     },
-    philosophy: { eyebrow: 'Come lavoriamo', h2: 'L\'opposto di una piattaforma di prenotazione.',
+    philosophy: { eyebrow: 'Come lavoriamo', h2: 'Noi verifichiamo e proponiamo. Lei prenota direttamente presso la struttura.',
     items: [
       { title: 'Un elenco breve, non una directory.', body: 'Otto ville e suite nelle destinazioni che davvero giustificano il viaggio. Le proprietà vengono respinte più spesso che aggiunte, ogni voce in questa pagina è quella che un viaggiatore attento può prenotare senza esitazione.' },
       { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
@@ -294,7 +294,7 @@ const it: SiteCopy = {
   aboutPage: {
     sections: [
     { title: 'Perché esiste questa collezione', paragraphs: [
-      'L\'offerta di lusso della Lapponia è un piccolo mondo. La stessa manciata di ville e qualche decina di suite ricorrono su ogni piattaforma di prenotazione, spesso con le stesse foto d\'archivio e la stessa vaga fascia di prezzo. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoterebbe davvero, dove sistema una famiglia di nove persone, qual è il posto di cui nessuno scrive?',
+      'L\'offerta di lusso della Lapponia è un piccolo mondo: una manciata di ville e qualche decina di suite. Chi ha già fatto i viaggi più ovvi inizia a chiedere della Lapponia in modo più preciso: quale villa prenoterebbe davvero e dove sistema una famiglia di nove persone?',
       'Questo sito è una risposta breve e ponderata a queste domande, una selezione curata a mano delle ville e suite che riteniamo valgano il viaggio.',
     ] },
     { title: 'Cosa non fa questo sito', paragraphs: [
