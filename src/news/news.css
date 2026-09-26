@@ -63,7 +63,7 @@
 .nw .nw-art-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .nw .nw-art-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,28,.95) 0%,rgba(10,15,28,.82) 32%,rgba(10,15,28,.34) 66%,rgba(10,15,28,.5) 100%)}
 .nw .nw-art-body{position:relative}
-.nw .nw-art .nw-h1{font-size:clamp(35px,4.6vw,62px);line-height:1.04;max-width:20ch;margin-top:12px;text-shadow:0 2px 26px rgba(0,0,0,.5)}
+.nw .nw-art .nw-h1{font-size:clamp(35px,4.6vw,62px);line-height:1.04;max-width:none;margin-top:12px;text-shadow:0 2px 26px rgba(0,0,0,.5)}
 .nw .nw-art .nw-dek{color:var(--bone);max-width:56ch}
 .nw .nw-kicker{font:500 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0}
 .nw .nw-dek{font-size:clamp(17px,2.1vw,21px);line-height:1.55;max-width:58ch;margin-top:16px;color:var(--ink2)}
