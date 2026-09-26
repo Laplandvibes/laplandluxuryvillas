@@ -11,10 +11,6 @@
       "text": "Pohjoisen kasvuyhtiöihin sijoittava Venture Lapland on hankkinut pääomistuksen rovaniemeläisestä luksusmatkailukonserni Arctrasta ja kertoo aikovansa kymmenkertaistaa sen liikevaihdon. Yhtiöt kertoivat järjestelystä 16.9.2026. Arctra jatkaa toimintaansa omalla nimellään."
     },
     {
-      "t": "note",
-      "text": "Arctra ei ole LaplandVibesin kumppani. Emme saa jutusta maksua emmekä ansaitse yhtiöstä mitään. Juttu on täällä, koska se muuttaa sitä mitä Rovaniemen seudulta on varattavissa tulevina kausina."
-    },
-    {
       "t": "h2",
       "text": "Neljä liiketoimintaa saman nimen alla"
     },
@@ -32,7 +28,7 @@
     },
     {
       "t": "p",
-      "text": "Tiedote kertoo konsernin viimeisimmän tilikauden liikevaihdon pro forma -lukuna ja asettaa tavoitteen sille, mihin päästään kun muutaman vuoden mittainen investointiohjelma on valmis. Näiden kahden ero on se, mistä sana kymmenkertaistaminen tulee."
+      "text": "Tavoite on noin kymmenkertainen konsernin viimeisimmän tilikauden pro forma -liikevaihtoon nähden, ja siihen on määrä päästä, kun muutaman vuoden investointiohjelma on valmis."
     },
     {
       "t": "embed",
@@ -69,13 +65,13 @@
     },
     {
       "t": "link",
-      "text": "Kaikki listaamamme Lapin huvilat ja lodget, kunkin aukiolokausi mukana, löytyvät kokoelmastamme.",
+      "text": "Lapin huvilat ja lodget aukiolokausineen löydät kokoelmastamme.",
       "label": "Huvilat",
       "href": "/villas"
     },
     {
       "t": "p",
-      "text": "Tiedote ei kerro, milloin uusi kapasiteetti avautuu, missä se tarkalleen sijaitsee ”Rovaniemen lähistöä” tarkemmin, eikä mitään hinnoista. Ennen kuin ne julkaistaan, tästä ohjelmasta ei ole varattavissa mitään uutta."
+      "text": "Yhtiöt eivät ole kertoneet, milloin uudet majoitukset avautuvat, missä Rovaniemen lähellä ne tarkalleen sijaitsevat tai mitä ne maksavat. Siihen asti ohjelmasta ei voi varata mitään uutta."
     }
   ]
 }
