@@ -199,7 +199,7 @@ const it: SiteCopy = {
       { title: 'Pianificazione anonima.', body: 'Una sola casella di posta privata, nessun profilo pubblico, nessun calendario condiviso con terzi. Invii date, numero di ospiti, preferenze, riceva una shortlist curata entro un giorno lavorativo.' },
       { title: 'Tariffe dirette, dove esistono.', body: 'Le inserzioni pubbliche rimandano a tariffe verificate. Le proprietà tenute privatamente, incluse le ville di riserva senza disponibilità pubblica, sono quotate direttamente. La risposta Le dice quale è quale.' },
     ] },
-    signature: { eyebrow: "Le nostre quattro scelte", h2: 'Quattro ancore della collezione lappone.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
+    signature: { eyebrow: "Le nostre quattro scelte", h2: 'Quattro ancore della collezione in Lapponia.', lede: 'Le proprietà raccomandate più spesso. Ogni dettaglio è verificato con le informazioni del gestore e le recensioni recenti, non copiato da una brochure.' },
     destinations: { eyebrow: 'Destinazioni', h2: 'Cinque luoghi, ognuno con una ragione precisa.' },
   },
   villasPage: {
