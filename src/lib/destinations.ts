@@ -147,6 +147,25 @@ export const DESTINATIONS: Destination[] = [
   },
 ]
 
+/**
+ * object-position for a destination photo whose subject is off-centre. The CC BY-SA
+ * files are whole photographs, never cropped (26.9.2026: a crop is an adapted work),
+ * so the card frames them with object-cover. Saariselkä's reindeer stands at 43-73 %
+ * of the width (the old square crop was 1433-4766 of 5000 px); 67 % puts it in the
+ * middle of the 4:5 home card and the phone hero (measured in a 390 px render 26.9.:
+ * 86 %, the old crop's own offset, pushed the head to the left edge).
+ *
+ * 🔴 Keys are normalised at load: scripts/version-images.mjs stamps ?v= on every
+ * '/images/…webp' string in the bundle, map keys included (the photoCredits.ts trap).
+ */
+const IMAGE_POSITION: Record<string, string> = Object.fromEntries(
+  Object.entries({
+    '/images/destinations/saariselka-summer.webp': '67% 50%',
+  }).map(([k, v]) => [k.split('?')[0], v]),
+)
+export const imagePosition = (src?: string): string | undefined =>
+  src ? IMAGE_POSITION[src.split('?')[0]] : undefined
+
 export const getDestinations = (lang: Lang = 'en'): Destination[] =>
   DESTINATIONS.map((d) => overlayDestination({ ...d, image: seasonal(d.imageWinter, d.imageSummer) }, lang))
 export const destinationBySlug = (slug: string, lang: Lang = 'en') => getDestinations(lang).find((d) => d.slug === slug)

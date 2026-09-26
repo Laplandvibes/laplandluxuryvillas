@@ -16,7 +16,7 @@ import PhotoCredit from '../components/PhotoCredit'
 import { creditFor } from '../data/photoCredits'
 import FeaturedPartnerSlot from '../components/FeaturedPartnerSlot'
 import { propertyForVilla, bestGoogleRated, editorialPickNote } from '../data/properties'
-import { destinationBySlug } from '../lib/destinations'
+import { destinationBySlug, imagePosition } from '../lib/destinations'
 import { villasByDestination } from '../lib/villas'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -92,6 +92,7 @@ export default function DestinationPage() {
             loading="eager"
             decoding="async"
             fetchPriority="high"
+            style={{ objectPosition: imagePosition(dest.image) }}
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
@@ -193,6 +194,7 @@ export default function DestinationPage() {
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
+                    style={{ objectPosition: imagePosition(season === 'winter' ? dest.imageWinter : dest.imageSummer) }}
                     className="w-full h-full object-cover"
                   />
                   <PhotoCredit credit={creditFor(season === 'winter' ? dest.imageWinter : dest.imageSummer)} />

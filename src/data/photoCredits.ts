@@ -32,11 +32,16 @@
  *  `commons` Wikimedia Commons, CC licence, author and licence rendered on
  *            the image by `PhotoCredit`. Used where no partner file exists:
  *            the Nellim card (Wilderness Hotel Nellim has no Sembo or
- *            Trip.com page) shows the VILLAGE, captioned as such, never the
+ *            Trip.com page) shows Lake Inari, captioned as such, never the
  *            hotel; and the winter home hero, which names no business.
- *            Both files are cropped to the frame the layout needs, and the
- *            crop is declared in `changes` and shown as "cropped" next to
- *            the licence, which is what CC BY-SA asks of an adaptation.
+ *            🔴 CC BY-SA files are RESIZED ONLY, never cropped (26.9.2026): a
+ *            crop is an adapted work and would carry the ShareAlike duty. The
+ *            file is the whole photograph and object-cover frames it on screen
+ *            (destinations.ts `imagePosition` for an off-centre subject). Until
+ *            26.9. the BY-SA files here were cut to 16:9, 3:2 and 1:1; each was
+ *            re-derived from the Commons original (sha1 = API). CC BY and CC0
+ *            files may stay cropped: the crop is declared in `changes` and
+ *            printed as "cropped" next to the licence.
  *
  *  `pexels`  Pexels video, Pexels licence (free for commercial use, no
  *            attribution required, irrevocable, ToS 15.11.2024 §5). Stock on
@@ -201,23 +206,15 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     sourceId: 'File:Aurora borealis - Inarijärvi Finland 2013.03.10-11 031.jpg',
     taken: '2013-03-10',
     retrieved: RETRIEVED,
-    changes: 'Cropped to 3:2 (3500x2333), resized to 1600x1066, WebP q80.',
-    cropped: true,
+    // 26.9.2026: the old line said "Cropped to 3:2", but the Commons original is itself
+    // 3500x2333 and the file matches it whole (64x36 grey diff 0.6/255): a resize, not a crop.
+    changes: 'Resized 3500x2333 -> 1600x1066, WebP q80. Not cropped.',
+    cropped: false,
     inPictureKey: 'nellimLake',
   },
-  '/images/villas/nellim-commons.webp': {
-    kind: 'commons',
-    author: 'BishkekRocks',
-    license: 'CC BY-SA 3.0',
-    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nellim.JPG',
-    sourceId: 'File:Nellim.JPG',
-    taken: '2007-08-30',
-    retrieved: RETRIEVED,
-    changes: 'Cropped to 3:2 from the centre (2304x1728 -> 2304x1536), resized to 1600x1066, WebP q82.',
-    cropped: true,
-    inPictureKey: 'nellim',
-  },
+  // /images/villas/nellim-commons.webp (File:Nellim.JPG, BishkekRocks, CC BY-SA 3.0) was
+  // deleted 26.9.2026: no page had used it since aeba35a, and the file was a 3:2 crop of a
+  // BY-SA photograph that was still publicly downloadable.
   '/images/commons/hero-winter-saariselka-aurora.webp': {
     kind: 'commons',
     author: 'Nicolas Buffler',
@@ -227,8 +224,9 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     sourceId: 'File:Aurore boréale à Saariselkä, Laponie 2019 (46344165225).jpg',
     taken: '2019-02-20',
     retrieved: RETRIEVED,
-    changes: 'Cropped to 16:9 from the centre (2643x1762 -> 2643x1487), resized to 2000x1125, WebP q80.',
-    cropped: true,
+    // 26.9.2026: was a 16:9 centre crop (2000x1125); re-derived whole from the original.
+    changes: 'Resized 2643x1762 -> 2000x1333, WebP q82. Not cropped.',
+    cropped: false,
     inPictureKey: 'heroWinter',
   },
 
@@ -335,7 +333,9 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     cropped: false,
   },
 
-  // ── Destination cards (Home 4:5, Destinations 5:4, detail 16:10): square 1400 files ──
+  // ── Destination cards (Home 4:5, Destinations 5:4, detail 16:10) ──
+  // CC BY / CC0 / own: square 1400 crops, declared. CC BY-SA: the whole photograph,
+  // 1400 px tall (26.9.2026), framed on screen by object-cover + imagePosition().
   // Vesa 19.9.2026: "niihin varmaan löytyisi aidot tunnelmalliset kuvat?" The ten
   // AI renders (dest-<slug>-<season>.webp/avif) are archived under
   // _reissu-2026-07/_ai-originals-backup/laplandluxuryvillas-new/public/images/.
@@ -360,8 +360,8 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     sourceId: 'File:Young reindeer on Kaunispää fell in Saariselkä, Inari, Lapland, Finland, 2021 September.jpg',
     taken: '2021-09-18',
     retrieved: RETRIEVED,
-    changes: 'Cropped to 1:1 (5000x3333, box 1433,0 to 4766,3333), resized to 1400x1400, WebP.',
-    cropped: true,
+    changes: 'Resized 5000x3333 -> 2100x1400, WebP q82. Not cropped (was a 1:1 crop until 26.9.2026).',
+    cropped: false,
   },
   '/images/destinations/inari-winter.webp': {
     kind: 'commons',
@@ -372,8 +372,8 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     sourceId: 'File:Aurora Borealis and the stars 2.jpg',
     taken: '2013-02-07',
     retrieved: RETRIEVED,
-    changes: 'Cropped to 1:1 (5184x3456, box 864,0 to 4320,3456), resized to 1400x1400, WebP.',
-    cropped: true,
+    changes: 'Resized 5184x3456 -> 2100x1400, WebP q82. Not cropped (was a 1:1 crop until 26.9.2026).',
+    cropped: false,
   },
   '/images/destinations/inari-summer.webp': {
     kind: 'commons',
@@ -384,8 +384,8 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     sourceId: 'File:Jäniskoski rapids of Juutuanjoki in Inari, Lapland, Finland, 2022 August - 4.jpg',
     taken: '2022-08-13',
     retrieved: RETRIEVED,
-    changes: 'Cropped to 1:1 (5000x3477, box 761,0 to 4238,3477), resized to 1400x1400, WebP.',
-    cropped: true,
+    changes: 'Resized 5000x3477 -> 2013x1400, WebP q82. Not cropped (was a 1:1 crop until 26.9.2026).',
+    cropped: false,
   },
   '/images/destinations/rovaniemi-winter.webp': {
     kind: 'commons',
@@ -420,8 +420,8 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     sourceId: 'File:Yllästunturi Ylläsjärven jäältä.jpg',
     taken: '2018-10-06',
     retrieved: RETRIEVED,
-    changes: 'Cropped to 1:1 (4272x2848, box 712,0 to 3560,2848), resized to 1400x1400, WebP.',
-    cropped: true,
+    changes: 'Resized 4272x2848 -> 2100x1400, WebP q82. Not cropped (was a 1:1 crop until 26.9.2026).',
+    cropped: false,
   },
 
   // ── LaplandVibes' own photographs, July 2026 road trip (masters 4000x3000) ──

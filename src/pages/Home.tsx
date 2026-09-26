@@ -27,7 +27,7 @@ import { creditFor } from '../data/photoCredits'
  */
 const LatestNews = lazy(() => import('../news/LatestNews'))
 import { signatureVillas } from '../lib/villas'
-import { getDestinations } from '../lib/destinations'
+import { getDestinations, imagePosition } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
@@ -208,6 +208,7 @@ export default function Home() {
                       alt={d.name}
                       loading="lazy"
                       decoding="async"
+                      style={{ objectPosition: imagePosition(d.image) }}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                   )}
