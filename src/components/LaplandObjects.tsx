@@ -34,12 +34,19 @@ import { useLang, type Lang } from '../i18n/useLang'
 // This is also the internal network link the ecosystem was missing.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/**
+ * Nimi ja kuvaus jokaisella sivuston kielellä, kuten sivuston muu copy
+ * (`Record<Lang, …>`): puuttuva kieli kaatuu tyyppitarkistukseen eikä
+ * putoa englantiin. Tuotenimet laplandgiftsin tuotesivun omassa asussa,
+ * paitsi pt-BR/ja/zh, joissa gifts käyttää lapp-kantaista sanaa
+ * (lapã, ラップナイフ, 拉普刀; GLOSSARY Banned alternates).
+ */
 interface Obj {
   slug: string
   image: string
   price: string
-  name: Record<'fi' | 'en', string>
-  note: Record<'fi' | 'en', string>
+  name: Record<Lang, string>
+  note: Record<Lang, string>
 }
 
 /** Hinta on kumppanikaupan oma ja luettu tällä päivämäärällä. */
@@ -53,10 +60,30 @@ const OBJECTS: Obj[] = [
     name: {
       fi: 'North Outdoor Sointu -merinoneuletakki',
       en: 'North Outdoor Sointu merino cardigan',
+      de: 'North Outdoor Sointu Merino-Strickjacke',
+      sv: 'North Outdoor Sointu merinokofta',
+      fr: 'Cardigan mérinos North Outdoor Sointu',
+      es: 'Cárdigan de merino North Outdoor Sointu',
+      it: 'Cardigan in merino North Outdoor Sointu',
+      nl: 'North Outdoor Sointu merinovest',
+      'pt-BR': 'Cardigã de merino North Outdoor Sointu',
+      ja: 'ノースアウトドア Sointu メリノカーディガン',
+      'zh-CN': 'North Outdoor Sointu 美利奴开衫',
+      ko: '노스아웃도어 Sointu 메리노 카디건',
     },
     note: {
       fi: 'Suomessa neulottua merinovillaa. Se takki, jonka vetää päälle terassille, kun lämpömittari näyttää miinus kahtakymmentä.',
       en: 'Merino knitted in Finland. The cardigan you pull on to step onto the terrace at minus twenty.',
+      de: 'In Finnland gestrickte Merinowolle. Die Strickjacke, die man überzieht, um bei minus zwanzig Grad auf die Terrasse zu treten.',
+      sv: 'Merinoull stickad i Finland. Koftan du drar på dig för att kliva ut på terrassen i tjugo minusgrader.',
+      fr: 'Du mérinos tricoté en Finlande. Le cardigan que l’on enfile pour sortir sur la terrasse par moins vingt.',
+      es: 'Merino tejido en Finlandia. El cárdigan que uno se pone para salir a la terraza a veinte grados bajo cero.',
+      it: 'Lana merino lavorata a maglia in Finlandia. Il cardigan che si indossa per uscire in terrazza a venti gradi sotto zero.',
+      nl: 'Merinowol, gebreid in Finland. Het vest dat u aantrekt om bij twintig graden onder nul het terras op te stappen.',
+      'pt-BR': 'Merino tricotado na Finlândia. O cardigã que você veste para ir ao terraço a vinte graus abaixo de zero.',
+      ja: 'フィンランドで編まれたメリノウール。氷点下20度のテラスへ出るときに羽織るカーディガンです。',
+      'zh-CN': '芬兰织造的美利奴羊毛。零下二十度走上露台时，随手披上的就是这件开衫。',
+      ko: '핀란드에서 짠 메리노 울. 영하 20도의 테라스로 나갈 때 걸치는 카디건입니다.',
     },
   },
   {
@@ -66,20 +93,63 @@ const OBJECTS: Obj[] = [
     name: {
       fi: 'Finlayson Lino-pellavapussilakanasetti',
       en: 'Finlayson Lino linen duvet set',
+      de: 'Finlayson Lino Leinen-Bettwäsche-Set',
+      sv: 'Finlayson Lino linnepåslakansset',
+      fr: 'Parure de couette en lin Finlayson Lino',
+      es: 'Juego de funda nórdica de lino Finlayson Lino',
+      it: 'Set copripiumino in lino Finlayson Lino',
+      nl: 'Finlayson Lino linnen dekbedovertrekset',
+      'pt-BR': 'Jogo de capa de edredom de linho Finlayson Lino',
+      ja: 'フィンレイソン Lino リネン掛け布団カバーセット',
+      'zh-CN': 'Finlayson Lino 亚麻被套组',
+      ko: '핀레이슨 Lino 리넨 이불커버 세트',
     },
     note: {
       fi: 'Pesty pellava, joka pehmenee joka pesussa. Sama materiaali, joka on lasikattosviitin sängyssä.',
       en: 'Washed linen that softens with every wash. The same cloth that is on the bed under the glass roof.',
+      de: 'Gewaschenes Leinen, das mit jeder Wäsche weicher wird. Derselbe Stoff, der auf dem Bett unter dem Glasdach liegt.',
+      sv: 'Tvättat linne som blir mjukare för varje tvätt. Samma tyg som ligger på sängen under glastaket.',
+      fr: 'Lin lavé qui s’assouplit à chaque lavage. Le même tissu que celui du lit sous le toit de verre.',
+      es: 'Lino lavado que se vuelve más suave con cada lavado. La misma tela que cubre la cama bajo el techo de vidrio.',
+      it: 'Lino lavato che si ammorbidisce a ogni lavaggio. Lo stesso tessuto del letto sotto il tetto di vetro.',
+      nl: 'Gewassen linnen dat bij elke wasbeurt zachter wordt. Dezelfde stof die op het bed onder het glazen dak ligt.',
+      'pt-BR': 'Linho lavado que fica mais macio a cada lavagem. O mesmo tecido da cama sob o teto de vidro.',
+      ja: '洗うたびにやわらかくなるウォッシュリネン。ガラス屋根の下のベッドと同じ布です。',
+      'zh-CN': '水洗亚麻，每洗一次就更柔软一分。与玻璃屋顶下那张床上用的是同一种布料。',
+      ko: '세탁할 때마다 부드러워지는 워싱 리넨. 유리 지붕 아래 침대에 깔린 것과 같은 천입니다.',
     },
   },
   {
     slug: 'marttiini-lapinleuku-255',
     image: 'prod-marttiini-lapinleuku-255',
     price: '120 €',
-    name: { fi: 'Marttiini Lapinleuku 255', en: 'Marttiini Lapinleuku 255' },
+    name: {
+      fi: 'Marttiini Lapinleuku 255',
+      en: 'Marttiini Lapinleuku 255',
+      de: 'Marttiini Lapinleuku 255',
+      sv: 'Marttiini Lapinleuku 255',
+      fr: 'Couteau traditionnel de Laponie Marttiini 255',
+      es: 'Cuchillo tradicional de Laponia Marttiini 255',
+      it: 'Coltello tradizionale della Lapponia Marttiini 255',
+      nl: 'Marttiini Lapinleuku 255',
+      'pt-BR': 'Faca tradicional da Lapônia Marttiini 255',
+      ja: 'マルッティーニ ラップランドナイフ 255',
+      'zh-CN': 'Marttiini 拉普兰刀 255',
+      ko: '마르띠니 라플란드 나이프 255',
+    },
     note: {
       fi: 'Leveäteräinen lapinleuku Rovaniemeltä, tehty vuodesta 1928 samassa kaupungissa.',
       en: 'The broad-bladed Lapland knife from Rovaniemi, made in the same town since 1928.',
+      de: 'Das breitklingige lappländische Messer aus Rovaniemi, seit 1928 in derselben Stadt gefertigt.',
+      sv: 'Den bredbladiga lappländska kniven från Rovaniemi, tillverkad i samma stad sedan 1928.',
+      fr: 'Le couteau de Laponie à lame large, fabriqué à Rovaniemi depuis 1928.',
+      es: 'El cuchillo de Laponia de hoja ancha, fabricado en Rovaniemi desde 1928.',
+      it: 'Il coltello della Lapponia a lama larga, prodotto a Rovaniemi dal 1928.',
+      nl: 'Het Laplandse mes met het brede lemmet, sinds 1928 gemaakt in Rovaniemi.',
+      'pt-BR': 'A faca da Lapônia de lâmina larga, feita em Rovaniemi desde 1928.',
+      ja: 'ロヴァニエミの刃幅の広いラップランドナイフ。1928年から同じ町で作られています。',
+      'zh-CN': '来自罗瓦涅米的宽刃拉普兰刀，自1928年起一直在这座城市制造。',
+      ko: '로바니에미에서 온 날이 넓은 라플란드 나이프로, 1928년부터 같은 도시에서 만들어 왔습니다.',
     },
   },
 ]
@@ -179,8 +249,7 @@ const giftsUrl = (slug: string, lang: Lang) => {
 
 export default function LaplandObjects() {
   const lang = useLang()
-  const c = COPY[lang] ?? COPY.en
-  const pick = (v: Record<'fi' | 'en', string>) => (lang === 'fi' ? v.fi : v.en)
+  const c = COPY[lang]
 
   return (
     <section className="border-y border-[color:var(--color-mist)]/60 bg-[color:var(--color-onyx)] py-16 md:py-24">
@@ -209,7 +278,7 @@ export default function LaplandObjects() {
                   <source srcSet={`/img/objects/${o.image}.avif`} type="image/avif" />
                   <img
                     src={`/img/objects/${o.image}.webp`}
-                    alt={pick(o.name)}
+                    alt={o.name[lang]}
                     width={720}
                     height={720}
                     loading="lazy"
@@ -220,10 +289,10 @@ export default function LaplandObjects() {
               </div>
               <div className="flex flex-1 flex-col gap-2 p-5">
                 <h3 className="font-heading text-xl leading-snug text-[color:var(--color-snow)]">
-                  {pick(o.name)}
+                  {o.name[lang]}
                 </h3>
                 <p className="flex-1 font-body text-sm leading-relaxed text-[color:var(--color-bone)]/70">
-                  {pick(o.note)}
+                  {o.note[lang]}
                 </p>
                 <div className="mt-2 flex items-center justify-between">
                   <span className="font-heading text-lg text-[color:var(--color-brass)]">
