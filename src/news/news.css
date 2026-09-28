@@ -116,6 +116,7 @@
 .nw .nw-src-pub{font-weight:600;color:var(--ink)}
 .nw .nw-src-date{color:var(--muted)}
 .nw .nw-sources a{color:var(--brass);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.nw .nw-sources cite{font-style:normal}
 
 /* ── Kortit ja listaus ───────────────────────────────────────────────────── */
 .nw .nw-listing{padding:48px 0 14px}
