@@ -75,6 +75,7 @@ const it: SiteCopy = {
     "cropped": "ritagliata",
     "nellim": "Il villaggio di Nellim sulla riva del lago Inari, non l’hotel in sé",
     "nellimLake": "L’aurora sopra il lago Inari, non l’hotel stesso",
+    "heroSummer": "Una baita di tronchi su una punta rocciosa di un lago calmo e nebbioso, con il sole basso e un alto pino accanto",
     "heroWinter": "Aurora boreale sopra un bosco innevato e baite illuminate"
   },
   tier: {

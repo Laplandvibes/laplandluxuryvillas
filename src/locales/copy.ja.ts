@@ -74,6 +74,7 @@ const ja: SiteCopy = {
     "cropped": "トリミング",
     "nellim": "Inari湖畔のNellim村、ホテルそのものではありません",
     "nellimLake": "イナリ湖の上のオーロラ。ホテルそのものではありません",
+    "heroSummer": "低い日差しの中、静かで霧のかかった湖に突き出た岩場に建つログキャビンと、そばに立つ高い松",
     "heroWinter": "雪の森と明かりのともる小屋の上に広がるオーロラ"
   },
   tier: {

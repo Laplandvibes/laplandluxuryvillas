@@ -68,6 +68,7 @@ const sv: SiteCopy = {
     "cropped": "beskuren",
     "nellim": "Byn Nellim vid Enaresjöns strand, inte hotellet självt",
     "nellimLake": "Norrskenet över Enare träsk, inte hotellet självt",
+    "heroSummer": "En timmerstuga på en klippig udde vid en stilla, dimmig sjö i låg sol, med en hög tall bredvid",
     "heroWinter": "Norrsken över en snöig skog och upplysta stugor"
   },
   tier: {

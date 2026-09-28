@@ -126,10 +126,7 @@ export default function Home() {
         primary={{ to: to('/villas'), label: c.hero.home.primary }}
         secondary={{ to: to('/private-inquiry'), label: c.hero.home.secondary }}
         imageUrl={heroImage}
-        imageAlt={seasonal(
-          c.photo.heroWinter,
-          'A glass-walled luxury villa on a still Lapland lakeshore in summer, green forest and open water under soft northern light',
-        )}
+        imageAlt={seasonal(c.photo.heroWinter, c.photo.heroSummer)}
         imgPositionClass={seasonal('object-[50%_62%] md:object-[50%_60%]', 'object-[78%_50%] md:object-[20%_50%]')}
         // The summer frame is a bright sky over open water and the winter one is
         // a night aurora, so they need different washes to carry the same words.

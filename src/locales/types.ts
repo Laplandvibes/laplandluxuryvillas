@@ -12,6 +12,8 @@ export type SiteCopy = {
     nellim: string
     /** Nellim-kortin kuva on Inarijärvi, ei hotelli (Vesa 20.9.2026). */
     nellimLake: string
+    /** Kesäheron (summer-villa-lakeside) alt kaikilla kielillä; oli kovakoodattu englanti Home.tsx:ssä. */
+    heroSummer: string
     heroWinter: string
   }
   nav: {

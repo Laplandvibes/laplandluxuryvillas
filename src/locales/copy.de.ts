@@ -74,6 +74,7 @@ const de: SiteCopy = {
     "cropped": "beschnitten",
     "nellim": "Das Dorf Nellim am Ufer des Inarisees, nicht das Hotel selbst",
     "nellimLake": "Das Nordlicht über dem Inarisee, nicht das Hotel selbst",
+    "heroSummer": "Eine Blockhütte auf einer felsigen Landzunge an einem stillen, dunstigen See im tiefen Sonnenlicht, daneben eine hohe Kiefer",
     "heroWinter": "Polarlicht über verschneitem Wald und beleuchteten Hütten"
   },
   tier: {

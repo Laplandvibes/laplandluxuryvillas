@@ -74,6 +74,7 @@ const en: SiteCopy = {
     "cropped": "cropped",
     "nellim": "Nellim village on the shore of Lake Inari, not the hotel itself",
     "nellimLake": "The aurora over Lake Inari, not the hotel itself",
+    "heroSummer": "A log cabin on a rocky point of a still, misty lake in low sun, a tall pine beside it",
     "heroWinter": "Northern lights over a snowy forest and lit cabins"
   },
   tier: {

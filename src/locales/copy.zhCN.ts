@@ -74,6 +74,7 @@ const zhCN: SiteCopy = {
     "cropped": "已裁剪",
     "nellim": "伊纳里湖畔的 Nellim 村，而非酒店本身",
     "nellimLake": "伊纳里湖上空的极光，并非酒店本身",
+    "heroSummer": "低斜的阳光下，宁静雾湖边岩石岬角上的一座原木小屋，旁边立着一棵高大的松树",
     "heroWinter": "积雪森林与亮着灯的小木屋上空的极光"
   },
   tier: {
