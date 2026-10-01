@@ -50,10 +50,10 @@ export default function MidnightSun() {
         lede={c.hero.midnightSun.lede}
         primary={{ to: to('/private-inquiry'), label: c.hero.midnightSun.primary }}
         secondary={{ to: to('/villas'), label: c.hero.midnightSun.secondary }}
-        imageUrl="/images/hero-midnight-sun-kemijarvi.webp"
-        imageAlt="Mirror-calm lake at Kemijärvi at 22:16 on a July night, the sun still above the far shore"
-        imgObjectPosition="50% 60%"
-        credit={<PhotoCredit credit={creditFor('/images/hero-midnight-sun-kemijarvi.webp')} />}
+        imageUrl="/images/hero-midnight-sun-tana.webp"
+        imageAlt="The midnight sun at 23:02 on 23 July over a still fell lake in Tana, northern Norway, about 20 km from Utsjoki across the Teno valley"
+        imgObjectPosition="50% 50%"
+        credit={<PhotoCredit credit={creditFor('/images/hero-midnight-sun-tana.webp')} />}
       />
 
       {/* FACTS BAND */}

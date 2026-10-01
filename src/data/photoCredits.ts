@@ -436,10 +436,10 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     kind: 'own',
     author: 'LaplandVibes',
     sourceUrl: '',
-    sourceId: '20260720_115907.jpg',
+    sourceId: '20260720_122307.jpg',
     taken: '2026-07-20',
     retrieved: RETRIEVED,
-    changes: 'Santa Claus Village main building, Rovaniemi, 11:59. Cropped (4000x3000, box 1150,90 to 3250,2190), resized to 1400x1400, WebP.',
+    changes: 'Red timber building with a spire and fireweed at the Arctic Circle (Napapiiri), Rovaniemi, 12:23. Cropped (3000x4000, box 0,500 to 3000,3500), resized to 1400x1400, WebP. Replaced 20260720_115907 on 1.10.2026: that frame belongs to laplandweddings (approved by Vesa 20.9.).',
     cropped: true,
   },
   '/images/destinations/levi-summer.webp': {
@@ -452,15 +452,18 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     changes: 'Levi village and the lowland from the fell, 16:13. Cropped (4000x3000, box 500,0 to 3500,3000), resized to 1400x1400, WebP.',
     cropped: true,
   },
+  // 1.10.2026: was own 20260721_140157 (Jänkä reindeer), which belongs to laplandweddings (approved 20.9.).
   '/images/destinations/yllas-summer.webp': {
-    kind: 'own',
-    author: 'LaplandVibes',
-    sourceUrl: '',
-    sourceId: '20260721_140157.jpg',
-    taken: '2026-07-21',
-    retrieved: RETRIEVED,
-    changes: 'Reindeer at Äkäslompolo (Jänkä), 14:01. Cropped (4000x3000, box 980,0 to 3980,3000), resized to 1400x1400, WebP.',
-    cropped: true,
+    kind: 'commons',
+    author: 'Ximonic (Simo Räsänen)',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Luosuj%C3%A4rvi_lake_and_Yll%C3%A4s_fell_in_Kolari,_Lapland,_Finland,_2021_June.jpg',
+    sourceId: 'File:Luosujärvi lake and Ylläs fell in Kolari, Lapland, Finland, 2021 June.jpg',
+    taken: '2021-06-14',
+    retrieved: '2026-10-01',
+    changes: 'Resized 3600x2398 -> 2000x1332, WebP q80. Not cropped (sha1 55b15ae3).',
+    cropped: false,
   },
   '/images/midnight-sun/glass.webp': {
     kind: 'own',
@@ -512,15 +515,20 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     changes: 'Dark timber cabin under pines at Ruka, 22:12; different crop from midnight-sun/forest, parked cars cropped out. Cropped (4000x3000, box 100,191 to 3900,2328), resized to 2000x1125, WebP.',
     cropped: true,
   },
-  '/images/hero-midnight-sun-kemijarvi.webp': {
-    kind: 'own',
-    author: 'LaplandVibes',
-    sourceUrl: '',
-    sourceId: '20260718_221602.jpg',
-    taken: '2026-07-18',
-    retrieved: RETRIEVED,
-    changes: 'Mirror-calm Kemijärvi at 22:16. Cropped (4000x3000, box 0,525 to 4000,2775), resized to 2000x1125, WebP.',
-    cropped: true,
+  // 1.10.2026: was own 20260718_221602 (Kemijärvi 22:16), a sister frame of laplandweddings' 221606 (approved 20.9.).
+  // The page has a share card (routes.json) => CC BY, not BY-SA (lv_permanent_rules 34.2). GPS 70.0028 N 26.5909 E:
+  // Tana, Finnmark (Norway), about 20 km from Utsjoki across the Teno valley — the alt says so.
+  '/images/hero-midnight-sun-tana.webp': {
+    kind: 'commons',
+    author: 'Lauri Rantala from Espoo, Finland',
+    license: 'CC BY 2.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Midnight_sun_Tana.jpg',
+    sourceId: 'File:Midnight sun Tana.jpg',
+    taken: '2009-07-23',
+    retrieved: '2026-10-01',
+    changes: 'Resized 3648x2736 -> 2000x1500, WebP q80. Not cropped (sha1 a557561a).',
+    cropped: false,
   },
 
   // ── Pexels aurora clips on /experiences (hero + two cards) and their poster frames ──

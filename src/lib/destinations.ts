@@ -161,6 +161,8 @@ export const DESTINATIONS: Destination[] = [
 const IMAGE_POSITION: Record<string, string> = Object.fromEntries(
   Object.entries({
     '/images/destinations/saariselka-summer.webp': '67% 50%',
+    // Luosujärvi + Ylläs (Commons, uncropped 3:2): keep the fell top in a square card.
+    '/images/destinations/yllas-summer.webp': '50% 40%',
   }).map(([k, v]) => [k.split('?')[0], v]),
 )
 export const imagePosition = (src?: string): string | undefined =>
