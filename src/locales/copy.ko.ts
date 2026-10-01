@@ -76,7 +76,7 @@ const ko: SiteCopy = {
     "nellim": "Inari 호수 기슭의 Nellim 마을, 호텔 자체가 아닙니다",
     "nellimLake": "이나리 호수 위의 오로라, 호텔 자체는 아닙니다",
     "heroSummer": "낮게 드리운 햇살 아래 고요하고 안개 낀 호수의 바위 곶에 선 통나무집과 그 옆의 키 큰 소나무",
-    "heroWinter": "눈 덮인 숲과 불 켜진 오두막 위로 펼쳐진 오로라"
+    "heroWinter": "로바니에미의 눈 덮인 소나무 숲, 기둥 위에 놓인 Arctic TreeHouse Hotel의 유리 외벽 스위트"
   },
   tier: {
     signature: '시그니처',

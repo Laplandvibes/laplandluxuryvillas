@@ -75,7 +75,7 @@ const fi: SiteCopy = {
     "nellim": "Nellimin kylä Inarijärven rannalla, ei itse hotelli",
     "nellimLake": "Revontulet Inarijärven yllä, ei itse hotelli",
     "heroSummer": "Hirsimökki kallioniemellä tyynen, usvaisen järven rannalla matalassa auringossa, vieressä korkea mänty",
-    "heroWinter": "Revontulet lumisen metsän ja valaistujen mökkien yllä"
+    "heroWinter": "Arctic TreeHouse Hotelin lasiseinäiset sviitit paalujen päällä lumisessa männikössä Rovaniemellä"
   },
   tier: {
     signature: 'Signature',

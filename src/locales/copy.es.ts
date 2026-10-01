@@ -75,7 +75,7 @@ const es: SiteCopy = {
     "nellim": "La aldea de Nellim a orillas del lago Inari, no el hotel en sí",
     "nellimLake": "La aurora sobre el lago Inari, no el hotel en sí",
     "heroSummer": "Una cabaña de troncos en una punta rocosa de un lago en calma y brumoso, con el sol bajo y un pino alto al lado",
-    "heroWinter": "Aurora boreal sobre un bosque nevado y cabañas iluminadas"
+    "heroWinter": "Suites acristaladas del Arctic TreeHouse Hotel sobre pilotes, entre pinos nevados en Rovaniemi"
   },
   tier: {
     signature: 'Signature',

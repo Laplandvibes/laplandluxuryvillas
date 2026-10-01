@@ -219,22 +219,35 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   // Winter home hero. It is also the source of the site share card og-winter.jpg
   // (scripts/og/harvest_heroes.mjs takes the live home hero), and a card is an
   // adaptation, so the source may not be CC BY-SA (lv_permanent_rules §34.2).
-  // Until 26.9.2026 this was Nicolas Buffler's Saariselkä aurora (CC BY-SA 2.0);
-  // that file was deleted with the swap. Pexels tags this clip Finland, Sweden
-  // and Norway at once, so the caption names no place. Checked against every
-  // image in the network (64x36 grey, nearest 31.5 > 12). Real photograph:
-  // sensor noise and motion blur, no generated detail at 100 %.
-  '/images/hero-winter-aurora-cabins.webp': {
+  // Vesa 2026-10-01 picked this frame from five candidates (A-E, comparison sheet
+  // rendered on the live page): two Arctic TreeHouse Hotel suites, nos. 36 and 37,
+  // on their stilts in snowy pine forest, Rovaniemi. The hotel is the collection's
+  // own property (villas.ts `arctic-treehouse-suite`) and the second card under the
+  // hero. Before: Lucien Schreiber's aurora over anonymous cabins (Pexels 31430640,
+  // 26.9.-1.10.), which Vesa read as an aurora picture, not a villa picture; that
+  // file was deleted with the swap. Before that: Nicolas Buffler, CC BY-SA, deleted 26.9.
+  // Place verified from the photographer's own series, not from the Pexels tags
+  // (which say Finland, Sweden, Oslo at once): 37131459, -467 and -469 of the same
+  // upload show the "Arctic TreeHouse Hotel" lettering on the lobby wall. Real
+  // photograph: a 16-frame series from one visit (station, Santa Claus Village
+  // signpost, lobby, suites), no generated detail at 100 %. No person, no logo in
+  // this frame; the suite numbers are building signage. Checked against every image
+  // in the network on 2026-10-01 (64x36 grey, nearest 33.2 > 12; same photographer's
+  // two other network photos are different subjects: transport Jätkänkynttilä
+  // 37143145, weddings bridge).
+  '/images/hero-winter-arctic-treehouse.webp': {
     kind: 'pexels',
-    author: 'Lucien Schreiber',
+    author: 'Mingyang LIU',
     license: 'Pexels',
     licenseUrl: 'https://www.pexels.com/license/',
-    sourceUrl: 'https://www.pexels.com/photo/northern-lights-over-snowy-lapland-forest-31430640/',
-    sourceId: 'pexels-photo-31430640',
-    retrieved: '2026-09-26',
-    changes: 'Pexels 6000x4000 file resized to 2000x1333, WebP q80. Not cropped.',
-    cropped: false,
-    inPictureKey: 'heroWinter',
+    sourceUrl: 'https://www.pexels.com/photo/modern-cabin-retreat-in-snowy-forest-37131465/',
+    sourceId: 'pexels-photo-37131465',
+    retrieved: '2026-10-01',
+    changes:
+      'Pexels 3840x2560 (uploaded 2026-04-17). Desktop: 16:9 crop (0,360)-(3840,2520), ' +
+      'resized to 2560x1440 and 1920x1080. Phone: crop (270,460)-(3570,2560) resized to ' +
+      '1600x1018. WebP q80 + AVIF q50, no sharpening or softening.',
+    cropped: true,
   },
 
   // ── Page heroes of /suites, /about, /destinations, /private-inquiry, winter + summer ──

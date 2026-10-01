@@ -80,27 +80,32 @@ export default function DestinationPage() {
         ]}
       />
 
-      {/* HERO */}
-      <section
-        className="relative w-full min-h-[60svh] md:min-h-[68svh] flex items-end overflow-hidden"
-        style={{ background: dest.imageGradient }}
-      >
-        {dest.image && (
-          <img
-            src={dest.image}
-            alt={`${dest.name}, Finnish Lapland`}
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-            style={{ objectPosition: imagePosition(dest.image) }}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        )}
-        {/* Lightened with Hero.tsx 2026-08-01: `from-deep-night` at full opacity
-            buried the bottom half of the photograph, and the headline sits on
-            its own drop-shadow anyway. */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/35 to-transparent" />
-        <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
+      {/* HERO, model C (Vesa 2026-10-01, every hero on this site): the photograph
+          whole and clean in its own band, with its source line in the corner; the
+          back link, eyebrow, name and one-line position under it on the page's own
+          ground. Until 1.10. the words sat on the lower half of the photograph under
+          an 85 % wash, which buried the place the page is about. The hero had no
+          source line at all before this, although most destination photographs are
+          Commons CC BY files: only the season pair further down carried one. */}
+      <section className="bg-[color:var(--color-deep-night)]">
+        <div
+          className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[600px] overflow-hidden"
+          style={{ background: dest.imageGradient }}
+        >
+          {dest.image && (
+            <img
+              src={dest.image}
+              alt={`${dest.name}, Finnish Lapland`}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              style={{ objectPosition: imagePosition(dest.image) }}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )}
+          {dest.image && <PhotoCredit credit={creditFor(dest.image)} />}
+        </div>
+        <div className="w-full mx-auto max-w-6xl px-5 sm:px-7 pt-7 sm:pt-9 pb-4">
           {/* 🔴 `flex w-fit`, not `inline-flex`: the eyebrow below is an inline
               <span>, so an inline-level back link sat on the SAME line as it
               and the hero read "← KOHTEETKOHDE · SUOMEN LAPPI" (Vesa 2026-08-02).
@@ -109,18 +114,15 @@ export default function DestinationPage() {
               heroes now use the same shape so it cannot come back. */}
           <Link
             to={to('/destinations')}
-            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
+            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.destinationPage.backLink}
           </Link>
-          {/* Same 1.48:1 contrast failure as Hero.tsx, same fix — the eyebrow
-              sits on a photograph here too (Vesa 2026-08-03). `w-fit` keeps the
-              plate the width of the words instead of the column. */}
-          <span className="eyebrow inline-flex w-fit items-center px-3 py-1.5 rounded-sm bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm border border-[color:var(--color-brass)]/30 text-[color:var(--color-brass)]">{c.destinationPage.eyebrow}</span>
-          <h1 className="mt-4 font-heading text-4xl sm:text-6xl md:text-7xl text-[color:var(--color-snow)] leading-[1.05] break-words drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)]">
+          <span className="eyebrow inline-flex w-fit items-center text-[color:var(--color-brass)]">{c.destinationPage.eyebrow}</span>
+          <h1 className="mt-3 font-heading text-4xl sm:text-6xl md:text-7xl text-[color:var(--color-snow)] leading-[1.05] break-words">
             {dest.name}
           </h1>
-          <p className="mt-5 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+          <p className="mt-5 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
             {dest.position}
           </p>
         </div>

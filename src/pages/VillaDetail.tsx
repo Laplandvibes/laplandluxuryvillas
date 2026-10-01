@@ -70,50 +70,53 @@ export default function VillaDetail() {
         ]}
       />
 
-      {/* HERO */}
-      <section
-        className="relative w-full min-h-[60svh] md:min-h-[68svh] flex items-end overflow-hidden"
-        style={{ background: villa.imageGradient }}
-      >
-        {villa.image && (
-          <img
-            src={villa.image}
-            alt={`${villa.name}, ${villa.destination}`}
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-          />
-        )}
-        {/* Same lightening as Hero.tsx / DestinationPage.tsx, 2026-08-01. */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-deep-night)]/85 via-[color:var(--color-deep-night)]/35 to-transparent" />
-        {/* 🔴 The source line belongs to the PHOTOGRAPH, not to the surface it
-            happens to sit on (laplandwellness precedent 17.9.2026). This hero
-            is the property's own Sembo frame and ran without it until a
-            site-wide credit count on 2026-09-20 found this page at zero. */}
-        <PhotoCredit credit={creditFor(villa.image)} />
-        <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pb-14 md:pb-20">
+      {/* HERO, model C (Vesa 2026-10-01, every hero on this site): the property's
+          own photograph whole and clean in its own band, the back link, tier, place,
+          name and tagline under it on the page's own ground. Until 1.10. they sat on
+          the lower half of the photograph under an 85 % wash. */}
+      <section className="bg-[color:var(--color-deep-night)]">
+        <div
+          className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[600px] overflow-hidden"
+          style={{ background: villa.imageGradient }}
+        >
+          {villa.image && (
+            <img
+              src={villa.image}
+              alt={`${villa.name}, ${villa.destination}`}
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
+          )}
+          {/* 🔴 The source line belongs to the PHOTOGRAPH, not to the surface it
+              happens to sit on (laplandwellness precedent 17.9.2026). This hero
+              is the property's own Sembo frame and ran without it until a
+              site-wide credit count on 2026-09-20 found this page at zero. */}
+          <PhotoCredit credit={creditFor(villa.image)} />
+        </div>
+        <div className="w-full mx-auto max-w-6xl px-5 sm:px-7 pt-7 sm:pt-9 pb-4">
           <Link
             to={to('/villas')}
-            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]"
+            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.villaDetailPage.backLink}
           </Link>
-          <div className="flex flex-wrap items-center gap-3 mb-5">
-            <span className="eyebrow inline-flex items-center px-2.5 py-1 bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm text-[color:var(--color-brass)] border border-[color:var(--color-brass)]/30">
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <span className="eyebrow inline-flex items-center px-2.5 py-1 text-[color:var(--color-brass)] border border-[color:var(--color-brass)]/30">
               {c.tier[villa.tier]}
             </span>
-            <span className="inline-flex items-center gap-1.5 text-[color:var(--color-bone)]/80 text-xs font-body tracking-[0.18em] uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+            <span className="inline-flex items-center gap-1.5 text-[color:var(--color-bone)]/80 text-xs font-body tracking-[0.18em] uppercase">
               <MapPin size={13} className="text-[color:var(--color-brass)]" /> {villa.destination}
             </span>
-            <span className="inline-flex items-center text-[color:var(--color-bone)]/80 text-xs font-body drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+            <span className="inline-flex items-center text-[color:var(--color-bone)]/80 text-xs font-body">
               {c.category[villa.category]}
             </span>
           </div>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] max-w-4xl break-words drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)]">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] max-w-4xl break-words">
             {villa.name}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+          <p className="mt-5 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
             {villa.tagline}
           </p>
         </div>

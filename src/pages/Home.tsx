@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, Star, ShieldCheck, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
-import Hero from '../components/Hero'
+import Hero, { type HeroSources } from '../components/Hero'
 import Page from '../components/Page'
 import VillaCard from '../components/VillaCard'
 import StayPackages from '../components/StayPackages'
@@ -44,7 +44,16 @@ import { seasonal } from '../lib/season'
  * villa card sat 2 635 px down a 1280 px screen (measured live 19.9.).
  */
 // Also the source of the winter share card, so never CC BY-SA (photoCredits.ts).
-const WINTER_HERO = '/images/hero-winter-aurora-cabins.webp'
+// Vesa 2026-10-01 chose this frame from five: two Arctic TreeHouse suites on their
+// stilts, the collection's own Rovaniemi property, instead of the aurora over
+// anonymous cabins he read as "revontulet on se juttu kuin huvila tai sviitit".
+const WINTER_HERO = '/images/hero-winter-arctic-treehouse.webp'
+const WINTER_HERO_SOURCES: HeroSources = {
+  desktopAvif: '/images/hero-winter-arctic-treehouse-1920.avif 1920w, /images/hero-winter-arctic-treehouse.avif 2560w',
+  desktopWebp: '/images/hero-winter-arctic-treehouse-1920.webp 1920w, /images/hero-winter-arctic-treehouse.webp 2560w',
+  mobileAvif: '/images/hero-winter-arctic-treehouse-mobile.avif',
+  mobileWebp: '/images/hero-winter-arctic-treehouse-mobile.webp',
+}
 // The summer hero is the render Vesa approved on 2026-09-12; there is no own
 // summer frame of a lakeside villa in the July pool (KUVA-INVENTAARIO).
 const SUMMER_HERO = '/images/summer-villa-lakeside.webp'
@@ -114,11 +123,12 @@ export default function Home() {
         ]}
       />
 
-      {/* 🔴 Puhelimessa rajaus on ERI kuin työpöydällä: hero-laatikko on pysty
-          (375x686) ja `object-cover` rajaa leveydestä. Kesäkuvassa mökki on
-          oikeassa reunassa, joten 20 % vasemmalta jätti näkyviin vain etualan
-          kaislikon (Vesa 20.9.2026: "mobiilissa näkyy etusivun hero vain viljan
-          kuva, ei se mökki ollenkaan"). Talvikuvassa aihe on keskellä. */}
+      {/* 🔴 Rajauskohta on eri puhelimessa ja leveällä näytöllä. Malli C:n kuvakaista
+          on puhelimessa lähes neliö (390x354) ja 2560 px:n näytöllä 4,3:1, joten
+          object-cover rajaa puhelimessa leveydestä ja leveällä näytöllä korkeudesta.
+          Kesäkuvassa mökki on oikeassa reunassa (Vesa 20.9.2026: "mobiilissa näkyy
+          etusivun hero vain viljan kuva, ei se mökki ollenkaan"). Talvikuvan
+          puhelinversio on oma rajauksensa alkuperäisestä, sviitit keskellä. */}
       <Hero
         eyebrow={withCounts(c.hero.home.eyebrow, lang)}
         title={withCounts(c.hero.home.title, lang)}
@@ -126,11 +136,9 @@ export default function Home() {
         primary={{ to: to('/villas'), label: c.hero.home.primary }}
         secondary={{ to: to('/private-inquiry'), label: c.hero.home.secondary }}
         imageUrl={heroImage}
+        sources={seasonal<HeroSources | undefined>(WINTER_HERO_SOURCES, undefined)}
         imageAlt={seasonal(c.photo.heroWinter, c.photo.heroSummer)}
-        imgPositionClass={seasonal('object-[50%_62%] md:object-[50%_60%]', 'object-[78%_50%] md:object-[20%_50%]')}
-        // The summer frame is a bright sky over open water and the winter one is
-        // a night aurora, so they need different washes to carry the same words.
-        scrim={seasonal('default', 'strong')}
+        imgPositionClass={seasonal('object-[33%_60%] md:object-[50%_64%]', 'object-[78%_50%] md:object-[50%_55%]')}
         credit={<PhotoCredit credit={heroCredit} />}
       />
 

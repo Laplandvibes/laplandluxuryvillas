@@ -4,6 +4,18 @@ import { withCounts } from '../lib/copyCounts'
 import type { ReactNode } from 'react'
 import PageBreadcrumb from './PageBreadcrumb'
 
+/**
+ * Responsive files for a hero photograph: a 16:9 desktop crop in two widths and a
+ * separate phone crop cut from the original around the subject. Each value is a
+ * plain path or a srcset string, so scripts/version-images.mjs stamps every path.
+ */
+export interface HeroSources {
+  desktopAvif: string
+  desktopWebp: string
+  mobileAvif: string
+  mobileWebp: string
+}
+
 interface HeroProps {
   /** Small label above the headline ("THE COLLECTION", "INARI", etc). */
   eyebrow?: string
@@ -13,30 +25,25 @@ interface HeroProps {
   lede?: string
   /** Optional image URL — when omitted falls back to the aurora-wash gradient. */
   imageUrl?: string
+  /** Desktop + phone files for `imageUrl` (picture element). */
+  sources?: HeroSources
   /** When provided, applied as background-image style (gradient strings work too). */
   imageOverlay?: string
-  /** Inner alignment — default `centered`. `bottom` hugs the lower third. */
+  /** Kept for the call sites; the text block always sits under the photograph now. */
   align?: 'centered' | 'bottom'
   /** Optional primary CTA. */
   primary?: { to: string; label: string }
   /** Optional secondary CTA. */
   secondary?: { to: string; label: string }
-  /** Compact hero for inner pages — half the height of the home hero. */
+  /** Inner pages: a smaller headline. The photograph band is the same height. */
   compact?: boolean
   /** Aria-label fallback when imageUrl is decorative only. */
   imageAlt?: string
-  /** CSS object-position for the hero image (default center). Point at an
-   *  off-centre subject (e.g. a villa on the left) so it survives the mobile
-   *  portrait crop instead of showing only background. */
+  /** CSS object-position for the hero image (default center). */
   imgObjectPosition?: string
   /**
-   * Tailwind-luokat kuvan rajauskohdalle, kun se on eri kapealla ja leveällä
-   * ruudulla. 🔴 Vesa 20.9.2026: *"mobiilissa näkyy etusivun hero vain viljan
-   * kuva, ei se mökki ollenkaan"* — työpöydällä 16:9-kuva näkyy melkein
-   * kokonaan, mutta puhelimessa laatikko on PYSTY (375x686) ja `object-cover`
-   * rajaa leveydestä: rajauskohta 20 % vasemmalta jätti näkyviin vain
-   * etualan kaislikon, ja mökki on kuvan oikeassa reunassa. Annetaan luokkina
-   * eikä inline-tyylinä, koska yksi arvo ei voi olla kaksi arvoa.
+   * Tailwind classes for the crop point when it differs between a phone and a wide
+   * screen. Given as classes, not an inline style, because one value cannot be two.
    */
   imgPositionClass?: string
   /** Source line for an open-licence or partner photograph (PhotoCredit). */
@@ -49,26 +56,37 @@ interface HeroProps {
    */
   videoUrl?: string
   /**
-   * 'light' for real footage: the default wash was measured for dark AI stills
-   * and Vesa read it as "liikaa overlayta" on the experiences hero.
-   * 'strong' for a PALE photograph, where the default cannot reach 3:1 for the
-   * heading — see the measurement in the gradient below.
+   * No longer used: there is no wash over the photograph since model C
+   * (2026-10-01). Accepted so the call sites stay unchanged.
    */
   scrim?: 'default' | 'light' | 'strong'
 }
 
 /**
- * Editorial hero — full-bleed image (or aurora-wash fallback) with a brass
- * eyebrow rule, large Cormorant headline, and optional CTAs. Always uses
- * `min-h-[…svh]` per `lv_apple_safari_mobile_audit.md`.
+ * Editorial hero, model C (Vesa 2026-10-01 for every page of this site, the same
+ * choice he made for laplandtransport on 25.9. and the wedding venues on 28.9.):
+ * the photograph is shown whole and clean, with no wash, no plate and no text on
+ * it, and the brass eyebrow, Cormorant headline, lead and buttons sit under it on
+ * the page's own deep-night ground.
+ *
+ * Why: the old hero put the words over the middle of the photograph, so every
+ * picture needed a darkening wash (lightened 1.8., re-darkened as `strong` for
+ * the pale summer frame 20.9.) and the subject still disappeared behind the
+ * headline or the buttons. On the winter front page Vesa read the aurora, not the
+ * villas (1.10.: "tässä ennemmin revontulet on se juttu kuin huvila tai
+ * sviitit?"). Contrast now rests on the ground, not on the picture.
+ *
+ * The band has the same height steps as laplandtransport's PageLayout. It starts
+ * under the fixed nav (pt-16 / md:pt-20), so the nav's own gradient never lies on
+ * the photograph. The lead is printed once, here.
  */
 export default function Hero({
   eyebrow: eyebrowRaw,
   title: titleRaw,
   lede: ledeRaw,
   imageUrl,
+  sources,
   imageOverlay,
-  align = 'centered',
   primary,
   secondary,
   compact = false,
@@ -77,7 +95,6 @@ export default function Hero({
   imgPositionClass,
   credit,
   videoUrl,
-  scrim = 'default',
 }: HeroProps) {
   // 🔴 The hero fills its own count placeholders. Measured live 20.9.2026:
   // /experiences rendered the literal "{e} yksityistä elämystä", because that
@@ -89,27 +106,42 @@ export default function Hero({
   const eyebrow = eyebrowRaw ? withCounts(eyebrowRaw, lang) : eyebrowRaw
   const title = withCounts(titleRaw, lang)
   const lede = ledeRaw ? withCounts(ledeRaw, lang) : ledeRaw
-  const minH = compact
-    ? 'min-h-[60svh] md:min-h-[68svh]'
-    : 'min-h-[88svh] md:min-h-[92svh]'
 
-  const align_ = align === 'bottom'
-    ? 'items-end pb-20 md:pb-28'
-    : 'items-center'
+  const imgClass = `absolute inset-0 w-full h-full object-cover ${imgPositionClass ?? ''}`
+  const imgStyle = imgPositionClass ? undefined : imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined
 
   return (
     <>
-    <section
-      className={`relative w-full ${minH} flex ${align_} justify-center overflow-hidden`}
-    >
-      {/* Background layer */}
-      <div className="absolute inset-0 -z-10">
-        {imageUrl ? (
+    <section className="pt-16 md:pt-20 bg-[color:var(--color-deep-night)]">
+      <div
+        className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[600px] overflow-hidden"
+        style={{
+          background:
+            imageOverlay ||
+            'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(16, 185, 129, 0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 20% 100%, rgba(99, 102, 241, 0.08) 0%, transparent 60%), linear-gradient(180deg, #0A0F1C 0%, #0F172A 100%)',
+        }}
+      >
+        {imageUrl && sources ? (
+          <picture>
+            <source media="(min-width: 768px)" type="image/avif" srcSet={sources.desktopAvif} sizes="100vw" />
+            <source media="(min-width: 768px)" type="image/webp" srcSet={sources.desktopWebp} sizes="100vw" />
+            <source type="image/avif" srcSet={sources.mobileAvif} />
+            <img
+              src={sources.mobileWebp}
+              alt={imageAlt}
+              className={imgClass}
+              style={imgStyle}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
+          </picture>
+        ) : imageUrl ? (
           <img
             src={imageUrl}
             alt={imageAlt}
-            className={`w-full h-full object-cover ${imgPositionClass ?? ''}`}
-            style={imgPositionClass ? undefined : imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined}
+            className={imgClass}
+            style={imgStyle}
             loading="eager"
             decoding="async"
             fetchPriority="high"
@@ -130,76 +162,26 @@ export default function Hero({
             tabIndex={-1}
           />
         )}
-        {!imageUrl && !videoUrl ? (
-          <div
-            className="w-full h-full"
-            style={{
-              background:
-                imageOverlay ||
-                'radial-gradient(ellipse 80% 50% at 50% 0%, rgba(16, 185, 129, 0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 20% 100%, rgba(99, 102, 241, 0.08) 0%, transparent 60%), linear-gradient(180deg, #0A0F1C 0%, #0F172A 100%)',
-            }}
-          />
-        ) : null}
-        {/* Editorial wash — bottom-anchored fade keeps the photo visible up top,
-            text readable low.
-
-            🔴 Lightened 2026-08-01 (Vesa: "hero kuvien päällä liikaa
-            tummennusta"). The two layers here MULTIPLY, which is what the
-            earlier numbers missed: at the headline (55% down) the linear wash
-            was 0.42 and the radial added 0.45 on top, so the photograph was
-            reading through roughly a third of its own brightness. The headline
-            already carries its own drop-shadow, so the scrim can be much
-            lighter than it looks in isolation. Effective darkening at the
-            headline is now about 0.48 instead of 0.68. */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              scrim === 'light'
-                ? 'linear-gradient(to top, rgba(15,23,42,0.55) 0%, rgba(15,23,42,0.16) 45%, rgba(15,23,42,0.04) 100%)'
-                : scrim === 'strong'
-                  // For a PALE photograph. Measured 20.9.2026 by the `heroteksti`
-                  // gate on the summer home hero (a bright sky over open water):
-                  // h1 1.89:1 against a 3:1 floor, lede 1.55:1 against 4.5:1, and
-                  // 80 % of the text pixels below the floor at 375 px. The default
-                  // wash was calibrated for dark winter frames and cannot carry
-                  // white type over a light sky. Not a brand choice: unreadable
-                  // text is unreadable.
-                  ? 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.68) 45%, rgba(15,23,42,0.38) 100%)'
-                  : 'linear-gradient(to top, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.26) 45%, rgba(15,23,42,0.10) 100%)',
-          }}
-        />
-        {/* Localised reading scrim only behind the headline block — preserves photo elsewhere */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_30%_at_50%_55%,rgba(10,15,28,0.30)_0%,transparent_75%)]" />
+        {credit}
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-8 text-center">
-        {/* 🔴 Vesa 2026-08-03: "hero osion tekstien kontrasti on huono … teksti
-            ei edes erotu". Measured on the live home hero: brass #C9A46B at
-            11 px over the photograph averaged rgb(145,137,130) behind it —
-            **1.48:1**, where AA small text needs 4.5:1. Brass and mid-tone rock
-            sit at nearly the same luminance, so a drop-shadow cannot rescue it;
-            a shadow separates an edge, it does not raise contrast.
-
-            Fixed with a backing plate rather than a darker scrim, deliberately:
-            the scrim was LIGHTENED on 2026-08-01 because Vesa said the heroes
-            were too dark, and re-darkening it would trade one of his complaints
-            for the other. The plate is local to the label, so the photograph
-            keeps its brightness. Same device VillaDetail already uses for its
-            tier badge. Brass on deep-night/85 measures about 7:1. */}
+      <div
+        className={`mx-auto max-w-5xl px-5 sm:px-8 text-center ${
+          compact ? 'pt-8 sm:pt-10 pb-10 sm:pb-12' : 'pt-9 sm:pt-12 pb-12 sm:pb-16'
+        }`}
+      >
+        {/* Brass on deep-night is about 7:1, so the eyebrow needs no backing plate
+            any more (the plate of 2026-08-03 was there for the photograph). */}
         {eyebrow && (
-          <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-5 sm:mb-6">
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70" />
-            <span className="eyebrow inline-flex items-center px-3 py-1.5 rounded-sm bg-[color:var(--color-deep-night)]/85 backdrop-blur-sm border border-[color:var(--color-brass)]/30 text-[color:var(--color-brass)]">
-              {eyebrow}
-            </span>
+            <span className="eyebrow text-[color:var(--color-brass)]">{eyebrow}</span>
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70" />
           </div>
         )}
 
         <h1
-          className={`font-heading text-[color:var(--color-snow)] xl:text-[clamp(84px,1.3125vw_+_67.2px,100.8px)] leading-[1.05] drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)] ${
+          className={`font-heading text-[color:var(--color-snow)] xl:text-[clamp(84px,1.3125vw_+_67.2px,100.8px)] leading-[1.05] text-balance ${
             compact
               ? 'text-[2rem] sm:text-5xl md:text-6xl'
               : 'text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem]'
@@ -209,13 +191,13 @@ export default function Hero({
         </h1>
 
         {lede && (
-          <p className="mt-7 mx-auto max-w-2xl xl:max-w-4xl text-base sm:text-lg text-[color:var(--color-bone)]/90 font-body leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] xl:text-xl">
+          <p className="mt-5 sm:mt-6 mx-auto max-w-2xl xl:max-w-3xl text-base sm:text-lg xl:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed text-pretty">
             {lede}
           </p>
         )}
 
         {(primary || secondary) && (
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-8 sm:mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
             {primary && (
               <Link
                 to={primary.to}
@@ -235,7 +217,6 @@ export default function Hero({
           </div>
         )}
       </div>
-      {credit}
     </section>
     <PageBreadcrumb />
     </>

@@ -108,16 +108,28 @@
 
     <!-- Hero LCP preload, seasonal: the home hero is chosen in the browser by month
          (src/lib/season.ts: summer 1 May to 30 Sep, winter otherwise), so the preload
-         follows the same rule. A static preload of one season's file would fetch a
-         2 000 px image nobody sees for seven months of the year. Both paths are plain
-         strings, so scripts/version-images.mjs stamps the same ?v= on them as on the
-         <img> and the preload is the same URL the page then requests. -->
+         follows the same rule. The winter hero is a <picture> (src/components/Hero.tsx):
+         16:9 desktop crop in 1920 + 2560 px from 768 px up, its own phone crop below,
+         AVIF first. The preload asks for the same AVIF candidate set the picture will
+         pick (imagesrcset + the same media split), and type="image/avif" makes a
+         browser without AVIF skip it instead of fetching a file it cannot use. Every
+         path is a plain string, so scripts/version-images.mjs stamps the same ?v= on
+         them as on the <source>/<img> and the preload is the URL the page requests. -->
     <script>
       (function () {
         var m = new Date().getMonth() + 1;
-        var href = m >= 5 && m <= 9 ? "/images/summer-villa-lakeside.webp" : "/images/hero-winter-aurora-cabins.webp";
         var l = document.createElement("link");
-        l.rel = "preload"; l.as = "image"; l.href = href; l.setAttribute("fetchpriority", "high");
+        l.rel = "preload"; l.as = "image"; l.setAttribute("fetchpriority", "high");
+        if (m >= 5 && m <= 9) {
+          l.href = "/images/summer-villa-lakeside.webp";
+        } else {
+          var desk = window.matchMedia && window.matchMedia("(min-width: 768px)").matches;
+          l.type = "image/avif";
+          l.setAttribute("imagesrcset", desk
+            ? "/images/hero-winter-arctic-treehouse-1920.avif 1920w, /images/hero-winter-arctic-treehouse.avif 2560w"
+            : "/images/hero-winter-arctic-treehouse-mobile.avif 1600w");
+          l.setAttribute("imagesizes", "100vw");
+        }
         document.head.appendChild(l);
       })();
     </script>

@@ -75,7 +75,7 @@ const de: SiteCopy = {
     "nellim": "Das Dorf Nellim am Ufer des Inarisees, nicht das Hotel selbst",
     "nellimLake": "Das Nordlicht über dem Inarisee, nicht das Hotel selbst",
     "heroSummer": "Eine Blockhütte auf einer felsigen Landzunge an einem stillen, dunstigen See im tiefen Sonnenlicht, daneben eine hohe Kiefer",
-    "heroWinter": "Polarlicht über verschneitem Wald und beleuchteten Hütten"
+    "heroWinter": "Verglaste Suiten des Arctic TreeHouse Hotel auf Stelzen zwischen verschneiten Kiefern in Rovaniemi"
   },
   tier: {
     signature: 'Signature',
