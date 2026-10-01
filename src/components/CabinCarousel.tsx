@@ -240,7 +240,7 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
 
       {/* The numbers above are the advertiser's, not ours, and they have a date. */}
       {updatedAt && (
-        <p className="mt-3 text-[11px] font-body text-[color:var(--color-bone)]/75">{c.sourceNote(updatedAt)}</p>
+        <p className="mt-3 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">{c.sourceNote(updatedAt)}</p>
       )}
       <AffiliateDisclosure variant="compact" className="mt-3 !justify-start text-left" />
     </section>

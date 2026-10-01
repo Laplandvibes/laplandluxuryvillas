@@ -114,14 +114,14 @@
 .nw .nw-scale-target{background:rgba(201,164,107,.28);border:1px solid var(--brass);border-right:0;border-radius:2px 0 0 2px}
 .nw .nw-scale-range{background:repeating-linear-gradient(135deg,rgba(201,164,107,.30) 0 6px,rgba(201,164,107,.10) 6px 12px);border:1px dashed var(--brass);border-left:0;border-radius:0 2px 2px 0}
 .nw .nw-scale-num{font:600 17px var(--font-body),'DM Sans',system-ui,sans-serif;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
-.nw .nw-scale-cap{display:block;margin-top:18px;font-size:15px;line-height:1.6;color:rgba(243,241,236,.85)}
+.nw .nw-scale-cap{display:block;margin-top:18px;font-size:16px;line-height:1.6;color:rgba(243,241,236,.85)}
 .nw .nw-scale-unit{display:block;font-weight:600}
 .nw .nw-scale-note{display:block;margin-top:5px;color:var(--muted)}
 
 /* ── Lähteet ─────────────────────────────────────────────────────────────── */
 .nw .nw-sources{margin-top:36px;padding-top:24px;border-top:1px solid var(--line-soft)}
 .nw .nw-sources-h{font:600 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0}
-.nw .nw-sources ol{margin:14px 0 0;padding-left:20px;display:grid;gap:14px;font-size:15px;line-height:1.55;color:var(--ink2)}
+.nw .nw-sources ol{margin:14px 0 0;padding-left:20px;display:grid;gap:14px;font-size:16px;line-height:1.55;color:var(--ink2)}
 .nw .nw-src-pub{font-weight:600;color:var(--ink)}
 .nw .nw-src-date{color:var(--muted)}
 .nw .nw-sources a{color:var(--brass);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}

@@ -135,7 +135,7 @@ export function DestinationLocator({ slug }: { slug: string }) {
           </ul>
         </div>
 
-        <p className="mt-6 text-[11px] font-body text-[color:var(--color-bone)]/60">
+        <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">
           {s(S.locNote, lang)}
         </p>
       </div>
@@ -222,7 +222,7 @@ export function DestinationSeason({ slug }: { slug: string }) {
           )}
         </div>
 
-        <p className="mt-6 max-w-3xl text-[11px] font-body text-[color:var(--color-bone)]/60 leading-relaxed">
+        <p className="mt-6 max-w-3xl text-base font-body text-[color:var(--color-bone)]/75 leading-relaxed">
           {s(S.seasonMethod, lang, { lat: f.latitude.toFixed(2) })}
         </p>
       </div>
@@ -350,7 +350,7 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
           })}
         </div>
 
-        <p className="mt-6 text-[11px] font-body text-[color:var(--color-bone)]/70">
+        <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">
           {s(S.expPriceNote, lang, { p: PRICE_AS_OF, v: VERIFIED_ON })}
         </p>
       </div>

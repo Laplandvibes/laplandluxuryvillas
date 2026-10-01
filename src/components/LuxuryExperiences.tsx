@@ -147,7 +147,7 @@ export default function LuxuryExperiences({ category, eyebrow, title, intro, ton
           })}
         </div>
 
-        <p className="mt-6 text-[11px] font-body text-[color:var(--color-bone)]/70">{c.priceNote(PRICE_AS_OF, VERIFIED_ON)}</p>
+        <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">{c.priceNote(PRICE_AS_OF, VERIFIED_ON)}</p>
       </div>
     </section>
   )

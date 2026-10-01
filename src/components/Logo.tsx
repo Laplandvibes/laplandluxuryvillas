@@ -22,11 +22,17 @@ interface LogoProps {
  * erottuu toisistaan"*. So: one unbroken hashtag on one line at every width,
  * the network's two colours only, and the words told apart BY COLOUR alone:
  * `#` pink · LAPLAND snow · LUXURY pink · VILLAS snow. No space, no wrap, no
- * third colour. On a phone the whole mark steps down to 18 px so it fits
+ * third colour. On a phone the whole mark steps down (14/16/18 px) so it fits
  * between the network pill and the language/menu controls.
  */
 export default function Logo({ hero = false, className = '' }: LogoProps) {
-  const size = hero ? 'text-3xl md:text-5xl' : 'text-lg sm:text-2xl md:text-3xl'
+  // Phone sizes step down so the nav row (network pill, wordmark, language, menu button)
+  // fits without clipping the mark from 320 px up. Measured 1.10.2026 in all 12 languages:
+  // at 18 px the mark is 144 px wide and was cut by 45 px at 320 and 5 px at 360.
+  // Bebas, the two colours and the single unbroken hashtag stay as they are.
+  const size = hero
+    ? 'text-3xl md:text-5xl'
+    : 'text-[14px] min-[360px]:text-[16px] min-[390px]:text-lg sm:text-2xl md:text-3xl'
   const glow = hero ? 'drop-shadow-[0_0_36px_rgba(236,72,153,0.55)]' : ''
 
   return (

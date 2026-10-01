@@ -13,7 +13,9 @@ import { COPY } from '../locales/copy'
  * on a second surface cannot lose its line (laplandwellness precedent, 17.9.).
  *
  * Size: Vesa 18.9.2026 *"eikä tuo cc by tartte olla noin isona"*, 9–10 px on a
- * solid black/55 plate (4.8:1 on a white photo). `lv-tap` keeps the links at
+ * dark plate. The plate was black/55 until 1.10.2026, and the korttiteksti gate
+ * measured the Saariselkä winter card's "CC BY 2.0" at 2.9:1 worst (375 px, bright
+ * snow behind the plate); deep-night at 80 % keeps white text above 4.5:1 on any photo. `lv-tap` keeps the links at
  * 44 px hit size below 1024 px. `rel` carries `noopener`, never `noreferrer`.
  */
 export default function PhotoCredit({ credit }: { credit?: Credit }) {
@@ -21,23 +23,23 @@ export default function PhotoCredit({ credit }: { credit?: Credit }) {
   const c = (COPY[lang] ?? COPY.en).photo
   if (!credit) return null
   return (
-    <span className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl bg-black/55 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white font-body">
+    <span className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl bg-[#020617]/80 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white font-body">
       {c.credit}:{' '}
       {credit.kind === 'sembo' || credit.kind === 'own' ? (
         <span>{credit.author}</span>
       ) : credit.kind === 'pexels' ? (
-        <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
+        <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2">
           {credit.author}, Pexels
         </a>
       ) : (
         <>
-          <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
+          <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2">
             {credit.author}
           </a>
           {credit.license && credit.licenseUrl && (
             <>
               {', '}
-              <a href={credit.licenseUrl} target="_blank" rel="license noopener" className="lv-tap underline decoration-white/50 underline-offset-2 hover:decoration-white">
+              <a href={credit.licenseUrl} target="_blank" rel="license noopener" className="lv-tap underline underline-offset-2">
                 {credit.license}
               </a>
             </>

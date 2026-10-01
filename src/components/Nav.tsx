@@ -126,7 +126,7 @@ export default function Nav() {
           : 'bg-gradient-to-b from-[color:var(--color-deep-night)]/80 via-[color:var(--color-deep-night)]/30 to-transparent'
       }`}
     >
-      <nav className="mx-auto max-w-screen-2xl px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-3 sm:gap-4">
+      <nav className="mx-auto max-w-screen-2xl px-3 min-[360px]:px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-2 min-[360px]:gap-3 sm:gap-4">
         {/* 🔴 This group used to be `shrink-0`. With the wordmark at 212px on a
             375px screen the row's min-content came to ~400px, and the last item
             in the bar — the menu button — was pushed off the right edge. A fixed
@@ -134,7 +134,7 @@ export default function Nav() {
             horizontal scroll to reveal it: on an iPhone SE the site simply had no
             menu. The group now yields space, and the wordmark clips rather than
             evicting the button. (Measured with _navprobe.mjs at 375/390.) */}
-        <div className="flex items-center gap-2 sm:gap-5 min-w-0">
+        <div className="flex items-center gap-1.5 min-[360px]:gap-2 sm:gap-5 min-w-0">
           <EcosystemMenu lang={lang} currentDomain="laplandluxuryvillas.com" />
           {/* 🔴 A logo click must ALWAYS land at the top of the front page
               (Vesa 2026-09-20: "kun painan sivun logoa se ei vie etusivulle ja
@@ -197,7 +197,7 @@ export default function Nav() {
           </Link>
         </div>
 
-        <div className="min-[1360px]:hidden flex items-center gap-2 shrink-0">
+        <div className="min-[1360px]:hidden flex items-center gap-1 min-[360px]:gap-2 shrink-0">
           <LanguageSwitcher tone={'dark'} />
           <button
             type="button"

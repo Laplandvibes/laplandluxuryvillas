@@ -308,7 +308,7 @@ export default function LaplandObjects() {
           ))}
         </div>
 
-        <p className="mt-8 font-body text-xs leading-relaxed text-[color:var(--color-bone)]/45">
+        <p className="mt-8 font-body text-base leading-relaxed text-[color:var(--color-bone)]/75">
           {c.note}
         </p>
       </div>
