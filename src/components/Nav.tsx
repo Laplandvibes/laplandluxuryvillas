@@ -126,7 +126,7 @@ export default function Nav() {
           : 'bg-gradient-to-b from-[color:var(--color-deep-night)]/80 via-[color:var(--color-deep-night)]/30 to-transparent'
       }`}
     >
-      <nav className="mx-auto max-w-screen-2xl px-3 min-[360px]:px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-2 min-[360px]:gap-3 sm:gap-4">
+      <nav className="lv-navrivi mx-auto max-w-screen-2xl px-3 min-[360px]:px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-2 min-[360px]:gap-3 sm:gap-4">
         {/* 🔴 This group used to be `shrink-0`. With the wordmark at 212px on a
             375px screen the row's min-content came to ~400px, and the last item
             in the bar — the menu button — was pushed off the right edge. A fixed
@@ -134,7 +134,7 @@ export default function Nav() {
             horizontal scroll to reveal it: on an iPhone SE the site simply had no
             menu. The group now yields space, and the wordmark clips rather than
             evicting the button. (Measured with _navprobe.mjs at 375/390.) */}
-        <div className="flex items-center gap-1.5 min-[360px]:gap-2 sm:gap-5 min-w-0">
+        <div className="lv-navvasen flex items-center gap-1.5 min-[360px]:gap-2 sm:gap-5 min-w-0">
           <EcosystemMenu lang={lang} currentDomain="laplandluxuryvillas.com" />
           {/* 🔴 A logo click must ALWAYS land at the top of the front page
               (Vesa 2026-09-20: "kun painan sivun logoa se ei vie etusivulle ja
@@ -145,18 +145,20 @@ export default function Nav() {
               all. React Router renders the same route and no effect runs.
               🔴 He also reports the same on a sibling site, so check every
               site's Nav for this pattern, not just this one. */}
-          <Link
-            to={to('/')}
-            onClick={() => {
-              if (window.location.pathname.replace(/\/$/, '') === to('/').replace(/\/$/, '')) {
-                window.scrollTo({ top: 0, behavior: 'smooth' })
-              }
-            }}
-            className="min-w-0 shrink overflow-hidden inline-flex items-center min-h-11"
-            aria-label="LaplandLuxuryVillas, home"
-          >
-            <Logo />
-          </Link>
+          <div className="lv-wm-paikka">
+            <Link
+              to={to('/')}
+              onClick={() => {
+                if (window.location.pathname.replace(/\/$/, '') === to('/').replace(/\/$/, '')) {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }
+              }}
+              className="min-w-0 shrink overflow-hidden inline-flex items-center min-h-11"
+              aria-label="LaplandLuxuryVillas, home"
+            >
+              <Logo nav />
+            </Link>
+          </div>
         </div>
 
         <ul className="hidden min-[1360px]:flex items-center gap-3">

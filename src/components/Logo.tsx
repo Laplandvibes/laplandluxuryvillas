@@ -1,7 +1,15 @@
+import type { CSSProperties } from 'react';
+
+// Sanamerkin leveys 1 px:n fontilla (Bebas Neue + tracking-wide). Puhelin- ja tablettinavissa koko lasketaan
+// tästä ja vapaasta tilasta (index.css LV-NAV-SANAMERKKI): 24 px (tabletilla 30 px), pienempi vain kun ei mahdu.
+const WM_STYLE = { '--lv-wm-k': 8.01, '--lv-wm-max-md': '30px' } as CSSProperties;
+
 interface LogoProps {
   /** When true, scales for hero placement with the pink glow. */
   hero?: boolean
   className?: string
+  /** Navin sanamerkki: koko puhelin- ja tablettinavissa vapaan tilan mukaan (index.css LV-NAV-SANAMERKKI). */
+  nav?: boolean
 }
 
 /**
@@ -25,7 +33,7 @@ interface LogoProps {
  * third colour. On a phone the whole mark steps down (14/16/18 px) so it fits
  * between the network pill and the language/menu controls.
  */
-export default function Logo({ hero = false, className = '' }: LogoProps) {
+export default function Logo({ hero = false, className = '', nav = false }: LogoProps) {
   // Phone sizes step down so the nav row (network pill, wordmark, language, menu button)
   // fits without clipping the mark from 320 px up. Measured 1.10.2026 in all 12 languages:
   // at 18 px the mark is 144 px wide and was cut by 45 px at 320 and 5 px at 360.
@@ -37,7 +45,9 @@ export default function Logo({ hero = false, className = '' }: LogoProps) {
 
   return (
     <span
-      className={`font-logo tracking-wide leading-none inline-flex items-baseline whitespace-nowrap ${size} drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${className}`}
+      className={`font-logo tracking-wide leading-none inline-flex items-baseline whitespace-nowrap ${size} drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${nav ? ' lv-wm' : ''} ${className}`}
+      data-lv-sanamerkki={nav ? '' : undefined}
+      style={nav ? WM_STYLE : undefined}
     >
       <span className={`text-[color:var(--color-vibe-pink)] ${glow}`}>#</span>
       <span className="text-[color:var(--color-snow)]">LAPLAND</span>
