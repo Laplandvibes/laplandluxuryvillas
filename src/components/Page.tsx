@@ -13,7 +13,7 @@ interface PageProps {
  */
 export default function Page({ children, fullBleed = false }: PageProps) {
   return (
-    <main className={fullBleed ? '' : 'pt-16 md:pt-20'}>
+    <main className={fullBleed ? '' : 'pt-16 md:pt-20 xl:pt-16'}>
       {children}
     </main>
   )

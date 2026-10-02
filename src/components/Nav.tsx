@@ -126,7 +126,7 @@ export default function Nav() {
           : 'bg-gradient-to-b from-[color:var(--color-deep-night)]/80 via-[color:var(--color-deep-night)]/30 to-transparent'
       }`}
     >
-      <nav className="lv-navrivi mx-auto max-w-screen-2xl px-3 min-[360px]:px-4 sm:px-7 lg:px-10 h-16 md:h-20 flex items-center justify-between gap-2 min-[360px]:gap-3 sm:gap-4">
+      <nav className="lv-navrivi mx-auto max-w-screen-2xl px-3 min-[360px]:px-4 sm:px-7 lg:px-10 xl:px-8 h-16 md:h-20 xl:h-16 flex items-center justify-between gap-2 min-[360px]:gap-3 sm:gap-4">
         {/* 🔴 This group used to be `shrink-0`. With the wordmark at 212px on a
             375px screen the row's min-content came to ~400px, and the last item
             in the bar — the menu button — was pushed off the right edge. A fixed

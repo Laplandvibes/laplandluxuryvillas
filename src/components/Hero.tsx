@@ -112,7 +112,7 @@ export default function Hero({
 
   return (
     <>
-    <section className="pt-16 md:pt-20 bg-[color:var(--color-deep-night)]">
+    <section className="pt-16 md:pt-20 xl:pt-16 bg-[color:var(--color-deep-night)]">
       <div
         className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[600px] overflow-hidden"
         style={{
