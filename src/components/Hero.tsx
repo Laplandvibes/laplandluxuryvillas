@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useLang } from '../i18n/useLang'
 import { withCounts } from '../lib/copyCounts'
-import type { ReactNode } from 'react'
+import { Fragment, type CSSProperties, type ReactNode } from 'react'
 import PageBreadcrumb from './PageBreadcrumb'
 
 /**
@@ -80,6 +80,27 @@ interface HeroProps {
  * under the fixed nav (pt-16 / md:pt-20), so the nav's own gradient never lies on
  * the photograph. The lead is printed once, here.
  */
+/* ── Japanese and Chinese titles on a computer (Vesa 3.10.2026: "tehdään turhaan kolmirivisiä") ─────────────
+ * Measured live 3.10.: the ja home title ran to three lines and broke inside words at 1280–1920 px
+ * ("ラップランドのヴ / ィラ選びに、当て / 推量はいらない。"): CJK may break between any two glyphs, and balance split
+ * it evenly. From lg such a title now breaks only after its own punctuation (、。，！？ get a <wbr>, keep-all
+ * blocks the rest), and its size is the smaller of the designed size and the size at which the best two-line
+ * split fits the column (100cqi / em): "ラップランドのヴィラ選びに、 / 当て推量はいらない。". Below lg nothing changes. */
+const CJK_TITLE = /[぀-ヿ㐀-鿿]/
+const CJK_GLYPH = /[　-ヿ㐀-鿿＀-￯]/
+/** Width in em: a CJK glyph 1.05 (fallback face 1.0 + margin), Cormorant Latin ~0.5, space 0.25. */
+const emWidth = (s: string) => [...s].reduce((w, ch) => w + (CJK_GLYPH.test(ch) ? 1.05 : ch === ' ' ? 0.25 : 0.5), 0)
+function cjkTitleLayout(title: string): { chunks: string[]; em: number } | null {
+  if (!CJK_TITLE.test(title)) return null
+  const chunks = title.split(/(?<=[、。，！？])/).filter(Boolean)
+  if (chunks.length < 2) return null
+  let em = Infinity
+  for (let k = 1; k < chunks.length; k++) {
+    em = Math.min(em, Math.max(emWidth(chunks.slice(0, k).join('')), emWidth(chunks.slice(k).join(''))))
+  }
+  return { chunks, em }
+}
+
 export default function Hero({
   eyebrow: eyebrowRaw,
   title: titleRaw,
@@ -107,6 +128,7 @@ export default function Hero({
   const title = withCounts(titleRaw, lang)
   const lede = ledeRaw ? withCounts(ledeRaw, lang) : ledeRaw
 
+  const cjk = cjkTitleLayout(title)
   const imgClass = `absolute inset-0 w-full h-full object-cover ${imgPositionClass ?? ''}`
   const imgStyle = imgPositionClass ? undefined : imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined
 
@@ -166,7 +188,7 @@ export default function Hero({
       </div>
 
       <div
-        className={`mx-auto max-w-5xl px-5 sm:px-8 text-center ${
+        className={`@container mx-auto max-w-5xl px-5 sm:px-8 text-center ${
           compact ? 'pt-8 sm:pt-10 pb-10 sm:pb-12' : 'pt-9 sm:pt-12 pb-12 sm:pb-16'
         }`}
       >
@@ -181,13 +203,25 @@ export default function Hero({
         )}
 
         <h1
-          className={`font-heading text-[color:var(--color-snow)] xl:text-[clamp(84px,1.3125vw_+_67.2px,100.8px)] leading-[1.05] text-balance ${
+          className={`font-heading text-[color:var(--color-snow)] leading-[1.05] text-balance ${
             compact
               ? 'text-[2rem] sm:text-5xl md:text-6xl'
-              : 'text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem]'
+              : `text-4xl sm:text-6xl md:text-7xl ${cjk ? 'lg:[--h1-max:5.25rem]' : 'lg:text-[5.25rem]'}`
+          } ${
+            cjk
+              ? `${compact ? 'lg:[--h1-max:3.75rem]' : ''} xl:[--h1-max:clamp(84px,1.3125vw_+_67.2px,100.8px)] lg:[font-size:min(var(--h1-max),calc(100cqi/var(--h1-em)))] lg:[word-break:keep-all]`
+              : 'xl:text-[clamp(84px,1.3125vw_+_67.2px,100.8px)]'
           }`}
+          style={cjk ? ({ '--h1-em': cjk.em.toFixed(2) } as CSSProperties) : undefined}
         >
-          {title}
+          {cjk
+            ? cjk.chunks.map((chunk, i) => (
+                <Fragment key={i}>
+                  {i > 0 && <wbr />}
+                  {chunk}
+                </Fragment>
+              ))
+            : title}
         </h1>
 
         {lede && (

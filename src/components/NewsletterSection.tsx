@@ -182,7 +182,10 @@ export default function NewsletterSection() {
       />
       <div className="relative mx-auto max-w-3xl px-5 sm:px-7 text-center">
         <span className="eyebrow text-white/85">{c.eyebrow}</span>
-        <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-white leading-[1.1]">
+        {/* lg:keep-all for ko (3.10.2026): the ko heading broke inside words on a computer ("열거 / 나", "듣 / 게").
+            Its length (and fr/it) is a translation question: these three still carry the long July sentence, while
+            the other nine say "Open villa dates and the quiet weeks." */}
+        <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-white leading-[1.1] lg:[&:lang(ko)]:[word-break:keep-all]">
           {c.h2}
         </h2>
         <p className="mt-5 text-white/85 text-base sm:text-lg font-body leading-relaxed max-w-xl mx-auto">

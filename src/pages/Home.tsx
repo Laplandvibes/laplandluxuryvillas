@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { Fragment, lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, Star, ShieldCheck, Compass } from 'lucide-react'
 import SEO from '../components/SEO'
@@ -265,10 +265,20 @@ export default function Home() {
           of the page" (feedback_etusivun_karki_sisalto_ensin). */}
       <section className="bg-[color:var(--color-deep-night)] py-14 sm:py-20 md:py-32">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          {/* lg: the heading gets 1024 px and each sentence is its own unit (3.10.2026). In 768 px the es
+              heading ran to three lines ("NOSOTROS VERIFICAMOS Y / PROPONEMOS. USTED RESERVA / DIRECTAMENTE CON
+              EL ALOJAMIENTO."); now "Nosotros verificamos y proponemos. / Usted reserva directamente con el
+              alojamiento." Below lg the text flows as before. */}
+          <div className="text-center max-w-3xl lg:max-w-5xl mx-auto mb-10 sm:mb-16">
             <span className="eyebrow">{c.home.philosophy.eyebrow}</span>
             <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
-              {c.home.philosophy.h2}
+              {c.home.philosophy.h2.split(/(?<=[.!?。！？])\s*/).filter(Boolean).map((sentence, i, all) => (
+                <Fragment key={i}>
+                  {/* ja/zh sentences run on without a space */}
+                  {i > 0 && !/[。！？]$/.test(all[i - 1]) && ' '}
+                  <span className="lg:inline-block">{sentence}</span>
+                </Fragment>
+              ))}
             </h2>
           </div>
           {/* Three columns only from lg: the live layout gate measured 205–249 px cards at
