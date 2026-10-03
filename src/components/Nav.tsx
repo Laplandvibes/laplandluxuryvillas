@@ -174,7 +174,7 @@ export default function Nav() {
                   // all twelve languages at 1440 and 2000 px. 12 px of padding
                   // makes the target 40 px without moving a single pixel of
                   // type: the bar is a flex row and the letters stay centred.
-                  `inline-flex items-center whitespace-nowrap py-3 text-[12px] tracking-[0.12em] uppercase font-body transition-colors ${
+                  `inline-flex items-center whitespace-nowrap py-3 text-sm font-body transition-colors ${
                     isActive
                       ? 'text-[color:var(--color-brass)]'
                       : 'text-[color:var(--color-bone)] drop-shadow-[0_1px_6px_rgba(0,0,0,0.65)] hover:text-[color:var(--color-brass)]'
@@ -193,7 +193,7 @@ export default function Nav() {
           </div>
           <Link
             to={to('/private-inquiry')}
-            className="inline-flex items-center gap-2 whitespace-nowrap border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-[12px] tracking-[0.16em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-all"
+            className="inline-flex items-center gap-2 whitespace-nowrap border border-[color:var(--color-brass)]/70 text-[color:var(--color-brass)] px-4 py-2.5 text-sm font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-all"
           >
             {c.nav.privateInquiry}
           </Link>
@@ -222,7 +222,7 @@ export default function Nav() {
                   to={l.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block py-3 text-base tracking-[0.18em] uppercase font-body border-b border-[color:var(--color-mist)]/40 ${
+                    `block py-3 text-base font-body border-b border-[color:var(--color-mist)]/40 ${
                       isActive
                         ? 'text-[color:var(--color-brass)]'
                         : 'text-[color:var(--color-bone)]/85 hover:text-[color:var(--color-brass)]'
@@ -245,7 +245,7 @@ export default function Nav() {
               <Link
                 to={to('/private-inquiry')}
                 onClick={() => setOpen(false)}
-                className="block w-full text-center border border-[color:var(--color-brass)] text-[color:var(--color-brass)] px-5 py-4 text-[13px] tracking-[0.22em] uppercase font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-all"
+                className="block w-full text-center border border-[color:var(--color-brass)] text-[color:var(--color-brass)] px-5 py-4 text-sm font-body hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)] transition-all"
               >
                 {c.nav.privateInquiry}
               </Link>
