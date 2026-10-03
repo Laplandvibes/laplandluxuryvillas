@@ -107,8 +107,8 @@ const fr: SiteCopy = {
   },
   newsletter: {
     eyebrow: 'La newsletter #LaplandVibes',
-    h2: 'Une dépêche discrète lorsque les villas ouvrent de nouvelles dates et que nous entendons parler d\'une remise privée.',
-    lede: 'Des dates qui se libèrent. Des maisons qui méritent un coup d\'œil. Prévisions de fenêtres d\'aurore la semaine précédant chaque nouvelle lune. Pas de spam, rédigée en Finlande, envoyée uniquement quand il y a quelque chose de spécifique à dire.',
+    h2: 'Dates libres des villas et semaines tranquilles.',
+    lede: 'Dates libérées, adresses remarquables et comment lire les prévisions d\'aurores. Pas de spam. Nous écrivons depuis la Finlande et n\'envoyons que lorsque nous avons vraiment quelque chose pour vous.',
     emailPlaceholder: 'votre@email.com',
     footnote: 'Désabonnement en un clic.',
     welcome: 'Bienvenue à bord. La première dépêche arrive dans la semaine.',
