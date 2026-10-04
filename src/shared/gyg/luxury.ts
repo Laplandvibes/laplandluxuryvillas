@@ -37,6 +37,8 @@
  * broken promise, not a warning.
  */
 
+import { isGygPriceFresh } from './picks';
+
 export interface LuxuryPick {
   /** GetYourGuide path `<place-lNNN>/<slug-tNNN>`, no leading or trailing slash. */
   path: string;
@@ -63,6 +65,14 @@ export interface LuxuryPick {
 
 export const PRICE_AS_OF = '2026-07-29';
 export const VERIFIED_ON = '2026-08-01';
+
+/**
+ * Same seven-day rule as GetYourGuide picks (Vesa 4.10.2026): after that the cards
+ * render without a price and the dated price note is hidden. See picks.ts.
+ */
+export function isLuxuryPriceFresh(now?: number): boolean {
+  return isGygPriceFresh(PRICE_AS_OF, now);
+}
 
 /** Ascending by price: the rail reads as a ladder, not a random shelf. */
 export const LUXURY_PICKS: readonly LuxuryPick[] = [

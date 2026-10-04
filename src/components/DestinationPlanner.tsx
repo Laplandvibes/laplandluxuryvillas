@@ -1,6 +1,6 @@
 import { ArrowUpRight, Plane, Search } from 'lucide-react'
 import { DESTINATION_FACTS, destinationFacts } from '../shared/destinations/facts'
-import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON } from '../shared/gyg/luxury'
+import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON, isLuxuryPriceFresh } from '../shared/gyg/luxury'
 import { SECTION_LABELS as S, s } from '../lib/destinationSections.i18n'
 import { yearOfLight } from '../lib/daylight'
 import { gygProduct, GYG_LINKS } from '../lib/affiliate'
@@ -334,12 +334,15 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
                   <h3 className="font-heading text-xl text-[color:var(--color-snow)] leading-tight">{p.title}</h3>
                 </div>
                 <div className="flex items-end justify-between gap-3">
-                  <div>
-                    <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">
-                      {s(S.expFrom, lang)}
+                  {/* Yli 7 vrk vanha GYG-hinta ei näy (Vesa 4.10.2026, shared/gyg/luxury.ts). */}
+                  {isLuxuryPriceFresh() ? (
+                    <div>
+                      <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">
+                        {s(S.expFrom, lang)}
+                      </div>
+                      <div className="font-heading text-xl text-[color:var(--color-brass)]">{fmt(p.price)} €</div>
                     </div>
-                    <div className="font-heading text-xl text-[color:var(--color-brass)]">{fmt(p.price)} €</div>
-                  </div>
+                  ) : <div />}
                   <span className="inline-flex shrink-0 items-center gap-1.5 border border-[color:var(--color-brass)]/70 px-3.5 py-2 text-[10px] tracking-[0.18em] uppercase font-body text-[color:var(--color-brass)] transition-colors group-hover:bg-[color:var(--color-brass)] group-hover:text-[color:var(--color-deep-night)]">
                     {s(S.expCta, lang)}
                     <ArrowUpRight size={12} aria-hidden="true" />
@@ -350,9 +353,11 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
           })}
         </div>
 
-        <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">
-          {s(S.expPriceNote, lang, { p: PRICE_AS_OF, v: VERIFIED_ON })}
-        </p>
+        {isLuxuryPriceFresh() && (
+          <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">
+            {s(S.expPriceNote, lang, { p: PRICE_AS_OF, v: VERIFIED_ON })}
+          </p>
+        )}
       </div>
     </section>
   )

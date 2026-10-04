@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
-import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON } from '../shared/gyg/luxury'
+import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON, isLuxuryPriceFresh } from '../shared/gyg/luxury'
 import GYG_MEDIA_RAW from '../data/gygMedia.json'
 import { gygProduct } from '../lib/affiliate'
 import { trackAffiliateClick } from '../lib/analytics'
@@ -133,10 +133,13 @@ export default function LuxuryExperiences({ category, eyebrow, title, intro, ton
                 </div>
 
                 <div className="flex items-end justify-between gap-3 px-6 pb-6">
-                  <div>
-                    <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">{c.from}</div>
-                    <div className="font-heading text-xl text-[color:var(--color-brass)]">{fmt(p.price)} €</div>
-                  </div>
+                  {/* Yli 7 vrk vanha GYG-hinta ei näy (Vesa 4.10.2026, shared/gyg/luxury.ts). */}
+                  {isLuxuryPriceFresh() ? (
+                    <div>
+                      <div className="text-[10px] uppercase tracking-[0.16em] font-body text-[color:var(--color-bone)]/70">{c.from}</div>
+                      <div className="font-heading text-xl text-[color:var(--color-brass)]">{fmt(p.price)} €</div>
+                    </div>
+                  ) : <div />}
                   <span className="inline-flex shrink-0 items-center gap-1.5 border border-[color:var(--color-brass)]/70 px-3.5 py-2 text-[10px] tracking-[0.18em] uppercase font-body text-[color:var(--color-brass)] transition-colors group-hover:bg-[color:var(--color-brass)] group-hover:text-[color:var(--color-deep-night)]">
                     {c.cta}
                     <ArrowUpRight size={12} aria-hidden="true" />
@@ -147,7 +150,9 @@ export default function LuxuryExperiences({ category, eyebrow, title, intro, ton
           })}
         </div>
 
-        <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">{c.priceNote(PRICE_AS_OF, VERIFIED_ON)}</p>
+        {isLuxuryPriceFresh() && (
+          <p className="mt-6 text-base leading-relaxed font-body text-[color:var(--color-bone)]/75">{c.priceNote(PRICE_AS_OF, VERIFIED_ON)}</p>
+        )}
       </div>
     </section>
   )
