@@ -93,7 +93,7 @@ export default function Villas() {
         title={withCounts(c.hero.villas.title, lang)}
         lede={withCounts(c.hero.villas.lede, lang)}
         imageUrl="/images/villas/auroraVillage-sembo-5.webp"
-        imageAlt="Aurora over the glass roof of a suite in the collection, seen from the bed"
+        imageAlt={c.photo.heroAlt.villas}
         imgObjectPosition="50% 50%"
         scrim="strong"
         credit={<PhotoCredit credit={creditFor('/images/villas/auroraVillage-sembo-5.webp')} />}

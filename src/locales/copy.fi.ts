@@ -75,7 +75,20 @@ const fi: SiteCopy = {
     "nellim": "Nellimin kylä Inarijärven rannalla, ei itse hotelli",
     "nellimLake": "Revontulet Inarijärven yllä, ei itse hotelli",
     "heroSummer": "Hirsimökki kallioniemellä tyynen, usvaisen järven rannalla matalassa auringossa, vieressä korkea mänty",
-    "heroWinter": "Arctic TreeHouse Hotelin lasiseinäiset sviitit paalujen päällä lumisessa männikössä Rovaniemellä"
+    "heroWinter": "Arctic TreeHouse Hotelin lasiseinäiset sviitit paalujen päällä lumisessa männikössä Rovaniemellä",
+    "heroAlt": {
+      "aboutWinter": "Tykkylumen painama kuusi tunturin laella hämärässä, alla sumuisessa laaksossa valoja",
+      "aboutSummer": "Lehtevät koivut Kilpisjärven yllä, vastarannan tuntureilla vielä lumilaikkuja",
+      "destinationsWinter": "Pallastunturi helmikuun aamun punertavassa valossa huurteisten kuusten välistä, juurellaan pieni kämppä",
+      "destinationsSummer": "Kilpisjärvi keskikesällä, vastarannalla Norjan tunturit",
+      "inquiryWinter": "Jäätynyt Jerisjärvi maaliskuussa, takana metsäinen Haltioletto",
+      "inquirySummer": "Yöttömän yön ilta Tenojoen rannalla Nuorgamissa",
+      "suitesWinter": "Vihreä revontulikaari jäätyneen Inarijärven yllä maaliskuun iltana",
+      "suitesSummer": "Saanan aurinkoinen koivurinne Kilpisjärven yllä keskikesällä",
+      "midnightSun": "Keskiyön aurinko 23. heinäkuuta klo 23.02 tyynen tunturijärven yllä Tanassa Pohjois-Norjassa, noin 20 km Utsjoelta Tenon laakson toisella puolella",
+      "villas": "Revontulet kokoelman sviitin lasikaton takana sängystä katsottuna",
+      "experiences": "Vihreät revontulet tähtikirkkaalla taivaalla tummien puiden yllä"
+    }
   },
   tier: {
     signature: 'Signature',

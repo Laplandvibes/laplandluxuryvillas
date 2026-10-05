@@ -76,7 +76,20 @@ const ko: SiteCopy = {
     "nellim": "Inari 호수 기슭의 Nellim 마을, 호텔 자체가 아닙니다",
     "nellimLake": "이나리 호수 위의 오로라, 호텔 자체는 아닙니다",
     "heroSummer": "낮게 드리운 햇살 아래 고요하고 안개 낀 호수의 바위 곶에 선 통나무집과 그 옆의 키 큰 소나무",
-    "heroWinter": "로바니에미의 눈 덮인 소나무 숲, 기둥 위에 놓인 Arctic TreeHouse Hotel의 유리 외벽 스위트"
+    "heroWinter": "로바니에미의 눈 덮인 소나무 숲, 기둥 위에 놓인 Arctic TreeHouse Hotel의 유리 외벽 스위트",
+    "heroAlt": {
+      "aboutWinter": "해 질 녘 펠 정상에서 눈의 무게에 휜 가문비나무와 안개 낀 계곡의 불빛",
+      "aboutSummer": "킬피스야르비 호수를 내려다보는 잎이 무성한 자작나무와 아직 잔설이 남은 건너편 펠",
+      "destinationsWinter": "2월 아침 분홍빛에 물든 팔라스툰투리와 서리 내린 가문비나무, 그 기슭의 작은 오두막",
+      "destinationsSummer": "한여름의 킬피스야르비 호수와 건너편 노르웨이의 펠",
+      "inquiryWinter": "3월에 얼어붙은 예리스 호수와 그 뒤의 숲으로 덮인 할티올레토 펠",
+      "inquirySummer": "누오르감 테노강 기슭의 백야 저녁",
+      "suitesWinter": "3월 저녁, 얼어붙은 이나리 호수 위로 아치를 그리는 초록 오로라",
+      "suitesSummer": "한여름 킬피스야르비 위, 햇살을 받은 사나산의 자작나무 비탈",
+      "midnightSun": "7월 23일 23시 02분, 노르웨이 북부 타나의 고요한 펠 호수 위에 뜬 한밤의 태양. 테노강 계곡 건너 우츠요키에서 약 20km",
+      "villas": "침대에서 올려다본 컬렉션 스위트의 유리 지붕 너머 오로라",
+      "experiences": "별이 총총한 밤, 검은 나무 실루엣 위의 초록 오로라"
+    }
   },
   tier: {
     signature: '시그니처',

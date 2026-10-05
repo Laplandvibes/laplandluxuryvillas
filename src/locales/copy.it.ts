@@ -76,7 +76,20 @@ const it: SiteCopy = {
     "nellim": "Il villaggio di Nellim sulla riva del lago Inari, non l’hotel in sé",
     "nellimLake": "L’aurora sopra il lago Inari, non l’hotel stesso",
     "heroSummer": "Una baita di tronchi su una punta rocciosa di un lago calmo e nebbioso, con il sole basso e un alto pino accanto",
-    "heroWinter": "Suite vetrate dell’Arctic TreeHouse Hotel su pali, tra i pini innevati di Rovaniemi"
+    "heroWinter": "Suite vetrate dell’Arctic TreeHouse Hotel su pali, tra i pini innevati di Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "Un abete carico di neve sulla cima di un fjäll al crepuscolo, luci nella valle nebbiosa sottostante",
+      "aboutSummer": "Betulle in foglia sopra il lago Kilpisjärvi, con chiazze di neve ancora sui fjäll della sponda opposta",
+      "destinationsWinter": "Il Pallastunturi nella luce rosa di un mattino di febbraio, incorniciato da abeti brinati, con una piccola capanna ai suoi piedi",
+      "destinationsSummer": "Il lago Kilpisjärvi in piena estate, con i fjäll della Norvegia sulla sponda opposta",
+      "inquiryWinter": "Il lago Jerisjärvi ghiacciato a marzo, con dietro il fjäll boscoso di Haltioletto",
+      "inquirySummer": "Sera di sole di mezzanotte sulla riva del fiume Teno, a Nuorgam",
+      "suitesWinter": "Un arco verde di aurora boreale sul lago Inari ghiacciato, in una sera di marzo",
+      "suitesSummer": "Pendio di betulle illuminato dal sole sul fjäll Saana, sopra Kilpisjärvi, in piena estate",
+      "midnightSun": "Il sole di mezzanotte alle 23:02 del 23 luglio su un tranquillo lago di fjäll a Tana, nel nord della Norvegia, a circa 20 km da Utsjoki dall’altra parte della valle del Teno",
+      "villas": "Aurora boreale sopra il tetto di vetro di una suite della collezione, vista dal letto",
+      "experiences": "Aurora boreale verde sopra una fila di alberi scuri in una notte stellata"
+    }
   },
   tier: {
     signature: 'Signature',

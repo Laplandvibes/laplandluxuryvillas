@@ -75,7 +75,20 @@ const es: SiteCopy = {
     "nellim": "La aldea de Nellim a orillas del lago Inari, no el hotel en sí",
     "nellimLake": "La aurora sobre el lago Inari, no el hotel en sí",
     "heroSummer": "Una cabaña de troncos en una punta rocosa de un lago en calma y brumoso, con el sol bajo y un pino alto al lado",
-    "heroWinter": "Suites acristaladas del Arctic TreeHouse Hotel sobre pilotes, entre pinos nevados en Rovaniemi"
+    "heroWinter": "Suites acristaladas del Arctic TreeHouse Hotel sobre pilotes, entre pinos nevados en Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "Un abeto cargado de nieve en la cima de un fjäll al atardecer, con luces en el valle brumoso de abajo",
+      "aboutSummer": "Abedules con hojas sobre el lago Kilpisjärvi, con manchas de nieve aún en los fjälls de la otra orilla",
+      "destinationsWinter": "El Pallastunturi bajo la luz rosada de una mañana de febrero, enmarcado por abetos escarchados, con una pequeña cabaña al pie",
+      "destinationsSummer": "El lago Kilpisjärvi en pleno verano, con los fjälls de Noruega en la otra orilla",
+      "inquiryWinter": "El lago Jerisjärvi congelado en marzo, con el boscoso fjäll Haltioletto detrás",
+      "inquirySummer": "Atardecer bajo el sol de medianoche a orillas del río Teno, en Nuorgam",
+      "suitesWinter": "Un arco verde de aurora boreal sobre el lago Inari congelado en una tarde de marzo",
+      "suitesSummer": "Ladera de abedules iluminada por el sol en el fjäll Saana, sobre Kilpisjärvi, en pleno verano",
+      "midnightSun": "El sol de medianoche a las 23:02 del 23 de julio sobre un tranquilo lago de fjäll en Tana, en el norte de Noruega, a unos 20 km de Utsjoki al otro lado del valle del Teno",
+      "villas": "Aurora boreal sobre el techo de vidrio de una suite de la colección, vista desde la cama",
+      "experiences": "Aurora boreal verde sobre una hilera de árboles oscuros en una noche estrellada"
+    }
   },
   tier: {
     signature: 'Signature',

@@ -75,7 +75,20 @@ const zhCN: SiteCopy = {
     "nellim": "伊纳里湖畔的 Nellim 村，而非酒店本身",
     "nellimLake": "伊纳里湖上空的极光，并非酒店本身",
     "heroSummer": "低斜的阳光下，宁静雾湖边岩石岬角上的一座原木小屋，旁边立着一棵高大的松树",
-    "heroWinter": "罗瓦涅米积雪的松林里，Arctic TreeHouse Hotel架在立柱上的玻璃幕墙套房"
+    "heroWinter": "罗瓦涅米积雪的松林里，Arctic TreeHouse Hotel架在立柱上的玻璃幕墙套房",
+    "heroAlt": {
+      "aboutWinter": "黄昏时山丘顶上一棵被积雪压弯的云杉，下方雾气弥漫的山谷里亮着灯光",
+      "aboutSummer": "基尔皮斯耶尔维湖上方枝叶繁茂的白桦，对岸山丘上仍有残雪",
+      "destinationsWinter": "二月清晨粉色光线中的帕拉斯通图里山，被挂霜的云杉环绕，山脚下有一座小木屋",
+      "destinationsSummer": "盛夏的基尔皮斯耶尔维湖，对岸是挪威的山丘",
+      "inquiryWinter": "三月冰封的耶里斯湖，后方是林木覆盖的哈尔蒂奥莱托山",
+      "inquirySummer": "努奥尔加姆，泰诺河畔沐浴在午夜太阳下的傍晚",
+      "suitesWinter": "三月的一个傍晚，冰封的伊纳里湖上空一道弧形的绿色极光",
+      "suitesSummer": "盛夏时节，基尔皮斯耶尔维上方萨纳山阳光照耀下的白桦林坡",
+      "midnightSun": "7月23日23:02，挪威北部塔纳一座宁静的山丘湖泊上空的午夜太阳，与乌茨约基隔着泰诺河谷相距约20公里",
+      "villas": "从床上望去，精选套房之一的玻璃屋顶上方的极光",
+      "experiences": "繁星之夜，一排黑色树影上方的绿色极光"
+    }
   },
   tier: {
     signature: '臻选',

@@ -69,7 +69,20 @@ const sv: SiteCopy = {
     "nellim": "Byn Nellim vid Enaresjöns strand, inte hotellet självt",
     "nellimLake": "Norrskenet över Enare träsk, inte hotellet självt",
     "heroSummer": "En timmerstuga på en klippig udde vid en stilla, dimmig sjö i låg sol, med en hög tall bredvid",
-    "heroWinter": "Arctic TreeHouse Hotels sviter med glasfasad på pålar bland snöiga tallar i Rovaniemi"
+    "heroWinter": "Arctic TreeHouse Hotels sviter med glasfasad på pålar bland snöiga tallar i Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "En snötyngd gran på en fjälltopp i skymningen, ljus i den dimmiga dalen nedanför",
+      "aboutSummer": "Lövade björkar ovanför Kilpisjärvi, med snöfläckar kvar på fjällen på andra sidan sjön",
+      "destinationsWinter": "Pallastunturi i rosa ljus en februarimorgon, inramat av rimfrostiga granar, med en liten stuga vid foten",
+      "destinationsSummer": "Kilpisjärvi mitt i sommaren, med Norges fjäll på andra stranden",
+      "inquiryWinter": "Den frusna sjön Jerisjärvi i mars, med det skogklädda fjället Haltioletto bakom",
+      "inquirySummer": "Midnattssolskväll vid Tana älv i Nuorgam",
+      "suitesWinter": "En grön norrskensbåge över det frusna Enare träsk en kväll i mars",
+      "suitesSummer": "Solbelyst björksluttning på fjället Saana ovanför Kilpisjärvi mitt i sommaren",
+      "midnightSun": "Midnattssolen den 23 juli kl. 23.02 över en stilla fjällsjö i Tana i norra Norge, cirka 20 km från Utsjoki på andra sidan Tanadalen",
+      "villas": "Norrsken över glastaket i en svit i kollektionen, sett från sängen",
+      "experiences": "Grönt norrsken över en mörk trädrad en stjärnklar natt"
+    }
   },
   tier: {
     signature: 'Signature',

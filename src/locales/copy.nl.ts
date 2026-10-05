@@ -69,7 +69,20 @@ const nl: SiteCopy = {
     "nellim": "Het dorp Nellim aan de oever van het Inarimeer, niet het hotel zelf",
     "nellimLake": "Het noorderlicht boven het Inarimeer, niet het hotel zelf",
     "heroSummer": "Een blokhut op een rotsachtige landtong aan een stil, mistig meer in de laagstaande zon, met een hoge den ernaast",
-    "heroWinter": "Suites met glazen gevel van het Arctic TreeHouse Hotel op palen tussen besneeuwde dennen in Rovaniemi"
+    "heroWinter": "Suites met glazen gevel van het Arctic TreeHouse Hotel op palen tussen besneeuwde dennen in Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "Een met sneeuw beladen spar op een fjälltop in de schemering, lichtjes in het mistige dal beneden",
+      "aboutSummer": "Berken in blad boven het meer Kilpisjärvi, met nog sneeuwplekken op de fjälls aan de overkant",
+      "destinationsWinter": "De Pallastunturi in het roze licht van een februariochtend, omlijst door berijpte sparren, met een kleine hut aan de voet",
+      "destinationsSummer": "Het meer Kilpisjärvi midden in de zomer, met de fjälls van Noorwegen aan de overkant",
+      "inquiryWinter": "Het bevroren meer Jerisjärvi in maart, met de beboste fjäll Haltioletto erachter",
+      "inquirySummer": "Avond onder de middernachtzon aan de oever van de rivier de Teno in Nuorgam",
+      "suitesWinter": "Een groene noorderlichtboog boven het bevroren Inarimeer op een maartavond",
+      "suitesSummer": "Zonovergoten berkenhelling van de fjäll Saana boven Kilpisjärvi, midden in de zomer",
+      "midnightSun": "De middernachtzon om 23.02 uur op 23 juli boven een stil fjällmeer in Tana, in het noorden van Noorwegen, zo’n 20 km van Utsjoki aan de overkant van het Tenodal",
+      "villas": "Noorderlicht boven het glazen dak van een suite uit de collectie, gezien vanuit het bed",
+      "experiences": "Groen noorderlicht boven een donkere rij bomen in een sterrenheldere nacht"
+    }
   },
   tier: {
     signature: 'Signature',

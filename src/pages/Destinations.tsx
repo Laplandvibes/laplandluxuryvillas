@@ -39,10 +39,7 @@ export default function Destinations() {
         title={c.hero.destinations.title}
         lede={c.hero.destinations.lede}
         imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
-        imageAlt={seasonal(
-          'Pallastunturi fell in pink February morning light, framed by frosted spruce',
-          'Lake Kilpisjärvi at midsummer, the fells of Norway on the far shore',
-        )}
+        imageAlt={seasonal(c.photo.heroAlt.destinationsWinter, c.photo.heroAlt.destinationsSummer)}
         scrim={seasonal('default', 'strong')}
         credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />

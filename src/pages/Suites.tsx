@@ -47,10 +47,7 @@ export default function Suites() {
         title={c.hero.suites.title}
         lede={c.hero.suites.lede}
         imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
-        imageAlt={seasonal(
-          'Green aurora arching over frozen Lake Inari on a March evening',
-          'Sunlit birch slope of Saana fell above Kilpisjärvi at midsummer',
-        )}
+        imageAlt={seasonal(c.photo.heroAlt.suitesWinter, c.photo.heroAlt.suitesSummer)}
         scrim={seasonal('default', 'strong')}
         credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />

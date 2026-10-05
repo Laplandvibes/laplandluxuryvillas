@@ -129,10 +129,7 @@ export default function PrivateInquiry() {
         title={c.hero.inquiry.title}
         lede={c.hero.inquiry.lede}
         imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
-        imageAlt={seasonal(
-          'Frozen Lake Jerisjärvi below the forested fells of Pallas in March',
-          'Midnight-sun evening on the bank of the Teno river at Nuorgam',
-        )}
+        imageAlt={seasonal(c.photo.heroAlt.inquiryWinter, c.photo.heroAlt.inquirySummer)}
         scrim={seasonal('default', 'strong')}
         credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />

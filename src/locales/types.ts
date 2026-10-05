@@ -15,6 +15,20 @@ export type SiteCopy = {
     /** Kesäheron (summer-villa-lakeside) alt kaikilla kielillä; oli kovakoodattu englanti Home.tsx:ssä. */
     heroSummer: string
     heroWinter: string
+    /** Alasivujen heron alt kaikilla kielillä; oli kovakoodattua englantia sivuissa (5.10.2026). */
+    heroAlt: {
+      aboutWinter: string
+      aboutSummer: string
+      destinationsWinter: string
+      destinationsSummer: string
+      inquiryWinter: string
+      inquirySummer: string
+      suitesWinter: string
+      suitesSummer: string
+      midnightSun: string
+      villas: string
+      experiences: string
+    }
   }
   nav: {
     villas: string

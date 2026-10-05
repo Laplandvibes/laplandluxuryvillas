@@ -6,9 +6,12 @@ import type { FooterDict } from '../shared/Footer'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 
+// Nimet tulevat sivuston omasta copysta kaikilla 12 kielellä: About = navin linkki,
+// Contact = yhteystietosivun oma otsikko. Ennen nimet olivat vain en/fi/de ja muut
+// yhdeksän kieltä näkivät englannin.
 const FOOTER_EXTRA_LEGAL_DEFS = [
-  { key: 'about', enLabel: 'About', fiLabel: 'Tietoa', deLabel: 'Über uns', to: '/about' },
-  { key: 'contact', enLabel: 'Contact', fiLabel: 'Yhteystiedot', deLabel: 'Kontakt', to: '/contact' },
+  { key: 'about', to: '/about' },
+  { key: 'contact', to: '/contact' },
 ] as const
 
 const FI_DICT: FooterDict = {
@@ -105,7 +108,7 @@ function Footer() {
   const pillarLinks = c.footerPillars.map((p) => ({ name: p.name, href: to(p.href) }))
   const extraLegal = FOOTER_EXTRA_LEGAL_DEFS.map((d) => ({
     to: to(d.to),
-    label: lang === 'fi' ? d.fiLabel : lang === 'de' ? d.deLabel : d.enLabel,
+    label: d.key === 'about' ? c.nav.about : c.contactPage.eyebrow,
   }))
   const dict: FooterDict | undefined = lang === 'fi' ? FI_DICT : lang === 'de' ? DE_DICT : undefined
 

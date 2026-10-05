@@ -75,7 +75,20 @@ const de: SiteCopy = {
     "nellim": "Das Dorf Nellim am Ufer des Inarisees, nicht das Hotel selbst",
     "nellimLake": "Das Nordlicht über dem Inarisee, nicht das Hotel selbst",
     "heroSummer": "Eine Blockhütte auf einer felsigen Landzunge an einem stillen, dunstigen See im tiefen Sonnenlicht, daneben eine hohe Kiefer",
-    "heroWinter": "Verglaste Suiten des Arctic TreeHouse Hotel auf Stelzen zwischen verschneiten Kiefern in Rovaniemi"
+    "heroWinter": "Verglaste Suiten des Arctic TreeHouse Hotel auf Stelzen zwischen verschneiten Kiefern in Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "Eine schneebeladene Fichte auf einem Fjällgipfel in der Dämmerung, unten Lichter im nebligen Tal",
+      "aboutSummer": "Belaubte Birken über dem Kilpisjärvi, auf den Fjälls am anderen Ufer noch Schneeflecken",
+      "destinationsWinter": "Der Pallastunturi im rosa Licht eines Februarmorgens, eingerahmt von bereiften Fichten, an seinem Fuß eine kleine Hütte",
+      "destinationsSummer": "Der Kilpisjärvi im Hochsommer, am anderen Ufer die Fjälls Norwegens",
+      "inquiryWinter": "Der zugefrorene Jerisjärvi im März, dahinter das bewaldete Fjäll Haltioletto",
+      "inquirySummer": "Abend unter der Mitternachtssonne am Ufer des Teno in Nuorgam",
+      "suitesWinter": "Ein grüner Polarlichtbogen über dem zugefrorenen Inarisee an einem Märzabend",
+      "suitesSummer": "Sonnenbeschienener Birkenhang am Fjäll Saana über Kilpisjärvi im Hochsommer",
+      "midnightSun": "Die Mitternachtssonne am 23. Juli um 23:02 Uhr über einem stillen Fjällsee in Tana im Norden Norwegens, etwa 20 km von Utsjoki auf der anderen Seite des Tenotals",
+      "villas": "Polarlicht über dem Glasdach einer Suite der Kollektion, vom Bett aus gesehen",
+      "experiences": "Grünes Polarlicht über einer dunklen Baumreihe in sternklarer Nacht"
+    }
   },
   tier: {
     signature: 'Signature',
@@ -297,7 +310,7 @@ const de: SiteCopy = {
       { title: 'Die Architektur verändert ihren Charakter.', body: 'Die Glasdächer, die für die Polarlichter existieren, rahmen nun eine ununterbrochene Sonne. Oberlicht über dem Bett, Sonne auf dem See, kein Vorhang zu schließen, es gibt keine Nacht zum Verbergen.' },
       { title: 'Die Wildnis wird zugänglich.', body: 'Seen tauen, der boreale Wald öffnet sich, die Kanurouten erscheinen. Dieselbe Villa, die Sie im Februar per Schneemobil erreichten, ist nun eine fünfminütige Bootsfahrt vom Steg entfernt.' },
       { title: 'Dasselbe Haus, eine andere Jahreszeit.', body: 'Die Kollektion ist im Sommer dieselbe wie im Winter. Unter demselben Glasdach steht statt des Polarlichts eine Sonne, die nicht untergeht, die Seen sind offen und der Wald begehbar. Den Preis nennt die Buchungsseite des jeweiligen Hauses, der Saisonunterschied ist dort direkt ablesbar.' },
-      { title: 'Keine Schlangen, keine Nachbarn.', body: 'Lappland im Sommer sieht einen Bruchteil der Besucherdichte des Winters. Der Wildnispfad durch den Wald, der Aussichtspunkt vom Fjell, sie gehören praktisch Ihnen.' },
+      { title: 'Keine Schlangen, keine Nachbarn.', body: 'Lappland im Sommer sieht einen Bruchteil der Besucherdichte des Winters. Der Wildnispfad durch den Wald, der Aussichtspunkt vom Fjäll, sie gehören praktisch Ihnen.' },
     ],
     summerCollection: {
       eyebrow: 'Die Sommerkollektion',
@@ -306,7 +319,7 @@ const de: SiteCopy = {
       cards: [
         { title: 'Glasdach-Hütte im Grünen', copy: 'Die Polarlicht-Architektur im 23-Uhr-Goldlicht, umgeben von üppigem Wald statt Schnee.' },
         { title: 'Blockhaus-Gut am See', copy: 'Private Bucht am eisfreien Inari-See, Kanu am Steg, Rauch aus der holzbefeuerten Sauna.' },
-        { title: 'Designer-Chalet auf dem Fjell', copy: 'Wollgras und Wildblumen ersetzen die Skipiste, dieselbe Panorama-Glasfassade.' },
+        { title: 'Designer-Chalet auf dem Fjäll', copy: 'Wollgras und Wildblumen ersetzen die Skipiste, dieselbe Panorama-Glasfassade.' },
         { title: 'Moderne Waldvilla', copy: 'Auskragender Holzbau tief im grünen borealen Kiefernwald, goldene Mitternachtssonnen-Wärme an der Fassade.' },
       ],
     },

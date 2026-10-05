@@ -75,7 +75,7 @@ export default function Experiences() {
         imageUrl={HERO_CLIPS.experiences ? '/images/hero-experiences-poster.webp' : '/images/hero-experiences.webp'}
         videoUrl={HERO_CLIPS.experiences}
         scrim={HERO_CLIPS.experiences ? 'light' : 'default'}
-        imageAlt="Green aurora over a snowy Lapland landscape at night"
+        imageAlt={c.photo.heroAlt.experiences}
         credit={<PhotoCredit credit={creditFor(HERO_CLIPS.experiences ?? '')} />}
       />
 

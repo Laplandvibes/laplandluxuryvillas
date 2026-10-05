@@ -75,7 +75,20 @@ const en: SiteCopy = {
     "nellim": "Nellim village on the shore of Lake Inari, not the hotel itself",
     "nellimLake": "The aurora over Lake Inari, not the hotel itself",
     "heroSummer": "A log cabin on a rocky point of a still, misty lake in low sun, a tall pine beside it",
-    "heroWinter": "Glass-fronted suites of Arctic TreeHouse Hotel on stilts among snowy pines in Rovaniemi"
+    "heroWinter": "Glass-fronted suites of Arctic TreeHouse Hotel on stilts among snowy pines in Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "A snow-loaded spruce on a fell top at dusk, lights in the misty valley below",
+      "aboutSummer": "Birches in leaf above Lake Kilpisjärvi, snow patches still on the fells across the water",
+      "destinationsWinter": "Pallastunturi fell in pink February morning light, framed by frosted spruce, a small hut at its foot",
+      "destinationsSummer": "Lake Kilpisjärvi at midsummer, the fells of Norway on the far shore",
+      "inquiryWinter": "Frozen Lake Jerisjärvi in March, the forested Haltioletto fell behind it",
+      "inquirySummer": "Midnight-sun evening on the bank of the Teno river at Nuorgam",
+      "suitesWinter": "Green aurora arching over frozen Lake Inari on a March evening",
+      "suitesSummer": "Sunlit birch slope of Saana fell above Kilpisjärvi at midsummer",
+      "midnightSun": "The midnight sun at 23:02 on 23 July over a still fell lake in Tana, northern Norway, about 20 km from Utsjoki across the Teno valley",
+      "villas": "Aurora over the glass roof of a suite in the collection, seen from the bed",
+      "experiences": "Green aurora over a dark treeline on a starry night"
+    }
   },
   tier: {
     signature: 'Signature',

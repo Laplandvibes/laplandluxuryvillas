@@ -39,10 +39,7 @@ export default function About() {
         title={c.hero.about.title}
         lede={withCounts(c.hero.about.lede, lang)}
         imageUrl={seasonal(HERO_WINTER, HERO_SUMMER)}
-        imageAlt={seasonal(
-          'A snow-loaded spruce on a fell top at dusk, village lights in the valley below',
-          'Birches in leaf above Lake Kilpisjärvi, snow patches still on the fells across the water',
-        )}
+        imageAlt={seasonal(c.photo.heroAlt.aboutWinter, c.photo.heroAlt.aboutSummer)}
         scrim={seasonal('default', 'strong')}
         credit={<PhotoCredit credit={creditFor(seasonal(HERO_WINTER, HERO_SUMMER))} />}
       />

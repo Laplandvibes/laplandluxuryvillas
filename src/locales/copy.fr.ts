@@ -76,7 +76,20 @@ const fr: SiteCopy = {
     "nellim": "Le village de Nellim au bord du lac Inari, et non l’hôtel lui-même",
     "nellimLake": "L’aurore au-dessus du lac Inari, pas l’hôtel lui-même",
     "heroSummer": "Un chalet en rondins sur une pointe rocheuse d’un lac calme et brumeux, sous un soleil bas, avec un grand pin à côté",
-    "heroWinter": "Suites vitrées de l’Arctic TreeHouse Hotel sur pilotis, parmi les pins enneigés de Rovaniemi"
+    "heroWinter": "Suites vitrées de l’Arctic TreeHouse Hotel sur pilotis, parmi les pins enneigés de Rovaniemi",
+    "heroAlt": {
+      "aboutWinter": "Un épicéa chargé de neige au sommet d’un fjäll au crépuscule, des lumières dans la vallée brumeuse en contrebas",
+      "aboutSummer": "Des bouleaux en feuilles au-dessus du lac Kilpisjärvi, quelques plaques de neige encore sur les fjälls d’en face",
+      "destinationsWinter": "Le Pallastunturi dans la lumière rose d’un matin de février, encadré d’épicéas givrés, une petite cabane à son pied",
+      "destinationsSummer": "Le lac Kilpisjärvi au cœur de l’été, les fjälls de Norvège sur l’autre rive",
+      "inquiryWinter": "Le lac Jerisjärvi gelé en mars, avec derrière lui le fjäll boisé de Haltioletto",
+      "inquirySummer": "Soirée de soleil de minuit au bord du fleuve Teno, à Nuorgam",
+      "suitesWinter": "Un arc d’aurore boréale verte au-dessus du lac Inari gelé, un soir de mars",
+      "suitesSummer": "Pente de bouleaux ensoleillée sur le fjäll Saana, au-dessus de Kilpisjärvi, au cœur de l’été",
+      "midnightSun": "Le soleil de minuit à 23 h 02 le 23 juillet, au-dessus d’un lac de fjäll paisible à Tana, dans le nord de la Norvège, à environ 20 km d’Utsjoki de l’autre côté de la vallée du Teno",
+      "villas": "Aurore boréale au-dessus du toit de verre d’une suite de la collection, vue depuis le lit",
+      "experiences": "Aurore boréale verte au-dessus d’une rangée d’arbres sombres, par une nuit étoilée"
+    }
   },
   tier: {
     signature: 'Signature',
