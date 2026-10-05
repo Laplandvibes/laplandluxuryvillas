@@ -37,9 +37,9 @@ import { useLang, type Lang } from '../i18n/useLang'
 /**
  * Nimi ja kuvaus jokaisella sivuston kielellä, kuten sivuston muu copy
  * (`Record<Lang, …>`): puuttuva kieli kaatuu tyyppitarkistukseen eikä
- * putoa englantiin. Tuotenimet laplandgiftsin tuotesivun omassa asussa,
- * paitsi pt-BR/ja/zh, joissa gifts käyttää lapp-kantaista sanaa
- * (lapã, ラップナイフ, 拉普刀; GLOSSARY Banned alternates).
+ * putoa englantiin. Tuotenimet laplandgiftsin tuotesivun omassa asussa
+ * kaikilla kielillä. pt-BR/ja/zh olivat täällä ensin oikein: giftsin
+ * lapp-kantaiset nimet korjattiin samoiksi 5.10.2026 (GLOSSARY Banned alternates).
  */
 interface Obj {
   slug: string
