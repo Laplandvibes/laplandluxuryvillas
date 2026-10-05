@@ -21,6 +21,8 @@ import { villasByDestination } from '../lib/villas'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getDestinationTitleSuffix } from '../lib/pageSeo'
+import { destinationTitle, destinationDescription } from '../lib/detailMeta.mjs'
+import { ownCopy } from '../lib/villaI18n'
 
 export default function DestinationPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -42,9 +44,16 @@ export default function DestinationPage() {
 
   return (
     <Page>
+      {/* Title and description from the composer the prerender generator uses too
+          (detailMeta.mjs), so the static HTML and the hydrated page say the same. */}
       <SEO
-        title={`${dest.name} · ${getDestinationTitleSuffix(lang)}`}
-        description={`${dest.position} ${dest.auroraNote}`}
+        title={destinationTitle(dest.name, getDestinationTitleSuffix(lang))}
+        description={destinationDescription({
+          position: dest.position,
+          auroraNote: dest.auroraNote,
+          more: ownCopy('destinations', dest.slug, lang, dest.copy),
+          lang,
+        })}
         canonicalPath={`/destinations/${dest.slug}`}
         keywords={[dest.name, `${dest.name} luxury villa`, `${dest.name} aurora`, 'lapland luxury accommodation']}
         jsonLd={[

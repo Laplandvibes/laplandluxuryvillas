@@ -9,12 +9,10 @@
 //      <title>/<meta> are identical to the client render, in every locale.
 //
 //   2. DYNAMIC detail pages — /villas/:slug and /destinations/:slug — whose meta
-//      is built at RUNTIME from per-locale data (lib/villas.ts + lib/destinations.ts
-//      base, overlaid by lib/content.<lang>.ts). We replicate the runtime contract:
-//        villa:  title = `${name} — ${destination} | LaplandLuxuryVillas`   (proper nouns)
-//                desc  = villa.tagline                              (localized, EN fallback)
-//        dest:   title = `${name} — <localized suffix>`            (suffix from seo-meta.json)
-//                desc  = `${position} ${auroraNote}`               (localized, EN fallback)
+//      is built from per-locale data (lib/villas.ts + lib/destinations.ts base,
+//      overlaid by lib/content.<lang>.ts) with the SAME composer the pages call in
+//      the browser: src/lib/villaTitle.mjs (villa title) and src/lib/detailMeta.mjs
+//      (destination title, both descriptions). Only the data reading lives here.
 //
 // Legal pages (/privacy /terms /cookie-policy) are STATIC pages too: their
 // per-locale meta lives in seo-meta.json like every other static page (2026-08-03;
@@ -29,6 +27,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { villaTitle, villaBrandTitle } from '../src/lib/villaTitle.mjs';
+import { destinationTitle, destinationDescription, villaDescription, ownParagraphs, inWindow } from '../src/lib/detailMeta.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -66,9 +65,27 @@ function field(block, key) {
   const m = block.match(new RegExp(`(?:^|[\\s,{])${key}\\s*:\\s*(['"\`])((?:\\\\.|(?!\\1).)*)\\1`, 's'));
   return m ? unescape(m[2]) : null;
 }
+// String-literal array field (`copy: ['…', '…']`): the page's own paragraphs, which the
+// description composer may extend a short description with.
+function arrayField(block, key) {
+  const m = new RegExp(`(?:^|[\\s,{])${key}\\s*:\\s*\\[`, 's').exec(block);
+  if (!m) return null;
+  const open = m.index + m[0].length - 1;
+  let quote = null, end = -1;
+  for (let i = open + 1; i < block.length; i++) {
+    const c = block[i];
+    if (quote) {
+      if (c === '\\') i++;
+      else if (c === quote) quote = null;
+    } else if (c === "'" || c === '"' || c === '`') quote = c;
+    else if (c === ']') { end = i; break; }
+  }
+  if (end < 0) return null;
+  return [...block.slice(open + 1, end).matchAll(/(['"`])((?:\\.|(?!\1).)*)\1/gs)].map((x) => unescape(x[2]));
+}
 
 // ---- base data: scope each object by its leading `slug:` ----
-function parseBase(file, fields) {
+function parseBase(file, fields, arrays = []) {
   const src = readFileSync(join(LIB, file), 'utf-8');
   const out = {};
   const re = /slug:\s*(['"`])([a-z0-9-]+)\1/g;
@@ -87,14 +104,15 @@ function parseBase(file, fields) {
     if (!block) continue;
     const rec = {};
     for (const f of fields) rec[f] = field(block, f);
+    for (const a of arrays) rec[a] = arrayField(block, a);
     // Require the discriminating field to consider it a real entity (skip nested objs).
     if (rec[fields[0]] && !out[slug]) out[slug] = rec;
   }
   return out;
 }
 
-// ---- overlay: content.<lang>.ts → { villas:{slug:{tagline}}, destinations:{slug:{position,auroraNote}} } ----
-function parseOverlay(file, section, fields) {
+// ---- overlay: content.<lang>.ts → { villas:{slug:{tagline,copy}}, destinations:{slug:{position,auroraNote,copy}} } ----
+function parseOverlay(file, section, fields, arrays = []) {
   let src;
   try { src = readFileSync(join(LIB, file), 'utf-8'); } catch { return {}; }
   // Isolate the `<section>: { … }` block, then read each `'<slug>': { … }` inside.
@@ -112,34 +130,10 @@ function parseOverlay(file, section, fields) {
     if (!block) continue;
     const rec = {};
     for (const f of fields) rec[f] = field(block, f);
+    for (const a of arrays) rec[a] = arrayField(block, a);
     if (!out[slug]) out[slug] = rec;
   }
   return out;
-}
-
-function trimDesc(s, max = 160) {
-  const t = String(s).replace(/\s+/g, ' ').trim();
-  if ([...t].length <= max) return t;
-  // 🔴 Ellipsi tuloslistalla kertoo etta teksti loppui kesken. Mitattu
-  // metaportilla 1.9.2026: 5 hollanninkielista kuvausta paattyi ellipsiin, ja
-  // hollannin CTR on verkoston heikoin. Kokonainen ajatus voittaa pidemman
-  // katkennaneen — ota niin monta KOKONAISTA VIRKETTA kuin budjettiin mahtuu.
-  const virkkeet = t.match(/[^.!?]+[.!?]+/g) || [];
-  let kertyy = '';
-  for (const v of virkkeet) {
-    // v alkaa valilyonnilla (regex ottaa sen mukaan) ⇒ trimmaa ennen liitosta,
-    // muuten virkkeiden valiin jaa kaksoisvalilyonti.
-    const ehdokas = (kertyy ? kertyy + ' ' + v.trim() : v.trim());
-    if ([...ehdokas].length > max) break;
-    kertyy = ehdokas;
-  }
-  kertyy = kertyy.trim();
-  if ([...kertyy].length >= 50) return kertyy;
-  const chars = [...t];
-  let cut = chars.slice(0, max - 2).join('');
-  const sp = cut.lastIndexOf(' ');
-  if (sp > max * 0.6) cut = cut.slice(0, sp);
-  return cut.replace(/[\s,;:–—-]+$/, '') + '…';
 }
 
 // ---- static pages from seo-meta.json ----
@@ -178,7 +172,7 @@ for (const [key, route] of Object.entries(STATIC_ROUTE_OF_KEY)) {
 }
 
 // ---- dynamic: villas ----
-const villaBase = parseBase('villas.ts', ['name', 'destination', 'tagline']); // slug → {name,destination,tagline(EN)}
+const villaBase = parseBase('villas.ts', ['name', 'destination', 'tagline'], ['copy']); // slug → {name,destination,tagline,copy (EN)}
 
 // 🔴 [LV-BRAND-TITLE 2026-09-20] The prerendered <title> is the one a crawler
 // reads, so it has to agree with VillaDetail.tsx: the hotel's registered name
@@ -190,7 +184,7 @@ const slugToProp = Object.fromEntries([...propsSrc.matchAll(/'([a-z0-9-]+)':\s*'
 const hotelFor = (slug) => propNames[slugToProp[slug]] || null;
 const villaOverlays = {};
 for (const [lang, file] of Object.entries(CONTENT_FILE)) {
-  villaOverlays[lang] = parseOverlay(file, 'villas', ['tagline']);
+  villaOverlays[lang] = parseOverlay(file, 'villas', ['tagline'], ['copy']);
 }
 for (const [slug, b] of Object.entries(villaBase)) {
   const path = `/villas/${slug}`;
@@ -200,33 +194,51 @@ for (const [slug, b] of Object.entries(villaBase)) {
     // [LV-BRAND-TITLE 2026-09-20] hotel name first where there is one.
     const hotel = hotelFor(slug);
     const title = hotel ? villaBrandTitle(b.name, hotel, b.destination, lang) : villaTitle(b.name, b.destination, lang);
-    const ovTag = lang === 'en' ? null : villaOverlays[lang]?.[slug]?.tagline;
-    const description = trimDesc(hotel ? `${hotel}, ${b.destination}. ${ovTag || b.tagline}` : (ovTag || b.tagline));
+    const ov = lang === 'en' ? null : villaOverlays[lang]?.[slug];
+    const description = villaDescription({
+      hotel,
+      destination: b.destination,
+      tagline: (ov && ov.tagline) || b.tagline,
+      more: ownParagraphs(lang, b.copy, ov?.copy),
+      lang,
+    });
     meta[path][lang] = { title, description };
   }
 }
 
 // ---- dynamic: destinations ----
-const destBase = parseBase('destinations.ts', ['name', 'position', 'auroraNote']);
+const destBase = parseBase('destinations.ts', ['name', 'position', 'auroraNote'], ['copy']);
 const destOverlays = {};
 for (const [lang, file] of Object.entries(CONTENT_FILE)) {
-  destOverlays[lang] = parseOverlay(file, 'destinations', ['position', 'auroraNote']);
+  destOverlays[lang] = parseOverlay(file, 'destinations', ['position', 'auroraNote'], ['copy']);
 }
 for (const [slug, b] of Object.entries(destBase)) {
   const path = `/destinations/${slug}`;
   meta[path] = {};
   for (const lang of LANGS) {
     const ov = lang === 'en' ? null : destOverlays[lang]?.[slug];
-    const position = (ov && ov.position) || b.position;
-    const auroraNote = (ov && ov.auroraNote) || b.auroraNote;
-    const suffix = destSuffix[lang] || destSuffix.en || 'Lapland: Private Villas, Suites & Aurora';
-    const title = `${b.name}: ${suffix}`;
-    // [LV-CJK-JOIN 2026-09-25] ja/zh eivat valista virkkeita: taysleveän 。！？
-    // jalkeen ei valilyontia (live /cn/destinations/inari: "…暗夜星空。 我们最北…").
-    // Korea ja latinalaiset kielet valistavat, joten ne pitavat valilyonnin.
-    const liitos = /^(ja|zh)/.test(lang) && /[。！？]$/.test(String(position).trim()) ? '' : ' ';
-    const description = trimDesc(`${position}${liitos}${auroraNote}`);
-    meta[path][lang] = { title, description };
+    // Same lookup as getDestinationTitleSuffix() in src/lib/pageSeo.ts.
+    const suffix = destSuffix[lang] ?? destSuffix.en ?? 'Lapland · Private Villas, Suites & Aurora';
+    meta[path][lang] = {
+      title: destinationTitle(b.name, suffix),
+      description: destinationDescription({
+        position: (ov && ov.position) || b.position,
+        auroraNote: (ov && ov.auroraNote) || b.auroraNote,
+        more: ownParagraphs(lang, b.copy, ov?.copy),
+        lang,
+      }),
+    };
+  }
+}
+
+// The prerenderer extends a description under 70 characters / 100 width units and cuts
+// one over 160 / 200, and the browser does neither: the text below would differ between
+// the static HTML and the hydrated page (gate:meta-hydraatio in lv-ops).
+for (const [route, byLang] of Object.entries(meta)) {
+  for (const [lang, e] of Object.entries(byLang)) {
+    if (!inWindow(e.description)) {
+      console.warn(`[gen-meta] WARN: ${lang} ${route} description outside 70-160 characters / 100-200 width units, the prerender will rewrite it: ${e.description}`);
+    }
   }
 }
 

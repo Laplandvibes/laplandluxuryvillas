@@ -35,9 +35,9 @@ export function getPageSeo(page: PageKey, lang: Lang): Entry {
 const DEST_SUFFIX = (seoMeta as unknown as { _destinationTitleSuffix?: Record<string, string> })
   ._destinationTitleSuffix
 
-/** Localized descriptive suffix for a /destinations/:slug <title>:
- *  `${dest.name} — ${getDestinationTitleSuffix(lang)}`. Used by DestinationPage.tsx
- *  AND the prerender generator, so the static and client titles match per locale. */
+/** Localized descriptive suffix for a /destinations/:slug <title>, composed by
+ *  destinationTitle() in detailMeta.mjs. scripts/generate-prerender-meta.mjs reads the
+ *  same seo-meta.json key with the same fallback, so the static and client titles match. */
 export function getDestinationTitleSuffix(lang: Lang): string {
   if (!DEST_SUFFIX) return 'Lapland · Private Villas, Suites & Aurora'
   return DEST_SUFFIX[lang] ?? DEST_SUFFIX.en

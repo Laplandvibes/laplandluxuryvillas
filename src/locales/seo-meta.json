@@ -1,5 +1,5 @@
 {
-  "_note": "Per-page SEO title/description for static pages, 11 langs. Single source of truth: imported at runtime by page components (SEO.tsx) AND read by scripts/generate-prerender-meta.mjs so prerendered first-byte HTML === client render. Titles <=62 chars (Latin), descriptions 70-165. No brand suffix since 2026-09-22 (Vesa: the domain already shows it): SEO.tsx uses the title as is. No fake stats, no banned adjectives (stunning/breathtaking/world-class).",
+  "_note": "Per-page SEO title/description for static pages, 11 langs. Single source of truth: imported at runtime by page components (SEO.tsx) AND read by scripts/generate-prerender-meta.mjs so prerendered first-byte HTML === client render. Titles <=62 chars (Latin), descriptions 70-160 characters or 100-200 width units (a CJK character counts as two), the window the prerender leaves untouched. No brand suffix since 2026-09-22 (Vesa: the domain already shows it): SEO.tsx uses the title as is. No fake stats, no banned adjectives (stunning/breathtaking/world-class).",
   "_destinationTitleSuffix": {
     "en": "Lapland · Private Villas, Suites & Aurora",
     "fi": "Lappi · yksityishuvilat, sviitit ja revontulet",
@@ -91,7 +91,7 @@
     },
     "zh-CN": {
       "title": "精选臻藏，拉普兰奢华别墅与玻璃小屋",
-      "description": "芬兰拉普兰私人别墅的精短臻选：玻璃冰屋、设计师套房，以及一处湖畔居所。五个目的地，共八栋。"
+      "description": "芬兰拉普兰私人别墅的精短臻选：玻璃冰屋、设计师套房，以及一处湖畔居所。五个目的地，共八栋。是八间客房，不是八家酒店。"
     },
     "ko": {
       "title": "컬렉션, 라플란드 럭셔리 빌라 & 글라스 캐빈",
@@ -217,51 +217,51 @@
   "experiences": {
     "en": {
       "title": "Bespoke Lapland Experiences · Aurora, Husky, Chef",
-      "description": "Private Lapland experiences: aurora photography, snowmobile crossings, in-villa chef tastings, husky safaris and private-jet arrival. Run by each operator."
+      "description": "Private Lapland tours you can book: aurora hunts, snowmobile and reindeer safaris, an icebreaker cruise and Santa at your villa. Run by each operator."
     },
     "fi": {
       "title": "Räätälöidyt Lappi-elämykset · revontulet, husky",
-      "description": "Yksityisiä Lappi-elämyksiä: revontulikuvaus, moottorikelkkaretket, yksityiskokin maistelut huvilalla, eksklusiiviset huskysafarit ja saapuminen yksityiskoneella."
+      "description": "Varattavia yksityisretkiä Lapissa: revontulijahdit, kelkka- ja porosafarit, jäänmurtajaristeily ja joulupukki huvilalla. Järjestäjinä ohjelmapalveluyritykset."
     },
     "de": {
       "title": "Maßgeschneiderte Lappland-Erlebnisse · Polarlicht & mehr",
-      "description": "Private Lappland-Erlebnisse: Polarlichtfotografie, Schneemobiltouren, Privatkoch in der Villa, Husky-Safaris, Privatjet-Anreise. Vom Anbieter durchgeführt."
+      "description": "Buchbare Privattouren in Lappland: Polarlichtjagd, Schneemobil- und Rentiersafaris, Eisbrecherfahrt und Weihnachtsmann in der Villa. Vom Anbieter durchgeführt."
     },
     "ja": {
       "title": "オーダーメイドのラップランド体験｜オーロラ・ハスキー・シェフ",
-      "description": "ラップランドのプライベート体験の短いリスト：オーロラ撮影、スノーモービルツアー、ヴィラ内シェフの饗宴、限定ハスキーサファリ、プライベートジェットでの到着。運営は各社。"
+      "description": "予約できるラップランドのプライベートツアー：オーロラハンティング、スノーモービルとトナカイのサファリ、砕氷船クルーズ、ヴィラへのサンタ訪問。運営は各社。"
     },
     "es": {
       "title": "Experiencias a medida en Laponia · aurora, husky",
-      "description": "Experiencias privadas en Laponia: fotografía de auroras, rutas en motonieve, cenas con chef en la villa, safaris con huskies y llegada en jet privado."
+      "description": "Excursiones privadas en Laponia: caza de auroras, motonieve y renos, crucero en rompehielos y Papá Noel en la villa. Cada una la organiza su operador."
     },
     "pt-BR": {
       "title": "Experiências sob medida na Lapônia · aurora, husky",
-      "description": "Experiências privadas na Lapônia: fotografia de auroras, passeios de snowmobile, jantares com chef na vila, safáris com huskies e chegada de jato privado."
+      "description": "Passeios privativos na Lapônia: caça à aurora, snowmobile e renas, cruzeiro em quebra-gelo e Papai Noel na vila. Cada um é conduzido pelo próprio operador."
     },
     "zh-CN": {
       "title": "定制拉普兰体验，极光、哈士奇、私厨",
-      "description": "拉普兰私人体验精选：极光摄影、雪地摩托穿越、别墅内私厨品鉴、专属哈士奇雪橇之旅与私人飞机抵达。均由各自的运营方提供。"
+      "description": "可预订的拉普兰私人行程：追逐极光、雪地摩托与驯鹿之旅、破冰船巡游，以及圣诞老人到访别墅。均由各自的运营方提供。"
     },
     "ko": {
       "title": "맞춤형 라플란드 경험 · 오로라, 허스키, 셰프",
-      "description": "프라이빗 라플란드 경험을 엄선: 오로라 촬영, 스노모빌 투어, 빌라 내 셰프 시식, 독점 허스키 사파리, 프라이빗 제트 도착. 각 운영사가 진행합니다."
+      "description": "예약 가능한 라플란드 프라이빗 투어: 오로라 헌팅, 스노모빌과 순록 사파리, 쇄빙선 크루즈, 빌라로 찾아오는 산타. 각 운영사가 진행합니다."
     },
     "fr": {
       "title": "Expériences sur mesure, aurore, husky, chef",
-      "description": "Expériences privées en Laponie : photographie d'aurores, randonnées en motoneige, dégustations d'un chef en villa, safaris husky exclusifs, arrivée en jet privé."
+      "description": "Excursions privées en Laponie : chasse aux aurores, motoneige et rennes, croisière en brise-glace et père Noël à la villa. Chacune assurée par son organisateur."
     },
     "it": {
       "title": "Esperienze su misura, aurora, husky, chef",
-      "description": "Esperienze private in Lapponia: fotografia delle aurore, escursioni in motoslitta, degustazioni con chef in villa, safari husky esclusivi e arrivo in jet privato."
+      "description": "Escursioni private in Lapponia: caccia all’aurora, motoslitta e renne, crociera in rompighiaccio e Babbo Natale in villa. Ognuna gestita dal proprio operatore."
     },
     "nl": {
       "title": "Lapland-ervaringen op maat · noorderlicht, husky, chef",
-      "description": "Privé-ervaringen in Lapland: noorderlichtfotografie, sneeuwscootertochten, chef-proeverijen in de villa, exclusieve huskysafari's en aankomst per privéjet."
+      "description": "Privétochten in Lapland: noorderlichtjacht, sneeuwscooter- en rendiersafari's, ijsbrekercruise en de kerstman in de villa. Uitgevoerd door de aanbieder zelf."
     },
     "sv": {
       "title": "Skräddarsydda Lapplandsupplevelser · norrsken, chef",
-      "description": "Privata Lapplandsupplevelser: norrskensfotografering, skotersafarier, privatkock i villan, exklusiva hundspannssafarier och ankomst med privatjet."
+      "description": "Privata turer i Lappland att boka: norrskensjakt, skoter- och rensafarier, en isbrytarkryssning och tomten i villan. Varje tur drivs av sin egen arrangör."
     }
   },
   "midnight-sun": {
@@ -479,7 +479,7 @@
     },
     "ja": {
       "title": "利用規約",
-      "description": "laplandluxuryvillas.comの利用に適用される規約。フィンランドのLaPeso Oyが運営しています。"
+      "description": "laplandluxuryvillas.comの利用に適用される規約。フィンランドのLaPeso Oyが運営しています。本ウェブサイトをご利用いただくには、本規約に同意していただく必要があります。"
     },
     "es": {
       "title": "Términos de servicio",
@@ -491,11 +491,11 @@
     },
     "zh-CN": {
       "title": "服务条款",
-      "description": "适用于 laplandluxuryvillas.com 使用的条款。由芬兰的 LaPeso Oy 运营。"
+      "description": "适用于 laplandluxuryvillas.com 使用的条款。由芬兰的 LaPeso Oy 运营。访问或使用本网站，即表示您同意本条款。"
     },
     "ko": {
       "title": "이용약관",
-      "description": "laplandluxuryvillas.com 이용에 적용되는 약관. 핀란드의 LaPeso Oy가 운영합니다."
+      "description": "laplandluxuryvillas.com 이용에 적용되는 약관. 핀란드의 LaPeso Oy가 운영합니다. 본 웹사이트에 접속하거나 이용하시는 것은 본 약관에 동의하시는 것입니다."
     },
     "fr": {
       "title": "Conditions d'utilisation",

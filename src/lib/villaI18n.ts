@@ -5,6 +5,7 @@ import type { Villa } from './villas'
 import type { Destination } from './destinations'
 import type { Experience } from './experiences'
 import type { Lang } from './affiliate'
+import { ownParagraphs } from './detailMeta.mjs'
 
 type VillaOv = Partial<Pick<Villa, 'tagline' | 'copy' | 'signature'>>
 type DestOv = Partial<Pick<Destination, 'position' | 'copy' | 'highlights' | 'arrival' | 'auroraNote'>>
@@ -62,6 +63,16 @@ export function overlayDestination(d: Destination, lang: Lang): Destination {
     arrival: o.arrival ?? d.arrival,
     auroraNote: o.auroraNote ?? d.auroraNote,
   }
+}
+
+/**
+ * A villa's or destination's own copy paragraphs in `lang` (ownParagraphs in detailMeta.mjs),
+ * never the English base on another language. The meta description composer extends a short
+ * description with them, and scripts/generate-prerender-meta.mjs passes the same overlay
+ * through the same function, so the static HTML and the browser use the same sentences.
+ */
+export function ownCopy(kind: 'villas' | 'destinations', slug: string, lang: Lang, base: readonly string[]): readonly string[] {
+  return ownParagraphs(lang, base, OVERLAYS[lang]?.[kind]?.[slug]?.copy)
 }
 
 export function overlayExperience(e: Experience, lang: Lang): Experience {

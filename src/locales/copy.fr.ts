@@ -354,7 +354,7 @@ const fr: SiteCopy = {
   },
   contactPage: {
     seoTitle: 'Contactez-nous',
-    seoDescription: 'Une seule boîte privée : private@laplandvibes.com. Exploitée par LaPeso Oy depuis la Laponie finlandaise. Contacts presse, partenariats et accords directs ci-dessous.',
+    seoDescription: 'Une seule boîte privée : private@laplandvibes.com. Exploitée par LaPeso Oy depuis la Laponie finlandaise.',
     eyebrow: 'Contact',
     h1: 'Une seule boîte, un seul opérateur.',
     cards: {

@@ -354,7 +354,7 @@ const it: SiteCopy = {
   },
   contactPage: {
     seoTitle: 'Contatti',
-    seoDescription: 'Un’unica casella privata: private@laplandvibes.com. Gestita da LaPeso Oy dalla Lapponia finlandese. Contatti per stampa, partnership e accordi diretti qui sotto.',
+    seoDescription: 'Un’unica casella privata: private@laplandvibes.com. Gestita da LaPeso Oy dalla Lapponia finlandese.',
     eyebrow: 'Contatti',
     h1: 'Una casella, un operatore.',
     cards: {

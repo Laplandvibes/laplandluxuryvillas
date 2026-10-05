@@ -12,6 +12,8 @@ import { formatRate, ratePriceRange } from '../lib/rate'
 import { destinationBySlug } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { villaBrandTitle } from '../lib/villaTitle.mjs'
+import { villaDescription } from '../lib/detailMeta.mjs'
+import { ownCopy } from '../lib/villaI18n'
 import { COPY } from '../locales/copy'
 import PhotoCredit from '../components/PhotoCredit'
 import { creditFor } from '../data/photoCredits'
@@ -41,10 +43,17 @@ export default function VillaDetail() {
       {/* 🔴 The hotel's own registered name leads the title, because that is
           what people search (LV-BRAND-TITLE, measured 20.9.2026 across all
           twelve markets). The description opens with the property and the
-          place, then the room. Resolved once, above the markup. */}
+          place, then the room. Resolved once, above the markup. The description
+          comes from detailMeta.mjs, the composer the prerender generator uses too. */}
       <SEO
         title={villaBrandTitle(villa.name, hotel?.name, villa.destination, lang)}
-        description={hotel ? `${hotel.name}, ${villa.destination}. ${villa.tagline}` : villa.tagline}
+        description={villaDescription({
+          hotel: hotel?.name,
+          destination: villa.destination,
+          tagline: villa.tagline,
+          more: ownCopy('villas', villa.slug, lang, villa.copy),
+          lang,
+        })}
         canonicalPath={`/villas/${villa.slug}`}
         keywords={[villa.name, villa.destination, 'lapland villa', c.category[villa.category]]}
         jsonLd={[
