@@ -407,7 +407,11 @@ async function main() {
         rejected.push(`"${candName}" matched but Google returned no rating`);
         continue;
       }
-      if (p.businessStatus && p.businessStatus !== 'OPERATIONAL') {
+      // CLOSED_TEMPORARILY is accepted on purpose (Vesa 2026-10-06: "kesällä monet paikat on kiinni
+      // ja avaa vasta marraskuussa"). Google flags a Lapland business's off-season pause as a temporary
+      // closure; the rating is still that business's. Only a permanent closure (or any other
+      // non-operational status) is grounds for dropping the match. Same rule as laplandstays sync-stays.mjs.
+      if (p.businessStatus && p.businessStatus !== 'OPERATIONAL' && p.businessStatus !== 'CLOSED_TEMPORARILY') {
         rejected.push(`"${candName}" businessStatus=${p.businessStatus}`);
         continue;
       }
