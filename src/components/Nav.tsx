@@ -40,6 +40,13 @@ const NEWS_LABEL: Record<string, string> = {
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  // LV-VALIKKO-VAAKA (8.10.2026): Escape sulkee mobiilivalikon.
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [open])
   const lang = useLang()
   const to = useLocalePath()
   const location = useLocation()
@@ -213,9 +220,12 @@ export default function Nav() {
         </div>
       </nav>
 
+      {/* LV-VALIKKO-VAAKA (8.10.2026): laatikko oli navin sisällä ilman korkeusrajaa, joten vaakapuhelimessa
+          4/8 linkkiä jäi ruudun ulkopuolelle. Nyt enintään näkyvän ruudun korkuinen (rivi md:ssä 80 px) ja
+          vierittyvä, ≥ 640 px linkit palstoina; z-[45] verkostovalikon vihjeen (z 40) yli. */}
       {open && (
-        <div className="min-[1360px]:hidden bg-[color:var(--color-deep-night)] border-t border-[color:var(--color-mist)]/60">
-          <ul className="px-5 sm:px-7 py-6 space-y-1">
+        <div className="min-[1360px]:hidden bg-[color:var(--color-deep-night)] border-t border-[color:var(--color-mist)]/60 max-h-[calc(100vh_-_5rem)] supports-[height:100dvh]:max-h-[calc(100dvh_-_5rem)] overflow-y-auto overscroll-contain relative z-[45]">
+          <ul className="px-5 sm:px-7 py-6 sm:py-4 space-y-1 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6 sm:content-start">
             {NAV_LINKS.map((l) => (
               <li key={l.to}>
                 <NavLink
@@ -233,7 +243,7 @@ export default function Nav() {
                 </NavLink>
               </li>
             ))}
-            <li className="pt-4 flex items-center justify-center gap-2 flex-wrap border-b border-[color:var(--color-mist)]/40 pb-4">
+            <li className="pt-4 flex items-center justify-center gap-2 flex-wrap border-b border-[color:var(--color-mist)]/40 pb-4 sm:col-span-full">
               {LANG_OPTIONS.map((l, i) => (
                 <span key={l.code} className="flex items-center gap-2">
                   {i > 0 && <span className="text-[color:var(--color-bone)]/25 text-[11px]">·</span>}
@@ -241,7 +251,7 @@ export default function Nav() {
                 </span>
               ))}
             </li>
-            <li className="pt-5">
+            <li className="pt-5 sm:col-span-full">
               <Link
                 to={to('/private-inquiry')}
                 onClick={() => setOpen(false)}
