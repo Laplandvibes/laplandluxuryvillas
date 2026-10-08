@@ -10,7 +10,7 @@ export default function CookiePolicy() {
   return (
     <Page>
       <SEO title={seo.title} description={seo.description} canonicalPath="/cookie-policy" />
-      <CookieContent siteName="LaplandLuxuryVillas" lang={lang} />
+      <CookieContent siteId="laplandluxuryvillas" siteName="LaplandLuxuryVillas" lang={lang} />
     </Page>
   )
 }
