@@ -1,5 +1,8 @@
 import { ArrowUpRight } from 'lucide-react'
 import { useLang, type Lang } from '../i18n/useLang'
+import PhotoCredit from './PhotoCredit'
+import { creditFor } from '../data/photoCredits'
+import { COPY as SITE_COPY } from '../locales/copy'
 
 /**
  * Contextual sibling links into the LaplandVibes network. External links use
@@ -201,7 +204,7 @@ export default function RelatedSites() {
                 className="group card-onyx p-5 sm:p-7 flex flex-col"
               >
                 {img && (
-                  <div className="aspect-[2/1] sm:aspect-[16/9] -mx-5 sm:-mx-7 -mt-5 sm:-mt-7 mb-5 sm:mb-6 overflow-hidden bg-[color:var(--color-deep-night)]">
+                  <div className="relative aspect-[2/1] sm:aspect-[16/9] -mx-5 sm:-mx-7 -mt-5 sm:-mt-7 mb-5 sm:mb-6 overflow-hidden bg-[color:var(--color-deep-night)]">
                     <img
                       src={img}
                       alt=""
@@ -210,6 +213,8 @@ export default function RelatedSites() {
                       decoding="async"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     />
+                    {/* Text only: the card is a link. The links are in the credit line under the cards. */}
+                    <PhotoCredit credit={creditFor(img)} plain />
                   </div>
                 )}
                 <h3 className="font-heading text-2xl text-[color:var(--color-snow)] leading-snug flex items-start gap-2 group-hover:text-[color:var(--color-brass)] transition-colors">
@@ -226,7 +231,40 @@ export default function RelatedSites() {
             )
           })}
         </div>
+        <CardCredits
+          items={t.cards.map((card) => ({ label: card.label, credit: creditFor(cardImage(card.href)) }))}
+        />
       </div>
     </section>
+  )
+}
+
+/**
+ * Credit line under the network cards: each card's open-licence photograph with the links CC BY / BY-SA §3(a) and
+ * §4(b) require (file page and licence deed). The marks on the pictures are text only because the cards are links.
+ */
+function CardCredits({ items }: { items: { label: string; credit?: ReturnType<typeof creditFor> }[] }) {
+  const lang = useLang()
+  const w = SITE_COPY[lang].photo
+  const rows = items.filter((i): i is { label: string; credit: NonNullable<ReturnType<typeof creditFor>> } => !!i.credit && i.credit.kind !== 'own' && i.credit.kind !== 'sembo')
+  if (!rows.length) return null
+  const link = 'lv-tap underline underline-offset-2 hover:text-[color:var(--color-snow)]'
+  return (
+    <p className="mt-8 text-center text-sm leading-relaxed text-[color:var(--color-bone)]/70 font-body" data-photo-credits>
+      {w.credit}:{' '}
+      {rows.map((r, i) => (
+        <span key={r.label}>
+          {i > 0 && '; '}
+          <a href={r.credit.sourceUrl} target="_blank" rel="noopener" className={link}>
+            {r.label}
+          </a>
+          : {r.credit.author},{' '}
+          <a href={r.credit.licenseUrl} target="_blank" rel="license noopener" className={`${link} whitespace-nowrap`}>
+            {r.credit.license}
+          </a>
+          {r.credit.cropped && ` (${w.cropped})`}
+        </span>
+      ))}
+    </p>
   )
 }

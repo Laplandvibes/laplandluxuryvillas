@@ -18,7 +18,7 @@ import { COPY } from '../locales/copy'
  * snow behind the plate); deep-night at 80 % keeps white text above 4.5:1 on any photo. `lv-tap` keeps the links at
  * 44 px hit size below 1024 px. `rel` carries `noopener`, never `noreferrer`.
  */
-export default function PhotoCredit({ credit }: { credit?: Credit }) {
+export default function PhotoCredit({ credit, plain = false }: { credit?: Credit; plain?: boolean }) {
   const lang = useLang()
   const c = (COPY[lang] ?? COPY.en).photo
   if (!credit) return null
@@ -27,6 +27,12 @@ export default function PhotoCredit({ credit }: { credit?: Credit }) {
       {c.credit}:{' '}
       {credit.kind === 'sembo' || credit.kind === 'own' ? (
         <span>{credit.author}</span>
+      ) : plain ? (
+        /* Inside a card that is itself a link (RelatedSites): text only, the links are in the credit line under the cards. */
+        <span>
+          {credit.author}, {credit.license === 'Pexels' ? 'Pexels' : credit.license}
+          {credit.cropped && <>, {c.cropped}</>}
+        </span>
       ) : credit.kind === 'pexels' ? (
         <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2">
           {credit.author}, Pexels

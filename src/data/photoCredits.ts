@@ -140,6 +140,39 @@ const PHOTO_CREDIT_OF: Record<string, PhotoCredit> = {
 }
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
+  // ── 9.10.2026: the five network cards and the midnight-sun band were AI renders (kuvavaihto, Vesa 4.10.) ──
+  // Every file below is a real photograph, one image one site (name, 64x36 pixel and photographer+day check, ledger).
+  // CC BY-SA files are resized only; the band (CC BY 3.0) is cropped to 2.4:1 and says so.
+  '/images/net-stays.webp': {
+    kind: 'commons', author: 'Romain Cloff', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://www.flickr.com/photos/romaincloff/6369987289/', sourceId: 'Flickr 6369987289 "Igloo de verre"',
+    taken: '2011-03-19', retrieved: '2026-10-09', changes: 'Resized 5184x3456 to 1400x933, WebP; no crop.', cropped: false,
+  },
+  '/images/net-wellness.webp': {
+    kind: 'commons', author: 'Romain Cloff', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    sourceUrl: 'https://www.flickr.com/photos/romaincloff/6441338873/', sourceId: 'Flickr 6441338873 "Sauna traditionnel au feu de bois"',
+    taken: '2011-03-20', retrieved: '2026-10-09', changes: 'Resized 5184x3456 to 1400x933, WebP; no crop.', cropped: false,
+  },
+  '/images/net-hoteldeals.webp': {
+    kind: 'pexels', author: 'ROMAN ODINTSOV', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/',
+    sourceUrl: 'https://www.pexels.com/photo/binoculars-in-home-interior-in-mountains-landscape-7539833/', sourceId: 'pexels:7539833',
+    taken: '2021-04-17', retrieved: '2026-10-09', changes: 'Resized 5472x3648 to 1400x933, WebP; no crop.', cropped: false,
+  },
+  '/images/net-kids.webp': {
+    kind: 'pexels', author: 'Pavel Danilyuk', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/',
+    sourceUrl: 'https://www.pexels.com/photo/photograph-of-a-person-s-hand-pouring-water-from-a-thermos-6667937/', sourceId: 'pexels:6667937',
+    taken: '2021-02-01', retrieved: '2026-10-09', changes: 'Resized 5855x3909 to 1400x935, WebP; no crop.', cropped: false,
+  },
+  '/images/net-activities.webp': {
+    kind: 'commons', author: 'Timo Newton-Syms from Helsinki, Finland', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Northern_Lights_(32341678593).jpg', sourceId: 'File:Northern Lights (32341678593).jpg',
+    taken: '2017-02-27', retrieved: '2026-10-09', changes: 'Resized 3776x2520 to 1400x934, WebP; no crop (ShareAlike).', cropped: false,
+  },
+  '/images/band-midnight-sun.webp': {
+    kind: 'commons', author: 'Tevfik Teker', license: 'CC BY 3.0', licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Midnight_Sun_in_Inari_-_panoramio.jpg', sourceId: 'File:Midnight Sun in Inari - panoramio.jpg',
+    taken: '2013-06-14', retrieved: '2026-10-09', changes: 'Cropped to 2.4:1 (3888x1620, box 0,180), resized to 2400x1000, WebP.', cropped: true,
+  },
   // A second frame of the same three hotels, for the "ready weeks" section:
   // one photograph may appear only once on a page (Vesa 2026-09-20).
   // /villas hero: aurora through the glass roof, seen from the bed.

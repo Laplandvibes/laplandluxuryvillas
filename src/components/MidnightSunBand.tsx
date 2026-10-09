@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { Sun } from 'lucide-react'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
+import PhotoCredit from './PhotoCredit'
+import { creditFor } from '../data/photoCredits'
 
 export default function MidnightSunBand() {
   const lang = useLang()
@@ -28,6 +30,7 @@ export default function MidnightSunBand() {
         decoding="async"
         className="absolute inset-0 w-full h-full object-cover object-[70%_50%]"
       />
+      <PhotoCredit credit={creditFor('/images/band-midnight-sun.webp')} />
       {/* Scrim: the photograph is brightest on the right, where the sun sits,
           and the copy sits left — so this is a horizontal wash, not a flat
           overlay that would grey out the whole picture. */}
