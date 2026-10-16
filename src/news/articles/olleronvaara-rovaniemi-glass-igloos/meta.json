@@ -1,0 +1,103 @@
+{
+  "slug": "olleronvaara-rovaniemi-glass-igloos",
+  "date": "2026-10-16",
+  "hero": {
+    "src": "/images/news/glass-igloos-saariselka-1600.webp",
+    "srcSmall": "/images/news/glass-igloos-saariselka-800.webp",
+    "width": 1600,
+    "height": 1067,
+    "position": "50% 55%",
+    "credit": {
+      "author": "Romain Cloff",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceUrl": "https://www.flickr.com/photos/romaincloff/6369987289/",
+      "assetId": "Flickr 6369987289",
+      "sourceName": "Flickr",
+      "taken": "2011-03-19",
+      "retrieved": "2026-10-16"
+    }
+  },
+  "sources": [
+    {
+      "publisher": "Rovaniemen kaupunki, tekninen lautakunta",
+      "title": "Vastaus valtuustoaloitteeseen: Rovaniemen majoitustarjonta (esityslista 20.10.2026, § 203)",
+      "lang": "fi",
+      "url": "https://rovaniemi.cloudnc.fi/fi-FI/content/291824/29008",
+      "read": "2026-10-16"
+    },
+    {
+      "publisher": "Rovaniemen kaupunki",
+      "title": "Tekninen lautakunta käsitteli talousarvion sekä kaava- ja tonttiasioita – Olleronvaaran matkailutontit jakoon",
+      "lang": "fi",
+      "url": "https://www.rovaniemi.fi/news/Tekninen-lautakunta-kasitteli-talousarvion-seka-kaava--ja-tonttiasioita-%E2%80%93-Olleronvaaran-matkailutontit-jakoon/35150/0ee85829-5350-40a6-9b0d-2ec8655a41cf",
+      "date": "2025-09-24"
+    },
+    {
+      "publisher": "Rovaniemen kaupunginhallitus",
+      "title": "Olleronvaaran oikeusvaikutteisen yleiskaava-alueen rakennuspaikkojen ja ohjelmapalvelualueiden hinnoittelu",
+      "lang": "fi",
+      "url": "https://rovaniemi.cloudnc.fi/fi-FI/content/217057/24605",
+      "date": "2024-02-05"
+    },
+    {
+      "publisher": "Rovaniemen kaupunginhallitus",
+      "title": "Rovaniemen kaupungin matkailuohjelma 2040",
+      "lang": "fi",
+      "url": "https://rovaniemi.cloudnc.fi/fi-FI/content/291200/28976",
+      "date": "2026-09-28"
+    },
+    {
+      "publisher": "Rovaniemen kaupunginhallitus",
+      "title": "Ylikylä - Nivankylä yleiskaavan muutos Olleronvaaran alueella",
+      "lang": "fi",
+      "url": "https://rovaniemi.cloudnc.fi/fi-FI/content/289841/28883",
+      "date": "2026-08-24"
+    },
+    {
+      "publisher": "Aava Glass Igloos",
+      "title": "Igloos",
+      "lang": "en",
+      "url": "https://www.aavaglassigloos.com/igloos",
+      "read": "2026-10-16"
+    },
+    {
+      "publisher": "Aava Glass Igloos",
+      "title": "Price list",
+      "lang": "en",
+      "url": "https://booking.profitroom.com/en/aavaglassigloos/pricelist/rooms/?check-in=2026-12-23&check-out=2026-12-24&r1_adults=2",
+      "read": "2026-10-16"
+    },
+    {
+      "publisher": "ALVA Resort",
+      "title": "ALVA Resort",
+      "lang": "en",
+      "url": "https://alvaresort.com/",
+      "read": "2026-10-16"
+    },
+    {
+      "publisher": "Visit Rovaniemi",
+      "title": "SkyView Igloo Resort & Spa",
+      "lang": "en",
+      "url": "https://www.visitrovaniemi.fi/accommodation/skyview-igloo-suite/",
+      "read": "2026-10-16"
+    },
+    {
+      "publisher": "Euronews",
+      "title": "Glass igloos, sky villas and boutique suites: new places to stay in Finnish Lapland this winter",
+      "lang": "en",
+      "url": "https://www.euronews.com/2026/10/13/glass-igloos-sky-villas-and-boutique-suites-new-places-to-stay-in-finnish-lapland-this-win",
+      "date": "2026-10-13"
+    },
+    {
+      "publisher": "Helsingin Sanomat",
+      "title": "Metsään nousee luksuskohde rikkaille Lapin-turisteille: yksi yö 2 000 euroa",
+      "lang": "fi",
+      "url": "https://www.hs.fi/alueet/art-2000012295905.html",
+      "date": "2026-10-15"
+    }
+  ],
+  "ogCard": {
+    "line": "Glass igloo prices this winter"
+  }
+}

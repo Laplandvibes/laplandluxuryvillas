@@ -1,0 +1,60 @@
+{
+  "title": "Rovaniemen Olleronvaaraan uusia lasi-igluja: jouluyö yli 2 000 euroa",
+  "seoTitle": "Olleronvaara, Rovaniemi: uudet lasi-iglut ja niiden hinnat",
+  "description": "Rovaniemen Olleronvaaraan on myönnetty rakennuslupa yli 300 majoitusrakennukselle. Uusin lasi-iglukohde avaa ovensa marraskuussa.",
+  "dek": "Kaupungin mukaan alueella on jo 90 valmista rakennusta. Marraskuussa yö samassa lasi-iglussa maksaa 499 euroa.",
+  "heroAlt": "Lasi-igluja lumessa iltahämärässä: kupolien lasipaneelien läpi hehkuu lämmin valo, taustalla on mäntymetsää ja sininen taivas.",
+  "heroCaption": "Kuvassa lasi-igluja Saariselällä maaliskuussa 2011, ei Olleronvaaran kohteita.",
+  "body": [
+    {
+      "t": "p",
+      "text": "Rovaniemen keskustasta noin 10 kilometrin päähän Olleronvaaraan on kasvamassa uusi matkailualue. Kaupungin mukaan alueelle on mahdollistettu lähes 30 000 kerrosneliömetriä majoitusrakentamista, rakennuslupa on myönnetty yli 300 majoitusrakennukselle, ja valmiina on 90 rakennusta."
+    },
+    {
+      "t": "p",
+      "text": "Alueella ei ole asemakaavaa, vaan rakentamista ohjaa yleiskaava. Kaupunki ei myy rakennuspaikkoja vaan vuokraa niitä enintään 30 vuodeksi, ja syyskuussa 2025 alueella oli toimintaa tai varauksia 17 toimijalla."
+    },
+    {
+      "t": "h2",
+      "text": "Uusia kohteita tälle talvelle"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "Aava Glass Igloos: 13 lasi-iglusviittiä, joissa on lämmitetty lasikatto ja oma sauna. Ensimmäinen varattava yö on 13. marraskuuta 2026.",
+        "ALVA Resort: neljä lasikattoista 28 neliömetrin mökkiä. Kohteen mukaan se avautuu 1. marraskuuta 2026.",
+        "SkyView Igloo Resort toimii jo samalla alueella, ja sen varausjärjestelmässä on lasi-iglusviittejä ja revontulimökkejä."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "Mitä yö maksaa"
+    },
+    {
+      "t": "p",
+      "text": "Hinnat vaihtelevat paljon kauden mukaan. Aava Glass Igloosin hinnasto näytti 16. lokakuuta kahdelle aikuiselle halvimmaksi vapaaksi yöksi 499 euroa 13. marraskuuta, 2 099 euroa 23. joulukuuta ja 799 euroa 15. tammikuuta 2027."
+    },
+    {
+      "t": "p",
+      "text": "SkyView Igloo Resortin halvin vapaa yö 23. joulukuuta maksoi samana päivänä 2 150 euroa. Hinnat muuttuvat varaustilanteen mukaan."
+    },
+    {
+      "t": "h2",
+      "text": "Miksi keskustan ulkopuolelle"
+    },
+    {
+      "t": "p",
+      "text": "Rovaniemen matkailuohjelman luonnoksen mukaan lyhytvuokrauksen kasvu ja matkailijamäärien keskittyminen huippusesonkeihin ovat lisänneet matkailun vaikutuksia asukkaiden arkeen. Ohjelma linjaa, että uusia matkailualueita kaavoitetaan keskustan ulkopuolelle ja matkailun painetta ohjataan pois keskustasta."
+    },
+    {
+      "t": "p",
+      "text": "Elokuussa kaupunki käynnisti Olleronvaaran yleiskaavan muutoksen noin 281 hehtaarin alueella. Siinä tutkitaan muun muassa työntekijöiden asumista ja alueen liikenneyhteyksiä."
+    },
+    {
+      "t": "link",
+      "text": "Rovaniemen yksityiset huvilat, sviitit ja revontulimajoitukset löydät Rovaniemi-sivultamme.",
+      "label": "Rovaniemi",
+      "href": "/destinations/rovaniemi"
+    }
+  ]
+}

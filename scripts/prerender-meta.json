@@ -599,6 +599,56 @@
       "description": "Nyheter om lyxresor i finska Lappland: nya anläggningar, kapacitet, flyg och bolagen bakom. Varje artikel namnger och länkar sina källor."
     }
   },
+  "/news/olleronvaara-rovaniemi-glass-igloos": {
+    "en": {
+      "title": "Olleronvaara, Rovaniemi: new glass igloos and their prices",
+      "description": "Building permits for more than 300 accommodation buildings have been granted at Olleronvaara near Rovaniemi. The newest glass igloo resort opens in November."
+    },
+    "fi": {
+      "title": "Olleronvaara, Rovaniemi: uudet lasi-iglut ja niiden hinnat",
+      "description": "Rovaniemen Olleronvaaraan on myönnetty rakennuslupa yli 300 majoitusrakennukselle. Uusin lasi-iglukohde avaa ovensa marraskuussa."
+    },
+    "de": {
+      "title": "Olleronvaara, Rovaniemi: neue Glasiglus und ihre Preise",
+      "description": "In Olleronvaara bei Rovaniemi sind Baugenehmigungen für mehr als 300 Unterkunftsgebäude erteilt worden. Das neueste Glasiglu-Resort öffnet im November."
+    },
+    "ja": {
+      "title": "ロヴァニエミ・オッレロンヴァーラ：新ガラスイグルーと料金",
+      "description": "ロヴァニエミ近郊のオッレロンヴァーラ（Olleronvaara）で、300棟を超える宿泊用建物に建築許可が出ています。最も新しいガラスイグルー施設は11月に開業します。"
+    },
+    "es": {
+      "title": "Olleronvaara, Rovaniemi: nuevos iglús de cristal y precios",
+      "description": "En Olleronvaara, cerca de Rovaniemi, más de 300 edificios de alojamiento tienen permiso de obra. El último complejo de iglús de cristal abre en noviembre."
+    },
+    "pt-BR": {
+      "title": "Olleronvaara, Rovaniemi: novos iglus de vidro e seus preços",
+      "description": "Em Olleronvaara, perto de Rovaniemi, mais de 300 edifícios de hospedagem já têm alvará de construção. O mais novo complexo de iglus de vidro abre em novembro."
+    },
+    "zh-CN": {
+      "title": "罗瓦涅米奥勒龙瓦拉：新玻璃屋及其价格",
+      "description": "罗瓦涅米近郊的奥勒龙瓦拉（Olleronvaara）是一片正在兴建的新旅游区，已有超过300栋住宿建筑获得建筑许可，最新的一处玻璃屋度假村将于11月开业。"
+    },
+    "ko": {
+      "title": "로바니에미 올레론바라: 새 유리이글루와 가격",
+      "description": "로바니에미 근교 올레론바라(Olleronvaara)에서 숙박용 건물 300동 이상이 건축 허가를 받았습니다. 가장 새로운 유리이글루 숙소는 11월에 문을 엽니다."
+    },
+    "fr": {
+      "title": "Olleronvaara, Rovaniemi : nouveaux igloos de verre et tarifs",
+      "description": "Plus de 300 bâtiments d’hébergement ont obtenu un permis de construire à Olleronvaara, près de Rovaniemi. Le dernier-né des igloos de verre ouvre en novembre."
+    },
+    "it": {
+      "title": "Olleronvaara, Rovaniemi: i nuovi igloo di vetro e i prezzi",
+      "description": "A Olleronvaara, vicino a Rovaniemi, oltre 300 edifici ricettivi hanno il permesso di costruire. Il complesso di igloo di vetro più recente apre a novembre."
+    },
+    "nl": {
+      "title": "Olleronvaara, Rovaniemi: nieuwe glazen iglo's en hun prijzen",
+      "description": "In Olleronvaara bij Rovaniemi zijn bouwvergunningen verleend voor meer dan 300 verblijfsgebouwen. Het nieuwste park met glazen iglo's opent in november."
+    },
+    "sv": {
+      "title": "Olleronvaara, Rovaniemi: nya glasigloor och deras priser",
+      "description": "I Olleronvaara nära Rovaniemi har bygglov beviljats för mer än 300 boendebyggnader. Den nyaste glasigloanläggningen öppnar i november."
+    }
+  },
   "/news/venture-lapland-arctra-majority": {
     "en": {
       "title": "Arctra: Venture Lapland buys into Rovaniemi luxury",
