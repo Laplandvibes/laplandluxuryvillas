@@ -77,7 +77,7 @@ const ptBR: SiteCopy = {
     "heroSummer": "Uma cabana de toras em uma ponta rochosa de um lago calmo e enevoado, com o sol baixo e um pinheiro alto ao lado",
     "heroWinter": "Suítes envidraçadas do Arctic TreeHouse Hotel sobre pilares, entre pinheiros nevados em Rovaniemi",
     "heroAlt": {
-      "aboutWinter": "Um abeto carregado de neve no alto de um fell ao anoitecer, com luzes no vale enevoado lá embaixo",
+      "aboutWinter": "Um chalé de madeira iluminado ao anoitecer em Levi, depois da primeira neve",
       "aboutSummer": "Bétulas com folhas acima do lago Kilpisjärvi, ainda com manchas de neve nos fells da outra margem",
       "destinationsWinter": "O Pallastunturi na luz rosada de uma manhã de fevereiro, emoldurado por abetos cobertos de geada, com uma pequena cabana ao pé",
       "destinationsSummer": "O lago Kilpisjärvi em pleno verão, com os fells da Noruega na outra margem",

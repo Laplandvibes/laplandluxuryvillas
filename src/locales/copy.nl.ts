@@ -71,7 +71,7 @@ const nl: SiteCopy = {
     "heroSummer": "Een blokhut op een rotsachtige landtong aan een stil, mistig meer in de laagstaande zon, met een hoge den ernaast",
     "heroWinter": "Suites met glazen gevel van het Arctic TreeHouse Hotel op palen tussen besneeuwde dennen in Rovaniemi",
     "heroAlt": {
-      "aboutWinter": "Een met sneeuw beladen spar op een fjälltop in de schemering, lichtjes in het mistige dal beneden",
+      "aboutWinter": "Een verlicht houten chalet in Levi in de schemering, na de eerste sneeuw",
       "aboutSummer": "Berken in blad boven het meer Kilpisjärvi, met nog sneeuwplekken op de fjälls aan de overkant",
       "destinationsWinter": "De Pallastunturi in het roze licht van een februariochtend, omlijst door berijpte sparren, met een kleine hut aan de voet",
       "destinationsSummer": "Het meer Kilpisjärvi midden in de zomer, met de fjälls van Noorwegen aan de overkant",

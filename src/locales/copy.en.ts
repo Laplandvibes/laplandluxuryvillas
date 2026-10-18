@@ -77,7 +77,7 @@ const en: SiteCopy = {
     "heroSummer": "A log cabin on a rocky point of a still, misty lake in low sun, a tall pine beside it",
     "heroWinter": "Glass-fronted suites of Arctic TreeHouse Hotel on stilts among snowy pines in Rovaniemi",
     "heroAlt": {
-      "aboutWinter": "A snow-loaded spruce on a fell top at dusk, lights in the misty valley below",
+      "aboutWinter": "A timber chalet lit up at dusk in Levi after the first snowfall",
       "aboutSummer": "Birches in leaf above Lake Kilpisjärvi, snow patches still on the fells across the water",
       "destinationsWinter": "Pallastunturi fell in pink February morning light, framed by frosted spruce, a small hut at its foot",
       "destinationsSummer": "Lake Kilpisjärvi at midsummer, the fells of Norway on the far shore",

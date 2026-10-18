@@ -317,16 +317,21 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     changes: 'Resized 5989x3979 -> 1600x1063, WebP q64. Not cropped.',
     cropped: false,
   },
-  '/images/commons/hero-about-winter.webp': {
-    kind: 'commons',
-    author: 'Tatiana Bashinskaya',
-    license: 'CC BY 3.0',
-    licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lapland,_Finland_-_panoramio_(2).jpg',
-    sourceId: 'File:Lapland, Finland - panoramio (2).jpg',
-    retrieved: '2026-09-23',
-    changes: 'Resized 3872x2592 -> 2000x1339, WebP q80. Not cropped.',
-    cropped: false,
+  // /about winter since 18.10.2026 (Vesa chose it from three own frames rendered on the
+  // page; the Commons snow-tree before it, Tatiana Bashinskaya CC BY 3.0, was removed).
+  '/images/hero-about-levi-chalet.webp': {
+    kind: 'own',
+    author: 'LaplandVibes',
+    sourceUrl: '',
+    sourceId: '20261014_184323.jpg',
+    taken: '2026-10-14',
+    retrieved: '2026-10-18',
+    changes:
+      'Timber chalet lit at dusk in Levi after the first snow, 18:43 (October 2026 trip, ' +
+      '_reissu-2026-10/KUVA-INVENTAARIO.md §5). Master 4000x2252; the number plate of a parked car ' +
+      'blurred (3590,1722 96x48). Desktop: crop (1000,330)-(4000,1580) resized to ' +
+      '2560x1067 and 1920x800. Phone: whole frame resized to 1600x901. WebP q80 + AVIF q50.',
+    cropped: true,
   },
   '/images/commons/hero-about-summer.webp': {
     kind: 'commons',

@@ -77,7 +77,7 @@ const zhCN: SiteCopy = {
     "heroSummer": "低斜的阳光下，宁静雾湖边岩石岬角上的一座原木小屋，旁边立着一棵高大的松树",
     "heroWinter": "罗瓦涅米积雪的松林里，Arctic TreeHouse Hotel架在立柱上的玻璃幕墙套房",
     "heroAlt": {
-      "aboutWinter": "黄昏时山丘顶上一棵被积雪压弯的云杉，下方雾气弥漫的山谷里亮着灯光",
+      "aboutWinter": "初雪过后，黄昏时分莱维一座亮着灯的木结构小屋",
       "aboutSummer": "基尔皮斯耶尔维湖上方枝叶繁茂的白桦，对岸山丘上仍有残雪",
       "destinationsWinter": "二月清晨粉色光线中的帕拉斯通图里山，被挂霜的云杉环绕，山脚下有一座小木屋",
       "destinationsSummer": "盛夏的基尔皮斯耶尔维湖，对岸是挪威的山丘",
