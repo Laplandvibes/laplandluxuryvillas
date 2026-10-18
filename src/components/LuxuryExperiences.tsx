@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
 import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON, isLuxuryPriceFresh } from '../shared/gyg/luxury'
+import { gygAvailable } from '../shared/gyg/picks'
 import GYG_MEDIA_RAW from '../data/gygMedia.json'
 import { gygProduct } from '../lib/affiliate'
 import { trackAffiliateClick } from '../lib/analytics'
@@ -71,7 +72,9 @@ export default function LuxuryExperiences({ category, eyebrow, title, intro, ton
   const lang = useLang()
   const c = COPY[lang] ?? COPY.en
   const fmt = (n: number) => new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang, { maximumFractionDigits: 0 }).format(n)
-  const picks = category ? LUXURY_PICKS.filter((p) => p.category === category) : LUXURY_PICKS
+  // 🔴 18.10.2026: a product measured empty or redirecting in this locale gets no card
+  // (GYG_UNAVAILABLE in picks.ts; Sampo and the 7 h snowmobile are empty in English only).
+  const picks = LUXURY_PICKS.filter((p) => (!category || p.category === category) && gygAvailable(p.path, lang))
   if (picks.length === 0) return null
 
   return (
