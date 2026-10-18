@@ -331,6 +331,92 @@ export function gygDuration(pick: GygPick, lang?: string): string | undefined {
   return `${value}${f.space ? " " : ""}${f.unit(unit, one)}`;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Availability, measured (2026-10-18).
+//
+// Vesa 18.10.2026 on laplandluxuryvillas: "miksi edelleen nämä ei mene suoraan
+// varaukseen?" Every product id in this file and in luxury.ts was fetched on
+// getyourguide.com in the in-app browser (same-origin fetch, the page's own
+// cookies; it reproduces a full navigation exactly). Two failure modes, and
+// they need opposite handling:
+//
+//   all  The product redirects to its LOCATION page in every locale, and the
+//        redirect drops partner_id and cmp: no booking would be ours. All five
+//        are seasonal (winter snowshoeing and Santa, summer lake cruises, gold
+//        panning), so this is most likely off-season deactivation, not
+//        deletion: 26.9. a parallel measurement saw t1130814 come back.
+//   en   The product page renders EMPTY (header and footer, no h1, generic
+//        title "Book Things To Do…") at the bare English URL that English
+//        pages link (the full English slug, no prefix), and renders normally
+//        under every prefix the other locales use (fi-fi, de-de, ja-jp …).
+//        Deterministic (measured twice), independent of currency. Not dead:
+//        removing the row would also take it off eleven working locales.
+//        t727384 is empty under en-gb too, so en-gb is not a general fix.
+//
+// localizePick() returns null for an unavailable (product, locale) pair, so a
+// GygPicks-style consumer drops the card on its own. Rows stay where they are:
+// a product that comes back needs one line deleted here, not a row restored.
+// Consumers that read the lists directly must call gygAvailable() themselves.
+// Re-measure (both modes) before December: winter products should return.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface GygUnavailable {
+  /** Day of the browser measurement. */
+  measured: string;
+  /** "all" = every locale; otherwise the site locales (`en`, `fi`, …) it fails in. */
+  locales: "all" | readonly string[];
+  /** What was seen. */
+  why: string;
+}
+
+export const GYG_UNAVAILABLE: Readonly<Record<string, GygUnavailable>> = {
+  "449218": { measured: "2026-10-18", locales: "all", why: "Levi snowshoeing: location redirect (also 26.9.), winter tour" },
+  "1005215": { measured: "2026-10-18", locales: "all", why: "Inari cultural day + lake cruise: location redirect (also 26.9.), summer" },
+  "1243827": { measured: "2026-10-18", locales: "all", why: "Ivalo gold panning: location redirect, summer" },
+  "1073872": { measured: "2026-10-18", locales: "all", why: "Lake Inari boat tour (luxury.ts, removed): location redirect, summer" },
+  "889294": { measured: "2026-10-18", locales: "all", why: "Levi Santa visit at the villa (luxury.ts, removed): location redirect, winter" },
+  "853272": { measured: "2026-10-18", locales: ["en"], why: "Saariselkä husky safari + kennel: empty at the bare English URL" },
+  "790865": { measured: "2026-10-18", locales: ["en"], why: "Saariselkä tundra snowmobile + BBQ: empty at the bare English URL" },
+  "462526": { measured: "2026-10-18", locales: ["en"], why: "Santa Claus Village husky ride: empty at the bare English URL" },
+  "693623": { measured: "2026-10-18", locales: ["en"], why: "Levi aurora tour, guaranteed sightings: empty at the bare English URL" },
+  "786889": { measured: "2026-10-18", locales: ["en"], why: "Ranua wildlife park + transport: empty at the bare English URL" },
+  "727384": { measured: "2026-10-18", locales: ["en"], why: "Kemi icebreaker Arktis: empty in English, en-gb included" },
+  "1205230": { measured: "2026-10-18", locales: ["en"], why: "Ruka 3-course wild food dinner: empty at the bare English URL" },
+  "885747": { measured: "2026-10-18", locales: ["en"], why: "Rovaniemi 7 h private snowmobile (luxury.ts): empty at the bare English URL" },
+  // t504004 (Sampo) is NOT listed although its English slug is empty: the Finnish
+  // slug the gifts LUXURY_PICKS row uses renders at the bare URL. Its English-slug
+  // rows (HUB_PICKS, luxury.ts) are covered by GYG_UNAVAILABLE_PATHS below.
+};
+
+/**
+ * Same failure keyed by the exact path, for an id whose other slug works
+ * (t504004: English slug empty at the bare URL, Finnish slug fine).
+ */
+export const GYG_UNAVAILABLE_PATHS: Readonly<Record<string, GygUnavailable>> = {
+  "kemi-l98127/kemi-afternoon-icebreaker-sampo-cruise-and-ice-floating-t504004": {
+    measured: "2026-10-18", locales: ["en"], why: "Sampo, English slug: empty at the bare English URL (Finnish slug fine)",
+  },
+};
+
+/** The GetYourGuide product id of a path, or null for a location/category path. */
+export function gygIdOf(path: string): string | null {
+  const m = path.match(/-t(\d+)\/?$/);
+  return m ? m[1] : null;
+}
+
+/** False when the browser measurement above saw this product fail in `lang` (default en). */
+export function gygAvailable(path: string, lang?: string): boolean {
+  const clean = path.replace(/^\/+|\/+$/g, "");
+  const id = gygIdOf(clean);
+  if (!id) return true;
+  const loc = !lang ? "en" : lang;
+  for (const u of [GYG_UNAVAILABLE[id], GYG_UNAVAILABLE_PATHS[clean]]) {
+    if (!u) continue;
+    if (u.locales === "all" || u.locales.includes(loc)) return false;
+  }
+  return true;
+}
+
 /** A row ready to render in one locale. `source` is the row as written above. */
 export interface LocalizedGygPick extends GygPick {
   /** The untouched row: English title for title-keyed lookups such as pickIcon(). */
@@ -343,6 +429,8 @@ export interface LocalizedGygPick extends GygPick {
  * Null means: render nothing for this row. Never fall back to English.
  */
 export function localizePick(pick: GygPick, lang?: string): LocalizedGygPick | null {
+  // Measured unavailable in this locale (GYG_UNAVAILABLE): no card, not a dead link.
+  if (!gygAvailable(pick.path, lang)) return null;
   if (!lang || lang === "en") {
     return { ...pick, price: gygFreshPrice(pick), duration: gygDuration(pick, "en"), source: pick };
   }

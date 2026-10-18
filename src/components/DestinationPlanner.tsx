@@ -1,6 +1,7 @@
 import { ArrowUpRight, Plane, Search } from 'lucide-react'
 import { DESTINATION_FACTS, destinationFacts } from '../shared/destinations/facts'
 import { LUXURY_PICKS, PRICE_AS_OF, VERIFIED_ON, isLuxuryPriceFresh } from '../shared/gyg/luxury'
+import { gygAvailable } from '../shared/gyg/picks'
 import { SECTION_LABELS as S, s } from '../lib/destinationSections.i18n'
 import { yearOfLight } from '../lib/daylight'
 import { gygProduct, GYG_LINKS } from '../lib/affiliate'
@@ -262,7 +263,7 @@ const PLACES_FOR: Record<string, string[]> = {
 export function DestinationExperiences({ slug, name }: { slug: string; name: string }) {
   const lang = useLang()
   const places = PLACES_FOR[slug] ?? []
-  const picks = LUXURY_PICKS.filter((p) => places.includes(p.place))
+  const picks = LUXURY_PICKS.filter((p) => places.includes(p.place) && gygAvailable(p.path, lang))
   const fmt = (n: number) =>
     new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang, { maximumFractionDigits: 0 }).format(n)
 

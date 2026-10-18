@@ -20,16 +20,18 @@
  * other way, shipping unverified ones. A wrong GetYourGuide id does not 404;
  * it serves a complete, plausible page for another product in another country.
  *
- * ── Re-verified 2026-10-18: four rows removed ─────────────────────────────
+ * ── Re-verified 2026-10-18 ───────────────────────────────────────────────
  * Vesa 18.10.2026 (laplandluxuryvillas): "miksi edelleen nämä ei mene suoraan
- * varaukseen?" Each Worker link was opened in the in-app browser with &qa=1:
- *   1073872  Lake Inari boat cruise   → 301 to the Inari location page
- *   889294   Santa visit, Levi        → 301 to the Kittilä location page
- *   504004   Icebreaker Sampo, Kemi   → empty page, generic title, no booking
- *   885747   7 h snowmobile, Rovaniemi→ empty page, generic title, no booking
- * A location-page redirect also drops partner_id and cmp, so such a booking
- * was never ours. The other eleven showed their own title with partner_id kept.
- * Lake Inari cruises are run by Visit Inari (paid partner 2026), not sold here.
+ * varaukseen?" Every id fetched in the in-app browser, all locales:
+ *   1073872  Lake Inari boat cruise   → location page in every locale (removed)
+ *   889294   Santa visit, Levi        → location page in every locale (removed)
+ *   504004   Icebreaker Sampo, Kemi   → EMPTY at the bare English URL only
+ *   885747   7 h snowmobile, Rovaniemi→ EMPTY at the bare English URL only
+ * A location redirect also drops partner_id and cmp, so such a booking was
+ * never ours. Both are seasonal and may return: re-measure before re-adding.
+ * The two "empty in English" rows stay: they open normally under fi-fi, de-de,
+ * ja-jp … Callers MUST filter with gygAvailable(path, lang) (picks.ts,
+ * GYG_UNAVAILABLE), which hides them on English pages only.
  *
  * ── Three products from the bucket are NOT here ───────────────────────────
  *   1138926  "Tromsø: Northern Lights Tour with Sámi Guide & Stay" — the
@@ -88,6 +90,8 @@ export function isLuxuryPriceFresh(now?: number): boolean {
 /** Ascending by price: the rail reads as a ladder, not a random shelf. */
 export const LUXURY_PICKS: readonly LuxuryPick[] = [
   { path: 'sirkka-l139331/vip-northern-lights-aurora-chase-levi-finnish-lapland-t1202632', title: 'VIP Private Northern Lights Hunt', place: 'Levi', price: 360, duration: '4 h' , category: 'aurora' },
+  { path: 'rovaniemi-l2653/lapland-exclusive-private-7h-snowmobile-tour-with-guide-t885747', title: 'Exclusive Private Snowmobile Tour with Guide', place: 'Rovaniemi', price: 399, duration: '7 h' , category: 'wilderness' },
+  { path: 'kemi-l98127/kemi-afternoon-icebreaker-sampo-cruise-and-ice-floating-t504004', title: 'Icebreaker Sampo Cruise with Ice Floating', place: 'Kemi', price: 402, duration: '6.5 h' , category: 'wilderness' },
   { path: 'sirkka-l139331/levi-professional-engagement-or-after-wedding-shoot-t1176621', title: 'Professional Engagement or After-Wedding Shoot', place: 'Levi', price: 600, duration: '1 h' , category: 'other' },
   { path: 'sirkka-l139331/levi-private-northern-lights-hunt-t864972', title: 'Private Northern Lights Hunt in a 4x4 SUV', place: 'Levi', price: 684, duration: '5 h' , category: 'aurora' },
   { path: 'sirkka-l139331/levi-private-snow-village-tour-northern-lights-possibility-t1176434', title: 'Private Snow Village Tour', place: 'Levi', price: 777, duration: '3 h' , category: 'wilderness' },
