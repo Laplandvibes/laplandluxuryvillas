@@ -78,7 +78,7 @@ const ko: SiteCopy = {
     "heroSummer": "낮게 드리운 햇살 아래 고요하고 안개 낀 호수의 바위 곶에 선 통나무집과 그 옆의 키 큰 소나무",
     "heroWinter": "로바니에미의 눈 덮인 소나무 숲, 기둥 위에 놓인 Arctic TreeHouse Hotel의 유리 외벽 스위트",
     "heroAlt": {
-      "aboutWinter": "해 질 녘 펠 정상에서 눈의 무게에 휜 가문비나무와 안개 낀 계곡의 불빛",
+      "aboutWinter": "첫눈이 내린 뒤 해 질 녘 레비에서 불을 밝힌 목조 샬레",
       "aboutSummer": "킬피스야르비 호수를 내려다보는 잎이 무성한 자작나무와 아직 잔설이 남은 건너편 펠",
       "destinationsWinter": "2월 아침 분홍빛에 물든 팔라스툰투리와 서리 내린 가문비나무, 그 기슭의 작은 오두막",
       "destinationsSummer": "한여름의 킬피스야르비 호수와 건너편 노르웨이의 펠",

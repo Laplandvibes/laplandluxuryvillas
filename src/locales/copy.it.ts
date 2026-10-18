@@ -78,7 +78,7 @@ const it: SiteCopy = {
     "heroSummer": "Una baita di tronchi su una punta rocciosa di un lago calmo e nebbioso, con il sole basso e un alto pino accanto",
     "heroWinter": "Suite vetrate dell’Arctic TreeHouse Hotel su pali, tra i pini innevati di Rovaniemi",
     "heroAlt": {
-      "aboutWinter": "Un abete carico di neve sulla cima di un fjäll al crepuscolo, luci nella valle nebbiosa sottostante",
+      "aboutWinter": "Uno chalet in legno illuminato al crepuscolo a Levi, dopo la prima neve",
       "aboutSummer": "Betulle in foglia sopra il lago Kilpisjärvi, con chiazze di neve ancora sui fjäll della sponda opposta",
       "destinationsWinter": "Il Pallastunturi nella luce rosa di un mattino di febbraio, incorniciato da abeti brinati, con una piccola capanna ai suoi piedi",
       "destinationsSummer": "Il lago Kilpisjärvi in piena estate, con i fjäll della Norvegia sulla sponda opposta",

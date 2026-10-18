@@ -71,7 +71,7 @@ const sv: SiteCopy = {
     "heroSummer": "En timmerstuga på en klippig udde vid en stilla, dimmig sjö i låg sol, med en hög tall bredvid",
     "heroWinter": "Arctic TreeHouse Hotels sviter med glasfasad på pålar bland snöiga tallar i Rovaniemi",
     "heroAlt": {
-      "aboutWinter": "En snötyngd gran på en fjälltopp i skymningen, ljus i den dimmiga dalen nedanför",
+      "aboutWinter": "En upplyst trävilla i Levi i skymningen efter den första snön",
       "aboutSummer": "Lövade björkar ovanför Kilpisjärvi, med snöfläckar kvar på fjällen på andra sidan sjön",
       "destinationsWinter": "Pallastunturi i rosa ljus en februarimorgon, inramat av rimfrostiga granar, med en liten stuga vid foten",
       "destinationsSummer": "Kilpisjärvi mitt i sommaren, med Norges fjäll på andra stranden",

@@ -77,7 +77,7 @@ const de: SiteCopy = {
     "heroSummer": "Eine Blockhütte auf einer felsigen Landzunge an einem stillen, dunstigen See im tiefen Sonnenlicht, daneben eine hohe Kiefer",
     "heroWinter": "Verglaste Suiten des Arctic TreeHouse Hotel auf Stelzen zwischen verschneiten Kiefern in Rovaniemi",
     "heroAlt": {
-      "aboutWinter": "Eine schneebeladene Fichte auf einem Fjällgipfel in der Dämmerung, unten Lichter im nebligen Tal",
+      "aboutWinter": "Ein beleuchtetes Holzchalet in Levi in der Dämmerung nach dem ersten Schnee",
       "aboutSummer": "Belaubte Birken über dem Kilpisjärvi, auf den Fjälls am anderen Ufer noch Schneeflecken",
       "destinationsWinter": "Der Pallastunturi im rosa Licht eines Februarmorgens, eingerahmt von bereiften Fichten, an seinem Fuß eine kleine Hütte",
       "destinationsSummer": "Der Kilpisjärvi im Hochsommer, am anderen Ufer die Fjälls Norwegens",

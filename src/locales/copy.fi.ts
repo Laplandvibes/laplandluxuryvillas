@@ -77,7 +77,7 @@ const fi: SiteCopy = {
     "heroSummer": "Hirsimökki kallioniemellä tyynen, usvaisen järven rannalla matalassa auringossa, vieressä korkea mänty",
     "heroWinter": "Arctic TreeHouse Hotelin lasiseinäiset sviitit paalujen päällä lumisessa männikössä Rovaniemellä",
     "heroAlt": {
-      "aboutWinter": "Tykkylumen painama kuusi tunturin laella hämärässä, alla sumuisessa laaksossa valoja",
+      "aboutWinter": "Valaistu puuhuvila Levillä illan hämärässä ensilumen jälkeen",
       "aboutSummer": "Lehtevät koivut Kilpisjärven yllä, vastarannan tuntureilla vielä lumilaikkuja",
       "destinationsWinter": "Pallastunturi helmikuun aamun punertavassa valossa huurteisten kuusten välistä, juurellaan pieni kämppä",
       "destinationsSummer": "Kilpisjärvi keskikesällä, vastarannalla Norjan tunturit",
