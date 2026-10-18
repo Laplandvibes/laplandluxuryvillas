@@ -60,8 +60,12 @@ function ArticleView({ meta }: { meta: NewsMeta }) {
       {/* Sama hero kuin mallissa (laplandflights) 23.9.2026 alkaen (Vesa: "uutiset-osion hero-osio on
           ihan kamala"): kuva koko leveydelle, otsikko + ingressi kuvan päällä alareunan
           liukuvärin varassa, kirjoittaja- ja kuvatiedot kuvan alla. Kuvatiedostoa ei rajata —
-          16:9-kehys on näyttörajaus ja object-position pitää kohteen kuvassa. */}
+          16:9-kehys on näyttörajaus ja object-position pitää kohteen kuvassa.
+          18.10.2026 (Vesa: "miksi tietokoneella hero teksti ei ole hero kuvien/videoiden päällä?"):
+          kuva ja liukuväri omassa kääreessään (.nw-art-media) kuten laplandnaturessa 14.10.: alle
+          1024 px kuva omana kaistanaan ilman tummennusta ja teksti alla, 1024 px:stä teksti kuvan päällä. */}
       <header className="nw-art">
+        <div className="nw-art-media" data-lv-tp-tausta="hero">
         <img
           className="nw-art-img"
           src={meta.hero.src}
@@ -75,6 +79,7 @@ function ArticleView({ meta }: { meta: NewsMeta }) {
           style={meta.hero.position ? { objectPosition: meta.hero.position } : undefined}
         />
         <div className="nw-art-scrim" aria-hidden="true" />
+        </div>
         <div className="wrap nw-narrow nw-art-body">
           <nav className="crumbs" aria-label="Breadcrumb">
             <span><Link to={to('/')}>{ui.ui.home}</Link></span>
