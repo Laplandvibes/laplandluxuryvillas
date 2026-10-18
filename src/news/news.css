@@ -73,6 +73,23 @@
 @media(min-width:1024px){.nw .nw-art-img{height:500px}}
 @media(min-width:1280px){.nw .nw-art-img{height:560px}}
 @media(min-width:1536px){.nw .nw-art-img{height:600px}}
+/* 18.10.2026 verkoston heromalli (feedback_hero_kuva_puhtaana_otsikko_alle 3.10.): yllä oleva kaista koskee
+   vain alle 1024 px:n näyttöjä. 1024 px:stä kuva täyttää heron navin alla ja otsikko + ingressi ovat sen
+   alaosassa yhden alhaalta nousevan liukuvärin päällä (laplandnature 14.10.), ei laikkua tekstin takana.
+   Liukuväri on naturea vahvempi ylempää: 12 px:n ylärivi istuu 50–60 %:n korkeudella, ja Riisitunturin
+   lumikuvan päällä se mittautui 2,0:1:ksi naturen arvoilla (heroteksti 18.10.). */
+.nw .nw-art-media{position:relative}
+@media(min-width:1024px){
+  .nw .nw-art{display:flex;align-items:flex-end;min-height:min(78vh,700px);padding:80px 0 56px}
+  .nw .nw-art-media{position:absolute;left:0;right:0;bottom:0;top:80px}
+  .nw .nw-art-img{position:absolute;inset:0;height:100%;min-height:0}
+  .nw .nw-art-scrim{display:block;position:absolute;inset:0;background:linear-gradient(to top,rgba(15,23,42,.95) 0%,rgba(15,23,42,.86) 45%,rgba(15,23,42,.55) 68%,rgba(15,23,42,0) 92%)}
+  .nw .nw-art-body{padding-top:0}
+  .nw .nw-art .nw-h1{text-shadow:0 2px 24px rgba(0,0,0,.4)}
+  /* Messinki (L 0,40) vaatisi taustaksi L ≤ 0,05; Riisitunturin kuvalla tausta oli 0,07 ⇒ 3,8:1. Luunvalkea 6,7:1. */
+  .nw .nw-art .nw-kicker{color:var(--bone)}
+}
+@media(min-width:1280px){.nw .nw-art-media{top:64px}}
 .nw .nw-art .nw-dek{color:var(--bone);max-width:56ch}
 .nw .nw-kicker{font:500 12px var(--font-body),'DM Sans',system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0}
 .nw .nw-dek{font-size:clamp(17px,2.1vw,21px);line-height:1.55;max-width:58ch;margin-top:16px;color:var(--ink2)}

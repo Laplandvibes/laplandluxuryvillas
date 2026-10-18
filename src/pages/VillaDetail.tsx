@@ -84,8 +84,10 @@ export default function VillaDetail() {
           name and tagline under it on the page's own ground. Until 1.10. they sat on
           the lower half of the photograph under an 85 % wash. */}
       <section className="bg-[color:var(--color-deep-night)]">
+       <div className="relative lg:flex lg:items-center lg:min-h-[500px] xl:min-h-[560px] 2xl:min-h-[600px]">
         <div
-          className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[600px] overflow-hidden"
+          className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:absolute lg:inset-0 lg:h-auto lg:min-h-0 overflow-hidden"
+          data-lv-tp-tausta="hero"
           style={{ background: villa.imageGradient }}
         >
           {villa.image && (
@@ -102,9 +104,16 @@ export default function VillaDetail() {
               happens to sit on (laplandwellness precedent 17.9.2026). This hero
               is the property's own Sembo frame and ran without it until a
               site-wide credit count on 2026-09-20 found this page at zero. */}
+          {/* From lg the words lie on the photograph (Vesa 18.10.2026, network rule 3.10.):
+              one horizontal fade on their side and a short fade into the page. The fade runs
+              to 65 %, past the end of the 44 rem column (61 % of a 1440 px screen):
+              at 55 % the heroteksti gate measured 12 px eyebrows down to 4.1:1. */}
+          <div aria-hidden="true" className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/75 via-65% to-transparent pointer-events-none" />
+          <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none" />
           <PhotoCredit credit={creditFor(villa.image)} />
         </div>
-        <div className="w-full mx-auto max-w-6xl px-5 sm:px-7 pt-7 sm:pt-9 pb-4">
+        <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pt-7 sm:pt-9 pb-4 lg:py-16 lg:pointer-events-none">
+         <div className="lg:max-w-[44rem] lg:pointer-events-auto">
           <Link
             to={to('/villas')}
             className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
@@ -128,7 +137,9 @@ export default function VillaDetail() {
           <p className="mt-5 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
             {villa.tagline}
           </p>
+         </div>
         </div>
+       </div>
       </section>
 
       {/* BODY */}
