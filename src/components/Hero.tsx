@@ -89,10 +89,11 @@ interface HeroProps {
  * 🔴 Inner pages from 1024 px (Vesa 18.10.2026: "miksi tietokoneella hero teksti ei
  * ole hero kuvien/videoiden päällä? se oli vain mobiilissa jossa näin sovittiin"):
  * the network rule since 3.10. is model C below 1024 px only, and on a computer the
- * words on the photograph. Of this site only the FRONT page was kept under the
- * photograph on a computer (Vesa's choice 3.10.), so `compact` decides. From lg the
+ * words on the photograph. The front page, kept under the photograph on 3.10., follows
+ * the same day ("Muuta myös luksussivun etusivun hero samaan malliin"). From lg the
  * photograph fills the hero and the words sit on one side over a horizontal fade
  * (laplandactivities' inner pages 17.10.), never on a blurred plate behind the text.
+ * The front page keeps a taller band and a larger headline than the inner pages.
  */
 /* ── Japanese and Chinese titles on a computer (Vesa 3.10.2026: "tehdään turhaan kolmirivisiä") ─────────────
  * Measured live 3.10.: the ja home title ran to three lines and broke inside words at 1280–1920 px
@@ -146,19 +147,20 @@ export default function Hero({
   const cjk = cjkTitleLayout(title)
   const imgClass = `absolute inset-0 w-full h-full object-cover ${imgPositionClass ?? ''}`
   const imgStyle = imgPositionClass ? undefined : imgObjectPosition ? { objectPosition: imgObjectPosition } : undefined
-  // Words on the photograph from lg: inner pages only (see the note above).
-  const onPhoto = compact
-  const right = onPhoto && textSide === 'right'
+  // Words on the photograph from lg on every page (see the note above).
+  const right = textSide === 'right'
 
   return (
     <>
     <section className="pt-16 md:pt-20 xl:pt-16 bg-[color:var(--color-deep-night)]">
-      <div className={onPhoto ? 'relative lg:flex lg:items-center lg:min-h-[500px] xl:min-h-[560px] 2xl:min-h-[600px]' : undefined}>
       <div
-        className={`relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] overflow-hidden ${
-          onPhoto ? 'lg:absolute lg:inset-0 lg:h-auto lg:min-h-0' : 'lg:h-[500px] xl:h-[560px] 2xl:h-[600px]'
+        className={`relative lg:flex lg:items-center ${
+          compact ? 'lg:min-h-[500px] xl:min-h-[560px] 2xl:min-h-[600px]' : 'lg:min-h-[580px] xl:min-h-[660px] 2xl:min-h-[720px]'
         }`}
-        data-lv-tp-tausta={onPhoto ? 'hero' : undefined}
+      >
+      <div
+        className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] overflow-hidden lg:absolute lg:inset-0 lg:h-auto lg:min-h-0"
+        data-lv-tp-tausta="hero"
         style={{
           background:
             imageOverlay ||
@@ -209,57 +211,54 @@ export default function Hero({
         {/* From lg only, where the words lie on the photograph: one horizontal fade on
             their side and a short fade into the page at the foot. Below lg the
             photograph stays clean. */}
-        {onPhoto && (
-          <>
-            <div
-              aria-hidden="true"
-              className={`hidden lg:block absolute inset-0 pointer-events-none ${
-                right ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
-              } from-[#0F172A]/85 via-[#0F172A]/70 via-55% to-transparent`}
-            />
-            <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none" />
-          </>
-        )}
+        <div
+          aria-hidden="true"
+          className={`hidden lg:block absolute inset-0 pointer-events-none ${
+            right ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
+          } from-[#0F172A]/85 via-[#0F172A]/70 via-55% to-transparent`}
+        />
+        <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none" />
         {credit}
       </div>
 
       <div
         className={`relative mx-auto max-w-5xl px-5 sm:px-8 text-center ${
           compact ? 'pt-8 sm:pt-10 pb-10 sm:pb-12' : 'pt-9 sm:pt-12 pb-12 sm:pb-16'
-        } ${onPhoto ? 'z-10 w-full lg:max-w-7xl lg:px-12 lg:py-16 lg:pointer-events-none' : ''}`}
+        } z-10 w-full lg:max-w-7xl lg:px-12 lg:py-16 lg:pointer-events-none`}
       >
        <div
         className={`@container ${
-          onPhoto ? `lg:text-left lg:max-w-[42rem] xl:max-w-[46rem] lg:pointer-events-auto ${right ? 'lg:ml-auto' : ''}` : ''
-        }`}
+          compact ? 'lg:max-w-[42rem] xl:max-w-[46rem]' : 'lg:max-w-[44rem] xl:max-w-[50rem]'
+        } lg:text-left lg:pointer-events-auto ${right ? 'lg:ml-auto' : ''}`}
       >
         {/* Brass on deep-night is about 7:1, so the eyebrow needs no backing plate
             any more (the plate of 2026-08-03 was there for the photograph). */}
         {eyebrow && (
-          <div className={`flex items-center justify-center gap-3 mb-5 sm:mb-6 ${onPhoto ? 'lg:justify-start' : ''}`}>
-            <span className={`h-px w-10 bg-[color:var(--color-brass)]/70 ${onPhoto ? 'lg:hidden' : ''}`} />
+          <div className="flex items-center justify-center gap-3 mb-5 sm:mb-6 lg:justify-start">
+            <span className="h-px w-10 bg-[color:var(--color-brass)]/70 lg:hidden" />
             <span className="eyebrow text-[color:var(--color-brass)]">{eyebrow}</span>
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70" />
           </div>
         )}
 
-        {/* Inner pages on the photograph from lg: 56 / 64 / 72 px in a 42–46 rem column
-            (the 84–100 px of the band-under model ran to four lines there). */}
+        {/* On the photograph from lg: inner pages 56 / 64 / 72 px in a 42–46 rem column, the
+            front page 72 / 80 / 88 px in 44–50 rem (the 84–100 px of the band-under model ran
+            to four lines in such a column). */}
         <h1
           className={`font-heading text-[color:var(--color-snow)] leading-[1.05] text-balance ${
             compact
               ? 'text-[2rem] sm:text-5xl md:text-6xl'
-              : `text-4xl sm:text-6xl md:text-7xl ${cjk ? 'lg:[--h1-max:5.25rem]' : 'lg:text-[5.25rem]'}`
+              : 'text-4xl sm:text-6xl md:text-7xl'
           } ${
             cjk
               ? `${
                   compact
                     ? 'lg:[--h1-max:3.5rem] xl:[--h1-max:4rem] 2xl:[--h1-max:4.5rem]'
-                    : 'xl:[--h1-max:clamp(84px,1.3125vw_+_67.2px,100.8px)]'
+                    : 'lg:[--h1-max:4.5rem] xl:[--h1-max:5rem] 2xl:[--h1-max:5.5rem]'
                 } lg:[font-size:min(var(--h1-max),calc(100cqi/var(--h1-em)))] lg:[word-break:keep-all]`
               : compact
                 ? 'lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem]'
-                : 'xl:text-[clamp(84px,1.3125vw_+_67.2px,100.8px)]'
+                : 'lg:text-[4.5rem] xl:text-[5rem] 2xl:text-[5.5rem]'
           }`}
           style={cjk ? ({ '--h1-em': cjk.em.toFixed(2) } as CSSProperties) : undefined}
         >
@@ -274,13 +273,13 @@ export default function Hero({
         </h1>
 
         {lede && (
-          <p className={`mt-5 sm:mt-6 mx-auto max-w-2xl xl:max-w-3xl text-base sm:text-lg xl:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed text-pretty ${onPhoto ? 'lg:mx-0' : ''}`}>
+          <p className={`mt-5 sm:mt-6 mx-auto max-w-2xl xl:max-w-3xl text-base sm:text-lg xl:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed text-pretty lg:mx-0`}>
             {lede}
           </p>
         )}
 
         {(primary || secondary) && (
-          <div className={`mt-8 sm:mt-9 flex flex-col sm:flex-row items-center justify-center gap-4 ${onPhoto ? 'lg:justify-start' : ''}`}>
+          <div className="mt-8 sm:mt-9 flex flex-col sm:flex-row items-center justify-center gap-4 lg:justify-start">
             {primary && (
               <Link
                 to={primary.to}
