@@ -201,9 +201,9 @@ const it: SiteCopy = {
           "airport": "dall’aeroporto di Ivalo",
           "story": [
             "A giugno il sole non tramonta a Kakslauttanen, e la villa in pino kelo con la camera da letto di vetro è un’altra casa: il tetto che d’inverno incornicia le aurore ora incornicia un cielo ancora chiaro alle due del mattino. Il parco nazionale Urho Kekkonen è a breve distanza in auto.",
-            "Il lago Inari è a un’ora di auto verso nord, e la crociera privata in barca con il fuoco da campo è la sera da prenotare: è il terzo lago della Finlandia per grandezza, e gran parte delle sue rive non ha strada. Tornati alla villa, la sauna e la vasca idromassaggio funzionano esattamente come a febbraio."
+            "Il lago Inari è a un’ora di auto verso nord, e la crociera privata intorno a Ukonsaari, l’isola sacra dei Sami, è la sera da prenotare: è il terzo lago della Finlandia per grandezza, e gran parte delle sue rive non ha strada. Tornati alla villa, la sauna e la vasca idromassaggio funzionano esattamente come a febbraio."
           ],
-          "night": "Crociera privata in barca sul lago Inari con fuoco da campo"
+          "night": "Crociera privata sul lago Inari intorno a Ukonsaari"
         }
       ]
     },
@@ -252,8 +252,8 @@ const it: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Le aurore in sé sono gratuite. Ciò che si offre qui è l’accesso, il veicolo giusto, la guida giusta e la notte giusta sotto lo squarcio di cielo giusto.' },
-    wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, rompighiaccio e lago Inari. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
-    other: { title: 'Altre uscite private', intro: 'Babbo Natale in villa, un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
+    wilderness: { title: 'Natura selvaggia', intro: 'Motoslitta, renne, villaggio di neve e safari del granchio reale. Le versioni private di ciò per cui si viene in Lapponia, senza bus condiviso e senza lo stesso giro di tutti.' },
+    other: { title: 'Altre uscite private', intro: 'Un fotografo per il fidanzamento e una spedizione di quattro giorni verso il Mar Glaciale Artico. Tutto privato, tutto prenotabile.' },
     onRequest: { eyebrow: 'Su richiesta', title: 'Chef e transfer: chiediamo noi per voi.', intro: 'Non abbiamo un prodotto prenotabile per uno chef privato o un transfer dall\'aeroporto, quindi qui non c\'è una scheda. Scrivete il desiderio nella richiesta: lo chiediamo alla struttura e torniamo con la risposta.', cta: 'Invia una richiesta' },
   },
   },

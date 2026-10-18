@@ -60,7 +60,7 @@ export default function Experiences() {
           'private aurora tour lapland',
           'private northern lights hunt',
           'private snowmobile lapland',
-          'icebreaker cruise kemi',
+          'private snow village levi',
           'lapland luxury experiences',
         ]}
       />
@@ -75,6 +75,7 @@ export default function Experiences() {
         imageUrl={HERO_CLIPS.experiences ? '/images/hero-experiences-poster.webp' : '/images/hero-experiences.webp'}
         videoUrl={HERO_CLIPS.experiences}
         scrim={HERO_CLIPS.experiences ? 'light' : 'default'}
+        textSide="right"
         imageAlt={c.photo.heroAlt.experiences}
         credit={<PhotoCredit credit={creditFor(HERO_CLIPS.experiences ?? '')} />}
       />

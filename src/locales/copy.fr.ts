@@ -201,9 +201,9 @@ const fr: SiteCopy = {
           "airport": "depuis l’aéroport d’Ivalo",
           "story": [
             "En juin, le soleil ne se couche pas à Kakslauttanen, et la villa en pin kelo avec la chambre de verre devient une autre maison : le toit qui encadre les aurores en hiver encadre maintenant un ciel encore clair à deux heures du matin. Le parc national Urho Kekkonen est à une courte distance en voiture.",
-            "Le lac Inari est à une heure de route vers le nord, et la croisière privée en bateau avec feu de camp est la soirée à réserver : c’est le troisième lac de Finlande par la taille, et la plus grande partie de ses rives n’a pas de route. De retour à la villa, le sauna et le bain nordique fonctionnent exactement comme en février."
+            "Le lac Inari est à une heure de route vers le nord, et la croisière privée autour d’Ukonsaari, l’île sacrée des Samis, est la soirée à réserver : c’est le troisième lac de Finlande par la taille, et la plus grande partie de ses rives n’a pas de route. De retour à la villa, le sauna et le bain nordique fonctionnent exactement comme en février."
           ],
-          "night": "Croisière privée en bateau sur le lac Inari avec feu de camp"
+          "night": "Croisière privée sur le lac Inari autour d’Ukonsaari"
         }
       ]
     },
@@ -252,8 +252,8 @@ const fr: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurore', intro: 'Les aurores en elles-mêmes sont gratuites. Ce qui se vend ici, c’est l’accès, le bon véhicule, le bon guide et la bonne nuit sous la bonne éclaircie.' },
-    wilderness: { title: 'Nature sauvage', intro: 'Motoneige, renne, brise-glace et lac Inari. Les versions privées de ce pour quoi on vient en Laponie, sans bus partagé ni la même boucle que tout le monde.' },
-    other: { title: 'Autres sorties privées', intro: 'Le Père Noël à la villa, un photographe pour des fiançailles et une expédition de quatre jours vers l\'océan Arctique. Tout est privé, tout se réserve.' },
+    wilderness: { title: 'Nature sauvage', intro: 'Motoneige, renne, village de neige et safari au crabe royal. Les versions privées de ce pour quoi on vient en Laponie, sans bus partagé ni la même boucle que tout le monde.' },
+    other: { title: 'Autres sorties privées', intro: 'Un photographe pour des fiançailles et une expédition de quatre jours vers l\'océan Arctique. Tout est privé, tout se réserve.' },
     onRequest: { eyebrow: 'Sur demande', title: 'Chef et transferts : nous demandons pour vous.', intro: 'Nous n\'avons pas de produit réservable pour un chef privé ou un transfert depuis l\'aéroport, il n\'y a donc pas de carte ici. Indiquez votre souhait dans la demande, nous interrogeons l\'établissement et revenons avec la réponse.', cta: 'Envoyer une demande' },
   },
   },

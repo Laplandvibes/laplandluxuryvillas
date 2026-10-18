@@ -225,9 +225,9 @@ const de: SiteCopy = {
           "airport": "vom Flughafen Ivalo",
           "story": [
             "Im Juni geht die Sonne in Kakslauttanen nicht unter, und die Kelo-Kiefern-Villa mit dem gläsernen Schlafzimmer ist ein anderes Haus: Das Dach, das im Winter Polarlichter rahmt, rahmt nun einen Himmel, der um zwei Uhr nachts noch hell ist. Der Nationalpark Urho Kekkonen liegt eine kurze Fahrt entfernt.",
-            "Zum Inarisee fährt man eine Stunde nach Norden, und die private Bootsfahrt mit Lagerfeuer ist der Abend, den man bucht: Es ist Finnlands drittgrößter See, und der größte Teil seines Ufers hat keine Straße. Zurück in der Villa arbeiten Sauna und Whirlpool genau so wie im Februar."
+            "Zum Inarisee fährt man eine Stunde nach Norden, und eine private Rundfahrt um Ukonsaari, die heilige Insel der Sami, ist der Abend, den man bucht: Es ist Finnlands drittgrößter See, und der größte Teil seines Ufers hat keine Straße. Zurück in der Villa arbeiten Sauna und Whirlpool genau so wie im Februar."
           ],
-          "night": "Private Bootsfahrt auf dem Inarisee mit Lagerfeuer"
+          "night": "Private Rundfahrt auf dem Inarisee um Ukonsaari"
         }
       ]
     },
@@ -292,8 +292,8 @@ const de: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Polarlichter', intro: 'Die Polarlichter selbst sind kostenlos. Was hier verkauft wird, ist der Zugang, das richtige Fahrzeug, der richtige Guide und die richtige Nacht unter dem richtigen Wolkenfenster.' },
-      wilderness: { title: 'Wildnis', intro: 'Schneemobil, Rentier, Eisbrecher und der Inarisee. Private Fassungen dessen, weswegen man nach Lappland kommt, ohne Sammelbus und ohne dieselbe Runde wie alle.' },
-      other: { title: 'Weitere private Touren', intro: 'Der Weihnachtsmann in der Villa, ein Fotograf für die Verlobung und eine viertägige Expedition ans Nordmeer. Alles privat, alles buchbar.' },
+      wilderness: { title: 'Wildnis', intro: 'Schneemobil, Rentier, Schneedorf und Königskrabben-Safari. Private Fassungen dessen, weswegen man nach Lappland kommt, ohne Sammelbus und ohne dieselbe Runde wie alle.' },
+      other: { title: 'Weitere private Touren', intro: 'Ein Fotograf für die Verlobung und eine viertägige Expedition ans Nordmeer. Alles privat, alles buchbar.' },
       onRequest: { eyebrow: 'Auf Anfrage', title: 'Koch und Transfers: wir fragen für Sie.', intro: 'Für einen Privatkoch oder einen Flughafentransfer haben wir kein buchbares Produkt, deshalb gibt es hier keine Karte dafür. Schreiben Sie Ihren Wunsch in die Anfrage, wir fragen beim Haus nach und melden uns mit der Antwort.', cta: 'Anfrage senden' },
     },
   },

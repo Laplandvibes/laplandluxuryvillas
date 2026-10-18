@@ -225,9 +225,9 @@ const fi: SiteCopy = {
           "airport": "Ivalon lentoasemalta",
           "story": [
             "Kesäkuussa aurinko ei laske Kakslauttasessa, ja lasimakuuhuoneinen kelohuvila on eri talo: katto, joka talvella kehystää revontulet, kehystää nyt taivaan, joka on valoisa kahdelta yöllä. Urho Kekkosen kansallispuisto on lyhyen ajomatkan päässä.",
-            "Inarijärvelle on tunnin ajo pohjoiseen, ja yksityinen veneretki nuotioineen on se ilta, joka varataan: järvi on Suomen kolmanneksi suurin, ja suurin osa sen rannoista on tiettömiä. Huvilalla sauna ja palju toimivat aivan kuten helmikuussa."
+            "Inarijärvelle on tunnin ajo pohjoiseen, ja yksityinen risteily saamelaisten pyhän Ukonsaaren ympäri on se ilta, joka varataan: järvi on Suomen kolmanneksi suurin, ja suurin osa sen rannoista on tiettömiä. Huvilalla sauna ja palju toimivat aivan kuten helmikuussa."
           ],
-          "night": "Yksityinen veneretki Inarijärvellä nuotioineen"
+          "night": "Yksityinen risteily Inarijärvellä Ukonsaaren ympäri"
         }
       ]
     },
@@ -292,8 +292,8 @@ const fi: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Revontulet', intro: 'Revontulet ovat itsessään ilmaisia. Maksat pääsystä: oikeasta kyydistä, oikeasta oppaasta ja oikeasta yöstä kirkkaan taivaan alla.' },
-      wilderness: { title: 'Erämaa', intro: 'Moottorikelkka, poro, jäänmurtaja ja Inarijärvi. Yksityisiä versioita niistä, joiden takia Lappiin tullaan, ilman jaettua bussia ja samaa lenkkiä kuin kaikilla muilla.' },
-      other: { title: 'Muut yksityiset', intro: 'Joulupukki huvilalle, valokuvaaja kihlaukseen ja neljän päivän retki Jäämerelle. Kaikki yksityisiä, kaikki varattavissa.' },
+      wilderness: { title: 'Erämaa', intro: 'Moottorikelkka, poro, lumikylä ja kuningasrapusafari. Yksityisiä versioita niistä, joiden takia Lappiin tullaan, ilman jaettua bussia ja samaa lenkkiä kuin kaikilla muilla.' },
+      other: { title: 'Muut yksityiset', intro: 'Valokuvaaja kihlaukseen ja neljän päivän retki Jäämerelle. Molemmat yksityisiä, molemmat varattavissa.' },
       onRequest: { eyebrow: 'Pyynnöstä', title: 'Kokki ja kuljetukset: kysymme puolestasi.', intro: 'Yksityiskokkia tai lentokenttäkuljetusta meillä ei ole varattavana tuotteena, eikä niistä siksi ole korttia tällä sivulla. Kerro toive tiedustelussa, niin kysymme kohteelta ja palaamme vastauksen kanssa.', cta: 'Tee tiedustelu' },
     },
   },

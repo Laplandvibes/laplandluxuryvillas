@@ -219,9 +219,9 @@ const nl: SiteCopy = {
           "airport": "vanaf de luchthaven van Ivalo",
           "story": [
             "In juni gaat de zon bij Kakslauttanen niet onder, en de villa van kelo-dennenhout met de glazen slaapkamer is een ander huis: het dak dat in de winter het noorderlicht omlijst, omlijst nu een hemel die om twee uur ’s nachts nog licht is. Nationaal Park Urho Kekkonen ligt op korte rijafstand.",
-            "Het Inarimeer ligt een uur rijden naar het noorden, en de privéboottocht met kampvuur is de avond die u boekt: het is het derde grootste meer van Finland, en het grootste deel van de oever heeft geen weg. Terug in de villa werken de sauna en de hot tub precies zoals in februari."
+            "Het Inarimeer ligt een uur rijden naar het noorden, en de privérondvaart rond Ukonsaari, het heilige eiland van de Sami, is de avond die u boekt: het is het derde grootste meer van Finland, en het grootste deel van de oever heeft geen weg. Terug in de villa werken de sauna en de hot tub precies zoals in februari."
           ],
-          "night": "Privéboottocht op het Inarimeer met kampvuur"
+          "night": "Privérondvaart op het Inarimeer rond Ukonsaari"
         }
       ]
     },
@@ -286,8 +286,8 @@ const nl: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Noorderlicht', intro: 'Het noorderlicht zelf is gratis. Wat hier wordt verkocht is de toegang, het juiste voertuig, de juiste gids en de juiste nacht onder het juiste wolkenvenster.' },
-      wilderness: { title: 'Wildernis', intro: 'Sneeuwscooter, rendier, een ijsbreker en het Inarimeer. Privéversies van waarvoor men naar Lapland komt, zonder gedeelde bus en zonder hetzelfde rondje als iedereen.' },
-      other: { title: 'Overige privétochten', intro: 'De Kerstman in de villa, een fotograaf voor een verloving en een vierdaagse expeditie naar de Noordelijke IJszee. Alles privé, alles te boeken.' },
+      wilderness: { title: 'Wildernis', intro: 'Sneeuwscooter, rendier, een sneeuwdorp en een koningskrabsafari. Privéversies van waarvoor men naar Lapland komt, zonder gedeelde bus en zonder hetzelfde rondje als iedereen.' },
+      other: { title: 'Overige privétochten', intro: 'Een fotograaf voor een verloving en een vierdaagse expeditie naar de Noordelijke IJszee. Alles privé, alles te boeken.' },
       onRequest: { eyebrow: 'Op aanvraag', title: 'Kok en transfers: wij vragen het voor u.', intro: 'Voor een privékok of een luchthaventransfer hebben wij geen boekbaar product, daarom staat er hier geen kaart. Zet uw wens in de aanvraag, dan vragen wij het bij het huis en komen we terug met het antwoord.', cta: 'Aanvraag versturen' },
     },
   },

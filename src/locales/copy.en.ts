@@ -225,9 +225,9 @@ const en: SiteCopy = {
           "airport": "from Ivalo airport",
           "story": [
             "In June the sun does not set at Kakslauttanen, and the kelo-pine villa with the glass bedroom is a different house: the roof that frames auroras in winter now frames a sky that is still light at two in the morning. Urho Kekkonen National Park is a short drive away.",
-            "Lake Inari is an hour north by car, and the private boat cruise with a campfire is the evening to book: it is Finland's third-largest lake, and most of its shore has no road. Back at the villa, the sauna and the hot tub work exactly as they do in February."
+            "Lake Inari is an hour north by car, and a private cruise around Ukonsaari, the island sacred to the Sámi, is the evening to book: it is Finland's third-largest lake, and most of its shore has no road. Back at the villa, the sauna and the hot tub work exactly as they do in February."
           ],
-          "night": "Private boat cruise on Lake Inari with a campfire"
+          "night": "Private cruise on Lake Inari around Ukonsaari"
         }
       ]
     },
@@ -292,8 +292,8 @@ const en: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'The auroras themselves are free. What you are paying for is the access: the right vehicle, the right guide, and the right night under a clear sky.' },
-      wilderness: { title: 'Wilderness', intro: 'Snowmobile, reindeer, an icebreaker and Lake Inari. Private versions of the reasons people come to Lapland, without the shared bus and the same loop as everyone else.' },
-      other: { title: 'Other private trips', intro: 'Santa at the villa, a photographer for an engagement, and a four-day expedition to the Arctic Ocean. All private, all bookable.' },
+      wilderness: { title: 'Wilderness', intro: 'Snowmobile, reindeer, a snow village and a king crab safari. Private versions of the reasons people come to Lapland, without the shared bus and the same loop as everyone else.' },
+      other: { title: 'Other private trips', intro: 'A photographer for an engagement and a four-day expedition to the Arctic Ocean. Both private, both bookable.' },
       onRequest: { eyebrow: 'On request', title: 'A chef and transfers: we ask on your behalf.', intro: 'We have no bookable product for a private chef or an airport transfer, so there is no card for them here. Tell us what you want in the enquiry and we will ask the property and come back with the answer.', cta: 'Send an enquiry' },
     },
   },
