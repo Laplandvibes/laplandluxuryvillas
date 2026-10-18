@@ -20,6 +20,17 @@
  * other way, shipping unverified ones. A wrong GetYourGuide id does not 404;
  * it serves a complete, plausible page for another product in another country.
  *
+ * ── Re-verified 2026-10-18: four rows removed ─────────────────────────────
+ * Vesa 18.10.2026 (laplandluxuryvillas): "miksi edelleen nämä ei mene suoraan
+ * varaukseen?" Each Worker link was opened in the in-app browser with &qa=1:
+ *   1073872  Lake Inari boat cruise   → 301 to the Inari location page
+ *   889294   Santa visit, Levi        → 301 to the Kittilä location page
+ *   504004   Icebreaker Sampo, Kemi   → empty page, generic title, no booking
+ *   885747   7 h snowmobile, Rovaniemi→ empty page, generic title, no booking
+ * A location-page redirect also drops partner_id and cmp, so such a booking
+ * was never ours. The other eleven showed their own title with partner_id kept.
+ * Lake Inari cruises are run by Visit Inari (paid partner 2026), not sold here.
+ *
  * ── Three products from the bucket are NOT here ───────────────────────────
  *   1138926  "Tromsø: Northern Lights Tour with Sámi Guide & Stay" — the
  *            catalogue files it under Kilpisjärvi, but the product itself is
@@ -64,7 +75,7 @@ export interface LuxuryPick {
 }
 
 export const PRICE_AS_OF = '2026-07-29';
-export const VERIFIED_ON = '2026-08-01';
+export const VERIFIED_ON = '2026-10-18';
 
 /**
  * Same seven-day rule as GetYourGuide picks (Vesa 4.10.2026): after that the cards
@@ -77,10 +88,6 @@ export function isLuxuryPriceFresh(now?: number): boolean {
 /** Ascending by price: the rail reads as a ladder, not a random shelf. */
 export const LUXURY_PICKS: readonly LuxuryPick[] = [
   { path: 'sirkka-l139331/vip-northern-lights-aurora-chase-levi-finnish-lapland-t1202632', title: 'VIP Private Northern Lights Hunt', place: 'Levi', price: 360, duration: '4 h' , category: 'aurora' },
-  { path: 'rovaniemi-l2653/lapland-exclusive-private-7h-snowmobile-tour-with-guide-t885747', title: 'Exclusive Private Snowmobile Tour with Guide', place: 'Rovaniemi', price: 399, duration: '7 h' , category: 'wilderness' },
-  { path: 'kittila-l165074/levi-private-santa-claus-visit-at-your-accommodation-t889294', title: 'Private Santa Claus Visit at Your Accommodation', place: 'Levi', price: 399, duration: '45 min' , category: 'other' },
-  { path: 'kemi-l98127/kemi-afternoon-icebreaker-sampo-cruise-and-ice-floating-t504004', title: 'Icebreaker Sampo Cruise with Ice Floating', place: 'Kemi', price: 402, duration: '6.5 h' , category: 'wilderness' },
-  { path: 'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872', title: 'Private Lake Inari Scenic Boat Cruise', place: 'Inari', price: 595, duration: '4 h' , category: 'wilderness' },
   { path: 'sirkka-l139331/levi-professional-engagement-or-after-wedding-shoot-t1176621', title: 'Professional Engagement or After-Wedding Shoot', place: 'Levi', price: 600, duration: '1 h' , category: 'other' },
   { path: 'sirkka-l139331/levi-private-northern-lights-hunt-t864972', title: 'Private Northern Lights Hunt in a 4x4 SUV', place: 'Levi', price: 684, duration: '5 h' , category: 'aurora' },
   { path: 'sirkka-l139331/levi-private-snow-village-tour-northern-lights-possibility-t1176434', title: 'Private Snow Village Tour', place: 'Levi', price: 777, duration: '3 h' , category: 'wilderness' },

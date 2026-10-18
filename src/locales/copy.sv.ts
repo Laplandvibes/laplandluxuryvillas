@@ -219,9 +219,9 @@ const sv: SiteCopy = {
           "airport": "från Ivalo flygplats",
           "story": [
             "I juni går solen inte ner vid Kakslauttanen, och kelotallsvillan med glassovrummet är ett annat hus: taket som ramar in norrsken på vintern ramar nu in en himmel som fortfarande är ljus klockan två på natten. Urho Kekkonens nationalpark ligger en kort bilresa bort.",
-            "Till Enaresjön är det en timmes bilfärd norrut, och den privata båtturen med lägereld är kvällen som bokas: det är Finlands tredje största sjö, och största delen av stranden saknar väg. Tillbaka i villan fungerar bastun och badtunnan precis som i februari."
+            "Till Enaresjön är det en timmes bilfärd norrut, och en privat kryssning runt Ukonsaari, samernas heliga ö, är kvällen som bokas: det är Finlands tredje största sjö, och största delen av stranden saknar väg. Tillbaka i villan fungerar bastun och badtunnan precis som i februari."
           ],
-          "night": "Privat båttur på Enaresjön med lägereld"
+          "night": "Privat kryssning på Enaresjön runt Ukonsaari"
         }
       ]
     },
@@ -286,8 +286,8 @@ const sv: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Norrsken', intro: 'Norrskenet självt är gratis. Det som säljs här är tillgången, rätt fordon, rätt guide och rätt natt under rätt molnfönster.' },
-      wilderness: { title: 'Vildmark', intro: 'Skoter, ren, isbrytare och Enare träsk. Privata versioner av det man åker till Lappland för, utan delad buss och samma slinga som alla andra.' },
-      other: { title: 'Övriga privata turer', intro: 'Jultomten till villan, en fotograf till förlovningen och en fyra dagars expedition till Ishavet. Allt privat, allt bokningsbart.' },
+      wilderness: { title: 'Vildmark', intro: 'Skoter, ren, snöby och kungskrabbsafari. Privata versioner av det man åker till Lappland för, utan delad buss och samma slinga som alla andra.' },
+      other: { title: 'Övriga privata turer', intro: 'En fotograf till förlovningen och en fyra dagars expedition till Ishavet. Allt privat, allt bokningsbart.' },
       onRequest: { eyebrow: 'På begäran', title: 'Kock och transfer: vi frågar åt dig.', intro: 'Vi har ingen bokningsbar produkt för privatkock eller flygplatstransfer, därför finns inget kort för dem här. Skriv önskemålet i förfrågan, så frågar vi boendet och återkommer med svaret.', cta: 'Skicka förfrågan' },
     },
   },

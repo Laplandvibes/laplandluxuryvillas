@@ -33,7 +33,8 @@ import nordicnestPicks from '../shared/ads/data/nordicnestPicks'
  *          serving this language has no page for the property)
  *   car    /go/cars with the airport IATA (EconomyBookings pre-filled)
  *   night  /go/activities (GetYourGuide search or product) or, for the
- *          private chef, the site's own inquiry page: no partner sells it
+ *          private chef, the site's own inquiry page: no partner sells it,
+ *          or a paid partner's own page (Visit Inari's Lake Inari cruise)
  *
  * 🔴 Facts in the stories are the ones the villa pages already state
  * (Kakslauttanen "35-minute transfer from Ivalo", Arctic TreeHouse "five
@@ -52,6 +53,13 @@ type Night =
   | { kind: 'search'; q: string }
   | { kind: 'product'; path: string }
   | { kind: 'inquiry' }
+  /**
+   * A paid partner's own page, linked direct (no affiliate network sells it).
+   * `fi` for Finnish readers, `other` for every other language, because the
+   * partner publishes only those two. The footer's partner-event beacon
+   * (LV-PARTNER-EVENTS) counts the view and the click of a direct link.
+   */
+  | { kind: 'partner'; fi: string; other: string; campaign: string }
 
 interface PackageDef {
   key: string
@@ -87,11 +95,32 @@ const PACKAGES: PackageDef[] = [
     key: 'summer',
     villa: 'kakslauttanen-glass-igloo-suite',
     iata: 'IVL',
-    // GetYourGuide product, verified 2026-08-01 in shared/gyg/luxury.ts.
-    night: { kind: 'product', path: 'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872' },
+    // 🔴 18.10.2026: the GetYourGuide boat tour (t1073872) was delisted and its link
+    // redirected to the Inari location page without partner_id, so the button landed
+    // on a list and no booking was ours (Vesa: "veneretki inariin ei vie sellaselle").
+    // Lake Inari cruises are run by Visit Inari, a paid partner since 2026 (Vesa:
+    // "visit inari on ainoa joka järjestää inarissa risteilyjä"). Their page sells the
+    // daily catamaran and takes enquiries for a private cruise; it mentions no
+    // campfire, so the copy no longer promises one.
+    night: {
+      kind: 'partner',
+      fi: 'https://visitinari.fi/fi/inarijarven-risteily/',
+      other: 'https://visitinari.fi/lake-inari-cruise/',
+      campaign: 'visit-inari-2026',
+    },
     image: '/images/villas/kakslauttanen-sembo-2.webp',
   },
 ]
+
+/** Same UTM shape as the Worker's paid direct route, so the partner's own analytics sees us. */
+function partnerHref(n: Extract<Night, { kind: 'partner' }>, lang: string, sid: string): string {
+  const u = new URL(lang === 'fi' ? n.fi : n.other)
+  u.searchParams.set('utm_source', 'laplandvibes')
+  u.searchParams.set('utm_medium', 'partner')
+  u.searchParams.set('utm_campaign', n.campaign)
+  u.searchParams.set('utm_content', sid)
+  return u.toString()
+}
 
 function Row({
   icon: Icon,
@@ -101,6 +130,7 @@ function Row({
   href,
   cta,
   external,
+  rel = 'sponsored nofollow noopener',
   nearby,
 }: {
   icon: LucideIcon
@@ -110,6 +140,8 @@ function Row({
   href: string
   cta: string
   external: boolean
+  /** A paid partner's direct link is `sponsored` but not `nofollow`. */
+  rel?: string
   nearby?: { href: string; label: string }
 }) {
   const ctaClass =
@@ -129,7 +161,7 @@ function Row({
         )}
       </div>
       {external ? (
-        <a href={href} target="_blank" rel="sponsored nofollow noopener" className={ctaClass}>
+        <a href={href} target="_blank" rel={rel} className={ctaClass}>
           {cta}
           <ArrowUpRight size={13} aria-hidden="true" />
         </a>
@@ -187,7 +219,9 @@ export default function StayPackages() {
                 ? gygSearch(`package_${pk.key}_night`, night.q, lang)
                 : night.kind === 'product'
                   ? gygProduct(night.path, `package_${pk.key}_night`, lang)
-                  : to('/private-inquiry')
+                  : night.kind === 'partner'
+                    ? partnerHref(night, lang, `package_${pk.key}_night`)
+                    : to('/private-inquiry')
             const nightCta = night.kind === 'inquiry' ? p.ctaNightInquiry : p.ctaNight
             const credit = creditFor(pk.image)
             const flip = i % 2 === 1
@@ -218,7 +252,7 @@ export default function StayPackages() {
                   <ul className="mt-7 divide-y divide-[color:var(--color-mist)]/60 border-y border-[color:var(--color-mist)]/60">
                     <Row icon={BedDouble} label={p.stay} name={villa.name} sub={villa.destination} href={stayHref} cta={stayCta} external nearby={nearbyHref ? { href: nearbyHref, label: c.cta.nearbyStays } : undefined} />
                     <Row icon={CarFront} label={p.car} name={p.carFrom.replace('{airport}', t.airport)} href={carHref} cta={p.ctaCar} external />
-                    <Row icon={MoonStar} label={p.night} name={t.night} href={nightHref} cta={nightCta} external={night.kind !== 'inquiry'} />
+                    <Row icon={MoonStar} label={p.night} name={t.night} href={nightHref} cta={nightCta} external={night.kind !== 'inquiry'} rel={night.kind === 'partner' ? 'sponsored noopener' : undefined} />
                   </ul>
                 </div>
               </article>

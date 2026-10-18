@@ -225,9 +225,9 @@ const es: SiteCopy = {
           "airport": "desde el aeropuerto de Ivalo",
           "story": [
             "En junio el sol no se pone en Kakslauttanen, y la villa de pino kelo con el dormitorio de cristal es otra casa: el techo que en invierno enmarca auroras enmarca ahora un cielo que sigue claro a las dos de la madrugada. El parque nacional Urho Kekkonen queda a un trayecto corto en coche.",
-            "El lago Inari queda a una hora en coche hacia el norte, y el crucero privado en barco con hoguera es la noche que se reserva: es el tercer lago más grande de Finlandia y la mayor parte de su orilla no tiene carretera. De vuelta en la villa, la sauna y el jacuzzi funcionan exactamente igual que en febrero."
+            "El lago Inari queda a una hora en coche hacia el norte, y el crucero privado alrededor de Ukonsaari, la isla sagrada de los sami, es la noche que se reserva: es el tercer lago más grande de Finlandia y la mayor parte de su orilla no tiene carretera. De vuelta en la villa, la sauna y el jacuzzi funcionan exactamente igual que en febrero."
           ],
-          "night": "Crucero privado en barco por el lago Inari con hoguera"
+          "night": "Crucero privado por el lago Inari alrededor de Ukonsaari"
         }
       ]
     },
@@ -292,8 +292,8 @@ const es: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'Las auroras en sí son gratuitas. Lo que se ofrece aquí es el acceso, el vehículo adecuado, el guía adecuado y la noche adecuada bajo la ventana de cielo despejado adecuada.' },
-      wilderness: { title: 'Naturaleza salvaje', intro: 'Motonieve, renos, un rompehielos y el lago Inari. Versiones privadas de aquello por lo que se viene a Laponia, sin autobús compartido ni la misma vuelta que todos.' },
-      other: { title: 'Otras salidas privadas', intro: 'Papá Noel en la villa, un fotógrafo para una pedida y una expedición de cuatro días al océano Ártico. Todo privado, todo reservable.' },
+      wilderness: { title: 'Naturaleza salvaje', intro: 'Motonieve, renos, un pueblo de nieve y un safari del cangrejo real. Versiones privadas de aquello por lo que se viene a Laponia, sin autobús compartido ni la misma vuelta que todos.' },
+      other: { title: 'Otras salidas privadas', intro: 'Un fotógrafo para una pedida y una expedición de cuatro días al océano Ártico. Todo privado, todo reservable.' },
       onRequest: { eyebrow: 'Bajo petición', title: 'Chef y traslados: preguntamos por usted.', intro: 'No tenemos un producto reservable para un chef privado ni para un traslado desde el aeropuerto, por eso aquí no hay tarjeta. Cuéntenos su deseo en la consulta: lo preguntamos al alojamiento y volvemos con la respuesta.', cta: 'Enviar consulta' },
     },
   },

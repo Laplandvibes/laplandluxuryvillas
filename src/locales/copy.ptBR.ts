@@ -225,9 +225,9 @@ const ptBR: SiteCopy = {
           "airport": "do aeroporto de Ivalo",
           "story": [
             "Em junho o sol não se põe em Kakslauttanen, e a vila de pinho kelo com o quarto de vidro é outra casa: o teto que no inverno emoldura auroras agora emoldura um céu que ainda está claro às duas da manhã. O Parque Nacional Urho Kekkonen fica a uma curta distância de carro.",
-            "O Lago Inari fica a uma hora de carro para o norte, e o passeio privativo de barco com fogueira é a noite que se reserva: é o terceiro maior lago da Finlândia, e a maior parte da margem não tem estrada. De volta à vila, a sauna e o ofurô funcionam exatamente como em fevereiro."
+            "O Lago Inari fica a uma hora de carro para o norte, e o passeio privativo de barco ao redor de Ukonsaari, a ilha sagrada dos sámi, é a noite que se reserva: é o terceiro maior lago da Finlândia, e a maior parte da margem não tem estrada. De volta à vila, a sauna e o ofurô funcionam exatamente como em fevereiro."
           ],
-          "night": "Passeio privativo de barco no Lago Inari com fogueira"
+          "night": "Passeio privativo de barco no Lago Inari ao redor de Ukonsaari"
         }
       ]
     },
@@ -292,8 +292,8 @@ const ptBR: SiteCopy = {
   experiencesPage: {
     sections: {
       aurora: { title: 'Aurora', intro: 'As auroras em si são gratuitas. O que se oferece aqui é o acesso, o veículo certo, o guia certo e a noite certa sob a janela de céu limpo certa.' },
-      wilderness: { title: 'Natureza selvagem', intro: 'Snowmobile, renas, um quebra-gelo e o lago Inari. Versões privativas daquilo que leva as pessoas à Lapônia, sem ônibus compartilhado nem o mesmo trajeto de todo mundo.' },
-      other: { title: 'Outros passeios privativos', intro: 'Papai Noel na vila, um fotógrafo para o noivado e uma expedição de quatro dias ao oceano Ártico. Tudo privativo, tudo reservável.' },
+      wilderness: { title: 'Natureza selvagem', intro: 'Snowmobile, renas, uma vila de neve e um safári do caranguejo-real. Versões privativas daquilo que leva as pessoas à Lapônia, sem ônibus compartilhado nem o mesmo trajeto de todo mundo.' },
+      other: { title: 'Outros passeios privativos', intro: 'Um fotógrafo para o noivado e uma expedição de quatro dias ao oceano Ártico. Tudo privativo, tudo reservável.' },
       onRequest: { eyebrow: 'Sob consulta', title: 'Chef e traslados: perguntamos por você.', intro: 'Não temos um produto reservável para chef particular nem para traslado do aeroporto, por isso não há cartão aqui. Conte o que deseja na consulta: perguntamos à propriedade e voltamos com a resposta.', cta: 'Enviar consulta' },
     },
   },
