@@ -246,9 +246,12 @@ export default function Home() {
           haetaan niitä kalliita hyviltä arvioilta"). One partner block: the
           ad box makes the case, the three cabins are the evidence, one MAINOS
           label and one disclosure between them. The cabins are the priciest
-          5-star properties in the live Lomarengas feed, three destinations. */}
+          5-star properties in the live Lomarengas feed, three destinations.
+          18.10.2026: the same max-w-7xl column as the sections around it (Vesa:
+          "miksi tämä osio on niin paljon kapeampi kuin ylempänä oleva mainos";
+          measured at 1990 px: 840 px here against the Nordic Nest rail's 1224). */}
       <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
-        <div className="mx-auto max-w-4xl px-5 sm:px-7">
+        <div className="mx-auto max-w-7xl px-5 sm:px-7">
           <PartnerStayAd sid="home_whole_cabin" attached />
           <CabinCarousel sid="home_whole_cabin" attached />
         </div>
