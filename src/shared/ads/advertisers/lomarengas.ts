@@ -97,8 +97,8 @@ const lomarengas: AdSpec = {
     },
     it: {
       eyebrow: 'Una baita intera, non una stanza',
-      headline: 'Affitta una baita intera in Lapponia, con sauna privata e spazio per tutti',
-      sub: "La più grande agenzia di affitto baite della Finlandia. Migliaia di baite in tutta la Lapponia, molte con sauna privata sul lago e camino. Prenoti diretto e hai tutta la baita per te, non solo una stanza. Quando vuoi spazio, silenzio e una cucina tua, la baita batte l'hotel.",
+      headline: 'Affitti una baita intera in Lapponia, con sauna privata e spazio per tutti',
+      sub: "La più grande agenzia di affitto baite della Finlandia. Migliaia di baite in tutta la Lapponia, molte con sauna privata sul lago e camino. Prenoti diretto e ha tutta la baita a Sua disposizione, non solo una stanza. Quando vuole spazio, silenzio e una cucina propria, la baita batte l'hotel.",
       trust: ['Sauna privata nella maggior parte', "L'intera baita, non condivisa", 'Baite in tutta la Lapponia'],
       cta: 'Vedi baite disponibili',
       poweredBy: 'Prenotazione con Lomarengas',
