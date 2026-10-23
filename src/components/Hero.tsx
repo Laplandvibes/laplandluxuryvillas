@@ -228,7 +228,7 @@ export default function Hero({
       >
        <div
         className={`@container ${
-          compact ? 'lg:max-w-[42rem] xl:max-w-[46rem]' : 'lg:max-w-[44rem] xl:max-w-[50rem]'
+          compact ? 'lg:max-w-[42rem] xl:max-w-[46rem]' : 'lg:max-w-[44rem] xl:max-w-[50rem] 2xl:max-w-[53rem]'
         } lg:text-left lg:pointer-events-auto ${right ? 'lg:ml-auto' : ''}`}
       >
         {/* Brass on deep-night is about 7:1, so the eyebrow needs no backing plate
@@ -242,8 +242,10 @@ export default function Hero({
         )}
 
         {/* On the photograph from lg: inner pages 56 / 64 / 72 px in a 42–46 rem column, the
-            front page 72 / 80 / 88 px in 44–50 rem (the 84–100 px of the band-under model ran
-            to four lines in such a column). */}
+            front page 72 / 80 / 88 px in 44–50–53 rem (the 84–100 px of the band-under model ran
+            to four lines in such a column). 53 rem at 2xl (23.10.2026): the Italian front title
+            needs 833 px for its best two-line split at 88 px and ran to three lines in 50 rem;
+            the other languages measure 507–775 px, so only Italian moves. */}
         <h1
           className={`font-heading text-[color:var(--color-snow)] leading-[1.05] text-balance ${
             compact
