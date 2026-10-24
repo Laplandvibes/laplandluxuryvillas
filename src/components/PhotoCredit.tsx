@@ -26,7 +26,7 @@ export default function PhotoCredit({ credit, plain = false }: { credit?: Credit
     <span className="absolute bottom-0 right-0 z-10 max-w-full rounded-tl bg-[#020617]/80 px-1.5 py-[2px] text-[9px] sm:text-[10px] leading-tight text-white font-body">
       {c.credit}:{' '}
       {credit.kind === 'sembo' || credit.kind === 'own' ? (
-        <span>{credit.author}</span>
+        <span translate="no">{credit.author}</span>
       ) : plain ? (
         /* Inside a card that is itself a link (RelatedSites): text only, the links are in the credit line under the cards. */
         <span>
@@ -34,12 +34,12 @@ export default function PhotoCredit({ credit, plain = false }: { credit?: Credit
           {credit.cropped && <>, {c.cropped}</>}
         </span>
       ) : credit.kind === 'pexels' ? (
-        <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2">
+        <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2" translate="no">
           {credit.author}, Pexels
         </a>
       ) : (
         <>
-          <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2">
+          <a href={credit.sourceUrl} target="_blank" rel="noopener" className="lv-tap underline underline-offset-2" translate="no">
             {credit.author}
           </a>
           {credit.license && credit.licenseUrl && (

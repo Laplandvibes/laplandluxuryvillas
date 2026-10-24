@@ -5,6 +5,22 @@ import Logo from './Logo'
 import EcosystemMenu from '../shared/EcosystemMenu'
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang'
 
+// Logolinkin ruudunlukijanimi, verkoston yhteinen sanasto (gate:a11y-nimet 24.10.2026).
+const HOME_LABEL: Record<string, string> = {
+  en: 'LaplandLuxuryVillas home',
+  fi: 'LaplandLuxuryVillas, etusivu',
+  sv: 'LaplandLuxuryVillas, startsida',
+  de: 'LaplandLuxuryVillas, Startseite',
+  es: 'LaplandLuxuryVillas, página de inicio',
+  fr: 'LaplandLuxuryVillas, page d’accueil',
+  it: 'LaplandLuxuryVillas, pagina iniziale',
+  nl: 'LaplandLuxuryVillas, startpagina',
+  'pt-BR': 'LaplandLuxuryVillas, página inicial',
+  ja: 'LaplandLuxuryVillas ホーム',
+  ko: 'LaplandLuxuryVillas 홈',
+  'zh-CN': 'LaplandLuxuryVillas 首页',
+}
+
 const LANG_PREFIX: Record<Lang, string> = {
   en: '', fi: 'fi', de: 'de', ja: 'ja',
   es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
@@ -161,7 +177,7 @@ export default function Nav() {
                 }
               }}
               className="min-w-0 shrink overflow-hidden inline-flex items-center min-h-11"
-              aria-label="LaplandLuxuryVillas, home"
+              aria-label={HOME_LABEL[lang] ?? HOME_LABEL.en}
             >
               <Logo nav />
             </Link>

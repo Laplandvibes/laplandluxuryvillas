@@ -159,6 +159,7 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
                 <img
                   src={cab.img}
                   alt={`${cab.name}, ${cab.place}`}
+                  translate="no"
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-cover"
@@ -177,7 +178,7 @@ export default function CabinCarousel({ sid, attached = false }: { sid: string; 
                   ) : null}
                 </div>
 
-                <h4 className="font-heading text-xl text-[color:var(--color-snow)] leading-tight mb-3">{cab.name}</h4>
+                <h4 className="font-heading text-xl text-[color:var(--color-snow)] leading-tight mb-3" translate="no">{cab.name}</h4>
 
                 <ul className="mb-4 flex flex-wrap gap-x-4 gap-y-1.5 text-xs font-body text-[color:var(--color-bone)]/80">
                   {cab.sqm ? (
