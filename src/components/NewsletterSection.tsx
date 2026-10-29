@@ -1,3 +1,13 @@
+function newsletterEmailLabel(): string {
+  const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang.toLowerCase().split('-')[0];
+  return ({fi:'Sähköpostiosoite',en:'Email address',de:'E-Mail-Adresse',es:'Correo electrónico',fr:'Adresse e-mail',it:'Indirizzo email',nl:'E-mailadres',sv:'E-postadress',ja:'メールアドレス',ko:'이메일 주소',pt:'Endereço de e-mail',zh:'电子邮箱'} as Record<string,string>)[lang] || 'Email address';
+}
+
+function newsletterLanguageNotice(): string {
+  const lang = typeof document === 'undefined' ? 'en' : document.documentElement.lang.toLowerCase().split('-')[0];
+  const notes: Record<string, string> = {"fi":"Uutiskirjeet ovat suomeksi.","en":"Newsletters are in English.","de":"Die Newsletter werden auf Englisch versendet.","ja":"ニュースレターは英語でお届けします。","ko":"뉴스레터는 영어로 발송됩니다.","fr":"Les newsletters sont envoyées en anglais.","it":"Le newsletter sono inviate in inglese.","nl":"De nieuwsbrieven zijn in het Engels.","sv":"Nyhetsbreven skickas på engelska.","es":"Los boletines se envían en inglés.","pt":"As newsletters são enviadas em inglês.","zh":"订阅邮件以英语发送。"};
+  return notes[lang] || notes.en;
+}
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Send, CheckCircle, Loader2 } from 'lucide-react'
@@ -193,8 +203,7 @@ export default function NewsletterSection() {
         </p>
 
         <><FounderByline tone="pink" />
-        <form
-          onSubmit={onSubmit}
+        <form style={{ background: '#0F172A', color: '#F9FAFB', padding: 16, borderRadius: 16 }} onSubmit={onSubmit}
           onInvalidCapture={(e) => {
             if (blockedTracked.current) return
             blockedTracked.current = true
@@ -205,7 +214,7 @@ export default function NewsletterSection() {
           className="mt-10 max-w-xl mx-auto"
         >
           <div className="flex flex-col sm:flex-row items-stretch gap-3">
-            <input
+            <label style={{display:'flex',flexDirection:'column',gap:8,flex:'1 1 0%',minWidth:0,textAlign:'left',fontSize:14,color:'#F9FAFB'}}><span>{newsletterEmailLabel()}</span><span style={{fontSize:13,lineHeight:1.5}}>{newsletterLanguageNotice()}</span><input style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
               type="email"
               inputMode="email"
               autoComplete="email"
@@ -216,8 +225,8 @@ export default function NewsletterSection() {
               placeholder={c.emailPlaceholder}
               disabled={status === 'loading' || status === 'success' || status === 'already'}
               className="flex-1 bg-white/95 text-[color:var(--color-deep-night)] placeholder-[color:var(--color-charcoal)]/50 px-5 py-4 text-base font-body focus:outline-none focus:ring-2 focus:ring-white"
-            />
-            <button
+            /></label>
+            <button style={{ backgroundColor: '#BE185D', color: '#FFFFFF', alignSelf: 'end', minHeight: 48 }}
               type="submit"
               disabled={status === 'loading' || status === 'success' || status === 'already'}
               className="inline-flex items-center justify-center gap-2 bg-[color:var(--color-deep-night)] text-white px-7 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-black transition-colors disabled:opacity-60"
@@ -229,7 +238,7 @@ export default function NewsletterSection() {
             </button>
           </div>
 
-          <label className="mt-4 flex items-start gap-3 text-left font-body text-xs sm:text-[13px] leading-relaxed text-white/85">
+          <label style={{color:"#F9FAFB"}} className="mt-4 flex items-start gap-3 text-left font-body text-xs sm:text-[13px] leading-relaxed text-white/85">
             <input
               type="checkbox"
               checked={consented}
@@ -238,7 +247,7 @@ export default function NewsletterSection() {
               disabled={status === 'loading' || status === 'success' || status === 'already'}
               className="mt-[3px] h-4 w-4 shrink-0 accent-[color:var(--color-deep-night)] focus:outline-none focus:ring-2 focus:ring-white"
             />
-            <span>
+            <span style={{color:"#F9FAFB"}}>
               {cc.label}{' '}
               <Link
                 to={to('/privacy')}
