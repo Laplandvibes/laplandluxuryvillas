@@ -26,6 +26,8 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - NotFound.tsx
 - PartnerSlot.tsx
 - PremiumSpotGrid.tsx
+- ShareBar/ShareBar.tsx
+- ShareBar/copy.ts
 - adSlotsCopy.ts
 - ads/AdUnit.tsx
 - ads/ProductRail.tsx
@@ -34,7 +36,15 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - ads/data/partnerBrand.ts
 - ads/data/partnerTypes.ts
 - ads/rails/nordicnest.ts
+- appPromo/AppPromo.tsx
+- appPromo/copy.ts
+- appPromo/screens.ts
 - appStats.ts
+- cjk/cjkJsxDevRuntime.ts
+- cjk/cjkJsxRuntime.ts
+- cjk/cjkOtsikotPlugin.ts
+- cjk/fraasit.ts
+- cjk/otsikko.ts
 - destinations/facts.ts
 - destinations/factsI18n.ts
 - destinations/labels.ts
