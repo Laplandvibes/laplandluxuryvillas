@@ -21,8 +21,10 @@ import AffiliateDisclosure from './AffiliateDisclosure'
 //      under one placement id and D1 could not tell them apart. The `sid` prop
 //      was only ever passed to GA4. The shared unit calls `spec.linkFor(sid)`,
 //      so the placement now reaches the Worker and the Command Center.
-//   2. The accent was #34D399/#6EE7B7, a lighter mint than the advertiser's own
-//      #10B981/#047857 used everywhere else in the network.
+//   2. The accent was #34D399/#6EE7B7, a lighter mint than the #10B981/#047857
+//      used everywhere else in the network. Neither was Lomarengas: its own
+//      colours are yellow #FDC300 + navy #153D8A (logo + lomarengas.fi, measured
+//      2026-11-01), now in the shared spec, so this card follows automatically.
 //   3. The whole card was duplicated markup that no shared fix could reach.
 //
 // What is deliberately kept: the COPY. The network spec sells a cottage on its

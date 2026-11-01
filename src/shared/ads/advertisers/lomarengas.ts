@@ -19,8 +19,14 @@ const lomarengas: AdSpec = {
       : 'https://www.lomarengas.fi/en/cottage-search/lappi'
     return `https://go.laplandvibes.com/go/lomarengas?sid=${encodeURIComponent(sid)}&dest=${encodeURIComponent(dest)}`
   },
-  accent: '#10B981',
-  accentDark: '#047857',
+  // Lomarenkaan omat värit: keltainen + tummansininen, mitattu logosta
+  // (_affiliate/logos/adtraction-lomarengas.png) ja lomarengas.fi:n lähteestä 1.11.2026.
+  // 🔴 Vihreää ei ole koskaan ollut: #10B981 oli täällä arvaus, ja agentit lukivat sen
+  // brändivärinä kahdesti (skiresortsin kartta 1.11.). Napin teksti sininen keltaisella 6,3:1;
+  // tummalla kortilla keltainen muste 10,5:1, valkoisella sininen 10,2:1.
+  accent: '#FDC300',
+  accentDark: '#153D8A',
+  accentInk: '#153D8A',
   icon: Home,
   copy: {
     fi: {

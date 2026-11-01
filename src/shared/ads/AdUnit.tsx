@@ -87,6 +87,10 @@ export interface AdSpec {
   linkFor: (sid: string, lang?: AdLang) => string
   accent: string
   accentDark: string
+  /** Napin tekstiväri tunnusvärin päällä, kun brändi parittaa täytön omalla musteellaan:
+   *  Lomarengas tummansininen #153D8A keltaisella #FDC300 (6,3:1, mitattu logosta ja
+   *  lomarengas.fi:stä 1.11.2026). Käytetään vain jos se ylittää 4,5:1 täyttöä vasten. */
+  accentInk?: string
   icon: LucideIcon
   /** Languages present here decide where the ad shows; missing lang + no `en` → renders nothing. */
   copy: Partial<Record<AdLang, AdCopy>>
@@ -189,7 +193,9 @@ export default function AdUnit({
   // Napin täyttö: valkoinen teksti vaatii 4,5:1. Jos brändiväri ei riitä, täyttö on
   // vaalennettu sävy ja teksti tummaa — nappi ei saa kadota korttiin.
   const ctaBg = !dark || contrast(WHITE, hexToRgb(spec.accent)) >= 4.5 ? spec.accent : ink
-  const ctaFg = contrast(WHITE, hexToRgb(ctaBg)) >= 4.5 ? '#FFFFFF' : '#0F172A'
+  const ctaFg = spec.accentInk && contrast(hexToRgb(spec.accentInk), hexToRgb(ctaBg)) >= 4.5
+    ? spec.accentInk
+    : contrast(WHITE, hexToRgb(ctaBg)) >= 4.5 ? '#FFFFFF' : '#0F172A'
   const logo = logoSrc ?? (dark && spec.logoDark ? spec.logoDark : spec.logo)
   const adLabel = AD_LABEL[lang] ?? AD_LABEL.en
   const photo = imageSrc ?? spec.image
