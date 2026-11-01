@@ -44,8 +44,8 @@ export default function Logo({ hero = false, className = '', nav = false }: Logo
   const glow = hero ? 'drop-shadow-[0_0_36px_rgba(236,72,153,0.55)]' : ''
 
   return (
-    <span
-      className={`font-logo tracking-wide leading-none inline-flex items-baseline whitespace-nowrap ${size} drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${nav ? ' lv-wm' : ''} ${className}`}
+    <span translate="no"
+      className={`notranslate font-logo tracking-wide leading-none inline-flex items-baseline whitespace-nowrap ${size} drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)] ${nav ? ' lv-wm' : ''} ${className}`}
       data-lv-sanamerkki={nav ? '' : undefined}
       style={nav ? WM_STYLE : undefined}
     >
