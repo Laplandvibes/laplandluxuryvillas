@@ -197,7 +197,7 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section ref={sectionRef} className="relative bg-gradient-to-br from-[color:var(--color-vibe-pink)] to-[#BE2470] py-20 md:py-28 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-gradient-to-br from-[#DB2777] to-[#BE2470] py-20 md:py-28 overflow-hidden">
       <div
         className="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none"
         style={{
