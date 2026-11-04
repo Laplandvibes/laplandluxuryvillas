@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Send, CheckCircle, Loader2 } from 'lucide-react'
+import { Send, CheckCircle, Loader2, Mail } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
@@ -19,6 +19,12 @@ const NL_EMAIL_LABEL: Record<string, string> = {
   en: 'Email address', fi: 'Sähköpostiosoite', de: 'E-Mail-Adresse', ja: 'メールアドレス',
   es: 'Correo electrónico', pt: 'E-mail', zh: '电子邮箱', ko: '이메일 주소',
   fr: 'Adresse e-mail', it: 'Indirizzo e-mail', nl: 'E-mailadres', sv: 'E-postadress',
+};
+// Esimerkkiosoite kentän taustalle (4.11.2026): näyttää muodon, ei toista otsikkoa.
+const NL_EMAIL_EXAMPLE: Record<string, string> = {
+  en: 'name@example.com', fi: 'nimi@esimerkki.fi', de: 'name@beispiel.de', ja: 'name@example.com',
+  es: 'nombre@ejemplo.es', pt: 'nome@exemplo.com.br', zh: 'name@example.com', ko: 'name@example.com',
+  fr: 'nom@exemple.fr', it: 'nome@esempio.it', nl: 'naam@voorbeeld.nl', sv: 'namn@exempel.se',
 };
 const nlLang = (l?: string): string => {
   const x = (l || 'en').toLowerCase();
@@ -212,7 +218,8 @@ export default function NewsletterSection() {
         </p>
 
         <><FounderByline tone="pink" />
-        <form style={{ background: '#0F172A', color: '#F9FAFB', padding: 16, borderRadius: 16 }} onSubmit={onSubmit}
+        {/* 4.11.2026 (Vesa: kenttä "leijuu" eikä "anna esimerkkiä taustalle"): Codexin 28.10. tumma laatikko pois, otsikko kentän yllä, kenttä ja nappi samalla rivillä, esimerkkiosoite kentässä. */}
+        <form onSubmit={onSubmit}
           onInvalidCapture={(e) => {
             if (blockedTracked.current) return
             blockedTracked.current = true
@@ -220,26 +227,38 @@ export default function NewsletterSection() {
             const t = e.target as HTMLInputElement
             track('nl_blocked', { ...funnelData, reason: t.type === 'checkbox' ? 'consent' : 'email' })
           }}
-          className="mt-10 max-w-xl mx-auto"
+          className="mt-10 max-w-xl mx-auto text-left"
         >
-          <div className="flex flex-col sm:flex-row items-stretch gap-3">
-            <div style={{display:'flex',flexDirection:'column',gap:8,flex:'1 1 0%',minWidth:0,textAlign:'left',fontSize:14,color:'#F9FAFB'}}><label htmlFor="nl-inline-email">{NL_EMAIL_LABEL[nlLang(lang)] ?? NL_EMAIL_LABEL.en}</label>{NL_LANG_NOTICE[nlLang(lang)] && <span id="nl-inline-email-lang" style={{fontSize:13,lineHeight:1.5}}>{NL_LANG_NOTICE[nlLang(lang)]}</span>}<input
-              id="nl-inline-email"
-              aria-describedby={NL_LANG_NOTICE[nlLang(lang)] ? 'nl-inline-email-lang' : undefined} style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
-              type="email"
-              inputMode="email"
-              autoComplete="email"
-              required
-              value={email}
-              onFocus={trackStart}
-              onChange={(e) => setEmail(e.target.value)}
-              disabled={status === 'loading' || status === 'success' || status === 'already'}
-              className="flex-1 bg-white/95 text-[color:var(--color-deep-night)] placeholder-[color:var(--color-charcoal)]/50 px-5 py-4 text-base font-body focus:outline-none focus:ring-2 focus:ring-white"
-            /></div>
-            <button style={{ backgroundColor: '#BE185D', color: '#FFFFFF', alignSelf: 'end', minHeight: 48 }}
+          <label htmlFor="nl-inline-email" className="block text-white font-semibold text-sm mb-2 font-body">
+            {NL_EMAIL_LABEL[nlLang(lang)] ?? NL_EMAIL_LABEL.en}
+          </label>
+          {NL_LANG_NOTICE[nlLang(lang)] && (
+            <p id="nl-inline-email-lang" className="text-white text-[13px] leading-relaxed -mt-1 mb-2 font-body">
+              {NL_LANG_NOTICE[nlLang(lang)]}
+            </p>
+          )}
+          <div className="flex flex-col sm:flex-row gap-3">
+            <div className="relative flex-1 min-w-0">
+              <Mail aria-hidden className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 pointer-events-none" />
+              <input
+                id="nl-inline-email"
+                aria-describedby={NL_LANG_NOTICE[nlLang(lang)] ? 'nl-inline-email-lang' : undefined}
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                required
+                value={email}
+                placeholder={NL_EMAIL_EXAMPLE[nlLang(lang)] ?? NL_EMAIL_EXAMPLE.en}
+                onFocus={trackStart}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={status === 'loading' || status === 'success' || status === 'already'}
+                className="w-full h-14 bg-white text-slate-900 border border-white rounded-full pl-11 pr-4 text-base font-body placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-white/40 disabled:opacity-60"
+              />
+            </div>
+            <button
               type="submit"
               disabled={status === 'loading' || status === 'success' || status === 'already'}
-              className="inline-flex items-center justify-center gap-2 bg-[color:var(--color-deep-night)] text-white px-7 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-black transition-colors disabled:opacity-60"
+              className="h-14 shrink-0 bg-deep-night hover:bg-[#1E293B] text-white rounded-full px-7 whitespace-nowrap inline-flex items-center justify-center gap-2 text-[12px] tracking-[0.22em] uppercase font-body font-bold shadow-lg transition-colors disabled:opacity-60"
             >
               {status === 'loading' && <Loader2 size={16} className="animate-spin" />}
               {(status === 'success' || status === 'already') && <CheckCircle size={16} />}
@@ -248,7 +267,7 @@ export default function NewsletterSection() {
             </button>
           </div>
 
-          <label style={{color:"#F9FAFB"}} className="mt-4 flex items-start gap-3 text-left font-body text-xs sm:text-[13px] leading-relaxed text-white/85">
+          <label className="mt-4 flex items-start gap-3 text-left font-body text-xs sm:text-[13px] leading-relaxed text-white">
             <input
               type="checkbox"
               checked={consented}
@@ -257,11 +276,11 @@ export default function NewsletterSection() {
               disabled={status === 'loading' || status === 'success' || status === 'already'}
               className="mt-[3px] h-4 w-4 shrink-0 accent-[color:var(--color-deep-night)] focus:outline-none focus:ring-2 focus:ring-white"
             />
-            <span style={{color:"#F9FAFB"}}>
+            <span className="text-white">
               {cc.label}{' '}
               <Link
                 to={to('/privacy')}
-                className="underline underline-offset-2 hover:text-white"
+                className="font-semibold text-white underline underline-offset-2"
               >
                 {cc.privacy}
               </Link>
