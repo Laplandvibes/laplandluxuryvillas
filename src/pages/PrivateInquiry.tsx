@@ -159,7 +159,7 @@ export default function PrivateInquiry() {
               <h2 className="font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] mb-4">
                 {c.inquiryPage.successH2}
               </h2>
-              <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-8 max-w-xl mx-auto">
+              <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-8 max-w-xl mx-auto max-lg:w-fit max-lg:text-left">
                 {c.inquiryPage.successBody}{' '}
                 <a
                   href="mailto:private@laplandvibes.com"
@@ -182,12 +182,12 @@ export default function PrivateInquiry() {
             </div>
           ) : (
             <>
-              <div className="mb-10 max-w-2xl">
+              <div className="mb-10 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
                 <span className="eyebrow">{c.inquiryPage.eyebrow}</span>
                 <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-4">
                   {c.inquiryPage.h2}
                 </h2>
-                <p className="text-[color:var(--color-bone)]/75 font-body leading-relaxed">{c.inquiryPage.intro}</p>
+                <p className="mx-auto w-fit text-left lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/75 font-body leading-relaxed">{c.inquiryPage.intro}</p>
               </div>
 
               <form onSubmit={onSubmit} className="space-y-7">

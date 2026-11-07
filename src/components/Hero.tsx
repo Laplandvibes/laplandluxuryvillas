@@ -275,7 +275,7 @@ export default function Hero({
         </h1>
 
         {lede && (
-          <p className={`mt-5 sm:mt-6 mx-auto max-w-2xl xl:max-w-3xl text-base sm:text-lg xl:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed text-pretty lg:mx-0`}>
+          <p className={`mt-5 sm:mt-6 mx-auto max-w-2xl xl:max-w-3xl text-base sm:text-lg xl:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed text-pretty max-lg:w-fit max-lg:text-left lg:mx-0`}>
             {lede}
           </p>
         )}
@@ -285,7 +285,7 @@ export default function Hero({
             {primary && (
               <Link
                 to={primary.to}
-                className="inline-flex items-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
+                className="w-full max-w-sm justify-center sm:w-auto sm:max-w-none inline-flex items-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
               >
                 {primary.label}
               </Link>
@@ -293,7 +293,7 @@ export default function Hero({
             {secondary && (
               <Link
                 to={secondary.to}
-                className="inline-flex items-center gap-3 border border-[color:var(--color-bone)]/40 text-[color:var(--color-bone)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body hover:border-[color:var(--color-brass)] hover:text-[color:var(--color-brass)] transition-all"
+                className="w-full max-w-sm justify-center sm:w-auto sm:max-w-none inline-flex items-center gap-3 border border-[color:var(--color-bone)]/40 text-[color:var(--color-bone)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body hover:border-[color:var(--color-brass)] hover:text-[color:var(--color-brass)] transition-all"
               >
                 {secondary.label}
               </Link>

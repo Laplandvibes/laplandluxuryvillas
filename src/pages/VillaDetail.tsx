@@ -113,14 +113,14 @@ export default function VillaDetail() {
           <PhotoCredit credit={creditFor(villa.image)} />
         </div>
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pt-7 sm:pt-9 pb-4 lg:py-16 lg:pointer-events-none">
-         <div className="lg:max-w-[44rem] lg:pointer-events-auto">
+         <div className="text-center lg:text-left lg:max-w-[44rem] lg:pointer-events-auto">
           <Link
             to={to('/villas')}
-            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
+            className="flex w-fit mx-auto lg:mx-0 items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.villaDetailPage.backLink}
           </Link>
-          <div className="flex flex-wrap items-center gap-3 mb-4">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-4 lg:justify-start">
             <span className="eyebrow inline-flex items-center px-2.5 py-1 text-[color:var(--color-brass)] border border-[color:var(--color-brass)]/30">
               {c.tier[villa.tier]}
             </span>
@@ -134,7 +134,7 @@ export default function VillaDetail() {
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] max-w-4xl break-words">
             {villa.name}
           </h1>
-          <p className="mt-5 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
+          <p className="mt-5 max-w-3xl mx-auto w-fit text-left lg:mx-0 lg:w-auto text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
             {villa.tagline}
           </p>
          </div>
@@ -240,8 +240,8 @@ export default function VillaDetail() {
       {/* SIGNATURE */}
       <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-t border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <span className="eyebrow">{c.villaDetailPage.signatureEyebrow}</span>
-          <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10 max-w-2xl">
+          <span className="eyebrow block text-center lg:text-left">{c.villaDetailPage.signatureEyebrow}</span>
+          <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10 max-w-2xl mx-auto text-center lg:mx-0 lg:text-left">
             {c.villaDetailPage.signatureH2}
           </h2>
           <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
@@ -296,8 +296,8 @@ export default function VillaDetail() {
       {/* OTHER VILLAS */}
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <span className="eyebrow">{c.villaDetailPage.alsoEyebrow}</span>
-          <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10">
+          <span className="eyebrow block text-center lg:text-left">{c.villaDetailPage.alsoEyebrow}</span>
+          <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10 text-center lg:text-left">
             {c.villaDetailPage.alsoH2}
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

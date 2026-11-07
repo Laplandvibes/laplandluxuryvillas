@@ -71,7 +71,7 @@ export default function MidnightSun() {
       {/* WHY */}
       <section className="bg-[color:var(--color-deep-night)] py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <div className="max-w-3xl mb-14">
+          <div className="max-w-3xl mb-14 mx-auto text-center lg:mx-0 lg:text-left">
             <span className="eyebrow text-[#FFC95A]">{c.midnightSunPage.fourReasons}</span>
             <h2 className="mt-4 font-heading text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
               {c.midnightSunPage.h2}
@@ -94,13 +94,13 @@ export default function MidnightSun() {
       {/* SUMMER COLLECTION */}
       <section className="bg-[color:var(--color-onyx)] py-20 md:py-28 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div className="flex flex-col items-center text-center gap-6 mb-12 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div>
               <span className="eyebrow text-[#FFC95A]">{c.midnightSunPage.summerCollection.eyebrow}</span>
               <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">
                 {c.midnightSunPage.summerCollection.h2}
               </h2>
-              <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/75 font-body leading-relaxed">
+              <p className="mt-4 max-w-2xl mx-auto w-fit text-left lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/75 font-body leading-relaxed">
                 {c.midnightSunPage.summerCollection.lede}
               </p>
             </div>
@@ -153,10 +153,10 @@ export default function MidnightSun() {
           <h2 className="font-heading text-3xl sm:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-5">
             {c.midnightSunPage.planning.h2}
           </h2>
-          <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-3">
+          <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-3 max-lg:text-left">
             {c.midnightSunPage.planning.p1}
           </p>
-          <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-10">
+          <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-10 max-lg:text-left">
             {c.midnightSunPage.planning.p2}
           </p>
           <div className="inline-flex items-center gap-3 text-[color:var(--color-brass)] font-body text-sm">

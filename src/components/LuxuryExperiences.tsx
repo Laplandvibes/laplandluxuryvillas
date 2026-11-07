@@ -87,9 +87,9 @@ export default function LuxuryExperiences({ category, eyebrow, title, intro, ton
       }
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-7">
-        <span className="eyebrow">{eyebrow ?? c.eyebrow}</span>
-        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">{title ?? c.h2}</h2>
-        <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">{intro ?? c.lede}</p>
+        <span className="eyebrow block text-center lg:text-left">{eyebrow ?? c.eyebrow}</span>
+        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] text-center lg:text-left">{title ?? c.h2}</h2>
+        <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/85 font-body leading-relaxed">{intro ?? c.lede}</p>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {picks.map((p) => {

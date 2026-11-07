@@ -185,12 +185,12 @@ export default function StayPackages() {
   return (
     <section className="bg-[color:var(--color-deep-night)] py-14 sm:py-20 md:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-7">
-        <div className="max-w-3xl mb-10 sm:mb-14">
+        <div className="max-w-3xl mb-10 sm:mb-14 mx-auto text-center lg:mx-0 lg:text-left">
           <span className="eyebrow">{p.eyebrow}</span>
           <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
             {p.h2}
           </h2>
-          <p className="mt-5 text-[color:var(--color-bone)]/75 text-base sm:text-lg font-body leading-relaxed">{p.lede}</p>
+          <p className="mt-5 mx-auto w-fit text-left lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/75 text-base sm:text-lg font-body leading-relaxed">{p.lede}</p>
         </div>
 
         <div className="space-y-14 md:space-y-24">
@@ -262,8 +262,8 @@ export default function StayPackages() {
 
         {railCopy && (
           <div className="mt-16 md:mt-24">
-            <span className="eyebrow">{p.home}</span>
-            <p className="mt-3 max-w-2xl text-[color:var(--color-bone)]/75 text-base font-body leading-relaxed">{p.homeLede}</p>
+            <span className="eyebrow block text-center lg:text-left">{p.home}</span>
+            <p className="mt-3 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/75 text-base font-body leading-relaxed">{p.homeLede}</p>
             <ProductRail
               partner={nordicnestRail}
               snapshot={nordicnestPicks}

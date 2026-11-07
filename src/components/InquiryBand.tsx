@@ -39,7 +39,7 @@ export default function InquiryBand({ title, body, emailOnly = false }: InquiryB
           {t}
         </h2>
 
-        <p className="text-[color:var(--color-bone)]/80 text-base sm:text-lg leading-relaxed font-body max-w-2xl mx-auto mb-10">
+        <p className="text-[color:var(--color-bone)]/80 text-base sm:text-lg leading-relaxed font-body max-w-2xl mx-auto mb-10 max-lg:w-fit max-lg:text-left">
           {b}
         </p>
 
@@ -47,14 +47,14 @@ export default function InquiryBand({ title, body, emailOnly = false }: InquiryB
           {!emailOnly && (
             <Link
               to={to('/private-inquiry')}
-              className="inline-flex items-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
+              className="w-full max-w-sm justify-center sm:w-auto sm:max-w-none inline-flex items-center gap-3 bg-[color:var(--color-brass)] text-[color:var(--color-deep-night)] px-8 py-4 text-[12px] tracking-[0.22em] uppercase font-body font-medium hover:bg-[color:var(--color-brass-bright)] transition-colors"
             >
               {c.inquireBtn}
             </Link>
           )}
           <a
             href="mailto:private@laplandvibes.com?subject=Lapland%20villa%20inquiry"
-            className="inline-flex items-center gap-3 border border-[color:var(--color-bone)]/40 text-[color:var(--color-bone)] px-5 sm:px-8 py-4 text-[12px] tracking-[0.1em] sm:tracking-[0.22em] uppercase font-body hover:border-[color:var(--color-brass)] hover:text-[color:var(--color-brass)] transition-all"
+            className="w-full max-w-sm justify-center sm:w-auto sm:max-w-none inline-flex items-center gap-3 border border-[color:var(--color-bone)]/40 text-[color:var(--color-bone)] px-5 sm:px-8 py-4 text-[12px] tracking-[0.1em] sm:tracking-[0.22em] uppercase font-body hover:border-[color:var(--color-brass)] hover:text-[color:var(--color-brass)] transition-all"
           >
             <Mail size={14} />
             {c.emailLabel}

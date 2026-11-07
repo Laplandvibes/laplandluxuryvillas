@@ -57,7 +57,7 @@ export default function DestinationFacts({ slug }: { slug: string }) {
   return (
     <section className="bg-[color:var(--color-onyx)] py-14 md:py-20 border-y border-[color:var(--color-mist)]/60">
       <div className="mx-auto max-w-6xl px-5 sm:px-7">
-        <span className="eyebrow">{t(FACT_LABELS.heading, l)}</span>
+        <span className="eyebrow block text-center lg:text-left">{t(FACT_LABELS.heading, l)}</span>
 
         <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <Fact

@@ -256,7 +256,7 @@ export default function DestinationFaq({ slug }: { slug: string }) {
   return (
     <section className="bg-[color:var(--color-deep-night)] py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-5 sm:px-7">
-        <h2 className="font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10">
+        <h2 className="font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10 text-center lg:text-left">
           {t.heading}
         </h2>
         <dl className="space-y-7">

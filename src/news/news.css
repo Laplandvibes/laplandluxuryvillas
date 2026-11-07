@@ -201,3 +201,7 @@
   .nw .nw-card-body{padding:22px 20px 24px}
   .nw .nw-scale{padding:20px 16px 16px}
 }
+
+/* Tabletti ja puhelin (gate:tabletti 7.11.2026, Vesan sääntö 18.10.): osio-otsikko keskelle alle 1024 px,
+   kuten sivun muut osiot; tietokoneella vasen reuna ennallaan. */
+@media (max-width:1023.98px){.nw .nw-teaser .sechead{text-align:center}}

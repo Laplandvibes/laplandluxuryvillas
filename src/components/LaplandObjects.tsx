@@ -254,11 +254,11 @@ export default function LaplandObjects() {
   return (
     <section className="border-y border-[color:var(--color-mist)]/60 bg-[color:var(--color-onyx)] py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-7">
-        <span className="eyebrow">{c.eyebrow}</span>
-        <h2 className="mt-3 font-heading text-3xl leading-[1.1] text-[color:var(--color-snow)] md:text-4xl">
+        <span className="eyebrow block text-center lg:text-left">{c.eyebrow}</span>
+        <h2 className="mt-3 font-heading text-3xl leading-[1.1] text-[color:var(--color-snow)] md:text-4xl text-center lg:text-left">
           {c.h2}
         </h2>
-        <p className="mt-4 max-w-2xl font-body leading-relaxed text-[color:var(--color-bone)]/85">
+        <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto font-body leading-relaxed text-[color:var(--color-bone)]/85">
           {c.lede}
         </p>
 

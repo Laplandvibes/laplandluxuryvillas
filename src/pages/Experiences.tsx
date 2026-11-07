@@ -89,10 +89,10 @@ export default function Experiences() {
           mitä voimme ja mitä emme voi varata puolestasi. */}
       <section className="bg-[color:var(--color-onyx)] border-y border-[color:var(--color-mist)]/60 py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center lg:mx-0 lg:text-left">
             <span className="eyebrow">{s.onRequest.eyebrow}</span>
             <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">{s.onRequest.title}</h2>
-            <p className="mt-4 text-[color:var(--color-bone)]/85 font-body leading-relaxed">{s.onRequest.intro}</p>
+            <p className="mt-4 mx-auto w-fit text-left lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/85 font-body leading-relaxed">{s.onRequest.intro}</p>
             <Link
               to={to('/private-inquiry')}
               className="mt-7 inline-flex items-center gap-2 border border-[color:var(--color-brass)]/70 px-5 py-3 text-[11px] tracking-[0.18em] uppercase font-body text-[color:var(--color-brass)] no-underline transition-colors hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)]"

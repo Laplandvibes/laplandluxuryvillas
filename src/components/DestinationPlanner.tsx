@@ -46,11 +46,11 @@ export function DestinationLocator({ slug }: { slug: string }) {
   return (
     <section className="bg-[color:var(--color-deep-night)] py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-5 sm:px-7">
-        <span className="eyebrow">{s(S.locEyebrow, lang)}</span>
-        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">
+        <span className="eyebrow block text-center lg:text-left">{s(S.locEyebrow, lang)}</span>
+        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] text-center lg:text-left">
           {s(S.locH2, lang)}
         </h2>
-        <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">
+        <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/85 font-body leading-relaxed">
           {s(S.locLede, lang)}
         </p>
 
@@ -158,11 +158,11 @@ export function DestinationSeason({ slug }: { slug: string }) {
   return (
     <section className="bg-[color:var(--color-onyx)] py-14 md:py-20 border-y border-[color:var(--color-mist)]/60">
       <div className="mx-auto max-w-6xl px-5 sm:px-7">
-        <span className="eyebrow">{s(S.seasonEyebrow, lang)}</span>
-        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">
+        <span className="eyebrow block text-center lg:text-left">{s(S.seasonEyebrow, lang)}</span>
+        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] text-center lg:text-left">
           {s(S.seasonH2, lang)}
         </h2>
-        <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">
+        <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/85 font-body leading-relaxed">
           {s(S.seasonLede, lang)}
         </p>
 
@@ -274,8 +274,8 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
     return (
       <section className="bg-[color:var(--color-deep-night)] py-14 md:py-20">
         <div className="mx-auto max-w-6xl px-5 sm:px-7">
-          <span className="eyebrow">{s(S.expEyebrow, lang)}</span>
-          <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">
+          <span className="eyebrow block text-center lg:text-left">{s(S.expEyebrow, lang)}</span>
+          <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] text-center lg:text-left">
             {`${name}: ${s(S.expH2, lang)}`}
           </h2>
           <a
@@ -283,12 +283,12 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
             target="_blank"
             rel="sponsored nofollow noopener"
             onClick={() => trackAffiliateClick('gyg', `destination_search:${slug}`, href)}
-            className="mt-6 inline-flex items-center gap-2 border border-[color:var(--color-brass)]/70 px-5 py-3 text-[11px] tracking-[0.18em] uppercase font-body text-[color:var(--color-brass)] no-underline transition-colors hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)]"
+            className="mt-6 flex w-fit mx-auto lg:mx-0 items-center gap-2 border border-[color:var(--color-brass)]/70 px-5 py-3 text-[11px] tracking-[0.18em] uppercase font-body text-[color:var(--color-brass)] no-underline transition-colors hover:bg-[color:var(--color-brass)] hover:text-[color:var(--color-deep-night)]"
           >
             <Search size={13} aria-hidden="true" />
             {s(S.expNoneCta, lang)}
           </a>
-          <p className="mt-4 max-w-2xl text-[11px] font-body text-[color:var(--color-bone)]/60 leading-relaxed">
+          <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[11px] font-body text-[color:var(--color-bone)]/60 leading-relaxed">
             {s(S.expNoneNote, lang)}
           </p>
         </div>
@@ -299,13 +299,13 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
   return (
     <section className="bg-[color:var(--color-deep-night)] py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-5 sm:px-7">
-        <span className="eyebrow">{s(S.expEyebrow, lang)}</span>
+        <span className="eyebrow block text-center lg:text-left">{s(S.expEyebrow, lang)}</span>
         {/* Place name outside the sentence: Finnish would need Inarissa /
             Levillä, German in Inari / auf Levi. Same rule as DestinationFaq. */}
-        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">
+        <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] text-center lg:text-left">
           {`${name}: ${s(S.expH2, lang)}`}
         </h2>
-        <p className="mt-4 max-w-2xl text-[color:var(--color-bone)]/85 font-body leading-relaxed">
+        <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/85 font-body leading-relaxed">
           {s(S.expLede, lang)}
         </p>
 

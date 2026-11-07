@@ -19,8 +19,8 @@ export default function Contact() {
 
       <section className="bg-[color:var(--color-deep-night)] py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-5 sm:px-7">
-          <span className="eyebrow">{c.eyebrow}</span>
-          <h1 className="mt-5 font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] mb-12">
+          <span className="eyebrow block text-center lg:text-left">{c.eyebrow}</span>
+          <h1 className="mt-5 font-heading text-4xl sm:text-5xl md:text-6xl text-[color:var(--color-snow)] leading-[1.05] mb-12 text-center lg:text-left">
             {c.h1}
           </h1>
 

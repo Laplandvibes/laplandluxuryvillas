@@ -123,7 +123,7 @@ export default function DestinationPage() {
           {dest.image && <PhotoCredit credit={creditFor(dest.image)} />}
         </div>
         <div className="relative z-10 w-full mx-auto max-w-6xl px-5 sm:px-7 pt-7 sm:pt-9 pb-4 lg:py-16 lg:pointer-events-none">
-         <div className="lg:max-w-[44rem] lg:pointer-events-auto">
+         <div className="text-center lg:text-left lg:max-w-[44rem] lg:pointer-events-auto">
           {/* 🔴 `flex w-fit`, not `inline-flex`: the eyebrow below is an inline
               <span>, so an inline-level back link sat on the SAME line as it
               and the hero read "← KOHTEETKOHDE · SUOMEN LAPPI" (Vesa 2026-08-02).
@@ -132,7 +132,7 @@ export default function DestinationPage() {
               heroes now use the same shape so it cannot come back. */}
           <Link
             to={to('/destinations')}
-            className="flex w-fit items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
+            className="flex w-fit mx-auto lg:mx-0 items-center gap-2 text-[11px] tracking-[0.22em] uppercase font-body text-[color:var(--color-bone)]/80 hover:text-[color:var(--color-brass)] mb-6"
           >
             <ArrowLeft size={14} className="text-[color:var(--color-brass)]" /> {c.destinationPage.backLink}
           </Link>
@@ -140,7 +140,7 @@ export default function DestinationPage() {
           <h1 className="mt-3 font-heading text-4xl sm:text-6xl md:text-7xl text-[color:var(--color-snow)] leading-[1.05] break-words">
             {dest.name}
           </h1>
-          <p className="mt-5 max-w-3xl text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
+          <p className="mt-5 max-w-3xl mx-auto w-fit text-left lg:mx-0 lg:w-auto text-lg sm:text-xl text-[color:var(--color-bone)]/90 font-body leading-relaxed">
             {dest.position}
           </p>
          </div>
@@ -246,7 +246,7 @@ export default function DestinationPage() {
       {villas.length > 0 && (
         <section className="bg-[color:var(--color-onyx)] py-16 md:py-24 border-y border-[color:var(--color-mist)]/60">
           <div className="mx-auto max-w-7xl px-5 sm:px-7">
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <div className="flex flex-col items-center text-center gap-6 mb-12 lg:flex-row lg:items-end lg:justify-between lg:text-left">
               <div>
                 <span className="eyebrow">{c.badges.villasIn(dest.name)}</span>
                 <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1]">

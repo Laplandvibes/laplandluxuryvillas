@@ -213,7 +213,7 @@ export default function NewsletterSection() {
         <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-white leading-[1.1] lg:[&:lang(ko)]:[word-break:keep-all]">
           {c.h2}
         </h2>
-        <p className="mt-5 text-white/85 text-base sm:text-lg font-body leading-relaxed max-w-xl mx-auto">
+        <p className="mt-5 text-white/85 text-base sm:text-lg font-body leading-relaxed max-w-xl mx-auto max-lg:w-fit max-lg:text-left">
           {c.lede}
         </p>
 

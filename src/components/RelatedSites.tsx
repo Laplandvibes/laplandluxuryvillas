@@ -250,7 +250,7 @@ function CardCredits({ items }: { items: { label: string; credit?: ReturnType<ty
   if (!rows.length) return null
   const link = 'lv-tap underline underline-offset-2 hover:text-[color:var(--color-snow)]'
   return (
-    <p className="mt-8 text-center text-sm leading-relaxed text-[color:var(--color-bone)]/70 font-body" data-photo-credits>
+    <p className="mt-8 text-center max-lg:mx-auto max-lg:w-fit max-lg:text-left text-sm leading-relaxed text-[color:var(--color-bone)]/70 font-body" data-photo-credits>
       {w.credit}:{' '}
       {rows.map((r, i) => (
         <span key={r.label}>

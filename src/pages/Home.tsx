@@ -149,13 +149,13 @@ export default function Home() {
           page (Vesa 2.8. "tarvitaan jotain kontrastia"). */}
       <section className="bg-[color:var(--color-onyx)] py-14 sm:py-20 md:py-32 border-y border-[color:var(--color-mist)]/60">
         <div className="mx-auto max-w-7xl px-5 sm:px-7">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-9 sm:mb-14">
+          <div className="flex flex-col items-center text-center gap-6 mb-9 sm:mb-14 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div className="max-w-2xl">
               <span className="eyebrow">{c.home.signature.eyebrow}</span>
               <h2 className="mt-5 font-heading text-3xl sm:text-4xl md:text-5xl text-[color:var(--color-snow)] leading-[1.1]">
                 {c.home.signature.h2}
               </h2>
-              <p className="mt-5 text-[color:var(--color-bone)]/75 text-base font-body leading-relaxed">
+              <p className="mt-5 mx-auto w-fit text-left lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/75 text-base font-body leading-relaxed">
                 {c.home.signature.lede}
               </p>
             </div>
@@ -290,8 +290,8 @@ export default function Home() {
             {c.home.philosophy.items.map((p, i) => {
               const Icon = PHILOSOPHY_ICONS[i]
               return (
-                <div key={p.title} className="text-center md:text-left">
-                  <Icon size={32} strokeWidth={1.4} className="mx-auto md:mx-0 text-[color:var(--color-brass)]" />
+                <div key={p.title} className="text-left">
+                  <Icon size={32} strokeWidth={1.4} className="text-[color:var(--color-brass)]" />
                   <h3 className="mt-6 font-heading text-2xl text-[color:var(--color-snow)] leading-tight">
                     {p.title}
                   </h3>
