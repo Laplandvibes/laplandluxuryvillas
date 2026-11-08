@@ -32,6 +32,8 @@ export default function PageBreadcrumb() {
       labelMap={labelMap}
       className="bg-[color:var(--color-deep-night)] text-[color:var(--color-bone)] border-b border-[color:var(--color-mist)]/60"
       accentClassName="hover:text-[color:var(--color-brass)] hover:opacity-100"
+      // Alle 1024 px murupolku keskelle samalle akselille kuin keskitetty otsikko (Vesa 17.10.2026); tietokoneella vasen reuna ennallaan.
+      containerClassName="max-w-7xl mx-auto px-4 sm:px-6 max-lg:justify-center"
     />
   )
 }
