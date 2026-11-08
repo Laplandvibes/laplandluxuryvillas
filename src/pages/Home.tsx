@@ -197,7 +197,7 @@ export default function Home() {
               full-width cards with a 4:5 image = 3 511 px, 4.3 screens, for 71
               words. Two columns and a shallower image on the phone bring the
               same five destinations into ~1.6 screens with nothing removed. */}
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center max-sm:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.5rem)] sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.625rem)]">
             {getDestinations(lang).map((d) => (
               <Link
                 key={d.slug}

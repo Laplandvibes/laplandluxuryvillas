@@ -192,7 +192,7 @@ export default function RelatedSites() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-md:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.75rem)] md:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_1rem)]">
           {t.cards.map((card) => {
             const img = cardImage(card.href)
             return (

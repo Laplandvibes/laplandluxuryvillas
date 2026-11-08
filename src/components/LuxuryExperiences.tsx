@@ -91,7 +91,7 @@ export default function LuxuryExperiences({ category, eyebrow, title, intro, ton
         <h2 className="mt-3 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] text-center lg:text-left">{title ?? c.h2}</h2>
         <p className="mt-4 max-w-2xl mx-auto w-fit lg:mx-0 lg:w-auto text-[color:var(--color-bone)]/85 font-body leading-relaxed">{intro ?? c.lede}</p>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.625rem)]">
           {picks.map((p) => {
             const id = p.path.slice(p.path.lastIndexOf('-t') + 2)
             const href = gygProduct(p.path, `experience_${id}`, lang)
