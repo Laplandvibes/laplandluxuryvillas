@@ -59,7 +59,7 @@ export default function DestinationFacts({ slug }: { slug: string }) {
       <div className="mx-auto max-w-6xl px-5 sm:px-7">
         <span className="eyebrow block text-center lg:text-left">{t(FACT_LABELS.heading, l)}</span>
 
-        <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_1rem)]">
           <Fact
             lang={lang}
             label={t(FACT_LABELS.airport, l)}

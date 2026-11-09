@@ -260,8 +260,8 @@ export default function VillaDetail() {
         <section className="bg-[color:var(--color-deep-night)] py-16 md:py-24">
           <div className="mx-auto max-w-6xl px-5 sm:px-7 grid md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div>
-              <span className="eyebrow">{c.villaDetailPage.destinationEyebrow}</span>
-              <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-5">
+              <span className="eyebrow max-md:block max-md:text-center">{c.villaDetailPage.destinationEyebrow}</span>
+              <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-5 max-md:text-center">
                 {dest.name}
               </h2>
               <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-6">{dest.position}</p>
@@ -300,7 +300,7 @@ export default function VillaDetail() {
           <h2 className="mt-4 font-heading text-3xl md:text-4xl text-[color:var(--color-snow)] leading-[1.1] mb-10 text-center lg:text-left">
             {c.villaDetailPage.alsoH2}
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-md:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.75rem)] md:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_1rem)]">
             {getVillas(lang).filter((v) => v.slug !== villa.slug)
               .slice(0, 3)
               .map((v) => (

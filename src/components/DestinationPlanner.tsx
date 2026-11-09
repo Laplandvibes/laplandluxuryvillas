@@ -309,7 +309,7 @@ export function DestinationExperiences({ slug, name }: { slug: string; name: str
           {s(S.expLede, lang)}
         </p>
 
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.625rem)]">
           {picks.map((p) => {
             const id = p.path.slice(p.path.lastIndexOf('-t') + 2)
             const href = gygProduct(p.path, `dest_${slug}_${id}`, lang)
