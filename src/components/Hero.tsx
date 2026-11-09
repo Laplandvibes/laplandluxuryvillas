@@ -3,6 +3,7 @@ import { useLang } from '../i18n/useLang'
 import { withCounts } from '../lib/copyCounts'
 import { Fragment, type CSSProperties, type ReactNode } from 'react'
 import PageBreadcrumb from './PageBreadcrumb'
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 /**
  * Responsive files for a hero photograph: a 16:9 desktop crop in two widths and a
@@ -236,7 +237,7 @@ export default function Hero({
         {eyebrow && (
           <div className="flex items-center justify-center gap-3 mb-5 sm:mb-6 lg:justify-start">
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70 lg:hidden" />
-            <span className="eyebrow text-[color:var(--color-brass)]">{eyebrow}</span>
+            <Erotinrivi as="span" pino className="eyebrow text-[color:var(--color-brass)]" osat={erotinOsat(eyebrow)} />
             <span className="h-px w-10 bg-[color:var(--color-brass)]/70" />
           </div>
         )}

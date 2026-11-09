@@ -173,8 +173,8 @@ export default function DestinationPage() {
                 <div className="eyebrow text-[color:var(--color-bone)]/75 mb-2">{c.destinationPage.highlights}</div>
                 <ul className="space-y-2">
                   {dest.highlights.map((h) => (
-                    <li key={h} className="text-[color:var(--color-bone)]/85 font-body text-sm leading-relaxed">
-                      · {h}
+                    <li key={h} className="relative pl-3.5 text-[color:var(--color-bone)]/85 font-body text-sm leading-relaxed before:absolute before:left-0 before:content-['·'] before:text-[color:var(--color-brass)]">
+                      {h}
                     </li>
                   ))}
                 </ul>

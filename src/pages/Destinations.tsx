@@ -12,6 +12,7 @@ import { getDestinations, imagePosition } from '../lib/destinations'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { getPageSeo } from '../lib/pageSeo'
+import { Erotinrivi } from '../shared/Erotin';
 
 // Real photographs since 23.9.2026 (were launch-commit AI renders): the season
 // decides, same switch as the front page and the share card. Receipts in
@@ -90,9 +91,7 @@ export default function Destinations() {
                 <ul className="text-sm text-[color:var(--color-bone)]/70 font-body space-y-2 mb-8">
                   <li className="flex items-start gap-2">
                     <Plane size={14} className="text-[color:var(--color-brass)] mt-1 shrink-0" />
-                    <span>
-                      <span className="text-[color:var(--color-brass)]">{c.badges.arrival} ·</span> {d.arrival}
-                    </span>
+                    <Erotinrivi as="span" className="min-w-0" osat={[<span className="text-[color:var(--color-brass)]">{c.badges.arrival}</span>, d.arrival]} />
                   </li>
                   <li className="flex items-start gap-2">
                     <Compass size={14} className="text-[color:var(--color-brass)] mt-1 shrink-0" />

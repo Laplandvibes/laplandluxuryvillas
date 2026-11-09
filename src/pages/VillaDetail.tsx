@@ -17,6 +17,7 @@ import { ownCopy } from '../lib/villaI18n'
 import { COPY } from '../locales/copy'
 import PhotoCredit from '../components/PhotoCredit'
 import { creditFor } from '../data/photoCredits'
+import { Erotinrivi } from '../shared/Erotin';
 
 export default function VillaDetail() {
   const { slug } = useParams<{ slug: string }>()
@@ -265,11 +266,9 @@ export default function VillaDetail() {
                 {dest.name}
               </h2>
               <p className="text-[color:var(--color-bone)]/80 font-body leading-relaxed mb-6">{dest.position}</p>
-              <p className="text-sm text-[color:var(--color-bone)]/65 font-body mb-3">
-                <span className="text-[color:var(--color-brass)]">{c.badges.arrival} ·</span> {dest.arrival}
-              </p>
+              <Erotinrivi className="text-sm text-[color:var(--color-bone)]/65 font-body mb-3" osat={[<span className="text-[color:var(--color-brass)]">{c.badges.arrival}</span>, dest.arrival]} />
               <p className="text-sm text-[color:var(--color-bone)]/65 font-body mb-8">
-                <span className="text-[color:var(--color-brass)]">{c.badges.aurora} ·</span> {dest.auroraNote}
+                <Erotinrivi as="span" osat={[<span className="text-[color:var(--color-brass)]">{c.badges.aurora}</span>, dest.auroraNote]} />
               </p>
               <Link
                 to={to(`/destinations/${dest.slug}`)}

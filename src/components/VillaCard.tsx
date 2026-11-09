@@ -12,6 +12,7 @@ import { formatRate } from '../lib/rate'
 import PhotoCredit from './PhotoCredit'
 import { creditFor } from '../data/photoCredits'
 import { villaGallery } from '../data/villaImages'
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 interface VillaCardProps {
   villa: Villa
@@ -206,9 +207,7 @@ export default function VillaCard({
                   about. Mandatory — the mark is only checkable if the reader can
                   see what it is derived from and how old the snapshot is. */}
               {isPick && pickNote && (
-                <p className="max-w-[16rem] text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/70">
-                  {pickNote}
-                </p>
+                <Erotinrivi className="max-w-[16rem] text-[10.5px] leading-snug font-body text-[color:var(--color-bone)]/70" osat={erotinOsat(pickNote)} />
               )}
             </div>
           )}
