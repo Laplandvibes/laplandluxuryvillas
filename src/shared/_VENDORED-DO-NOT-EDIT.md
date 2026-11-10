@@ -14,6 +14,7 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - Breadcrumbs.tsx
 - CookieBanner.tsx
 - EcosystemMenu.tsx
+- Erotin.tsx
 - Footer.tsx
 - FounderByline.tsx
 - HomeAdSlots.tsx
@@ -48,6 +49,7 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - destinations/facts.ts
 - destinations/factsI18n.ts
 - destinations/labels.ts
+- erotin.css
 - gyg/luxury.ts
 - gyg/picks.ts
 - router/trailingSlashPlugin.ts
