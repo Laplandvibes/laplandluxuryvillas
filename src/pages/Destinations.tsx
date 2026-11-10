@@ -95,9 +95,7 @@ export default function Destinations() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Compass size={14} className="text-[color:var(--color-brass)] mt-1 shrink-0" />
-                    <span>
-                      <span className="text-[color:var(--color-brass)]">{c.badges.aurora} ·</span> {d.auroraNote}
-                    </span>
+                    <Erotinrivi as="span" className="min-w-0" osat={[<span className="text-[color:var(--color-brass)]">{c.badges.aurora}</span>, d.auroraNote]} />
                   </li>
                 </ul>
                 <Link
