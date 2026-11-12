@@ -13,7 +13,7 @@
     {
       "t": "embed",
       "id": "facts-lyhyesti",
-      "title": "La operación en breve",
+      "title": "La operación en resumen",
       "items": [
         "Operación anunciada: el 16.9.2026",
         "Nombre de la empresa: Arctra sigue con su propio nombre",
@@ -34,9 +34,9 @@
       "t": "embed",
       "id": "facts-yksikot",
       "items": [
-        "Arctra DMC: la agencia, que trae clientes internacionales a Laponia y se encarga de la producción del servicio, desde los cocineros hasta los guías",
+        "Arctra DMC: la agencia de viajes, que trae clientes internacionales a Laponia y se encarga de prestar los servicios, desde los cocineros hasta los guías",
         "Otava Lodge: el alojamiento de lujo propio del grupo",
-        "Divánta: la casa de conserjería, que se ocupa de la privacidad y la protección personal",
+        "Divánta: la empresa de servicios de conserjería, que se ocupa de la privacidad y la protección personal de los clientes",
         "LuxCar: la empresa de alquiler de coches de lujo, que se ocupa de los vehículos y los conductores"
       ]
     },
