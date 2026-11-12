@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, an investment company that backs northern growth firms, has acquired a majority holding in Arctra, a luxury travel group based in Rovaniemi, and says it intends to multiply the group's revenue roughly tenfold. The two companies announced the deal on 16.9.2026. Arctra continues under its own name."
+      "text": "Venture Lapland, an investment company that backs northern growth firms, has acquired a majority holding in Arctra, a luxury travel group based in Rovaniemi, and says it intends to multiply the group's revenue roughly tenfold."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "The deal in brief",
+      "items": [
+        "Announced: 16.9.2026",
+        "Name: Arctra continues under its own name",
+        "Staff: just over 40 people during the winter season",
+        "New accommodation: 6,000 square metres planned near Rovaniemi",
+        "Jobs target: around 200 after the investment programme"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra is built from four units. Arctra DMC is the travel agency: it brings international customers to Lapland and runs the service production, from cooks to guides. Otava Lodge is the group's own luxury accommodation. Divánta is the concierge house, handling privacy and close protection, and LuxCar is the luxury car rental with its own vehicles and drivers. According to the release the group employs just over 40 people during the winter season."
+      "text": "Arctra is built from four units. According to the release the group employs just over 40 people during the winter season."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: the travel agency, which brings international customers to Lapland and runs the service production, from cooks to guides",
+        "Otava Lodge: the group's own luxury accommodation",
+        "Divánta: the concierge house, handling privacy and close protection",
+        "LuxCar: the luxury car rental, with its own vehicles and drivers"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "What this means for the coming seasons"
+      "text": "The coming seasons"
     },
     {
       "t": "p",

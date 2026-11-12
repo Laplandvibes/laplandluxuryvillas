@@ -8,7 +8,17 @@
   "body": [
     {
       "t": "p",
-      "text": "Rovaniemen keskustasta noin 10 kilometrin päähän Olleronvaaraan on kasvamassa uusi matkailualue. Kaupungin mukaan alueelle on mahdollistettu lähes 30 000 kerrosneliömetriä majoitusrakentamista, rakennuslupa on myönnetty yli 300 majoitusrakennukselle, ja valmiina on 90 rakennusta."
+      "text": "Rovaniemen keskustasta noin 10 kilometrin päähän Olleronvaaraan on kasvamassa uusi matkailualue. Uusin lasi-iglukohde avaa ovensa marraskuussa, ja yön hinta vaihtelee paljon kauden mukaan."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Olleronvaara kaupungin luvuin",
+      "items": [
+        "Majoitusrakentamista: mahdollistettu lähes 30 000 kerrosneliömetriä",
+        "Rakennuslupia: yli 300 majoitusrakennukselle",
+        "Valmiina: 90 rakennusta"
+      ]
     },
     {
       "t": "p",
@@ -19,11 +29,12 @@
       "text": "Uusia kohteita tälle talvelle"
     },
     {
-      "t": "ul",
+      "t": "embed",
+      "id": "facts-kohteet",
       "items": [
         "Aava Glass Igloos: 13 lasi-iglusviittiä, joissa on lämmitetty lasikatto ja oma sauna. Ensimmäinen varattava yö on 13. marraskuuta 2026.",
         "ALVA Resort: neljä lasikattoista 28 neliömetrin mökkiä. Kohteen mukaan se avautuu 1. marraskuuta 2026.",
-        "SkyView Igloo Resort toimii jo samalla alueella, ja sen varausjärjestelmässä on lasi-iglusviittejä ja revontulimökkejä."
+        "SkyView Igloo Resort: toimii jo samalla alueella, ja sen varausjärjestelmässä on lasi-iglusviittejä ja revontulimökkejä."
       ]
     },
     {
@@ -32,11 +43,18 @@
     },
     {
       "t": "p",
-      "text": "Hinnat vaihtelevat paljon kauden mukaan. Aava Glass Igloosin hinnasto näytti 16. lokakuuta kahdelle aikuiselle halvimmaksi vapaaksi yöksi 499 euroa 13. marraskuuta, 2 099 euroa 23. joulukuuta ja 799 euroa 15. tammikuuta 2027."
+      "text": "Alla ovat halvimmat vapaat yöt sellaisina kuin ne näkyivät 16. lokakuuta. Aava Glass Igloosin hinnat ovat sen hinnastosta kahdelle aikuiselle. Hinnat muuttuvat varaustilanteen mukaan."
     },
     {
-      "t": "p",
-      "text": "SkyView Igloo Resortin halvin vapaa yö 23. joulukuuta maksoi samana päivänä 2 150 euroa. Hinnat muuttuvat varaustilanteen mukaan."
+      "t": "embed",
+      "id": "facts-hinnat",
+      "title": "Halvin vapaa yö",
+      "items": [
+        "13. marraskuuta: 499 euroa, Aava Glass Igloos",
+        "23. joulukuuta: 2 099 euroa, Aava Glass Igloos",
+        "23. joulukuuta: 2 150 euroa, SkyView Igloo Resort",
+        "15. tammikuuta 2027: 799 euroa, Aava Glass Igloos"
+      ]
     },
     {
       "t": "h2",

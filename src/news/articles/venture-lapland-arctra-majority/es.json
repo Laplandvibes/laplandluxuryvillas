@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, sociedad de inversión que respalda empresas de crecimiento del norte, ha adquirido la mayoría de Arctra, un grupo de viajes de lujo con sede en Rovaniemi, y afirma que quiere multiplicar por diez su facturación. Las empresas comunicaron la operación el 16.9.2026. Arctra sigue con su propio nombre."
+      "text": "Venture Lapland, sociedad de inversión que respalda empresas de crecimiento del norte, ha adquirido la mayoría de Arctra, un grupo de viajes de lujo con sede en Rovaniemi, y afirma que quiere multiplicar por diez su facturación."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "La operación en breve",
+      "items": [
+        "Anunciada: el 16.9.2026",
+        "Nombre: Arctra sigue con su propio nombre",
+        "Plantilla: algo más de 40 personas en la temporada de invierno",
+        "Nuevo alojamiento: 6.000 metros cuadrados de superficie cerca de Rovaniemi",
+        "Objetivo de empleo: unas 200 personas tras el programa de inversión"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra se compone de cuatro unidades. La agencia Arctra DMC trae clientes internacionales a Laponia y se encarga de la producción del servicio, desde los cocineros hasta los guías. Otava Lodge es el alojamiento de lujo propio del grupo. La casa de conserjería Divánta se ocupa de la privacidad y la protección personal, y la empresa de alquiler de coches de lujo LuxCar, de los vehículos y los conductores. Según la nota, el grupo emplea a algo más de 40 personas durante la temporada de invierno."
+      "text": "Arctra se compone de cuatro unidades. Según la nota, el grupo emplea a algo más de 40 personas durante la temporada de invierno."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: la agencia, que trae clientes internacionales a Laponia y se encarga de la producción del servicio, desde los cocineros hasta los guías",
+        "Otava Lodge: el alojamiento de lujo propio del grupo",
+        "Divánta: la casa de conserjería, que se ocupa de la privacidad y la protección personal",
+        "LuxCar: la empresa de alquiler de coches de lujo, que se ocupa de los vehículos y los conductores"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Qué significa para las próximas temporadas"
+      "text": "Las próximas temporadas"
     },
     {
       "t": "p",

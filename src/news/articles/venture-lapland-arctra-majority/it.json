@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, società di investimento che sostiene le imprese in crescita del Nord, ha acquisito la maggioranza di Arctra, gruppo di viaggi di lusso con sede a Rovaniemi, e dichiara di voler decuplicare il suo fatturato. Le società hanno comunicato l'operazione il 16.9.2026. Arctra prosegue con il proprio nome."
+      "text": "Venture Lapland, società di investimento che sostiene le imprese in crescita del Nord, ha acquisito la maggioranza di Arctra, gruppo di viaggi di lusso con sede a Rovaniemi, e dichiara di voler decuplicare il suo fatturato."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "L'operazione in breve",
+      "items": [
+        "Annunciata: il 16.9.2026",
+        "Nome: Arctra prosegue con il proprio nome",
+        "Personale: poco più di 40 persone nella stagione invernale",
+        "Nuova ricettività: 6.000 metri quadrati di superficie lorda vicino a Rovaniemi",
+        "Obiettivo occupazionale: circa 200 persone dopo il programma di investimenti"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra è formata da quattro unità. L'agenzia Arctra DMC porta i clienti internazionali in Lapponia e cura la produzione del servizio, dai cuochi alle guide. Otava Lodge è la struttura di lusso propria del gruppo. La casa di concierge Divánta si occupa della riservatezza e della protezione personale, e l'autonoleggio di lusso LuxCar dei veicoli e degli autisti. Secondo il comunicato il gruppo impiega poco più di 40 persone durante la stagione invernale."
+      "text": "Arctra è formata da quattro unità. Secondo il comunicato il gruppo impiega poco più di 40 persone durante la stagione invernale."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: l'agenzia, che porta i clienti internazionali in Lapponia e cura la produzione del servizio, dai cuochi alle guide",
+        "Otava Lodge: la struttura di lusso propria del gruppo",
+        "Divánta: la casa di concierge, che si occupa della riservatezza e della protezione personale",
+        "LuxCar: l'autonoleggio di lusso, che si occupa dei veicoli e degli autisti"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Che cosa significa per le prossime stagioni"
+      "text": "Le prossime stagioni"
     },
     {
       "t": "p",

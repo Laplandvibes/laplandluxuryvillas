@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, ett investmentbolag som satsar på nordliga tillväxtbolag, har köpt majoriteten i Arctra, en lyxresekoncern med säte i Rovaniemi, och säger sig vilja tiofaldiga koncernens omsättning. Bolagen berättade om affären 16.9.2026. Arctra fortsätter under sitt eget namn."
+      "text": "Venture Lapland, ett investmentbolag som satsar på nordliga tillväxtbolag, har köpt majoriteten i Arctra, en lyxresekoncern med säte i Rovaniemi, och säger sig vilja tiofaldiga koncernens omsättning."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Affären i korthet",
+      "items": [
+        "Offentliggjord: 16.9.2026",
+        "Namn: Arctra fortsätter under sitt eget namn",
+        "Personal: drygt 40 personer under vintersäsongen",
+        "Nytt boende: 6 000 kvadratmeter våningsyta nära Rovaniemi",
+        "Jobbmål: omkring 200 efter investeringsprogrammet"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra består av fyra enheter. Resebyrån Arctra DMC för internationella kunder till Lappland och svarar för tjänsteproduktionen, från kockar till guider. Otava Lodge är koncernens eget lyxboende. Conciergehuset Divánta svarar för kundernas integritet och personskydd, och lyxbiluthyraren LuxCar för fordon och förare. Enligt pressmeddelandet sysselsätter koncernen drygt 40 personer under vintersäsongen."
+      "text": "Arctra består av fyra enheter. Enligt pressmeddelandet sysselsätter koncernen drygt 40 personer under vintersäsongen."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: resebyrån som för internationella kunder till Lappland och svarar för tjänsteproduktionen, från kockar till guider",
+        "Otava Lodge: koncernens eget lyxboende",
+        "Divánta: conciergehuset som svarar för kundernas integritet och personskydd",
+        "LuxCar: lyxbiluthyraren som svarar för fordon och förare"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Vad det betyder för kommande säsonger"
+      "text": "Kommande säsonger"
     },
     {
       "t": "p",

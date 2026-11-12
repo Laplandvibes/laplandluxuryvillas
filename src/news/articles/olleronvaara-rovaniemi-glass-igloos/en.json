@@ -8,7 +8,17 @@
   "body": [
     {
       "t": "p",
-      "text": "A new tourism area is growing at Olleronvaara, about 10 km from the centre of Rovaniemi. According to the city, almost 30,000 square metres of floor area for accommodation have been made possible there, building permits have been granted for more than 300 accommodation buildings, and 90 buildings are finished."
+      "text": "A new tourism area is growing at Olleronvaara, about 10 km from the centre of Rovaniemi. The newest glass igloo resort opens in November, and the price of a night varies a lot by season."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Olleronvaara in the city’s figures",
+      "items": [
+        "Floor area: almost 30,000 square metres made possible for accommodation",
+        "Building permits: for more than 300 accommodation buildings",
+        "Finished: 90 buildings"
+      ]
     },
     {
       "t": "p",
@@ -19,11 +29,12 @@
       "text": "New places to stay this winter"
     },
     {
-      "t": "ul",
+      "t": "embed",
+      "id": "facts-kohteet",
       "items": [
         "Aava Glass Igloos: 13 glass igloo suites with a heated glass roof and a private sauna. The first night that can be booked is 13 November 2026.",
         "ALVA Resort: four cabins of 28 square metres with glass roofs. According to the resort, it opens on 1 November 2026.",
-        "SkyView Igloo Resort already operates in the same area, and its booking system lists glass igloo suites and aurora cabins."
+        "SkyView Igloo Resort: already operates in the same area, and its booking system lists glass igloo suites and aurora cabins."
       ]
     },
     {
@@ -32,11 +43,18 @@
     },
     {
       "t": "p",
-      "text": "Prices vary a lot by season. On 16 October, Aava Glass Igloos’ price list showed the cheapest available night for two adults at €499 on 13 November, €2,099 on 23 December and €799 on 15 January 2027."
+      "text": "Below are the cheapest available nights as they stood on 16 October. The Aava Glass Igloos prices are from its price list, for two adults. Prices change with demand."
     },
     {
-      "t": "p",
-      "text": "On the same day, the cheapest available night at SkyView Igloo Resort on 23 December cost €2,150. Prices change with demand."
+      "t": "embed",
+      "id": "facts-hinnat",
+      "title": "Cheapest available night",
+      "items": [
+        "13 November: €499, Aava Glass Igloos",
+        "23 December: €2,099, Aava Glass Igloos",
+        "23 December: €2,150, SkyView Igloo Resort",
+        "15 January 2027: €799, Aava Glass Igloos"
+      ]
     },
     {
       "t": "h2",

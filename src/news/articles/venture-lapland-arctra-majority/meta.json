@@ -37,6 +37,12 @@
       "targetLow": 25,
       "targetHigh": 30,
       "max": 32
+    },
+    "facts-lyhyesti": {
+      "kind": "facts"
+    },
+    "facts-yksikot": {
+      "kind": "facts"
     }
   }
 }

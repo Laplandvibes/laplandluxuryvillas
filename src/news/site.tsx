@@ -25,6 +25,7 @@ import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import type { NewsBlock, NewsMeta } from './types'
 import { ScaleFigure } from './embeds'
+import { renderFactsEmbed } from './factsEmbeds'
 import './news.css'
 
 export const SITE = {
@@ -89,6 +90,9 @@ export function useNewsHead(m: {
 }
 
 export function renderEmbed(block: Extract<NewsBlock, { t: 'embed' }>, meta: NewsMeta): ReactNode {
+  // Tietokortit (facts/bars) ensin; sivuston oma mitta-asteikko (embeds.tsx) ennallaan.
+  const facts = renderFactsEmbed(block, meta)
+  if (facts) return facts
   const cfg = meta.embeds?.[block.id]
   if (!cfg) return null
   if (cfg.type === 'scale') return <ScaleFigure config={cfg} block={block} />

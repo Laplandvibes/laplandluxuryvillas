@@ -8,7 +8,17 @@
   "body": [
     {
       "t": "p",
-      "text": "Une nouvelle zone touristique se développe à Olleronvaara, à environ 10 km du centre de Rovaniemi. Selon la ville, près de 30 000 mètres carrés de surface de plancher y ont été rendus constructibles pour l’hébergement, des permis de construire ont été accordés pour plus de 300 bâtiments d’hébergement et 90 bâtiments sont achevés."
+      "text": "Une nouvelle zone touristique se développe à Olleronvaara, à environ 10 km du centre de Rovaniemi. Le dernier-né des igloos de verre ouvre en novembre, et le prix d’une nuit varie beaucoup selon la saison."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Olleronvaara selon les chiffres de la ville",
+      "items": [
+        "Surface de plancher : près de 30 000 mètres carrés rendus constructibles pour l’hébergement",
+        "Permis de construire : accordés pour plus de 300 bâtiments d’hébergement",
+        "Achevés : 90 bâtiments"
+      ]
     },
     {
       "t": "p",
@@ -19,11 +29,12 @@
       "text": "Nouveaux hébergements cet hiver"
     },
     {
-      "t": "ul",
+      "t": "embed",
+      "id": "facts-kohteet",
       "items": [
         "Aava Glass Igloos : 13 suites en igloo de verre, avec toit de verre chauffé et sauna privatif. La première nuit réservable est celle du 13 novembre 2026.",
         "ALVA Resort : quatre chalets de 28 mètres carrés à toit de verre. Selon l’établissement, l’ouverture est prévue le 1er novembre 2026.",
-        "SkyView Igloo Resort fonctionne déjà dans la même zone, et son système de réservation propose des suites en igloo de verre et des chalets aux aurores."
+        "SkyView Igloo Resort : déjà en activité dans la même zone, et son système de réservation propose des suites en igloo de verre et des chalets aux aurores."
       ]
     },
     {
@@ -32,11 +43,18 @@
     },
     {
       "t": "p",
-      "text": "Les prix varient beaucoup selon la saison. Le 16 octobre, la grille tarifaire d’Aava Glass Igloos affichait, pour deux adultes, la nuit disponible la moins chère à 499 € le 13 novembre, à 2 099 € le 23 décembre et à 799 € le 15 janvier 2027."
+      "text": "Voici les nuits disponibles les moins chères, relevées le 16 octobre. Les prix d’Aava Glass Igloos viennent de sa grille tarifaire et valent pour deux adultes. Les prix évoluent selon la demande."
     },
     {
-      "t": "p",
-      "text": "Le même jour, la nuit disponible la moins chère au SkyView Igloo Resort pour le 23 décembre coûtait 2 150 €. Les prix évoluent selon la demande."
+      "t": "embed",
+      "id": "facts-hinnat",
+      "title": "La nuit disponible la moins chère",
+      "items": [
+        "13 novembre : 499 €, Aava Glass Igloos",
+        "23 décembre : 2 099 €, Aava Glass Igloos",
+        "23 décembre : 2 150 €, SkyView Igloo Resort",
+        "15 janvier 2027 : 799 €, Aava Glass Igloos"
+      ]
     },
     {
       "t": "h2",

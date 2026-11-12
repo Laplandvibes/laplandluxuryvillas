@@ -8,7 +8,17 @@
   "body": [
     {
       "t": "p",
-      "text": "In Olleronvaara, rund 10 Kilometer vom Zentrum Rovaniemis entfernt, entsteht ein neues Tourismusgebiet. Nach Angaben der Stadt sind dort planungsrechtlich fast 30.000 Quadratmeter Geschossfläche für Unterkünfte zugelassen, für mehr als 300 Unterkunftsgebäude liegen Baugenehmigungen vor, und 90 Gebäude sind fertig."
+      "text": "In Olleronvaara, rund 10 Kilometer vom Zentrum Rovaniemis entfernt, entsteht ein neues Tourismusgebiet. Das neueste Glasiglu-Resort öffnet im November, und der Preis für eine Nacht schwankt stark je nach Saison."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Olleronvaara in Zahlen der Stadt",
+      "items": [
+        "Geschossfläche: fast 30.000 Quadratmeter für Unterkünfte zugelassen",
+        "Baugenehmigungen: für mehr als 300 Unterkunftsgebäude",
+        "Fertig: 90 Gebäude"
+      ]
     },
     {
       "t": "p",
@@ -19,11 +29,12 @@
       "text": "Neue Unterkünfte für diesen Winter"
     },
     {
-      "t": "ul",
+      "t": "embed",
+      "id": "facts-kohteet",
       "items": [
         "Aava Glass Igloos: 13 Glasiglu-Suiten mit beheiztem Glasdach und eigener Sauna. Die erste buchbare Nacht ist der 13. November 2026.",
         "ALVA Resort: vier 28 Quadratmeter große Hütten mit Glasdach. Nach Angaben des Resorts öffnet es am 1. November 2026.",
-        "SkyView Igloo Resort ist im selben Gebiet bereits in Betrieb, und sein Buchungssystem führt Glasiglu-Suiten und Polarlichthütten."
+        "SkyView Igloo Resort: im selben Gebiet bereits in Betrieb, und das Buchungssystem führt Glasiglu-Suiten und Polarlichthütten."
       ]
     },
     {
@@ -32,11 +43,18 @@
     },
     {
       "t": "p",
-      "text": "Die Preise schwanken stark je nach Saison. Am 16. Oktober nannte die Preisliste von Aava Glass Igloos als günstigste freie Nacht für zwei Erwachsene 499 Euro am 13. November, 2.099 Euro am 23. Dezember und 799 Euro am 15. Januar 2027."
+      "text": "Unten stehen die günstigsten freien Nächte, wie sie am 16. Oktober zu sehen waren. Die Preise von Aava Glass Igloos stammen aus dessen Preisliste und gelten für zwei Erwachsene. Die Preise ändern sich mit der Nachfrage."
     },
     {
-      "t": "p",
-      "text": "Am selben Tag kostete die günstigste freie Nacht im SkyView Igloo Resort am 23. Dezember 2.150 Euro. Die Preise ändern sich mit der Nachfrage."
+      "t": "embed",
+      "id": "facts-hinnat",
+      "title": "Günstigste freie Nacht",
+      "items": [
+        "13. November: 499 Euro, Aava Glass Igloos",
+        "23. Dezember: 2.099 Euro, Aava Glass Igloos",
+        "23. Dezember: 2.150 Euro, SkyView Igloo Resort",
+        "15. Januar 2027: 799 Euro, Aava Glass Igloos"
+      ]
     },
     {
       "t": "h2",

@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, eine Beteiligungsgesellschaft für nordische Wachstumsunternehmen, hat die Mehrheit an Arctra übernommen, einem Luxusreisekonzern mit Sitz in Rovaniemi, und will dessen Umsatz nach eigenen Angaben ungefähr verzehnfachen. Die Unternehmen gaben die Transaktion am 16.9.2026 bekannt. Arctra führt seinen Namen weiter."
+      "text": "Venture Lapland, eine Beteiligungsgesellschaft für nordische Wachstumsunternehmen, hat die Mehrheit an Arctra übernommen, einem Luxusreisekonzern mit Sitz in Rovaniemi, und will dessen Umsatz nach eigenen Angaben ungefähr verzehnfachen."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Die Übernahme in Kürze",
+      "items": [
+        "Bekannt gegeben: am 16.9.2026",
+        "Name: Arctra führt seinen Namen weiter",
+        "Beschäftigte: gut 40 Personen in der Wintersaison",
+        "Neue Unterkünfte: 6.000 Quadratmeter Geschossfläche nahe Rovaniemi",
+        "Beschäftigungsziel: rund 200 nach dem Investitionsprogramm"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra besteht aus vier Einheiten. Das Reisebüro Arctra DMC bringt internationale Kunden nach Lappland und verantwortet die Leistungserbringung, von Köchen bis zu Guides. Otava Lodge ist die eigene Luxusunterkunft des Konzerns. Das Conciergehaus Divánta kümmert sich um Privatsphäre und Personenschutz, und der Luxusautovermieter LuxCar um Fahrzeuge und Fahrer. Laut Mitteilung beschäftigt der Konzern in der Wintersaison gut 40 Personen."
+      "text": "Arctra besteht aus vier Einheiten. Laut Mitteilung beschäftigt der Konzern in der Wintersaison gut 40 Personen."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: das Reisebüro, das internationale Kunden nach Lappland bringt und die Leistungserbringung verantwortet, von Köchen bis zu Guides",
+        "Otava Lodge: die eigene Luxusunterkunft des Konzerns",
+        "Divánta: das Conciergehaus, das sich um Privatsphäre und Personenschutz kümmert",
+        "LuxCar: der Luxusautovermieter, der sich um Fahrzeuge und Fahrer kümmert"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Was das für die kommenden Saisons bedeutet"
+      "text": "Die kommenden Saisons"
     },
     {
       "t": "p",

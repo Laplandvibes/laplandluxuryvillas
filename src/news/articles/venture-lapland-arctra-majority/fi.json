@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Pohjoisen kasvuyhtiöihin sijoittava Venture Lapland on hankkinut pääomistuksen rovaniemeläisestä luksusmatkailukonserni Arctrasta ja kertoo aikovansa kymmenkertaistaa sen liikevaihdon. Yhtiöt kertoivat järjestelystä 16.9.2026. Arctra jatkaa toimintaansa omalla nimellään."
+      "text": "Pohjoisen kasvuyhtiöihin sijoittava Venture Lapland on hankkinut pääomistuksen rovaniemeläisestä luksusmatkailukonserni Arctrasta ja kertoo aikovansa kymmenkertaistaa sen liikevaihdon."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "Kauppa lyhyesti",
+      "items": [
+        "Julkistettu: 16.9.2026",
+        "Nimi: Arctra jatkaa omalla nimellään",
+        "Henkilöstö: talvisesongin aikana runsaat 40",
+        "Uutta majoitusta: 6 000 kerrosneliömetriä Rovaniemen lähistölle",
+        "Työpaikkatavoite: noin 200 investointiohjelman jälkeen"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra koostuu neljästä yksiköstä. Matkatoimisto Arctra DMC tuo kansainväliset asiakkaat Lappiin ja vastaa palvelutuotannosta kokeista ja oppaista alkaen. Otava Lodge on konsernin oma luksusmajoituskohde. Conciergetalo Divánta vastaa asiakkaiden yksityisyydestä ja henkilösuojauksesta, ja luksusautovuokraamo LuxCar ajoneuvoista ja kuljettajista. Tiedotteen mukaan konserni työllistää talvisesongin aikana runsaat 40 henkilöä."
+      "text": "Arctra koostuu neljästä yksiköstä. Tiedotteen mukaan konserni työllistää talvisesongin aikana runsaat 40 henkilöä."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: matkatoimisto, joka tuo kansainväliset asiakkaat Lappiin ja vastaa palvelutuotannosta kokeista ja oppaista alkaen",
+        "Otava Lodge: konsernin oma luksusmajoituskohde",
+        "Divánta: conciergetalo, joka vastaa asiakkaiden yksityisyydestä ja henkilösuojauksesta",
+        "LuxCar: luksusautovuokraamo, joka vastaa ajoneuvoista ja kuljettajista"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Mitä tämä tarkoittaa tulevien kausien kannalta"
+      "text": "Tulevat kaudet"
     },
     {
       "t": "p",

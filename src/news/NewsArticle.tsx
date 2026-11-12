@@ -2,7 +2,7 @@ import { use } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { ARTICLE_BY_SLUG, ARTICLES, loadAllTexts, loadText, loadUi } from './registry';
-import { formatDate, joinList, labelPrefix } from './format';
+import { formatDate, labelPrefix } from './format';
 import Prose from './Prose';
 import ShareBar, { ShareButton } from '../shared/ShareBar/ShareBar';
 import NewsCard from './NewsCard';
@@ -54,8 +54,6 @@ function ArticleView({ meta }: { meta: NewsMeta }) {
     }],
   });
 
-  const publishers = [...new Set(meta.sources.map((s) => s.publisher))];
-
   return (
     <NewsChrome current={path}>
       {head}
@@ -97,11 +95,12 @@ function ArticleView({ meta }: { meta: NewsMeta }) {
           ui.ui.byline,
           <>{ui.ui.published} <time dateTime={meta.date}>{formatDate(meta.date, lang)}</time></>,
           meta.updated ? <>{ui.ui.updated} <time dateTime={meta.updated}>{formatDate(meta.updated, lang)}</time></> : null,
-          <>{labelPrefix(ui.ui.sources, lang)}{joinList(publishers, lang)}</>,
         ]} />
+        {/* Vesa 6.11.2026: "miksi lähteet pitää olla ekana eikä artikkelin lopussa": lähdeluettelo vain jutun lopussa (nw-sources).
+            Kuvaaja ja lisenssi kuvatekstin perässä (verkoston malli 11.11.2026), ei kuvan päällä. */}
         <p className="nw-art-cap">
           {text.heroCaption && <span>{text.heroCaption} </span>}
-          <span className="nw-credit">
+          <span className="nw-art-credit-line">
             {labelPrefix(ui.ui.photo, lang)}<a href={credit.sourceUrl} target="_blank" rel="noopener">{credit.author} / {credit.sourceName}</a>,{' '}
             <a href={credit.licenseUrl} target="_blank" rel="noopener license">{credit.license}</a>
           </span>

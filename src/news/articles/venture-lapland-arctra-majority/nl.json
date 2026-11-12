@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, een investeringsmaatschappij voor noordelijke groeibedrijven, heeft de meerderheid verworven in Arctra, een luxereisgroep met hoofdkantoor in Rovaniemi, en zegt de omzet ongeveer te willen vertienvoudigen. De bedrijven maakten de transactie op 16.9.2026 bekend. Arctra gaat onder eigen naam verder."
+      "text": "Venture Lapland, een investeringsmaatschappij voor noordelijke groeibedrijven, heeft de meerderheid verworven in Arctra, een luxereisgroep met hoofdkantoor in Rovaniemi, en zegt de omzet ongeveer te willen vertienvoudigen."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "De overname in het kort",
+      "items": [
+        "Bekendgemaakt: op 16.9.2026",
+        "Naam: Arctra gaat onder eigen naam verder",
+        "Personeel: ruim 40 mensen in het winterseizoen",
+        "Nieuw verblijf: 6.000 vierkante meter vloeroppervlak bij Rovaniemi",
+        "Banendoel: ongeveer 200 na het investeringsprogramma"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra bestaat uit vier onderdelen. Reisbureau Arctra DMC brengt internationale gasten naar Lapland en verzorgt de uitvoering, van koks tot gidsen. Otava Lodge is het eigen luxeverblijf van de groep. Conciergehuis Divánta zorgt voor privacy en persoonsbeveiliging, en luxeautoverhuurder LuxCar voor voertuigen en chauffeurs. Volgens het persbericht heeft de groep in het winterseizoen ruim 40 mensen in dienst."
+      "text": "Arctra bestaat uit vier onderdelen. Volgens het persbericht heeft de groep in het winterseizoen ruim 40 mensen in dienst."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: het reisbureau, dat internationale gasten naar Lapland brengt en de uitvoering verzorgt, van koks tot gidsen",
+        "Otava Lodge: het eigen luxeverblijf van de groep",
+        "Divánta: het conciergehuis, dat zorgt voor privacy en persoonsbeveiliging",
+        "LuxCar: de luxeautoverhuurder, die zorgt voor voertuigen en chauffeurs"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Wat dit betekent voor de komende seizoenen"
+      "text": "De komende seizoenen"
     },
     {
       "t": "p",

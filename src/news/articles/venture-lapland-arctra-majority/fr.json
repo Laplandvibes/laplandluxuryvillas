@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "Venture Lapland, société d'investissement qui soutient les entreprises de croissance du Nord, a pris la majorité d'Arctra, un groupe de voyage de luxe basé à Rovaniemi, et dit vouloir multiplier par dix son chiffre d'affaires. Les sociétés ont annoncé l'opération le 16.9.2026. Arctra conserve son nom."
+      "text": "Venture Lapland, société d'investissement qui soutient les entreprises de croissance du Nord, a pris la majorité d'Arctra, un groupe de voyage de luxe basé à Rovaniemi, et dit vouloir multiplier par dix son chiffre d'affaires."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "L'opération en bref",
+      "items": [
+        "Annoncée : le 16.9.2026",
+        "Nom : Arctra conserve son nom",
+        "Effectif : un peu plus de 40 personnes pendant la saison d'hiver",
+        "Nouvel hébergement : 6 000 mètres carrés de surface de plancher près de Rovaniemi",
+        "Objectif d'emploi : environ 200 personnes après le programme d'investissement"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "Arctra réunit quatre unités. L'agence Arctra DMC amène les clients internationaux en Laponie et assure la production du service, des cuisiniers aux guides. Otava Lodge est l'hébergement de luxe du groupe. La maison de conciergerie Divánta s'occupe de la vie privée et de la protection rapprochée, et le loueur de voitures de luxe LuxCar des véhicules et des chauffeurs. Selon le communiqué, le groupe emploie un peu plus de 40 personnes pendant la saison d'hiver."
+      "text": "Arctra réunit quatre unités. Selon le communiqué, le groupe emploie un peu plus de 40 personnes pendant la saison d'hiver."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC : l'agence, qui amène les clients internationaux en Laponie et assure la production du service, des cuisiniers aux guides",
+        "Otava Lodge : l'hébergement de luxe du groupe",
+        "Divánta : la maison de conciergerie, qui s'occupe de la vie privée et de la protection rapprochée",
+        "LuxCar : le loueur de voitures de luxe, qui s'occupe des véhicules et des chauffeurs"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "Ce que cela change pour les prochaines saisons"
+      "text": "Les prochaines saisons"
     },
     {
       "t": "p",

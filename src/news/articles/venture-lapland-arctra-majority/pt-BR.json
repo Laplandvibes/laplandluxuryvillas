@@ -8,7 +8,19 @@
   "body": [
     {
       "t": "p",
-      "text": "A Venture Lapland, gestora que investe em empresas de crescimento do norte, adquiriu a maioria da Arctra, grupo de viagens de luxo sediado em Rovaniemi, e diz que pretende multiplicar por dez o seu faturamento. As empresas anunciaram a operação em 16.9.2026. A Arctra segue com o próprio nome."
+      "text": "A Venture Lapland, gestora que investe em empresas de crescimento do norte, adquiriu a maioria da Arctra, grupo de viagens de luxo sediado em Rovaniemi, e diz que pretende multiplicar por dez o seu faturamento."
+    },
+    {
+      "t": "embed",
+      "id": "facts-lyhyesti",
+      "title": "A operação em resumo",
+      "items": [
+        "Anunciada: em 16.9.2026",
+        "Nome: a Arctra segue com o próprio nome",
+        "Equipe: pouco mais de 40 pessoas na temporada de inverno",
+        "Nova hospedagem: 6.000 metros quadrados de área construída perto de Rovaniemi",
+        "Meta de empregos: cerca de 200 pessoas depois do programa de investimento"
+      ]
     },
     {
       "t": "h2",
@@ -16,7 +28,17 @@
     },
     {
       "t": "p",
-      "text": "A Arctra é formada por quatro unidades. A agência Arctra DMC traz clientes internacionais para a Lapônia e responde pela produção do serviço, dos cozinheiros aos guias. O Otava Lodge é a hospedagem de luxo própria do grupo. A casa de concierge Divánta cuida da privacidade e da proteção pessoal, e a locadora de carros de luxo LuxCar, dos veículos e dos motoristas. Segundo o comunicado, o grupo emprega pouco mais de 40 pessoas durante a temporada de inverno."
+      "text": "A Arctra é formada por quatro unidades. Segundo o comunicado, o grupo emprega pouco mais de 40 pessoas durante a temporada de inverno."
+    },
+    {
+      "t": "embed",
+      "id": "facts-yksikot",
+      "items": [
+        "Arctra DMC: a agência, que traz clientes internacionais para a Lapônia e responde pela produção do serviço, dos cozinheiros aos guias",
+        "Otava Lodge: a hospedagem de luxo própria do grupo",
+        "Divánta: a casa de concierge, que cuida da privacidade e da proteção pessoal",
+        "LuxCar: a locadora de carros de luxo, que cuida dos veículos e dos motoristas"
+      ]
     },
     {
       "t": "note",
@@ -53,7 +75,7 @@
     },
     {
       "t": "h2",
-      "text": "O que isso significa para as próximas temporadas"
+      "text": "As próximas temporadas"
     },
     {
       "t": "p",

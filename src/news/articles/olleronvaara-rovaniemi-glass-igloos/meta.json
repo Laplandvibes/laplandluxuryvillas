@@ -97,6 +97,17 @@
       "date": "2026-10-15"
     }
   ],
+  "embeds": {
+    "facts-lyhyesti": {
+      "kind": "facts"
+    },
+    "facts-kohteet": {
+      "kind": "facts"
+    },
+    "facts-hinnat": {
+      "kind": "facts"
+    }
+  },
   "ogCard": {
     "line": "Glass igloo prices this winter"
   }
