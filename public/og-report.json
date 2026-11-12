@@ -1,9 +1,9 @@
 {
-  "version": "766b14a8",
+  "version": "1b476a6e",
   "domain": "laplandluxuryvillas.com",
   "brand": "LUXURYVILLAS",
   "tagline": "Private aurora villas and suites",
-  "generated": "2026-10-01T18:15:38.030Z",
+  "generated": "2026-11-12T10:35:01.950Z",
   "staticFallbackSeason": "winter",
   "seasons": {
     "summer": {
@@ -11,18 +11,20 @@
       "heroUrl": "https://laplandluxuryvillas.com/images/summer-villa-lakeside.webp?v=356d02a8",
       "heroAlt": "A log cabin on a rocky point of a still, misty lake in low sun, a tall pine beside it",
       "heroSha": "356d02a84228a135",
-      "bytes": 118624,
-      "sha256": "b32e669bdf0f42ce8a55775d2025c638ff1012dd407df713f69f8fbc54f1f586",
+      "bytes": 115242,
+      "sha256": "b5e1832072ccfe23fb1beebd59deb031d39666782e308849ec6ca70da9ececc8",
       "bandH": 168,
       "photoPct": 73.3,
-      "ink": 20618,
+      "ink": 20597,
       "inkBox": [
         312,
-        493,
+        26,
         885,
-        597
+        130
       ],
       "safe": true,
+      "palkki": "yla",
+      "xVapaa": true,
       "accentP10": 5.06,
       "accentMed": 5.06,
       "whiteP10": 17.08,
@@ -37,7 +39,7 @@
         "size": 74,
         "lines": 1,
         "ts": 30,
-        "tagW": 427,
+        "tagW": 447,
         "fits": true,
         "bandH": 168
       },
@@ -50,18 +52,20 @@
       "heroUrl": "https://laplandluxuryvillas.com/images/hero-winter-arctic-treehouse.avif?v=ef9324df",
       "heroAlt": "Glass-fronted suites of Arctic TreeHouse Hotel on stilts among snowy pines in Rovaniemi",
       "heroSha": "ef9324dfcbe2f733",
-      "bytes": 174330,
-      "sha256": "0cd2951191f73051e4c3533e6e9a74d45c2ab18dc807d454eb7d50075da54a96",
+      "bytes": 171431,
+      "sha256": "4f71b5dc87814baa3a8f4e1903a1fb6d600bbdd66606682c5b255578cdebb09a",
       "bandH": 168,
       "photoPct": 73.3,
-      "ink": 20138,
+      "ink": 20220,
       "inkBox": [
         312,
-        493,
+        26,
         885,
-        597
+        130
       ],
       "safe": true,
+      "palkki": "yla",
+      "xVapaa": true,
       "accentP10": 5.06,
       "accentMed": 5.06,
       "whiteP10": 17.08,
@@ -76,7 +80,7 @@
         "size": 74,
         "lines": 1,
         "ts": 30,
-        "tagW": 404,
+        "tagW": 423,
         "fits": true,
         "bandH": 168
       },

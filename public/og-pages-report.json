@@ -5,19 +5,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/commons/hero-suites-summer.webp",
-        "bytes": 222430,
-        "sha256": "f67e59d74af1b5dac02252e076d9f5570e58dcf6d9fcccde20d491d1c39a38ce",
+        "bytes": 219149,
+        "sha256": "ba078a79a5db6b1153cd5872a95470f6575784cda9a5f62cdb9f8c1c9b170831",
         "heroSha": "05ad58268710f346",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20378,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -42,19 +44,21 @@
       },
       "winter": {
         "hero": "/images/commons/hero-suites-winter.webp",
-        "bytes": 61445,
-        "sha256": "6552f130c65d1a83c35bc88b072112780a0c136db97b80ebb468e49effb83133",
+        "bytes": 57773,
+        "sha256": "28291d1e651747e3739c66d6a51eddebbbee0d8ed354ce1ef69747b95c0df1ff",
         "heroSha": "7355425fdf330dbb",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20378,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -85,19 +89,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/commons/hero-destinations-summer.webp",
-        "bytes": 116077,
-        "sha256": "fbf02c1144eab6b2bbc014507ca4d87529cd912a691129d2761037b76aea5474",
+        "bytes": 113254,
+        "sha256": "9e56b49e50d9c61798cd784fc450f8de49b60b471e9fe83b78fc971e8cb582c3",
         "heroSha": "cdd8b9caee588091",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 21339,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -122,19 +128,21 @@
       },
       "winter": {
         "hero": "/images/commons/hero-destinations-winter.webp",
-        "bytes": 171677,
-        "sha256": "1d1a2ebda2bbf2196b13ed50a4fd3344cce7b2210a51fb5455ec33059988f23b",
+        "bytes": 168718,
+        "sha256": "54f3240ab0f64221ceeec0558a62829afa9e33aaab4ec948a24b63881b60eb24",
         "heroSha": "9c8f74d0a78034b2",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 21339,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -165,19 +173,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/hero-experiences-poster.webp",
-        "bytes": 68234,
-        "sha256": "0d745c131999b62d22e430022ac113e78f9a20bc38c84b5abcce0b3270b9d303",
+        "bytes": 64630,
+        "sha256": "134a4bbca40d76215e7cd3d3ace418dc68a87e82faf32618f33755af2e35143e",
         "heroSha": "273a244b3e87e09e",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 21568,
         "inkBox": [
           306,
-          493,
+          26,
           893,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -202,19 +212,21 @@
       },
       "winter": {
         "hero": "/images/hero-experiences-poster.webp",
-        "bytes": 68234,
-        "sha256": "0d745c131999b62d22e430022ac113e78f9a20bc38c84b5abcce0b3270b9d303",
+        "bytes": 64630,
+        "sha256": "134a4bbca40d76215e7cd3d3ace418dc68a87e82faf32618f33755af2e35143e",
         "heroSha": "273a244b3e87e09e",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 21568,
         "inkBox": [
           306,
-          493,
+          26,
           893,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -246,25 +258,27 @@
     "kaudet": {
       "summer": {
         "hero": "/images/hero-midnight-sun-tana.webp",
-        "bytes": 94898,
-        "sha256": "f68c8069a57e38c790f2ecfa3078954f68bf85c808c05bdd9f956ec62f83c038",
+        "bytes": 91929,
+        "sha256": "cc1a80297e643a64798f100e6f580736ab235612e297c745de6d7f08d6a522c3",
         "heroSha": "f3f62a10f8d9df02",
         "bandH": 168,
         "photoPct": 73.3,
-        "ink": 21076,
+        "ink": 21310,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
         "whiteMed": 17.08,
         "mean": 98.2,
-        "centerSq": 111.9,
+        "centerSq": 112,
         "photoRegion": 119.6,
         "photoRegionRef": 119.6,
         "overlayPixels": 0,
@@ -273,7 +287,7 @@
           "size": 74,
           "lines": 1,
           "ts": 30,
-          "tagW": 507,
+          "tagW": 528,
           "fits": true,
           "bandH": 168
         },
@@ -283,25 +297,27 @@
       },
       "winter": {
         "hero": "/images/hero-midnight-sun-tana.webp",
-        "bytes": 94898,
-        "sha256": "f68c8069a57e38c790f2ecfa3078954f68bf85c808c05bdd9f956ec62f83c038",
+        "bytes": 91929,
+        "sha256": "cc1a80297e643a64798f100e6f580736ab235612e297c745de6d7f08d6a522c3",
         "heroSha": "f3f62a10f8d9df02",
         "bandH": 168,
         "photoPct": 73.3,
-        "ink": 21076,
+        "ink": 21310,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
         "whiteMed": 17.08,
         "mean": 98.2,
-        "centerSq": 111.9,
+        "centerSq": 112,
         "photoRegion": 119.6,
         "photoRegionRef": 119.6,
         "overlayPixels": 0,
@@ -310,7 +326,7 @@
           "size": 74,
           "lines": 1,
           "ts": 30,
-          "tagW": 507,
+          "tagW": 528,
           "fits": true,
           "bandH": 168
         },
@@ -327,19 +343,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/commons/hero-inquiry-summer.webp",
-        "bytes": 153715,
-        "sha256": "45020d2ab14ffb519eca11daad4ff9473193c262ce2600022a7feb7d1e3a31ec",
+        "bytes": 149982,
+        "sha256": "929272742b4ff59738c73117e470e1dac183d83714c3e98aeffd0a135899e908",
         "heroSha": "7e74d25dffb132ca",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 19839,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -364,19 +382,21 @@
       },
       "winter": {
         "hero": "/images/commons/hero-inquiry-winter.webp",
-        "bytes": 124801,
-        "sha256": "df171fd1224b75ce1ab0574a3240feec0b5cb7c25944507f84229e92e379aa8f",
+        "bytes": 121193,
+        "sha256": "c414100c3777bd149c76dbf20dfa48608fbec0f062cd11bfe278128fbc05159a",
         "heroSha": "df95dafe07f9e1d4",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 19839,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -407,19 +427,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/commons/hero-about-summer.webp",
-        "bytes": 224392,
-        "sha256": "cb072229916877513e1c75af1117848589df987e885062ef1efd27cf9d6fd4d2",
+        "bytes": 221882,
+        "sha256": "dda56faa7865e391e461842a5749022e5b9f1485e0e7e0062feaa439aa193072",
         "heroSha": "8882c38fad503ddd",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 21468,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -444,19 +466,21 @@
       },
       "winter": {
         "hero": "/images/hero-about-levi-chalet.webp",
-        "bytes": 123647,
-        "sha256": "e2160c8ca5fca61cb01d1011d37e97f00055fca891b2abd648131db66e06d753",
+        "bytes": 120073,
+        "sha256": "ede4168c09d147ca34a238eda29d3b04545125800159c0b3d361df2cd7cdf7b0",
         "heroSha": "b36ffd481c5ca1bc",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 21468,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -487,19 +511,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/news/glass-igloos-saariselka-1600.webp",
-        "bytes": 153449,
-        "sha256": "628bd84c5bcb91f18b30d68aeeb7f1a953314ca226ed46f94170d3837bee5fda",
+        "bytes": 150381,
+        "sha256": "9d13ee86595c812f685b61dcef98ba942d2104bdc2ad91ef3f34bcb3cb306ec1",
         "heroSha": "01e27dd6a2122f37",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20170,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -524,19 +550,21 @@
       },
       "winter": {
         "hero": "/images/news/glass-igloos-saariselka-1600.webp",
-        "bytes": 153449,
-        "sha256": "628bd84c5bcb91f18b30d68aeeb7f1a953314ca226ed46f94170d3837bee5fda",
+        "bytes": 150381,
+        "sha256": "9d13ee86595c812f685b61dcef98ba942d2104bdc2ad91ef3f34bcb3cb306ec1",
         "heroSha": "01e27dd6a2122f37",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20170,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -568,19 +596,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/news/riisitunturi-winter-1600.webp",
-        "bytes": 113620,
-        "sha256": "afe51fb81997d720f19d1861d73658f44009ee4c6f43d97b8b855e49be481c2d",
+        "bytes": 110956,
+        "sha256": "1fbfcfc30bcda1cde559b70b66f7e4d56d3e65a10c4ac474ac0bd0a67acfd1fd",
         "heroSha": "cd8668fb7fe724d8",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20681,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -605,19 +635,21 @@
       },
       "winter": {
         "hero": "/images/news/riisitunturi-winter-1600.webp",
-        "bytes": 113620,
-        "sha256": "afe51fb81997d720f19d1861d73658f44009ee4c6f43d97b8b855e49be481c2d",
+        "bytes": 110956,
+        "sha256": "1fbfcfc30bcda1cde559b70b66f7e4d56d3e65a10c4ac474ac0bd0a67acfd1fd",
         "heroSha": "cd8668fb7fe724d8",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20681,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -649,19 +681,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/news/glass-igloos-saariselka-1600.webp",
-        "bytes": 153449,
-        "sha256": "628bd84c5bcb91f18b30d68aeeb7f1a953314ca226ed46f94170d3837bee5fda",
+        "bytes": 150381,
+        "sha256": "9d13ee86595c812f685b61dcef98ba942d2104bdc2ad91ef3f34bcb3cb306ec1",
         "heroSha": "01e27dd6a2122f37",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20170,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -686,19 +720,21 @@
       },
       "winter": {
         "hero": "/images/news/glass-igloos-saariselka-1600.webp",
-        "bytes": 153449,
-        "sha256": "628bd84c5bcb91f18b30d68aeeb7f1a953314ca226ed46f94170d3837bee5fda",
+        "bytes": 150381,
+        "sha256": "9d13ee86595c812f685b61dcef98ba942d2104bdc2ad91ef3f34bcb3cb306ec1",
         "heroSha": "01e27dd6a2122f37",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 20170,
         "inkBox": [
           312,
-          493,
+          26,
           885,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
