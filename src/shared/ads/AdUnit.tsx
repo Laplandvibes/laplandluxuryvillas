@@ -256,7 +256,7 @@ export default function AdUnit({
             (col-reverse = logo first, full prominence), and the left block gets
             `min-w-0` so the eyebrow wraps instead of forcing overflow. From sm up
             the original two-column header is unchanged. */}
-        <div className="mb-4 flex flex-col-reverse items-start gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+        <div className="mb-4 flex flex-col-reverse items-start gap-3 xl:flex-row xl:items-start xl:justify-between xl:gap-4">
           <div className="flex min-w-0 items-center gap-3">
             <span
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
@@ -279,7 +279,7 @@ export default function AdUnit({
               height={80}
               loading="lazy"
               decoding="async"
-              className={`h-12 sm:h-16 w-auto max-w-[220px] shrink-0 ${dark && !spec.logoDark ? 'rounded-lg bg-white/95 px-3 py-1.5' : ''}`}
+              className={`h-16 w-auto max-w-full xl:max-w-[220px] object-contain shrink-0 ${dark && !spec.logoDark ? 'rounded-lg bg-white/95 px-3 py-1.5' : ''}`}
             />
           ) : (
             // Category advertiser without a brand logo (e.g. car rental): show the
