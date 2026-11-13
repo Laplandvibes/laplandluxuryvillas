@@ -107,7 +107,8 @@
 .nw .nw-prose > h2:lang(ja),.nw .nw-prose > h2:lang(zh),.nw .nw-prose > h2:lang(ko){font-family:var(--font-body),system-ui,sans-serif;font-weight:600;font-size:24px;line-height:1.4}
 .nw .nw-prose > ul{margin:0 0 20px;padding-left:1.25em;font-size:18px;line-height:1.7;color:var(--bone)}
 .nw .nw-prose > ul > li{margin:7px 0}
-.nw .nw-prose > .nw-note{font-size:15px;line-height:1.65;color:var(--ink2);border-left:2px solid var(--brass);padding-left:14px;margin:0 0 20px}
+/* 13.11.2026 §33: huomautus on täysi virke ⇒ 16 px (oli 15), kuten christmas/skiresorts/transport/flights/stays. */
+.nw .nw-prose > .nw-note{font-size:16px;line-height:1.65;color:var(--ink2);border-left:2px solid var(--brass);padding-left:14px;margin:0 0 20px}
 .nw .nw-prose > .nw-linkp{font-size:17px}
 .nw .nw-inlink{color:var(--brass);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,164,107,.45);padding-bottom:1px}
 .nw .nw-inlink:hover{color:var(--brass-bright);border-color:var(--brass-bright)}
