@@ -45,6 +45,51 @@ function injectInLanguage(node: unknown, bcp47: string): unknown {
   return node;
 }
 
+// Rakenteisen datan sisäiset osoitteet samaan muotoon kuin kanoninen, hreflang ja sivukartta:
+// sivun OMA kieliversio ja loppukauttaviiva. Sivujen schema-oliot on kirjoitettu englannin
+// kauttaviivattomilla osoitteilla (https://laplandluxuryvillas.com/villas), jolloin esim. /fi/villas/
+// kertoi Googlelle osoitteekseen englanninkielisen sivun 308-ohjautuvan muodon.
+// Mitattu 12.–13.11.2026, mittari lv-ops scripts/audit_jsonld_osoitteet.mjs.
+// - polullinen osoite -> kieliversio + kauttaviiva (/fi/villas/)
+// - juuri -> https://laplandluxuryvillas.com/
+// - tiedostot (.jpg), ankkurit (#org) ja ulkoiset osoitteet jäävät ennalleen
+// Sivun oma BreadcrumbList (`breadcrumbs` tai olio schemassa) ei tulostu: esirenderöijä kirjoittaa jokaiselle
+// sivulle murupolun sivun kielellä ja oikeilla osoitteilla, kun taas sivujen omat oliot sanoivat "Home" ja
+// englannin osoitteen joka kielellä (sama ratkaisu kuin laplandcarrental 25.9. ja laplandwellness 12.11.2026).
+const INTERNAL_URL = /^https:\/\/laplandluxuryvillas\.com((?:\/[A-Za-z0-9_-]+)*)\/?$/;
+const LOCALE_SEGMENT = /^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(?=\/|$)/;
+function localizeUrls(node: unknown, localePrefix: string, key = ''): unknown {
+  if (typeof node === 'string') {
+    const m = INTERNAL_URL.exec(node);
+    if (!m) return node;
+    const raw = m[1] || '/';
+    if (raw === '/' && key !== 'item') return `${BASE}/`;
+    const path = raw.replace(LOCALE_SEGMENT, '') || '/';
+    return `${BASE}${localePrefix}${path === '/' ? '' : path}/`;
+  }
+  if (Array.isArray(node)) return node.map((n) => localizeUrls(n, localePrefix, key));
+  if (node && typeof node === 'object') {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(node as Record<string, unknown>)) out[k] = localizeUrls(v, localePrefix, k);
+    return out;
+  }
+  return node;
+}
+const isBreadcrumbList = (x: unknown) =>
+  Boolean(x && typeof x === 'object' && (x as { '@type'?: unknown })['@type'] === 'BreadcrumbList');
+function dropBreadcrumbs(ld: unknown): unknown {
+  if (Array.isArray(ld)) {
+    const kept = ld.filter((x) => !isBreadcrumbList(x));
+    return kept.length ? kept : null;
+  }
+  if (isBreadcrumbList(ld)) return null;
+  if (ld && typeof ld === 'object' && Array.isArray((ld as { '@graph'?: unknown })['@graph'])) {
+    const o = ld as Record<string, unknown>;
+    return { ...o, '@graph': (o['@graph'] as unknown[]).filter((x) => !isBreadcrumbList(x)) };
+  }
+  return ld;
+}
+
 export default function SEO({
   title,
   description,
@@ -54,7 +99,6 @@ export default function SEO({
   schema,
   jsonLd,
   keywords,
-  breadcrumbs,
   noindex,
 }: SEOProps): ReactNode {
   const lang = useLang();
@@ -83,22 +127,8 @@ export default function SEO({
     dedupeHeadLinks();
   }, [url, bcp47]);
 
-  const breadcrumbSchema =
-    breadcrumbs && breadcrumbs.length > 0
-      ? {
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          inLanguage: bcp47,
-          itemListElement: breadcrumbs.map((b, i) => ({
-            '@type': 'ListItem',
-            position: i + 1,
-            name: b.name,
-            item: `${BASE}${b.url}`,
-          })),
-        }
-      : null;
-
-  const localizedLd = ld ? injectInLanguage(JSON.parse(JSON.stringify(ld)), bcp47) : null;
+  const keptLd = ld ? dropBreadcrumbs(ld) : null;
+  const localizedLd = keptLd ? localizeUrls(injectInLanguage(JSON.parse(JSON.stringify(keptLd)), bcp47), localePrefix) : null;
 
   return (
     <>
@@ -128,12 +158,6 @@ export default function SEO({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      {breadcrumbSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-      )}
       {localizedLd && (
         <script
           type="application/ld+json"
