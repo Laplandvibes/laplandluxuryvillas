@@ -1,0 +1,108 @@
+{
+  "slug": "arcora-torassieppi-muonio-opening",
+  "date": "2026-11-20",
+  "hero": {
+    "src": "/images/news/muonio-church-winter-1600.webp",
+    "srcSmall": "/images/news/muonio-church-winter-800.webp",
+    "width": 1600,
+    "height": 2133,
+    "position": "50% 45%",
+    "credit": {
+      "author": "David Ooms",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muonio_Church_20080228.jpg",
+      "assetId": "File:Muonio Church 20080228.jpg",
+      "sourceName": "Wikimedia Commons",
+      "taken": "2008-02-28",
+      "retrieved": "2026-11-17"
+    }
+  },
+  "sources": [
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Arcora Boutique Hotel & Villas | Luxury stay in Finnish Lapland",
+      "lang": "en",
+      "url": "https://arcora.fi/",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Suites & Villas",
+      "lang": "en",
+      "url": "https://arcora.fi/en/suites-villas",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Plan Your Stay",
+      "lang": "en",
+      "url": "https://arcora.fi/en/plan-your-stay",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Arcora Stay",
+      "lang": "en",
+      "url": "https://arcora.fi/en/packages",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Executive Suite Jussi",
+      "lang": "en",
+      "url": "https://arcora.fi/suites-villas/arcora-executive-suite-jussi/",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Arctic Experiences",
+      "lang": "en",
+      "url": "https://arcora.fi/experiences/under-the-northern-lights/",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Arcora Boutique Hotel & Villas",
+      "title": "Press & Media",
+      "lang": "en",
+      "url": "https://arcora.fi/en/press-media",
+      "read": "2026-11-17"
+    },
+    {
+      "publisher": "Harriniva Hotels & Safaris",
+      "title": "Investointi uuteen matkailukohteeseen, Arcora Boutique Hotel & Villas",
+      "lang": "fi",
+      "url": "https://harriniva.fi/en/arcora-investointi/",
+      "date": "2025-11-27"
+    },
+    {
+      "publisher": "reisen EXCLUSIV",
+      "title": "Neues Luxushotel in Lappland: Hier lassen sich Nordlichter vom Bett aus beobachten",
+      "lang": "de",
+      "url": "https://reisenexclusiv.com/arcora-boutique-hotel-villas-lappland/",
+      "date": "2026-11-16"
+    },
+    {
+      "publisher": "Breaking Travel News",
+      "title": "Introducing Arcora Boutique Hotel & Villas in Finnish Lapland Fresh For The 2027 Arctic Season",
+      "lang": "en",
+      "url": "https://www.breakingtravelnews.com/news/article/introducing-arcora-boutique-hotel-villas-in-finnish-lapland-fresh-for-the-2/",
+      "date": "2026-07-14"
+    }
+  ],
+  "embeds": {
+    "facts-lyhyesti": {
+      "kind": "facts"
+    },
+    "facts-kohteet": {
+      "kind": "facts"
+    },
+    "facts-matka": {
+      "kind": "facts"
+    }
+  },
+  "ogCard": {
+    "line": "New luxury hotel opens in Muonio",
+    "focus": "50% 38%"
+  }
+}

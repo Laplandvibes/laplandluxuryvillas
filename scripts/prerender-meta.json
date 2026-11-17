@@ -599,6 +599,56 @@
       "description": "Nyheter om lyxresor i finska Lappland: nya anläggningar, kapacitet, flyg och bolagen bakom. Varje artikel namnger och länkar sina källor."
     }
   },
+  "/news/arcora-torassieppi-muonio-opening": {
+    "en": {
+      "title": "Arcora opens at Torassieppi in Muonio",
+      "description": "Arcora Boutique Hotel & Villas opens at Torassieppi in Muonio on 14 December 2026, with 59 suites and villas and a rooftop infinity pool."
+    },
+    "fi": {
+      "title": "Arcora avautuu Torassiepissä Muoniossa",
+      "description": "Arcora Boutique Hotel & Villas avaa ovensa Torassiepissä Muoniossa 14. joulukuuta 2026. Kohteessa on 59 sviittiä ja huvilaa sekä katolla infinity-allas."
+    },
+    "de": {
+      "title": "Arcora eröffnet in Torassieppi in Muonio",
+      "description": "Arcora Boutique Hotel & Villas eröffnet am 14. Dezember 2026 in Torassieppi in Muonio, mit 59 Suiten und Villen und einem Infinity-Pool auf dem Dach."
+    },
+    "ja": {
+      "title": "Arcora、ムオニオのトラッシエッピに開業",
+      "description": "Arcoraは2026年12月14日、ムオニオのトラッシエッピに開業します。スイートとヴィラは59室で、屋上にインフィニティプールがあります。"
+    },
+    "es": {
+      "title": "Arcora abre en Torassieppi, en Muonio",
+      "description": "Arcora Boutique Hotel & Villas abre el 14 de diciembre de 2026 en Torassieppi, en Muonio, con 59 suites y villas y una piscina infinita en la azotea."
+    },
+    "pt-BR": {
+      "title": "Arcora abre em Torassieppi, em Muonio",
+      "description": "O Arcora Boutique Hotel & Villas abre em 14 de dezembro de 2026 em Torassieppi, em Muonio, com 59 suítes e vilas e uma piscina de borda infinita no terraço."
+    },
+    "zh-CN": {
+      "title": "Arcora在穆奥尼奥托拉西埃皮开业",
+      "description": "Arcora Boutique Hotel & Villas将于2026年12月14日在穆奥尼奥的托拉西埃皮开业，设有59间套房与别墅，屋顶还有一座无边泳池。"
+    },
+    "ko": {
+      "title": "Arcora, 무오니오 토라시에피에 개장",
+      "description": "Arcora는 2026년 12월 14일 무오니오의 토라시에피에서 문을 엽니다. 스위트와 빌라 59실, 옥상에는 인피니티 풀이 있습니다."
+    },
+    "fr": {
+      "title": "Arcora ouvre à Torassieppi, à Muonio",
+      "description": "Arcora Boutique Hotel & Villas ouvre le 14 décembre 2026 à Torassieppi, à Muonio, avec 59 suites et villas et une piscine à débordement sur le toit."
+    },
+    "it": {
+      "title": "Arcora apre a Torassieppi, a Muonio",
+      "description": "Arcora Boutique Hotel & Villas apre il 14 dicembre 2026 a Torassieppi, a Muonio, con 59 suite e ville e una piscina a sfioro sul tetto."
+    },
+    "nl": {
+      "title": "Arcora opent in Torassieppi bij Muonio",
+      "description": "Arcora Boutique Hotel & Villas opent op 14 december 2026 in Torassieppi bij Muonio, met 59 suites en villa's en een infinitypool op het dak."
+    },
+    "sv": {
+      "title": "Arcora öppnar i Torassieppi i Muonio",
+      "description": "Arcora Boutique Hotel & Villas öppnar i Torassieppi i Muonio den 14 december 2026, med 59 sviter och villor och en infinitypool på taket."
+    }
+  },
   "/news/olleronvaara-rovaniemi-glass-igloos": {
     "en": {
       "title": "Olleronvaara, Rovaniemi: new glass igloos and their prices",
