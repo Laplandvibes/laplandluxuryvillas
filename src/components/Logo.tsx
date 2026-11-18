@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react';
 
-import { LV_SANAMERKKI } from './lvSanamerkki';
+import { LV_SANAMERKKI, LV_SANAMERKKI_PIENI } from './lvSanamerkki';
 // Sanamerkin leveys 1 px:n fontilla (Bebas Neue + tracking-wide). Puhelin- ja tablettinavissa koko lasketaan
 // tästä ja vapaasta tilasta (index.css LV-NAV-SANAMERKKI): 24 px (tabletilla 30 px), pienempi vain kun ei mahdu.
 const WM_STYLE = { '--lv-wm-k': 8.01, '--lv-wm-max-md': '30px' } as CSSProperties;
@@ -35,6 +35,8 @@ interface LogoProps {
  * between the network pill and the language/menu controls.
  */
 export default function Logo({ hero = false, className = '', nav = false }: LogoProps) {
+  // Yläpalkissa pienen koon muoto (kirjainten reiät auki 16–21 px:n koossa), muualla virallinen.
+  const LVS = nav ? LV_SANAMERKKI_PIENI : LV_SANAMERKKI;
   // Phone sizes step down so the nav row (network pill, wordmark, language, menu button)
   // fits without clipping the mark from 320 px up. Measured 1.10.2026 in all 12 languages:
   // at 18 px the mark is 144 px wide and was cut by 45 px at 320 and 5 px at 360.
@@ -52,11 +54,11 @@ export default function Logo({ hero = false, className = '', nav = false }: Logo
     >
       {/* VIRALLINEN sanamerkki (Vesa 14.11.2026; yläpalkki 15.11.2026 "sama leveys kuin nyt"): piirros ./lvSanamerkki.ts,
           leveys = entisen tekstin leveys, osat perivät entiset värinsä (currentColor). Teksti ruudunlukijalle ja hakukoneelle. */}
-      <svg viewBox={LV_SANAMERKKI.viewBox} aria-hidden="true" focusable="false" style={{ width: `${LV_SANAMERKKI.leveysEm}em`, height: 'auto', display: 'inline-block', verticalAlign: 'middle', overflow: 'visible' }}>
-        <path className={`text-[color:var(--color-vibe-pink)] ${glow}`} fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[0]} />
-        <path className="text-[color:var(--color-snow)]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[1]} />
-        <path className={`text-[color:var(--color-vibe-pink)] ${glow}`} fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[2]} />
-        <path className="text-[color:var(--color-snow)]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[3]} />
+      <svg viewBox={LVS.viewBox} aria-hidden="true" focusable="false" style={{ width: `${LVS.leveysEm}em`, height: 'auto', display: 'inline-block', verticalAlign: 'middle', overflow: 'visible' }}>
+        <path className={`text-[color:var(--color-vibe-pink)] ${glow}`} fill="currentColor" fillRule="evenodd" d={LVS.d[0]} />
+        <path className="text-[color:var(--color-snow)]" fill="currentColor" fillRule="evenodd" d={LVS.d[1]} />
+        <path className={`text-[color:var(--color-vibe-pink)] ${glow}`} fill="currentColor" fillRule="evenodd" d={LVS.d[2]} />
+        <path className="text-[color:var(--color-snow)]" fill="currentColor" fillRule="evenodd" d={LVS.d[3]} />
       </svg>
       <span className="sr-only">#LAPLANDLUXURYVILLAS</span>
     </span>
