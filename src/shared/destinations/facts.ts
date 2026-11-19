@@ -209,7 +209,7 @@ export const DESTINATION_FACTS: Record<string, DestinationFacts> = {
         note: 'Includes two gondolas. A sixth chairlift, Sunny Express on the south slopes, opens for the 2026-2027 season.',
       },
       groomedKm: { value: 38.5, source: LEVI_SLOPES, verified: '2026-08-01', note: 'Total length of groomed downhill slopes.' },
-      crossCountryKm: { value: 230, source: 'https://www.levi.fi/en/winter/cross-country-skiing/', verified: '2026-07-25', note: 'Maintained tracks, about 28 km of them lit.' },
+      crossCountryKm: { value: 230, source: 'https://www.levi.fi/en/ski/cross-country-skiing/', verified: '2026-11-19', note: 'Maintained tracks, about 28 km of them lit.' },
       summitM: { value: 531, source: LEVI_SLOPES, verified: '2026-07-25' },
     },
   },
