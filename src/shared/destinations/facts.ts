@@ -132,7 +132,7 @@ export const DESTINATION_FACTS: Record<string, DestinationFacts> = {
     },
     nationalPark: {
       name: 'Urho Kekkonen National Park',
-      source: 'https://www.nationalparks.fi/urhokekkonennp',
+      source: 'https://www.luontoon.fi/en/destinations/urho-kekkonen-national-park',
       verified: '2026-08-01',
       note: 'Saariselkä sits on its northern edge; the park is one of the largest in Finland.',
     },
@@ -239,7 +239,7 @@ export const DESTINATION_FACTS: Record<string, DestinationFacts> = {
     },
     nationalPark: {
       name: 'Pallas-Yllästunturi National Park',
-      source: 'https://www.nationalparks.fi/pallas-yllastunturinp',
+      source: 'https://www.luontoon.fi/en/destinations/pallas-yllastunturi-national-park',
       verified: '2026-08-01',
       note: "Finland's third-largest national park; the two Ylläs villages sit on opposite sides of it.",
     },
