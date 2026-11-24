@@ -21,17 +21,16 @@
  * (bg #F9FAFB, dashed-pinkki reunus, pinkki pilleri-CTA; hehku inline-tyylinä
  * koska arbitrary `shadow-[…]` ei emitoidu kaikissa repoissa).
  *
- * Lokaalirajaus: `adLocaleEnabled` (fi/en/sv) on PAKOLLINEN — ilman sitä
- * fi/en/sv-copy vuotaisi 9 muulle kielelle. Muilla kielillä komponentti ei
- * renderöi mitään, eikä pintaan jää aukkoa: villakortisto on erillään tästä ja
- * renderöityy kaikilla 12 kielellä ennallaan.
+ * Lokaalirajaus: MYYTY paikka näkyy kaikilla 12 kielellä (mainosmerkintä MARKER-taulusta, kontekstiotsikko
+ * vain fi/en/sv). TYHJÄ house-ad vain fi/en/sv (`adLocaleEnabled`), muilla kielillä tyhjä paikka ei renderöi
+ * mitään eikä pintaan jää aukkoa.
  *
  * 🔴 Importit osoittavat `../shared/...`, koska `src/shared/` on tässä reposssa
  * VENDOROITU kopio (scripts/sync-shared.mjs ylikirjoittaa sen prebuildissa).
  * `../../../shared/...` piti CI:n punaisena 13.–26.7. — älä "korjaa" sitä.
  */
 import PartnerSlot from '../shared/PartnerSlot'
-import { adLocaleEnabled } from '../shared/adSlotsCopy'
+import { adLocaleEnabled, normalizeAdLocale, type AdLocale } from '../shared/adSlotsCopy'
 import {
   AD_SLOTS,
   FEATURED_CONTEXT,
@@ -53,12 +52,29 @@ import {
  */
 const HOUSE_AD_SURFACES = new Set<FeaturedPlacement>()
 
-/** fi/en/sv mainosmerkinnän copy. Ei 12-kielisissä tiedostoissa: paikka on gatettu. */
+/**
+ * Mainosmerkintä (KKV) jokaisella sivuston kielellä. Myyty kumppanikortti näkyy kaikilla 12 kielellä
+ * (Partner.i18n kantaa käännökset, kuten HomeAdSlotsin myydyt kortit); vain tyhjä house-ad on fi/en/sv
+ * (Vesa 2026-07-13). Ennen 24.11.2026 tämä komponentti piilotti myös myydyn kortin 9 kieleltä
+ * (sama korjaus kuin laplandstaysissa ja laplanddiningissa 23.10.2026).
+ */
+const MARKER: Record<AdLocale, { ad: string; featured: string }> = {
+  fi: { ad: 'Mainos', featured: 'Esittelykumppani' },
+  en: { ad: 'Advertisement', featured: 'Featured partner' },
+  sv: { ad: 'Annons', featured: 'Utvald partner' },
+  de: { ad: 'Anzeige', featured: 'Vorgestellter Partner' },
+  fr: { ad: 'Publicité', featured: 'Partenaire à la une' },
+  it: { ad: 'Pubblicità', featured: 'Partner in evidenza' },
+  es: { ad: 'Anuncio', featured: 'Socio destacado' },
+  nl: { ad: 'Advertentie', featured: 'Uitgelichte partner' },
+  pt: { ad: 'Anúncio', featured: 'Parceiro em destaque' },
+  ja: { ad: '広告', featured: '注目のパートナー' },
+  ko: { ad: '광고', featured: '추천 파트너' },
+  zh: { ad: '广告', featured: '精选合作伙伴' },
+}
+
 function markerCopy(locale: string) {
-  const l = (locale || 'en').toLowerCase()
-  if (l.startsWith('fi')) return { ad: 'Mainos', featured: 'Esittelykumppani' }
-  if (l.startsWith('sv')) return { ad: 'Annons', featured: 'Utvald partner' }
-  return { ad: 'Advertisement', featured: 'Featured partner' }
+  return MARKER[normalizeAdLocale(locale)]
 }
 
 function contextLabel(placement: FeaturedPlacement, locale: string): string {
@@ -66,7 +82,9 @@ function contextLabel(placement: FeaturedPlacement, locale: string): string {
   const c = FEATURED_CONTEXT[placement]
   if (l.startsWith('fi')) return c.fi
   if (l.startsWith('sv')) return c.sv
-  return c.en
+  if (l.startsWith('en')) return c.en
+  // Kontekstiotsikot ovat vain fi/en/sv; muilla kielillä merkintä ilman kontekstia, ei englantia.
+  return ''
 }
 
 export default function FeaturedPartnerSlot({
@@ -80,11 +98,13 @@ export default function FeaturedPartnerSlot({
   className?: string
 }) {
   if (!placement) return null
-  if (!adLocaleEnabled(locale)) return null
+
+  const partner = FEATURED_PARTNERS[placement]
+  // Myyty kortti kaikilla 12 kielellä, tyhjä house-ad vain fi/en/sv (Vesa 2026-07-13).
+  if (!partner && !adLocaleEnabled(locale)) return null
 
   const m = markerCopy(locale)
   const context = contextLabel(placement, locale)
-  const partner = FEATURED_PARTNERS[placement]
   const wrap = ['mb-10 md:mb-14', className].filter(Boolean).join(' ')
 
   if (partner) {
@@ -95,7 +115,7 @@ export default function FeaturedPartnerSlot({
             {m.ad}
           </span>
           <span>
-            {m.featured} · {context}
+            {m.featured}{context ? ` · ${context}` : ''}
           </span>
         </p>
         {/* Kanoninen PartnerSlot-banneri on tummalla sivulla hyvin vähäeleinen
